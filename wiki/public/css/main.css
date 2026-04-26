@@ -75,6 +75,12 @@ body.is-home .topnav-search { display: none; }
   .page > article { grid-column: 1; grid-row: 1; }
   .page > aside.sidebar { grid-column: 2; grid-row: 1; }
 }
+body.is-home .page {
+  grid-template-columns: 1fr;
+}
+body.is-home .page > article {
+  grid-column: 1;
+}
 
 article h1 {
   font-size: 2em;
@@ -82,7 +88,29 @@ article h1 {
   padding-bottom: .3em;
   border-bottom: 2px solid var(--accent);
   color: var(--accent);
+  display: flex;
+  align-items: baseline;
+  gap: .5em;
+  flex-wrap: wrap;
 }
+article h1 .src-tab,
+article h1 .orig-tab {
+  font-size: .35em;
+  font-weight: 400;
+  font-family: var(--sans);
+  color: var(--fg-muted);
+  text-decoration: none;
+  border: 1px solid var(--border);
+  border-radius: 3px;
+  padding: 1px 6px;
+  margin-left: auto;
+  white-space: nowrap;
+}
+article h1 .src-tab:first-of-type { margin-left: auto; }
+article h1 .src-tab + .src-tab,
+article h1 .src-tab + .orig-tab { margin-left: 0; }
+article h1 .src-tab:hover,
+article h1 .orig-tab:hover { color: var(--accent); border-color: var(--accent); }
 article h2 {
   font-size: 1.35em;
   margin-top: 1.8em;
@@ -421,3 +449,211 @@ a.book-chap-link:hover { color: var(--accent); border-color: var(--accent); }
 .chapnav-disabled { color: var(--fg-muted); }
 .chapnav-toc { color: var(--fg-muted) !important; font-size: .85em; border: 1px solid var(--border); }
 .chapnav-toc:hover { background: var(--bg-box); color: var(--fg) !important; }
+
+/* Quality badges */
+.res-quality { border-radius: 3px; padding: 1px 5px; font-size: .82em; font-weight: 500; font-family: var(--sans); white-space: nowrap; }
+.res-quality-premium  { background: #e9d8fd; color: #553c9a; }
+.res-quality-featured { background: #bee3f8; color: #2b6cb0; }
+.res-quality-standard { background: #c6f6d5; color: #276749; }
+.res-quality-basic    { background: #fefcbf; color: #744210; }
+.res-quality-stub     { background: #fed7d7; color: #822727; }
+
+/* Home page wrapper */
+.wiki-home {
+  max-width: 960px;
+  margin: 0 auto;
+}
+.wiki-home h1 {
+  text-align: center;
+  border-bottom: none;
+  margin-bottom: .2em;
+}
+.wiki-home .tagline {
+  text-align: center;
+  color: var(--fg-muted);
+  margin-top: 0;
+  margin-bottom: 1.4em;
+}
+.wiki-home .search-box {
+  max-width: 520px;
+  margin: 0 auto 1.8em;
+  position: relative;
+}
+.wiki-home .search-box #wiki-search {
+  width: 100%;
+  box-sizing: border-box;
+  padding: .6em 1em;
+  border: 1px solid var(--border);
+  border-radius: 6px;
+  background: var(--bg-code);
+  color: var(--fg);
+  font-size: 1em;
+  font-family: var(--sans);
+  outline: none;
+}
+.wiki-home .search-box #wiki-search:focus { border-color: var(--accent); }
+#search-results {
+  position: absolute;
+  top: 100%;
+  left: 0; right: 0;
+  background: var(--bg-box);
+  border: 1px solid var(--border);
+  border-radius: 0 0 6px 6px;
+  list-style: none;
+  margin: 0; padding: 0;
+  z-index: 20;
+}
+#search-results li { border-bottom: 1px solid var(--border); }
+#search-results li:last-child { border-bottom: none; }
+#search-results a {
+  display: flex;
+  align-items: center;
+  gap: .5em;
+  padding: .5em .9em;
+  text-decoration: none;
+  color: var(--fg);
+  font-size: .9em;
+}
+#search-results a:hover { background: var(--bg-code); }
+.match-label { font-weight: 500; }
+.match-alt { color: var(--fg-muted); font-size: .85em; }
+.match-meta { margin-left: auto; color: var(--fg-muted); font-size: .8em; }
+.search-empty { padding: .5em .9em; color: var(--fg-muted); font-size: .9em; }
+.wiki-home .home-links {
+  display: flex;
+  justify-content: center;
+  gap: 1.5em;
+  flex-wrap: wrap;
+  margin: 1em 0;
+}
+.home-link {
+  color: var(--accent);
+  text-decoration: none;
+  font-family: var(--sans);
+  font-size: .9em;
+}
+.home-link:hover { text-decoration: underline; }
+.wiki-home .home-disclaimer {
+  text-align: center;
+  font-size: .8em;
+  color: var(--fg-muted);
+  margin-top: 2em;
+}
+
+/* Home card grid */
+.featured-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(210px, 1fr));
+  gap: 1em;
+  margin: 1.2em 0 1.6em;
+}
+.featured-card {
+  background: var(--bg-box);
+  border: 1px solid var(--border);
+  border-radius: 6px;
+  overflow: hidden;
+  text-decoration: none;
+  color: var(--fg);
+  transition: transform .15s, box-shadow .15s;
+  display: flex;
+  flex-direction: column;
+}
+.featured-card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(0,0,0,.35);
+}
+.featured-card .card-thumb {
+  width: 100%;
+  height: 140px;
+  overflow: hidden;
+}
+.featured-card .card-thumb img {
+  width: 100%; height: 100%; object-fit: cover;
+}
+.featured-card .card-body {
+  padding: .85em 1em .9em;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: .3em;
+}
+.featured-card h3 {
+  margin: 0;
+  font-size: 1.05em;
+  font-weight: 600;
+  color: var(--fg);
+}
+.featured-card .card-header-row {
+  min-height: 1.4em;
+}
+.featured-card .card-type-badge {
+  font-size: .72em;
+  font-family: var(--sans);
+  color: var(--fg-muted);
+  background: var(--bg);
+  border: 1px solid var(--border);
+  border-radius: 3px;
+  padding: 1px 5px;
+}
+.featured-card .card-desc {
+  font-size: .85em;
+  color: var(--fg-muted);
+  line-height: 1.4;
+  margin-top: .1em;
+}
+.featured-card .card-aliases {
+  font-size: .78em;
+  color: var(--fg-muted);
+  border-top: 1px dashed var(--border);
+  padding-top: .3em;
+  margin-top: auto;
+}
+/* Quality tint on entity cards */
+.featured-card.card-q-premium  { border-color: #7c3aed44; }
+.featured-card.card-q-featured { border-color: #3b82f644; }
+.featured-card.card-q-standard { border-color: #22c55e44; }
+
+/* Book card styles */
+.featured-card.book-card {
+  background: linear-gradient(135deg, var(--bg-box) 60%, #1a2a3a);
+  border-color: var(--accent);
+}
+.featured-card.book-card .card-body {
+  gap: .5em;
+}
+.book-card-header {
+  display: flex;
+  align-items: baseline;
+  gap: .5em;
+}
+.book-card-header h3 {
+  font-size: 1.1em;
+}
+.book-card-header h3 a {
+  color: var(--accent);
+  text-decoration: none;
+}
+.book-card-header h3 a:hover { text-decoration: underline; }
+.book-card-subtitle {
+  font-size: .8em;
+  color: var(--fg-muted);
+  font-family: var(--sans);
+}
+.book-card-chapters {
+  display: flex;
+  flex-wrap: wrap;
+  gap: .25em .4em;
+  margin-top: .3em;
+}
+.book-card-chap {
+  font-size: .78em;
+  color: var(--fg-muted);
+  text-decoration: none;
+  white-space: nowrap;
+}
+.book-card-chap:hover { color: var(--accent); text-decoration: underline; }
+.book-card-more {
+  font-size: .75em;
+  color: var(--fg-muted);
+  font-style: italic;
+}

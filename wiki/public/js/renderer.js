@@ -422,56 +422,34 @@ const BOOK_META = [
   { key: '三体III', title: '三体III：死神永生', subtitle: '第三部' },
 ];
 
-function renderBooksSection(pages) {
-  return BOOK_META.map(({ key, title }) => {
-    const chapters = Object.entries(pages)
-      .filter(([, m]) => m.type === 'chapter' && m.book === key)
-      .sort(([, a], [, b]) => (a.book_seq || 0) - (b.book_seq || 0));
-
-    const chapterLinks = chapters.map(([id, m]) =>
-      `<a class="book-chap-link" href="#${encodeURIComponent(id)}">${escapeHtml(m.label)}</a>`
-    ).join('');
-
-    return `<details class="book-toc">
-      <summary class="book-toc-title">${escapeHtml(title)} <span class="book-chap-count">${chapters.length} 章节</span></summary>
-      <div class="book-chap-list">${chapterLinks}</div>
-    </details>`;
-  }).join('');
-}
 
 export function renderHome(core) {
   const pages = core.registry.pages;
   const ids = Object.keys(pages);
 
-  // 按类型分组展示
-  const byType = {};
-  const SHOW_TYPES = ['person', 'character', 'concept', 'law', 'technology', 'event', 'organization', 'place', 'civilization'];
-  for (const id of ids) {
-    const p = pages[id];
-    const t = p.type || 'unknown';
-    if (!byType[t]) byType[t] = [];
-    byType[t].push({ id, ...p });
-  }
+  // 固定头三张：三部书卡片
+  const bookCardsHtml = BOOK_META.map(({ key, title }) =>
+    renderBookCard(key, title, pages)
+  ).join('');
 
-  // 精品页面：featured=true 优先
+  // 实体词条卡片：按 quality 等级 + quality_score 降序，stub 不上首页，章节页不上首页
+  const QUALITY_RANK = { premium: 1000, featured: 500, standard: 100, basic: 10, stub: 0 };
   const allPages = ids.map(id => ({ id, ...pages[id] }));
-  const featured = allPages
-    .filter(p => p.featured && !['redirect','disambiguation','special'].includes(p.type||''))
-    .slice(0, 12);
-  const featuredHtml = featured.length > 0
-    ? featured.map(renderFeaturedCard).join('')
-    : allPages
-        .filter(p => !['redirect','disambiguation','special'].includes(p.type||''))
-        .slice(0, 12)
-        .map(renderFeaturedCard).join('');
+  const scoreOf = p => (QUALITY_RANK[p.quality] || 0) + (p.quality_score || 0) + (p.featured ? 200 : 0);
+  const entityCandidates = allPages
+    .filter(p => !['redirect','disambiguation','special','chapter'].includes(p.type||''))
+    .filter(p => (p.quality || 'stub') !== 'stub')
+    .sort((a, b) => scoreOf(b) - scoreOf(a))
+    .slice(0, 21);
+  const entityCardsHtml = entityCandidates.map(renderFeaturedCard).join('');
 
-  // 原文入口：三部书的章节目录
-  const booksHtml = renderBooksSection(pages);
+  const entityCount = allPages.filter(p =>
+    !['redirect','disambiguation','special','chapter'].includes(p.type||'')).length;
 
   document.getElementById('article').innerHTML =
     `<div class="wiki-home">
       <h1>三体 Wiki</h1>
-      <p class="tagline">刘慈欣《三体》三部曲人物、概念、事件百科 · 共 ${ids.length} 个词条</p>
+      <p class="tagline">刘慈欣《三体》三部曲人物、概念、事件百科 · ${entityCount} 个词条</p>
 
       <div class="search-box">
         <input id="wiki-search" type="search"
@@ -480,11 +458,10 @@ export function renderHome(core) {
         <ul id="search-results" hidden></ul>
       </div>
 
-      <h2>原文阅读</h2>
-      ${booksHtml}
-
-      <h2>精选词条</h2>
-      <div class="featured-grid">${featuredHtml}</div>
+      <div class="featured-grid">
+        ${bookCardsHtml}
+        ${entityCardsHtml}
+      </div>
 
       <nav class="home-links">
         <a href="#${encodeURIComponent('Special:AllPages')}" class="home-link">全部 ${ids.length} 页 →</a>
@@ -580,28 +557,46 @@ function renderTagsFooter(front, meta) {
   </footer>`;
 }
 
+function renderBookCard(key, title, pages) {
+  const chapters = Object.entries(pages)
+    .filter(([, m]) => m.type === 'chapter' && m.book === key)
+    .sort(([, a], [, b]) => (a.book_seq || 0) - (b.book_seq || 0));
+  const firstChapterId = chapters.length > 0 ? chapters[0][0] : null;
+  const href = firstChapterId ? `#${encodeURIComponent(firstChapterId)}` : '#';
+  const [shortTitle, subtitle] = title.split('：');
+  const chapListHtml = chapters.slice(0, 6).map(([id, m]) =>
+    `<a class="book-card-chap" href="#${encodeURIComponent(id)}">${escapeHtml(m.label)}</a>`
+  ).join('');
+  const moreHtml = chapters.length > 6
+    ? `<span class="book-card-more">…共 ${chapters.length} 章节</span>` : '';
+  return `<div class="featured-card book-card">
+    <div class="card-body">
+      <div class="book-card-header">
+        <h3><a href="${href}">${escapeHtml(shortTitle)}</a></h3>
+        <span class="book-card-subtitle">${escapeHtml(subtitle || '')}</span>
+      </div>
+      <div class="book-card-chapters">${chapListHtml}${moreHtml}</div>
+    </div>
+  </div>`;
+}
+
 function renderFeaturedCard(p) {
-  const life = p.lifespan || null;
-  let lifeS = '';
-  if (life && life.birth != null && life.death != null) {
-    const b = life.birth < 0 ? `前 ${-life.birth}` : String(life.birth);
-    const d = life.death < 0 ? `前 ${-life.death}` : String(life.death);
-    lifeS = `<div class="card-life">${b} — ${d}</div>`;
-  }
-  const meta = p.total_refs != null
-    ? `<div class="card-meta">
-         <strong>${p.total_refs}</strong> 次出现 ·
-         <strong>${p.total_chapters}</strong> 篇
-       </div>` : '';
-  const aliasPreview = (p.aliases || []).slice(0, 3).join(' · ');
+  const typeLabel = TYPE_LABELS[p.type] || p.type || '';
+  const typeBadge = typeLabel
+    ? `<span class="card-type-badge">${escapeHtml(typeLabel)}</span>` : '';
+  const qualityClass = p.quality ? ` card-q-${p.quality}` : '';
+  const descHtml = p.description
+    ? `<div class="card-desc">${escapeHtml(p.description)}</div>` : '';
+  const aliasPreview = (p.aliases || []).filter(a => a !== p.label).slice(0, 3).join(' · ');
   const aliasHtml = aliasPreview
     ? `<div class="card-aliases">${escapeHtml(aliasPreview)}</div>` : '';
   const imgHtml = p.image
     ? `<div class="card-thumb"><img src="${escapeHtml(p.image)}" alt="${escapeHtml(p.label)}" loading="lazy"></div>` : '';
-  return `<a class="featured-card${p.image ? ' has-thumb' : ''}" href="#${encodeURIComponent(p.id)}">
+  return `<a class="featured-card entity-card${qualityClass}${p.image ? ' has-thumb' : ''}" href="#${encodeURIComponent(p.id)}">
     ${imgHtml}<div class="card-body">
+      <div class="card-header-row">${typeBadge}</div>
       <h3>${escapeHtml(p.label)}</h3>
-      ${lifeS}${meta}${aliasHtml}
+      ${descHtml}${aliasHtml}
     </div>
   </a>`;
 }
@@ -736,7 +731,7 @@ export async function renderRecent(core, pageNum = 1) {
   const data = await r.json();
 
   // recent.json 已包含最近 500-600 条（滚动窗口），直接取最新 DISPLAY_LIMIT 条，逆序显示
-  const recent500 = (data.entries || data.recent || []).slice(-DISPLAY_LIMIT).reverse();
+  const recent500 = (data.entries || []).slice(-DISPLAY_LIMIT).reverse();
 
   const totalEntries = recent500.length;
   const totalPages = Math.max(1, Math.ceil(totalEntries / PAGE_SIZE));
@@ -762,7 +757,7 @@ export async function renderRecent(core, pageNum = 1) {
   const pagerHtml = totalPages > 1 ? buildPager(pageNum, totalPages) : '';
 
   const uniquePages = new Set(recent500.map(e => e.page)).size;
-  const totalInFile = (data.entries || data.recent || []).length;
+  const totalInFile = (data.entries || []).length;
   const logNote = totalInFile > DISPLAY_LIMIT ? `（窗口共 ${totalInFile} 条，显示最新 ${DISPLAY_LIMIT} 条）` : '';
 
   const body = entries.length === 0
