@@ -1,0 +1,16 @@
+{"round": 1, "type": "create-page", "page": "汪淼", "result": "accept", "desc": "从三体I提炼主角汪淼信息：纳米材料教授、幽灵倒计时经历、宇宙闪烁调查、与史强搭档", "ts": "2026-04-26T19:15:33Z"}
+{"round": 2, "type": "create-page", "page": "面壁者", "result": "accept", "desc": "从三体II提炼面壁者制度：四名战略家利用智子无法读心的漏洞制定秘密反击计划，罗辑唯一成功", "ts": "2026-04-26T19:16:23Z"}
+{"round": 3, "type": "create-page", "page": "水滴探测器", "result": "accept", "desc": "从三体II提炼水滴探测器：外形、强互作用力材料、作为和平迷局、对人类舰队的毁灭性攻击", "ts": "2026-04-26T19:17:13Z"}
+{"round": 4, "type": "create-page", "page": "三体星系", "result": "accept", "desc": "从三体I提炼三体星系：半人马座四光年、三星混沌轨道、乱纪元恒纪元、三日凌空与文明毁灭", "ts": "2026-04-26T19:18:26Z"}
+{"round": 5, "type": "create-page", "page": "地球三体组织", "result": "accept", "desc": "从三体I提炼ETO：叶文洁创立、科学边界掩护、三派（降临/拯救/幸存）、活动与衰亡", "ts": "2026-04-26T19:19:37Z"}
+{"round": 6, "type": "create-page", "page": "执剑人", "result": "accept", "desc": "从三体III提炼执剑人制度：罗辑守剑54年、程心15分钟失败、心理素质是关键", "ts": "2026-04-26T19:20:49Z"}
+{"round": 7, "type": "create-page", "page": "宇宙社会学", "result": "accept", "desc": "从三体II提炼宇宙社会学：两条公理、猜疑链、技术爆炸、推论黑暗森林图景", "ts": "2026-04-26T19:21:46Z"}
+{"round": 8, "type": "create-page", "page": "云天明", "result": "accept", "desc": "从三体III提炼云天明：绝症患者、赠星程心、大脑送三体、童话传递战略情报", "ts": "2026-04-26T19:22:41Z"}
+{"round": 9, "type": "create-page", "page": "章北海", "result": "accept", "desc": "从三体II提炼章北海：太空军政委、双面策略、秘密推进逃亡方案、水滴攻击中驾自然选择号脱逃", "ts": "2026-04-26T19:23:29Z"}
+{"round": 10, "type": "create-page", "page": "威慑纪元", "result": "accept", "desc": "从三体III提炼威慑纪元：生态恢复、宇宙级冷战、执剑人独裁、程心失守终结", "ts": "2026-04-26T19:24:09Z"}
+{"round": 11, "type": "create-page", "page": "危机纪元", "result": "accept", "desc": "从三体II/III提炼危机纪元：约200年、幼稚症、大低谷、面壁计划、水滴攻击、威慑建立", "ts": "2026-04-26T19:24:52Z"}
+{"round": 12, "type": "create-page", "page": "太阳系", "result": "accept", "desc": "从三体III提炼太阳系：人类家园、掩体计划、二向箔降维最终毁灭", "ts": "2026-04-26T19:25:43Z"}
+{"round": 13, "type": "discover", "page": "corpus+broken-links", "result": "accept", "desc": "discover_wanted: 光速飞船7x、史强2x、费米悖论2x、宇宙闪烁2x、黑域1x、冬眠技术1x、科学边界1x，写入队列", "ts": "2026-04-26T19:26:17Z"}
+{"round": 14, "type": "create-page", "page": "光速飞船", "result": "accept", "desc": "从三体III提炼光速飞船：曲率驱动原理、云天明情报解读、航迹危险、人类开发受阻", "ts": "2026-04-26T19:27:02Z"}
+{"round": 15, "type": "create-page", "page": "史强", "result": "accept", "desc": "从三体I提炼史强：粗犷刑警大史、与汪淼搭档、倒握枪柄制服叛军、雪茄演示", "ts": "2026-04-26T19:27:45Z"}
+{"round": 16, "type": "create-page", "page": "费米悖论", "result": "accept", "desc": "从三体II提炼费米悖论：经典表述+罗辑的黑暗森林答案", "ts": "2026-04-26T19:28:34Z"}

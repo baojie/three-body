@@ -265,7 +265,47 @@ export async function renderPage(core, pid, meta, mdText) {
   }
 
 
+  // 章节页：注入前后章导航
+  if (meta.type === 'chapter') {
+    injectChapterNav(core, pid, meta);
+  }
+
   window.scrollTo(0, 0);
+}
+
+function injectChapterNav(core, pid, meta) {
+  const pages = core.registry.pages;
+  const book = meta.book;
+  // 同书所有章节，按 book_seq 排序
+  const siblings = Object.entries(pages)
+    .filter(([, m]) => m.type === 'chapter' && m.book === book)
+    .sort(([, a], [, b]) => (a.book_seq || 0) - (b.book_seq || 0));
+
+  const idx = siblings.findIndex(([id]) => id === pid);
+  const prev = idx > 0 ? siblings[idx - 1] : null;
+  const next = idx >= 0 && idx < siblings.length - 1 ? siblings[idx + 1] : null;
+
+  const bookFirstId = siblings[0]?.[0];
+  const bookLabel = { '三体I': '《地球往事》', '三体II': '《黑暗森林》', '三体III': '《死神永生》' }[book] || book;
+
+  const prevHtml = prev
+    ? `<a class="chapnav-prev" href="#${encodeURIComponent(prev[0])}">← ${escapeHtml(prev[1].label)}</a>`
+    : `<span class="chapnav-prev chapnav-disabled">← 已是第一章</span>`;
+  const nextHtml = next
+    ? `<a class="chapnav-next" href="#${encodeURIComponent(next[0])}">${escapeHtml(next[1].label)} →</a>`
+    : `<span class="chapnav-next chapnav-disabled">已是最后一章 →</span>`;
+  const tocHtml = `<a class="chapnav-toc" href="#${encodeURIComponent(bookFirstId || '')}">↑ ${escapeHtml(bookLabel)}目录</a>`;
+
+  const nav = document.createElement('nav');
+  nav.className = 'chapnav';
+  nav.innerHTML = prevHtml + tocHtml + nextHtml;
+
+  const article = document.getElementById('article');
+  // 顶部插在 h1 后面
+  const h1 = article.querySelector('h1');
+  if (h1) h1.after(nav.cloneNode(true));
+  // 底部追加
+  article.appendChild(nav);
 }
 
 export async function renderSource(core, pid, meta) {
@@ -376,6 +416,29 @@ export async function renderInfobox(core, front, meta, pid) {
     <table>${rows.join('')}</table>`;
 }
 
+const BOOK_META = [
+  { key: '三体I',   title: '三体I：地球往事',  subtitle: '第一部' },
+  { key: '三体II',  title: '三体II：黑暗森林', subtitle: '第二部' },
+  { key: '三体III', title: '三体III：死神永生', subtitle: '第三部' },
+];
+
+function renderBooksSection(pages) {
+  return BOOK_META.map(({ key, title }) => {
+    const chapters = Object.entries(pages)
+      .filter(([, m]) => m.type === 'chapter' && m.book === key)
+      .sort(([, a], [, b]) => (a.book_seq || 0) - (b.book_seq || 0));
+
+    const chapterLinks = chapters.map(([id, m]) =>
+      `<a class="book-chap-link" href="#${encodeURIComponent(id)}">${escapeHtml(m.label)}</a>`
+    ).join('');
+
+    return `<details class="book-toc">
+      <summary class="book-toc-title">${escapeHtml(title)} <span class="book-chap-count">${chapters.length} 章节</span></summary>
+      <div class="book-chap-list">${chapterLinks}</div>
+    </details>`;
+  }).join('');
+}
+
 export function renderHome(core) {
   const pages = core.registry.pages;
   const ids = Object.keys(pages);
@@ -402,6 +465,9 @@ export function renderHome(core) {
         .slice(0, 12)
         .map(renderFeaturedCard).join('');
 
+  // 原文入口：三部书的章节目录
+  const booksHtml = renderBooksSection(pages);
+
   document.getElementById('article').innerHTML =
     `<div class="wiki-home">
       <h1>三体 Wiki</h1>
@@ -413,6 +479,9 @@ export function renderHome(core) {
           autocomplete="off" autofocus>
         <ul id="search-results" hidden></ul>
       </div>
+
+      <h2>原文阅读</h2>
+      ${booksHtml}
 
       <h2>精选词条</h2>
       <div class="featured-grid">${featuredHtml}</div>
@@ -667,7 +736,7 @@ export async function renderRecent(core, pageNum = 1) {
   const data = await r.json();
 
   // recent.json 已包含最近 500-600 条（滚动窗口），直接取最新 DISPLAY_LIMIT 条，逆序显示
-  const recent500 = (data.entries || []).slice(-DISPLAY_LIMIT).reverse();
+  const recent500 = (data.entries || data.recent || []).slice(-DISPLAY_LIMIT).reverse();
 
   const totalEntries = recent500.length;
   const totalPages = Math.max(1, Math.ceil(totalEntries / PAGE_SIZE));
@@ -693,7 +762,7 @@ export async function renderRecent(core, pageNum = 1) {
   const pagerHtml = totalPages > 1 ? buildPager(pageNum, totalPages) : '';
 
   const uniquePages = new Set(recent500.map(e => e.page)).size;
-  const totalInFile = (data.entries || []).length;
+  const totalInFile = (data.entries || data.recent || []).length;
   const logNote = totalInFile > DISPLAY_LIMIT ? `（窗口共 ${totalInFile} 条，显示最新 ${DISPLAY_LIMIT} 条）` : '';
 
   const body = entries.length === 0

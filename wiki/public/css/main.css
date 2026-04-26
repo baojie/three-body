@@ -361,3 +361,63 @@ a.pn-citation:hover { color: var(--accent); border-bottom-color: var(--accent); 
   animation: pn-flash 2s ease-out forwards;
   border-radius: 3px;
 }
+
+/* Book TOC (home page) */
+.book-toc {
+  border: 1px solid var(--border);
+  border-radius: 6px;
+  margin: .5em 0;
+  background: var(--bg-box);
+}
+.book-toc-title {
+  padding: .7em 1em;
+  cursor: pointer;
+  font-weight: 600;
+  font-family: var(--sans);
+  list-style: none;
+  display: flex;
+  align-items: center;
+  gap: .6em;
+}
+.book-toc-title::-webkit-details-marker { display: none; }
+.book-toc-title::before { content: '▶'; font-size: .7em; color: var(--fg-muted); transition: transform .15s; }
+details[open] .book-toc-title::before { transform: rotate(90deg); }
+.book-chap-count { font-size: .8em; color: var(--fg-muted); font-weight: 400; margin-left: auto; }
+.book-chap-list {
+  padding: .5em 1em .8em;
+  display: flex;
+  flex-wrap: wrap;
+  gap: .3em .5em;
+  border-top: 1px solid var(--border);
+}
+a.book-chap-link {
+  font-size: .85em;
+  color: var(--fg-muted);
+  text-decoration: none;
+  padding: .15em .4em;
+  border-radius: 3px;
+  border: 1px solid var(--border);
+  white-space: nowrap;
+}
+a.book-chap-link:hover { color: var(--accent); border-color: var(--accent); }
+
+/* Chapter prev/next nav */
+.chapnav {
+  display: flex;
+  align-items: center;
+  gap: .5em;
+  padding: .6em 0;
+  margin: .8em 0;
+  border-top: 1px solid var(--border);
+  border-bottom: 1px solid var(--border);
+  font-family: var(--sans);
+  font-size: .88em;
+}
+.chapnav a, .chapnav span { text-decoration: none; padding: .3em .6em; border-radius: 4px; }
+.chapnav-prev { margin-right: auto; }
+.chapnav-next { margin-left: auto; }
+.chapnav a { color: var(--accent); border: 1px solid var(--border); }
+.chapnav a:hover { background: var(--bg-box); }
+.chapnav-disabled { color: var(--fg-muted); }
+.chapnav-toc { color: var(--fg-muted) !important; font-size: .85em; border: 1px solid var(--border); }
+.chapnav-toc:hover { background: var(--bg-box); color: var(--fg) !important; }
