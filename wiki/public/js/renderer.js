@@ -855,6 +855,7 @@ export async function renderRevision(core, page, revId) {
 
   document.getElementById('article').innerHTML = banner + html;
   hideSidebar();
+  document.body.classList.add('is-home');
   document.getElementById('crumb').textContent = `${page} @ ${revId}`;
   document.title = `${page} @ ${revId} · 三体 Wiki`;
   document.getElementById('src-info').textContent = `history/${page}/${revId}.md`;
@@ -1317,6 +1318,7 @@ export async function renderDiff(core, page, revId) {
     meta + `<div class="diff-body">${diffHtml}</div>`;
 
   hideSidebar();
+  document.body.classList.add('is-home');
   document.getElementById('crumb').textContent = `${page} diff ${revId}`;
   document.title = `${page} diff · 三体 Wiki`;
   document.getElementById('src-info').textContent = `history/${page}.json (diff ${revId} vs ${cur.parent_rev || 'null'})`;
@@ -1364,6 +1366,7 @@ export function renderNotFound(core, target) {
      <p>未找到页面 <code>${escapeHtml(target)}</code>。</p>
      <p><a href="#">回到首页</a></p>`;
   hideSidebar();
+  document.body.classList.add('is-home');
   document.getElementById('crumb').textContent = '未找到';
   document.title = '未找到 · 三体 Wiki';
   document.getElementById('src-info').textContent = '';
