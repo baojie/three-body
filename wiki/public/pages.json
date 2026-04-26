@@ -1,5 +1,1422 @@
 {
   "pages": {
+    "三体I-01-前言": {
+      "type": "chapter",
+      "label": "前言",
+      "aliases": [],
+      "tags": [
+        "原文",
+        "三体I"
+      ],
+      "path": "pages/三体I-01-前言.md"
+    },
+    "三体I-02-疯狂年代": {
+      "type": "chapter",
+      "label": "疯狂年代",
+      "aliases": [],
+      "tags": [
+        "原文",
+        "三体I"
+      ],
+      "path": "pages/三体I-02-疯狂年代.md"
+    },
+    "三体I-03-寂静的春天": {
+      "type": "chapter",
+      "label": "寂静的春天",
+      "aliases": [],
+      "tags": [
+        "原文",
+        "三体I"
+      ],
+      "path": "pages/三体I-03-寂静的春天.md"
+    },
+    "三体I-04-红岸之一": {
+      "type": "chapter",
+      "label": "红岸之一",
+      "aliases": [],
+      "tags": [
+        "原文",
+        "三体I"
+      ],
+      "path": "pages/三体I-04-红岸之一.md"
+    },
+    "三体I-05-三十八年后": {
+      "type": "chapter",
+      "label": "三十八年后",
+      "aliases": [],
+      "tags": [
+        "原文",
+        "三体I"
+      ],
+      "path": "pages/三体I-05-三十八年后.md"
+    },
+    "三体I-06-台球": {
+      "type": "chapter",
+      "label": "台球",
+      "aliases": [],
+      "tags": [
+        "原文",
+        "三体I"
+      ],
+      "path": "pages/三体I-06-台球.md"
+    },
+    "三体I-07-射手和农场主": {
+      "type": "chapter",
+      "label": "射手和农场主",
+      "aliases": [],
+      "tags": [
+        "原文",
+        "三体I"
+      ],
+      "path": "pages/三体I-07-射手和农场主.md"
+    },
+    "三体I-08-周文王·长夜": {
+      "type": "chapter",
+      "label": "周文王·长夜",
+      "aliases": [],
+      "tags": [
+        "原文",
+        "三体I"
+      ],
+      "path": "pages/三体I-08-周文王·长夜.md"
+    },
+    "三体I-09-叶文洁": {
+      "type": "chapter",
+      "label": "叶文洁",
+      "aliases": [],
+      "tags": [
+        "原文",
+        "三体I"
+      ],
+      "path": "pages/三体I-09-叶文洁.md"
+    },
+    "三体I-10-字宙闪烁": {
+      "type": "chapter",
+      "label": "字宙闪烁",
+      "aliases": [],
+      "tags": [
+        "原文",
+        "三体I"
+      ],
+      "path": "pages/三体I-10-字宙闪烁.md"
+    },
+    "三体I-11-大史": {
+      "type": "chapter",
+      "label": "大史",
+      "aliases": [],
+      "tags": [
+        "原文",
+        "三体I"
+      ],
+      "path": "pages/三体I-11-大史.md"
+    },
+    "三体I-12-三体·墨子·烈焰": {
+      "type": "chapter",
+      "label": "三体·墨子·烈焰",
+      "aliases": [],
+      "tags": [
+        "原文",
+        "三体I"
+      ],
+      "path": "pages/三体I-12-三体·墨子·烈焰.md"
+    },
+    "三体I-13-红岸之二": {
+      "type": "chapter",
+      "label": "红岸之二",
+      "aliases": [],
+      "tags": [
+        "原文",
+        "三体I"
+      ],
+      "path": "pages/三体I-13-红岸之二.md"
+    },
+    "三体I-14-红岸之三": {
+      "type": "chapter",
+      "label": "红岸之三",
+      "aliases": [],
+      "tags": [
+        "原文",
+        "三体I"
+      ],
+      "path": "pages/三体I-14-红岸之三.md"
+    },
+    "三体I-15-红岸之四": {
+      "type": "chapter",
+      "label": "红岸之四",
+      "aliases": [],
+      "tags": [
+        "原文",
+        "三体I"
+      ],
+      "path": "pages/三体I-15-红岸之四.md"
+    },
+    "三体I-16-三体、哥白尼、宇宙橄榄球、三日凌空": {
+      "type": "chapter",
+      "label": "三体、哥白尼、宇宙橄榄球、三日凌空",
+      "aliases": [],
+      "tags": [
+        "原文",
+        "三体I"
+      ],
+      "path": "pages/三体I-16-三体、哥白尼、宇宙橄榄球、三日凌空.md"
+    },
+    "三体I-17-三体问题": {
+      "type": "chapter",
+      "label": "三体问题",
+      "aliases": [],
+      "tags": [
+        "原文",
+        "三体I"
+      ],
+      "path": "pages/三体I-17-三体问题.md"
+    },
+    "三体I-18-三体、牛顿、冯·诺依曼、秦始皇、三日连珠": {
+      "type": "chapter",
+      "label": "三体、牛顿、冯·诺依曼、秦始皇、三日连珠",
+      "aliases": [],
+      "tags": [
+        "原文",
+        "三体I"
+      ],
+      "path": "pages/三体I-18-三体、牛顿、冯·诺依曼、秦始皇、三日连珠.md"
+    },
+    "三体I-19-聚会": {
+      "type": "chapter",
+      "label": "聚会",
+      "aliases": [],
+      "tags": [
+        "原文",
+        "三体I"
+      ],
+      "path": "pages/三体I-19-聚会.md"
+    },
+    "三体I-20-三体、爱因斯坦、单摆、大撕裂": {
+      "type": "chapter",
+      "label": "三体、爱因斯坦、单摆、大撕裂",
+      "aliases": [],
+      "tags": [
+        "原文",
+        "三体I"
+      ],
+      "path": "pages/三体I-20-三体、爱因斯坦、单摆、大撕裂.md"
+    },
+    "三体I-21-三体、远征": {
+      "type": "chapter",
+      "label": "三体、远征",
+      "aliases": [],
+      "tags": [
+        "原文",
+        "三体I"
+      ],
+      "path": "pages/三体I-21-三体、远征.md"
+    },
+    "三体I-22-地球叛军": {
+      "type": "chapter",
+      "label": "地球叛军",
+      "aliases": [],
+      "tags": [
+        "原文",
+        "三体I"
+      ],
+      "path": "pages/三体I-22-地球叛军.md"
+    },
+    "三体I-23-红岸之五": {
+      "type": "chapter",
+      "label": "红岸之五",
+      "aliases": [],
+      "tags": [
+        "原文",
+        "三体I"
+      ],
+      "path": "pages/三体I-23-红岸之五.md"
+    },
+    "三体I-24-红岸之六": {
+      "type": "chapter",
+      "label": "红岸之六",
+      "aliases": [],
+      "tags": [
+        "原文",
+        "三体I"
+      ],
+      "path": "pages/三体I-24-红岸之六.md"
+    },
+    "三体I-25-叛乱": {
+      "type": "chapter",
+      "label": "叛乱",
+      "aliases": [],
+      "tags": [
+        "原文",
+        "三体I"
+      ],
+      "path": "pages/三体I-25-叛乱.md"
+    },
+    "三体I-26-雷志成、杨卫宁之死": {
+      "type": "chapter",
+      "label": "雷志成、杨卫宁之死",
+      "aliases": [],
+      "tags": [
+        "原文",
+        "三体I"
+      ],
+      "path": "pages/三体I-26-雷志成、杨卫宁之死.md"
+    },
+    "三体I-27-无人忏悔": {
+      "type": "chapter",
+      "label": "无人忏悔",
+      "aliases": [],
+      "tags": [
+        "原文",
+        "三体I"
+      ],
+      "path": "pages/三体I-27-无人忏悔.md"
+    },
+    "三体I-28-伊文斯": {
+      "type": "chapter",
+      "label": "伊文斯",
+      "aliases": [],
+      "tags": [
+        "原文",
+        "三体I"
+      ],
+      "path": "pages/三体I-28-伊文斯.md"
+    },
+    "三体I-29-第二红岸基地": {
+      "type": "chapter",
+      "label": "第二红岸基地",
+      "aliases": [],
+      "tags": [
+        "原文",
+        "三体I"
+      ],
+      "path": "pages/三体I-29-第二红岸基地.md"
+    },
+    "三体I-30-地球三体运动": {
+      "type": "chapter",
+      "label": "地球三体运动",
+      "aliases": [],
+      "tags": [
+        "原文",
+        "三体I"
+      ],
+      "path": "pages/三体I-30-地球三体运动.md"
+    },
+    "三体I-31-两个质子": {
+      "type": "chapter",
+      "label": "两个质子",
+      "aliases": [],
+      "tags": [
+        "原文",
+        "三体I"
+      ],
+      "path": "pages/三体I-31-两个质子.md"
+    },
+    "三体I-32-古筝行动": {
+      "type": "chapter",
+      "label": "古筝行动",
+      "aliases": [],
+      "tags": [
+        "原文",
+        "三体I"
+      ],
+      "path": "pages/三体I-32-古筝行动.md"
+    },
+    "三体I-33-监听员": {
+      "type": "chapter",
+      "label": "监听员",
+      "aliases": [],
+      "tags": [
+        "原文",
+        "三体I"
+      ],
+      "path": "pages/三体I-33-监听员.md"
+    },
+    "三体I-34-智子": {
+      "type": "chapter",
+      "label": "智子",
+      "aliases": [],
+      "tags": [
+        "原文",
+        "三体I"
+      ],
+      "path": "pages/三体I-34-智子.md"
+    },
+    "三体I-35-虫子": {
+      "type": "chapter",
+      "label": "虫子",
+      "aliases": [],
+      "tags": [
+        "原文",
+        "三体I"
+      ],
+      "path": "pages/三体I-35-虫子.md"
+    },
+    "三体I-36-尾声·遗址": {
+      "type": "chapter",
+      "label": "尾声·遗址",
+      "aliases": [],
+      "tags": [
+        "原文",
+        "三体I"
+      ],
+      "path": "pages/三体I-36-尾声·遗址.md"
+    },
+    "三体I-37-后记": {
+      "type": "chapter",
+      "label": "后记",
+      "aliases": [],
+      "tags": [
+        "原文",
+        "三体I"
+      ],
+      "path": "pages/三体I-37-后记.md"
+    },
+    "三体II-02-序章": {
+      "type": "chapter",
+      "label": "序章",
+      "aliases": [],
+      "tags": [
+        "原文",
+        "三体II"
+      ],
+      "path": "pages/三体II-02-序章.md"
+    },
+    "三体II-03-上部第1节": {
+      "type": "chapter",
+      "label": "上部第1节",
+      "aliases": [],
+      "tags": [
+        "原文",
+        "三体II"
+      ],
+      "path": "pages/三体II-03-上部第1节.md"
+    },
+    "三体II-04-上部第2节": {
+      "type": "chapter",
+      "label": "上部第2节",
+      "aliases": [],
+      "tags": [
+        "原文",
+        "三体II"
+      ],
+      "path": "pages/三体II-04-上部第2节.md"
+    },
+    "三体II-05-上部第3节": {
+      "type": "chapter",
+      "label": "上部第3节",
+      "aliases": [],
+      "tags": [
+        "原文",
+        "三体II"
+      ],
+      "path": "pages/三体II-05-上部第3节.md"
+    },
+    "三体II-06-上部第4节": {
+      "type": "chapter",
+      "label": "上部第4节",
+      "aliases": [],
+      "tags": [
+        "原文",
+        "三体II"
+      ],
+      "path": "pages/三体II-06-上部第4节.md"
+    },
+    "三体II-07-上部第5节": {
+      "type": "chapter",
+      "label": "上部第5节",
+      "aliases": [],
+      "tags": [
+        "原文",
+        "三体II"
+      ],
+      "path": "pages/三体II-07-上部第5节.md"
+    },
+    "三体II-08-上部第6节": {
+      "type": "chapter",
+      "label": "上部第6节",
+      "aliases": [],
+      "tags": [
+        "原文",
+        "三体II"
+      ],
+      "path": "pages/三体II-08-上部第6节.md"
+    },
+    "三体II-09-上部第7节": {
+      "type": "chapter",
+      "label": "上部第7节",
+      "aliases": [],
+      "tags": [
+        "原文",
+        "三体II"
+      ],
+      "path": "pages/三体II-09-上部第7节.md"
+    },
+    "三体II-10-上部第8节": {
+      "type": "chapter",
+      "label": "上部第8节",
+      "aliases": [],
+      "tags": [
+        "原文",
+        "三体II"
+      ],
+      "path": "pages/三体II-10-上部第8节.md"
+    },
+    "三体II-11-上部第9节": {
+      "type": "chapter",
+      "label": "上部第9节",
+      "aliases": [],
+      "tags": [
+        "原文",
+        "三体II"
+      ],
+      "path": "pages/三体II-11-上部第9节.md"
+    },
+    "三体II-12-上部第10节": {
+      "type": "chapter",
+      "label": "上部第10节",
+      "aliases": [],
+      "tags": [
+        "原文",
+        "三体II"
+      ],
+      "path": "pages/三体II-12-上部第10节.md"
+    },
+    "三体II-13-上部第11节": {
+      "type": "chapter",
+      "label": "上部第11节",
+      "aliases": [],
+      "tags": [
+        "原文",
+        "三体II"
+      ],
+      "path": "pages/三体II-13-上部第11节.md"
+    },
+    "三体II-14-上部第12节": {
+      "type": "chapter",
+      "label": "上部第12节",
+      "aliases": [],
+      "tags": [
+        "原文",
+        "三体II"
+      ],
+      "path": "pages/三体II-14-上部第12节.md"
+    },
+    "三体II-15-上部第13节": {
+      "type": "chapter",
+      "label": "上部第13节",
+      "aliases": [],
+      "tags": [
+        "原文",
+        "三体II"
+      ],
+      "path": "pages/三体II-15-上部第13节.md"
+    },
+    "三体II-16-上部第14节": {
+      "type": "chapter",
+      "label": "上部第14节",
+      "aliases": [],
+      "tags": [
+        "原文",
+        "三体II"
+      ],
+      "path": "pages/三体II-16-上部第14节.md"
+    },
+    "三体II-17-上部第15节": {
+      "type": "chapter",
+      "label": "上部第15节",
+      "aliases": [],
+      "tags": [
+        "原文",
+        "三体II"
+      ],
+      "path": "pages/三体II-17-上部第15节.md"
+    },
+    "三体II-18-上部第16节": {
+      "type": "chapter",
+      "label": "上部第16节",
+      "aliases": [],
+      "tags": [
+        "原文",
+        "三体II"
+      ],
+      "path": "pages/三体II-18-上部第16节.md"
+    },
+    "三体II-19-中部第1节": {
+      "type": "chapter",
+      "label": "中部第1节",
+      "aliases": [],
+      "tags": [
+        "原文",
+        "三体II"
+      ],
+      "path": "pages/三体II-19-中部第1节.md"
+    },
+    "三体II-20-中部第2节": {
+      "type": "chapter",
+      "label": "中部第2节",
+      "aliases": [],
+      "tags": [
+        "原文",
+        "三体II"
+      ],
+      "path": "pages/三体II-20-中部第2节.md"
+    },
+    "三体II-21-中部第3节": {
+      "type": "chapter",
+      "label": "中部第3节",
+      "aliases": [],
+      "tags": [
+        "原文",
+        "三体II"
+      ],
+      "path": "pages/三体II-21-中部第3节.md"
+    },
+    "三体II-22-中部第4节": {
+      "type": "chapter",
+      "label": "中部第4节",
+      "aliases": [],
+      "tags": [
+        "原文",
+        "三体II"
+      ],
+      "path": "pages/三体II-22-中部第4节.md"
+    },
+    "三体II-23-中部第5节": {
+      "type": "chapter",
+      "label": "中部第5节",
+      "aliases": [],
+      "tags": [
+        "原文",
+        "三体II"
+      ],
+      "path": "pages/三体II-23-中部第5节.md"
+    },
+    "三体II-24-中部第6节": {
+      "type": "chapter",
+      "label": "中部第6节",
+      "aliases": [],
+      "tags": [
+        "原文",
+        "三体II"
+      ],
+      "path": "pages/三体II-24-中部第6节.md"
+    },
+    "三体II-25-中部第7节": {
+      "type": "chapter",
+      "label": "中部第7节",
+      "aliases": [],
+      "tags": [
+        "原文",
+        "三体II"
+      ],
+      "path": "pages/三体II-25-中部第7节.md"
+    },
+    "三体II-26-中部第8节": {
+      "type": "chapter",
+      "label": "中部第8节",
+      "aliases": [],
+      "tags": [
+        "原文",
+        "三体II"
+      ],
+      "path": "pages/三体II-26-中部第8节.md"
+    },
+    "三体II-27-中部第9节": {
+      "type": "chapter",
+      "label": "中部第9节",
+      "aliases": [],
+      "tags": [
+        "原文",
+        "三体II"
+      ],
+      "path": "pages/三体II-27-中部第9节.md"
+    },
+    "三体II-28-中部第10节": {
+      "type": "chapter",
+      "label": "中部第10节",
+      "aliases": [],
+      "tags": [
+        "原文",
+        "三体II"
+      ],
+      "path": "pages/三体II-28-中部第10节.md"
+    },
+    "三体II-29-中部第11节": {
+      "type": "chapter",
+      "label": "中部第11节",
+      "aliases": [],
+      "tags": [
+        "原文",
+        "三体II"
+      ],
+      "path": "pages/三体II-29-中部第11节.md"
+    },
+    "三体II-30-中部第12节": {
+      "type": "chapter",
+      "label": "中部第12节",
+      "aliases": [],
+      "tags": [
+        "原文",
+        "三体II"
+      ],
+      "path": "pages/三体II-30-中部第12节.md"
+    },
+    "三体II-31-下部第1节": {
+      "type": "chapter",
+      "label": "下部第1节",
+      "aliases": [],
+      "tags": [
+        "原文",
+        "三体II"
+      ],
+      "path": "pages/三体II-31-下部第1节.md"
+    },
+    "三体II-32-下部第2节": {
+      "type": "chapter",
+      "label": "下部第2节",
+      "aliases": [],
+      "tags": [
+        "原文",
+        "三体II"
+      ],
+      "path": "pages/三体II-32-下部第2节.md"
+    },
+    "三体II-33-下部第3节": {
+      "type": "chapter",
+      "label": "下部第3节",
+      "aliases": [],
+      "tags": [
+        "原文",
+        "三体II"
+      ],
+      "path": "pages/三体II-33-下部第3节.md"
+    },
+    "三体II-34-下部第4节": {
+      "type": "chapter",
+      "label": "下部第4节",
+      "aliases": [],
+      "tags": [
+        "原文",
+        "三体II"
+      ],
+      "path": "pages/三体II-34-下部第4节.md"
+    },
+    "三体II-35-下部第5节": {
+      "type": "chapter",
+      "label": "下部第5节",
+      "aliases": [],
+      "tags": [
+        "原文",
+        "三体II"
+      ],
+      "path": "pages/三体II-35-下部第5节.md"
+    },
+    "三体II-36-下部第6节": {
+      "type": "chapter",
+      "label": "下部第6节",
+      "aliases": [],
+      "tags": [
+        "原文",
+        "三体II"
+      ],
+      "path": "pages/三体II-36-下部第6节.md"
+    },
+    "三体II-37-下部第7节": {
+      "type": "chapter",
+      "label": "下部第7节",
+      "aliases": [],
+      "tags": [
+        "原文",
+        "三体II"
+      ],
+      "path": "pages/三体II-37-下部第7节.md"
+    },
+    "三体II-38-下部第8节": {
+      "type": "chapter",
+      "label": "下部第8节",
+      "aliases": [],
+      "tags": [
+        "原文",
+        "三体II"
+      ],
+      "path": "pages/三体II-38-下部第8节.md"
+    },
+    "三体II-39-下部第9节": {
+      "type": "chapter",
+      "label": "下部第9节",
+      "aliases": [],
+      "tags": [
+        "原文",
+        "三体II"
+      ],
+      "path": "pages/三体II-39-下部第9节.md"
+    },
+    "三体II-40-下部第10节": {
+      "type": "chapter",
+      "label": "下部第10节",
+      "aliases": [],
+      "tags": [
+        "原文",
+        "三体II"
+      ],
+      "path": "pages/三体II-40-下部第10节.md"
+    },
+    "三体II-41-下部第11节": {
+      "type": "chapter",
+      "label": "下部第11节",
+      "aliases": [],
+      "tags": [
+        "原文",
+        "三体II"
+      ],
+      "path": "pages/三体II-41-下部第11节.md"
+    },
+    "三体II-42-下部第12节": {
+      "type": "chapter",
+      "label": "下部第12节",
+      "aliases": [],
+      "tags": [
+        "原文",
+        "三体II"
+      ],
+      "path": "pages/三体II-42-下部第12节.md"
+    },
+    "三体II-43-下部第13节": {
+      "type": "chapter",
+      "label": "下部第13节",
+      "aliases": [],
+      "tags": [
+        "原文",
+        "三体II"
+      ],
+      "path": "pages/三体II-43-下部第13节.md"
+    },
+    "三体II-44-下部第14节": {
+      "type": "chapter",
+      "label": "下部第14节",
+      "aliases": [],
+      "tags": [
+        "原文",
+        "三体II"
+      ],
+      "path": "pages/三体II-44-下部第14节.md"
+    },
+    "三体II-45-下部第15节": {
+      "type": "chapter",
+      "label": "下部第15节",
+      "aliases": [],
+      "tags": [
+        "原文",
+        "三体II"
+      ],
+      "path": "pages/三体II-45-下部第15节.md"
+    },
+    "三体II-46-下部第16节": {
+      "type": "chapter",
+      "label": "下部第16节",
+      "aliases": [],
+      "tags": [
+        "原文",
+        "三体II"
+      ],
+      "path": "pages/三体II-46-下部第16节.md"
+    },
+    "三体II-47-下部第17节": {
+      "type": "chapter",
+      "label": "下部第17节",
+      "aliases": [],
+      "tags": [
+        "原文",
+        "三体II"
+      ],
+      "path": "pages/三体II-47-下部第17节.md"
+    },
+    "三体II-48-下部第18节": {
+      "type": "chapter",
+      "label": "下部第18节",
+      "aliases": [],
+      "tags": [
+        "原文",
+        "三体II"
+      ],
+      "path": "pages/三体II-48-下部第18节.md"
+    },
+    "三体II-49-下部第19节": {
+      "type": "chapter",
+      "label": "下部第19节",
+      "aliases": [],
+      "tags": [
+        "原文",
+        "三体II"
+      ],
+      "path": "pages/三体II-49-下部第19节.md"
+    },
+    "三体II-50-下部第20节": {
+      "type": "chapter",
+      "label": "下部第20节",
+      "aliases": [],
+      "tags": [
+        "原文",
+        "三体II"
+      ],
+      "path": "pages/三体II-50-下部第20节.md"
+    },
+    "三体II-51-下部第21节": {
+      "type": "chapter",
+      "label": "下部第21节",
+      "aliases": [],
+      "tags": [
+        "原文",
+        "三体II"
+      ],
+      "path": "pages/三体II-51-下部第21节.md"
+    },
+    "三体III-01-前言": {
+      "type": "chapter",
+      "label": "前言",
+      "aliases": [],
+      "tags": [
+        "原文",
+        "三体III"
+      ],
+      "path": "pages/三体III-01-前言.md"
+    },
+    "三体III-02-序": {
+      "type": "chapter",
+      "label": "序",
+      "aliases": [],
+      "tags": [
+        "原文",
+        "三体III"
+      ],
+      "path": "pages/三体III-02-序.md"
+    },
+    "三体III-03-纪年对照表": {
+      "type": "chapter",
+      "label": "纪年对照表",
+      "aliases": [],
+      "tags": [
+        "原文",
+        "三体III"
+      ],
+      "path": "pages/三体III-03-纪年对照表.md"
+    },
+    "三体III-04-第一部·第一章": {
+      "type": "chapter",
+      "label": "第一部·第一章",
+      "aliases": [],
+      "tags": [
+        "原文",
+        "三体III",
+        "第一部"
+      ],
+      "path": "pages/三体III-04-第一部·第一章.md"
+    },
+    "三体III-05-第一部·第二章": {
+      "type": "chapter",
+      "label": "第一部·第二章",
+      "aliases": [],
+      "tags": [
+        "原文",
+        "三体III",
+        "第一部"
+      ],
+      "path": "pages/三体III-05-第一部·第二章.md"
+    },
+    "三体III-06-第一部·第三章": {
+      "type": "chapter",
+      "label": "第一部·第三章",
+      "aliases": [],
+      "tags": [
+        "原文",
+        "三体III",
+        "第一部"
+      ],
+      "path": "pages/三体III-06-第一部·第三章.md"
+    },
+    "三体III-07-第一部·第四章": {
+      "type": "chapter",
+      "label": "第一部·第四章",
+      "aliases": [],
+      "tags": [
+        "原文",
+        "三体III",
+        "第一部"
+      ],
+      "path": "pages/三体III-07-第一部·第四章.md"
+    },
+    "三体III-08-第一部·第五章": {
+      "type": "chapter",
+      "label": "第一部·第五章",
+      "aliases": [],
+      "tags": [
+        "原文",
+        "三体III",
+        "第一部"
+      ],
+      "path": "pages/三体III-08-第一部·第五章.md"
+    },
+    "三体III-09-第一部·第六章": {
+      "type": "chapter",
+      "label": "第一部·第六章",
+      "aliases": [],
+      "tags": [
+        "原文",
+        "三体III",
+        "第一部"
+      ],
+      "path": "pages/三体III-09-第一部·第六章.md"
+    },
+    "三体III-10-第一部·第七章": {
+      "type": "chapter",
+      "label": "第一部·第七章",
+      "aliases": [],
+      "tags": [
+        "原文",
+        "三体III",
+        "第一部"
+      ],
+      "path": "pages/三体III-10-第一部·第七章.md"
+    },
+    "三体III-11-第一部·第八章": {
+      "type": "chapter",
+      "label": "第一部·第八章",
+      "aliases": [],
+      "tags": [
+        "原文",
+        "三体III",
+        "第一部"
+      ],
+      "path": "pages/三体III-11-第一部·第八章.md"
+    },
+    "三体III-12-第二部·第一章": {
+      "type": "chapter",
+      "label": "第二部·第一章",
+      "aliases": [],
+      "tags": [
+        "原文",
+        "三体III",
+        "第二部"
+      ],
+      "path": "pages/三体III-12-第二部·第一章.md"
+    },
+    "三体III-13-第二部·第二章": {
+      "type": "chapter",
+      "label": "第二部·第二章",
+      "aliases": [],
+      "tags": [
+        "原文",
+        "三体III",
+        "第二部"
+      ],
+      "path": "pages/三体III-13-第二部·第二章.md"
+    },
+    "三体III-14-第二部·第三章": {
+      "type": "chapter",
+      "label": "第二部·第三章",
+      "aliases": [],
+      "tags": [
+        "原文",
+        "三体III",
+        "第二部"
+      ],
+      "path": "pages/三体III-14-第二部·第三章.md"
+    },
+    "三体III-15-第二部·第四章": {
+      "type": "chapter",
+      "label": "第二部·第四章",
+      "aliases": [],
+      "tags": [
+        "原文",
+        "三体III",
+        "第二部"
+      ],
+      "path": "pages/三体III-15-第二部·第四章.md"
+    },
+    "三体III-16-第二部·第五章": {
+      "type": "chapter",
+      "label": "第二部·第五章",
+      "aliases": [],
+      "tags": [
+        "原文",
+        "三体III",
+        "第二部"
+      ],
+      "path": "pages/三体III-16-第二部·第五章.md"
+    },
+    "三体III-17-第二部·第六章": {
+      "type": "chapter",
+      "label": "第二部·第六章",
+      "aliases": [],
+      "tags": [
+        "原文",
+        "三体III",
+        "第二部"
+      ],
+      "path": "pages/三体III-17-第二部·第六章.md"
+    },
+    "三体III-18-第二部·第七章": {
+      "type": "chapter",
+      "label": "第二部·第七章",
+      "aliases": [],
+      "tags": [
+        "原文",
+        "三体III",
+        "第二部"
+      ],
+      "path": "pages/三体III-18-第二部·第七章.md"
+    },
+    "三体III-19-第二部·第八章": {
+      "type": "chapter",
+      "label": "第二部·第八章",
+      "aliases": [],
+      "tags": [
+        "原文",
+        "三体III",
+        "第二部"
+      ],
+      "path": "pages/三体III-19-第二部·第八章.md"
+    },
+    "三体III-20-第二部·第九章": {
+      "type": "chapter",
+      "label": "第二部·第九章",
+      "aliases": [],
+      "tags": [
+        "原文",
+        "三体III",
+        "第二部"
+      ],
+      "path": "pages/三体III-20-第二部·第九章.md"
+    },
+    "三体III-21-第二部·第十章": {
+      "type": "chapter",
+      "label": "第二部·第十章",
+      "aliases": [],
+      "tags": [
+        "原文",
+        "三体III",
+        "第二部"
+      ],
+      "path": "pages/三体III-21-第二部·第十章.md"
+    },
+    "三体III-22-第二部·第十一章": {
+      "type": "chapter",
+      "label": "第二部·第十一章",
+      "aliases": [],
+      "tags": [
+        "原文",
+        "三体III",
+        "第二部"
+      ],
+      "path": "pages/三体III-22-第二部·第十一章.md"
+    },
+    "三体III-23-第二部·第十二章": {
+      "type": "chapter",
+      "label": "第二部·第十二章",
+      "aliases": [],
+      "tags": [
+        "原文",
+        "三体III",
+        "第二部"
+      ],
+      "path": "pages/三体III-23-第二部·第十二章.md"
+    },
+    "三体III-24-第二部·第十三章": {
+      "type": "chapter",
+      "label": "第二部·第十三章",
+      "aliases": [],
+      "tags": [
+        "原文",
+        "三体III",
+        "第二部"
+      ],
+      "path": "pages/三体III-24-第二部·第十三章.md"
+    },
+    "三体III-25-第二部·第十四章": {
+      "type": "chapter",
+      "label": "第二部·第十四章",
+      "aliases": [],
+      "tags": [
+        "原文",
+        "三体III",
+        "第二部"
+      ],
+      "path": "pages/三体III-25-第二部·第十四章.md"
+    },
+    "三体III-26-第二部·第十五章": {
+      "type": "chapter",
+      "label": "第二部·第十五章",
+      "aliases": [],
+      "tags": [
+        "原文",
+        "三体III",
+        "第二部"
+      ],
+      "path": "pages/三体III-26-第二部·第十五章.md"
+    },
+    "三体III-27-第三部·第一章": {
+      "type": "chapter",
+      "label": "第三部·第一章",
+      "aliases": [],
+      "tags": [
+        "原文",
+        "三体III",
+        "第三部"
+      ],
+      "path": "pages/三体III-27-第三部·第一章.md"
+    },
+    "三体III-28-第三部·第二章": {
+      "type": "chapter",
+      "label": "第三部·第二章",
+      "aliases": [],
+      "tags": [
+        "原文",
+        "三体III",
+        "第三部"
+      ],
+      "path": "pages/三体III-28-第三部·第二章.md"
+    },
+    "三体III-29-第三部·第三章": {
+      "type": "chapter",
+      "label": "第三部·第三章",
+      "aliases": [],
+      "tags": [
+        "原文",
+        "三体III",
+        "第三部"
+      ],
+      "path": "pages/三体III-29-第三部·第三章.md"
+    },
+    "三体III-30-第三部·第四章": {
+      "type": "chapter",
+      "label": "第三部·第四章",
+      "aliases": [],
+      "tags": [
+        "原文",
+        "三体III",
+        "第三部"
+      ],
+      "path": "pages/三体III-30-第三部·第四章.md"
+    },
+    "三体III-31-第三部·第五章": {
+      "type": "chapter",
+      "label": "第三部·第五章",
+      "aliases": [],
+      "tags": [
+        "原文",
+        "三体III",
+        "第三部"
+      ],
+      "path": "pages/三体III-31-第三部·第五章.md"
+    },
+    "三体III-32-第三部·第六章": {
+      "type": "chapter",
+      "label": "第三部·第六章",
+      "aliases": [],
+      "tags": [
+        "原文",
+        "三体III",
+        "第三部"
+      ],
+      "path": "pages/三体III-32-第三部·第六章.md"
+    },
+    "三体III-33-第三部·第七章": {
+      "type": "chapter",
+      "label": "第三部·第七章",
+      "aliases": [],
+      "tags": [
+        "原文",
+        "三体III",
+        "第三部"
+      ],
+      "path": "pages/三体III-33-第三部·第七章.md"
+    },
+    "三体III-34-第三部·第八章": {
+      "type": "chapter",
+      "label": "第三部·第八章",
+      "aliases": [],
+      "tags": [
+        "原文",
+        "三体III",
+        "第三部"
+      ],
+      "path": "pages/三体III-34-第三部·第八章.md"
+    },
+    "三体III-35-第三部·第九章": {
+      "type": "chapter",
+      "label": "第三部·第九章",
+      "aliases": [],
+      "tags": [
+        "原文",
+        "三体III",
+        "第三部"
+      ],
+      "path": "pages/三体III-35-第三部·第九章.md"
+    },
+    "三体III-36-第三部·第十章": {
+      "type": "chapter",
+      "label": "第三部·第十章",
+      "aliases": [],
+      "tags": [
+        "原文",
+        "三体III",
+        "第三部"
+      ],
+      "path": "pages/三体III-36-第三部·第十章.md"
+    },
+    "三体III-37-第三部·第十一章": {
+      "type": "chapter",
+      "label": "第三部·第十一章",
+      "aliases": [],
+      "tags": [
+        "原文",
+        "三体III",
+        "第三部"
+      ],
+      "path": "pages/三体III-37-第三部·第十一章.md"
+    },
+    "三体III-38-第三部·第十二章": {
+      "type": "chapter",
+      "label": "第三部·第十二章",
+      "aliases": [],
+      "tags": [
+        "原文",
+        "三体III",
+        "第三部"
+      ],
+      "path": "pages/三体III-38-第三部·第十二章.md"
+    },
+    "三体III-39-第四部·第一章": {
+      "type": "chapter",
+      "label": "第四部·第一章",
+      "aliases": [],
+      "tags": [
+        "原文",
+        "三体III",
+        "第四部"
+      ],
+      "path": "pages/三体III-39-第四部·第一章.md"
+    },
+    "三体III-40-第四部·第二章": {
+      "type": "chapter",
+      "label": "第四部·第二章",
+      "aliases": [],
+      "tags": [
+        "原文",
+        "三体III",
+        "第四部"
+      ],
+      "path": "pages/三体III-40-第四部·第二章.md"
+    },
+    "三体III-41-第四部·第三章": {
+      "type": "chapter",
+      "label": "第四部·第三章",
+      "aliases": [],
+      "tags": [
+        "原文",
+        "三体III",
+        "第四部"
+      ],
+      "path": "pages/三体III-41-第四部·第三章.md"
+    },
+    "三体III-42-第五部·第一章": {
+      "type": "chapter",
+      "label": "第五部·第一章",
+      "aliases": [],
+      "tags": [
+        "原文",
+        "三体III",
+        "第五部"
+      ],
+      "path": "pages/三体III-42-第五部·第一章.md"
+    },
+    "三体III-43-第五部·第二章": {
+      "type": "chapter",
+      "label": "第五部·第二章",
+      "aliases": [],
+      "tags": [
+        "原文",
+        "三体III",
+        "第五部"
+      ],
+      "path": "pages/三体III-43-第五部·第二章.md"
+    },
+    "三体III-44-第五部·第三章": {
+      "type": "chapter",
+      "label": "第五部·第三章",
+      "aliases": [],
+      "tags": [
+        "原文",
+        "三体III",
+        "第五部"
+      ],
+      "path": "pages/三体III-44-第五部·第三章.md"
+    },
+    "三体III-45-第五部·第四章": {
+      "type": "chapter",
+      "label": "第五部·第四章",
+      "aliases": [],
+      "tags": [
+        "原文",
+        "三体III",
+        "第五部"
+      ],
+      "path": "pages/三体III-45-第五部·第四章.md"
+    },
+    "三体III-46-第五部·第五章": {
+      "type": "chapter",
+      "label": "第五部·第五章",
+      "aliases": [],
+      "tags": [
+        "原文",
+        "三体III",
+        "第五部"
+      ],
+      "path": "pages/三体III-46-第五部·第五章.md"
+    },
+    "三体III-47-第六部·第一章": {
+      "type": "chapter",
+      "label": "第六部·第一章",
+      "aliases": [],
+      "tags": [
+        "原文",
+        "三体III",
+        "第六部"
+      ],
+      "path": "pages/三体III-47-第六部·第一章.md"
+    },
+    "三体III-48-第六部·第二章": {
+      "type": "chapter",
+      "label": "第六部·第二章",
+      "aliases": [],
+      "tags": [
+        "原文",
+        "三体III",
+        "第六部"
+      ],
+      "path": "pages/三体III-48-第六部·第二章.md"
+    },
+    "三体III-49-第六部·第三章": {
+      "type": "chapter",
+      "label": "第六部·第三章",
+      "aliases": [],
+      "tags": [
+        "原文",
+        "三体III",
+        "第六部"
+      ],
+      "path": "pages/三体III-49-第六部·第三章.md"
+    },
+    "三体III-50-第六部·第四章": {
+      "type": "chapter",
+      "label": "第六部·第四章",
+      "aliases": [],
+      "tags": [
+        "原文",
+        "三体III",
+        "第六部"
+      ],
+      "path": "pages/三体III-50-第六部·第四章.md"
+    },
     "三体文明": {
       "type": "civilization",
       "label": "三体文明",
@@ -18,6 +1435,23 @@
       "description": "来自三体星系（半人马座α三星系统）的高度发达外星文明，以恒纪元与乱纪元交替为生存背景",
       "featured": true
     },
+    "三体星系": {
+      "type": "place",
+      "label": "三体星系",
+      "aliases": [
+        "半人马座三星系统",
+        "三星系",
+        "半人马座α三星"
+      ],
+      "tags": [
+        "地点",
+        "三体I",
+        "三体文明",
+        "天文"
+      ],
+      "path": "pages/三体星系.md",
+      "description": "距太阳约四光年的半人马座α三星系统，三颗恒星的混沌运动造就了三体文明周而复始的文明毁灭与重建。"
+    },
     "二向箔": {
       "type": "weapon",
       "label": "二向箔",
@@ -34,6 +1468,34 @@
       "path": "pages/二向箔.md",
       "description": "宇宙中的终极武器，一片展开后将三维空间降为二维平面的薄膜，用于消灭整个星系的文明"
     },
+    "云天明": {
+      "type": "person",
+      "label": "云天明",
+      "aliases": [
+        "云天明的大脑"
+      ],
+      "tags": [
+        "人物",
+        "三体III"
+      ],
+      "path": "pages/云天明.md",
+      "description": "绝症患者，单恋程心，将一颗星星作为礼物送给她；后来大脑被送往三体文明，成为人类在异星的秘密使者。",
+      "featured": true
+    },
+    "危机纪元": {
+      "type": "concept",
+      "label": "危机纪元",
+      "aliases": [
+        "危机时代"
+      ],
+      "tags": [
+        "概念",
+        "三体II",
+        "历史纪元"
+      ],
+      "path": "pages/危机纪元.md",
+      "description": "三体入侵确认（约公元201x年）至罗辑建立黑暗森林威慑（约2208年）的约两百年历史时期，人类经历幼稚症、大低谷与舰队建设，最终以面壁计划成功告终。"
+    },
     "叶文洁": {
       "type": "person",
       "label": "叶文洁",
@@ -49,6 +1511,70 @@
       ],
       "path": "pages/叶文洁.md",
       "description": "天体物理学家，红岸工程核心人物，向三体人发出地球坐标，ETO创始人",
+      "featured": true
+    },
+    "地球三体组织": {
+      "type": "organization",
+      "label": "地球三体组织",
+      "aliases": [
+        "ETO",
+        "地三组",
+        "叛军"
+      ],
+      "tags": [
+        "组织",
+        "三体I",
+        "三体II"
+      ],
+      "path": "pages/地球三体组织.md",
+      "description": "叶文洁秘密创立的地球叛军组织，成员认同三体文明超越人类，配合三体入侵、阻止人类备战。分为降临派、拯救派、幸存派三个派别。"
+    },
+    "威慑纪元": {
+      "type": "concept",
+      "label": "威慑纪元",
+      "aliases": [
+        "黑暗森林威慑时代"
+      ],
+      "tags": [
+        "概念",
+        "三体III",
+        "历史纪元"
+      ],
+      "path": "pages/威慑纪元.md",
+      "description": "罗辑建立黑暗森林威慑后持续约62年的人类历史时期，双方在相互毁灭的恐惧下维持了特殊的和平，地球生态恢复、三体文明传送知识，却以程心失守告终。"
+    },
+    "宇宙社会学": {
+      "type": "concept",
+      "label": "宇宙社会学",
+      "aliases": [
+        "宇宙文明公理",
+        "Cosmic Sociology"
+      ],
+      "tags": [
+        "概念",
+        "三体II",
+        "理论"
+      ],
+      "path": "pages/宇宙社会学.md",
+      "description": "叶文洁建议、罗辑创立的理论学科，以两条公理和两个关键概念推导出\"黑暗森林\"宇宙图景。",
+      "featured": true
+    },
+    "执剑人": {
+      "type": "concept",
+      "label": "执剑人",
+      "aliases": [
+        "Swordholder",
+        "威慑控制者",
+        "引力波发射控制者"
+      ],
+      "tags": [
+        "概念",
+        "三体II",
+        "三体III",
+        "威慑制度"
+      ],
+      "path": "pages/执剑人.md",
+      "description": "掌握引力波发射装置开关的人类代表，是黑暗森林威慑的具身化，相当于悬在两个世界头上的达摩克利斯之剑的那根发丝。",
       "featured": true
     },
     "智子": {
@@ -68,6 +1594,38 @@
       "description": "三体文明将质子展开为二维平面并蚀刻超级计算机电路后折叠而成的超高维粒子计算机，可超光速通讯，用于监控和封锁地球基础科学研究",
       "featured": true
     },
+    "水滴探测器": {
+      "type": "weapon",
+      "label": "水滴探测器",
+      "aliases": [
+        "水滴",
+        "探测器",
+        "强互作用力探测器"
+      ],
+      "tags": [
+        "武器",
+        "三体II",
+        "三体文明"
+      ],
+      "path": "pages/水滴探测器.md",
+      "description": "三体文明发往太阳系的终极武器，外形如完美液滴，由强互作用力材料构成，人类任何武器对其无效，单枚足以摧毁整个人类舰队。",
+      "featured": true
+    },
+    "汪淼": {
+      "type": "person",
+      "label": "汪淼",
+      "aliases": [
+        "汪教授"
+      ],
+      "tags": [
+        "人物",
+        "三体I",
+        "科学家"
+      ],
+      "path": "pages/汪淼.md",
+      "description": "纳米材料研究教授，《三体》第一部的主视角人物，经历宇宙闪烁并深入调查地球三体组织。",
+      "featured": true
+    },
     "程心": {
       "type": "person",
       "label": "程心",
@@ -83,6 +1641,20 @@
       ],
       "path": "pages/程心.md",
       "description": "航天工程师，第二任执剑人，在关键时刻放弃威慑，此后见证人类文明的多次灾难"
+    },
+    "章北海": {
+      "type": "person",
+      "label": "章北海",
+      "aliases": [
+        "章政委"
+      ],
+      "tags": [
+        "人物",
+        "三体II"
+      ],
+      "path": "pages/章北海.md",
+      "description": "太空军政委，表面上是最坚定的必胜论者，实际上是秘密推进人类逃亡方案的战略家，水滴攻击中驾\"自然选择\"号脱逃。",
+      "featured": true
     },
     "红岸基地": {
       "type": "place",
@@ -116,6 +1688,22 @@
       "description": "社会学家，第四位面壁者，黑暗森林法则创立者，第一任执剑人",
       "featured": true
     },
+    "面壁者": {
+      "type": "concept",
+      "label": "面壁者",
+      "aliases": [
+        "面壁计划",
+        "Wallfacer"
+      ],
+      "tags": [
+        "概念",
+        "三体II",
+        "战略制度"
+      ],
+      "path": "pages/面壁者.md",
+      "description": "人类应对三体入侵设立的战略制度：选定四名战略家，凭借智子无法读取人类思维的漏洞，独立制定秘密反击计划。",
+      "featured": true
+    },
     "黑暗森林法则": {
       "type": "law",
       "label": "黑暗森林法则",
@@ -133,1858 +1721,333 @@
       "path": "pages/黑暗森林法则.md",
       "description": "宇宙社会学基本公理：宇宙中每个文明都是带枪的猎人，必须对其他文明格杀勿论",
       "featured": true
-    },
-    "三体I-01-前言": {
-      "type": "chapter",
-      "label": "前言",
-      "book": "三体I",
-      "book_seq": 1,
-      "tags": [
-        "原文",
-        "三体I"
-      ],
-      "pn_prefix": "1-01",
-      "path": "pages/三体I-01-前言.md",
-      "description": "三体I 第1节：前言"
-    },
-    "三体I-02-疯狂年代": {
-      "type": "chapter",
-      "label": "疯狂年代",
-      "book": "三体I",
-      "book_seq": 2,
-      "tags": [
-        "原文",
-        "三体I"
-      ],
-      "pn_prefix": "1-02",
-      "path": "pages/三体I-02-疯狂年代.md",
-      "description": "三体I 第2节：疯狂年代"
-    },
-    "三体I-03-寂静的春天": {
-      "type": "chapter",
-      "label": "寂静的春天",
-      "book": "三体I",
-      "book_seq": 3,
-      "tags": [
-        "原文",
-        "三体I"
-      ],
-      "pn_prefix": "1-03",
-      "path": "pages/三体I-03-寂静的春天.md",
-      "description": "三体I 第3节：寂静的春天"
-    },
-    "三体I-04-红岸之一": {
-      "type": "chapter",
-      "label": "红岸之一",
-      "book": "三体I",
-      "book_seq": 4,
-      "tags": [
-        "原文",
-        "三体I"
-      ],
-      "pn_prefix": "1-04",
-      "path": "pages/三体I-04-红岸之一.md",
-      "description": "三体I 第4节：红岸之一"
-    },
-    "三体I-05-三十八年后": {
-      "type": "chapter",
-      "label": "三十八年后",
-      "book": "三体I",
-      "book_seq": 5,
-      "tags": [
-        "原文",
-        "三体I"
-      ],
-      "pn_prefix": "1-05",
-      "path": "pages/三体I-05-三十八年后.md",
-      "description": "三体I 第5节：三十八年后"
-    },
-    "三体I-06-台球": {
-      "type": "chapter",
-      "label": "台球",
-      "book": "三体I",
-      "book_seq": 6,
-      "tags": [
-        "原文",
-        "三体I"
-      ],
-      "pn_prefix": "1-06",
-      "path": "pages/三体I-06-台球.md",
-      "description": "三体I 第6节：台球"
-    },
-    "三体I-07-射手和农场主": {
-      "type": "chapter",
-      "label": "射手和农场主",
-      "book": "三体I",
-      "book_seq": 7,
-      "tags": [
-        "原文",
-        "三体I"
-      ],
-      "pn_prefix": "1-07",
-      "path": "pages/三体I-07-射手和农场主.md",
-      "description": "三体I 第7节：射手和农场主"
-    },
-    "三体I-08-周文王·长夜": {
-      "type": "chapter",
-      "label": "周文王·长夜",
-      "book": "三体I",
-      "book_seq": 8,
-      "tags": [
-        "原文",
-        "三体I"
-      ],
-      "pn_prefix": "1-08",
-      "path": "pages/三体I-08-周文王·长夜.md",
-      "description": "三体I 第8节：周文王·长夜"
-    },
-    "三体I-09-叶文洁": {
-      "type": "chapter",
-      "label": "叶文洁",
-      "book": "三体I",
-      "book_seq": 9,
-      "tags": [
-        "原文",
-        "三体I"
-      ],
-      "pn_prefix": "1-09",
-      "path": "pages/三体I-09-叶文洁.md",
-      "description": "三体I 第9节：叶文洁"
-    },
-    "三体I-10-字宙闪烁": {
-      "type": "chapter",
-      "label": "字宙闪烁",
-      "book": "三体I",
-      "book_seq": 10,
-      "tags": [
-        "原文",
-        "三体I"
-      ],
-      "pn_prefix": "1-10",
-      "path": "pages/三体I-10-字宙闪烁.md",
-      "description": "三体I 第10节：字宙闪烁"
-    },
-    "三体I-11-大史": {
-      "type": "chapter",
-      "label": "大史",
-      "book": "三体I",
-      "book_seq": 11,
-      "tags": [
-        "原文",
-        "三体I"
-      ],
-      "pn_prefix": "1-11",
-      "path": "pages/三体I-11-大史.md",
-      "description": "三体I 第11节：大史"
-    },
-    "三体I-12-三体·墨子·烈焰": {
-      "type": "chapter",
-      "label": "三体·墨子·烈焰",
-      "book": "三体I",
-      "book_seq": 12,
-      "tags": [
-        "原文",
-        "三体I"
-      ],
-      "pn_prefix": "1-12",
-      "path": "pages/三体I-12-三体·墨子·烈焰.md",
-      "description": "三体I 第12节：三体·墨子·烈焰"
-    },
-    "三体I-13-红岸之二": {
-      "type": "chapter",
-      "label": "红岸之二",
-      "book": "三体I",
-      "book_seq": 13,
-      "tags": [
-        "原文",
-        "三体I"
-      ],
-      "pn_prefix": "1-13",
-      "path": "pages/三体I-13-红岸之二.md",
-      "description": "三体I 第13节：红岸之二"
-    },
-    "三体I-14-红岸之三": {
-      "type": "chapter",
-      "label": "红岸之三",
-      "book": "三体I",
-      "book_seq": 14,
-      "tags": [
-        "原文",
-        "三体I"
-      ],
-      "pn_prefix": "1-14",
-      "path": "pages/三体I-14-红岸之三.md",
-      "description": "三体I 第14节：红岸之三"
-    },
-    "三体I-15-红岸之四": {
-      "type": "chapter",
-      "label": "红岸之四",
-      "book": "三体I",
-      "book_seq": 15,
-      "tags": [
-        "原文",
-        "三体I"
-      ],
-      "pn_prefix": "1-15",
-      "path": "pages/三体I-15-红岸之四.md",
-      "description": "三体I 第15节：红岸之四"
-    },
-    "三体I-16-三体、哥白尼、宇宙橄榄球、三日凌空": {
-      "type": "chapter",
-      "label": "三体、哥白尼、宇宙橄榄球、三日凌空",
-      "book": "三体I",
-      "book_seq": 16,
-      "tags": [
-        "原文",
-        "三体I"
-      ],
-      "pn_prefix": "1-16",
-      "path": "pages/三体I-16-三体、哥白尼、宇宙橄榄球、三日凌空.md",
-      "description": "三体I 第16节：三体、哥白尼、宇宙橄榄球、三日凌空"
-    },
-    "三体I-17-三体问题": {
-      "type": "chapter",
-      "label": "三体问题",
-      "book": "三体I",
-      "book_seq": 17,
-      "tags": [
-        "原文",
-        "三体I"
-      ],
-      "pn_prefix": "1-17",
-      "path": "pages/三体I-17-三体问题.md",
-      "description": "三体I 第17节：三体问题"
-    },
-    "三体I-18-三体、牛顿、冯·诺依曼、秦始皇、三日连珠": {
-      "type": "chapter",
-      "label": "三体、牛顿、冯·诺依曼、秦始皇、三日连珠",
-      "book": "三体I",
-      "book_seq": 18,
-      "tags": [
-        "原文",
-        "三体I"
-      ],
-      "pn_prefix": "1-18",
-      "path": "pages/三体I-18-三体、牛顿、冯·诺依曼、秦始皇、三日连珠.md",
-      "description": "三体I 第18节：三体、牛顿、冯·诺依曼、秦始皇、三日连珠"
-    },
-    "三体I-19-聚会": {
-      "type": "chapter",
-      "label": "聚会",
-      "book": "三体I",
-      "book_seq": 19,
-      "tags": [
-        "原文",
-        "三体I"
-      ],
-      "pn_prefix": "1-19",
-      "path": "pages/三体I-19-聚会.md",
-      "description": "三体I 第19节：聚会"
-    },
-    "三体I-20-三体、爱因斯坦、单摆、大撕裂": {
-      "type": "chapter",
-      "label": "三体、爱因斯坦、单摆、大撕裂",
-      "book": "三体I",
-      "book_seq": 20,
-      "tags": [
-        "原文",
-        "三体I"
-      ],
-      "pn_prefix": "1-20",
-      "path": "pages/三体I-20-三体、爱因斯坦、单摆、大撕裂.md",
-      "description": "三体I 第20节：三体、爱因斯坦、单摆、大撕裂"
-    },
-    "三体I-21-三体、远征": {
-      "type": "chapter",
-      "label": "三体、远征",
-      "book": "三体I",
-      "book_seq": 21,
-      "tags": [
-        "原文",
-        "三体I"
-      ],
-      "pn_prefix": "1-21",
-      "path": "pages/三体I-21-三体、远征.md",
-      "description": "三体I 第21节：三体、远征"
-    },
-    "三体I-22-地球叛军": {
-      "type": "chapter",
-      "label": "地球叛军",
-      "book": "三体I",
-      "book_seq": 22,
-      "tags": [
-        "原文",
-        "三体I"
-      ],
-      "pn_prefix": "1-22",
-      "path": "pages/三体I-22-地球叛军.md",
-      "description": "三体I 第22节：地球叛军"
-    },
-    "三体I-23-红岸之五": {
-      "type": "chapter",
-      "label": "红岸之五",
-      "book": "三体I",
-      "book_seq": 23,
-      "tags": [
-        "原文",
-        "三体I"
-      ],
-      "pn_prefix": "1-23",
-      "path": "pages/三体I-23-红岸之五.md",
-      "description": "三体I 第23节：红岸之五"
-    },
-    "三体I-24-红岸之六": {
-      "type": "chapter",
-      "label": "红岸之六",
-      "book": "三体I",
-      "book_seq": 24,
-      "tags": [
-        "原文",
-        "三体I"
-      ],
-      "pn_prefix": "1-24",
-      "path": "pages/三体I-24-红岸之六.md",
-      "description": "三体I 第24节：红岸之六"
-    },
-    "三体I-25-叛乱": {
-      "type": "chapter",
-      "label": "叛乱",
-      "book": "三体I",
-      "book_seq": 25,
-      "tags": [
-        "原文",
-        "三体I"
-      ],
-      "pn_prefix": "1-25",
-      "path": "pages/三体I-25-叛乱.md",
-      "description": "三体I 第25节：叛乱"
-    },
-    "三体I-26-雷志成、杨卫宁之死": {
-      "type": "chapter",
-      "label": "雷志成、杨卫宁之死",
-      "book": "三体I",
-      "book_seq": 26,
-      "tags": [
-        "原文",
-        "三体I"
-      ],
-      "pn_prefix": "1-26",
-      "path": "pages/三体I-26-雷志成、杨卫宁之死.md",
-      "description": "三体I 第26节：雷志成、杨卫宁之死"
-    },
-    "三体I-27-无人忏悔": {
-      "type": "chapter",
-      "label": "无人忏悔",
-      "book": "三体I",
-      "book_seq": 27,
-      "tags": [
-        "原文",
-        "三体I"
-      ],
-      "pn_prefix": "1-27",
-      "path": "pages/三体I-27-无人忏悔.md",
-      "description": "三体I 第27节：无人忏悔"
-    },
-    "三体I-28-伊文斯": {
-      "type": "chapter",
-      "label": "伊文斯",
-      "book": "三体I",
-      "book_seq": 28,
-      "tags": [
-        "原文",
-        "三体I"
-      ],
-      "pn_prefix": "1-28",
-      "path": "pages/三体I-28-伊文斯.md",
-      "description": "三体I 第28节：伊文斯"
-    },
-    "三体I-29-第二红岸基地": {
-      "type": "chapter",
-      "label": "第二红岸基地",
-      "book": "三体I",
-      "book_seq": 29,
-      "tags": [
-        "原文",
-        "三体I"
-      ],
-      "pn_prefix": "1-29",
-      "path": "pages/三体I-29-第二红岸基地.md",
-      "description": "三体I 第29节：第二红岸基地"
-    },
-    "三体I-30-地球三体运动": {
-      "type": "chapter",
-      "label": "地球三体运动",
-      "book": "三体I",
-      "book_seq": 30,
-      "tags": [
-        "原文",
-        "三体I"
-      ],
-      "pn_prefix": "1-30",
-      "path": "pages/三体I-30-地球三体运动.md",
-      "description": "三体I 第30节：地球三体运动"
-    },
-    "三体I-31-两个质子": {
-      "type": "chapter",
-      "label": "两个质子",
-      "book": "三体I",
-      "book_seq": 31,
-      "tags": [
-        "原文",
-        "三体I"
-      ],
-      "pn_prefix": "1-31",
-      "path": "pages/三体I-31-两个质子.md",
-      "description": "三体I 第31节：两个质子"
-    },
-    "三体I-32-古筝行动": {
-      "type": "chapter",
-      "label": "古筝行动",
-      "book": "三体I",
-      "book_seq": 32,
-      "tags": [
-        "原文",
-        "三体I"
-      ],
-      "pn_prefix": "1-32",
-      "path": "pages/三体I-32-古筝行动.md",
-      "description": "三体I 第32节：古筝行动"
-    },
-    "三体I-33-监听员": {
-      "type": "chapter",
-      "label": "监听员",
-      "book": "三体I",
-      "book_seq": 33,
-      "tags": [
-        "原文",
-        "三体I"
-      ],
-      "pn_prefix": "1-33",
-      "path": "pages/三体I-33-监听员.md",
-      "description": "三体I 第33节：监听员"
-    },
-    "三体I-34-智子": {
-      "type": "chapter",
-      "label": "智子",
-      "book": "三体I",
-      "book_seq": 34,
-      "tags": [
-        "原文",
-        "三体I"
-      ],
-      "pn_prefix": "1-34",
-      "path": "pages/三体I-34-智子.md",
-      "description": "三体I 第34节：智子"
-    },
-    "三体I-35-虫子": {
-      "type": "chapter",
-      "label": "虫子",
-      "book": "三体I",
-      "book_seq": 35,
-      "tags": [
-        "原文",
-        "三体I"
-      ],
-      "pn_prefix": "1-35",
-      "path": "pages/三体I-35-虫子.md",
-      "description": "三体I 第35节：虫子"
-    },
-    "三体I-36-尾声·遗址": {
-      "type": "chapter",
-      "label": "尾声·遗址",
-      "book": "三体I",
-      "book_seq": 36,
-      "tags": [
-        "原文",
-        "三体I"
-      ],
-      "pn_prefix": "1-36",
-      "path": "pages/三体I-36-尾声·遗址.md",
-      "description": "三体I 第36节：尾声·遗址"
-    },
-    "三体I-37-后记": {
-      "type": "chapter",
-      "label": "后记",
-      "book": "三体I",
-      "book_seq": 37,
-      "tags": [
-        "原文",
-        "三体I"
-      ],
-      "pn_prefix": "1-37",
-      "path": "pages/三体I-37-后记.md",
-      "description": "三体I 第37节：后记"
-    },
-    "三体II-02-序章": {
-      "type": "chapter",
-      "label": "序章",
-      "book": "三体II",
-      "book_seq": 2,
-      "tags": [
-        "原文",
-        "三体II"
-      ],
-      "pn_prefix": "2-02",
-      "path": "pages/三体II-02-序章.md",
-      "description": "三体II 序章"
-    },
-    "三体II-03-上部第1节": {
-      "type": "chapter",
-      "label": "上部第1节",
-      "book": "三体II",
-      "book_seq": 3,
-      "tags": [
-        "原文",
-        "三体II"
-      ],
-      "pn_prefix": "2-03",
-      "path": "pages/三体II-03-上部第1节.md",
-      "description": "三体II 上部第1节"
-    },
-    "三体II-04-上部第2节": {
-      "type": "chapter",
-      "label": "上部第2节",
-      "book": "三体II",
-      "book_seq": 4,
-      "tags": [
-        "原文",
-        "三体II"
-      ],
-      "pn_prefix": "2-04",
-      "path": "pages/三体II-04-上部第2节.md",
-      "description": "三体II 上部第2节"
-    },
-    "三体II-05-上部第3节": {
-      "type": "chapter",
-      "label": "上部第3节",
-      "book": "三体II",
-      "book_seq": 5,
-      "tags": [
-        "原文",
-        "三体II"
-      ],
-      "pn_prefix": "2-05",
-      "path": "pages/三体II-05-上部第3节.md",
-      "description": "三体II 上部第3节"
-    },
-    "三体II-06-上部第4节": {
-      "type": "chapter",
-      "label": "上部第4节",
-      "book": "三体II",
-      "book_seq": 6,
-      "tags": [
-        "原文",
-        "三体II"
-      ],
-      "pn_prefix": "2-06",
-      "path": "pages/三体II-06-上部第4节.md",
-      "description": "三体II 上部第4节"
-    },
-    "三体II-07-上部第5节": {
-      "type": "chapter",
-      "label": "上部第5节",
-      "book": "三体II",
-      "book_seq": 7,
-      "tags": [
-        "原文",
-        "三体II"
-      ],
-      "pn_prefix": "2-07",
-      "path": "pages/三体II-07-上部第5节.md",
-      "description": "三体II 上部第5节"
-    },
-    "三体II-08-上部第6节": {
-      "type": "chapter",
-      "label": "上部第6节",
-      "book": "三体II",
-      "book_seq": 8,
-      "tags": [
-        "原文",
-        "三体II"
-      ],
-      "pn_prefix": "2-08",
-      "path": "pages/三体II-08-上部第6节.md",
-      "description": "三体II 上部第6节"
-    },
-    "三体II-09-上部第7节": {
-      "type": "chapter",
-      "label": "上部第7节",
-      "book": "三体II",
-      "book_seq": 9,
-      "tags": [
-        "原文",
-        "三体II"
-      ],
-      "pn_prefix": "2-09",
-      "path": "pages/三体II-09-上部第7节.md",
-      "description": "三体II 上部第7节"
-    },
-    "三体II-10-上部第8节": {
-      "type": "chapter",
-      "label": "上部第8节",
-      "book": "三体II",
-      "book_seq": 10,
-      "tags": [
-        "原文",
-        "三体II"
-      ],
-      "pn_prefix": "2-10",
-      "path": "pages/三体II-10-上部第8节.md",
-      "description": "三体II 上部第8节"
-    },
-    "三体II-11-上部第9节": {
-      "type": "chapter",
-      "label": "上部第9节",
-      "book": "三体II",
-      "book_seq": 11,
-      "tags": [
-        "原文",
-        "三体II"
-      ],
-      "pn_prefix": "2-11",
-      "path": "pages/三体II-11-上部第9节.md",
-      "description": "三体II 上部第9节"
-    },
-    "三体II-12-上部第10节": {
-      "type": "chapter",
-      "label": "上部第10节",
-      "book": "三体II",
-      "book_seq": 12,
-      "tags": [
-        "原文",
-        "三体II"
-      ],
-      "pn_prefix": "2-12",
-      "path": "pages/三体II-12-上部第10节.md",
-      "description": "三体II 上部第10节"
-    },
-    "三体II-13-上部第11节": {
-      "type": "chapter",
-      "label": "上部第11节",
-      "book": "三体II",
-      "book_seq": 13,
-      "tags": [
-        "原文",
-        "三体II"
-      ],
-      "pn_prefix": "2-13",
-      "path": "pages/三体II-13-上部第11节.md",
-      "description": "三体II 上部第11节"
-    },
-    "三体II-14-上部第12节": {
-      "type": "chapter",
-      "label": "上部第12节",
-      "book": "三体II",
-      "book_seq": 14,
-      "tags": [
-        "原文",
-        "三体II"
-      ],
-      "pn_prefix": "2-14",
-      "path": "pages/三体II-14-上部第12节.md",
-      "description": "三体II 上部第12节"
-    },
-    "三体II-15-上部第13节": {
-      "type": "chapter",
-      "label": "上部第13节",
-      "book": "三体II",
-      "book_seq": 15,
-      "tags": [
-        "原文",
-        "三体II"
-      ],
-      "pn_prefix": "2-15",
-      "path": "pages/三体II-15-上部第13节.md",
-      "description": "三体II 上部第13节"
-    },
-    "三体II-16-上部第14节": {
-      "type": "chapter",
-      "label": "上部第14节",
-      "book": "三体II",
-      "book_seq": 16,
-      "tags": [
-        "原文",
-        "三体II"
-      ],
-      "pn_prefix": "2-16",
-      "path": "pages/三体II-16-上部第14节.md",
-      "description": "三体II 上部第14节"
-    },
-    "三体II-17-上部第15节": {
-      "type": "chapter",
-      "label": "上部第15节",
-      "book": "三体II",
-      "book_seq": 17,
-      "tags": [
-        "原文",
-        "三体II"
-      ],
-      "pn_prefix": "2-17",
-      "path": "pages/三体II-17-上部第15节.md",
-      "description": "三体II 上部第15节"
-    },
-    "三体II-18-上部第16节": {
-      "type": "chapter",
-      "label": "上部第16节",
-      "book": "三体II",
-      "book_seq": 18,
-      "tags": [
-        "原文",
-        "三体II"
-      ],
-      "pn_prefix": "2-18",
-      "path": "pages/三体II-18-上部第16节.md",
-      "description": "三体II 上部第16节"
-    },
-    "三体II-19-中部第1节": {
-      "type": "chapter",
-      "label": "中部第1节",
-      "book": "三体II",
-      "book_seq": 19,
-      "tags": [
-        "原文",
-        "三体II"
-      ],
-      "pn_prefix": "2-19",
-      "path": "pages/三体II-19-中部第1节.md",
-      "description": "三体II 中部第1节"
-    },
-    "三体II-20-中部第2节": {
-      "type": "chapter",
-      "label": "中部第2节",
-      "book": "三体II",
-      "book_seq": 20,
-      "tags": [
-        "原文",
-        "三体II"
-      ],
-      "pn_prefix": "2-20",
-      "path": "pages/三体II-20-中部第2节.md",
-      "description": "三体II 中部第2节"
-    },
-    "三体II-21-中部第3节": {
-      "type": "chapter",
-      "label": "中部第3节",
-      "book": "三体II",
-      "book_seq": 21,
-      "tags": [
-        "原文",
-        "三体II"
-      ],
-      "pn_prefix": "2-21",
-      "path": "pages/三体II-21-中部第3节.md",
-      "description": "三体II 中部第3节"
-    },
-    "三体II-22-中部第4节": {
-      "type": "chapter",
-      "label": "中部第4节",
-      "book": "三体II",
-      "book_seq": 22,
-      "tags": [
-        "原文",
-        "三体II"
-      ],
-      "pn_prefix": "2-22",
-      "path": "pages/三体II-22-中部第4节.md",
-      "description": "三体II 中部第4节"
-    },
-    "三体II-23-中部第5节": {
-      "type": "chapter",
-      "label": "中部第5节",
-      "book": "三体II",
-      "book_seq": 23,
-      "tags": [
-        "原文",
-        "三体II"
-      ],
-      "pn_prefix": "2-23",
-      "path": "pages/三体II-23-中部第5节.md",
-      "description": "三体II 中部第5节"
-    },
-    "三体II-24-中部第6节": {
-      "type": "chapter",
-      "label": "中部第6节",
-      "book": "三体II",
-      "book_seq": 24,
-      "tags": [
-        "原文",
-        "三体II"
-      ],
-      "pn_prefix": "2-24",
-      "path": "pages/三体II-24-中部第6节.md",
-      "description": "三体II 中部第6节"
-    },
-    "三体II-25-中部第7节": {
-      "type": "chapter",
-      "label": "中部第7节",
-      "book": "三体II",
-      "book_seq": 25,
-      "tags": [
-        "原文",
-        "三体II"
-      ],
-      "pn_prefix": "2-25",
-      "path": "pages/三体II-25-中部第7节.md",
-      "description": "三体II 中部第7节"
-    },
-    "三体II-26-中部第8节": {
-      "type": "chapter",
-      "label": "中部第8节",
-      "book": "三体II",
-      "book_seq": 26,
-      "tags": [
-        "原文",
-        "三体II"
-      ],
-      "pn_prefix": "2-26",
-      "path": "pages/三体II-26-中部第8节.md",
-      "description": "三体II 中部第8节"
-    },
-    "三体II-27-中部第9节": {
-      "type": "chapter",
-      "label": "中部第9节",
-      "book": "三体II",
-      "book_seq": 27,
-      "tags": [
-        "原文",
-        "三体II"
-      ],
-      "pn_prefix": "2-27",
-      "path": "pages/三体II-27-中部第9节.md",
-      "description": "三体II 中部第9节"
-    },
-    "三体II-28-中部第10节": {
-      "type": "chapter",
-      "label": "中部第10节",
-      "book": "三体II",
-      "book_seq": 28,
-      "tags": [
-        "原文",
-        "三体II"
-      ],
-      "pn_prefix": "2-28",
-      "path": "pages/三体II-28-中部第10节.md",
-      "description": "三体II 中部第10节"
-    },
-    "三体II-29-中部第11节": {
-      "type": "chapter",
-      "label": "中部第11节",
-      "book": "三体II",
-      "book_seq": 29,
-      "tags": [
-        "原文",
-        "三体II"
-      ],
-      "pn_prefix": "2-29",
-      "path": "pages/三体II-29-中部第11节.md",
-      "description": "三体II 中部第11节"
-    },
-    "三体II-30-中部第12节": {
-      "type": "chapter",
-      "label": "中部第12节",
-      "book": "三体II",
-      "book_seq": 30,
-      "tags": [
-        "原文",
-        "三体II"
-      ],
-      "pn_prefix": "2-30",
-      "path": "pages/三体II-30-中部第12节.md",
-      "description": "三体II 中部第12节"
-    },
-    "三体II-31-下部第1节": {
-      "type": "chapter",
-      "label": "下部第1节",
-      "book": "三体II",
-      "book_seq": 31,
-      "tags": [
-        "原文",
-        "三体II"
-      ],
-      "pn_prefix": "2-31",
-      "path": "pages/三体II-31-下部第1节.md",
-      "description": "三体II 下部第1节"
-    },
-    "三体II-32-下部第2节": {
-      "type": "chapter",
-      "label": "下部第2节",
-      "book": "三体II",
-      "book_seq": 32,
-      "tags": [
-        "原文",
-        "三体II"
-      ],
-      "pn_prefix": "2-32",
-      "path": "pages/三体II-32-下部第2节.md",
-      "description": "三体II 下部第2节"
-    },
-    "三体II-33-下部第3节": {
-      "type": "chapter",
-      "label": "下部第3节",
-      "book": "三体II",
-      "book_seq": 33,
-      "tags": [
-        "原文",
-        "三体II"
-      ],
-      "pn_prefix": "2-33",
-      "path": "pages/三体II-33-下部第3节.md",
-      "description": "三体II 下部第3节"
-    },
-    "三体II-34-下部第4节": {
-      "type": "chapter",
-      "label": "下部第4节",
-      "book": "三体II",
-      "book_seq": 34,
-      "tags": [
-        "原文",
-        "三体II"
-      ],
-      "pn_prefix": "2-34",
-      "path": "pages/三体II-34-下部第4节.md",
-      "description": "三体II 下部第4节"
-    },
-    "三体II-35-下部第5节": {
-      "type": "chapter",
-      "label": "下部第5节",
-      "book": "三体II",
-      "book_seq": 35,
-      "tags": [
-        "原文",
-        "三体II"
-      ],
-      "pn_prefix": "2-35",
-      "path": "pages/三体II-35-下部第5节.md",
-      "description": "三体II 下部第5节"
-    },
-    "三体II-36-下部第6节": {
-      "type": "chapter",
-      "label": "下部第6节",
-      "book": "三体II",
-      "book_seq": 36,
-      "tags": [
-        "原文",
-        "三体II"
-      ],
-      "pn_prefix": "2-36",
-      "path": "pages/三体II-36-下部第6节.md",
-      "description": "三体II 下部第6节"
-    },
-    "三体II-37-下部第7节": {
-      "type": "chapter",
-      "label": "下部第7节",
-      "book": "三体II",
-      "book_seq": 37,
-      "tags": [
-        "原文",
-        "三体II"
-      ],
-      "pn_prefix": "2-37",
-      "path": "pages/三体II-37-下部第7节.md",
-      "description": "三体II 下部第7节"
-    },
-    "三体II-38-下部第8节": {
-      "type": "chapter",
-      "label": "下部第8节",
-      "book": "三体II",
-      "book_seq": 38,
-      "tags": [
-        "原文",
-        "三体II"
-      ],
-      "pn_prefix": "2-38",
-      "path": "pages/三体II-38-下部第8节.md",
-      "description": "三体II 下部第8节"
-    },
-    "三体II-39-下部第9节": {
-      "type": "chapter",
-      "label": "下部第9节",
-      "book": "三体II",
-      "book_seq": 39,
-      "tags": [
-        "原文",
-        "三体II"
-      ],
-      "pn_prefix": "2-39",
-      "path": "pages/三体II-39-下部第9节.md",
-      "description": "三体II 下部第9节"
-    },
-    "三体II-40-下部第10节": {
-      "type": "chapter",
-      "label": "下部第10节",
-      "book": "三体II",
-      "book_seq": 40,
-      "tags": [
-        "原文",
-        "三体II"
-      ],
-      "pn_prefix": "2-40",
-      "path": "pages/三体II-40-下部第10节.md",
-      "description": "三体II 下部第10节"
-    },
-    "三体II-41-下部第11节": {
-      "type": "chapter",
-      "label": "下部第11节",
-      "book": "三体II",
-      "book_seq": 41,
-      "tags": [
-        "原文",
-        "三体II"
-      ],
-      "pn_prefix": "2-41",
-      "path": "pages/三体II-41-下部第11节.md",
-      "description": "三体II 下部第11节"
-    },
-    "三体II-42-下部第12节": {
-      "type": "chapter",
-      "label": "下部第12节",
-      "book": "三体II",
-      "book_seq": 42,
-      "tags": [
-        "原文",
-        "三体II"
-      ],
-      "pn_prefix": "2-42",
-      "path": "pages/三体II-42-下部第12节.md",
-      "description": "三体II 下部第12节"
-    },
-    "三体II-43-下部第13节": {
-      "type": "chapter",
-      "label": "下部第13节",
-      "book": "三体II",
-      "book_seq": 43,
-      "tags": [
-        "原文",
-        "三体II"
-      ],
-      "pn_prefix": "2-43",
-      "path": "pages/三体II-43-下部第13节.md",
-      "description": "三体II 下部第13节"
-    },
-    "三体II-44-下部第14节": {
-      "type": "chapter",
-      "label": "下部第14节",
-      "book": "三体II",
-      "book_seq": 44,
-      "tags": [
-        "原文",
-        "三体II"
-      ],
-      "pn_prefix": "2-44",
-      "path": "pages/三体II-44-下部第14节.md",
-      "description": "三体II 下部第14节"
-    },
-    "三体II-45-下部第15节": {
-      "type": "chapter",
-      "label": "下部第15节",
-      "book": "三体II",
-      "book_seq": 45,
-      "tags": [
-        "原文",
-        "三体II"
-      ],
-      "pn_prefix": "2-45",
-      "path": "pages/三体II-45-下部第15节.md",
-      "description": "三体II 下部第15节"
-    },
-    "三体II-46-下部第16节": {
-      "type": "chapter",
-      "label": "下部第16节",
-      "book": "三体II",
-      "book_seq": 46,
-      "tags": [
-        "原文",
-        "三体II"
-      ],
-      "pn_prefix": "2-46",
-      "path": "pages/三体II-46-下部第16节.md",
-      "description": "三体II 下部第16节"
-    },
-    "三体II-47-下部第17节": {
-      "type": "chapter",
-      "label": "下部第17节",
-      "book": "三体II",
-      "book_seq": 47,
-      "tags": [
-        "原文",
-        "三体II"
-      ],
-      "pn_prefix": "2-47",
-      "path": "pages/三体II-47-下部第17节.md",
-      "description": "三体II 下部第17节"
-    },
-    "三体II-48-下部第18节": {
-      "type": "chapter",
-      "label": "下部第18节",
-      "book": "三体II",
-      "book_seq": 48,
-      "tags": [
-        "原文",
-        "三体II"
-      ],
-      "pn_prefix": "2-48",
-      "path": "pages/三体II-48-下部第18节.md",
-      "description": "三体II 下部第18节"
-    },
-    "三体II-49-下部第19节": {
-      "type": "chapter",
-      "label": "下部第19节",
-      "book": "三体II",
-      "book_seq": 49,
-      "tags": [
-        "原文",
-        "三体II"
-      ],
-      "pn_prefix": "2-49",
-      "path": "pages/三体II-49-下部第19节.md",
-      "description": "三体II 下部第19节"
-    },
-    "三体II-50-下部第20节": {
-      "type": "chapter",
-      "label": "下部第20节",
-      "book": "三体II",
-      "book_seq": 50,
-      "tags": [
-        "原文",
-        "三体II"
-      ],
-      "pn_prefix": "2-50",
-      "path": "pages/三体II-50-下部第20节.md",
-      "description": "三体II 下部第20节"
-    },
-    "三体II-51-下部第21节": {
-      "type": "chapter",
-      "label": "下部第21节",
-      "book": "三体II",
-      "book_seq": 51,
-      "tags": [
-        "原文",
-        "三体II"
-      ],
-      "pn_prefix": "2-51",
-      "path": "pages/三体II-51-下部第21节.md",
-      "description": "三体II 下部第21节"
-    },
-    "三体III-01-前言": {
-      "type": "chapter",
-      "label": "前言",
-      "book": "三体III",
-      "book_seq": 1,
-      "tags": [
-        "原文",
-        "三体III"
-      ],
-      "pn_prefix": "3-01",
-      "path": "pages/三体III-01-前言.md",
-      "description": "三体III 前言"
-    },
-    "三体III-02-序": {
-      "type": "chapter",
-      "label": "序",
-      "book": "三体III",
-      "book_seq": 2,
-      "tags": [
-        "原文",
-        "三体III"
-      ],
-      "pn_prefix": "3-02",
-      "path": "pages/三体III-02-序.md",
-      "description": "三体III 序"
-    },
-    "三体III-03-纪年对照表": {
-      "type": "chapter",
-      "label": "纪年对照表",
-      "book": "三体III",
-      "book_seq": 3,
-      "tags": [
-        "原文",
-        "三体III"
-      ],
-      "pn_prefix": "3-03",
-      "path": "pages/三体III-03-纪年对照表.md",
-      "description": "三体III 纪年对照表"
-    },
-    "三体III-04-第一部·第一章": {
-      "type": "chapter",
-      "label": "第一部·第一章",
-      "book": "三体III",
-      "book_seq": 4,
-      "tags": [
-        "原文",
-        "三体III",
-        "第一部"
-      ],
-      "pn_prefix": "3-04",
-      "path": "pages/三体III-04-第一部·第一章.md",
-      "description": "三体III 第一部·第一章"
-    },
-    "三体III-05-第一部·第二章": {
-      "type": "chapter",
-      "label": "第一部·第二章",
-      "book": "三体III",
-      "book_seq": 5,
-      "tags": [
-        "原文",
-        "三体III",
-        "第一部"
-      ],
-      "pn_prefix": "3-05",
-      "path": "pages/三体III-05-第一部·第二章.md",
-      "description": "三体III 第一部·第二章"
-    },
-    "三体III-06-第一部·第三章": {
-      "type": "chapter",
-      "label": "第一部·第三章",
-      "book": "三体III",
-      "book_seq": 6,
-      "tags": [
-        "原文",
-        "三体III",
-        "第一部"
-      ],
-      "pn_prefix": "3-06",
-      "path": "pages/三体III-06-第一部·第三章.md",
-      "description": "三体III 第一部·第三章"
-    },
-    "三体III-07-第一部·第四章": {
-      "type": "chapter",
-      "label": "第一部·第四章",
-      "book": "三体III",
-      "book_seq": 7,
-      "tags": [
-        "原文",
-        "三体III",
-        "第一部"
-      ],
-      "pn_prefix": "3-07",
-      "path": "pages/三体III-07-第一部·第四章.md",
-      "description": "三体III 第一部·第四章"
-    },
-    "三体III-08-第一部·第五章": {
-      "type": "chapter",
-      "label": "第一部·第五章",
-      "book": "三体III",
-      "book_seq": 8,
-      "tags": [
-        "原文",
-        "三体III",
-        "第一部"
-      ],
-      "pn_prefix": "3-08",
-      "path": "pages/三体III-08-第一部·第五章.md",
-      "description": "三体III 第一部·第五章"
-    },
-    "三体III-09-第一部·第六章": {
-      "type": "chapter",
-      "label": "第一部·第六章",
-      "book": "三体III",
-      "book_seq": 9,
-      "tags": [
-        "原文",
-        "三体III",
-        "第一部"
-      ],
-      "pn_prefix": "3-09",
-      "path": "pages/三体III-09-第一部·第六章.md",
-      "description": "三体III 第一部·第六章"
-    },
-    "三体III-10-第一部·第七章": {
-      "type": "chapter",
-      "label": "第一部·第七章",
-      "book": "三体III",
-      "book_seq": 10,
-      "tags": [
-        "原文",
-        "三体III",
-        "第一部"
-      ],
-      "pn_prefix": "3-10",
-      "path": "pages/三体III-10-第一部·第七章.md",
-      "description": "三体III 第一部·第七章"
-    },
-    "三体III-11-第一部·第八章": {
-      "type": "chapter",
-      "label": "第一部·第八章",
-      "book": "三体III",
-      "book_seq": 11,
-      "tags": [
-        "原文",
-        "三体III",
-        "第一部"
-      ],
-      "pn_prefix": "3-11",
-      "path": "pages/三体III-11-第一部·第八章.md",
-      "description": "三体III 第一部·第八章"
-    },
-    "三体III-12-第二部·第一章": {
-      "type": "chapter",
-      "label": "第二部·第一章",
-      "book": "三体III",
-      "book_seq": 12,
-      "tags": [
-        "原文",
-        "三体III",
-        "第二部"
-      ],
-      "pn_prefix": "3-12",
-      "path": "pages/三体III-12-第二部·第一章.md",
-      "description": "三体III 第二部·第一章"
-    },
-    "三体III-13-第二部·第二章": {
-      "type": "chapter",
-      "label": "第二部·第二章",
-      "book": "三体III",
-      "book_seq": 13,
-      "tags": [
-        "原文",
-        "三体III",
-        "第二部"
-      ],
-      "pn_prefix": "3-13",
-      "path": "pages/三体III-13-第二部·第二章.md",
-      "description": "三体III 第二部·第二章"
-    },
-    "三体III-14-第二部·第三章": {
-      "type": "chapter",
-      "label": "第二部·第三章",
-      "book": "三体III",
-      "book_seq": 14,
-      "tags": [
-        "原文",
-        "三体III",
-        "第二部"
-      ],
-      "pn_prefix": "3-14",
-      "path": "pages/三体III-14-第二部·第三章.md",
-      "description": "三体III 第二部·第三章"
-    },
-    "三体III-15-第二部·第四章": {
-      "type": "chapter",
-      "label": "第二部·第四章",
-      "book": "三体III",
-      "book_seq": 15,
-      "tags": [
-        "原文",
-        "三体III",
-        "第二部"
-      ],
-      "pn_prefix": "3-15",
-      "path": "pages/三体III-15-第二部·第四章.md",
-      "description": "三体III 第二部·第四章"
-    },
-    "三体III-16-第二部·第五章": {
-      "type": "chapter",
-      "label": "第二部·第五章",
-      "book": "三体III",
-      "book_seq": 16,
-      "tags": [
-        "原文",
-        "三体III",
-        "第二部"
-      ],
-      "pn_prefix": "3-16",
-      "path": "pages/三体III-16-第二部·第五章.md",
-      "description": "三体III 第二部·第五章"
-    },
-    "三体III-17-第二部·第六章": {
-      "type": "chapter",
-      "label": "第二部·第六章",
-      "book": "三体III",
-      "book_seq": 17,
-      "tags": [
-        "原文",
-        "三体III",
-        "第二部"
-      ],
-      "pn_prefix": "3-17",
-      "path": "pages/三体III-17-第二部·第六章.md",
-      "description": "三体III 第二部·第六章"
-    },
-    "三体III-18-第二部·第七章": {
-      "type": "chapter",
-      "label": "第二部·第七章",
-      "book": "三体III",
-      "book_seq": 18,
-      "tags": [
-        "原文",
-        "三体III",
-        "第二部"
-      ],
-      "pn_prefix": "3-18",
-      "path": "pages/三体III-18-第二部·第七章.md",
-      "description": "三体III 第二部·第七章"
-    },
-    "三体III-19-第二部·第八章": {
-      "type": "chapter",
-      "label": "第二部·第八章",
-      "book": "三体III",
-      "book_seq": 19,
-      "tags": [
-        "原文",
-        "三体III",
-        "第二部"
-      ],
-      "pn_prefix": "3-19",
-      "path": "pages/三体III-19-第二部·第八章.md",
-      "description": "三体III 第二部·第八章"
-    },
-    "三体III-20-第二部·第九章": {
-      "type": "chapter",
-      "label": "第二部·第九章",
-      "book": "三体III",
-      "book_seq": 20,
-      "tags": [
-        "原文",
-        "三体III",
-        "第二部"
-      ],
-      "pn_prefix": "3-20",
-      "path": "pages/三体III-20-第二部·第九章.md",
-      "description": "三体III 第二部·第九章"
-    },
-    "三体III-21-第二部·第十章": {
-      "type": "chapter",
-      "label": "第二部·第十章",
-      "book": "三体III",
-      "book_seq": 21,
-      "tags": [
-        "原文",
-        "三体III",
-        "第二部"
-      ],
-      "pn_prefix": "3-21",
-      "path": "pages/三体III-21-第二部·第十章.md",
-      "description": "三体III 第二部·第十章"
-    },
-    "三体III-22-第二部·第十一章": {
-      "type": "chapter",
-      "label": "第二部·第十一章",
-      "book": "三体III",
-      "book_seq": 22,
-      "tags": [
-        "原文",
-        "三体III",
-        "第二部"
-      ],
-      "pn_prefix": "3-22",
-      "path": "pages/三体III-22-第二部·第十一章.md",
-      "description": "三体III 第二部·第十一章"
-    },
-    "三体III-23-第二部·第十二章": {
-      "type": "chapter",
-      "label": "第二部·第十二章",
-      "book": "三体III",
-      "book_seq": 23,
-      "tags": [
-        "原文",
-        "三体III",
-        "第二部"
-      ],
-      "pn_prefix": "3-23",
-      "path": "pages/三体III-23-第二部·第十二章.md",
-      "description": "三体III 第二部·第十二章"
-    },
-    "三体III-24-第二部·第十三章": {
-      "type": "chapter",
-      "label": "第二部·第十三章",
-      "book": "三体III",
-      "book_seq": 24,
-      "tags": [
-        "原文",
-        "三体III",
-        "第二部"
-      ],
-      "pn_prefix": "3-24",
-      "path": "pages/三体III-24-第二部·第十三章.md",
-      "description": "三体III 第二部·第十三章"
-    },
-    "三体III-25-第二部·第十四章": {
-      "type": "chapter",
-      "label": "第二部·第十四章",
-      "book": "三体III",
-      "book_seq": 25,
-      "tags": [
-        "原文",
-        "三体III",
-        "第二部"
-      ],
-      "pn_prefix": "3-25",
-      "path": "pages/三体III-25-第二部·第十四章.md",
-      "description": "三体III 第二部·第十四章"
-    },
-    "三体III-26-第二部·第十五章": {
-      "type": "chapter",
-      "label": "第二部·第十五章",
-      "book": "三体III",
-      "book_seq": 26,
-      "tags": [
-        "原文",
-        "三体III",
-        "第二部"
-      ],
-      "pn_prefix": "3-26",
-      "path": "pages/三体III-26-第二部·第十五章.md",
-      "description": "三体III 第二部·第十五章"
-    },
-    "三体III-27-第三部·第一章": {
-      "type": "chapter",
-      "label": "第三部·第一章",
-      "book": "三体III",
-      "book_seq": 27,
-      "tags": [
-        "原文",
-        "三体III",
-        "第三部"
-      ],
-      "pn_prefix": "3-27",
-      "path": "pages/三体III-27-第三部·第一章.md",
-      "description": "三体III 第三部·第一章"
-    },
-    "三体III-28-第三部·第二章": {
-      "type": "chapter",
-      "label": "第三部·第二章",
-      "book": "三体III",
-      "book_seq": 28,
-      "tags": [
-        "原文",
-        "三体III",
-        "第三部"
-      ],
-      "pn_prefix": "3-28",
-      "path": "pages/三体III-28-第三部·第二章.md",
-      "description": "三体III 第三部·第二章"
-    },
-    "三体III-29-第三部·第三章": {
-      "type": "chapter",
-      "label": "第三部·第三章",
-      "book": "三体III",
-      "book_seq": 29,
-      "tags": [
-        "原文",
-        "三体III",
-        "第三部"
-      ],
-      "pn_prefix": "3-29",
-      "path": "pages/三体III-29-第三部·第三章.md",
-      "description": "三体III 第三部·第三章"
-    },
-    "三体III-30-第三部·第四章": {
-      "type": "chapter",
-      "label": "第三部·第四章",
-      "book": "三体III",
-      "book_seq": 30,
-      "tags": [
-        "原文",
-        "三体III",
-        "第三部"
-      ],
-      "pn_prefix": "3-30",
-      "path": "pages/三体III-30-第三部·第四章.md",
-      "description": "三体III 第三部·第四章"
-    },
-    "三体III-31-第三部·第五章": {
-      "type": "chapter",
-      "label": "第三部·第五章",
-      "book": "三体III",
-      "book_seq": 31,
-      "tags": [
-        "原文",
-        "三体III",
-        "第三部"
-      ],
-      "pn_prefix": "3-31",
-      "path": "pages/三体III-31-第三部·第五章.md",
-      "description": "三体III 第三部·第五章"
-    },
-    "三体III-32-第三部·第六章": {
-      "type": "chapter",
-      "label": "第三部·第六章",
-      "book": "三体III",
-      "book_seq": 32,
-      "tags": [
-        "原文",
-        "三体III",
-        "第三部"
-      ],
-      "pn_prefix": "3-32",
-      "path": "pages/三体III-32-第三部·第六章.md",
-      "description": "三体III 第三部·第六章"
-    },
-    "三体III-33-第三部·第七章": {
-      "type": "chapter",
-      "label": "第三部·第七章",
-      "book": "三体III",
-      "book_seq": 33,
-      "tags": [
-        "原文",
-        "三体III",
-        "第三部"
-      ],
-      "pn_prefix": "3-33",
-      "path": "pages/三体III-33-第三部·第七章.md",
-      "description": "三体III 第三部·第七章"
-    },
-    "三体III-34-第三部·第八章": {
-      "type": "chapter",
-      "label": "第三部·第八章",
-      "book": "三体III",
-      "book_seq": 34,
-      "tags": [
-        "原文",
-        "三体III",
-        "第三部"
-      ],
-      "pn_prefix": "3-34",
-      "path": "pages/三体III-34-第三部·第八章.md",
-      "description": "三体III 第三部·第八章"
-    },
-    "三体III-35-第三部·第九章": {
-      "type": "chapter",
-      "label": "第三部·第九章",
-      "book": "三体III",
-      "book_seq": 35,
-      "tags": [
-        "原文",
-        "三体III",
-        "第三部"
-      ],
-      "pn_prefix": "3-35",
-      "path": "pages/三体III-35-第三部·第九章.md",
-      "description": "三体III 第三部·第九章"
-    },
-    "三体III-36-第三部·第十章": {
-      "type": "chapter",
-      "label": "第三部·第十章",
-      "book": "三体III",
-      "book_seq": 36,
-      "tags": [
-        "原文",
-        "三体III",
-        "第三部"
-      ],
-      "pn_prefix": "3-36",
-      "path": "pages/三体III-36-第三部·第十章.md",
-      "description": "三体III 第三部·第十章"
-    },
-    "三体III-37-第三部·第十一章": {
-      "type": "chapter",
-      "label": "第三部·第十一章",
-      "book": "三体III",
-      "book_seq": 37,
-      "tags": [
-        "原文",
-        "三体III",
-        "第三部"
-      ],
-      "pn_prefix": "3-37",
-      "path": "pages/三体III-37-第三部·第十一章.md",
-      "description": "三体III 第三部·第十一章"
-    },
-    "三体III-38-第三部·第十二章": {
-      "type": "chapter",
-      "label": "第三部·第十二章",
-      "book": "三体III",
-      "book_seq": 38,
-      "tags": [
-        "原文",
-        "三体III",
-        "第三部"
-      ],
-      "pn_prefix": "3-38",
-      "path": "pages/三体III-38-第三部·第十二章.md",
-      "description": "三体III 第三部·第十二章"
-    },
-    "三体III-39-第四部·第一章": {
-      "type": "chapter",
-      "label": "第四部·第一章",
-      "book": "三体III",
-      "book_seq": 39,
-      "tags": [
-        "原文",
-        "三体III",
-        "第四部"
-      ],
-      "pn_prefix": "3-39",
-      "path": "pages/三体III-39-第四部·第一章.md",
-      "description": "三体III 第四部·第一章"
-    },
-    "三体III-40-第四部·第二章": {
-      "type": "chapter",
-      "label": "第四部·第二章",
-      "book": "三体III",
-      "book_seq": 40,
-      "tags": [
-        "原文",
-        "三体III",
-        "第四部"
-      ],
-      "pn_prefix": "3-40",
-      "path": "pages/三体III-40-第四部·第二章.md",
-      "description": "三体III 第四部·第二章"
-    },
-    "三体III-41-第四部·第三章": {
-      "type": "chapter",
-      "label": "第四部·第三章",
-      "book": "三体III",
-      "book_seq": 41,
-      "tags": [
-        "原文",
-        "三体III",
-        "第四部"
-      ],
-      "pn_prefix": "3-41",
-      "path": "pages/三体III-41-第四部·第三章.md",
-      "description": "三体III 第四部·第三章"
-    },
-    "三体III-42-第五部·第一章": {
-      "type": "chapter",
-      "label": "第五部·第一章",
-      "book": "三体III",
-      "book_seq": 42,
-      "tags": [
-        "原文",
-        "三体III",
-        "第五部"
-      ],
-      "pn_prefix": "3-42",
-      "path": "pages/三体III-42-第五部·第一章.md",
-      "description": "三体III 第五部·第一章"
-    },
-    "三体III-43-第五部·第二章": {
-      "type": "chapter",
-      "label": "第五部·第二章",
-      "book": "三体III",
-      "book_seq": 43,
-      "tags": [
-        "原文",
-        "三体III",
-        "第五部"
-      ],
-      "pn_prefix": "3-43",
-      "path": "pages/三体III-43-第五部·第二章.md",
-      "description": "三体III 第五部·第二章"
-    },
-    "三体III-44-第五部·第三章": {
-      "type": "chapter",
-      "label": "第五部·第三章",
-      "book": "三体III",
-      "book_seq": 44,
-      "tags": [
-        "原文",
-        "三体III",
-        "第五部"
-      ],
-      "pn_prefix": "3-44",
-      "path": "pages/三体III-44-第五部·第三章.md",
-      "description": "三体III 第五部·第三章"
-    },
-    "三体III-45-第五部·第四章": {
-      "type": "chapter",
-      "label": "第五部·第四章",
-      "book": "三体III",
-      "book_seq": 45,
-      "tags": [
-        "原文",
-        "三体III",
-        "第五部"
-      ],
-      "pn_prefix": "3-45",
-      "path": "pages/三体III-45-第五部·第四章.md",
-      "description": "三体III 第五部·第四章"
-    },
-    "三体III-46-第五部·第五章": {
-      "type": "chapter",
-      "label": "第五部·第五章",
-      "book": "三体III",
-      "book_seq": 46,
-      "tags": [
-        "原文",
-        "三体III",
-        "第五部"
-      ],
-      "pn_prefix": "3-46",
-      "path": "pages/三体III-46-第五部·第五章.md",
-      "description": "三体III 第五部·第五章"
-    },
-    "三体III-47-第六部·第一章": {
-      "type": "chapter",
-      "label": "第六部·第一章",
-      "book": "三体III",
-      "book_seq": 47,
-      "tags": [
-        "原文",
-        "三体III",
-        "第六部"
-      ],
-      "pn_prefix": "3-47",
-      "path": "pages/三体III-47-第六部·第一章.md",
-      "description": "三体III 第六部·第一章"
-    },
-    "三体III-48-第六部·第二章": {
-      "type": "chapter",
-      "label": "第六部·第二章",
-      "book": "三体III",
-      "book_seq": 48,
-      "tags": [
-        "原文",
-        "三体III",
-        "第六部"
-      ],
-      "pn_prefix": "3-48",
-      "path": "pages/三体III-48-第六部·第二章.md",
-      "description": "三体III 第六部·第二章"
-    },
-    "三体III-49-第六部·第三章": {
-      "type": "chapter",
-      "label": "第六部·第三章",
-      "book": "三体III",
-      "book_seq": 49,
-      "tags": [
-        "原文",
-        "三体III",
-        "第六部"
-      ],
-      "pn_prefix": "3-49",
-      "path": "pages/三体III-49-第六部·第三章.md",
-      "description": "三体III 第六部·第三章"
-    },
-    "三体III-50-第六部·第四章": {
-      "type": "chapter",
-      "label": "第六部·第四章",
-      "book": "三体III",
-      "book_seq": 50,
-      "tags": [
-        "原文",
-        "三体III",
-        "第六部"
-      ],
-      "pn_prefix": "3-50",
-      "path": "pages/三体III-50-第六部·第四章.md",
-      "description": "三体III 第六部·第四章"
     }
   },
   "alias_index": {
+    "三体I-01-前言": "三体I-01-前言",
+    "前言": "三体I-01-前言",
+    "三体I-02-疯狂年代": "三体I-02-疯狂年代",
+    "疯狂年代": "三体I-02-疯狂年代",
+    "三体I-03-寂静的春天": "三体I-03-寂静的春天",
+    "寂静的春天": "三体I-03-寂静的春天",
+    "三体I-04-红岸之一": "三体I-04-红岸之一",
+    "红岸之一": "三体I-04-红岸之一",
+    "三体I-05-三十八年后": "三体I-05-三十八年后",
+    "三十八年后": "三体I-05-三十八年后",
+    "三体I-06-台球": "三体I-06-台球",
+    "台球": "三体I-06-台球",
+    "三体I-07-射手和农场主": "三体I-07-射手和农场主",
+    "射手和农场主": "三体I-07-射手和农场主",
+    "三体I-08-周文王·长夜": "三体I-08-周文王·长夜",
+    "周文王·长夜": "三体I-08-周文王·长夜",
+    "三体I-09-叶文洁": "三体I-09-叶文洁",
+    "叶文洁": "三体I-09-叶文洁",
+    "三体I-10-字宙闪烁": "三体I-10-字宙闪烁",
+    "字宙闪烁": "三体I-10-字宙闪烁",
+    "三体I-11-大史": "三体I-11-大史",
+    "大史": "三体I-11-大史",
+    "三体I-12-三体·墨子·烈焰": "三体I-12-三体·墨子·烈焰",
+    "三体·墨子·烈焰": "三体I-12-三体·墨子·烈焰",
+    "三体I-13-红岸之二": "三体I-13-红岸之二",
+    "红岸之二": "三体I-13-红岸之二",
+    "三体I-14-红岸之三": "三体I-14-红岸之三",
+    "红岸之三": "三体I-14-红岸之三",
+    "三体I-15-红岸之四": "三体I-15-红岸之四",
+    "红岸之四": "三体I-15-红岸之四",
+    "三体I-16-三体、哥白尼、宇宙橄榄球、三日凌空": "三体I-16-三体、哥白尼、宇宙橄榄球、三日凌空",
+    "三体、哥白尼、宇宙橄榄球、三日凌空": "三体I-16-三体、哥白尼、宇宙橄榄球、三日凌空",
+    "三体I-17-三体问题": "三体I-17-三体问题",
+    "三体问题": "三体I-17-三体问题",
+    "三体I-18-三体、牛顿、冯·诺依曼、秦始皇、三日连珠": "三体I-18-三体、牛顿、冯·诺依曼、秦始皇、三日连珠",
+    "三体、牛顿、冯·诺依曼、秦始皇、三日连珠": "三体I-18-三体、牛顿、冯·诺依曼、秦始皇、三日连珠",
+    "三体I-19-聚会": "三体I-19-聚会",
+    "聚会": "三体I-19-聚会",
+    "三体I-20-三体、爱因斯坦、单摆、大撕裂": "三体I-20-三体、爱因斯坦、单摆、大撕裂",
+    "三体、爱因斯坦、单摆、大撕裂": "三体I-20-三体、爱因斯坦、单摆、大撕裂",
+    "三体I-21-三体、远征": "三体I-21-三体、远征",
+    "三体、远征": "三体I-21-三体、远征",
+    "三体I-22-地球叛军": "三体I-22-地球叛军",
+    "地球叛军": "三体I-22-地球叛军",
+    "三体I-23-红岸之五": "三体I-23-红岸之五",
+    "红岸之五": "三体I-23-红岸之五",
+    "三体I-24-红岸之六": "三体I-24-红岸之六",
+    "红岸之六": "三体I-24-红岸之六",
+    "三体I-25-叛乱": "三体I-25-叛乱",
+    "叛乱": "三体I-25-叛乱",
+    "三体I-26-雷志成、杨卫宁之死": "三体I-26-雷志成、杨卫宁之死",
+    "雷志成、杨卫宁之死": "三体I-26-雷志成、杨卫宁之死",
+    "三体I-27-无人忏悔": "三体I-27-无人忏悔",
+    "无人忏悔": "三体I-27-无人忏悔",
+    "三体I-28-伊文斯": "三体I-28-伊文斯",
+    "伊文斯": "三体I-28-伊文斯",
+    "三体I-29-第二红岸基地": "三体I-29-第二红岸基地",
+    "第二红岸基地": "三体I-29-第二红岸基地",
+    "三体I-30-地球三体运动": "三体I-30-地球三体运动",
+    "地球三体运动": "三体I-30-地球三体运动",
+    "三体I-31-两个质子": "三体I-31-两个质子",
+    "两个质子": "三体I-31-两个质子",
+    "三体I-32-古筝行动": "三体I-32-古筝行动",
+    "古筝行动": "三体I-32-古筝行动",
+    "三体I-33-监听员": "三体I-33-监听员",
+    "监听员": "三体I-33-监听员",
+    "三体I-34-智子": "三体I-34-智子",
+    "智子": "三体I-34-智子",
+    "三体I-35-虫子": "三体I-35-虫子",
+    "虫子": "三体I-35-虫子",
+    "三体I-36-尾声·遗址": "三体I-36-尾声·遗址",
+    "尾声·遗址": "三体I-36-尾声·遗址",
+    "三体I-37-后记": "三体I-37-后记",
+    "后记": "三体I-37-后记",
+    "三体II-02-序章": "三体II-02-序章",
+    "序章": "三体II-02-序章",
+    "三体II-03-上部第1节": "三体II-03-上部第1节",
+    "上部第1节": "三体II-03-上部第1节",
+    "三体II-04-上部第2节": "三体II-04-上部第2节",
+    "上部第2节": "三体II-04-上部第2节",
+    "三体II-05-上部第3节": "三体II-05-上部第3节",
+    "上部第3节": "三体II-05-上部第3节",
+    "三体II-06-上部第4节": "三体II-06-上部第4节",
+    "上部第4节": "三体II-06-上部第4节",
+    "三体II-07-上部第5节": "三体II-07-上部第5节",
+    "上部第5节": "三体II-07-上部第5节",
+    "三体II-08-上部第6节": "三体II-08-上部第6节",
+    "上部第6节": "三体II-08-上部第6节",
+    "三体II-09-上部第7节": "三体II-09-上部第7节",
+    "上部第7节": "三体II-09-上部第7节",
+    "三体II-10-上部第8节": "三体II-10-上部第8节",
+    "上部第8节": "三体II-10-上部第8节",
+    "三体II-11-上部第9节": "三体II-11-上部第9节",
+    "上部第9节": "三体II-11-上部第9节",
+    "三体II-12-上部第10节": "三体II-12-上部第10节",
+    "上部第10节": "三体II-12-上部第10节",
+    "三体II-13-上部第11节": "三体II-13-上部第11节",
+    "上部第11节": "三体II-13-上部第11节",
+    "三体II-14-上部第12节": "三体II-14-上部第12节",
+    "上部第12节": "三体II-14-上部第12节",
+    "三体II-15-上部第13节": "三体II-15-上部第13节",
+    "上部第13节": "三体II-15-上部第13节",
+    "三体II-16-上部第14节": "三体II-16-上部第14节",
+    "上部第14节": "三体II-16-上部第14节",
+    "三体II-17-上部第15节": "三体II-17-上部第15节",
+    "上部第15节": "三体II-17-上部第15节",
+    "三体II-18-上部第16节": "三体II-18-上部第16节",
+    "上部第16节": "三体II-18-上部第16节",
+    "三体II-19-中部第1节": "三体II-19-中部第1节",
+    "中部第1节": "三体II-19-中部第1节",
+    "三体II-20-中部第2节": "三体II-20-中部第2节",
+    "中部第2节": "三体II-20-中部第2节",
+    "三体II-21-中部第3节": "三体II-21-中部第3节",
+    "中部第3节": "三体II-21-中部第3节",
+    "三体II-22-中部第4节": "三体II-22-中部第4节",
+    "中部第4节": "三体II-22-中部第4节",
+    "三体II-23-中部第5节": "三体II-23-中部第5节",
+    "中部第5节": "三体II-23-中部第5节",
+    "三体II-24-中部第6节": "三体II-24-中部第6节",
+    "中部第6节": "三体II-24-中部第6节",
+    "三体II-25-中部第7节": "三体II-25-中部第7节",
+    "中部第7节": "三体II-25-中部第7节",
+    "三体II-26-中部第8节": "三体II-26-中部第8节",
+    "中部第8节": "三体II-26-中部第8节",
+    "三体II-27-中部第9节": "三体II-27-中部第9节",
+    "中部第9节": "三体II-27-中部第9节",
+    "三体II-28-中部第10节": "三体II-28-中部第10节",
+    "中部第10节": "三体II-28-中部第10节",
+    "三体II-29-中部第11节": "三体II-29-中部第11节",
+    "中部第11节": "三体II-29-中部第11节",
+    "三体II-30-中部第12节": "三体II-30-中部第12节",
+    "中部第12节": "三体II-30-中部第12节",
+    "三体II-31-下部第1节": "三体II-31-下部第1节",
+    "下部第1节": "三体II-31-下部第1节",
+    "三体II-32-下部第2节": "三体II-32-下部第2节",
+    "下部第2节": "三体II-32-下部第2节",
+    "三体II-33-下部第3节": "三体II-33-下部第3节",
+    "下部第3节": "三体II-33-下部第3节",
+    "三体II-34-下部第4节": "三体II-34-下部第4节",
+    "下部第4节": "三体II-34-下部第4节",
+    "三体II-35-下部第5节": "三体II-35-下部第5节",
+    "下部第5节": "三体II-35-下部第5节",
+    "三体II-36-下部第6节": "三体II-36-下部第6节",
+    "下部第6节": "三体II-36-下部第6节",
+    "三体II-37-下部第7节": "三体II-37-下部第7节",
+    "下部第7节": "三体II-37-下部第7节",
+    "三体II-38-下部第8节": "三体II-38-下部第8节",
+    "下部第8节": "三体II-38-下部第8节",
+    "三体II-39-下部第9节": "三体II-39-下部第9节",
+    "下部第9节": "三体II-39-下部第9节",
+    "三体II-40-下部第10节": "三体II-40-下部第10节",
+    "下部第10节": "三体II-40-下部第10节",
+    "三体II-41-下部第11节": "三体II-41-下部第11节",
+    "下部第11节": "三体II-41-下部第11节",
+    "三体II-42-下部第12节": "三体II-42-下部第12节",
+    "下部第12节": "三体II-42-下部第12节",
+    "三体II-43-下部第13节": "三体II-43-下部第13节",
+    "下部第13节": "三体II-43-下部第13节",
+    "三体II-44-下部第14节": "三体II-44-下部第14节",
+    "下部第14节": "三体II-44-下部第14节",
+    "三体II-45-下部第15节": "三体II-45-下部第15节",
+    "下部第15节": "三体II-45-下部第15节",
+    "三体II-46-下部第16节": "三体II-46-下部第16节",
+    "下部第16节": "三体II-46-下部第16节",
+    "三体II-47-下部第17节": "三体II-47-下部第17节",
+    "下部第17节": "三体II-47-下部第17节",
+    "三体II-48-下部第18节": "三体II-48-下部第18节",
+    "下部第18节": "三体II-48-下部第18节",
+    "三体II-49-下部第19节": "三体II-49-下部第19节",
+    "下部第19节": "三体II-49-下部第19节",
+    "三体II-50-下部第20节": "三体II-50-下部第20节",
+    "下部第20节": "三体II-50-下部第20节",
+    "三体II-51-下部第21节": "三体II-51-下部第21节",
+    "下部第21节": "三体II-51-下部第21节",
+    "三体III-01-前言": "三体III-01-前言",
+    "三体III-02-序": "三体III-02-序",
+    "序": "三体III-02-序",
+    "三体III-03-纪年对照表": "三体III-03-纪年对照表",
+    "纪年对照表": "三体III-03-纪年对照表",
+    "三体III-04-第一部·第一章": "三体III-04-第一部·第一章",
+    "第一部·第一章": "三体III-04-第一部·第一章",
+    "三体III-05-第一部·第二章": "三体III-05-第一部·第二章",
+    "第一部·第二章": "三体III-05-第一部·第二章",
+    "三体III-06-第一部·第三章": "三体III-06-第一部·第三章",
+    "第一部·第三章": "三体III-06-第一部·第三章",
+    "三体III-07-第一部·第四章": "三体III-07-第一部·第四章",
+    "第一部·第四章": "三体III-07-第一部·第四章",
+    "三体III-08-第一部·第五章": "三体III-08-第一部·第五章",
+    "第一部·第五章": "三体III-08-第一部·第五章",
+    "三体III-09-第一部·第六章": "三体III-09-第一部·第六章",
+    "第一部·第六章": "三体III-09-第一部·第六章",
+    "三体III-10-第一部·第七章": "三体III-10-第一部·第七章",
+    "第一部·第七章": "三体III-10-第一部·第七章",
+    "三体III-11-第一部·第八章": "三体III-11-第一部·第八章",
+    "第一部·第八章": "三体III-11-第一部·第八章",
+    "三体III-12-第二部·第一章": "三体III-12-第二部·第一章",
+    "第二部·第一章": "三体III-12-第二部·第一章",
+    "三体III-13-第二部·第二章": "三体III-13-第二部·第二章",
+    "第二部·第二章": "三体III-13-第二部·第二章",
+    "三体III-14-第二部·第三章": "三体III-14-第二部·第三章",
+    "第二部·第三章": "三体III-14-第二部·第三章",
+    "三体III-15-第二部·第四章": "三体III-15-第二部·第四章",
+    "第二部·第四章": "三体III-15-第二部·第四章",
+    "三体III-16-第二部·第五章": "三体III-16-第二部·第五章",
+    "第二部·第五章": "三体III-16-第二部·第五章",
+    "三体III-17-第二部·第六章": "三体III-17-第二部·第六章",
+    "第二部·第六章": "三体III-17-第二部·第六章",
+    "三体III-18-第二部·第七章": "三体III-18-第二部·第七章",
+    "第二部·第七章": "三体III-18-第二部·第七章",
+    "三体III-19-第二部·第八章": "三体III-19-第二部·第八章",
+    "第二部·第八章": "三体III-19-第二部·第八章",
+    "三体III-20-第二部·第九章": "三体III-20-第二部·第九章",
+    "第二部·第九章": "三体III-20-第二部·第九章",
+    "三体III-21-第二部·第十章": "三体III-21-第二部·第十章",
+    "第二部·第十章": "三体III-21-第二部·第十章",
+    "三体III-22-第二部·第十一章": "三体III-22-第二部·第十一章",
+    "第二部·第十一章": "三体III-22-第二部·第十一章",
+    "三体III-23-第二部·第十二章": "三体III-23-第二部·第十二章",
+    "第二部·第十二章": "三体III-23-第二部·第十二章",
+    "三体III-24-第二部·第十三章": "三体III-24-第二部·第十三章",
+    "第二部·第十三章": "三体III-24-第二部·第十三章",
+    "三体III-25-第二部·第十四章": "三体III-25-第二部·第十四章",
+    "第二部·第十四章": "三体III-25-第二部·第十四章",
+    "三体III-26-第二部·第十五章": "三体III-26-第二部·第十五章",
+    "第二部·第十五章": "三体III-26-第二部·第十五章",
+    "三体III-27-第三部·第一章": "三体III-27-第三部·第一章",
+    "第三部·第一章": "三体III-27-第三部·第一章",
+    "三体III-28-第三部·第二章": "三体III-28-第三部·第二章",
+    "第三部·第二章": "三体III-28-第三部·第二章",
+    "三体III-29-第三部·第三章": "三体III-29-第三部·第三章",
+    "第三部·第三章": "三体III-29-第三部·第三章",
+    "三体III-30-第三部·第四章": "三体III-30-第三部·第四章",
+    "第三部·第四章": "三体III-30-第三部·第四章",
+    "三体III-31-第三部·第五章": "三体III-31-第三部·第五章",
+    "第三部·第五章": "三体III-31-第三部·第五章",
+    "三体III-32-第三部·第六章": "三体III-32-第三部·第六章",
+    "第三部·第六章": "三体III-32-第三部·第六章",
+    "三体III-33-第三部·第七章": "三体III-33-第三部·第七章",
+    "第三部·第七章": "三体III-33-第三部·第七章",
+    "三体III-34-第三部·第八章": "三体III-34-第三部·第八章",
+    "第三部·第八章": "三体III-34-第三部·第八章",
+    "三体III-35-第三部·第九章": "三体III-35-第三部·第九章",
+    "第三部·第九章": "三体III-35-第三部·第九章",
+    "三体III-36-第三部·第十章": "三体III-36-第三部·第十章",
+    "第三部·第十章": "三体III-36-第三部·第十章",
+    "三体III-37-第三部·第十一章": "三体III-37-第三部·第十一章",
+    "第三部·第十一章": "三体III-37-第三部·第十一章",
+    "三体III-38-第三部·第十二章": "三体III-38-第三部·第十二章",
+    "第三部·第十二章": "三体III-38-第三部·第十二章",
+    "三体III-39-第四部·第一章": "三体III-39-第四部·第一章",
+    "第四部·第一章": "三体III-39-第四部·第一章",
+    "三体III-40-第四部·第二章": "三体III-40-第四部·第二章",
+    "第四部·第二章": "三体III-40-第四部·第二章",
+    "三体III-41-第四部·第三章": "三体III-41-第四部·第三章",
+    "第四部·第三章": "三体III-41-第四部·第三章",
+    "三体III-42-第五部·第一章": "三体III-42-第五部·第一章",
+    "第五部·第一章": "三体III-42-第五部·第一章",
+    "三体III-43-第五部·第二章": "三体III-43-第五部·第二章",
+    "第五部·第二章": "三体III-43-第五部·第二章",
+    "三体III-44-第五部·第三章": "三体III-44-第五部·第三章",
+    "第五部·第三章": "三体III-44-第五部·第三章",
+    "三体III-45-第五部·第四章": "三体III-45-第五部·第四章",
+    "第五部·第四章": "三体III-45-第五部·第四章",
+    "三体III-46-第五部·第五章": "三体III-46-第五部·第五章",
+    "第五部·第五章": "三体III-46-第五部·第五章",
+    "三体III-47-第六部·第一章": "三体III-47-第六部·第一章",
+    "第六部·第一章": "三体III-47-第六部·第一章",
+    "三体III-48-第六部·第二章": "三体III-48-第六部·第二章",
+    "第六部·第二章": "三体III-48-第六部·第二章",
+    "三体III-49-第六部·第三章": "三体III-49-第六部·第三章",
+    "第六部·第三章": "三体III-49-第六部·第三章",
+    "三体III-50-第六部·第四章": "三体III-50-第六部·第四章",
+    "第六部·第四章": "三体III-50-第六部·第四章",
     "三体文明": "三体文明",
     "三体人": "三体文明",
     "Trisolarians": "三体文明",
+    "三体星系": "三体星系",
+    "半人马座三星系统": "三体星系",
+    "三星系": "三体星系",
+    "半人马座α三星": "三体星系",
     "二向箔": "二向箔",
     "降维武器": "二向箔",
     "Two-Dimensional Foil": "二向箔",
-    "叶文洁": "叶文洁",
+    "云天明": "云天明",
+    "云天明的大脑": "云天明",
+    "危机纪元": "危机纪元",
+    "危机时代": "危机纪元",
     "Ye Wenjie": "叶文洁",
-    "智子": "智子",
+    "地球三体组织": "地球三体组织",
+    "ETO": "地球三体组织",
+    "地三组": "地球三体组织",
+    "叛军": "地球三体组织",
+    "威慑纪元": "威慑纪元",
+    "黑暗森林威慑时代": "威慑纪元",
+    "宇宙社会学": "宇宙社会学",
+    "宇宙文明公理": "宇宙社会学",
+    "Cosmic Sociology": "宇宙社会学",
+    "执剑人": "执剑人",
+    "Swordholder": "执剑人",
+    "威慑控制者": "执剑人",
+    "引力波发射控制者": "执剑人",
     "Sophon": "智子",
+    "水滴探测器": "水滴探测器",
+    "水滴": "水滴探测器",
+    "探测器": "水滴探测器",
+    "强互作用力探测器": "水滴探测器",
+    "汪淼": "汪淼",
+    "汪教授": "汪淼",
     "程心": "程心",
     "Cheng Xin": "程心",
+    "章北海": "章北海",
+    "章政委": "章北海",
     "红岸基地": "红岸基地",
     "红岸工程": "红岸基地",
     "Red Coast Base": "红岸基地",
     "罗辑": "罗辑",
     "Luo Ji": "罗辑",
+    "面壁者": "面壁者",
+    "面壁计划": "面壁者",
+    "Wallfacer": "面壁者",
     "黑暗森林法则": "黑暗森林法则",
     "黑暗森林": "黑暗森林法则",
     "Dark Forest Theory": "黑暗森林法则"
   },
-  "page_count": 8,
-  "generated": "2026-04-26T18:50:04Z"
+  "page_count": 156,
+  "generated": "2026-04-26T19:25:25Z"
 }
