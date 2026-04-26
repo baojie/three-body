@@ -25,8 +25,8 @@ def main():
     ap = argparse.ArgumentParser()
     ap.add_argument('--round', type=int, required=True)
     ap.add_argument('--type', required=True, dest='action_type',
-                    choices=['create-page', 'enrich-page', 'stub', 'fix-links',
-                             'add-quote', 'add-pn-citations', 'fix-alias',
+                    choices=['create-page', 'enrich-page', 'enrich-quality', 'stub',
+                             'fix-links', 'add-quote', 'add-pn-citations', 'fix-alias',
                              'discover', 'publish', 'housekeeping', 'reflect-w5'])
     ap.add_argument('--page', default='')
     ap.add_argument('--result', required=True, choices=['accept', 'fail', 'skip'])
