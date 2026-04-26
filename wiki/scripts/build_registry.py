@@ -52,6 +52,14 @@ def build_registry(pages_root: Path) -> dict:
             entry["featured"] = True
         if front.get("image"):
             entry["image"] = front["image"]
+        if front.get("quality"):
+            entry["quality"] = front["quality"]
+        if front.get("quality_score") is not None:
+            entry["quality_score"] = front["quality_score"]
+        # chapter-specific fields
+        for field in ("book", "book_seq", "pn_prefix"):
+            if front.get(field) is not None:
+                entry[field] = front[field]
 
         pages[pid] = entry
 
