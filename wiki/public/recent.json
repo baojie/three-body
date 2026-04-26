@@ -2122,6 +2122,171 @@
       "content_hash": "sha256:3eeb317d100b7097f551d70b5a7638759f6f04e9d96d6c85c7f9bde842f697f5",
       "size_before": 2115,
       "size": 2037
+    },
+    {
+      "page": "水滴探测器",
+      "rev_id": "20260426-211352-db30ea",
+      "timestamp": "2026-04-26T21:13:52+00:00",
+      "author": "butler",
+      "summary": "3条内联引文→正式PN格式（2-40-031外形/2-43-044强互作用力/2-43-043弹雨无痕）",
+      "parent_rev": "20260426-194955-94e750",
+      "content_hash": "sha256:db30eacdf2a0718cdff69923c5266d0d17f30a7038506df924543f9fde9aacaf",
+      "size_before": 2721,
+      "size": 2787
+    },
+    {
+      "page": "阶梯计划",
+      "rev_id": "20260426-211435-5d80b2",
+      "timestamp": "2026-04-26T21:14:35+00:00",
+      "author": "butler",
+      "summary": "修复3条引文格式（3-08-065/3-08-087/3-10-012），统一为blockquote+PN格式",
+      "parent_rev": "20260426-202613-256342",
+      "content_hash": "sha256:5d80b2d97e571abb3d6cb325d9b37c7672f8580743f46a2419914aa7b31a61ef",
+      "size_before": 3733,
+      "size": 3714
+    },
+    {
+      "page": "宇宙闪烁",
+      "rev_id": "20260426-211516-aee329",
+      "timestamp": "2026-04-26T21:15:16+00:00",
+      "author": "butler",
+      "summary": "修复2条引文格式→blockquote+PN（1-10-055/1-10-071），补PN至末尾引文",
+      "parent_rev": "20260426-203042-8df579",
+      "content_hash": "sha256:aee329404269119259f349fb47759ff3d5856b3f0276e8aec35d75e7243f2272",
+      "size_before": 3823,
+      "size": 3704
+    },
+    {
+      "page": "丁仪",
+      "rev_id": "20260426-211607-182d11",
+      "timestamp": "2026-04-26T21:16:07+00:00",
+      "author": "butler",
+      "summary": "新建页面：丁仪，理论物理学家，2条PN（1-06-004/2-42-029）",
+      "parent_rev": null,
+      "content_hash": "sha256:182d113d07aa6cac4d27b0d4cd0aeb5fb945427bc9079e8c4fb0cd598cd7e14a",
+      "size_before": 0,
+      "size": 1744
+    },
+    {
+      "page": "伊文斯",
+      "rev_id": "20260426-211642-8b6133",
+      "timestamp": "2026-04-26T21:16:42+00:00",
+      "author": "butler",
+      "summary": "新建页面：伊文斯，降临派领袖，2条PN（1-28-014/1-22-048）",
+      "parent_rev": null,
+      "content_hash": "sha256:8b61338523edc4de4b6f950fd6dc508542668965f56f15044dba4d7c0ce85ed0",
+      "size_before": 0,
+      "size": 2166
+    },
+    {
+      "page": "杨冬",
+      "rev_id": "20260426-211738-3fdf97",
+      "timestamp": "2026-04-26T21:17:38+00:00",
+      "author": "butler",
+      "summary": "新建页面：杨冬，遗书（1-05-085），物理学危机发现者",
+      "parent_rev": null,
+      "content_hash": "sha256:3fdf97ba1ddb82f708851268871dfb380e05afa034b7647a7a7df0f8511f5753",
+      "size_before": 0,
+      "size": 1539
+    },
+    {
+      "page": "罗辑",
+      "rev_id": "20260426-211929-344e46",
+      "timestamp": "2026-04-26T21:19:29+00:00",
+      "author": "butler",
+      "summary": "修复咒语引文格式（2-49-029），补面壁者宣布PN（2-10-057）",
+      "parent_rev": "20260426-203042-4736f7",
+      "content_hash": "sha256:344e4656a8e5bb1fcc83ed96bdedc063d11f06bbbedca4b1e8c817edb86be3f2",
+      "size_before": 2220,
+      "size": 2337
+    },
+    {
+      "page": "二向箔",
+      "rev_id": "20260426-212029-210942",
+      "timestamp": "2026-04-26T21:20:29+00:00",
+      "author": "butler",
+      "summary": "修复2条引文PN格式（3-42-056/3-44-125），移至blockquote内",
+      "parent_rev": "20260426-203042-9177ec",
+      "content_hash": "sha256:210942302bcdc30ffd278cb74d7561e8cde1f7320d6b2fd530cd11ff76d7c9f6",
+      "size_before": 3412,
+      "size": 3414
+    },
+    {
+      "page": "幽灵倒计时",
+      "rev_id": "20260426-212106-0b46df",
+      "timestamp": "2026-04-26T21:21:06+00:00",
+      "author": "butler",
+      "summary": "修复2条引文格式→blockquote+PN（1-07-019/1-07-077）",
+      "parent_rev": "20260426-203042-f61636",
+      "content_hash": "sha256:0b46dfbbbf6c48cd5086b16344365933ca27652bfe02a37ca06a28bdd15c4ab0",
+      "size_before": 3670,
+      "size": 3688
+    },
+    {
+      "page": "掩体计划",
+      "rev_id": "20260426-212142-4b6e5e",
+      "timestamp": "2026-04-26T21:21:42+00:00",
+      "author": "butler",
+      "summary": "修复引文格式（3-34-019）→blockquote+PN",
+      "parent_rev": "20260426-203042-0ec4a2",
+      "content_hash": "sha256:4b6e5ed245ec92e7d7d3cc6836b426abeaad567be222d3fab0ab7ed4b24d85b5",
+      "size_before": 3912,
+      "size": 3913
+    },
+    {
+      "page": "维德",
+      "rev_id": "20260426-212219-4e8b8e",
+      "timestamp": "2026-04-26T21:22:19+00:00",
+      "author": "butler",
+      "summary": "修复3条引文格式→blockquote+PN（3-08-080/3-41-079/3-41-101）",
+      "parent_rev": "20260426-203042-fc29df",
+      "content_hash": "sha256:4e8b8e6f520490a1d833129a8e6f3f9f97b3f23d92205d45b2f9fbe02a138b3d",
+      "size_before": 3947,
+      "size": 3950
+    },
+    {
+      "page": "面壁者",
+      "rev_id": "20260426-212309-7bab89",
+      "timestamp": "2026-04-26T21:23:09+00:00",
+      "author": "butler",
+      "summary": "修复引文格式（2-10-036），补面壁者孤独引文PN（2-10-040）",
+      "parent_rev": "20260426-203042-c81797",
+      "content_hash": "sha256:7bab891f7dc7c9db3373c06b346476dc93775ccd8b88211be063f300ee4980d9",
+      "size_before": 2939,
+      "size": 3216
+    },
+    {
+      "page": "冬眠技术",
+      "rev_id": "20260426-212347-cbdffb",
+      "timestamp": "2026-04-26T21:23:47+00:00",
+      "author": "butler",
+      "summary": "修复引文格式（3-09-012），补星际航行PN（2-05-054）",
+      "parent_rev": "20260426-203042-74ae1a",
+      "content_hash": "sha256:cbdffb7f337afafdd5c57be37aaaa47ff40ab31b3189ac8307ab2c7cb1a7fa37",
+      "size_before": 3121,
+      "size": 3164
+    },
+    {
+      "page": "光粒",
+      "rev_id": "20260426-212423-3ead99",
+      "timestamp": "2026-04-26T21:24:23+00:00",
+      "author": "butler",
+      "summary": "修复2条引文格式→blockquote+PN（2-48-025/3-36-045）",
+      "parent_rev": "20260426-203042-c61226",
+      "content_hash": "sha256:3ead997940ed678809a45884d5aad46a9a8b918ba16fc0c01b0755afc600d77c",
+      "size_before": 3129,
+      "size": 3131
+    },
+    {
+      "page": "黑域",
+      "rev_id": "20260426-212452-a703b0",
+      "timestamp": "2026-04-26T21:24:52+00:00",
+      "author": "butler",
+      "summary": "修复引文格式→blockquote+PN（3-35-161）",
+      "parent_rev": "20260426-203042-4cb207",
+      "content_hash": "sha256:a703b02b20bfc6b83051c1635781ad63f504acb8c1e772435c6167923cb6581b",
+      "size_before": 3555,
+      "size": 3556
     }
   ],
   "rotations": 0

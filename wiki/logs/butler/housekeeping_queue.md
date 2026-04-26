@@ -42,12 +42,32 @@
 
 - [x] H3 add-quote | 地球三体组织 | ✓ 2026-04-27（补2条PN，basic→standard，R66）
 - [x] H3 add-quote | 费米悖论 | ✓ 2026-04-27（2条内联→PN，basic→standard，R67）
-- [ ] H3 add-quote | 水滴探测器 | basic页，0 PN（H10 R65发现）
-- [ ] H3 add-quote | 阶梯计划 | standard页，0 PN（H10 R65发现）
-- [ ] H3 add-quote | 宇宙闪烁 | standard页，0 PN（H10 R65发现）
+- [x] H3 add-quote | 水滴探测器 | ✓ 2026-04-27（3条内联→PN，basic→standard，R69）
+- [x] H3 add-quote | 阶梯计划 | ✓ 2026-04-27（修复3条引文格式→blockquote+PN，R70）
+- [x] H3 add-quote | 宇宙闪烁 | ✓ 2026-04-27（修复2条引文格式→PN，R71）
 
 ---
 
 ## H-P3 — 扫描类（每11轮）
 
-- [ ] H10 housekeeping-scan | all | 下次扫描（R76）
+- [x] H10 housekeeping-scan | all | ✓ 2026-04-27 R76（45概念页，1基础/33标准/11精选，0 broken link，11精选页缺PN→H-P2）
+
+## H-P2 — R76扫描新增
+
+- [x] H3 add-quote | 二向箔 | ✓ 2026-04-27（修复2条引文格式→PN，R77）
+- [x] H3 add-quote | 幽灵倒计时 | ✓ 2026-04-27（修复2条引文→PN，R78）
+- [x] H3 add-quote | 面壁者 | ✓ 2026-04-27（修复+补2条PN，R81）
+- [x] H3 add-quote | 掩体计划 | ✓ 2026-04-27（修复引文格式→PN，R79）
+- [x] H3 add-quote | 维德 | ✓ 2026-04-27（修复3条引文→PN，R80）
+- [x] H3 add-quote | 冬眠技术 | ✓ 2026-04-27（修复+补2条PN，R82）
+- [x] H3 add-quote | 光粒 | ✓ 2026-04-27（修复2条引文→PN，R83）
+- [x] H3 add-quote | 黑域 | ✓ 2026-04-27（修复引文→PN，R84）
+- [ ] H3 add-quote | 科学边界 | featured页，0 PN（H10 R76发现）
+- [ ] H3 add-quote | 三体游戏 | featured页，0 PN（H10 R76发现）
+- [ ] H3 add-quote | 申玉菲 | featured页，0 PN（H10 R76发现）
+
+---
+
+## H-P3 — 扫描类（每11轮）
+
+- [ ] H10 housekeeping-scan | all | 下次扫描（R87）
