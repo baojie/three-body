@@ -62,12 +62,18 @@
 - [x] H3 add-quote | 冬眠技术 | ✓ 2026-04-27（修复+补2条PN，R82）
 - [x] H3 add-quote | 光粒 | ✓ 2026-04-27（修复2条引文→PN，R83）
 - [x] H3 add-quote | 黑域 | ✓ 2026-04-27（修复引文→PN，R84）
-- [ ] H3 add-quote | 科学边界 | featured页，0 PN（H10 R76发现）
-- [ ] H3 add-quote | 三体游戏 | featured页，0 PN（H10 R76发现）
-- [ ] H3 add-quote | 申玉菲 | featured页，0 PN（H10 R76发现）
+- [x] H3 add-quote | 科学边界 | ✓ 2026-04-27（修复PN在blockquote外，R90）
+- [x] H3 add-quote | 三体游戏 | ✓ 2026-04-27（修复2条PN→blockquote，R93）
+- [x] H3 add-quote | 申玉菲 | ✓ 2026-04-27（修复PN至blockquote内+补女海明威blockquote，R96）
 
 ---
 
 ## H-P3 — 扫描类（每11轮）
 
 - [ ] H10 housekeeping-scan | all | 下次扫描（R87）
+
+---
+
+## H-P3 — 扫描类（每11轮）
+
+- [x] H10 housekeeping-scan | all | ✓ 2026-04-27 R99（47概念页，5基础/4标准/38精选，2 broken link：黑暗森林打击/三体舰队→写入P2）

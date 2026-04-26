@@ -63,6 +63,11 @@
 
 - [x] P2 create | 关一帆 | ✓ 2026-04-27（R52完成）
 
+## P2 — discover R99 新增（broken-link）
+
+- [x] P1 create | 黑暗森林打击 | ✓ 2026-04-27（R100完成，4条PN）
+- [x] P2 create | 三体舰队 | ✓ 2026-04-27（R101完成，3条PN，两支舰队对比）
+
 ## P3 — 低优先级（发现型）
 
 - [x] P3 discover | corpus/broken-links | ✓ 2026-04-27 发现7条待建页

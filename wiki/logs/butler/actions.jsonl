@@ -81,3 +81,21 @@
 {"round": 82, "type": "add-quote", "page": "冬眠技术", "result": "accept", "desc": "修复引文格式（3-09-012），补星际航行PN（2-05-054）", "ts": "2026-04-26T21:23:47Z"}
 {"round": 83, "type": "add-quote", "page": "光粒", "result": "accept", "desc": "修复2条引文格式→blockquote+PN（2-48-025/3-36-045）", "ts": "2026-04-26T21:24:23Z"}
 {"round": 84, "type": "add-quote", "page": "黑域", "result": "accept", "desc": "修复引文格式→blockquote+PN（3-35-161）", "ts": "2026-04-26T21:24:52Z"}
+{"round": 85, "type": "publish", "page": "—", "result": "accept", "desc": "R58→R84批次发布：新建4页，修复16页PN格式，升级3页至standard，commit 653262d", "ts": "2026-04-26T21:27:10Z"}
+{"round": 86, "type": "create-page", "page": "艾AA", "result": "accept", "desc": "新建艾AA人物页：天文学博士，程心挚友，星环集团经营核心，陪伴程心历经威慑崩溃至太阳系末日，结局与关一帆共赴新世界", "ts": "2026-04-26T21:29:58Z"}
+{"round": 87, "type": "reflect-w5", "page": "—", "result": "accept", "desc": "W5反思第2次（dream_round=否）：0失败/86轮，修订W2 PN格式铁律+API备忘，watchlist新增W7/W8，架构健康（46概念页，featured 24%）", "ts": "2026-04-26T21:34:28Z"}
+{"round": 87, "type": "housekeeping", "page": "all", "result": "accept", "desc": "H10扫描R87：46概念页，0存根/12基础/4标准/30精品，0 broken link。科学边界/三体游戏/申玉菲确认PN在blockquote外需修复，仍在H-P2队列。", "ts": "2026-04-26T21:35:37Z"}
+{"round": 88, "type": "enrich-page", "page": "杨冬", "result": "accept", "desc": "empty_fallback enrich：补充叶文洁为杨冬之母的关键反转（1-09-011），确认杨冬非科学边界成员（1-06-009），basic页扩充", "ts": "2026-04-26T21:37:38Z"}
+{"round": 89, "type": "enrich-page", "page": "关一帆", "result": "accept", "desc": "enrich：补充与艾AA情感、进入小宇宙、拒绝永居、归返大宇宙决意（3-49-129），standard候选", "ts": "2026-04-26T21:39:05Z"}
+{"round": 90, "type": "add-quote", "page": "科学边界", "result": "accept", "desc": "H3 add-quote：修复PN在blockquote外部（1-05-089移入blockquote），补[[申玉菲]]链接", "ts": "2026-04-26T21:39:42Z"}
+{"round": 91, "type": "enrich-page", "page": "程心", "result": "accept", "desc": "enrich：修正黑域错误→647号小宇宙（3-49-032），补充执剑人失职（3-20-008），补艾AA/关一帆关系节，修复内容错误", "ts": "2026-04-26T21:42:02Z"}
+{"round": 92, "type": "enrich-page", "page": "丁仪", "result": "accept", "desc": "enrich：补冬眠决定（2-30-064）、零距离考察水滴（2-40-029）、末日疾呼'快跑'，basic→standard候选", "ts": "2026-04-26T21:44:03Z"}
+{"round": 93, "type": "add-quote", "page": "三体游戏", "result": "accept", "desc": "H3 add-quote：修复2条PN在blockquote外（1-07-067 V装具引文/1-09-007信息设计引文→移入blockquote）", "ts": "2026-04-26T21:44:35Z"}
+{"round": 94, "type": "create-page", "page": "歌者", "result": "accept", "desc": "新建歌者人物页：三体III高级文明清理者，掷出二向箔消灭太阳系，3条PN引文（3-42-002/056/077），黑暗森林法则最终注脚", "ts": "2026-04-26T21:46:03Z"}
+{"round": 95, "type": "enrich-page", "page": "智子", "result": "accept", "desc": "补充三体III智子人形化身、与罗辑关系、占领时期角色、最后告别4节，新增4条PN，basic→standard升级", "ts": "2026-04-26T21:51:56Z"}
+{"round": 96, "type": "add-quote", "page": "申玉菲", "result": "accept", "desc": "修复PN至blockquote内+新增女海明威blockquote(1-07-061)", "ts": "2026-04-26T21:53:01Z"}
+{"round": 97, "type": "enrich-page", "page": "黑暗森林法则", "result": "accept", "desc": "新增公理PN(2-02-046)、技术爆炸PN(2-48-110)、暴露即死亡节(含歌者连接)，basic→standard升级", "ts": "2026-04-26T21:54:13Z"}
+{"round": 98, "type": "enrich-page", "page": "黑暗森林威慑", "result": "accept", "desc": "补充威慑崩溃技术分析+执剑人选择失败+宇宙广播后续，新增PN(3-27-017)，2957→3735字节", "ts": "2026-04-26T21:55:19Z"}
+{"round": 99, "type": "housekeeping", "page": "all", "result": "accept", "desc": "H10全库扫描：47页/38精选/4标准/5基础，H-P2清空，发现黑暗森林打击+三体舰队2条broken link写入P2", "ts": "2026-04-26T21:56:17Z"}
+{"round": 100, "type": "create-page", "page": "黑暗森林打击", "result": "accept", "desc": "新建事件页：黑暗森林打击特征/触发机制/太阳系二维化全程，4条PN，连接歌者/二向箔/程心/关一帆", "ts": "2026-04-26T21:58:33Z"}
+{"round": 101, "type": "create-page", "page": "三体舰队", "result": "accept", "desc": "新建组织页：第一/第二舰队对比，推进技术/末日战役/光速飞船/撤离，3条PN", "ts": "2026-04-26T21:59:58Z"}

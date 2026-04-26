@@ -1508,259 +1508,6 @@
       "size": 12367
     },
     {
-      "page": "三体星系",
-      "rev_id": "20260426-194955-37855f",
-      "timestamp": "2026-04-26T19:49:55+00:00",
-      "author": "baojie",
-      "summary": "为23个词条页面写入 quality 等级字段",
-      "parent_rev": "20260426-192542-0f2483",
-      "content_hash": "sha256:37855f6ee006f739063bbbf51707a0ab4effc13bd42c9bbdea826201ca5b9870",
-      "size_before": 2204,
-      "size": 2236
-    },
-    {
-      "page": "云天明",
-      "rev_id": "20260426-194955-636d48",
-      "timestamp": "2026-04-26T19:49:55+00:00",
-      "author": "baojie",
-      "summary": "为23个词条页面写入 quality 等级字段",
-      "parent_rev": "20260426-192542-50fa12",
-      "content_hash": "sha256:636d48e2009323c7d6a8776736e7556b9ec28c6d03075739d6767bad43b06b61",
-      "size_before": 2356,
-      "size": 2376
-    },
-    {
-      "page": "光速飞船",
-      "rev_id": "20260426-194955-5079f0",
-      "timestamp": "2026-04-26T19:49:55+00:00",
-      "author": "baojie",
-      "summary": "为23个词条页面写入 quality 等级字段",
-      "parent_rev": "20260426-192927-5681fa",
-      "content_hash": "sha256:5079f01ba20733fe1a7fa732ce4e240105398668a35a6594fc01b018dc8f4061",
-      "size_before": 2788,
-      "size": 2808
-    },
-    {
-      "page": "危机纪元",
-      "rev_id": "20260426-194955-c269ef",
-      "timestamp": "2026-04-26T19:49:55+00:00",
-      "author": "baojie",
-      "summary": "为23个词条页面写入 quality 等级字段",
-      "parent_rev": "20260426-192542-9888a8",
-      "content_hash": "sha256:c269eff4771d45acf737c01f9e283cd01f78421c05b5ba57869c7c05ccecdb18",
-      "size_before": 2641,
-      "size": 2676
-    },
-    {
-      "page": "史强",
-      "rev_id": "20260426-194955-733090",
-      "timestamp": "2026-04-26T19:49:55+00:00",
-      "author": "baojie",
-      "summary": "为23个词条页面写入 quality 等级字段",
-      "parent_rev": "20260426-192927-080d6d",
-      "content_hash": "sha256:7330909155ade8f9989504c740f0b242ffa225017ccf94e8822063acabe716ee",
-      "size_before": 2180,
-      "size": 2215
-    },
-    {
-      "page": "太阳系",
-      "rev_id": "20260426-194955-c801d5",
-      "timestamp": "2026-04-26T19:49:55+00:00",
-      "author": "baojie",
-      "summary": "为23个词条页面写入 quality 等级字段",
-      "parent_rev": "20260426-192927-8850eb",
-      "content_hash": "sha256:c801d50909b8277afbf98dd397b1d73602debd16dff90dc49610322faafe67ce",
-      "size_before": 2028,
-      "size": 2063
-    },
-    {
-      "page": "威慑纪元",
-      "rev_id": "20260426-194955-e10427",
-      "timestamp": "2026-04-26T19:49:55+00:00",
-      "author": "baojie",
-      "summary": "为23个词条页面写入 quality 等级字段",
-      "parent_rev": "20260426-192542-3a6444",
-      "content_hash": "sha256:e10427222b160f26cd44d14c983af4ca6a184231b194cdac93856925ed9f49d8",
-      "size_before": 2612,
-      "size": 2647
-    },
-    {
-      "page": "执剑人",
-      "rev_id": "20260426-194955-05cada",
-      "timestamp": "2026-04-26T19:49:55+00:00",
-      "author": "baojie",
-      "summary": "为23个词条页面写入 quality 等级字段",
-      "parent_rev": "20260426-192542-1fcc95",
-      "content_hash": "sha256:05cadafbc24aaf923480a5a2bef005f3f4298727d1527286880b06716cddc85c",
-      "size_before": 3052,
-      "size": 3072
-    },
-    {
-      "page": "水滴探测器",
-      "rev_id": "20260426-194955-94e750",
-      "timestamp": "2026-04-26T19:49:55+00:00",
-      "author": "baojie",
-      "summary": "为23个词条页面写入 quality 等级字段",
-      "parent_rev": "20260426-192542-449b5f",
-      "content_hash": "sha256:94e750d37f864b2d3e4d908dd1abd36a857249fba229a91f867e52b4c2d6c003",
-      "size_before": 2704,
-      "size": 2721
-    },
-    {
-      "page": "程心",
-      "rev_id": "20260426-194955-a03ce7",
-      "timestamp": "2026-04-26T19:49:55+00:00",
-      "author": "baojie",
-      "summary": "为23个词条页面写入 quality 等级字段",
-      "parent_rev": "20260426-183801-bcef72",
-      "content_hash": "sha256:a03ce7fd4defc7cbb9fcc864e516f17552cf9fd51acc0e9e1269f70a304d9dd0",
-      "size_before": 1455,
-      "size": 1487
-    },
-    {
-      "page": "红岸基地",
-      "rev_id": "20260426-194955-fca2d0",
-      "timestamp": "2026-04-26T19:49:55+00:00",
-      "author": "baojie",
-      "summary": "为23个词条页面写入 quality 等级字段",
-      "parent_rev": "20260426-183801-0a866d",
-      "content_hash": "sha256:fca2d0efe6725154624a7d7fee94e9f1dc808e78002f4a52a29fd8f6a26ab12e",
-      "size_before": 1271,
-      "size": 1303
-    },
-    {
-      "page": "费米悖论",
-      "rev_id": "20260426-194955-299f7c",
-      "timestamp": "2026-04-26T19:49:55+00:00",
-      "author": "baojie",
-      "summary": "为23个词条页面写入 quality 等级字段",
-      "parent_rev": "20260426-192927-4c2755",
-      "content_hash": "sha256:299f7c80eb076fca8069baec182852d7f83d2e69be13f6059eb5a08e269a68fb",
-      "size_before": 2083,
-      "size": 2115
-    },
-    {
-      "page": "三体游戏",
-      "rev_id": "20260426-201530-1c58b1",
-      "timestamp": "2026-04-26T20:15:30+00:00",
-      "author": "baojie",
-      "summary": "Butler R18-R29：新增12页+W5反思+三队列完善",
-      "parent_rev": "20260426-202837-4ac441",
-      "content_hash": "sha256:1c58b1595e795c4ec28eb948e80691c008fcda1cc4ac2e11b0b61babec34d8d5",
-      "size_before": 3905,
-      "size": 3905
-    },
-    {
-      "page": "光粒",
-      "rev_id": "20260426-201530-366351",
-      "timestamp": "2026-04-26T20:15:30+00:00",
-      "author": "baojie",
-      "summary": "Butler R18-R29：新增12页+W5反思+三队列完善",
-      "parent_rev": "20260426-202837-c61226",
-      "content_hash": "sha256:3663512babcecc5ec50f31507b9226c0bab2565361f6e16ad754ba8d5df225ed",
-      "size_before": 3129,
-      "size": 3129
-    },
-    {
-      "page": "冬眠技术",
-      "rev_id": "20260426-201530-2897ea",
-      "timestamp": "2026-04-26T20:15:30+00:00",
-      "author": "baojie",
-      "summary": "Butler R18-R29：新增12页+W5反思+三队列完善",
-      "parent_rev": "20260426-202837-74ae1a",
-      "content_hash": "sha256:2897ea85e5c5a02d65e049182b002a7487b0d51099624c8e3f03790ba1b762f2",
-      "size_before": 3121,
-      "size": 3121
-    },
-    {
-      "page": "叶文洁",
-      "rev_id": "20260426-201530-d21968",
-      "timestamp": "2026-04-26T20:15:30+00:00",
-      "author": "baojie",
-      "summary": "Butler R18-R29：新增12页+W5反思+三队列完善",
-      "parent_rev": "20260426-194955-e17771",
-      "content_hash": "sha256:d21968680341ae2081d3aa2d97ff2c97970dce22aacc614d353b016f7b0711c1",
-      "size_before": 1892,
-      "size": 2246
-    },
-    {
-      "page": "宇宙闪烁",
-      "rev_id": "20260426-201530-da3220",
-      "timestamp": "2026-04-26T20:15:30+00:00",
-      "author": "baojie",
-      "summary": "Butler R18-R29：新增12页+W5反思+三队列完善",
-      "parent_rev": "20260426-202837-8df579",
-      "content_hash": "sha256:da3220958ed79138239ed4d7263ee7e7d56c1cfdd97204b51c55b82e8286d1e2",
-      "size_before": 3823,
-      "size": 3823
-    },
-    {
-      "page": "幽灵倒计时",
-      "rev_id": "20260426-201530-6949e2",
-      "timestamp": "2026-04-26T20:15:30+00:00",
-      "author": "baojie",
-      "summary": "Butler R18-R29：新增12页+W5反思+三队列完善",
-      "parent_rev": "20260426-202837-f61636",
-      "content_hash": "sha256:6949e2dde7ff0b2d499de0adcdc4b5cdaa59863ca4616287440807cdcfe6ce21",
-      "size_before": 3670,
-      "size": 3670
-    },
-    {
-      "page": "掩体计划",
-      "rev_id": "20260426-201530-8256e7",
-      "timestamp": "2026-04-26T20:15:30+00:00",
-      "author": "baojie",
-      "summary": "Butler R18-R29：新增12页+W5反思+三队列完善",
-      "parent_rev": "20260426-202837-0ec4a2",
-      "content_hash": "sha256:8256e7bfeea8345a2d13a7a63163cc11ec6fb3fd00e126b2f015019012a1ffda",
-      "size_before": 3912,
-      "size": 3912
-    },
-    {
-      "page": "科学边界",
-      "rev_id": "20260426-201530-9a3725",
-      "timestamp": "2026-04-26T20:15:30+00:00",
-      "author": "baojie",
-      "summary": "Butler R18-R29：新增12页+W5反思+三队列完善",
-      "parent_rev": "20260426-202837-e02c83",
-      "content_hash": "sha256:9a372561808d078d5604cec48bd845482f00412cefa9b6c270746d558d373f65",
-      "size_before": 2967,
-      "size": 2967
-    },
-    {
-      "page": "维德",
-      "rev_id": "20260426-201530-13fcc1",
-      "timestamp": "2026-04-26T20:15:30+00:00",
-      "author": "baojie",
-      "summary": "Butler R18-R29：新增12页+W5反思+三队列完善",
-      "parent_rev": "20260426-202837-fc29df",
-      "content_hash": "sha256:13fcc1d5321a7ceadd4428aa530988617f833fa23e68105bd8e2fbad994ade33",
-      "size_before": 3947,
-      "size": 3947
-    },
-    {
-      "page": "黑域",
-      "rev_id": "20260426-201530-e9f6de",
-      "timestamp": "2026-04-26T20:15:30+00:00",
-      "author": "baojie",
-      "summary": "Butler R18-R29：新增12页+W5反思+三队列完善",
-      "parent_rev": "20260426-202838-4cb207",
-      "content_hash": "sha256:e9f6ded357d218e4e5cfec2e9af2c0b86be128736d93d61203733a1b82759e70",
-      "size_before": 3555,
-      "size": 3555
-    },
-    {
-      "page": "二向箔",
-      "rev_id": "20260426-202234-0bacac",
-      "timestamp": "2026-04-26T20:22:34+00:00",
-      "author": "baojie",
-      "summary": "Butler R30-R34：3新页+内务修复+W5反思应用",
-      "parent_rev": "20260426-194955-11005b",
-      "content_hash": "sha256:0bacacc720b21860d8f70c96ffe1a6be89f7df10d5a0d283c444a08ffdd75b8d",
-      "size_before": 1600,
-      "size": 3412
-    },
-    {
       "page": "申玉菲",
       "rev_id": "20260426-202234-c7bdba",
       "timestamp": "2026-04-26T20:22:34+00:00",
@@ -1770,39 +1517,6 @@
       "content_hash": "sha256:c7bdba5406af077b9b0a9574ecc824641a0a3494ca1aa16a81a439662b2b80dc",
       "size_before": 3145,
       "size": 3145
-    },
-    {
-      "page": "罗辑",
-      "rev_id": "20260426-202234-3dde66",
-      "timestamp": "2026-04-26T20:22:34+00:00",
-      "author": "baojie",
-      "summary": "Butler R30-R34：3新页+内务修复+W5反思应用",
-      "parent_rev": "20260426-194955-63f490",
-      "content_hash": "sha256:3dde668d8ff3af455985a1038d207ee695921c14e2768bfc6c795a25295587be",
-      "size_before": 1996,
-      "size": 2220
-    },
-    {
-      "page": "面壁者",
-      "rev_id": "20260426-202234-e16681",
-      "timestamp": "2026-04-26T20:22:34+00:00",
-      "author": "baojie",
-      "summary": "Butler R30-R34：3新页+内务修复+W5反思应用",
-      "parent_rev": "20260426-194955-7c9e99",
-      "content_hash": "sha256:e1668192f6cb7684b134d209b0169949341711f90c49518c5b913af3dfab6bca",
-      "size_before": 2875,
-      "size": 2939
-    },
-    {
-      "page": "阶梯计划",
-      "rev_id": "20260426-202613-256342",
-      "timestamp": "2026-04-26T20:26:13+00:00",
-      "author": "butler",
-      "summary": "R35 create-page: 阶梯计划",
-      "parent_rev": null,
-      "content_hash": "sha256:25634203bd15dd62cc28e940f6dc442d49b71ff60871ac0a10a17acebee8239e",
-      "size_before": 0,
-      "size": 3733
     },
     {
       "page": "万有引力号",
@@ -1825,17 +1539,6 @@
       "content_hash": "sha256:12070a56b4b7814bc420b0434f08d4e8e631f69793cf9dd07c763cf2581b8e84",
       "size_before": 2041,
       "size": 2745
-    },
-    {
-      "page": "地球三体组织",
-      "rev_id": "20260426-204551-4e3e6d",
-      "timestamp": "2026-04-26T20:45:51+00:00",
-      "author": "butler",
-      "summary": "sync: 补录当前版本revision",
-      "parent_rev": "20260426-194955-e84fda",
-      "content_hash": "sha256:4e3e6d0c1fb82760fee2ff371ae4562e59b4fab4753edec32e0ab4be1037d789",
-      "size_before": 2368,
-      "size": 2374
     },
     {
       "page": "星环集团",
@@ -1948,17 +1651,6 @@
       "size": 2506
     },
     {
-      "page": "关一帆",
-      "rev_id": "20260426-205244-61e1bf",
-      "timestamp": "2026-04-26T20:52:44+00:00",
-      "author": "butler",
-      "summary": "butler 新建",
-      "parent_rev": null,
-      "content_hash": "sha256:61e1bf173223ea8c5ef679282b2d658d090acc84525d697de2a7bd304f428a29",
-      "size_before": 0,
-      "size": 2067
-    },
-    {
       "page": "红岸基地",
       "rev_id": "20260426-205510-9f60c2",
       "timestamp": "2026-04-26T20:55:10+00:00",
@@ -1970,17 +1662,6 @@
       "size": 2299
     },
     {
-      "page": "测试词条_临时",
-      "rev_id": "20260426-205556-4e839e",
-      "timestamp": "2026-04-26T20:55:56+00:00",
-      "author": "butler",
-      "summary": "测试",
-      "parent_rev": null,
-      "content_hash": "sha256:4e839ecf8f8e679803089bcd622546528861d1e05c45ebe604601df9d167fa49",
-      "size_before": 0,
-      "size": 79
-    },
-    {
       "page": "云天明",
       "rev_id": "20260426-205558-fac67c",
       "timestamp": "2026-04-26T20:55:58+00:00",
@@ -1990,17 +1671,6 @@
       "content_hash": "sha256:fac67c8ebb17c9ce5b8049abea69601e3a7c6c6bf8ba1720124287a5703ac8aa",
       "size_before": 2376,
       "size": 2866
-    },
-    {
-      "page": "程心",
-      "rev_id": "20260426-205716-2f624b",
-      "timestamp": "2026-04-26T20:57:16+00:00",
-      "author": "butler",
-      "summary": "butler add-quote: 补PN(3-07-019/3-22-002/3-22-019)，basic→standard",
-      "parent_rev": "20260426-194955-a03ce7",
-      "content_hash": "sha256:2f624b3eb61113ae7dd3c326f5b75e00f0ba55ce4cb24e728029aa653c55ea31",
-      "size_before": 1487,
-      "size": 2134
     },
     {
       "page": "太阳系",
@@ -2157,17 +1827,6 @@
       "size": 3704
     },
     {
-      "page": "丁仪",
-      "rev_id": "20260426-211607-182d11",
-      "timestamp": "2026-04-26T21:16:07+00:00",
-      "author": "butler",
-      "summary": "新建页面：丁仪，理论物理学家，2条PN（1-06-004/2-42-029）",
-      "parent_rev": null,
-      "content_hash": "sha256:182d113d07aa6cac4d27b0d4cd0aeb5fb945427bc9079e8c4fb0cd598cd7e14a",
-      "size_before": 0,
-      "size": 1744
-    },
-    {
       "page": "伊文斯",
       "rev_id": "20260426-211642-8b6133",
       "timestamp": "2026-04-26T21:16:42+00:00",
@@ -2177,17 +1836,6 @@
       "content_hash": "sha256:8b61338523edc4de4b6f950fd6dc508542668965f56f15044dba4d7c0ce85ed0",
       "size_before": 0,
       "size": 2166
-    },
-    {
-      "page": "杨冬",
-      "rev_id": "20260426-211738-3fdf97",
-      "timestamp": "2026-04-26T21:17:38+00:00",
-      "author": "butler",
-      "summary": "新建页面：杨冬，遗书（1-05-085），物理学危机发现者",
-      "parent_rev": null,
-      "content_hash": "sha256:3fdf97ba1ddb82f708851268871dfb380e05afa034b7647a7a7df0f8511f5753",
-      "size_before": 0,
-      "size": 1539
     },
     {
       "page": "罗辑",
@@ -2287,6 +1935,94 @@
       "content_hash": "sha256:a703b02b20bfc6b83051c1635781ad63f504acb8c1e772435c6167923cb6581b",
       "size_before": 3555,
       "size": 3556
+    },
+    {
+      "page": "艾AA",
+      "rev_id": "20260426-212950-b53c7a",
+      "timestamp": "2026-04-26T21:29:50+00:00",
+      "author": "butler",
+      "summary": "新建艾AA人物页：天文学博士，程心挚友，星环集团经营核心，陪伴程心历经威慑崩溃至太阳系末日",
+      "parent_rev": null,
+      "content_hash": "sha256:b53c7a5d496602747ae581362698f267a657adfc6c712d552ca9fb2c32e509c6",
+      "size_before": 0,
+      "size": 3572
+    },
+    {
+      "page": "杨冬",
+      "rev_id": "20260426-213731-7d8415",
+      "timestamp": "2026-04-26T21:37:31+00:00",
+      "author": "butler",
+      "summary": "enrich: 杨冬与叶文洁的母女关系、非科学边界成员",
+      "parent_rev": "20260426-211738-3fdf97",
+      "content_hash": "sha256:7d841510f1f6feab81b8a01b7054f6b204a507c8947a01665099d05dafe57d25",
+      "size_before": 1539,
+      "size": 2150
+    },
+    {
+      "page": "关一帆",
+      "rev_id": "20260426-213859-4d411d",
+      "timestamp": "2026-04-26T21:38:59+00:00",
+      "author": "butler",
+      "summary": "enrich: 关一帆结局——拒绝小宇宙，决意归返大宇宙",
+      "parent_rev": "20260426-205244-61e1bf",
+      "content_hash": "sha256:4d411d0ba1292c128d4274c67bb688c826180770ae18d9dc7050c673fb465ff6",
+      "size_before": 2067,
+      "size": 3030
+    },
+    {
+      "page": "科学边界",
+      "rev_id": "20260426-213934-cad790",
+      "timestamp": "2026-04-26T21:39:34+00:00",
+      "author": "butler",
+      "summary": "H3 add-quote: 修复PN在blockquote外部的格式问题",
+      "parent_rev": "20260426-203042-e02c83",
+      "content_hash": "sha256:cad7906f47c3588ff3813dbb248926a757d363ede750a3e95567ff7305861e0c",
+      "size_before": 2967,
+      "size": 2952
+    },
+    {
+      "page": "程心",
+      "rev_id": "20260426-214155-8e3411",
+      "timestamp": "2026-04-26T21:41:55+00:00",
+      "author": "butler",
+      "summary": "enrich: 修正黑域错误（实为进入647号小宇宙），补充执剑人失职细节及结局",
+      "parent_rev": "20260426-205716-2f624b",
+      "content_hash": "sha256:8e341145611b920cc415f1e5f8ff6220e9da1fc80edfcf1fad30e79852f1efa3",
+      "size_before": 2134,
+      "size": 2544
+    },
+    {
+      "page": "丁仪",
+      "rev_id": "20260426-214357-f2856a",
+      "timestamp": "2026-04-26T21:43:57+00:00",
+      "author": "butler",
+      "summary": "enrich: 补充冬眠决定（2-30-064）、零距离考察水滴（2-40-029）、最后疾呼快跑",
+      "parent_rev": "20260426-211607-182d11",
+      "content_hash": "sha256:f2856a2a5f256321d04c2b917cf97269ceec203f1c00164ba828a25a6de016af",
+      "size_before": 1744,
+      "size": 2567
+    },
+    {
+      "page": "三体游戏",
+      "rev_id": "20260426-214435-203bf1",
+      "timestamp": "2026-04-26T21:44:35+00:00",
+      "author": "butler",
+      "summary": "H3 add-quote: 修复2条PN在blockquote外（1-07-067, 1-09-007移入blockquote）",
+      "parent_rev": "20260426-203042-4ac441",
+      "content_hash": "sha256:203bf1c152ab9770ff42874e3d50adf32bfeb2dbf9ad60d268c53712336b1241",
+      "size_before": 3905,
+      "size": 3907
+    },
+    {
+      "page": "歌者",
+      "rev_id": "20260426-214555-3c6a06",
+      "timestamp": "2026-04-26T21:45:55+00:00",
+      "author": "butler",
+      "summary": "create-page: 歌者（三体III黑暗森林执行者，掷出二向箔消灭太阳系）",
+      "parent_rev": null,
+      "content_hash": "sha256:3c6a06205fa60304958fd245b6ce531914bf9a89f2f164ff9571e2f1e46af62d",
+      "size_before": 0,
+      "size": 2765
     }
   ],
   "rotations": 0
