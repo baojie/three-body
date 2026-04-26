@@ -342,3 +342,22 @@ footer {
 }
 .stat-box .stat-num { font-size: 2em; font-weight: 700; color: var(--accent); display: block; }
 .stat-box .stat-label { font-size: .82em; color: var(--fg-muted); font-family: var(--sans); }
+
+/* PN Citation */
+a.pn-citation {
+  color: var(--fg-muted);
+  font-size: .82em;
+  text-decoration: none;
+  font-family: var(--mono, monospace);
+  border-bottom: 1px dotted var(--fg-muted);
+}
+a.pn-citation:hover { color: var(--accent); border-bottom-color: var(--accent); }
+
+@keyframes pn-flash {
+  0%   { background: color-mix(in srgb, var(--accent) 30%, transparent); }
+  100% { background: transparent; }
+}
+.pn-highlight {
+  animation: pn-flash 2s ease-out forwards;
+  border-radius: 3px;
+}

@@ -1,6 +1,13 @@
 {
   "plugins": [
     {
+      "id": "pn-citation",
+      "entry": "plugins/pn-citation/index.js",
+      "name": "PN 段落引文",
+      "version": "1.0.0",
+      "description": "将 （1-02-001） 格式引文渲染为指向章节段落的链接；为原文段落注入锚点 id"
+    },
+    {
       "id": "footnote",
       "entry": "plugins/footnote/index.js",
       "name": "脚注",
