@@ -10,7 +10,14 @@
       "Bash(python3 wiki/scripts/build_registry.py*)",
       "Bash(bash wiki/scripts/wiki_commit.sh*)",
       "Bash(bash wiki/scripts/publish.sh)",
-      "Bash(rsync*)"
+      "Bash(rsync*)",
+      "Bash(python3 wiki/scripts/butler/discover_wanted.py*)",
+      "Bash(python3 wiki/scripts/butler/corpus_search.py*)",
+      "Bash(python3 wiki/scripts/butler/record_action.py*)",
+      "Bash(cat wiki/logs/butler/*)",
+      "Bash(echo * > wiki/logs/butler/round_counter.txt)",
+      "Bash(git add wiki/public/pages/*)",
+      "Bash(git add wiki/logs/butler/*)"
     ],
     "deny": [
       "Bash(git commit --amend*)",
