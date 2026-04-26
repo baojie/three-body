@@ -159,10 +159,119 @@ CURRENT=$(cat wiki/logs/butler/round_counter.txt)
 
 ## 七、empty_fallback（所有队列为空时）
 
+> 到达这里意味着 discover + housekeeping-scan 都跑过且无新条目。队列为空不是停止信号，而是切换到**自主挖掘模式**。找到工作就立即执行，不等三步全跑完。
+
+### 第一步：深度原文扫描，挖掘未建页面
+
+discover_wanted.py 依赖 broken wikilink，扫不到从未被引用的实体。这里直接读原文，找还没有 wiki 页的专有名词：
+
+```bash
+python3 - << 'PYEOF'
+import random, re
+from pathlib import Path
+
+existing = {p.stem for p in Path('wiki/public/pages').glob('*.md')}
+files = list(Path('corpus/utf8').glob('*.txt'))
+f = random.choice(files)
+lines = f.read_text(encoding='utf-8').splitlines()
+start = random.randint(0, max(0, len(lines) - 400))
+window = '\n'.join(lines[start:start + 400])
+
+# 只用两种高可靠标记：书名号《》和专名号「」
+book_titles = re.compile(r'^三体[I1一二三IVV：·]')   # 排除书名本身
+candidates = set()
+for m in re.findall(r'《([^》]{2,12})》', window):
+    if not book_titles.match(m):
+        candidates.add(m)
+for m in re.findall(r'「([^」]{2,10})」', window):
+    candidates.add(m)
+
+missing = sorted(candidates - existing)
+print(f'[corpus scan] {f.name} 行{start}–{start+400}，候选未建页（共{len(missing)}个）：')
+for m in missing[:10]:
+    print(f'  {m}')
+if not missing:
+    print('  （本窗口无新候选，Butler 需人工阅读原文识别实体，或换窗口重试）')
+PYEOF
 ```
-1. 运行 D1 discover → top 5 写入 queue.md P2
-2. 运行 H10 scan → 找 stub/broken link/缺 alias → 写入 housekeeping_queue.md
-3. 若仍为空（wiki 已相当完整）→ 暂停，报告健康状态，等待用户指示
+
+从输出中按优先级挑选，写入 queue.md P2，**立即执行第一条**：
+
+| 优先 | 判断标准 |
+|------|---------|
+| 高 | 《三体》宇宙中的虚构概念/人物/事件/技术（如`三体`本身、`球状闪电`、`时间之外的往事`） |
+| 中 | 在故事里扮演实质角色的现实事物（如`清明上河图`作为三体游戏场景） |
+| 低/跳过 | 仅一笔带过的现实作品/地名、普通名词 |
+
+若本窗口无高/中优先候选，换窗口重试（最多 3 次），再跳到第二步。
+
+### 第二步：enrich 短小页面
+
+直接按文件大小找内容最少的页面（不依赖 quality 字段）：
+
+```bash
+python3 - << 'PYEOF'
+import random
+from pathlib import Path
+
+pages_dir = Path('wiki/public/pages')
+chapter_prefix = ('三体I', '三体II', '三体III', '三体（')
+
+# 排除章节原文页，按文件大小升序取最小的 20 个
+candidates = sorted(
+    [p for p in pages_dir.glob('*.md')
+     if not any(p.stem.startswith(pfx) for pfx in chapter_prefix)],
+    key=lambda p: p.stat().st_size
+)[:20]
+
+# 随机选一个，给 Butler 决定做什么
+chosen = random.choice(candidates)
+size = chosen.stat().st_size
+print(f'enrich 候选: {chosen.stem}  ({size} bytes)')
+PYEOF
+```
+
+对选出的页面执行 `A3 enrich-quality`（升一档）或 `A2 enrich-page`（补正文）。
+
+### 第三步：随机 housekeeping
+
+对随机页面做轻量质量检查，总能找到可改善的地方：
+
+```bash
+python3 - << 'PYEOF'
+import random, re
+from pathlib import Path
+
+pages_dir = Path('wiki/public/pages')
+chapter_prefix = ('三体I', '三体II', '三体III', '三体（')
+pages = [p for p in pages_dir.glob('*.md')
+         if not any(p.stem.startswith(pfx) for pfx in chapter_prefix)]
+
+chosen = random.sample(pages, min(5, len(pages)))
+print("随机抽查页面（找第一个有问题的做）：")
+for p in chosen:
+    text = p.read_text(encoding='utf-8')
+    issues = []
+    if not re.search(r'\[\[.+?\]\]', text):
+        issues.append('缺 wikilink → C2/C3')
+    if not re.search(r'（[1-3]-\d{2}-\d{3}）', text):
+        issues.append('缺 PN 引文 → B2')
+    if '## 相关词条' not in text:
+        issues.append('缺相关词条节 → H5')
+    if issues:
+        print(f'  {p.stem}: {", ".join(issues)}')
+PYEOF
+```
+
+选第一个有问题的页面，执行对应动作。
+
+### 最终回退（极罕见）
+
+仅当上述三步均确实无工作：
+
+```
+[empty_fallback] 原文扫描无候选，全库页面均有 wikilink/PN/相关词条节。
+Wiki 构建进入尾声。建议运行 W5 反思，或人工指定专项任务。
 ```
 
 ---

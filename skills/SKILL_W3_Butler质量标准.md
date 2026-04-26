@@ -83,6 +83,7 @@ python3 wiki/scripts/compute_quality.py --report 2>/dev/null | head -20
 | description | 必须包含"出场书册 + 身份 + 核心作用"三要素 |
 | 正文 | 必须有"背景"或"人物简介"节 |
 | wikilink | 至少链接到 1 个相关概念/组织词条 |
+| 历史结局节（QR-001）| standard 级核心人物（跨书册或贯穿多章节）须有"历史结局"或"命运反讽"节，记录最终命运及历史意义 |
 
 ### concept / law（概念/法则）
 

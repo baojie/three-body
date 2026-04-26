@@ -17,6 +17,19 @@ description: 三体 Wiki Butler 的原子行动目录——A/B/C/D/E/H 组标准
 - fail → 停止，记 fail，进入下一轮
 - **每轮结束必须**调用 `record_action.py` 写 `actions.jsonl`
 
+### ⚠️ 页面写入铁律
+
+**禁止直接用 Write/Edit 工具写 `wiki/public/pages/` 下的文件。**
+所有页面操作必须通过以下脚本，revision 由脚本自动记录：
+
+| 场景 | 命令 |
+|------|------|
+| 新建页面 | `python3 wiki/scripts/add_page.py PAGE - --summary "..." --author butler << 'EOF'\n[内容]\nEOF` |
+| 编辑页面 | `python3 wiki/scripts/edit_page.py PAGE - --summary "..." --author butler << 'EOF'\n[完整新内容]\nEOF` |
+| 删除/重定向 | `python3 wiki/scripts/delete_page.py PAGE [--redirect-to TARGET] --summary "..."` |
+
+`edit_page.py` 须传入**完整新内容**（非 diff），内置保护：禁止丢失 frontmatter、禁止缩减超 40%（加 `--allow-shrink` 可覆盖）。
+
 ## PN 引文系统
 
 每段原文都有全局唯一的 PN 编号，格式 `B-CC-PPP`：
@@ -57,8 +70,15 @@ python3 wiki/scripts/butler/corpus_search.py "关键词" --max 10
    ```bash
    python3 wiki/scripts/butler/corpus_search.py "PAGE" --max 15 --context 3
    ```
+   若命中 < 3 条（如词条名是常见词或与书名重叠），改用侧面词补充搜索：功能描述词、别名、关联实体名。例：搜"三体游戏"不如搜"V装具"+"游戏"。
 2. 从结果提炼：身份/定义、出场书册、关键事件/作用、关联词条
-3. 写入 `wiki/public/pages/PAGE.md`，格式见下方模板
+3. 用 `add_page.py` 写入（revision 自动记录）：
+   ```bash
+   python3 wiki/scripts/add_page.py PAGE - \
+     --summary "create-page: PAGE" --author butler << 'EOF'
+   [完整页面内容]
+   EOF
+   ```
 4. 页面最少包含：frontmatter + 1段导语 + 2个正文节 + 相关词条
 
 **后置检查**：
@@ -81,11 +101,77 @@ python3 wiki/scripts/butler/corpus_search.py "关键词" --max 10
    python3 wiki/scripts/butler/corpus_search.py "PAGE" --max 20 --context 4
    ```
 3. 找出缺失的节（背景/关键事件/影响/性格分析/相关等）
-4. 追加一个新节，不替换任何已有内容
+4. 构造完整新内容（保留原有内容 + 追加新节），通过 `edit_page.py` 写入：
+   ```bash
+   python3 wiki/scripts/edit_page.py PAGE - \
+     --summary "enrich-page: PAGE" --author butler << 'EOF'
+   [完整新内容]
+   EOF
+   ```
 
 **后置检查**：已有内容完整保留，新节有原文依据
 
 **diff 上限**：≤ 25 行
+
+---
+
+### A3 `enrich-quality PAGE [目标档]`
+
+将页面质量升一档（或升至指定档）。**常用于队列为空时的自主 fallback。**
+
+#### 质量五档门槛
+
+| 档位 | 关键指标 |
+|------|---------|
+| **stub** | 正文 < 100 字，或无 `##` 节且 < 300 字 |
+| **basic** | 正文 < 500 字，或（节 < 2 且 PN < 2） |
+| **standard** | 其余（未达 featured） |
+| **featured** | ≥ 3 节 + （PN ≥ 3 或引文块 ≥ 3 条）+ 散文 ≥ 200 字 |
+
+**前置**：PAGE 已存在 + 当前质量 < featured（stub/basic/standard 均可）
+
+**步骤**：
+
+1. **诊断**：读页面，手动统计指标并与目标档对比，列出缺口
+   ```bash
+   cat wiki/public/pages/PAGE.md | wc -c     # 字符数
+   grep -c '^## ' wiki/public/pages/PAGE.md  # 节数
+   grep -c '（[1-3]-[0-9]' wiki/public/pages/PAGE.md  # PN 引文数
+   grep -c '^> ' wiki/public/pages/PAGE.md   # 引文块行数
+   ```
+
+2. **确定目标档**：未指定 → 当前档 +1
+
+3. **按缺口补充**（优先级顺序）：
+
+   | 缺口 | 操作 |
+   |------|------|
+   | 节不足 | 按 type 补标准节（见下方节模板表） |
+   | PN/引文不足 | corpus_search + 追加 `## 原文片段` 节，含 PN 标注 |
+   | 散文不足 | 基于已有引文写叙述性段落（**不重复引文内容，另起一段**） |
+   | 相关词条节空 | H5 add-related（本轮顺带完成） |
+
+   **操作顺序**：先补引文（素材来源）→ 再写散文 → 再加节
+
+4. **验证**：对照目标档门槛，逐项确认均已达标
+
+**后置检查**：
+- 已有内容完整保留（append-only）
+- 每处新增内容有 corpus 依据（PN 可追溯）
+- 质量档实际提升（用门槛表验证）
+
+**diff 上限**：≤ 40 行（upgrade 幅度大时允许放宽至 60 行）
+
+#### 各类型页面标准节模板
+
+| type | stub→basic 必加节 | basic→standard 补充节 | standard→featured 补充节 |
+|------|-----------------|----------------------|------------------------|
+| person | `## 背景` `## 在故事中的作用` | `## 性格与动机` | `## 命运` `## 原文片段` |
+| concept / law | `## 定义` `## 在故事中的意义` | `## 理论细节` | `## 原文片段` `## 影响` |
+| technology / weapon | `## 技术原理` `## 在故事中的作用` | `## 关键场景` | `## 原文片段` |
+| event | `## 经过` `## 影响` | `## 背景` | `## 原文片段` `## 相关人物` |
+| organization / civilization | `## 概述` `## 主要成员/构成` | `## 历史` | `## 原文片段` |
+| place | `## 描述` `## 在故事中的作用` | `## 关键事件` | `## 原文片段` |
 
 ---
 
@@ -103,13 +189,12 @@ python3 wiki/scripts/butler/corpus_search.py "关键词" --max 10
    python3 wiki/scripts/butler/corpus_search.py "PAGE" --max 10 --context 120
    ```
 2. 选1–2段关键原文（≤ 200字/段），记录其 PN
-3. 以 blockquote + PN 引文追加到页面末尾：
-   ```markdown
-   ## 原文片段
-
-   > 「原文引用」
-
-   （1-02-052）
+3. 构造完整新内容（原内容 + 追加引文节），通过 `edit_page.py` 写入：
+   ```bash
+   python3 wiki/scripts/edit_page.py PAGE - \
+     --summary "add-quote: PAGE" --author butler << 'EOF'
+   [完整新内容]
+   EOF
    ```
 
 **后置检查**：
@@ -155,8 +240,10 @@ python3 wiki/scripts/butler/corpus_search.py "关键词" --max 10
 
 **前置**：PAGE 在 `discover_wanted.py` 输出中 + wiki/public/pages/PAGE.md 不存在
 
-**步骤**：创建以下内容：
-```markdown
+**步骤**：通过 `add_page.py` 创建存根（revision 自动记录）：
+```bash
+python3 wiki/scripts/add_page.py PAGE - \
+  --summary "stub: PAGE" --author butler << 'EOF'
 ---
 id: PAGE
 type: unknown
@@ -171,6 +258,7 @@ description: （待补充）
 （页面待建设，内容将从《三体》三部曲提取。）
 
 ## 相关词条
+EOF
 ```
 
 **后置检查**：文件存在，frontmatter 有效
@@ -190,7 +278,13 @@ description: （待补充）
 2. 对每个 broken target：
    - 若 target 已有别名可对应现有页面 → 修正链接文字
    - 若 target 完全没有对应页 → 加入 queue.md P2 stub
-3. 本轮只修复 broken 链接，不修改其他内容
+3. 构造完整新内容（链接已修正），通过 `edit_page.py` 写入：
+   ```bash
+   python3 wiki/scripts/edit_page.py PAGE - \
+     --summary "fix-links: PAGE" --author butler << 'EOF'
+   [完整新内容]
+   EOF
+   ```
 
 **后置检查**：修复后的链接目标存在于 pages.json
 
@@ -204,7 +298,13 @@ description: （待补充）
 
 **前置**：ALIAS 是 broken link + 在 corpus 中确认与 PAGE 是同一概念
 
-**步骤**：在 PAGE 的 frontmatter `aliases:` 中追加 ALIAS
+**步骤**：在 frontmatter `aliases:` 中追加 ALIAS，通过 `edit_page.py` 写入：
+```bash
+python3 wiki/scripts/edit_page.py PAGE - \
+  --summary "add-alias: PAGE ← ALIAS" --author butler << 'EOF'
+[完整新内容（aliases 已追加）]
+EOF
+```
 
 **diff 上限**：1 行
 
@@ -229,15 +329,33 @@ description: （待补充）
 
 ---
 
+## 禁止事项
+
+1. **禁止直接用 Write/Edit 工具写 `wiki/public/pages/` 下的文件后跳过脚本**
+2. **禁止捏造 PN**（必须从 corpus_search 结果中复制）
+3. **禁止绕过 edit_page.py 的保护标志**（`--allow-shrink` 仅限 redirect/merge）
+4. **禁止在 accept 前跳过 revision 验证**（见下方自评步骤）
+
+---
+
 ## 自评标准（W3）
 
-每轮执行后自查：
+每轮执行后，**按顺序**自查：
 
-| 结果 | 条件 |
-|------|------|
-| **accept** | 写入内容有原文依据，格式正确，无捏造 |
-| **fail** | 无源断言 / 格式错误 / 写入失败 / 违反不变量 |
+| 步骤 | 检查项 |
+|------|--------|
+| ① | 写入内容有原文依据，格式正确，无捏造 |
+| ② **revision 验证**（写页面时必做） | `ls wiki/public/history/PAGE.json` 存在 且 `python3 -c "import json; d=json.load(open('wiki/public/history/PAGE.json')); print(d['revision_count'])"` > 0 |
+| ③ 若 ② 验证失败 | 立即补调：`python3 wiki/scripts/record_revision.py PAGE --summary "<action>: ..." --author butler` |
+
+| 最终结果 | 条件 |
+|----------|------|
+| **accept** | ①②均通过（或③已补救） |
+| **fail** | 无源断言 / 格式错误 / 写入失败 / ③补救后仍失败 |
 | **skip** | 任务已过时（页面已存在且内容充分）|
+
+> **revision 验证是 accept 前的强制检查，不可跳过。**
+> `record_revision.py` 内置 content-hash 去重，多调用无副作用，宁可多调不可漏调。
 
 ---
 
@@ -255,6 +373,8 @@ python3 wiki/scripts/butler/record_action.py \
 
 # 3. 在 queue.md 标记 [x]（将 "- [ ]" 改为 "- [x]"）
 ```
+
+> discover / housekeeping-scan 等只改队列文件的动作不产生页面修订，revision 验证步骤可跳过。
 
 ### `--reflect` 填写规范
 
