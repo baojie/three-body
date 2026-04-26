@@ -8,7 +8,10 @@
         "原文",
         "三体I"
       ],
-      "path": "pages/三体I-01-前言.md"
+      "path": "pages/三体I-01-前言.md",
+      "book": "三体I",
+      "book_seq": 1,
+      "pn_prefix": "1-01"
     },
     "三体I-02-疯狂年代": {
       "type": "chapter",
@@ -18,7 +21,10 @@
         "原文",
         "三体I"
       ],
-      "path": "pages/三体I-02-疯狂年代.md"
+      "path": "pages/三体I-02-疯狂年代.md",
+      "book": "三体I",
+      "book_seq": 2,
+      "pn_prefix": "1-02"
     },
     "三体I-03-寂静的春天": {
       "type": "chapter",
@@ -28,7 +34,10 @@
         "原文",
         "三体I"
       ],
-      "path": "pages/三体I-03-寂静的春天.md"
+      "path": "pages/三体I-03-寂静的春天.md",
+      "book": "三体I",
+      "book_seq": 3,
+      "pn_prefix": "1-03"
     },
     "三体I-04-红岸之一": {
       "type": "chapter",
@@ -38,7 +47,10 @@
         "原文",
         "三体I"
       ],
-      "path": "pages/三体I-04-红岸之一.md"
+      "path": "pages/三体I-04-红岸之一.md",
+      "book": "三体I",
+      "book_seq": 4,
+      "pn_prefix": "1-04"
     },
     "三体I-05-三十八年后": {
       "type": "chapter",
@@ -48,7 +60,10 @@
         "原文",
         "三体I"
       ],
-      "path": "pages/三体I-05-三十八年后.md"
+      "path": "pages/三体I-05-三十八年后.md",
+      "book": "三体I",
+      "book_seq": 5,
+      "pn_prefix": "1-05"
     },
     "三体I-06-台球": {
       "type": "chapter",
@@ -58,7 +73,10 @@
         "原文",
         "三体I"
       ],
-      "path": "pages/三体I-06-台球.md"
+      "path": "pages/三体I-06-台球.md",
+      "book": "三体I",
+      "book_seq": 6,
+      "pn_prefix": "1-06"
     },
     "三体I-07-射手和农场主": {
       "type": "chapter",
@@ -68,7 +86,10 @@
         "原文",
         "三体I"
       ],
-      "path": "pages/三体I-07-射手和农场主.md"
+      "path": "pages/三体I-07-射手和农场主.md",
+      "book": "三体I",
+      "book_seq": 7,
+      "pn_prefix": "1-07"
     },
     "三体I-08-周文王·长夜": {
       "type": "chapter",
@@ -78,7 +99,10 @@
         "原文",
         "三体I"
       ],
-      "path": "pages/三体I-08-周文王·长夜.md"
+      "path": "pages/三体I-08-周文王·长夜.md",
+      "book": "三体I",
+      "book_seq": 8,
+      "pn_prefix": "1-08"
     },
     "三体I-09-叶文洁": {
       "type": "chapter",
@@ -88,7 +112,10 @@
         "原文",
         "三体I"
       ],
-      "path": "pages/三体I-09-叶文洁.md"
+      "path": "pages/三体I-09-叶文洁.md",
+      "book": "三体I",
+      "book_seq": 9,
+      "pn_prefix": "1-09"
     },
     "三体I-10-字宙闪烁": {
       "type": "chapter",
@@ -98,7 +125,10 @@
         "原文",
         "三体I"
       ],
-      "path": "pages/三体I-10-字宙闪烁.md"
+      "path": "pages/三体I-10-字宙闪烁.md",
+      "book": "三体I",
+      "book_seq": 10,
+      "pn_prefix": "1-10"
     },
     "三体I-11-大史": {
       "type": "chapter",
@@ -108,7 +138,10 @@
         "原文",
         "三体I"
       ],
-      "path": "pages/三体I-11-大史.md"
+      "path": "pages/三体I-11-大史.md",
+      "book": "三体I",
+      "book_seq": 11,
+      "pn_prefix": "1-11"
     },
     "三体I-12-三体·墨子·烈焰": {
       "type": "chapter",
@@ -118,7 +151,10 @@
         "原文",
         "三体I"
       ],
-      "path": "pages/三体I-12-三体·墨子·烈焰.md"
+      "path": "pages/三体I-12-三体·墨子·烈焰.md",
+      "book": "三体I",
+      "book_seq": 12,
+      "pn_prefix": "1-12"
     },
     "三体I-13-红岸之二": {
       "type": "chapter",
@@ -128,7 +164,10 @@
         "原文",
         "三体I"
       ],
-      "path": "pages/三体I-13-红岸之二.md"
+      "path": "pages/三体I-13-红岸之二.md",
+      "book": "三体I",
+      "book_seq": 13,
+      "pn_prefix": "1-13"
     },
     "三体I-14-红岸之三": {
       "type": "chapter",
@@ -138,7 +177,10 @@
         "原文",
         "三体I"
       ],
-      "path": "pages/三体I-14-红岸之三.md"
+      "path": "pages/三体I-14-红岸之三.md",
+      "book": "三体I",
+      "book_seq": 14,
+      "pn_prefix": "1-14"
     },
     "三体I-15-红岸之四": {
       "type": "chapter",
@@ -148,7 +190,10 @@
         "原文",
         "三体I"
       ],
-      "path": "pages/三体I-15-红岸之四.md"
+      "path": "pages/三体I-15-红岸之四.md",
+      "book": "三体I",
+      "book_seq": 15,
+      "pn_prefix": "1-15"
     },
     "三体I-16-三体、哥白尼、宇宙橄榄球、三日凌空": {
       "type": "chapter",
@@ -158,7 +203,10 @@
         "原文",
         "三体I"
       ],
-      "path": "pages/三体I-16-三体、哥白尼、宇宙橄榄球、三日凌空.md"
+      "path": "pages/三体I-16-三体、哥白尼、宇宙橄榄球、三日凌空.md",
+      "book": "三体I",
+      "book_seq": 16,
+      "pn_prefix": "1-16"
     },
     "三体I-17-三体问题": {
       "type": "chapter",
@@ -168,7 +216,10 @@
         "原文",
         "三体I"
       ],
-      "path": "pages/三体I-17-三体问题.md"
+      "path": "pages/三体I-17-三体问题.md",
+      "book": "三体I",
+      "book_seq": 17,
+      "pn_prefix": "1-17"
     },
     "三体I-18-三体、牛顿、冯·诺依曼、秦始皇、三日连珠": {
       "type": "chapter",
@@ -178,7 +229,10 @@
         "原文",
         "三体I"
       ],
-      "path": "pages/三体I-18-三体、牛顿、冯·诺依曼、秦始皇、三日连珠.md"
+      "path": "pages/三体I-18-三体、牛顿、冯·诺依曼、秦始皇、三日连珠.md",
+      "book": "三体I",
+      "book_seq": 18,
+      "pn_prefix": "1-18"
     },
     "三体I-19-聚会": {
       "type": "chapter",
@@ -188,7 +242,10 @@
         "原文",
         "三体I"
       ],
-      "path": "pages/三体I-19-聚会.md"
+      "path": "pages/三体I-19-聚会.md",
+      "book": "三体I",
+      "book_seq": 19,
+      "pn_prefix": "1-19"
     },
     "三体I-20-三体、爱因斯坦、单摆、大撕裂": {
       "type": "chapter",
@@ -198,7 +255,10 @@
         "原文",
         "三体I"
       ],
-      "path": "pages/三体I-20-三体、爱因斯坦、单摆、大撕裂.md"
+      "path": "pages/三体I-20-三体、爱因斯坦、单摆、大撕裂.md",
+      "book": "三体I",
+      "book_seq": 20,
+      "pn_prefix": "1-20"
     },
     "三体I-21-三体、远征": {
       "type": "chapter",
@@ -208,7 +268,10 @@
         "原文",
         "三体I"
       ],
-      "path": "pages/三体I-21-三体、远征.md"
+      "path": "pages/三体I-21-三体、远征.md",
+      "book": "三体I",
+      "book_seq": 21,
+      "pn_prefix": "1-21"
     },
     "三体I-22-地球叛军": {
       "type": "chapter",
@@ -218,7 +281,10 @@
         "原文",
         "三体I"
       ],
-      "path": "pages/三体I-22-地球叛军.md"
+      "path": "pages/三体I-22-地球叛军.md",
+      "book": "三体I",
+      "book_seq": 22,
+      "pn_prefix": "1-22"
     },
     "三体I-23-红岸之五": {
       "type": "chapter",
@@ -228,7 +294,10 @@
         "原文",
         "三体I"
       ],
-      "path": "pages/三体I-23-红岸之五.md"
+      "path": "pages/三体I-23-红岸之五.md",
+      "book": "三体I",
+      "book_seq": 23,
+      "pn_prefix": "1-23"
     },
     "三体I-24-红岸之六": {
       "type": "chapter",
@@ -238,7 +307,10 @@
         "原文",
         "三体I"
       ],
-      "path": "pages/三体I-24-红岸之六.md"
+      "path": "pages/三体I-24-红岸之六.md",
+      "book": "三体I",
+      "book_seq": 24,
+      "pn_prefix": "1-24"
     },
     "三体I-25-叛乱": {
       "type": "chapter",
@@ -248,7 +320,10 @@
         "原文",
         "三体I"
       ],
-      "path": "pages/三体I-25-叛乱.md"
+      "path": "pages/三体I-25-叛乱.md",
+      "book": "三体I",
+      "book_seq": 25,
+      "pn_prefix": "1-25"
     },
     "三体I-26-雷志成、杨卫宁之死": {
       "type": "chapter",
@@ -258,7 +333,10 @@
         "原文",
         "三体I"
       ],
-      "path": "pages/三体I-26-雷志成、杨卫宁之死.md"
+      "path": "pages/三体I-26-雷志成、杨卫宁之死.md",
+      "book": "三体I",
+      "book_seq": 26,
+      "pn_prefix": "1-26"
     },
     "三体I-27-无人忏悔": {
       "type": "chapter",
@@ -268,7 +346,10 @@
         "原文",
         "三体I"
       ],
-      "path": "pages/三体I-27-无人忏悔.md"
+      "path": "pages/三体I-27-无人忏悔.md",
+      "book": "三体I",
+      "book_seq": 27,
+      "pn_prefix": "1-27"
     },
     "三体I-28-伊文斯": {
       "type": "chapter",
@@ -278,7 +359,10 @@
         "原文",
         "三体I"
       ],
-      "path": "pages/三体I-28-伊文斯.md"
+      "path": "pages/三体I-28-伊文斯.md",
+      "book": "三体I",
+      "book_seq": 28,
+      "pn_prefix": "1-28"
     },
     "三体I-29-第二红岸基地": {
       "type": "chapter",
@@ -288,7 +372,10 @@
         "原文",
         "三体I"
       ],
-      "path": "pages/三体I-29-第二红岸基地.md"
+      "path": "pages/三体I-29-第二红岸基地.md",
+      "book": "三体I",
+      "book_seq": 29,
+      "pn_prefix": "1-29"
     },
     "三体I-30-地球三体运动": {
       "type": "chapter",
@@ -298,7 +385,10 @@
         "原文",
         "三体I"
       ],
-      "path": "pages/三体I-30-地球三体运动.md"
+      "path": "pages/三体I-30-地球三体运动.md",
+      "book": "三体I",
+      "book_seq": 30,
+      "pn_prefix": "1-30"
     },
     "三体I-31-两个质子": {
       "type": "chapter",
@@ -308,7 +398,10 @@
         "原文",
         "三体I"
       ],
-      "path": "pages/三体I-31-两个质子.md"
+      "path": "pages/三体I-31-两个质子.md",
+      "book": "三体I",
+      "book_seq": 31,
+      "pn_prefix": "1-31"
     },
     "三体I-32-古筝行动": {
       "type": "chapter",
@@ -318,7 +411,10 @@
         "原文",
         "三体I"
       ],
-      "path": "pages/三体I-32-古筝行动.md"
+      "path": "pages/三体I-32-古筝行动.md",
+      "book": "三体I",
+      "book_seq": 32,
+      "pn_prefix": "1-32"
     },
     "三体I-33-监听员": {
       "type": "chapter",
@@ -328,7 +424,10 @@
         "原文",
         "三体I"
       ],
-      "path": "pages/三体I-33-监听员.md"
+      "path": "pages/三体I-33-监听员.md",
+      "book": "三体I",
+      "book_seq": 33,
+      "pn_prefix": "1-33"
     },
     "三体I-34-智子": {
       "type": "chapter",
@@ -338,7 +437,10 @@
         "原文",
         "三体I"
       ],
-      "path": "pages/三体I-34-智子.md"
+      "path": "pages/三体I-34-智子.md",
+      "book": "三体I",
+      "book_seq": 34,
+      "pn_prefix": "1-34"
     },
     "三体I-35-虫子": {
       "type": "chapter",
@@ -348,7 +450,10 @@
         "原文",
         "三体I"
       ],
-      "path": "pages/三体I-35-虫子.md"
+      "path": "pages/三体I-35-虫子.md",
+      "book": "三体I",
+      "book_seq": 35,
+      "pn_prefix": "1-35"
     },
     "三体I-36-尾声·遗址": {
       "type": "chapter",
@@ -358,7 +463,10 @@
         "原文",
         "三体I"
       ],
-      "path": "pages/三体I-36-尾声·遗址.md"
+      "path": "pages/三体I-36-尾声·遗址.md",
+      "book": "三体I",
+      "book_seq": 36,
+      "pn_prefix": "1-36"
     },
     "三体I-37-后记": {
       "type": "chapter",
@@ -368,7 +476,10 @@
         "原文",
         "三体I"
       ],
-      "path": "pages/三体I-37-后记.md"
+      "path": "pages/三体I-37-后记.md",
+      "book": "三体I",
+      "book_seq": 37,
+      "pn_prefix": "1-37"
     },
     "三体II-02-序章": {
       "type": "chapter",
@@ -378,7 +489,10 @@
         "原文",
         "三体II"
       ],
-      "path": "pages/三体II-02-序章.md"
+      "path": "pages/三体II-02-序章.md",
+      "book": "三体II",
+      "book_seq": 2,
+      "pn_prefix": "2-02"
     },
     "三体II-03-上部第1节": {
       "type": "chapter",
@@ -388,7 +502,10 @@
         "原文",
         "三体II"
       ],
-      "path": "pages/三体II-03-上部第1节.md"
+      "path": "pages/三体II-03-上部第1节.md",
+      "book": "三体II",
+      "book_seq": 3,
+      "pn_prefix": "2-03"
     },
     "三体II-04-上部第2节": {
       "type": "chapter",
@@ -398,7 +515,10 @@
         "原文",
         "三体II"
       ],
-      "path": "pages/三体II-04-上部第2节.md"
+      "path": "pages/三体II-04-上部第2节.md",
+      "book": "三体II",
+      "book_seq": 4,
+      "pn_prefix": "2-04"
     },
     "三体II-05-上部第3节": {
       "type": "chapter",
@@ -408,7 +528,10 @@
         "原文",
         "三体II"
       ],
-      "path": "pages/三体II-05-上部第3节.md"
+      "path": "pages/三体II-05-上部第3节.md",
+      "book": "三体II",
+      "book_seq": 5,
+      "pn_prefix": "2-05"
     },
     "三体II-06-上部第4节": {
       "type": "chapter",
@@ -418,7 +541,10 @@
         "原文",
         "三体II"
       ],
-      "path": "pages/三体II-06-上部第4节.md"
+      "path": "pages/三体II-06-上部第4节.md",
+      "book": "三体II",
+      "book_seq": 6,
+      "pn_prefix": "2-06"
     },
     "三体II-07-上部第5节": {
       "type": "chapter",
@@ -428,7 +554,10 @@
         "原文",
         "三体II"
       ],
-      "path": "pages/三体II-07-上部第5节.md"
+      "path": "pages/三体II-07-上部第5节.md",
+      "book": "三体II",
+      "book_seq": 7,
+      "pn_prefix": "2-07"
     },
     "三体II-08-上部第6节": {
       "type": "chapter",
@@ -438,7 +567,10 @@
         "原文",
         "三体II"
       ],
-      "path": "pages/三体II-08-上部第6节.md"
+      "path": "pages/三体II-08-上部第6节.md",
+      "book": "三体II",
+      "book_seq": 8,
+      "pn_prefix": "2-08"
     },
     "三体II-09-上部第7节": {
       "type": "chapter",
@@ -448,7 +580,10 @@
         "原文",
         "三体II"
       ],
-      "path": "pages/三体II-09-上部第7节.md"
+      "path": "pages/三体II-09-上部第7节.md",
+      "book": "三体II",
+      "book_seq": 9,
+      "pn_prefix": "2-09"
     },
     "三体II-10-上部第8节": {
       "type": "chapter",
@@ -458,7 +593,10 @@
         "原文",
         "三体II"
       ],
-      "path": "pages/三体II-10-上部第8节.md"
+      "path": "pages/三体II-10-上部第8节.md",
+      "book": "三体II",
+      "book_seq": 10,
+      "pn_prefix": "2-10"
     },
     "三体II-11-上部第9节": {
       "type": "chapter",
@@ -468,7 +606,10 @@
         "原文",
         "三体II"
       ],
-      "path": "pages/三体II-11-上部第9节.md"
+      "path": "pages/三体II-11-上部第9节.md",
+      "book": "三体II",
+      "book_seq": 11,
+      "pn_prefix": "2-11"
     },
     "三体II-12-上部第10节": {
       "type": "chapter",
@@ -478,7 +619,10 @@
         "原文",
         "三体II"
       ],
-      "path": "pages/三体II-12-上部第10节.md"
+      "path": "pages/三体II-12-上部第10节.md",
+      "book": "三体II",
+      "book_seq": 12,
+      "pn_prefix": "2-12"
     },
     "三体II-13-上部第11节": {
       "type": "chapter",
@@ -488,7 +632,10 @@
         "原文",
         "三体II"
       ],
-      "path": "pages/三体II-13-上部第11节.md"
+      "path": "pages/三体II-13-上部第11节.md",
+      "book": "三体II",
+      "book_seq": 13,
+      "pn_prefix": "2-13"
     },
     "三体II-14-上部第12节": {
       "type": "chapter",
@@ -498,7 +645,10 @@
         "原文",
         "三体II"
       ],
-      "path": "pages/三体II-14-上部第12节.md"
+      "path": "pages/三体II-14-上部第12节.md",
+      "book": "三体II",
+      "book_seq": 14,
+      "pn_prefix": "2-14"
     },
     "三体II-15-上部第13节": {
       "type": "chapter",
@@ -508,7 +658,10 @@
         "原文",
         "三体II"
       ],
-      "path": "pages/三体II-15-上部第13节.md"
+      "path": "pages/三体II-15-上部第13节.md",
+      "book": "三体II",
+      "book_seq": 15,
+      "pn_prefix": "2-15"
     },
     "三体II-16-上部第14节": {
       "type": "chapter",
@@ -518,7 +671,10 @@
         "原文",
         "三体II"
       ],
-      "path": "pages/三体II-16-上部第14节.md"
+      "path": "pages/三体II-16-上部第14节.md",
+      "book": "三体II",
+      "book_seq": 16,
+      "pn_prefix": "2-16"
     },
     "三体II-17-上部第15节": {
       "type": "chapter",
@@ -528,7 +684,10 @@
         "原文",
         "三体II"
       ],
-      "path": "pages/三体II-17-上部第15节.md"
+      "path": "pages/三体II-17-上部第15节.md",
+      "book": "三体II",
+      "book_seq": 17,
+      "pn_prefix": "2-17"
     },
     "三体II-18-上部第16节": {
       "type": "chapter",
@@ -538,7 +697,10 @@
         "原文",
         "三体II"
       ],
-      "path": "pages/三体II-18-上部第16节.md"
+      "path": "pages/三体II-18-上部第16节.md",
+      "book": "三体II",
+      "book_seq": 18,
+      "pn_prefix": "2-18"
     },
     "三体II-19-中部第1节": {
       "type": "chapter",
@@ -548,7 +710,10 @@
         "原文",
         "三体II"
       ],
-      "path": "pages/三体II-19-中部第1节.md"
+      "path": "pages/三体II-19-中部第1节.md",
+      "book": "三体II",
+      "book_seq": 19,
+      "pn_prefix": "2-19"
     },
     "三体II-20-中部第2节": {
       "type": "chapter",
@@ -558,7 +723,10 @@
         "原文",
         "三体II"
       ],
-      "path": "pages/三体II-20-中部第2节.md"
+      "path": "pages/三体II-20-中部第2节.md",
+      "book": "三体II",
+      "book_seq": 20,
+      "pn_prefix": "2-20"
     },
     "三体II-21-中部第3节": {
       "type": "chapter",
@@ -568,7 +736,10 @@
         "原文",
         "三体II"
       ],
-      "path": "pages/三体II-21-中部第3节.md"
+      "path": "pages/三体II-21-中部第3节.md",
+      "book": "三体II",
+      "book_seq": 21,
+      "pn_prefix": "2-21"
     },
     "三体II-22-中部第4节": {
       "type": "chapter",
@@ -578,7 +749,10 @@
         "原文",
         "三体II"
       ],
-      "path": "pages/三体II-22-中部第4节.md"
+      "path": "pages/三体II-22-中部第4节.md",
+      "book": "三体II",
+      "book_seq": 22,
+      "pn_prefix": "2-22"
     },
     "三体II-23-中部第5节": {
       "type": "chapter",
@@ -588,7 +762,10 @@
         "原文",
         "三体II"
       ],
-      "path": "pages/三体II-23-中部第5节.md"
+      "path": "pages/三体II-23-中部第5节.md",
+      "book": "三体II",
+      "book_seq": 23,
+      "pn_prefix": "2-23"
     },
     "三体II-24-中部第6节": {
       "type": "chapter",
@@ -598,7 +775,10 @@
         "原文",
         "三体II"
       ],
-      "path": "pages/三体II-24-中部第6节.md"
+      "path": "pages/三体II-24-中部第6节.md",
+      "book": "三体II",
+      "book_seq": 24,
+      "pn_prefix": "2-24"
     },
     "三体II-25-中部第7节": {
       "type": "chapter",
@@ -608,7 +788,10 @@
         "原文",
         "三体II"
       ],
-      "path": "pages/三体II-25-中部第7节.md"
+      "path": "pages/三体II-25-中部第7节.md",
+      "book": "三体II",
+      "book_seq": 25,
+      "pn_prefix": "2-25"
     },
     "三体II-26-中部第8节": {
       "type": "chapter",
@@ -618,7 +801,10 @@
         "原文",
         "三体II"
       ],
-      "path": "pages/三体II-26-中部第8节.md"
+      "path": "pages/三体II-26-中部第8节.md",
+      "book": "三体II",
+      "book_seq": 26,
+      "pn_prefix": "2-26"
     },
     "三体II-27-中部第9节": {
       "type": "chapter",
@@ -628,7 +814,10 @@
         "原文",
         "三体II"
       ],
-      "path": "pages/三体II-27-中部第9节.md"
+      "path": "pages/三体II-27-中部第9节.md",
+      "book": "三体II",
+      "book_seq": 27,
+      "pn_prefix": "2-27"
     },
     "三体II-28-中部第10节": {
       "type": "chapter",
@@ -638,7 +827,10 @@
         "原文",
         "三体II"
       ],
-      "path": "pages/三体II-28-中部第10节.md"
+      "path": "pages/三体II-28-中部第10节.md",
+      "book": "三体II",
+      "book_seq": 28,
+      "pn_prefix": "2-28"
     },
     "三体II-29-中部第11节": {
       "type": "chapter",
@@ -648,7 +840,10 @@
         "原文",
         "三体II"
       ],
-      "path": "pages/三体II-29-中部第11节.md"
+      "path": "pages/三体II-29-中部第11节.md",
+      "book": "三体II",
+      "book_seq": 29,
+      "pn_prefix": "2-29"
     },
     "三体II-30-中部第12节": {
       "type": "chapter",
@@ -658,7 +853,10 @@
         "原文",
         "三体II"
       ],
-      "path": "pages/三体II-30-中部第12节.md"
+      "path": "pages/三体II-30-中部第12节.md",
+      "book": "三体II",
+      "book_seq": 30,
+      "pn_prefix": "2-30"
     },
     "三体II-31-下部第1节": {
       "type": "chapter",
@@ -668,7 +866,10 @@
         "原文",
         "三体II"
       ],
-      "path": "pages/三体II-31-下部第1节.md"
+      "path": "pages/三体II-31-下部第1节.md",
+      "book": "三体II",
+      "book_seq": 31,
+      "pn_prefix": "2-31"
     },
     "三体II-32-下部第2节": {
       "type": "chapter",
@@ -678,7 +879,10 @@
         "原文",
         "三体II"
       ],
-      "path": "pages/三体II-32-下部第2节.md"
+      "path": "pages/三体II-32-下部第2节.md",
+      "book": "三体II",
+      "book_seq": 32,
+      "pn_prefix": "2-32"
     },
     "三体II-33-下部第3节": {
       "type": "chapter",
@@ -688,7 +892,10 @@
         "原文",
         "三体II"
       ],
-      "path": "pages/三体II-33-下部第3节.md"
+      "path": "pages/三体II-33-下部第3节.md",
+      "book": "三体II",
+      "book_seq": 33,
+      "pn_prefix": "2-33"
     },
     "三体II-34-下部第4节": {
       "type": "chapter",
@@ -698,7 +905,10 @@
         "原文",
         "三体II"
       ],
-      "path": "pages/三体II-34-下部第4节.md"
+      "path": "pages/三体II-34-下部第4节.md",
+      "book": "三体II",
+      "book_seq": 34,
+      "pn_prefix": "2-34"
     },
     "三体II-35-下部第5节": {
       "type": "chapter",
@@ -708,7 +918,10 @@
         "原文",
         "三体II"
       ],
-      "path": "pages/三体II-35-下部第5节.md"
+      "path": "pages/三体II-35-下部第5节.md",
+      "book": "三体II",
+      "book_seq": 35,
+      "pn_prefix": "2-35"
     },
     "三体II-36-下部第6节": {
       "type": "chapter",
@@ -718,7 +931,10 @@
         "原文",
         "三体II"
       ],
-      "path": "pages/三体II-36-下部第6节.md"
+      "path": "pages/三体II-36-下部第6节.md",
+      "book": "三体II",
+      "book_seq": 36,
+      "pn_prefix": "2-36"
     },
     "三体II-37-下部第7节": {
       "type": "chapter",
@@ -728,7 +944,10 @@
         "原文",
         "三体II"
       ],
-      "path": "pages/三体II-37-下部第7节.md"
+      "path": "pages/三体II-37-下部第7节.md",
+      "book": "三体II",
+      "book_seq": 37,
+      "pn_prefix": "2-37"
     },
     "三体II-38-下部第8节": {
       "type": "chapter",
@@ -738,7 +957,10 @@
         "原文",
         "三体II"
       ],
-      "path": "pages/三体II-38-下部第8节.md"
+      "path": "pages/三体II-38-下部第8节.md",
+      "book": "三体II",
+      "book_seq": 38,
+      "pn_prefix": "2-38"
     },
     "三体II-39-下部第9节": {
       "type": "chapter",
@@ -748,7 +970,10 @@
         "原文",
         "三体II"
       ],
-      "path": "pages/三体II-39-下部第9节.md"
+      "path": "pages/三体II-39-下部第9节.md",
+      "book": "三体II",
+      "book_seq": 39,
+      "pn_prefix": "2-39"
     },
     "三体II-40-下部第10节": {
       "type": "chapter",
@@ -758,7 +983,10 @@
         "原文",
         "三体II"
       ],
-      "path": "pages/三体II-40-下部第10节.md"
+      "path": "pages/三体II-40-下部第10节.md",
+      "book": "三体II",
+      "book_seq": 40,
+      "pn_prefix": "2-40"
     },
     "三体II-41-下部第11节": {
       "type": "chapter",
@@ -768,7 +996,10 @@
         "原文",
         "三体II"
       ],
-      "path": "pages/三体II-41-下部第11节.md"
+      "path": "pages/三体II-41-下部第11节.md",
+      "book": "三体II",
+      "book_seq": 41,
+      "pn_prefix": "2-41"
     },
     "三体II-42-下部第12节": {
       "type": "chapter",
@@ -778,7 +1009,10 @@
         "原文",
         "三体II"
       ],
-      "path": "pages/三体II-42-下部第12节.md"
+      "path": "pages/三体II-42-下部第12节.md",
+      "book": "三体II",
+      "book_seq": 42,
+      "pn_prefix": "2-42"
     },
     "三体II-43-下部第13节": {
       "type": "chapter",
@@ -788,7 +1022,10 @@
         "原文",
         "三体II"
       ],
-      "path": "pages/三体II-43-下部第13节.md"
+      "path": "pages/三体II-43-下部第13节.md",
+      "book": "三体II",
+      "book_seq": 43,
+      "pn_prefix": "2-43"
     },
     "三体II-44-下部第14节": {
       "type": "chapter",
@@ -798,7 +1035,10 @@
         "原文",
         "三体II"
       ],
-      "path": "pages/三体II-44-下部第14节.md"
+      "path": "pages/三体II-44-下部第14节.md",
+      "book": "三体II",
+      "book_seq": 44,
+      "pn_prefix": "2-44"
     },
     "三体II-45-下部第15节": {
       "type": "chapter",
@@ -808,7 +1048,10 @@
         "原文",
         "三体II"
       ],
-      "path": "pages/三体II-45-下部第15节.md"
+      "path": "pages/三体II-45-下部第15节.md",
+      "book": "三体II",
+      "book_seq": 45,
+      "pn_prefix": "2-45"
     },
     "三体II-46-下部第16节": {
       "type": "chapter",
@@ -818,7 +1061,10 @@
         "原文",
         "三体II"
       ],
-      "path": "pages/三体II-46-下部第16节.md"
+      "path": "pages/三体II-46-下部第16节.md",
+      "book": "三体II",
+      "book_seq": 46,
+      "pn_prefix": "2-46"
     },
     "三体II-47-下部第17节": {
       "type": "chapter",
@@ -828,7 +1074,10 @@
         "原文",
         "三体II"
       ],
-      "path": "pages/三体II-47-下部第17节.md"
+      "path": "pages/三体II-47-下部第17节.md",
+      "book": "三体II",
+      "book_seq": 47,
+      "pn_prefix": "2-47"
     },
     "三体II-48-下部第18节": {
       "type": "chapter",
@@ -838,7 +1087,10 @@
         "原文",
         "三体II"
       ],
-      "path": "pages/三体II-48-下部第18节.md"
+      "path": "pages/三体II-48-下部第18节.md",
+      "book": "三体II",
+      "book_seq": 48,
+      "pn_prefix": "2-48"
     },
     "三体II-49-下部第19节": {
       "type": "chapter",
@@ -848,7 +1100,10 @@
         "原文",
         "三体II"
       ],
-      "path": "pages/三体II-49-下部第19节.md"
+      "path": "pages/三体II-49-下部第19节.md",
+      "book": "三体II",
+      "book_seq": 49,
+      "pn_prefix": "2-49"
     },
     "三体II-50-下部第20节": {
       "type": "chapter",
@@ -858,7 +1113,10 @@
         "原文",
         "三体II"
       ],
-      "path": "pages/三体II-50-下部第20节.md"
+      "path": "pages/三体II-50-下部第20节.md",
+      "book": "三体II",
+      "book_seq": 50,
+      "pn_prefix": "2-50"
     },
     "三体II-51-下部第21节": {
       "type": "chapter",
@@ -868,7 +1126,10 @@
         "原文",
         "三体II"
       ],
-      "path": "pages/三体II-51-下部第21节.md"
+      "path": "pages/三体II-51-下部第21节.md",
+      "book": "三体II",
+      "book_seq": 51,
+      "pn_prefix": "2-51"
     },
     "三体III-01-前言": {
       "type": "chapter",
@@ -878,7 +1139,10 @@
         "原文",
         "三体III"
       ],
-      "path": "pages/三体III-01-前言.md"
+      "path": "pages/三体III-01-前言.md",
+      "book": "三体III",
+      "book_seq": 1,
+      "pn_prefix": "3-01"
     },
     "三体III-02-序": {
       "type": "chapter",
@@ -888,7 +1152,10 @@
         "原文",
         "三体III"
       ],
-      "path": "pages/三体III-02-序.md"
+      "path": "pages/三体III-02-序.md",
+      "book": "三体III",
+      "book_seq": 2,
+      "pn_prefix": "3-02"
     },
     "三体III-03-纪年对照表": {
       "type": "chapter",
@@ -898,7 +1165,10 @@
         "原文",
         "三体III"
       ],
-      "path": "pages/三体III-03-纪年对照表.md"
+      "path": "pages/三体III-03-纪年对照表.md",
+      "book": "三体III",
+      "book_seq": 3,
+      "pn_prefix": "3-03"
     },
     "三体III-04-第一部·第一章": {
       "type": "chapter",
@@ -909,7 +1179,10 @@
         "三体III",
         "第一部"
       ],
-      "path": "pages/三体III-04-第一部·第一章.md"
+      "path": "pages/三体III-04-第一部·第一章.md",
+      "book": "三体III",
+      "book_seq": 4,
+      "pn_prefix": "3-04"
     },
     "三体III-05-第一部·第二章": {
       "type": "chapter",
@@ -920,7 +1193,10 @@
         "三体III",
         "第一部"
       ],
-      "path": "pages/三体III-05-第一部·第二章.md"
+      "path": "pages/三体III-05-第一部·第二章.md",
+      "book": "三体III",
+      "book_seq": 5,
+      "pn_prefix": "3-05"
     },
     "三体III-06-第一部·第三章": {
       "type": "chapter",
@@ -931,7 +1207,10 @@
         "三体III",
         "第一部"
       ],
-      "path": "pages/三体III-06-第一部·第三章.md"
+      "path": "pages/三体III-06-第一部·第三章.md",
+      "book": "三体III",
+      "book_seq": 6,
+      "pn_prefix": "3-06"
     },
     "三体III-07-第一部·第四章": {
       "type": "chapter",
@@ -942,7 +1221,10 @@
         "三体III",
         "第一部"
       ],
-      "path": "pages/三体III-07-第一部·第四章.md"
+      "path": "pages/三体III-07-第一部·第四章.md",
+      "book": "三体III",
+      "book_seq": 7,
+      "pn_prefix": "3-07"
     },
     "三体III-08-第一部·第五章": {
       "type": "chapter",
@@ -953,7 +1235,10 @@
         "三体III",
         "第一部"
       ],
-      "path": "pages/三体III-08-第一部·第五章.md"
+      "path": "pages/三体III-08-第一部·第五章.md",
+      "book": "三体III",
+      "book_seq": 8,
+      "pn_prefix": "3-08"
     },
     "三体III-09-第一部·第六章": {
       "type": "chapter",
@@ -964,7 +1249,10 @@
         "三体III",
         "第一部"
       ],
-      "path": "pages/三体III-09-第一部·第六章.md"
+      "path": "pages/三体III-09-第一部·第六章.md",
+      "book": "三体III",
+      "book_seq": 9,
+      "pn_prefix": "3-09"
     },
     "三体III-10-第一部·第七章": {
       "type": "chapter",
@@ -975,7 +1263,10 @@
         "三体III",
         "第一部"
       ],
-      "path": "pages/三体III-10-第一部·第七章.md"
+      "path": "pages/三体III-10-第一部·第七章.md",
+      "book": "三体III",
+      "book_seq": 10,
+      "pn_prefix": "3-10"
     },
     "三体III-11-第一部·第八章": {
       "type": "chapter",
@@ -986,7 +1277,10 @@
         "三体III",
         "第一部"
       ],
-      "path": "pages/三体III-11-第一部·第八章.md"
+      "path": "pages/三体III-11-第一部·第八章.md",
+      "book": "三体III",
+      "book_seq": 11,
+      "pn_prefix": "3-11"
     },
     "三体III-12-第二部·第一章": {
       "type": "chapter",
@@ -997,7 +1291,10 @@
         "三体III",
         "第二部"
       ],
-      "path": "pages/三体III-12-第二部·第一章.md"
+      "path": "pages/三体III-12-第二部·第一章.md",
+      "book": "三体III",
+      "book_seq": 12,
+      "pn_prefix": "3-12"
     },
     "三体III-13-第二部·第二章": {
       "type": "chapter",
@@ -1008,7 +1305,10 @@
         "三体III",
         "第二部"
       ],
-      "path": "pages/三体III-13-第二部·第二章.md"
+      "path": "pages/三体III-13-第二部·第二章.md",
+      "book": "三体III",
+      "book_seq": 13,
+      "pn_prefix": "3-13"
     },
     "三体III-14-第二部·第三章": {
       "type": "chapter",
@@ -1019,7 +1319,10 @@
         "三体III",
         "第二部"
       ],
-      "path": "pages/三体III-14-第二部·第三章.md"
+      "path": "pages/三体III-14-第二部·第三章.md",
+      "book": "三体III",
+      "book_seq": 14,
+      "pn_prefix": "3-14"
     },
     "三体III-15-第二部·第四章": {
       "type": "chapter",
@@ -1030,7 +1333,10 @@
         "三体III",
         "第二部"
       ],
-      "path": "pages/三体III-15-第二部·第四章.md"
+      "path": "pages/三体III-15-第二部·第四章.md",
+      "book": "三体III",
+      "book_seq": 15,
+      "pn_prefix": "3-15"
     },
     "三体III-16-第二部·第五章": {
       "type": "chapter",
@@ -1041,7 +1347,10 @@
         "三体III",
         "第二部"
       ],
-      "path": "pages/三体III-16-第二部·第五章.md"
+      "path": "pages/三体III-16-第二部·第五章.md",
+      "book": "三体III",
+      "book_seq": 16,
+      "pn_prefix": "3-16"
     },
     "三体III-17-第二部·第六章": {
       "type": "chapter",
@@ -1052,7 +1361,10 @@
         "三体III",
         "第二部"
       ],
-      "path": "pages/三体III-17-第二部·第六章.md"
+      "path": "pages/三体III-17-第二部·第六章.md",
+      "book": "三体III",
+      "book_seq": 17,
+      "pn_prefix": "3-17"
     },
     "三体III-18-第二部·第七章": {
       "type": "chapter",
@@ -1063,7 +1375,10 @@
         "三体III",
         "第二部"
       ],
-      "path": "pages/三体III-18-第二部·第七章.md"
+      "path": "pages/三体III-18-第二部·第七章.md",
+      "book": "三体III",
+      "book_seq": 18,
+      "pn_prefix": "3-18"
     },
     "三体III-19-第二部·第八章": {
       "type": "chapter",
@@ -1074,7 +1389,10 @@
         "三体III",
         "第二部"
       ],
-      "path": "pages/三体III-19-第二部·第八章.md"
+      "path": "pages/三体III-19-第二部·第八章.md",
+      "book": "三体III",
+      "book_seq": 19,
+      "pn_prefix": "3-19"
     },
     "三体III-20-第二部·第九章": {
       "type": "chapter",
@@ -1085,7 +1403,10 @@
         "三体III",
         "第二部"
       ],
-      "path": "pages/三体III-20-第二部·第九章.md"
+      "path": "pages/三体III-20-第二部·第九章.md",
+      "book": "三体III",
+      "book_seq": 20,
+      "pn_prefix": "3-20"
     },
     "三体III-21-第二部·第十章": {
       "type": "chapter",
@@ -1096,7 +1417,10 @@
         "三体III",
         "第二部"
       ],
-      "path": "pages/三体III-21-第二部·第十章.md"
+      "path": "pages/三体III-21-第二部·第十章.md",
+      "book": "三体III",
+      "book_seq": 21,
+      "pn_prefix": "3-21"
     },
     "三体III-22-第二部·第十一章": {
       "type": "chapter",
@@ -1107,7 +1431,10 @@
         "三体III",
         "第二部"
       ],
-      "path": "pages/三体III-22-第二部·第十一章.md"
+      "path": "pages/三体III-22-第二部·第十一章.md",
+      "book": "三体III",
+      "book_seq": 22,
+      "pn_prefix": "3-22"
     },
     "三体III-23-第二部·第十二章": {
       "type": "chapter",
@@ -1118,7 +1445,10 @@
         "三体III",
         "第二部"
       ],
-      "path": "pages/三体III-23-第二部·第十二章.md"
+      "path": "pages/三体III-23-第二部·第十二章.md",
+      "book": "三体III",
+      "book_seq": 23,
+      "pn_prefix": "3-23"
     },
     "三体III-24-第二部·第十三章": {
       "type": "chapter",
@@ -1129,7 +1459,10 @@
         "三体III",
         "第二部"
       ],
-      "path": "pages/三体III-24-第二部·第十三章.md"
+      "path": "pages/三体III-24-第二部·第十三章.md",
+      "book": "三体III",
+      "book_seq": 24,
+      "pn_prefix": "3-24"
     },
     "三体III-25-第二部·第十四章": {
       "type": "chapter",
@@ -1140,7 +1473,10 @@
         "三体III",
         "第二部"
       ],
-      "path": "pages/三体III-25-第二部·第十四章.md"
+      "path": "pages/三体III-25-第二部·第十四章.md",
+      "book": "三体III",
+      "book_seq": 25,
+      "pn_prefix": "3-25"
     },
     "三体III-26-第二部·第十五章": {
       "type": "chapter",
@@ -1151,7 +1487,10 @@
         "三体III",
         "第二部"
       ],
-      "path": "pages/三体III-26-第二部·第十五章.md"
+      "path": "pages/三体III-26-第二部·第十五章.md",
+      "book": "三体III",
+      "book_seq": 26,
+      "pn_prefix": "3-26"
     },
     "三体III-27-第三部·第一章": {
       "type": "chapter",
@@ -1162,7 +1501,10 @@
         "三体III",
         "第三部"
       ],
-      "path": "pages/三体III-27-第三部·第一章.md"
+      "path": "pages/三体III-27-第三部·第一章.md",
+      "book": "三体III",
+      "book_seq": 27,
+      "pn_prefix": "3-27"
     },
     "三体III-28-第三部·第二章": {
       "type": "chapter",
@@ -1173,7 +1515,10 @@
         "三体III",
         "第三部"
       ],
-      "path": "pages/三体III-28-第三部·第二章.md"
+      "path": "pages/三体III-28-第三部·第二章.md",
+      "book": "三体III",
+      "book_seq": 28,
+      "pn_prefix": "3-28"
     },
     "三体III-29-第三部·第三章": {
       "type": "chapter",
@@ -1184,7 +1529,10 @@
         "三体III",
         "第三部"
       ],
-      "path": "pages/三体III-29-第三部·第三章.md"
+      "path": "pages/三体III-29-第三部·第三章.md",
+      "book": "三体III",
+      "book_seq": 29,
+      "pn_prefix": "3-29"
     },
     "三体III-30-第三部·第四章": {
       "type": "chapter",
@@ -1195,7 +1543,10 @@
         "三体III",
         "第三部"
       ],
-      "path": "pages/三体III-30-第三部·第四章.md"
+      "path": "pages/三体III-30-第三部·第四章.md",
+      "book": "三体III",
+      "book_seq": 30,
+      "pn_prefix": "3-30"
     },
     "三体III-31-第三部·第五章": {
       "type": "chapter",
@@ -1206,7 +1557,10 @@
         "三体III",
         "第三部"
       ],
-      "path": "pages/三体III-31-第三部·第五章.md"
+      "path": "pages/三体III-31-第三部·第五章.md",
+      "book": "三体III",
+      "book_seq": 31,
+      "pn_prefix": "3-31"
     },
     "三体III-32-第三部·第六章": {
       "type": "chapter",
@@ -1217,7 +1571,10 @@
         "三体III",
         "第三部"
       ],
-      "path": "pages/三体III-32-第三部·第六章.md"
+      "path": "pages/三体III-32-第三部·第六章.md",
+      "book": "三体III",
+      "book_seq": 32,
+      "pn_prefix": "3-32"
     },
     "三体III-33-第三部·第七章": {
       "type": "chapter",
@@ -1228,7 +1585,10 @@
         "三体III",
         "第三部"
       ],
-      "path": "pages/三体III-33-第三部·第七章.md"
+      "path": "pages/三体III-33-第三部·第七章.md",
+      "book": "三体III",
+      "book_seq": 33,
+      "pn_prefix": "3-33"
     },
     "三体III-34-第三部·第八章": {
       "type": "chapter",
@@ -1239,7 +1599,10 @@
         "三体III",
         "第三部"
       ],
-      "path": "pages/三体III-34-第三部·第八章.md"
+      "path": "pages/三体III-34-第三部·第八章.md",
+      "book": "三体III",
+      "book_seq": 34,
+      "pn_prefix": "3-34"
     },
     "三体III-35-第三部·第九章": {
       "type": "chapter",
@@ -1250,7 +1613,10 @@
         "三体III",
         "第三部"
       ],
-      "path": "pages/三体III-35-第三部·第九章.md"
+      "path": "pages/三体III-35-第三部·第九章.md",
+      "book": "三体III",
+      "book_seq": 35,
+      "pn_prefix": "3-35"
     },
     "三体III-36-第三部·第十章": {
       "type": "chapter",
@@ -1261,7 +1627,10 @@
         "三体III",
         "第三部"
       ],
-      "path": "pages/三体III-36-第三部·第十章.md"
+      "path": "pages/三体III-36-第三部·第十章.md",
+      "book": "三体III",
+      "book_seq": 36,
+      "pn_prefix": "3-36"
     },
     "三体III-37-第三部·第十一章": {
       "type": "chapter",
@@ -1272,7 +1641,10 @@
         "三体III",
         "第三部"
       ],
-      "path": "pages/三体III-37-第三部·第十一章.md"
+      "path": "pages/三体III-37-第三部·第十一章.md",
+      "book": "三体III",
+      "book_seq": 37,
+      "pn_prefix": "3-37"
     },
     "三体III-38-第三部·第十二章": {
       "type": "chapter",
@@ -1283,7 +1655,10 @@
         "三体III",
         "第三部"
       ],
-      "path": "pages/三体III-38-第三部·第十二章.md"
+      "path": "pages/三体III-38-第三部·第十二章.md",
+      "book": "三体III",
+      "book_seq": 38,
+      "pn_prefix": "3-38"
     },
     "三体III-39-第四部·第一章": {
       "type": "chapter",
@@ -1294,7 +1669,10 @@
         "三体III",
         "第四部"
       ],
-      "path": "pages/三体III-39-第四部·第一章.md"
+      "path": "pages/三体III-39-第四部·第一章.md",
+      "book": "三体III",
+      "book_seq": 39,
+      "pn_prefix": "3-39"
     },
     "三体III-40-第四部·第二章": {
       "type": "chapter",
@@ -1305,7 +1683,10 @@
         "三体III",
         "第四部"
       ],
-      "path": "pages/三体III-40-第四部·第二章.md"
+      "path": "pages/三体III-40-第四部·第二章.md",
+      "book": "三体III",
+      "book_seq": 40,
+      "pn_prefix": "3-40"
     },
     "三体III-41-第四部·第三章": {
       "type": "chapter",
@@ -1316,7 +1697,10 @@
         "三体III",
         "第四部"
       ],
-      "path": "pages/三体III-41-第四部·第三章.md"
+      "path": "pages/三体III-41-第四部·第三章.md",
+      "book": "三体III",
+      "book_seq": 41,
+      "pn_prefix": "3-41"
     },
     "三体III-42-第五部·第一章": {
       "type": "chapter",
@@ -1327,7 +1711,10 @@
         "三体III",
         "第五部"
       ],
-      "path": "pages/三体III-42-第五部·第一章.md"
+      "path": "pages/三体III-42-第五部·第一章.md",
+      "book": "三体III",
+      "book_seq": 42,
+      "pn_prefix": "3-42"
     },
     "三体III-43-第五部·第二章": {
       "type": "chapter",
@@ -1338,7 +1725,10 @@
         "三体III",
         "第五部"
       ],
-      "path": "pages/三体III-43-第五部·第二章.md"
+      "path": "pages/三体III-43-第五部·第二章.md",
+      "book": "三体III",
+      "book_seq": 43,
+      "pn_prefix": "3-43"
     },
     "三体III-44-第五部·第三章": {
       "type": "chapter",
@@ -1349,7 +1739,10 @@
         "三体III",
         "第五部"
       ],
-      "path": "pages/三体III-44-第五部·第三章.md"
+      "path": "pages/三体III-44-第五部·第三章.md",
+      "book": "三体III",
+      "book_seq": 44,
+      "pn_prefix": "3-44"
     },
     "三体III-45-第五部·第四章": {
       "type": "chapter",
@@ -1360,7 +1753,10 @@
         "三体III",
         "第五部"
       ],
-      "path": "pages/三体III-45-第五部·第四章.md"
+      "path": "pages/三体III-45-第五部·第四章.md",
+      "book": "三体III",
+      "book_seq": 45,
+      "pn_prefix": "3-45"
     },
     "三体III-46-第五部·第五章": {
       "type": "chapter",
@@ -1371,7 +1767,10 @@
         "三体III",
         "第五部"
       ],
-      "path": "pages/三体III-46-第五部·第五章.md"
+      "path": "pages/三体III-46-第五部·第五章.md",
+      "book": "三体III",
+      "book_seq": 46,
+      "pn_prefix": "3-46"
     },
     "三体III-47-第六部·第一章": {
       "type": "chapter",
@@ -1382,7 +1781,10 @@
         "三体III",
         "第六部"
       ],
-      "path": "pages/三体III-47-第六部·第一章.md"
+      "path": "pages/三体III-47-第六部·第一章.md",
+      "book": "三体III",
+      "book_seq": 47,
+      "pn_prefix": "3-47"
     },
     "三体III-48-第六部·第二章": {
       "type": "chapter",
@@ -1393,7 +1795,10 @@
         "三体III",
         "第六部"
       ],
-      "path": "pages/三体III-48-第六部·第二章.md"
+      "path": "pages/三体III-48-第六部·第二章.md",
+      "book": "三体III",
+      "book_seq": 48,
+      "pn_prefix": "3-48"
     },
     "三体III-49-第六部·第三章": {
       "type": "chapter",
@@ -1404,7 +1809,10 @@
         "三体III",
         "第六部"
       ],
-      "path": "pages/三体III-49-第六部·第三章.md"
+      "path": "pages/三体III-49-第六部·第三章.md",
+      "book": "三体III",
+      "book_seq": 49,
+      "pn_prefix": "3-49"
     },
     "三体III-50-第六部·第四章": {
       "type": "chapter",
@@ -1415,7 +1823,10 @@
         "三体III",
         "第六部"
       ],
-      "path": "pages/三体III-50-第六部·第四章.md"
+      "path": "pages/三体III-50-第六部·第四章.md",
+      "book": "三体III",
+      "book_seq": 50,
+      "pn_prefix": "3-50"
     },
     "三体文明": {
       "type": "civilization",
@@ -1433,7 +1844,8 @@
       ],
       "path": "pages/三体文明.md",
       "description": "来自三体星系（半人马座α三星系统）的高度发达外星文明，以恒纪元与乱纪元交替为生存背景",
-      "featured": true
+      "quality": "standard",
+      "quality_score": 32
     },
     "三体星系": {
       "type": "place",
@@ -1450,7 +1862,28 @@
         "天文"
       ],
       "path": "pages/三体星系.md",
-      "description": "距太阳约四光年的半人马座α三星系统，三颗恒星的混沌运动造就了三体文明周而复始的文明毁灭与重建。"
+      "description": "距太阳约四光年的半人马座α三星系统，三颗恒星的混沌运动造就了三体文明周而复始的文明毁灭与重建。",
+      "quality": "basic",
+      "quality_score": 36
+    },
+    "三体游戏": {
+      "type": "technology",
+      "label": "三体游戏",
+      "aliases": [
+        "《三体》游戏",
+        "Three-Body Game",
+        "threebody.com"
+      ],
+      "tags": [
+        "科技",
+        "三体I",
+        "ETO",
+        "汪淼"
+      ],
+      "path": "pages/三体游戏.md",
+      "description": "三体I中由ETO开发的VR网络游戏，网址www.threebody.com，仅支持V装具登录，以三体星球为场景，让玩家体验乱纪元/恒纪元循环，秘密用于筛选和招募ETO成员。",
+      "quality": "standard",
+      "quality_score": 46
     },
     "二向箔": {
       "type": "weapon",
@@ -1466,7 +1899,9 @@
         "三体III"
       ],
       "path": "pages/二向箔.md",
-      "description": "宇宙中的终极武器，一片展开后将三维空间降为二维平面的薄膜，用于消灭整个星系的文明"
+      "description": "宇宙中的终极武器，一片展开后将三维空间降为二维平面的薄膜，用于消灭整个星系的文明",
+      "quality": "basic",
+      "quality_score": 29
     },
     "云天明": {
       "type": "person",
@@ -1480,7 +1915,26 @@
       ],
       "path": "pages/云天明.md",
       "description": "绝症患者，单恋程心，将一颗星星作为礼物送给她；后来大脑被送往三体文明，成为人类在异星的秘密使者。",
-      "featured": true
+      "quality": "standard",
+      "quality_score": 33
+    },
+    "光粒": {
+      "type": "weapon",
+      "label": "光粒",
+      "aliases": [
+        "接近光速物体",
+        "photon weapon"
+      ],
+      "tags": [
+        "武器",
+        "三体II",
+        "三体III",
+        "黑暗森林"
+      ],
+      "path": "pages/光粒.md",
+      "description": "宇宙级打击武器：体积极小但以接近光速运动，相对论效应使其质量急剧放大，可穿透恒星表层引发恒星爆炸，是黑暗森林法则下宇宙文明打击暴露目标的标准手段。",
+      "quality": "standard",
+      "quality_score": 44
     },
     "光速飞船": {
       "type": "technology",
@@ -1496,7 +1950,27 @@
       ],
       "path": "pages/光速飞船.md",
       "description": "以空间曲率驱动实现接近光速航行的飞船，技术来源于云天明的童话情报，是人类逃离太阳系的最终手段，但其留下的航迹也是黑暗森林中的致命暴露。",
-      "featured": true
+      "quality": "standard",
+      "quality_score": 34
+    },
+    "冬眠技术": {
+      "type": "technology",
+      "label": "冬眠技术",
+      "aliases": [
+        "冬眠",
+        "人体冬眠",
+        "hibernation"
+      ],
+      "tags": [
+        "科技",
+        "三体II",
+        "三体III",
+        "危机纪元"
+      ],
+      "path": "pages/冬眠技术.md",
+      "description": "三体系列中允许人类跨越数十乃至数百年的低温休眠技术，通过体外生命维持系统保持最低限度的生理活动。面壁者、太空军官员和星际航行者广泛使用，是连接不同时代的关键技术手段。",
+      "quality": "standard",
+      "quality_score": 40
     },
     "危机纪元": {
       "type": "concept",
@@ -1510,7 +1984,9 @@
         "历史纪元"
       ],
       "path": "pages/危机纪元.md",
-      "description": "三体入侵确认（约公元201x年）至罗辑建立黑暗森林威慑（约2208年）的约两百年历史时期，人类经历幼稚症、大低谷与舰队建设，最终以面壁计划成功告终。"
+      "description": "三体入侵确认（约公元201x年）至罗辑建立黑暗森林威慑（约2208年）的约两百年历史时期，人类经历幼稚症、大低谷与舰队建设，最终以面壁计划成功告终。",
+      "quality": "standard",
+      "quality_score": 34
     },
     "史强": {
       "type": "person",
@@ -1524,7 +2000,9 @@
         "三体I"
       ],
       "path": "pages/史强.md",
-      "description": "粗犷的便衣刑警，汪淼在三体调查中的搭档，草根直觉与实战经验弥补了学者的盲点，在叶文洁审讯中发挥关键作用。"
+      "description": "粗犷的便衣刑警，汪淼在三体调查中的搭档，草根直觉与实战经验弥补了学者的盲点，在叶文洁审讯中发挥关键作用。",
+      "quality": "standard",
+      "quality_score": 32
     },
     "叶文洁": {
       "type": "person",
@@ -1541,7 +2019,8 @@
       ],
       "path": "pages/叶文洁.md",
       "description": "天体物理学家，红岸工程核心人物，向三体人发出地球坐标，ETO创始人",
-      "featured": true
+      "quality": "basic",
+      "quality_score": 29
     },
     "地球三体组织": {
       "type": "organization",
@@ -1557,7 +2036,9 @@
         "三体II"
       ],
       "path": "pages/地球三体组织.md",
-      "description": "叶文洁秘密创立的地球叛军组织，成员认同三体文明超越人类，配合三体入侵、阻止人类备战。分为降临派、拯救派、幸存派三个派别。"
+      "description": "叶文洁秘密创立的地球叛军组织，成员认同三体文明超越人类，配合三体入侵、阻止人类备战。分为降临派、拯救派、幸存派三个派别。",
+      "quality": "basic",
+      "quality_score": 33
     },
     "太阳系": {
       "type": "place",
@@ -1573,7 +2054,9 @@
         "三体III"
       ],
       "path": "pages/太阳系.md",
-      "description": "人类文明的家园星系，经历三体入侵危机后，最终被黑暗森林打击以二向箔降维摧毁。"
+      "description": "人类文明的家园星系，经历三体入侵危机后，最终被黑暗森林打击以二向箔降维摧毁。",
+      "quality": "standard",
+      "quality_score": 32
     },
     "威慑纪元": {
       "type": "concept",
@@ -1587,7 +2070,9 @@
         "历史纪元"
       ],
       "path": "pages/威慑纪元.md",
-      "description": "罗辑建立黑暗森林威慑后持续约62年的人类历史时期，双方在相互毁灭的恐惧下维持了特殊的和平，地球生态恢复、三体文明传送知识，却以程心失守告终。"
+      "description": "罗辑建立黑暗森林威慑后持续约62年的人类历史时期，双方在相互毁灭的恐惧下维持了特殊的和平，地球生态恢复、三体文明传送知识，却以程心失守告终。",
+      "quality": "standard",
+      "quality_score": 34
     },
     "宇宙社会学": {
       "type": "concept",
@@ -1603,7 +2088,44 @@
       ],
       "path": "pages/宇宙社会学.md",
       "description": "叶文洁建议、罗辑创立的理论学科，以两条公理和两个关键概念推导出\"黑暗森林\"宇宙图景。",
-      "featured": true
+      "quality": "standard",
+      "quality_score": 35
+    },
+    "宇宙闪烁": {
+      "type": "concept",
+      "label": "宇宙闪烁",
+      "aliases": [
+        "宇宙在闪烁",
+        "cosmic flickering"
+      ],
+      "tags": [
+        "概念",
+        "三体I",
+        "智子",
+        "宇宙背景辐射"
+      ],
+      "path": "pages/宇宙闪烁.md",
+      "description": "三体I中出现的宇宙背景辐射异常波动现象：三颗卫星与地面站同步检测到3K辐射的莫尔斯电码节律，与汪淼的幽灵倒计时同步，是智子在宇宙尺度上向地球科学家传递恐吓信号的方式。",
+      "quality": "standard",
+      "quality_score": 42
+    },
+    "幽灵倒计时": {
+      "type": "concept",
+      "label": "幽灵倒计时",
+      "aliases": [
+        "倒计时",
+        "ghost countdown"
+      ],
+      "tags": [
+        "概念",
+        "三体I",
+        "智子",
+        "心理恐吓"
+      ],
+      "path": "pages/幽灵倒计时.md",
+      "description": "三体I中智子对汪淼施加的心理恐吓手段：只有汪淼本人拍摄的照片上才会出现的倒计时数字，从1200小时递减，后来演变为直接出现在视野中，与宇宙闪烁同步，迫使他停止纳米材料研究。",
+      "quality": "standard",
+      "quality_score": 40
     },
     "执剑人": {
       "type": "concept",
@@ -1621,7 +2143,27 @@
       ],
       "path": "pages/执剑人.md",
       "description": "掌握引力波发射装置开关的人类代表，是黑暗森林威慑的具身化，相当于悬在两个世界头上的达摩克利斯之剑的那根发丝。",
-      "featured": true
+      "quality": "standard",
+      "quality_score": 40
+    },
+    "掩体计划": {
+      "type": "concept",
+      "label": "掩体计划",
+      "aliases": [
+        "掩体工程",
+        "地球文明方舟",
+        "Shelter Plan"
+      ],
+      "tags": [
+        "概念",
+        "三体III",
+        "黑暗森林",
+        "人类战略"
+      ],
+      "path": "pages/掩体计划.md",
+      "description": "三体III中人类应对黑暗森林打击的三大战略之一：以木星、土星等四大巨行星为屏蔽，在其背阳面建设50座太空城，拯救数亿人口在太阳被摧毁后继续存活。三个选项中成功希望最高、技术难度最低。",
+      "quality": "standard",
+      "quality_score": 48
     },
     "智子": {
       "type": "technology",
@@ -1638,7 +2180,8 @@
       ],
       "path": "pages/智子.md",
       "description": "三体文明将质子展开为二维平面并蚀刻超级计算机电路后折叠而成的超高维粒子计算机，可超光速通讯，用于监控和封锁地球基础科学研究",
-      "featured": true
+      "quality": "basic",
+      "quality_score": 31
     },
     "水滴探测器": {
       "type": "weapon",
@@ -1655,7 +2198,8 @@
       ],
       "path": "pages/水滴探测器.md",
       "description": "三体文明发往太阳系的终极武器，外形如完美液滴，由强互作用力材料构成，人类任何武器对其无效，单枚足以摧毁整个人类舰队。",
-      "featured": true
+      "quality": "basic",
+      "quality_score": 36
     },
     "汪淼": {
       "type": "person",
@@ -1670,7 +2214,25 @@
       ],
       "path": "pages/汪淼.md",
       "description": "纳米材料研究教授，《三体》第一部的主视角人物，经历宇宙闪烁并深入调查地球三体组织。",
-      "featured": true
+      "quality": "standard",
+      "quality_score": 30
+    },
+    "科学边界": {
+      "type": "organization",
+      "label": "科学边界",
+      "aliases": [
+        "科学边界学会",
+        "Frontiers of Science"
+      ],
+      "tags": [
+        "组织",
+        "三体I",
+        "地球三体组织"
+      ],
+      "path": "pages/科学边界.md",
+      "description": "三体I中表面上以探索\"科学局限性\"为宗旨的松散国际学术组织，实为地球三体组织渗透科学界的外围机构，通过学术交流招募对人类文明绝望的顶尖科学家。",
+      "quality": "standard",
+      "quality_score": 38
     },
     "程心": {
       "type": "person",
@@ -1686,7 +2248,9 @@
         "执剑人"
       ],
       "path": "pages/程心.md",
-      "description": "航天工程师，第二任执剑人，在关键时刻放弃威慑，此后见证人类文明的多次灾难"
+      "description": "航天工程师，第二任执剑人，在关键时刻放弃威慑，此后见证人类文明的多次灾难",
+      "quality": "basic",
+      "quality_score": 31
     },
     "章北海": {
       "type": "person",
@@ -1700,7 +2264,8 @@
       ],
       "path": "pages/章北海.md",
       "description": "太空军政委，表面上是最坚定的必胜论者，实际上是秘密推进人类逃亡方案的战略家，水滴攻击中驾\"自然选择\"号脱逃。",
-      "featured": true
+      "quality": "standard",
+      "quality_score": 32
     },
     "红岸基地": {
       "type": "place",
@@ -1715,7 +2280,28 @@
         "三体I"
       ],
       "path": "pages/红岸基地.md",
-      "description": "文化大革命时期建立的军事秘密项目，以大型天线向宇宙发射信号，叶文洁在此工作并向三体发送了地球坐标"
+      "description": "文化大革命时期建立的军事秘密项目，以大型天线向宇宙发射信号，叶文洁在此工作并向三体发送了地球坐标",
+      "quality": "basic",
+      "quality_score": 27
+    },
+    "维德": {
+      "type": "person",
+      "label": "维德",
+      "aliases": [
+        "托马斯·维德",
+        "Thomas Wade",
+        "PIA局长"
+      ],
+      "tags": [
+        "人物",
+        "三体III",
+        "光速飞船",
+        "星环集团"
+      ],
+      "path": "pages/维德.md",
+      "description": "三体III核心人物，PIA局长，\"前进，不择手段地前进\"的极端实用主义者，阶梯计划设计者，后创立星环集团推动光速飞船研究，以反人类罪被执行死刑。",
+      "quality": "standard",
+      "quality_score": 51
     },
     "罗辑": {
       "type": "person",
@@ -1732,7 +2318,8 @@
       ],
       "path": "pages/罗辑.md",
       "description": "社会学家，第四位面壁者，黑暗森林法则创立者，第一任执剑人",
-      "featured": true
+      "quality": "standard",
+      "quality_score": 35
     },
     "费米悖论": {
       "type": "concept",
@@ -1747,7 +2334,9 @@
         "宇宙社会学"
       ],
       "path": "pages/费米悖论.md",
-      "description": "银河系古老而广阔，外星文明早该抵达太阳系，但宇宙却一片沉默——三体宇宙中这一悖论的答案是黑暗森林法则。"
+      "description": "银河系古老而广阔，外星文明早该抵达太阳系，但宇宙却一片沉默——三体宇宙中这一悖论的答案是黑暗森林法则。",
+      "quality": "basic",
+      "quality_score": 28
     },
     "面壁者": {
       "type": "concept",
@@ -1763,7 +2352,27 @@
       ],
       "path": "pages/面壁者.md",
       "description": "人类应对三体入侵设立的战略制度：选定四名战略家，凭借智子无法读取人类思维的漏洞，独立制定秘密反击计划。",
-      "featured": true
+      "quality": "standard",
+      "quality_score": 35
+    },
+    "黑域": {
+      "type": "concept",
+      "label": "黑域",
+      "aliases": [
+        "低光速黑洞",
+        "黑域计划",
+        "black domain"
+      ],
+      "tags": [
+        "概念",
+        "三体III",
+        "宇宙安全声明",
+        "掩体计划"
+      ],
+      "path": "pages/黑域.md",
+      "description": "三体III中人类应对黑暗森林威胁的三大战略选项之一：将太阳系改造为低光速黑洞，以宇宙安全声明宣告自身的低技术状态换取安全，代价是永远与宇宙隔绝并自锁技术水平。",
+      "quality": "standard",
+      "quality_score": 44
     },
     "黑暗森林法则": {
       "type": "law",
@@ -1781,7 +2390,8 @@
       ],
       "path": "pages/黑暗森林法则.md",
       "description": "宇宙社会学基本公理：宇宙中每个文明都是带枪的猎人，必须对其他文明格杀勿论",
-      "featured": true
+      "quality": "basic",
+      "quality_score": 36
     }
   },
   "alias_index": {
@@ -2065,15 +2675,26 @@
     "半人马座三星系统": "三体星系",
     "三星系": "三体星系",
     "半人马座α三星": "三体星系",
+    "三体游戏": "三体游戏",
+    "《三体》游戏": "三体游戏",
+    "Three-Body Game": "三体游戏",
+    "threebody.com": "三体游戏",
     "二向箔": "二向箔",
     "降维武器": "二向箔",
     "Two-Dimensional Foil": "二向箔",
     "云天明": "云天明",
     "云天明的大脑": "云天明",
+    "光粒": "光粒",
+    "接近光速物体": "光粒",
+    "photon weapon": "光粒",
     "光速飞船": "光速飞船",
     "曲率驱动飞船": "光速飞船",
     "曲率飞船": "光速飞船",
     "Lightspeed Ship": "光速飞船",
+    "冬眠技术": "冬眠技术",
+    "冬眠": "冬眠技术",
+    "人体冬眠": "冬眠技术",
+    "hibernation": "冬眠技术",
     "危机纪元": "危机纪元",
     "危机时代": "危机纪元",
     "史强": "史强",
@@ -2091,10 +2712,20 @@
     "宇宙社会学": "宇宙社会学",
     "宇宙文明公理": "宇宙社会学",
     "Cosmic Sociology": "宇宙社会学",
+    "宇宙闪烁": "宇宙闪烁",
+    "宇宙在闪烁": "宇宙闪烁",
+    "cosmic flickering": "宇宙闪烁",
+    "幽灵倒计时": "幽灵倒计时",
+    "倒计时": "幽灵倒计时",
+    "ghost countdown": "幽灵倒计时",
     "执剑人": "执剑人",
     "Swordholder": "执剑人",
     "威慑控制者": "执剑人",
     "引力波发射控制者": "执剑人",
+    "掩体计划": "掩体计划",
+    "掩体工程": "掩体计划",
+    "地球文明方舟": "掩体计划",
+    "Shelter Plan": "掩体计划",
     "Sophon": "智子",
     "水滴探测器": "水滴探测器",
     "水滴": "水滴探测器",
@@ -2102,6 +2733,9 @@
     "强互作用力探测器": "水滴探测器",
     "汪淼": "汪淼",
     "汪教授": "汪淼",
+    "科学边界": "科学边界",
+    "科学边界学会": "科学边界",
+    "Frontiers of Science": "科学边界",
     "程心": "程心",
     "Cheng Xin": "程心",
     "章北海": "章北海",
@@ -2109,6 +2743,10 @@
     "红岸基地": "红岸基地",
     "红岸工程": "红岸基地",
     "Red Coast Base": "红岸基地",
+    "维德": "维德",
+    "托马斯·维德": "维德",
+    "Thomas Wade": "维德",
+    "PIA局长": "维德",
     "罗辑": "罗辑",
     "Luo Ji": "罗辑",
     "费米悖论": "费米悖论",
@@ -2117,10 +2755,14 @@
     "面壁者": "面壁者",
     "面壁计划": "面壁者",
     "Wallfacer": "面壁者",
+    "黑域": "黑域",
+    "低光速黑洞": "黑域",
+    "黑域计划": "黑域",
+    "black domain": "黑域",
     "黑暗森林法则": "黑暗森林法则",
     "黑暗森林": "黑暗森林法则",
     "Dark Forest Theory": "黑暗森林法则"
   },
-  "page_count": 160,
-  "generated": "2026-04-26T19:28:52Z"
+  "page_count": 169,
+  "generated": "2026-04-26T20:15:11Z"
 }

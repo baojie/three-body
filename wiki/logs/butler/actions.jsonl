@@ -15,3 +15,15 @@
 {"round": 15, "type": "create-page", "page": "史强", "result": "accept", "desc": "从三体I提炼史强：粗犷刑警大史、与汪淼搭档、倒握枪柄制服叛军、雪茄演示", "ts": "2026-04-26T19:27:45Z"}
 {"round": 16, "type": "create-page", "page": "费米悖论", "result": "accept", "desc": "从三体II提炼费米悖论：经典表述+罗辑的黑暗森林答案", "ts": "2026-04-26T19:28:34Z"}
 {"round": 17, "type": "publish", "page": "wiki", "result": "accept", "desc": "Butler R1-R16 发布：新增16页 commit dba0a2f，页面总数160", "ts": "2026-04-26T19:29:36Z"}
+{"round": 18, "type": "create-page", "page": "宇宙闪烁", "result": "accept", "desc": "从三体I第10章提炼宇宙闪烁：3K背景辐射异常波动，莫尔斯倒计时，3K眼镜肉眼观测，智子宇宙尺度恐吓", "ts": "2026-04-26T19:56:18Z"}
+{"round": 19, "type": "create-page", "page": "幽灵倒计时", "result": "accept", "desc": "从三体I第7-10章提炼幽灵倒计时：1200小时、只对汪淼有效、申玉菲'停下来'暗示、宇宙闪烁同步编码", "ts": "2026-04-26T19:57:55Z"}
+{"round": 20, "type": "create-page", "page": "黑域", "result": "accept", "desc": "原P2 stub升级为standard：低光速黑洞、宇宙安全声明、上帝工程、技术自残代价、三大选项对比", "ts": "2026-04-26T19:58:57Z"}
+{"round": 21, "type": "create-page", "page": "冬眠技术", "result": "accept", "desc": "从三体II/III提炼冬眠技术：体外生命维持+冷却设备、面壁者跨时代、太空军增援未来、恒星航行核心", "ts": "2026-04-26T19:59:59Z"}
+{"round": 22, "type": "discover", "page": "corpus+broken-links", "result": "accept", "desc": "D1 discover+H10 scan：新词条5条(三体游戏/光粒/掩体计划/科学边界/维德)写入P2；全库27页无stub，housekeeping_queue新增5条H3任务", "ts": "2026-04-26T20:01:32Z"}
+{"round": 23, "type": "create-page", "page": "科学边界", "result": "accept", "desc": "从三体I第5章提炼科学边界：国际学术幌子组织、2005年物理年诞生、地球三体外围机构、汪淼受命渗透", "ts": "2026-04-26T20:02:28Z", "reflect": "corpus命中12条，申玉菲是关键连接人，科学边界与自杀科学家关联被明确点出"}
+{"round": 24, "type": "add-quote", "page": "叶文洁", "result": "accept", "desc": "H3 add-quote：追加叶文洁广播原文（1-24-036），basic页级升档", "ts": "2026-04-26T20:03:32Z", "reflect": "找到了最关键的原文——向三体发送第二条信号的完整句子，有力补全了basic页面"}
+{"round": 25, "type": "create-page", "page": "光粒", "result": "accept", "desc": "从三体II/III提炼光粒：接近光速+相对论质量放大、摧毁三体星系、太阳系威胁模型、预警逃生", "ts": "2026-04-26T20:04:14Z", "reflect": "corpus命中12条，涵盖从三体II发现概念到三体III具体威胁，信息非常完整"}
+{"round": 26, "type": "create-page", "page": "掩体计划", "result": "accept", "desc": "从三体III第34章提炼掩体计划：4大巨行星掩体、50座太空城、地外工程、70年时间表、打击后生存方案", "ts": "2026-04-26T20:07:32Z", "reflect": "corpus文本极其详尽，完整的技术方案文件形式，涵盖各技术细节、被弃选项比较、打击后长期生存"}
+{"round": 27, "type": "create-page", "page": "三体游戏", "result": "accept", "desc": "从三体I第8-16章提炼VR游戏词条：V装具、乱纪元/恒纪元、信息压缩哲学、ETO招募功能、汪淼三次进入", "ts": "2026-04-26T20:09:35Z", "reflect": "游戏名称与书名相同导致corpus_search无法直接搜索，需改用'游戏'+'V装具'等间接词汇；场景用历史人物名的设计值得在正文中解释"}
+{"round": 28, "type": "create-page", "page": "维德", "result": "accept", "desc": "从三体III提炼维德：PIA局长、阶梯计划、星环集团、反物质子弹、曲率驱动实验、'不择手段地前进'、执行死刑", "ts": "2026-04-26T20:11:36Z", "reflect": "维德贯穿三体III始终，人物弧跨越数百年，corpus密度极高；命运反讽（他的妥协导致人类灭亡）是核心叙事，值得在正文最后单独成节"}
+{"round": 29, "type": "reflect-w5", "page": "W5", "result": "accept", "desc": "第1次W5强制反思：A无失败B搜索策略C P2清空D面壁者Q4失败E技能借鉴G架构健康，修订W2/W3/quality_rules，H3队列+1", "ts": "2026-04-26T20:14:51Z", "reflect": "P2已清空，新wanted：申玉菲/阶梯计划/万有引力号。面壁者Q4失败是早期页面遗留。修订#1(侧面词搜索)来自R27三体游戏经验，具有通用性"}

@@ -594,9 +594,9 @@ function renderFeaturedCard(p) {
     ? `<div class="card-thumb"><img src="${escapeHtml(p.image)}" alt="${escapeHtml(p.label)}" loading="lazy"></div>` : '';
   return `<a class="featured-card entity-card${qualityClass}${p.image ? ' has-thumb' : ''}" href="#${encodeURIComponent(p.id)}">
     ${imgHtml}<div class="card-body">
-      <div class="card-header-row">${typeBadge}</div>
       <h3>${escapeHtml(p.label)}</h3>
       ${descHtml}${aliasHtml}
+      ${typeBadge ? `<div class="card-footer-row">${typeBadge}</div>` : ''}
     </div>
   </a>`;
 }
@@ -924,7 +924,7 @@ function setupFirstCharFilter(container) {
 
 /**
  * Special:AllPages — 分面浏览器
- * 左侧分面（类型 / 标签），右侧分页结果列表，顶部文字搜索。
+ * 左侧分面（类型 / 出场书册 / 标签 / 质量），右侧分页结果列表，顶部文字搜索。
  */
 export function renderAll(core) {
   const pages = core.registry.pages;
@@ -934,65 +934,32 @@ export function renderAll(core) {
     .filter(([id]) => !id.startsWith('Special:'))
     .map(([id, p]) => ({ id, ...p }));
 
-  const typeCounts      = {};
-  const tagCounts       = {};
-  const essayTypeCounts = {};
-  const eventTypeCounts = {};
-  const qualityCounts   = {};
-  const sourceCounts    = {};
+  const typeCounts    = {};
+  const tagCounts     = {};
+  const bookCounts    = {};
+  const qualityCounts = {};
+
   for (const p of allEntries) {
     const t = p.type || 'unknown';
     typeCounts[t] = (typeCounts[t] || 0) + 1;
-    // jun_title: true 的页面也计入 jun 分面（无论其本身 type 是 person/official 等）
-    if (p.jun_title && t !== 'jun') {
-      typeCounts['jun'] = (typeCounts['jun'] || 0) + 1;
-    }
     for (const tag of (p.tags || [])) tagCounts[tag] = (tagCounts[tag] || 0) + 1;
-    if (p.essay_type)  essayTypeCounts[p.essay_type]  = (essayTypeCounts[p.essay_type]  || 0) + 1;
-    if (p.event_type)  eventTypeCounts[p.event_type]  = (eventTypeCounts[p.event_type]  || 0) + 1;
+    for (const bk of (p.books || [])) bookCounts[bk] = (bookCounts[bk] || 0) + 1;
     const q = p.quality || 'stub';
     qualityCounts[q] = (qualityCounts[q] || 0) + 1;
-    for (const src of (p.sources || [])) sourceCounts[src] = (sourceCounts[src] || 0) + 1;
   }
-  const orderedEssayTypes = Object.keys(essayTypeCounts).sort(
-    (a, b) => essayTypeCounts[b] - essayTypeCounts[a]
-  );
-  const orderedEventTypes = Object.keys(eventTypeCounts).sort(
-    (a, b) => eventTypeCounts[b] - eventTypeCounts[a]
-  );
-  // 章节来源分面：按页面数降序，只显示出现 ≥ 3 次的
-  const orderedSources = Object.entries(sourceCounts)
-    .filter(([, c]) => c >= 3)
-    .sort((a, b) => b[1] - a[1])
-    .map(([s]) => s);
 
-  // 只显示出现 ≥ 5 次的 tag
+  // 出场书册：固定顺序
+  const BOOK_ORDER = ['三体I', '三体II', '三体III'];
+  const orderedBooks = BOOK_ORDER.filter(b => bookCounts[b]);
+
+  // 标签：出现 ≥ 3 次
   const topTags = Object.entries(tagCounts)
-    .filter(([, c]) => c >= 5)
+    .filter(([, c]) => c >= 3)
     .sort((a, b) => b[1] - a[1])
     .slice(0, 30)
     .map(([t]) => t);
 
-  const typeOrder = [
-    // 核心
-    'person', 'character', 'civilization',
-    // 法则/概念
-    'law', 'concept', 'theory',
-    // 科技
-    'technology', 'weapon', 'artifact',
-    // 事件/组织
-    'event', 'organization', 'faction',
-    // 地点
-    'place',
-    // 时间
-    'time', 'era',
-    // 文献
-    'book', 'overview',
-    // 页面管理
-    'disambiguation', 'redirect', 'list', 'topic',
-    'meta', 'special', 'unknown',
-  ];
-  // 类型分面：按条数降序排列
+  // 类型：按条数降序
   const orderedTypes = Object.keys(typeCounts).sort(
     (a, b) => typeCounts[b] - typeCounts[a]
   );
@@ -1003,45 +970,36 @@ export function renderAll(core) {
     const qi   = hash.indexOf('?');
     const p    = new URLSearchParams(qi >= 0 ? hash.slice(qi + 1) : '');
     return {
-      types:   p.getAll('type'),
-      essays:  p.getAll('essay'),
-      events:  p.getAll('event'),
-      tags:    p.getAll('tag'),
-      sources: p.getAll('source'),
-      qlevel:  p.get('q') || '',
-      search:  p.get('s') || '',
-      page:    Math.max(1, parseInt(p.get('page') || '1', 10)),
+      types:  p.getAll('type'),
+      books:  p.getAll('book'),
+      tags:   p.getAll('tag'),
+      qlevel: p.get('q') || '',
+      search: p.get('s') || '',
+      page:   Math.max(1, parseInt(p.get('page') || '1', 10)),
     };
   }
 
   function buildHash(s) {
     const p = new URLSearchParams();
-    s.types.forEach(t   => p.append('type',   t));
-    s.essays.forEach(e  => p.append('essay',  e));
-    s.events.forEach(e  => p.append('event',  e));
-    s.tags.forEach(t    => p.append('tag',    t));
-    s.sources.forEach(s => p.append('source', s));
+    s.types.forEach(t  => p.append('type', t));
+    s.books.forEach(b  => p.append('book', b));
+    s.tags.forEach(t   => p.append('tag',  t));
     if (s.qlevel) p.set('q', s.qlevel);
-    if (s.search) p.set('s',    s.search);
+    if (s.search) p.set('s', s.search);
     if (s.page > 1) p.set('page', String(s.page));
     const qs = p.toString();
     return '#' + encodeURIComponent('Special:AllPages') + (qs ? '?' + qs : '');
   }
 
-  // ── 过滤 ──────────────────────────────────────────────────────────
+  // ── 过滤 + 排序 ───────────────────────────────────────────────────
   const PAGE_SIZE = 50;
 
   function applyFilters(s) {
     let r = allEntries;
-    if (s.types.length)   r = r.filter(p =>
-      s.types.includes(p.type || 'unknown') ||
-      (s.types.includes('jun') && p.jun_title)
-    );
-    if (s.essays.length)  r = r.filter(p => s.essays.includes(p.essay_type || ''));
-    if (s.events.length)  r = r.filter(p => s.events.includes(p.event_type || ''));
-    if (s.tags.length)    r = r.filter(p => s.tags.every(t => (p.tags || []).includes(t)));
-    if (s.sources.length) r = r.filter(p => s.sources.every(src => (p.sources || []).includes(src)));
-    if (s.qlevel) r = r.filter(p => (p.quality || 'stub') === s.qlevel);
+    if (s.types.length) r = r.filter(p => s.types.includes(p.type || 'unknown'));
+    if (s.books.length) r = r.filter(p => s.books.some(b => (p.books || []).includes(b)));
+    if (s.tags.length)  r = r.filter(p => s.tags.every(t => (p.tags || []).includes(t)));
+    if (s.qlevel)       r = r.filter(p => (p.quality || 'stub') === s.qlevel);
     if (s.search) {
       const kw = s.search.toLowerCase();
       r = r.filter(p =>
@@ -1051,7 +1009,7 @@ export function renderAll(core) {
       );
     }
     return r.slice().sort((a, b) =>
-      (b.k_score || 0) - (a.k_score || 0) ||
+      (b.quality_score || 0) - (a.quality_score || 0) ||
       (a.label || a.id).localeCompare(b.label || b.id, 'zh')
     );
   }
@@ -1067,12 +1025,12 @@ export function renderAll(core) {
       </label>`;
     }).join('');
 
-    const essayItems = orderedEssayTypes.map(et => {
-      const active = s.essays.includes(et);
+    const bookItems = orderedBooks.map(b => {
+      const active = s.books.includes(b);
       return `<label class="facet-item${active ? ' active' : ''}">
-        <input type="checkbox" data-facet="essay" data-val="${escapeHtml(et)}"${active ? ' checked' : ''}>
-        <span class="facet-label">${escapeHtml(et)}</span>
-        <span class="facet-count">${essayTypeCounts[et]}</span>
+        <input type="checkbox" data-facet="book" data-val="${escapeHtml(b)}"${active ? ' checked' : ''}>
+        <span class="facet-label">${escapeHtml(b)}</span>
+        <span class="facet-count">${bookCounts[b]}</span>
       </label>`;
     }).join('');
 
@@ -1082,15 +1040,6 @@ export function renderAll(core) {
         <input type="checkbox" data-facet="tag" data-val="${escapeHtml(tag)}"${active ? ' checked' : ''}>
         <span class="facet-label">${escapeHtml(tag)}</span>
         <span class="facet-count">${tagCounts[tag]}</span>
-      </label>`;
-    }).join('');
-
-    const eventItems = orderedEventTypes.map(et => {
-      const active = s.events.includes(et);
-      return `<label class="facet-item${active ? ' active' : ''}">
-        <input type="checkbox" data-facet="event" data-val="${escapeHtml(et)}"${active ? ' checked' : ''}>
-        <span class="facet-label">${escapeHtml(et)}</span>
-        <span class="facet-count">${eventTypeCounts[et]}</span>
       </label>`;
     }).join('');
 
@@ -1109,31 +1058,16 @@ export function renderAll(core) {
       </label>`
     ).join('');
 
-    const sourceItems = orderedSources.map(src => {
-      const active = s.sources.includes(src);
-      return `<label class="facet-item${active ? ' active' : ''}">
-        <input type="checkbox" data-facet="source" data-val="${escapeHtml(src)}"${active ? ' checked' : ''}>
-        <span class="facet-label">${escapeHtml(src)}</span>
-        <span class="facet-count">${sourceCounts[src]}</span>
-      </label>`;
-    }).join('');
-
-    const essaySection = orderedEssayTypes.length ? `
+    const bookSection = orderedBooks.length ? `
       <details class="facet-group" open>
-        <summary class="facet-group-title">散文类型</summary>
-        <div class="facet-items">${essayItems}</div>
+        <summary class="facet-group-title">出场书册</summary>
+        <div class="facet-items">${bookItems}</div>
       </details>` : '';
 
-    const eventSection = orderedEventTypes.length ? `
+    const tagSection = topTags.length ? `
       <details class="facet-group" open>
-        <summary class="facet-group-title">事件类型</summary>
-        <div class="facet-items">${eventItems}</div>
-      </details>` : '';
-
-    const sourceSection = orderedSources.length ? `
-      <details class="facet-group" open>
-        <summary class="facet-group-title">所在章节</summary>
-        <div class="facet-items facet-tags">${sourceItems}</div>
+        <summary class="facet-group-title">标签</summary>
+        <div class="facet-items facet-tags">${tagItems}</div>
       </details>` : '';
 
     return `<aside class="facet-panel">
@@ -1144,11 +1078,8 @@ export function renderAll(core) {
       <details class="facet-group" open>
         <summary class="facet-group-title">类型</summary>
         <div class="facet-items">${typeItems}</div>
-      </details>${essaySection}${eventSection}${sourceSection}
-      <details class="facet-group" open>
-        <summary class="facet-group-title">标签</summary>
-        <div class="facet-items facet-tags">${tagItems}</div>
       </details>
+      ${bookSection}${tagSection}
       <details class="facet-group">
         <summary class="facet-group-title">内容质量</summary>
         <div class="facet-items">${qItems}</div>
@@ -1163,14 +1094,23 @@ export function renderAll(core) {
     const page       = Math.min(s.page, totalPages);
     const slice      = results.slice((page - 1) * PAGE_SIZE, page * PAGE_SIZE);
 
-    const QUALITY_BADGE = { premium: '旗舰', featured: '精品' };
+    const QUALITY_BADGE = { premium: '旗舰', featured: '精品', standard: '标准' };
     const items = slice.map(p => {
-      const badge = QUALITY_BADGE[p.quality] ? `<span class="res-quality res-quality-${p.quality}">${QUALITY_BADGE[p.quality]}</span>` : '';
-      const qs    = p.k_score != null ? `<span class="res-score">K=${p.k_score}</span>` : '';
-      const tags  = (p.tags || []).slice(0, 4).map(t => `<span class="res-tag">${escapeHtml(t)}</span>`).join('');
+      const badge = QUALITY_BADGE[p.quality]
+        ? `<span class="res-quality res-quality-${p.quality}">${QUALITY_BADGE[p.quality]}</span>` : '';
+      const score = p.quality_score != null
+        ? `<span class="res-score">Q=${p.quality_score}</span>` : '';
+      const booksHtml = (p.books || []).map(b =>
+        `<span class="res-tag">${escapeHtml(b)}</span>`).join('');
+      const desc = p.description
+        ? `<div class="res-desc">${escapeHtml(p.description)}</div>` : '';
       return `<li class="res-item">
         <a class="res-title" href="#${encodeURIComponent(p.id)}">${escapeHtml(p.label || p.id)}</a>
-        <div class="res-meta"><span class="res-type">${escapeHtml(TYPE_LABELS[p.type] || p.type || '')}</span>${badge}${qs}${tags}</div>
+        ${desc}
+        <div class="res-meta">
+          <span class="res-type">${escapeHtml(TYPE_LABELS[p.type] || p.type || '')}</span>
+          ${badge}${score}${booksHtml}
+        </div>
       </li>`;
     }).join('');
 
@@ -1178,9 +1118,9 @@ export function renderAll(core) {
     if (totalPages > 1) {
       const mkLink = (pg, label) =>
         `<a class="pager-btn${pg === page ? ' active' : ''}" href="${buildHash({ ...s, page: pg })}">${label}</a>`;
-      const prev  = page > 1 ? mkLink(page - 1, '←') : '';
-      const next  = page < totalPages ? mkLink(page + 1, '→') : '';
-      const nums  = Array.from({ length: totalPages }, (_, i) => i + 1)
+      const prev = page > 1 ? mkLink(page - 1, '←') : '';
+      const next = page < totalPages ? mkLink(page + 1, '→') : '';
+      const nums = Array.from({ length: totalPages }, (_, i) => i + 1)
         .filter(n => n <= 2 || n >= totalPages - 1 || Math.abs(n - page) <= 2)
         .reduce((acc, n, i, arr) => {
           if (i > 0 && n - arr[i - 1] > 1) acc.push('…');
@@ -1191,10 +1131,16 @@ export function renderAll(core) {
       pagerHtml = `<div class="pager">${prev}${nums}${next}</div>`;
     }
 
-    const badge = [...s.types.map(t => TYPE_LABELS[t] || t), ...s.essays, ...s.events, ...s.tags,
-                   ...s.sources, ...(s.qlevel ? [s.qlevel] : []), ...(s.search ? [`"${s.search}"`] : [])].join(' · ');
+    const activeFilters = [
+      ...s.types.map(t => TYPE_LABELS[t] || t),
+      ...s.books,
+      ...s.tags,
+      ...(s.qlevel ? [s.qlevel] : []),
+      ...(s.search ? [`"${s.search}"`] : []),
+    ].join(' · ');
+
     return `<div class="res-header">
-        <span class="res-count">共 <strong>${total}</strong> 个页面${badge ? ' · ' + badge : ''}</span>
+        <span class="res-count">共 <strong>${total}</strong> 个页面${activeFilters ? ' · ' + activeFilters : ''}</span>
       </div>
       <ul class="res-list">${items || '<li class="res-empty">无匹配结果</li>'}</ul>
       ${pagerHtml}`;
@@ -1206,13 +1152,16 @@ export function renderAll(core) {
       .concat(orderedTypes.map(t =>
         `<option value="${escapeHtml(t)}"${s.types[0] === t ? ' selected' : ''}>${escapeHtml(TYPE_LABELS[t] || t)} (${typeCounts[t]})</option>`
       )).join('');
+    const bookOptions = [`<option value="">全部书册</option>`]
+      .concat(orderedBooks.map(b =>
+        `<option value="${escapeHtml(b)}"${s.books[0] === b ? ' selected' : ''}>${escapeHtml(b)} (${bookCounts[b]})</option>`
+      )).join('');
     return `
       <div class="ap-mobile-filters">
         <input id="ap-search" class="allpages-search" type="search"
           placeholder="搜索页面名称或别名…" value="${escapeHtml(s.search)}">
-        <select id="ap-type-select" class="ap-type-select">
-          ${typeOptions}
-        </select>
+        <select id="ap-type-select" class="ap-type-select">${typeOptions}</select>
+        <select id="ap-book-select" class="ap-type-select">${bookOptions}</select>
       </div>`;
   }
 
@@ -1226,7 +1175,7 @@ export function renderAll(core) {
     if (isMobile) {
       article.innerHTML = `
         <nav class="category-crumb"><a href="#">← 首页</a></nav>
-        <h1>Special:AllPages</h1>
+        <h1>全部页面</h1>
         <div class="allpages-mobile">
           ${renderMobileFilters(s)}
           <div id="ap-results">${renderResults(results, s)}</div>
@@ -1234,7 +1183,7 @@ export function renderAll(core) {
     } else {
       article.innerHTML = `
         <nav class="category-crumb"><a href="#">← 首页</a></nav>
-        <h1>Special:AllPages</h1>
+        <h1>全部页面</h1>
         <div class="allpages-layout">
           ${renderFacets(s)}
           <div class="allpages-main">
@@ -1249,13 +1198,13 @@ export function renderAll(core) {
 
     document.body.classList.add('is-home');
     hideSidebar();
-    document.getElementById('crumb').textContent = 'Special:AllPages';
+    document.getElementById('crumb').textContent = '全部页面';
     document.title = '全部页面 · 三体 Wiki';
     document.getElementById('src-info').textContent = `共 ${allEntries.length} 页`;
     document.getElementById('broken-info').textContent = '';
     window.scrollTo(0, 0);
 
-    // 搜索框（防抖 200ms，桌面/移动共用）
+    // 搜索框（防抖 200ms）
     let timer;
     article.querySelector('#ap-search').addEventListener('input', e => {
       clearTimeout(timer);
@@ -1269,10 +1218,16 @@ export function renderAll(core) {
     });
 
     if (isMobile) {
-      // 移动端：类型下拉框
       article.querySelector('#ap-type-select').addEventListener('change', e => {
         const ns = getState();
         ns.types = e.target.value ? [e.target.value] : [];
+        ns.page = 1;
+        history.replaceState(null, '', buildHash(ns));
+        document.getElementById('ap-results').innerHTML = renderResults(applyFilters(ns), ns);
+      });
+      article.querySelector('#ap-book-select').addEventListener('change', e => {
+        const ns = getState();
+        ns.books = e.target.value ? [e.target.value] : [];
         ns.page = 1;
         history.replaceState(null, '', buildHash(ns));
         document.getElementById('ap-results').innerHTML = renderResults(applyFilters(ns), ns);
@@ -1284,15 +1239,11 @@ export function renderAll(core) {
           const ns = getState();
           const { facet, val } = cb.dataset;
           if (facet === 'type') {
-            ns.types  = cb.checked ? [...new Set([...ns.types,  val])] : ns.types.filter(t => t !== val);
-          } else if (facet === 'essay') {
-            ns.essays = cb.checked ? [...new Set([...ns.essays, val])] : ns.essays.filter(t => t !== val);
-          } else if (facet === 'event') {
-            ns.events = cb.checked ? [...new Set([...ns.events, val])] : ns.events.filter(t => t !== val);
+            ns.types = cb.checked ? [...new Set([...ns.types, val])] : ns.types.filter(t => t !== val);
+          } else if (facet === 'book') {
+            ns.books = cb.checked ? [...new Set([...ns.books, val])] : ns.books.filter(b => b !== val);
           } else if (facet === 'tag') {
-            ns.tags    = cb.checked ? [...new Set([...ns.tags,    val])] : ns.tags.filter(t => t !== val);
-          } else if (facet === 'source') {
-            ns.sources = cb.checked ? [...new Set([...ns.sources, val])] : ns.sources.filter(t => t !== val);
+            ns.tags = cb.checked ? [...new Set([...ns.tags, val])] : ns.tags.filter(t => t !== val);
           } else if (facet === 'q') {
             ns.qlevel = cb.checked ? val : '';
           }
@@ -1306,9 +1257,8 @@ export function renderAll(core) {
         });
       });
 
-      // 清除按钮
       article.querySelector('#facet-reset')?.addEventListener('click', () => {
-        history.replaceState(null, '', buildHash({ types: [], essays: [], events: [], tags: [], sources: [], qlevel: '', search: '', page: 1 }));
+        history.replaceState(null, '', buildHash({ types: [], books: [], tags: [], qlevel: '', search: '', page: 1 }));
         render();
       });
     }
