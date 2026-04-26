@@ -7,7 +7,7 @@
 
 set -euo pipefail
 
-PORT="${1:-8001}"
+PORT="${1:-1453}"
 WIKI_ROOT="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
 PUBLIC_DIR="$WIKI_ROOT/public"
 REGISTRY_SCRIPT="$WIKI_ROOT/scripts/build_registry.py"

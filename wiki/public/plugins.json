@@ -1,1 +1,39 @@
-{"plugins": []}
+{
+  "plugins": [
+    {
+      "id": "footnote",
+      "entry": "plugins/footnote/index.js",
+      "name": "脚注",
+      "version": "1.0.0",
+      "description": "渲染 [^id] 内联引用与 [^id]: 定义"
+    },
+    {
+      "id": "math",
+      "entry": "plugins/math/index.js",
+      "name": "KaTeX 数学公式",
+      "version": "1.0.0",
+      "description": "渲染页面中的 $...$ 行内公式和 $$...$$ 块级公式（需联网加载 KaTeX CDN）"
+    },
+    {
+      "id": "semantic-block",
+      "entry": "plugins/semantic-block/index.js",
+      "name": "语义块",
+      "version": "1.0.0",
+      "description": "处理页面中的 ::: infobox 和 ::: meta 语义块；支持 inline infobox 折叠/展开与元数据读取"
+    },
+    {
+      "id": "backlinks",
+      "entry": "plugins/backlinks/index.js",
+      "name": "反向引用",
+      "version": "1.0.0",
+      "description": "在文章末尾注入「被以下页面引用」区块，数据来自 backlinks.json"
+    },
+    {
+      "id": "semantic-query",
+      "entry": "plugins/semantic-query/index.js",
+      "name": "语义查询",
+      "version": "1.0.0",
+      "description": "::: query 块渲染；支持布尔过滤（tags_any/tags_not/type_any）、computed 表达式字段、field_labels 自定义列标签"
+    }
+  ]
+}
