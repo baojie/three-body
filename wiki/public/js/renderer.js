@@ -380,123 +380,51 @@ export function renderHome(core) {
   const pages = core.registry.pages;
   const ids = Object.keys(pages);
 
-  // 精品页面: 按类型分桶保证多样性，featured=true 优先，再按 quality_score
-  const allPages = ids.map((id) => ({ id, ...pages[id] }));
-  const scoreOf = (p) => (p.featured ? 1000 : 0) + (p.quality_score || 0);
-  const byScore = (a, b) => scoreOf(b) - scoreOf(a);
-
-  // 各类型上限：person≤6，story≤4，sanwen≤3，overview/concept/chapter 各≤2
-  const caps = { person: 6, story: 4, sanwen: 3, overview: 2, concept: 2, chapter: 2 };
-  const SKIP_TYPES = new Set(['redirect', 'disambiguation', 'year', 'place', 'event', 'special', 'list', '侯国', 'skill']);
-  const counts = {};
-  const featured = [];
-  const candidates = [...allPages].sort(byScore);
-  // 第一轮：按上限从各桶各取
-  for (const p of candidates) {
-    if (featured.length >= 18) break;
-    const t = p.type || '';
-    if (SKIP_TYPES.has(t) || !(t in caps)) continue;
-    const n = counts[t] || 0;
-    if (n >= caps[t]) continue;
-    counts[t] = n + 1;
-    featured.push(p);
-  }
-  // 第二轮：剩余位用高分补足
-  if (featured.length < 18) {
-    const used = new Set(featured.map((p) => p.id));
-    for (const p of candidates) {
-      if (featured.length >= 18) break;
-      if (used.has(p.id)) continue;
-      if (SKIP_TYPES.has(p.type || '')) continue;
-      featured.push(p);
-    }
+  // 按类型分组展示
+  const byType = {};
+  const SHOW_TYPES = ['person', 'character', 'concept', 'law', 'technology', 'event', 'organization', 'place', 'civilization'];
+  for (const id of ids) {
+    const p = pages[id];
+    const t = p.type || 'unknown';
+    if (!byType[t]) byType[t] = [];
+    byType[t].push({ id, ...p });
   }
 
-  const featuredHtml = featured.map(renderFeaturedCard).join('');
+  // 精品页面：featured=true 优先
+  const allPages = ids.map(id => ({ id, ...pages[id] }));
+  const featured = allPages
+    .filter(p => p.featured && !['redirect','disambiguation','special'].includes(p.type||''))
+    .slice(0, 12);
+  const featuredHtml = featured.length > 0
+    ? featured.map(renderFeaturedCard).join('')
+    : allPages
+        .filter(p => !['redirect','disambiguation','special'].includes(p.type||''))
+        .slice(0, 12)
+        .map(renderFeaturedCard).join('');
 
   document.getElementById('article').innerHTML =
     `<div class="wiki-home">
       <h1>三体 Wiki</h1>
-      <p class="tagline">从 130 篇《史记》提取的 ${ids.length} 个实体页面, 可按姓名或别名搜索</p>
+      <p class="tagline">刘慈欣《三体》三部曲人物、概念、事件百科 · 共 ${ids.length} 个词条</p>
 
       <div class="search-box">
         <input id="wiki-search" type="search"
-          placeholder="搜索人名或别名 (如 '刘邦', '高祖', '沛公')"
+          placeholder="搜索词条 (如 '叶文洁', '黑暗森林', '水滴')"
           autocomplete="off" autofocus>
         <ul id="search-results" hidden></ul>
       </div>
 
-      <h2>精品页面 <small class="muted">(按质量排)</small></h2>
+      <h2>精选词条</h2>
       <div class="featured-grid">${featuredHtml}</div>
 
       <nav class="home-links">
-        <a href="#${encodeURIComponent('Special:About')}" class="home-link home-link--about">关于本 Wiki</a>
         <a href="#${encodeURIComponent('Special:AllPages')}" class="home-link">全部 ${ids.length} 页 →</a>
         <a href="#${encodeURIComponent('Special:Recent')}" class="home-link">最近修订 →</a>
-        <a href="#${encodeURIComponent('Special:Random')}" class="home-link">随机页 →</a>
+        <a href="#${encodeURIComponent('Special:Random')}" class="home-link">随机词条 →</a>
       </nav>
 
-      <p class="home-disclaimer">⚠️ 本 Wiki 所有内容由 AI 机器人自动生成，难免有错误和疏漏。后台机器人 Butler 在持续巡逻纠错，但请勿用于学术引用。如发现问题欢迎<a href="https://github.com/baojie/three-body/issues/new" target="_blank" rel="noopener">提交 Issue</a>。</p>
-
-      <div id="k-panel" class="k-panel"><span class="muted">正在加载知识量...</span></div>
+      <p class="home-disclaimer">本 Wiki 内容由人工整理，基于《三体》《黑暗森林》《死神永生》三部曲。如发现错误欢迎<a href="https://github.com/baojie/three-body/issues/new" target="_blank" rel="noopener">提交 Issue</a>。</p>
     </div>`;
-
-  // 知识量仪表板：latest + timeline sparkline
-  Promise.all([
-    fetch('data/knowledge_latest.json').then(r => r.ok ? r.json() : null).catch(() => null),
-    fetch('data/knowledge_timeline.jsonl').then(r => r.ok ? r.text() : '').catch(() => ''),
-  ]).then(([k, tlText]) => {
-    if (!k) { document.getElementById('k-panel').innerHTML = ''; return; }
-    const panel = document.getElementById('k-panel');
-    if (!panel) return;
-    const pct = (k.link_hit_rate * 100).toFixed(1);
-    const kb  = (k.total_bytes / 1024).toFixed(0);
-
-    // sparkline from timeline
-    const pts = tlText.trim().split('\n')
-      .map(l => { try { return JSON.parse(l); } catch { return null; } })
-      .filter(d => d && d.K > 100)        // filter bad K=0 entries
-      .slice(-30);                         // last 30 snapshots
-    let sparkSvg = '';
-    if (pts.length >= 2) {
-      const W = 120, H = 28, pad = 2;
-      const ks = pts.map(p => p.K);
-      const mn = Math.min(...ks), mx = Math.max(...ks);
-      const range = mx - mn || 1;
-      const coords = pts.map((p, i) => {
-        const x = pad + (i / (pts.length - 1)) * (W - pad * 2);
-        const y = H - pad - ((p.K - mn) / range) * (H - pad * 2);
-        return `${x.toFixed(1)},${y.toFixed(1)}`;
-      }).join(' ');
-      sparkSvg = `<svg class="k-spark" viewBox="0 0 ${W} ${H}" width="${W}" height="${H}"
-        aria-label="知识量增长曲线">
-        <polyline points="${coords}" fill="none" stroke="var(--accent)" stroke-width="1.5"
-          stroke-linejoin="round" stroke-linecap="round"/>
-        <circle cx="${+coords.split(' ').at(-1).split(',')[0]}"
-                cy="${+coords.split(' ').at(-1).split(',')[1]}"
-                r="2.5" fill="var(--accent)"/>
-      </svg>`;
-    }
-
-    panel.innerHTML = `
-      <h3>📊 <a href="#${encodeURIComponent('Special:Statistics')}" class="k-title-link">知识量</a> <span class="k-value">${k.K.toLocaleString()}</span>
-        ${sparkSvg}
-      </h3>
-      <div class="k-row">
-        <span>${k.page_count} 页</span>
-        <span>${(k.quality_counts?.premium ?? k.featured_count ?? 0)} 旗舰</span>
-        <span>链接命中 ${pct}%</span>
-        <span>${kb} KB</span>
-        <span>${k.total_revisions} 修订</span>
-      </div>
-      <div class="k-row k-top">
-        TOP: ${k.top10_pages.slice(0, 5).map(t =>
-          `<a href="#${encodeURIComponent(t.pid)}">${t.pid}</a>(${t.k})`
-        ).join(' · ')}
-      </div>
-      <div class="k-row muted">快照: ${k.generated}</div>
-    `;
-  }).catch(() => { const p = document.getElementById('k-panel'); if (p) p.innerHTML = ''; });
 
   document.body.classList.add('is-home');
   hideSidebar();
