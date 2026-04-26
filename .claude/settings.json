@@ -1,0 +1,28 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(git status)",
+      "Bash(git log*)",
+      "Bash(git diff*)",
+      "Bash(git show*)",
+      "Bash(git add wiki/public*)",
+      "Bash(git add docs/*)",
+      "Bash(python3 wiki/scripts/build_registry.py*)",
+      "Bash(bash wiki/scripts/wiki_commit.sh*)",
+      "Bash(bash wiki/scripts/publish.sh)",
+      "Bash(rsync*)"
+    ],
+    "deny": [
+      "Bash(git commit --amend*)",
+      "Bash(git commit --no-verify*)",
+      "Bash(git push --force*)",
+      "Bash(git push -f*)",
+      "Bash(git reset --hard*)",
+      "Bash(git checkout --*)",
+      "Bash(git restore*)",
+      "Bash(git add -A*)",
+      "Bash(git add .*)",
+      "Bash(git add --all*)"
+    ]
+  }
+}
