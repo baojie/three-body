@@ -40,6 +40,14 @@
 - [x] P2 create | 三体游戏 | ✓ 2026-04-27
 - [x] P2 create | 维德 | ✓ 2026-04-27
 
+## P2 — discover R31 新增
+
+- [x] P2 create | 申玉菲 | ✓ 2026-04-27
+- [ ] P2 create | 阶梯计划 | 被2个页面引用，维德设计的大脑发射计划
+- [x] P1 create | 二向箔 | ✓ 2026-04-27（enrich-quality basic→standard）
+- [ ] P2 create | 万有引力号 | 被1个页面引用，引力波广播飞船
+- [ ] P2 create | 星环集团 | 被1个页面引用，维德创立的光速飞船研究机构
+
 ## P3 — 低优先级（发现型）
 
 - [x] P3 discover | corpus/broken-links | ✓ 2026-04-27 发现7条待建页

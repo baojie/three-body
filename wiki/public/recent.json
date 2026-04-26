@@ -1585,17 +1585,6 @@
       "size": 2215
     },
     {
-      "page": "叶文洁",
-      "rev_id": "20260426-194955-e17771",
-      "timestamp": "2026-04-26T19:49:55+00:00",
-      "author": "baojie",
-      "summary": "为23个词条页面写入 quality 等级字段",
-      "parent_rev": "20260426-183801-9a1b40",
-      "content_hash": "sha256:e17771e435d49c9c9c4047a70c55f8e80384717ae9ab89173832e1d100b9acdf",
-      "size_before": 1875,
-      "size": 1892
-    },
-    {
       "page": "地球三体组织",
       "rev_id": "20260426-194955-e84fda",
       "timestamp": "2026-04-26T19:49:55+00:00",
@@ -1759,6 +1748,116 @@
       "content_hash": "sha256:9cf91be539611f835d0de8cb2833ec8567e71536269f517ce209c38efdeb0794",
       "size_before": 2407,
       "size": 2424
+    },
+    {
+      "page": "三体游戏",
+      "rev_id": "20260426-201530-1c58b1",
+      "timestamp": "2026-04-26T20:15:30+00:00",
+      "author": "baojie",
+      "summary": "Butler R18-R29：新增12页+W5反思+三队列完善",
+      "parent_rev": null,
+      "content_hash": "sha256:1c58b1595e795c4ec28eb948e80691c008fcda1cc4ac2e11b0b61babec34d8d5",
+      "size_before": 0,
+      "size": 3905
+    },
+    {
+      "page": "光粒",
+      "rev_id": "20260426-201530-366351",
+      "timestamp": "2026-04-26T20:15:30+00:00",
+      "author": "baojie",
+      "summary": "Butler R18-R29：新增12页+W5反思+三队列完善",
+      "parent_rev": null,
+      "content_hash": "sha256:3663512babcecc5ec50f31507b9226c0bab2565361f6e16ad754ba8d5df225ed",
+      "size_before": 0,
+      "size": 3129
+    },
+    {
+      "page": "冬眠技术",
+      "rev_id": "20260426-201530-2897ea",
+      "timestamp": "2026-04-26T20:15:30+00:00",
+      "author": "baojie",
+      "summary": "Butler R18-R29：新增12页+W5反思+三队列完善",
+      "parent_rev": null,
+      "content_hash": "sha256:2897ea85e5c5a02d65e049182b002a7487b0d51099624c8e3f03790ba1b762f2",
+      "size_before": 0,
+      "size": 3121
+    },
+    {
+      "page": "叶文洁",
+      "rev_id": "20260426-201530-d21968",
+      "timestamp": "2026-04-26T20:15:30+00:00",
+      "author": "baojie",
+      "summary": "Butler R18-R29：新增12页+W5反思+三队列完善",
+      "parent_rev": "20260426-194955-e17771",
+      "content_hash": "sha256:d21968680341ae2081d3aa2d97ff2c97970dce22aacc614d353b016f7b0711c1",
+      "size_before": 1892,
+      "size": 2246
+    },
+    {
+      "page": "宇宙闪烁",
+      "rev_id": "20260426-201530-da3220",
+      "timestamp": "2026-04-26T20:15:30+00:00",
+      "author": "baojie",
+      "summary": "Butler R18-R29：新增12页+W5反思+三队列完善",
+      "parent_rev": null,
+      "content_hash": "sha256:da3220958ed79138239ed4d7263ee7e7d56c1cfdd97204b51c55b82e8286d1e2",
+      "size_before": 0,
+      "size": 3823
+    },
+    {
+      "page": "幽灵倒计时",
+      "rev_id": "20260426-201530-6949e2",
+      "timestamp": "2026-04-26T20:15:30+00:00",
+      "author": "baojie",
+      "summary": "Butler R18-R29：新增12页+W5反思+三队列完善",
+      "parent_rev": null,
+      "content_hash": "sha256:6949e2dde7ff0b2d499de0adcdc4b5cdaa59863ca4616287440807cdcfe6ce21",
+      "size_before": 0,
+      "size": 3670
+    },
+    {
+      "page": "掩体计划",
+      "rev_id": "20260426-201530-8256e7",
+      "timestamp": "2026-04-26T20:15:30+00:00",
+      "author": "baojie",
+      "summary": "Butler R18-R29：新增12页+W5反思+三队列完善",
+      "parent_rev": null,
+      "content_hash": "sha256:8256e7bfeea8345a2d13a7a63163cc11ec6fb3fd00e126b2f015019012a1ffda",
+      "size_before": 0,
+      "size": 3912
+    },
+    {
+      "page": "科学边界",
+      "rev_id": "20260426-201530-9a3725",
+      "timestamp": "2026-04-26T20:15:30+00:00",
+      "author": "baojie",
+      "summary": "Butler R18-R29：新增12页+W5反思+三队列完善",
+      "parent_rev": null,
+      "content_hash": "sha256:9a372561808d078d5604cec48bd845482f00412cefa9b6c270746d558d373f65",
+      "size_before": 0,
+      "size": 2967
+    },
+    {
+      "page": "维德",
+      "rev_id": "20260426-201530-13fcc1",
+      "timestamp": "2026-04-26T20:15:30+00:00",
+      "author": "baojie",
+      "summary": "Butler R18-R29：新增12页+W5反思+三队列完善",
+      "parent_rev": null,
+      "content_hash": "sha256:13fcc1d5321a7ceadd4428aa530988617f833fa23e68105bd8e2fbad994ade33",
+      "size_before": 0,
+      "size": 3947
+    },
+    {
+      "page": "黑域",
+      "rev_id": "20260426-201530-e9f6de",
+      "timestamp": "2026-04-26T20:15:30+00:00",
+      "author": "baojie",
+      "summary": "Butler R18-R29：新增12页+W5反思+三队列完善",
+      "parent_rev": null,
+      "content_hash": "sha256:e9f6ded357d218e4e5cfec2e9af2c0b86be128736d93d61203733a1b82759e70",
+      "size_before": 0,
+      "size": 3555
     }
   ],
   "rotations": 0
