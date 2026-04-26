@@ -1,6 +1,6 @@
 ---
 name: skill-butler-1
-description: 三体 Wiki Butler 的任务选取与探索策略。定义两大食物源（corpus 原文、broken wikilink）、queue.md 三级优先队列、trail/explore 动态配比。每轮 invocation 按本 skill 选出一个目标，交由 W2 执行。
+description: 三体 Wiki Butler 的任务选取与探索策略。定义两大食物源（corpus 原文、broken wikilink）、三队列系统（content/housekeeping）、trail/explore 动态配比。每轮 invocation 按本 skill 选出一个目标，交由 W2 执行。
 ---
 
 # SKILL W1: 探索与队列管理
@@ -13,9 +13,9 @@ description: 三体 Wiki Butler 的任务选取与探索策略。定义两大食
 
 ### 源 A · corpus/ 原文
 
-**路径**：`corpus/三体I：地球往事.txt`、`corpus/三体II：黑暗森林.txt`、`corpus/三体III：死神永生.txt`
+**路径**：`corpus/utf8/三体I：地球往事.txt`、`corpus/utf8/三体II：黑暗森林.txt`、`corpus/utf8/三体III：死神永生.txt`（UTF-8）
 
-**注意**：文件编码为 GB18030，使用 `corpus_search.py` 访问。
+原始 GBK 文件保留在 `corpus/` 供备份，不直接使用。使用 `corpus_search.py` 访问，输出直接附 PN 引文格式。
 
 **探查信号**：
 - `discover_wanted.py` 发现 broken link → 该词条大概率在原文有出现 → create
@@ -36,19 +36,23 @@ description: 三体 Wiki Butler 的任务选取与探索策略。定义两大食
 
 ---
 
-## 二、三级优先队列
+## 二、三队列系统与选取算法
+
+### 队列优先级
 
 ```
-P1 (立即处理) → P2 (本周) → P3 (发现型，每11轮)
+H-P1（内务紧急） > P1（内容高优） > H-P2（内务常规，每 3 轮插 1 次）> P2（内容中优）> P3（发现型）
 ```
 
-### 选取算法
+### 选取算法（每轮执行一次）
 
 ```
-1. 若 P1 中有未完成任务 → 选 P1 最上一条
-2. 否则若 round % 11 ≠ 0 → 选 P2 最上一条（trail 或 explore 按配比）
-3. 若 round % 11 == 0 → 优先做 P3 discover，再选 P2
-4. 所有队列为空 → 运行 discover_wanted.py，将 top 5 加入 P2
+1. 若 housekeeping_queue.md H-P1 有未完成任务 → 选 H-P1 最上一条（H 类行动，见 W10）
+2. 否则若 queue.md P1 有未完成任务 → 选 P1 最上一条
+3. 否则若 round % 3 == 0 且 H-P2 有未完成任务 → 选 H-P2 最上一条
+4. 否则若 round % 11 ≠ 0 → 选 P2 最上一条（trail 或 explore 按配比）
+5. 若 round % 11 == 0 → 优先做 D1 discover + H10 housekeeping-scan，再选 P2
+6. 所有队列为空 → empty_fallback（见 W0 第七节）
 ```
 
 ### Trail vs Explore 配比
@@ -116,7 +120,43 @@ python3 wiki/scripts/butler/discover_wanted.py --top 15
 
 ---
 
+## 六、质量驱动策略
+
+每次启动先查当前质量分布：
+
+```bash
+python3 wiki/scripts/compute_quality.py --report
+```
+
+### 策略阈值
+
+| 精品+旗舰比例 | 策略 | 每轮配比 |
+|-------------|------|---------|
+| < 10% | 深度优先 | 60% enrich/add-quote/add-pn-citations，40% create |
+| 10%–30% | 均衡 | 各 50% |
+| > 30% | 广度优先 | 30% enrich，70% create |
+
+### 单页提升路径
+
+```
+stub     → basic    : enrich-page（正文 ≥500 字 + 2个 h2）
+basic    → standard : enrich-page + add-pn-citations
+standard → featured : add-pn-citations（≥3 PN）+ add-quote + 补第3个 h2
+featured → premium  : 配图（image 字段）+ PN/引文累计 ≥8 条
+```
+
+### P1/P2 分配原则
+
+- `quality=stub` 且被 ≥2 页引用 → P1（高优先补全）
+- `quality=basic` 有 PN 扩充空间 → P2 enrich
+- `quality=standard` 离 featured 只差 PN 数 → P2 add-pn-citations
+- 每完成一批 create 后，运行一次 `wikify_chapters.py` 补章节链接
+
+---
+
 ## 相关
 
 - [W0 总则](SKILL_W0_Butler总则.md)
 - [W2 原子行动](SKILL_W2_Butler原子行动.md)
+- [W3 质量标准](SKILL_W3_Butler质量标准.md)
+- [W10 内务整理](SKILL_W10_Butler内务整理.md)
