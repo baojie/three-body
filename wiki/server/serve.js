@@ -3,7 +3,7 @@
  *
  * 用法:
  *   node wiki/server/serve.js [root] [port]
- *   node wiki/server/serve.js wiki/public         # 默认端口 8001
+ *   node wiki/server/serve.js wiki/public         # 默认端口 1453
  *   node wiki/server/serve.js wiki/public 9001    # 指定端口
  *
  * 常规启动走 wiki/wiki.sh, 无需直接调用本脚本。
@@ -36,7 +36,7 @@ const MIME = {
 function resolveArgs() {
   const args = process.argv.slice(2);
   let root = process.cwd();
-  let port = 8001;
+  let port = 1453;
   for (const a of args) {
     if (/^\d+$/.test(a)) {
       port = parseInt(a, 10);
