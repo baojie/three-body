@@ -14,3 +14,4 @@
 {"round": 14, "type": "create-page", "page": "光速飞船", "result": "accept", "desc": "从三体III提炼光速飞船：曲率驱动原理、云天明情报解读、航迹危险、人类开发受阻", "ts": "2026-04-26T19:27:02Z"}
 {"round": 15, "type": "create-page", "page": "史强", "result": "accept", "desc": "从三体I提炼史强：粗犷刑警大史、与汪淼搭档、倒握枪柄制服叛军、雪茄演示", "ts": "2026-04-26T19:27:45Z"}
 {"round": 16, "type": "create-page", "page": "费米悖论", "result": "accept", "desc": "从三体II提炼费米悖论：经典表述+罗辑的黑暗森林答案", "ts": "2026-04-26T19:28:34Z"}
+{"round": 17, "type": "publish", "page": "wiki", "result": "accept", "desc": "Butler R1-R16 发布：新增16页 commit dba0a2f，页面总数160", "ts": "2026-04-26T19:29:36Z"}
