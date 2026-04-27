@@ -236,3 +236,4 @@
 {"round": 235, "type": "enrich-page", "page": "程心", "result": "accept", "desc": "新增(3-20-011)守护者引文到执剑人节，score 54→60", "ts": "2026-04-27T01:18:17Z"}
 {"round": 236, "type": "enrich-page", "page": "红岸基地", "result": "accept", "desc": "新增H2发射系统+(1-04-043)发射授权quote，score 53→61", "ts": "2026-04-27T01:19:13Z"}
 {"round": 237, "type": "enrich-page", "page": "掩体计划", "result": "accept", "desc": "新增(3-33-101)诞生背景quote，B5补正 score 53→65", "ts": "2026-04-27T01:20:01Z"}
+{"round": 238, "type": "publish", "page": "—", "result": "accept", "desc": "/wiki发布R222-R238：A6 5页+enrich 9页+W5反思#7，commit 42d22cb", "ts": "2026-04-27T01:22:29Z"}
