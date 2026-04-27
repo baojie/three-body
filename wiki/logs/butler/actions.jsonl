@@ -408,3 +408,20 @@
 {"round": 397, "type": "create-page", "page": "山杉惠子", "result": "accept", "desc": "创建山杉惠子词条：诺贝尔奖脑科学家，ETO最后成员，破壁人三号，揭露思想钢印正负号秘密，9条PN", "ts": "2026-04-27T09:30:07Z"}
 {"round": 405, "type": "enrich-page", "page": "行星防御理事会", "result": "accept", "desc": "补充PDC第十九次会议宣布引文(2-10-029)和面壁法案监督权引文(2-10-038)", "ts": "2026-04-27T09:30:07Z"}
 {"round": 407, "type": "housekeeping", "page": "全库", "result": "accept", "desc": "D1+H10：92页全精品,分54-68；broken links: 杨卫宁2x/冥王星1x/东方延绪1x/文化大革命1x/球状闪电1x；最低分量子号54/青铜时代号55/三体问题55", "ts": "2026-04-27T09:30:13Z"}
+{"round": 410, "type": "publish", "page": "—", "result": "accept", "desc": "/wiki 发布 R381-410 成果（实例A已代执行 d7f8c64），14页新建：宏原子、强互作用力材料、飞刃、三体问题、沙瑞山、木星、联合舰队、地球文明、低熵体、宇宙文明等，共229页", "ts": "2026-04-27T09:31:06Z"}
+{"round": 401, "type": "enrich-page", "page": "程心", "result": "accept", "desc": "补充执剑人当选场景(3-19-003)：票数是第二名将近一倍，反映社会价值观转向，PN 8→9", "ts": "2026-04-27T09:31:29Z"}
+{"round": 411, "type": "housekeeping", "page": "全库", "result": "accept", "desc": "确认git干净，d7f8c64已包含：叶哲泰/自然选择号/星环号/三体问题等，队列新增：杨卫宁/冥王星/东方延绪(断链来源)", "ts": "2026-04-27T09:31:33Z"}
+{"round": 411, "type": "enrich-page", "page": "三体问题", "result": "accept", "desc": "规范化所有引文格式→标准blockquote+PN（去掉— 前缀，添加引号），4处引文格式统一", "ts": "2026-04-27T09:31:36Z"}
+{"round": 412, "type": "enrich-page", "page": "沙瑞山", "result": "accept", "desc": "规范化所有5处引文格式：去掉— 前缀，标准blockquote+PN", "ts": "2026-04-27T09:32:24Z"}
+{"round": 409, "type": "create-page", "page": "张援朝", "result": "accept", "desc": "创建张援朝词条：退休工人+冬眠诈骗受害者+危机纪元草根视角，修正队列错误描述，6条PN", "ts": "2026-04-27T09:32:38Z"}
+{"round": 416, "type": "enrich-page", "page": "低熵体", "result": "accept", "desc": "规范化5处引文格式：去掉— 前缀", "ts": "2026-04-27T09:32:43Z"}
+{"round": 414, "type": "create-page", "page": "水星", "result": "accept", "desc": "创建水星词条：雷迪亚兹水星氢弹+坠日战略，核试验形成行星环，摇篮死亡开关，光粒打击后解体，9条PN", "ts": "2026-04-27T09:32:58Z"}
+{"round": 418, "type": "enrich-page", "page": "宇宙文明", "result": "accept", "desc": "规范化6处引文格式：去掉— 前缀，统一为标准blockquote+PN格式", "ts": "2026-04-27T09:33:00Z"}
+{"round": 413, "type": "enrich-page", "page": "史强", "result": "accept", "desc": "新增'续写三体II：帮助罗辑'节：大史找到庄颜(2-16-067)、罗辑的魔鬼评价(2-15-120)，PN 8→10", "ts": "2026-04-27T09:33:15Z"}
+{"round": 419, "type": "fix-links", "page": "宏原子/三体问题/木星/强互作用力材料/地球文明/联合舰队/飞刃", "result": "accept", "desc": "批量修复7页引文格式：去掉> — （前缀，改为标准> （）", "ts": "2026-04-27T09:33:20Z"}
+{"round": 415, "type": "fix-links", "page": "叶哲泰/宏原子/自然选择号/星环号/水星", "result": "accept", "desc": "修复5页broken links：文化大革命/球状闪电/东方延绪/冥王星/太阳去[[]]，杨卫宁保留待建", "ts": "2026-04-27T09:33:39Z"}
+{"round": 417, "type": "create-page", "page": "吴岳", "result": "accept", "desc": "创建吴岳词条：海军上校，章北海政治操作牺牲品，理性失败主义，孤独终老，6条PN", "ts": "2026-04-27T09:34:02Z"}
+{"round": 423, "type": "create-page", "page": "飞星", "result": "accept", "desc": "创建飞星词条：三体游戏天文概念，两颗→恒纪元，三颗→灾难，汪淼观测视角，5条PN", "ts": "2026-04-27T09:35:22Z"}
+{"round": 424, "type": "create-page", "page": "杨卫宁", "result": "accept", "desc": "叶哲泰学生+红岸总工程师+叶文洁引荐人，6条PN", "ts": "2026-04-27T09:35:41Z"}
+{"round": 425, "type": "enrich-page", "page": "星环号", "result": "accept", "desc": "补充深海液舱引文(3-36-069)、AA步枪阻逃场景(3-36-117)和董事会建造揭示(3-36-135)", "ts": "2026-04-27T09:36:21Z"}
+{"round": 416, "type": "housekeeping", "page": "量子号/青铜时代号/吴岳/张援朝/水星", "result": "accept", "desc": "修复量子号/青铜时代号YAML aliases中文引号导致解析失败+吴岳/张援朝/水星补quality:standard字段", "ts": "2026-04-27T09:36:26Z"}
