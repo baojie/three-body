@@ -20,12 +20,20 @@ Butler 从 W5 反思中提炼的页面质量自定义规则。每轮执行 Q-che
 **规则**：每次 enrich-page accept 后，**必须**在同一轮重算实际 score 并更新 frontmatter quality_score，不允许保留旧值
 **来源**：R203 W5 反思，全库扫描发现 47/65 页偏差，均为 actual > frontmatter
 
-## 规则 QR-003（2026-04-27 从 W5 R232 反思）
+## 规则 QR-003（2026-04-27 从 W5 R232 反思，已更新 R360 架构升级，再更新前端直读）
 
 **适用类型**：butler 操作规范
-**问题**：rebuild_recent.py 被误作常规步骤调用，将 recent.json 从 249 条压缩至 202 条（每页取最新版），永久丢失历史修订条目
-**规则**：`rebuild_recent.py` 是破坏性操作，**严禁**作为常规步骤调用。仅当 recent.json 文件完全损坏（无法 JSON 解析）时才可使用，且使用前必须备份。常规情况下只调用 `record_revision.py` 追加单条修订。
-**来源**：R232 W5 反思，R221 session 恢复后误调 rebuild_recent 导致 47 条历史丢失
+**背景**：原规则禁止调用 `rebuild_recent.py`，因为旧版会从 `history/*.json` 重建（每页只保留最新版），导致历史修订条目丢失。
+**当前架构（前端直读 recent.jsonl）**：
+- 原始数据 → `recent.jsonl`（append-only，O_APPEND，每条修订一行，永不覆写）
+- 前端**直接读取** `recent.jsonl`，不再需要 `recent.json` 快照
+- `rebuild_recent.py` 降级为独立诊断工具，不在 publish 流水线中调用
+**规则（更新）**：
+- ✅ `record_revision.py`：每次写页面后必调（追加到 `recent.jsonl`）
+- ✅ `rebuild_recent.py`：仅供手动诊断/导出，不再由 publish.sh 调用
+- ❌ 禁止手动编辑 `recent.jsonl`（只允许 append）
+- ❌ 禁止用 `rebuild_recent.py --from-history`（此模式每页只取最新版，会丢历史）
+**来源**：R232 原始反思；R360 架构升级；前端直读升级后再次更新
 
 ## 规则 QR-004（2026-04-27 从 W5 R261 反思）
 

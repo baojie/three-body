@@ -729,19 +729,25 @@ export function renderCategory(core, kind, value) {
 }
 
 /**
- * 最近修订页 (#?recent[&page=N]): recent.json 是滚动窗口（最新 500-600 条），单次 fetch 即可.
+ * 最近修订页 (#?recent[&page=N]):
+ * 直接读取 recent.jsonl（append-only，每行一条 JSON），无需中间快照文件。
  */
 export async function renderRecent(core, pageNum = 1) {
   const DISPLAY_LIMIT = 500;
   const PAGE_SIZE = 50;
 
   const bust = `?v=${Math.floor(Date.now() / 60000)}`;
-  const r = await fetch('recent.json' + bust);
+  const r = await fetch('recent.jsonl' + bust);
   if (!r.ok) throw new Error('HTTP ' + r.status);
-  const data = await r.json();
+  const text = await r.text();
 
-  // recent.json 已包含最近 500-600 条（滚动窗口），直接取最新 DISPLAY_LIMIT 条，逆序显示
-  const recent500 = (data.entries || []).slice(-DISPLAY_LIMIT).reverse();
+  // 解析 JSONL：过滤空行，每行一条修订记录
+  const allEntries = text.split('\n')
+    .filter(l => l.trim())
+    .map(l => JSON.parse(l));
+
+  // 取最新 DISPLAY_LIMIT 条，逆序显示（最新在前）
+  const recent500 = allEntries.slice(-DISPLAY_LIMIT).reverse();
 
   const totalEntries = recent500.length;
   const totalPages = Math.max(1, Math.ceil(totalEntries / PAGE_SIZE));
@@ -767,8 +773,8 @@ export async function renderRecent(core, pageNum = 1) {
   const pagerHtml = totalPages > 1 ? buildPager(pageNum, totalPages) : '';
 
   const uniquePages = new Set(recent500.map(e => e.page)).size;
-  const totalInFile = (data.entries || []).length;
-  const logNote = totalInFile > DISPLAY_LIMIT ? `（窗口共 ${totalInFile} 条，显示最新 ${DISPLAY_LIMIT} 条）` : '';
+  const logNote = allEntries.length > DISPLAY_LIMIT
+    ? `（共 ${allEntries.length} 条，显示最新 ${DISPLAY_LIMIT} 条）` : '';
 
   const body = entries.length === 0
     ? '<p class="category-empty">暂无修订记录。</p>'
@@ -788,7 +794,7 @@ export async function renderRecent(core, pageNum = 1) {
   hideSidebar();
   document.getElementById('crumb').textContent = '最近修订';
   document.title = '最近修订 · 三体 Wiki';
-  document.getElementById('src-info').textContent = 'recent.json';
+  document.getElementById('src-info').textContent = 'recent.jsonl';
   document.getElementById('broken-info').textContent = '';
   window.scrollTo(0, 0);
 }
@@ -1284,22 +1290,48 @@ export function renderAll(core) {
  * user-req-8: 每个版本应可看上一个版本的 diff.
  */
 export async function renderDiff(core, page, revId) {
-  const r = await fetch(`history/${encodeURIComponent(page)}.json`);
-  if (!r.ok) throw new Error('HTTP ' + r.status);
-  const data = await r.json();
-  const revs = data.revisions || [];
-  const cur = revs.find((x) => x.rev_id === revId);
-  if (!cur) throw new Error(`rev not found: ${revId}`);
+  // Try inline diff from recent.jsonl first (stored at write time, no extra fetch needed)
+  let chunks = null;
+  let curMeta = null;
+  let source = `recent.jsonl`;
+  try {
+    const rr = await fetch('recent.jsonl');
+    if (rr.ok) {
+      const lines = (await rr.text()).split('\n').filter((l) => l.trim());
+      for (let i = lines.length - 1; i >= 0; i--) {
+        const e = JSON.parse(lines[i]);
+        if (e.page === page && e.rev_id === revId) {
+          if (e.diff) {
+            chunks = e.diff.map(([op, line]) => ({
+              type: op === '+' ? 'add' : op === '-' ? 'del' : 'same',
+              line,
+            }));
+          }
+          curMeta = e;
+          break;
+        }
+      }
+    }
+  } catch (_) {}
 
-  let prevContent = '';
-  let prevRev = null;
-  if (cur.parent_rev) {
-    prevRev = revs.find((x) => x.rev_id === cur.parent_rev);
-    if (prevRev) prevContent = prevRev.content || '';
+  // Fall back to history JSON (older revisions or missing diff field)
+  if (!chunks) {
+    source = `history/${page}.json`;
+    const r = await fetch(`history/${encodeURIComponent(page)}.json`);
+    if (!r.ok) throw new Error('HTTP ' + r.status);
+    const data = await r.json();
+    const revs = data.revisions || [];
+    const cur = revs.find((x) => x.rev_id === revId);
+    if (!cur) throw new Error(`rev not found: ${revId}`);
+    curMeta = cur;
+    let prevContent = '';
+    if (cur.parent_rev) {
+      const prevRev = revs.find((x) => x.rev_id === cur.parent_rev);
+      if (prevRev) prevContent = prevRev.content || '';
+    }
+    chunks = computeLineDiff(prevContent, cur.content || '');
   }
-  const curContent = cur.content || '';
 
-  const chunks = computeLineDiff(prevContent, curContent);
   const diffHtml = renderDiffChunks(chunks);
 
   const header = `<nav class="category-crumb">
@@ -1310,16 +1342,18 @@ export async function renderDiff(core, page, revId) {
     <a href="#?revision=${encodeURIComponent(page)}&rev=${encodeURIComponent(revId)}">查看该版</a>
   </nav>`;
 
+  const parentInfo = curMeta.parent_rev
+    ? `<div><strong>上版:</strong> <code>${escapeHtml(curMeta.parent_rev)}</code></div>`
+    : '<div><em>首个版本 (无上版), 全部显示为新增</em></div>';
+
   const meta = `<div class="diff-meta">
-    <div><strong>本版:</strong> <code>${escapeHtml(revId)}</code> · ${escapeHtml(fmtTimestamp(cur.timestamp))} · ${escapeHtml(cur.author)}</div>
-    ${prevRev
-      ? `<div><strong>上版:</strong> <code>${escapeHtml(prevRev.rev_id)}</code> · ${escapeHtml(fmtTimestamp(prevRev.timestamp))} · ${escapeHtml(prevRev.author)}</div>`
-      : '<div><em>首个版本 (无上版), 全部显示为新增</em></div>'}
+    <div><strong>本版:</strong> <code>${escapeHtml(revId)}</code> · ${escapeHtml(fmtTimestamp(curMeta.timestamp))} · ${escapeHtml(curMeta.author)}</div>
+    ${parentInfo}
     <div class="diff-summary">
       <span class="diff-added">+${chunks.filter((c) => c.type === 'add').length}</span>
       ·
       <span class="diff-removed">-${chunks.filter((c) => c.type === 'del').length}</span>
-      行 · 摘要: <em>${escapeHtml(cur.summary || '(无)')}</em>
+      行 · 摘要: <em>${escapeHtml(curMeta.summary || '(无)')}</em>
     </div>
   </div>`;
 
@@ -1331,7 +1365,7 @@ export async function renderDiff(core, page, revId) {
   document.body.classList.add('is-home');
   document.getElementById('crumb').textContent = `${page} diff ${revId}`;
   document.title = `${page} diff · 三体 Wiki`;
-  document.getElementById('src-info').textContent = `history/${page}.json (diff ${revId} vs ${cur.parent_rev || 'null'})`;
+  document.getElementById('src-info').textContent = `${source} (diff ${revId} vs ${curMeta.parent_rev || 'null'})`;
   document.getElementById('broken-info').textContent = '';
   window.scrollTo(0, 0);
 }
