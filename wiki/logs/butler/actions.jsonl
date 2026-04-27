@@ -237,3 +237,19 @@
 {"round": 236, "type": "enrich-page", "page": "红岸基地", "result": "accept", "desc": "新增H2发射系统+(1-04-043)发射授权quote，score 53→61", "ts": "2026-04-27T01:19:13Z"}
 {"round": 237, "type": "enrich-page", "page": "掩体计划", "result": "accept", "desc": "新增(3-33-101)诞生背景quote，B5补正 score 53→65", "ts": "2026-04-27T01:20:01Z"}
 {"round": 238, "type": "publish", "page": "—", "result": "accept", "desc": "/wiki发布R222-R238：A6 5页+enrich 9页+W5反思#7，commit 42d22cb", "ts": "2026-04-27T01:22:29Z"}
+{"round": 239, "type": "enrich-page", "page": "威慑纪元", "result": "accept", "desc": "B5分数修正53→61，新增(3-15-012)引文说明罗辑个体不确定性是威慑核心", "ts": "2026-04-27T01:24:09Z"}
+{"round": 240, "type": "enrich-page", "page": "三体星系", "result": "accept", "desc": "B5分数修正54→60，新增(1-20-051)引文：星系原有十二行星被太阳吞噬", "ts": "2026-04-27T01:24:56Z"}
+{"round": 241, "type": "enrich-page", "page": "光粒", "result": "accept", "desc": "B5分数修正54→65（实际引文8条H2六节，score严重低估）", "ts": "2026-04-27T01:25:27Z"}
+{"round": 242, "type": "housekeeping", "page": "all", "result": "accept", "desc": "H10 scan: 65非章节页，27页score<57，avg 58.2；D1: 无新wanted页面", "ts": "2026-04-27T01:25:59Z"}
+{"round": 243, "type": "enrich-page", "page": "罗辑", "result": "accept", "desc": "B5分数修正55→62，补(3-45-128)老罗辑晚年引文", "ts": "2026-04-27T01:26:55Z"}
+{"round": 244, "type": "enrich-page", "page": "歌者", "result": "accept", "desc": "新增H2低熵体概念+(3-42-014)(3-42-027)，B5分数修正54→61", "ts": "2026-04-27T01:27:35Z"}
+{"round": 245, "type": "enrich-page", "page": "破壁人", "result": "accept", "desc": "新增H2罗辑自为破壁人案例+(2-12-109)，B5分数修正54→61", "ts": "2026-04-27T01:28:20Z"}
+{"round": 246, "type": "enrich-page", "page": "黑暗森林打击", "result": "accept", "desc": "新增(3-29-016)引文，B5分数修正54→61", "ts": "2026-04-27T01:28:58Z"}
+{"round": 247, "type": "enrich-page", "page": "幽灵倒计时", "result": "accept", "desc": "B5分数修正55→61（7PN+7H2实际score远超55）", "ts": "2026-04-27T01:29:20Z"}
+{"round": 248, "type": "enrich-page", "page": "宇宙社会学", "result": "accept", "desc": "新增(2-48-104)猜疑链引文，B5分数修正55→61", "ts": "2026-04-27T01:30:03Z"}
+{"round": 249, "type": "enrich-page", "page": "汪淼", "result": "accept", "desc": "新增(1-10-055)3K眼镜宇宙闪烁引文，B5分数修正55→61", "ts": "2026-04-27T01:30:52Z"}
+{"round": 250, "type": "enrich-page", "page": "水滴探测器", "result": "accept", "desc": "新增(2-42-029)丁仪强互作用力鉴定引文，B5分数修正55→61", "ts": "2026-04-27T01:32:08Z"}
+{"round": 251, "type": "enrich-page", "page": "猜疑链", "result": "accept", "desc": "新增(2-46-021)生存死局猜疑链引文，B5分数修正55→61", "ts": "2026-04-27T01:33:19Z"}
+{"round": 252, "type": "enrich-page", "page": "科学边界", "result": "accept", "desc": "新增H2射手/农场主假说+(1-07-006)(1-07-007)两条核心引文，B5分数修正55→63", "ts": "2026-04-27T01:34:24Z"}
+{"round": 253, "type": "enrich-page", "page": "归零者", "result": "accept", "desc": "新增H2田园时代宇宙图景+(3-47-185)引文，B5分数修正56→63", "ts": "2026-04-27T01:35:38Z"}
+{"round": 254, "type": "enrich-page", "page": "章北海", "result": "accept", "desc": "新增(2-07-033)失败战争引文，B5分数修正56→61", "ts": "2026-04-27T01:36:36Z"}

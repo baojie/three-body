@@ -2892,6 +2892,171 @@
       "content_hash": "sha256:024e87264017e538f1abe96659f64c7d915a9587f8d667160e1fe93085c30a5d",
       "size_before": 4283,
       "size": 4690
+    },
+    {
+      "page": "威慑纪元",
+      "rev_id": "20260427-012409-3f0b8b",
+      "timestamp": "2026-04-27T01:24:09+00:00",
+      "author": "butler",
+      "summary": "enrich: B5分数修正53→61，新增(3-15-012)罗辑不确定性引文",
+      "parent_rev": "20260427-010357-969b9f",
+      "content_hash": "sha256:3f0b8b0b7249217b5d52dcc79bf69faeaeb6980b68a33cc004a1612de002fdba",
+      "size_before": 3511,
+      "size": 4010
+    },
+    {
+      "page": "三体星系",
+      "rev_id": "20260427-012456-b320ea",
+      "timestamp": "2026-04-27T01:24:56+00:00",
+      "author": "butler",
+      "summary": "enrich: B5分数修正54→60，新增(1-20-051)引文十二颗行星史",
+      "parent_rev": "20260427-005619-8e311f",
+      "content_hash": "sha256:b320ea90f65ea2362c8a493716ea55a60992a9f99bb55d2b30fc906fa9c459d5",
+      "size_before": 3681,
+      "size": 4185
+    },
+    {
+      "page": "光粒",
+      "rev_id": "20260427-012527-c239fe",
+      "timestamp": "2026-04-27T01:25:27+00:00",
+      "author": "butler",
+      "summary": "B5分数修正：54→65（页面内容丰富，引文8条，H2 6节）",
+      "parent_rev": "20260427-005618-e12aec",
+      "content_hash": "sha256:c239fe0ce40c4812ef6afadbb6bd5dc70e5ff4fff2cacf3004bf6a129660f0fd",
+      "size_before": 3131,
+      "size": 3131
+    },
+    {
+      "page": "罗辑",
+      "rev_id": "20260427-012655-a80d84",
+      "timestamp": "2026-04-27T01:26:55+00:00",
+      "author": "butler",
+      "summary": "enrich: B5分数修正55→62，补执剑人晚年描写(3-45-128)",
+      "parent_rev": "20260427-005619-ae61a6",
+      "content_hash": "sha256:a80d84c3b68811e7835298de0cbc747c970b8d8efa6d708db892e4271ceca114",
+      "size_before": 2337,
+      "size": 2876
+    },
+    {
+      "page": "歌者",
+      "rev_id": "20260427-012735-338cd2",
+      "timestamp": "2026-04-27T01:27:35+00:00",
+      "author": "butler",
+      "summary": "enrich: 新增H2低熵体与清理本能+(3-42-014)(3-42-027)，B5分数修正54→61",
+      "parent_rev": "20260427-005758-95c016",
+      "content_hash": "sha256:338cd2c44039fa37885dcc5f19246e9c6b90501c6b081c194d52749abcbb2aef",
+      "size_before": 3342,
+      "size": 4181
+    },
+    {
+      "page": "破壁人",
+      "rev_id": "20260427-012820-1b17e1",
+      "timestamp": "2026-04-27T01:28:20+00:00",
+      "author": "butler",
+      "summary": "enrich: 新增H2罗辑特殊破壁人案例+(2-12-109)(2-21-034)，B5分数修正54→61",
+      "parent_rev": "20260427-005619-858004",
+      "content_hash": "sha256:1b17e1b88e2772aaeb3ef739f72c9557b74d89e4f2d2316d7426dcf269b04d88",
+      "size_before": 3993,
+      "size": 4551
+    },
+    {
+      "page": "黑暗森林打击",
+      "rev_id": "20260427-012858-8a5189",
+      "timestamp": "2026-04-27T01:28:58+00:00",
+      "author": "butler",
+      "summary": "enrich: 新增(3-29-016)宇宙安全声明本质引文，B5分数修正54→61",
+      "parent_rev": "20260427-010418-1964b4",
+      "content_hash": "sha256:8a51890d1ce3e55993565b412cb7834a45a453665a889b6c80e31ae0924397c4",
+      "size_before": 3373,
+      "size": 3621
+    },
+    {
+      "page": "幽灵倒计时",
+      "rev_id": "20260427-012920-5d96c1",
+      "timestamp": "2026-04-27T01:29:20+00:00",
+      "author": "butler",
+      "summary": "B5分数修正：55→61（7 PNs + 7 H2，分数严重低估）",
+      "parent_rev": "20260427-005621-6582b8",
+      "content_hash": "sha256:5d96c1ec64be442c055a81df1663d7003c40e615eae8e3acb5d8fd550a74e4ef",
+      "size_before": 3688,
+      "size": 3688
+    },
+    {
+      "page": "宇宙社会学",
+      "rev_id": "20260427-013003-a87eb1",
+      "timestamp": "2026-04-27T01:30:03+00:00",
+      "author": "butler",
+      "summary": "enrich: 新增(2-48-104)猜疑链宇宙文明差异引文，B5分数修正55→61",
+      "parent_rev": "20260427-005621-dbc8af",
+      "content_hash": "sha256:a87eb19fefabd0ca21d97fe3c205f4b97b48e2836af218d466d1bcc16212edfe",
+      "size_before": 3594,
+      "size": 3906
+    },
+    {
+      "page": "汪淼",
+      "rev_id": "20260427-013051-67df94",
+      "timestamp": "2026-04-27T01:30:51+00:00",
+      "author": "butler",
+      "summary": "enrich: 新增(1-10-055)3K眼镜引文，B5分数修正55→61",
+      "parent_rev": "20260427-005620-2485c3",
+      "content_hash": "sha256:67df94b28f1d53994b27f1ca79caa0da60c43bd604dd1a33708718a9bf33bd84",
+      "size_before": 2882,
+      "size": 3151
+    },
+    {
+      "page": "水滴探测器",
+      "rev_id": "20260427-013208-d47b99",
+      "timestamp": "2026-04-27T01:32:08+00:00",
+      "author": "butler",
+      "summary": "enrich: 新增(2-42-029)丁仪材料鉴定引文，B5分数修正55→61",
+      "parent_rev": "20260427-005958-234889",
+      "content_hash": "sha256:d47b9977362765816888e51155be80e77acb23d3474c9aa38681adef3329e913",
+      "size_before": 3598,
+      "size": 3795
+    },
+    {
+      "page": "猜疑链",
+      "rev_id": "20260427-013318-fe2a79",
+      "timestamp": "2026-04-27T01:33:18+00:00",
+      "author": "butler",
+      "summary": "enrich: 新增(2-46-021)猜疑链无解引文，B5分数修正55→61",
+      "parent_rev": "20260427-010028-7d4100",
+      "content_hash": "sha256:fe2a798ad05ce99157822615a3346b46722044b7cb19b9229fca93b3c8e813b3",
+      "size_before": 3434,
+      "size": 3805
+    },
+    {
+      "page": "科学边界",
+      "rev_id": "20260427-013424-c56aa4",
+      "timestamp": "2026-04-27T01:34:24+00:00",
+      "author": "butler",
+      "summary": "enrich: 新增H2射手农场主假说+(1-07-006)(1-07-007)，B5分数修正55→63",
+      "parent_rev": "20260427-005619-33c08f",
+      "content_hash": "sha256:c56aa480e81282ecb34affb57f88e4dcd9c89db42da5b817d1727b49e7ee5d51",
+      "size_before": 3540,
+      "size": 4524
+    },
+    {
+      "page": "归零者",
+      "rev_id": "20260427-013538-dedcc4",
+      "timestamp": "2026-04-27T01:35:38+00:00",
+      "author": "butler",
+      "summary": "enrich: 新增H2田园时代+(3-47-185)(3-47-180)，B5分数修正56→63",
+      "parent_rev": "20260427-005618-4ed106",
+      "content_hash": "sha256:dedcc4faae5f5008c67f0371c3b8289f7e50f1696611bbd82ea63284b80384ff",
+      "size_before": 3565,
+      "size": 4323
+    },
+    {
+      "page": "章北海",
+      "rev_id": "20260427-013636-850f2f",
+      "timestamp": "2026-04-27T01:36:36+00:00",
+      "author": "butler",
+      "summary": "enrich: 新增(2-07-033)章北海揭发吴岳关键引文，B5分数修正56→61",
+      "parent_rev": "20260427-005621-7bd558",
+      "content_hash": "sha256:850f2f2249cdc641bc73e3464eb8f99e5e9f3d1ed2e89213f6c2d64cefc32729",
+      "size_before": 3506,
+      "size": 3756
     }
   ],
   "rotations": 0
