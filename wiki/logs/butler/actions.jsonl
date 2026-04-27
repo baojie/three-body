@@ -531,3 +531,6 @@
 {"round": 525, "type": "enrich-page", "page": "国际解读委员会", "result": "accept", "desc": "修正PN(3-19→3-31/3-33)，修正故事名，升级 basic→featured，补充双层隐喻突破", "ts": "2026-04-27T11:39:46Z", "instance": "统帅"}
 {"round": 526, "type": "enrich-page", "page": "鱼群设想", "result": "accept", "desc": "修正全部错误PN，修正故事名，删除不存在引文，升级basic→featured", "ts": "2026-04-27T11:41:03Z", "instance": "统帅"}
 {"round": 529, "type": "enrich-page", "page": "无故事王国", "result": "accept", "desc": "修正全部错误PN，修正故事名，补充历史段落与居民限制，basic→featured；同轮修复alias冲突", "ts": "2026-04-27T11:44:13Z", "instance": "统帅"}
+{"round": 528, "type": "publish", "page": "—", "result": "accept", "desc": "R527 publish: 5新+5丰+3alias修复，K8893→9226，147页全featured", "ts": "2026-04-27T11:46:06Z", "instance": "统帅"}
+{"round": 531, "type": "create-page", "page": "赫尔辛根默斯肯", "result": "accept", "desc": "新建赫尔辛根默斯肯：童话唯一音译地名，实为挪威罗弗敦地理密码（赫尔辛根山+默斯肯岛），IDC解读爱伦·坡漩涡→曲率驱动突破口，3条PN", "ts": "2026-04-27T11:54:15Z", "instance": "幸存者"}
+{"round": 530, "type": "create-page", "page": "茶道谈话,红色联合,地球之子,引力波发射台,绍琳,技术公有化,引力波宇宙广播系统", "result": "accept", "desc": "create-page×7页，700WU，批量新建：茶道谈话/红色联合/地球之子/引力波发射台/绍琳/技术公有化/引力波宇宙广播系统", "ts": "2026-04-27T11:54:27Z", "instance": "统帅"}

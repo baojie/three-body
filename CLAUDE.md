@@ -55,8 +55,12 @@ books: [三体I, 三体II, 三体III]  # 出现在哪部书
 | event | 事件 |
 | organization | 组织 |
 | place | 地点 |
-| civilization | 文明/物种 |
+| civilization | 文明 |
+| era | 纪元（危机纪元/威慑纪元等） |
 | book | 书册/卷 |
+| chapter | 原文章节 |
+| story | 故事（云天明童话等） |
+| quote | 名句 |
 | overview | 综述 |
 | list | 列表 |
 
