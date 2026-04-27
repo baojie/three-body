@@ -109,8 +109,8 @@
 
 ## P3 — 低优先级（发现型）
 
-- [ ] P3 create | 绿色拯救者 | R554-监听员：corpus 1x（三体III）；主张退回农耕社会发布安全声明的组织，数百万成员，澳大利亚示范农耕失败
-- [ ] P3 create | 三个王国的故事 | R555-H17：corpus 2x（三体II c4/c5）；三体游戏中出现的书，关于欺骗与诡计，type=book
+- [x] P3 create | 绿色拯救者 | ✓ 2026-04-27（R558统帅已建页）
+- [x] P3 create | 三个王国的故事 | ✓ 2026-04-27（R558统帅已建页）
 - [ ] P3 discover | corpus/三体I | 扫描《地球往事》提取未建页词条
 - [ ] P3 discover | corpus/三体II | 扫描《黑暗森林》提取未建页词条
 - [ ] P3 discover | corpus/三体III | 扫描《死神永生》提取未建页词条
@@ -173,3 +173,9 @@
 - [x] P2 create | 叶文洁时间线 | ✓ 2026-04-27（R506完成，统帅，文革→红岸→ETO→公理传授，type=overview，6条PN）
 - [x] P2 create | 程心时间线 | W5#9 提案，从阶梯计划到宇宙末年，type=timeline → R510 accept
 - [x] P2 create | 罗辑时间线 | W5#9 提案，从面壁到执剑到晚年，type=timeline → R513 accept
+
+## P1/P2 — R564扫描新增（H10全库扫描R564）
+
+- [ ] P1 create | 何博士 | R564-H10：2x broken link + corpus 5x；北京天文台研究员，协助云天明购星DX3906
+- [ ] P2 create | DX3906星系黑域纪元 | R564-H10：1x broken link + corpus 3x；宇宙级时间纪元，死神永生章节题词
+- [ ] P2 create | 堪培拉 | R564-H10：1x broken link + corpus 6x；澳大利亚首都，大移民保留城市，堪培拉惨案主战场
