@@ -72,10 +72,17 @@
 
 ## H-P3 — 扫描类（每11轮）
 
-- [ ] H10 housekeeping-scan | all | 下次扫描（R87）
+- [x] H10 housekeeping-scan | all | ✓ 2026-04-27（R407：87页全精品；broken links：杨卫宁2x/冥王星1x/东方延绪1x/文化大革命1x/球状闪电1x/太阳1x）
 
 ---
 
 ## H-P3 — 扫描类（每11轮）
 
 - [x] H10 housekeeping-scan | all | ✓ 2026-04-27 R99（47概念页，5基础/4标准/38精选，2 broken link：黑暗森林打击/三体舰队→写入P2）
+
+## H-P2 — R415扫描新增（H10全库扫描R415）
+
+- [x] H5 fix-links | 叶哲泰/宏原子/自然选择号/星环号/水星 | ✓ 2026-04-27（R415完成，5处非三体词条去[[]]）
+- [x] housekeeping | 量子号/青铜时代号 | ✓ 2026-04-27（R416：修复YAML aliases中文引号解析失败）
+- [x] housekeeping | 吴岳/张援朝/水星 | ✓ 2026-04-27（R416：补quality:standard字段）
+- [ ] H5 create-wanted | 杨卫宁 | 待幸存者建页（叶哲泰.md x2引用，三体I-26专属章节）

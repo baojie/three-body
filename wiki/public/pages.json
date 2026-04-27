@@ -1882,7 +1882,7 @@
       "path": "pages/三体文明.md",
       "description": "来自三体星系（半人马座α三星系统）的高度发达外星文明，以恒纪元与乱纪元交替为生存背景",
       "quality": "featured",
-      "quality_score": 66
+      "quality_score": 67
     },
     "三体星系": {
       "type": "place",
@@ -4160,5 +4160,5 @@
     "Dark Forest Theory": "黑暗森林法则"
   },
   "page_count": 234,
-  "generated": "2026-04-27T09:36:20Z"
+  "generated": "2026-04-27T09:36:50Z"
 }
