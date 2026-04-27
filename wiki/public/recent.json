@@ -2243,6 +2243,17 @@
       "content_hash": "sha256:45d3ccb20c76c0b5ff5dd40a460c20db07576067bc985ade48ac72ad777a5d3d",
       "size_before": 0,
       "size": 2904
+    },
+    {
+      "page": "泰勒",
+      "rev_id": "20260427-053628-edbe7e",
+      "timestamp": "2026-04-27T05:36:28+00:00",
+      "author": "butler",
+      "summary": "create-page: 泰勒",
+      "parent_rev": null,
+      "content_hash": "sha256:edbe7ed7c77aa09ff66880461d436568df2803a2c6bcacd118134b05d2bf24c0",
+      "size_before": 0,
+      "size": 3673
     }
   ],
   "rotations": 0
