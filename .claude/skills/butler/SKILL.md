@@ -1,6 +1,6 @@
 ---
 name: butler
-description: 启动三体 Wiki 管家永续 loop。三队列系统（content/housekeeping）。每轮：W1三队列选任务→W2执行→W3自评→记账，无需用户逐轮确认。每11轮discover+housekeeping-scan，每17轮自动/wiki发布，每29轮W5反思（七类模式，含架构提案）。工作目录：/home/baojie/work/knowledge/three-body
+description: 启动三体 Wiki 管家永续 loop。三队列系统（content/housekeeping）。每轮：W1三队列选任务→W2执行→W3自评→记账，无需用户逐轮确认。每11轮discover+housekeeping-scan，每17轮自动/wiki发布，每29轮W5反思，每33轮H17覆盖扫描/H18存根排序。工作目录：/home/baojie/work/knowledge/three-body。支持 --focus 参数指定任务范围（多实例并发时使用）。
 ---
 
 # /butler — 三体 Wiki 管家
@@ -19,6 +19,17 @@ description: 启动三体 Wiki 管家永续 loop。三队列系统（content/hou
 ```
 
 所有相对路径均基于此。语料：`corpus/utf8/三体*.txt`（UTF-8，已标注 PN）。
+
+## 启动参数（可选）
+
+| 参数 | 默认 | 说明 |
+|------|------|------|
+| `--focus create` | `all` | 只领取 create 类任务（新建词条） |
+| `--focus enrich` | `all` | 只领取 enrich 类任务（丰富内容） |
+| `--focus all` | `all` | 领取任意类型任务 |
+| `--instance NAME` | `inst<PID>` | 实例标识符（显示在 [~] 标记中） |
+
+示例：`/butler --focus create --instance A`
 
 ## 启动流程（十步）
 
@@ -41,6 +52,8 @@ description: 启动三体 Wiki 管家永续 loop。三队列系统（content/hou
    round % 29 == 0 → W5 反思（整轮）
    round % 17 == 0 → /wiki 发布
    round % 11 == 0 → D1 discover + H10 housekeeping-scan
+   round % 33 == 0 → H17 coverage-scan（三部曲覆盖扫描）
+   round % 33 == 11 → H18 stub-triage（存根优先排序）
 
 5. 三队列选取（W1）
    H-P1 → P1 → H-P2(每3轮) → P2 → P3 → empty_fallback
@@ -51,7 +64,7 @@ description: 启动三体 Wiki 管家永续 loop。三队列系统（content/hou
 
 8. git add（accept 时）
 
-9. 记账：round_counter+1 + record_action.py + 队列标[x]
+9. 记账：increment_round.py（原子） + record_action.py + complete_task.py（队列 [~]→[x]）
 
 10. → 回到步骤 4（永续）
 ```
@@ -90,4 +103,4 @@ description: 启动三体 Wiki 管家永续 loop。三队列系统（content/hou
 - [W2 原子行动](../../../skills/SKILL_W2_Butler原子行动.md) — A/B/C/D/E/H 组动作
 - [W3 质量标准](../../../skills/SKILL_W3_Butler质量标准.md) — stub/basic/standard/featured 质量规则
 - [W5 反思与自改](../../../skills/SKILL_W5_Butler反思与自改.md) — 七类模式识别，每29轮强制
-- [W10 内务整理](../../../skills/SKILL_W10_Butler内务整理.md) — H1-H10 内务任务调度
+- [W10 内务整理](../../../skills/SKILL_W10_Butler内务整理.md) — H1-H20 内务任务调度

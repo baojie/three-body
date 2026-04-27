@@ -1,21 +1,23 @@
 ---
 name: skill-butler-2
-description: 三体 Wiki Butler 的原子行动目录——A/B/C/D/E/H 组标准操作的前置条件、执行步骤、后置检查、diff上限。每轮只执行一个动作。禁止自由发挥，只能从此目录选。H 组内务整理任务详规见 W10。
+description: 三体 Wiki Butler 的原子行动目录——A/B/C/D/E/H 组标准操作的前置条件、执行步骤、后置检查、WU成本与diff上限。每轮按WU批量执行同类动作，目标500WU/轮。禁止自由发挥，只能从此目录选。H 组内务整理任务详规见 W10。
 ---
 
 # SKILL W2: 原子行动目录
 
-> 每轮从本目录选一种动作执行。选哪种由 W1 决定。执行后必须 W3 自评（accept/fail）并记账。
+> 每轮按"工作量单位（WU）"批量执行同类动作，目标 **500 WU / 轮**。
+> `batch_n = ceil(500 / WU)`——每轮最多执行该数量的同类动作。
+> 满足 `total_wu ≥ 500` 或连续失败 3 次即停止，转入记账。
 
 ---
 
 ## 通用约定
 
-- 每轮 **只做一个页面** 的一个操作
+- 每轮选 **一种动作**，对多个页面批量执行，直到累计 WU ≥ 500
 - 写入 diff ≤ 30 行（新建页面例外，但仍尽量 ≤ 60 行）
-- accept → `git add wiki/public/pages/<PAGE>.md`（暂存但不 commit）
-- fail → 停止，记 fail，进入下一轮
-- **每轮结束必须**调用 `record_action.py` 写 `actions.jsonl`
+- accept → `total_wu += WU`；`git add wiki/public/pages/<PAGE>.md`（暂存但不 commit）
+- fail → 不计 WU；`consec_fail++`；`consec_fail ≥ 3` 则退出循环
+- **每轮结束必须**调用 `record_action.py` 写 `actions.jsonl`（一条汇总行，记录本轮总 WU 和成功数）
 
 ### ⚠️ 页面写入铁律
 
@@ -48,20 +50,84 @@ python3 wiki/scripts/butler/corpus_search.py "关键词" --max 10
 叶文洁目睹父亲被迫害致死（1-02-052），这一经历动摇了她对人类文明的信心。
 ```
 
-**在原文引用块中标注**：
+**在原文引用块中标注**（PN 必须在 blockquote 内部，不可另起段落）：
 ```markdown
 > 「引用原文」
-
-（1-02-052）
+> （1-02-052）
 ```
+
+⚠️ **格式铁律**：PN 编号必须作为 blockquote 最后一行（以 `> ` 开头），**不可**放在 blockquote 外面（空行隔开）。放在 blockquote 外面会导致渲染错位，属于格式错误，自评应为 fail。
 
 引文链接由 `pn-citation` 插件自动渲染为可点击跳转链接。**禁止捏造 PN**，必须从 corpus_search 结果中复制。
 
 ---
 
+## WU 速查表
+
+| 动作 | WU | batch_n (≈) | 典型 diff |
+|------|----|------------|---------|
+| A1 `create-page` | 100 | 5 | ≤ 60 行 |
+| A2 `enrich-page` | 50 | 10 | ≤ 25 行 |
+| A3 `enrich-quality` | 30 | 17 | ≤ 40 行 |
+| B1 `add-quote` | 20 | 25 | ≤ 10 行 |
+| B2 `add-pn-citations` | 15 | 33 | ≤ 8 行 |
+| C1 `stub` | 40 | 12 | ≤ 12 行 |
+| C2 `fix-links` | 10 | 50 | ≤ 5 行 |
+| C3 `add-alias` | 5 | 100 | 1 行 |
+| D1 `discover` | 50 | 10 | queue.md |
+| E1 `wikify-chapters` | 500 | 1 | 批量章节 |
+| H1 fix-links | 10 | 50 | broken link 修正 |
+| H2 enrich-stub | 40 | 12 | stub 补内容 |
+| H3 add-quote | 20 | 25 | 补 PN 引文 |
+| H4 add-alias | 5 | 100 | 加别名 |
+| H5 add-related | 10 | 50 | 补相关词条节 |
+| H6 quality-audit | 100 | 5 | 抽查 5 页 Q-check |
+| H7 add-section | 20 | 25 | 补必要节 |
+| H8 cross-link | 10 | 50 | 互链两页 |
+| H9 update-description | 5 | 100 | 填 description |
+| H10 housekeeping-scan | 200 | 2 | 全库扫描（每11轮）|
+| H11 reclassify | 5 | 100 | 修正 type |
+| H12 add-tags | 5 | 100 | 补标签 |
+| H13 format-check | 5 | 100 | 修格式问题 |
+| H14 pn-placement-fix | 15 | 33 | PN 移入 blockquote |
+| H15 deduplicate | 50 | 10 | 合并重复页 |
+| H16 add-redirect | 5 | 100 | 建别名重定向页 |
+| H17 coverage-scan | 200 | 2 | 章节覆盖扫描（每33轮）|
+| H18 stub-triage | 30 | 17 | 存根优先级评估 |
+| H19 books-field | 5 | 100 | 填 books 字段 |
+| H20 list-update | 30 | 17 | 更新列表/索引页 |
+
+> **WU 的意义**：WU 越低 → 每轮做越多页；WU 越高 → 每轮精做少数页。
+> 每轮实际完成 WU 写入 `actions.jsonl` 的 `desc` 字段，便于 W5 追踪节奏。
+
+---
+
+## 批量执行步骤模板
+
+```
+0. 从 WU 表查本轮动作 WU；batch_n = ceil(500 / WU)
+1. total_wu = 0; accept_cnt = 0; fail_cnt = 0; consec_fail = 0
+2. 循环最多 batch_n 次（或同类队列耗尽）：
+   a. 取下一个候选页面
+   b. 检查前置条件 → 不满足则 skip（不计 WU，不计 consec_fail）
+   c. 执行动作，检查 diff ≤ 上限（超则拆分或 skip）
+   d. revision 验证（写页面时必做）：
+      确认 wiki/public/history/<PAGE>.json 的最新 content_hash 已更新
+      未更新 → 立即补调 record_revision.py，再继续
+   e. W3 自评：
+      accept → total_wu += WU; accept_cnt += 1; consec_fail = 0
+               git add wiki/public/pages/<PAGE>.md
+      fail   → fail_cnt += 1; consec_fail += 1
+   f. 若 total_wu ≥ 500 或 consec_fail ≥ 3：退出循环
+3. frontmatter 有变动 → rebuild pages.json（add_page/edit_page 已自动触发）
+4. 记账：record_action.py 一条汇总行，desc 含 total_wu 与 accept_cnt
+```
+
+---
+
 ## A 组 · 页面创建
 
-### A1 `create-page PAGE`
+### A1 `create-page PAGE` — WU 100
 
 **前置**：wiki/public/pages/PAGE.md 不存在 + corpus 中可搜索到该词条
 
@@ -90,7 +156,7 @@ python3 wiki/scripts/butler/corpus_search.py "关键词" --max 10
 
 ---
 
-### A2 `enrich-page PAGE`
+### A2 `enrich-page PAGE` — WU 50
 
 **前置**：PAGE 已存在 + 正文 ≤ 15 行实质内容 + corpus 有更多信息
 
@@ -115,7 +181,7 @@ python3 wiki/scripts/butler/corpus_search.py "关键词" --max 10
 
 ---
 
-### A3 `enrich-quality PAGE [目标档]`
+### A3 `enrich-quality PAGE [目标档]` — WU 30
 
 将页面质量升一档（或升至指定档）。**常用于队列为空时的自主 fallback。**
 
@@ -177,7 +243,7 @@ python3 wiki/scripts/butler/corpus_search.py "关键词" --max 10
 
 ## B 组 · 引文与原文
 
-### B1 `add-quote PAGE`
+### B1 `add-quote PAGE` — WU 20
 
 为页面追加一段《三体》原文引用块，**必须附 PN 编号**。
 
@@ -205,7 +271,7 @@ python3 wiki/scripts/butler/corpus_search.py "关键词" --max 10
 
 ---
 
-### B2 `add-pn-citations PAGE`
+### B2 `add-pn-citations PAGE` — WU 15
 
 在页面叙述性正文中补充 PN 行内引文，提升可溯源性。
 
@@ -234,7 +300,7 @@ python3 wiki/scripts/butler/corpus_search.py "关键词" --max 10
 
 ## C 组 · 存根与链接
 
-### C1 `stub PAGE`
+### C1 `stub PAGE` — WU 40
 
 为 broken wikilink 创建最小存根，让断链变有效。
 
@@ -267,7 +333,7 @@ EOF
 
 ---
 
-### C2 `fix-links PAGE`
+### C2 `fix-links PAGE` — WU 10
 
 修复页面中的 broken wikilinks。
 
@@ -292,7 +358,7 @@ EOF
 
 ---
 
-### C3 `add-alias PAGE ALIAS`
+### C3 `add-alias PAGE ALIAS` — WU 5
 
 为页面添加别名，让更多链接能正确解析。
 
@@ -312,7 +378,7 @@ EOF
 
 ## D 组 · 探索
 
-### D1 `discover`
+### D1 `discover` — WU 50
 
 探索 corpus 或 broken links，发现新词条，写入 queue.md。
 
@@ -335,6 +401,14 @@ EOF
 2. **禁止捏造 PN**（必须从 corpus_search 结果中复制）
 3. **禁止绕过 edit_page.py 的保护标志**（`--allow-shrink` 仅限 redirect/merge）
 4. **禁止在 accept 前跳过 revision 验证**（见下方自评步骤）
+5. **禁止 PN 放在 blockquote 外面**（见 PN 引文系统格式铁律）
+
+## ⚠️ 脚本 API 备忘（高频错误防范）
+
+| 脚本 | 注意 |
+|------|------|
+| `record_action.py` | `--round` 参数必须是**整数**（如 `--round 18`），不得写 `--round R18` |
+| `record_revision.py` | 第一个参数必须是页面 **slug**（如 `叶文洁`），不得传路径（`wiki/public/pages/叶文洁.md`）也不得传带 `.md` 的名称 |
 
 ---
 
@@ -359,22 +433,43 @@ EOF
 
 ---
 
-## 记账（每轮必做）
+## 记账（每轮必做，批量汇总）
 
 ```bash
-# 1. 轮次+1
-echo $(($(cat wiki/logs/butler/round_counter.txt) + 1)) > wiki/logs/butler/round_counter.txt
+# 1. 原子递增轮次（多实例安全）
+ROUND=$(python3 wiki/scripts/butler/increment_round.py)
 
-# 2. 记 action（--reflect 为每轮一句话观察，必填）
+# 2. 记 action（一条汇总行，desc 含本轮 total_wu 和 accept_cnt）
 python3 wiki/scripts/butler/record_action.py \
-  --round <R> --type <type> --page <PAGE> --result accept \
-  --desc "从corpus三体X提炼..." \
-  --reflect "一句话观察"
+  --round $ROUND --type <type> --page <PAGE列表或"batch-N页"> --result accept \
+  --desc "<type>×<accept_cnt>页，<total_wu>WU，<简要说明>" \
+  --reflect "一句话观察（本轮节奏/发现/异常）"
 
-# 3. 在 queue.md 标记 [x]（将 "- [ ]" 改为 "- [x]"）
+# 3. 【每个写入的页面必须各调一次】记 revision（内置 hash 去重，多调无副作用）
+python3 wiki/scripts/record_revision.py <PAGE> \
+  --summary "<type>: <一句话描述>" \
+  --author butler
+
+# 4. 将队列中本轮完成的任务标为 [x]（[~] → [x]）
+python3 wiki/scripts/butler/complete_task.py --page <PAGE> --date $(date +%Y-%m-%d)
+# 若本轮 fail，放回队列让其他实例重试：
+# python3 wiki/scripts/butler/complete_task.py --page <PAGE> --release
 ```
 
-> discover / housekeeping-scan 等只改队列文件的动作不产生页面修订，revision 验证步骤可跳过。
+> **队列任务认领**（W1 选任务时调用，替代手动找 `[ ]` 行）：
+> ```bash
+> TASK=$(python3 wiki/scripts/butler/claim_task.py --focus <create|enrich|all> --instance <ID>)
+> PAGE=$(echo $TASK | python3 -c "import json,sys; d=json.load(sys.stdin); print(d['page'] or '')")
+> ```
+
+**步骤 3 调用时机**：
+
+| 动作 | 是否调用 |
+|------|---------|
+| create-page / stub / enrich-* / add-quote / add-pn-citations / fix-links / add-alias | ✅ 每个页面各调一次 |
+| discover（只改 queue.md） / housekeeping-scan | ❌ 不调用 |
+
+> **`record_revision.py` 内置 hash 去重：内容未变则自动跳过，无副作用。宁可多调，不可漏调。**
 
 ### `--reflect` 填写规范
 
@@ -436,7 +531,7 @@ books: [三体I]     # 出场书册
 
 ## E 组 · 章节链接化
 
-### E1 `wikify-chapters`
+### E1 `wikify-chapters` — WU 500
 
 每次 **新增实体页面后**，重新对章节原文做链接化（幂等操作）。
 
@@ -460,22 +555,32 @@ python3 wiki/scripts/wikify_chapters.py
 
 ## H 组 · 内务整理（详规见 W10）
 
-H 组任务来自 `housekeeping_queue.md`，由 W1 三队列选取算法调度。执行规则与记账方式与 A-E 组相同，但 target 为已有页面（不创建新页面）。
+H 组任务来自 `housekeeping_queue.md`，由 W1 三队列选取算法调度。执行规则与记账方式与 A-E 组相同，但 target 为已有页面（H16 例外，会新建重定向文件）。
 
-| 代码 | 名称 | 简述 |
-|------|------|------|
-| H1 | fix-links | 修复大小写/别名导致的 broken link |
-| H2 | enrich-stub | 为 stub 页补充 corpus 内容 |
-| H3 | add-quote | 为 standard 页面补 PN 引文 |
-| H4 | add-alias | 为概念补别名（已有页面） |
-| H5 | add-related | 补充 `## 相关词条` 节 |
-| H6 | quality-audit | 随机抽查 5 页逐项 Q-check |
-| H7 | add-section | 补充类型必要节（如 person 的"命运"节）|
-| H8 | cross-link | 为互相提及但未链接的页面补 wikilink |
-| H9 | update-description | 补充空/占位的 description 字段 |
-| H10 | housekeeping-scan | 全库扫描，生成 housekeeping_queue |
+| 代码 | 名称 | 简述 | 优先级 |
+|------|------|------|--------|
+| H1 | fix-links | 修复大小写/别名导致的 broken link | H-P1 |
+| H2 | enrich-stub | 为 stub 页补充 corpus 内容 | H-P2 |
+| H3 | add-quote | 为 standard 页面补 PN 引文 | H-P2 |
+| H4 | add-alias | 为概念补别名（已有页面）| H-P2 |
+| H5 | add-related | 补充 `## 相关词条` 节 | H-P2 |
+| H6 | quality-audit | 随机抽查 5 页逐项 Q-check | H-P3 |
+| H7 | add-section | 补充类型必要节（如 person 的"命运"节）| H-P2 |
+| H8 | cross-link | 为互相提及但未链接的页面补 wikilink | H-P2 |
+| H9 | update-description | 补充空/占位的 description 字段 | H-P2 |
+| H10 | housekeeping-scan | 全库扫描，生成 housekeeping_queue | H-P3 |
+| H11 | reclassify | 修正 type 字段（如 concept→law）| H-P2 |
+| H12 | add-tags | 为 tags 为空/单一的页面补标签 | H-P2 |
+| H13 | format-check | 修复缺 H1 标题、books 字段为空等基础格式 | H-P1 |
+| H14 | pn-placement-fix | PN 编号移入 blockquote 内（修复渲染错位）| H-P1 |
+| H15 | deduplicate | 合并高度重叠的两个页面，副页改为重定向 | H-P1 |
+| H16 | add-redirect | 新建独立重定向文件（别名 → 规范页）| H-P2 |
+| H17 | coverage-scan | 扫描三部曲原文，补充未建页候选到 queue | H-P3（每33轮）|
+| H18 | stub-triage | 重评存根优先级，高引用存根升 P1 | H-P3 |
+| H19 | books-field | 补全 books 字段（判断出场书册）| H-P2 |
+| H20 | list-update | 更新人物/技术等列表页，补入新建词条 | H-P2 |
 
-**记账时 type 字段使用 `H<n>-<名称>`，如 `H2-enrich-stub`。**
+**记账时 type 字段使用 `H<n>-<名称>`，如 `H2-enrich-stub`、`H14-pn-placement-fix`。**
 
 ---
 
