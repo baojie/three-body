@@ -19,3 +19,10 @@ Butler 从 W5 反思中提炼的页面质量自定义规则。每轮执行 Q-che
 **问题**：enrich-page 完成后 frontmatter quality_score 未更新，导致全库 47 页偏差 >1 分
 **规则**：每次 enrich-page accept 后，**必须**在同一轮重算实际 score 并更新 frontmatter quality_score，不允许保留旧值
 **来源**：R203 W5 反思，全库扫描发现 47/65 页偏差，均为 actual > frontmatter
+
+## 规则 QR-003（2026-04-27 从 W5 R232 反思）
+
+**适用类型**：butler 操作规范
+**问题**：rebuild_recent.py 被误作常规步骤调用，将 recent.json 从 249 条压缩至 202 条（每页取最新版），永久丢失历史修订条目
+**规则**：`rebuild_recent.py` 是破坏性操作，**严禁**作为常规步骤调用。仅当 recent.json 文件完全损坏（无法 JSON 解析）时才可使用，且使用前必须备份。常规情况下只调用 `record_revision.py` 追加单条修订。
+**来源**：R232 W5 反思，R221 session 恢复后误调 rebuild_recent 导致 47 条历史丢失

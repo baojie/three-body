@@ -2738,6 +2738,160 @@
       "content_hash": "sha256:29d98c8b477d34d58485bac9db9413e470aa6c49e7f848c228eb1d4b4adc7ce3",
       "size_before": 3950,
       "size": 3950
+    },
+    {
+      "page": "威慑纪元",
+      "rev_id": "20260427-010357-969b9f",
+      "timestamp": "2026-04-27T01:03:57+00:00",
+      "author": "butler",
+      "summary": "butler edit",
+      "parent_rev": "20260427-005620-04a136",
+      "content_hash": "sha256:969b9f0d2ee30609cdf5d39ef2badf1fea0d352e9cdc45b7f0693bd6f860138c",
+      "size_before": 3503,
+      "size": 3511
+    },
+    {
+      "page": "黑暗森林打击",
+      "rev_id": "20260427-010418-1964b4",
+      "timestamp": "2026-04-27T01:04:18+00:00",
+      "author": "butler",
+      "summary": "butler edit",
+      "parent_rev": "20260427-005618-02454e",
+      "content_hash": "sha256:1964b40cb22eedf161edf9c55c46c766c0f58dca0c15c4f37d2ee3f8910cb889",
+      "size_before": 3362,
+      "size": 3373
+    },
+    {
+      "page": "地球三体组织",
+      "rev_id": "20260427-010433-ebedb0",
+      "timestamp": "2026-04-27T01:04:33+00:00",
+      "author": "butler",
+      "summary": "butler edit",
+      "parent_rev": "20260427-005617-d2ae1f",
+      "content_hash": "sha256:ebedb0eb8ad798a762d65689424e5a965b06635504d3059ecbd1eb04b3dc96eb",
+      "size_before": 3626,
+      "size": 3637
+    },
+    {
+      "page": "曲率驱动飞船",
+      "rev_id": "20260427-010505-db2ea8",
+      "timestamp": "2026-04-27T01:05:05+00:00",
+      "author": "butler",
+      "summary": "butler edit",
+      "parent_rev": "20260427-005619-acea8c",
+      "content_hash": "sha256:db2ea89cef58edf096e283b02551e500478ee4fda993586f02960e2d35c3f1f5",
+      "size_before": 3198,
+      "size": 3206
+    },
+    {
+      "page": "黑暗森林威慑",
+      "rev_id": "20260427-010520-ef444d",
+      "timestamp": "2026-04-27T01:05:20+00:00",
+      "author": "butler",
+      "summary": "butler edit",
+      "parent_rev": "20260427-005618-0e78c1",
+      "content_hash": "sha256:ef444d75570b311f4cb7fdb155e49559c95ec77683b5534e97503d12dbb47428",
+      "size_before": 3738,
+      "size": 3746
+    },
+    {
+      "page": "黑域",
+      "rev_id": "20260427-010643-8a546f",
+      "timestamp": "2026-04-27T01:06:43+00:00",
+      "author": "butler",
+      "summary": "butler edit",
+      "parent_rev": "20260427-005618-344845",
+      "content_hash": "sha256:8a546fec14a788deb4891ace01e731a45df14356e036757e89862820eb4b5791",
+      "size_before": 3720,
+      "size": 4327
+    },
+    {
+      "page": "面壁计划",
+      "rev_id": "20260427-010738-46e8df",
+      "timestamp": "2026-04-27T01:07:38+00:00",
+      "author": "butler",
+      "summary": "butler edit",
+      "parent_rev": "20260427-005619-e29ee2",
+      "content_hash": "sha256:46e8df61d330e9abd09ab3facd15e46b919eac0ac094c721498f73a3474b9b29",
+      "size_before": 3496,
+      "size": 4115
+    },
+    {
+      "page": "掩体纪元",
+      "rev_id": "20260427-010821-8969b2",
+      "timestamp": "2026-04-27T01:08:21+00:00",
+      "author": "butler",
+      "summary": "butler edit",
+      "parent_rev": "20260427-005620-4655c6",
+      "content_hash": "sha256:8969b28749863c7138c3209a41afd9318be0678a92822698dd0644fb3f5a5f97",
+      "size_before": 3252,
+      "size": 4116
+    },
+    {
+      "page": "奥尔特星云",
+      "rev_id": "20260427-010924-3525d1",
+      "timestamp": "2026-04-27T01:09:24+00:00",
+      "author": "butler",
+      "summary": "butler edit",
+      "parent_rev": "20260427-005617-1fa318",
+      "content_hash": "sha256:3525d1062339731d23ae532122482d8eafc15f229f5f34c392bc689e6f043f6a",
+      "size_before": 3540,
+      "size": 3732
+    },
+    {
+      "page": "丁仪",
+      "rev_id": "20260427-011424-0dd91d",
+      "timestamp": "2026-04-27T01:14:24+00:00",
+      "author": "butler",
+      "summary": "butler edit",
+      "parent_rev": "20260427-005617-404087",
+      "content_hash": "sha256:0dd91dfe0cbefc83646211312ac9915fc165b6cdf0476867dcd2d41ca2649670",
+      "size_before": 2720,
+      "size": 3057
+    },
+    {
+      "page": "冬眠技术",
+      "rev_id": "20260427-011547-69ee25",
+      "timestamp": "2026-04-27T01:15:47+00:00",
+      "author": "butler",
+      "summary": "butler edit",
+      "parent_rev": "20260427-005617-7a2935",
+      "content_hash": "sha256:69ee2557a19933137c5f55e41e2de161bae605c23edba8bd162ee18be749d0bf",
+      "size_before": 3164,
+      "size": 3389
+    },
+    {
+      "page": "程心",
+      "rev_id": "20260427-011817-679cd3",
+      "timestamp": "2026-04-27T01:18:17+00:00",
+      "author": "butler",
+      "summary": "butler edit",
+      "parent_rev": "20260427-005617-b174cd",
+      "content_hash": "sha256:679cd3e17b5c390cc7f1b67543969c4fb0688c982c71f88db198a513f4b2ee76",
+      "size_before": 2955,
+      "size": 3336
+    },
+    {
+      "page": "红岸基地",
+      "rev_id": "20260427-011912-81d5b6",
+      "timestamp": "2026-04-27T01:19:12+00:00",
+      "author": "butler",
+      "summary": "butler edit",
+      "parent_rev": "20260427-005618-b9b035",
+      "content_hash": "sha256:81d5b62bf09b5d550265fbc4b57d415e7943876c16158d788b024f490dafeea6",
+      "size_before": 2512,
+      "size": 2988
+    },
+    {
+      "page": "掩体计划",
+      "rev_id": "20260427-012001-024e87",
+      "timestamp": "2026-04-27T01:20:01+00:00",
+      "author": "butler",
+      "summary": "butler edit",
+      "parent_rev": "20260427-005621-6a55e8",
+      "content_hash": "sha256:024e87264017e538f1abe96659f64c7d915a9587f8d667160e1fe93085c30a5d",
+      "size_before": 4283,
+      "size": 4690
     }
   ],
   "rotations": 0
