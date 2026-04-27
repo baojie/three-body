@@ -19,11 +19,11 @@
 
 body {
   margin: 0;
-  font-family: var(--serif);
+  font-family: var(--sans);
   color: var(--fg);
   background: var(--bg);
-  line-height: 1.75;
-  font-size: 17px;
+  line-height: 1.8;
+  font-size: 16px;
 }
 
 .topnav {
@@ -582,6 +582,7 @@ a.book-chap-link:hover { color: var(--accent); border-color: var(--accent); }
 .featured-card:hover {
   transform: translateY(-2px);
   box-shadow: 0 4px 12px rgba(0,0,0,.35);
+  text-decoration: none;
 }
 .featured-card .card-thumb {
   width: 100%;
