@@ -350,6 +350,9 @@ body.is-home .wiki-home { max-width: none; margin: 0; }
   backdrop-filter: blur(8px);
 }
 
+.seal-group .seal-tip { opacity: 0; transition: opacity .2s; pointer-events: none; }
+.seal-group:hover .seal-tip { opacity: 1; }
+
 .home-body {
   max-width: 960px;
   margin: 0 auto;
