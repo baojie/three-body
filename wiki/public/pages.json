@@ -17,7 +17,7 @@
       "path": "pages/丁仪.md",
       "description": "理论物理学家，杨冬的恋人，宏原子和可控核聚变理论发现者；在末日战役中率先确认水滴由强互作用力材料构成，并以\"快跑！\"警告全舰队，壮烈牺牲。",
       "quality": "featured",
-      "quality_score": 67
+      "quality_score": 69
     },
     "万有引力号": {
       "type": "technology",
@@ -2069,7 +2069,7 @@
       "path": "pages/关一帆.md",
       "description": "随万有引力号出航的宇宙学学者，对太空产生奇特的幽闭恐惧，进入四维空间碎片，最终与程心共同进入云天明留下的小宇宙，选择归返大宇宙而非永居其中。",
       "quality": "featured",
-      "quality_score": 67
+      "quality_score": 69
     },
     "冬眠技术": {
       "type": "technology",
@@ -2566,7 +2566,7 @@
       "path": "pages/曲率驱动飞船.md",
       "description": "利用空间曲率差异推进的近光速飞行器——飞船压平后方空间曲率，被前方高曲率空间拉动前进，是三体文明的光速飞行技术，后被云天明情报揭示。",
       "quality": "featured",
-      "quality_score": 67
+      "quality_score": 69
     },
     "末日战役": {
       "type": "event",
@@ -2601,7 +2601,7 @@
       "path": "pages/杨冬.md",
       "description": "理论物理学家，丁仪的恋人，叶文洁之女。因发现物理学定律在实验中失效而陷入绝望，留下\"物理学从来就没有存在过\"的遗书后自杀，是物理学家自杀潮的关键人物。",
       "quality": "featured",
-      "quality_score": 67
+      "quality_score": 69
     },
     "歌者": {
       "type": "civilization",
@@ -2655,7 +2655,7 @@
       "path": "pages/汪淼.md",
       "description": "纳米材料研究教授，《三体》第一部的主视角人物，经历宇宙闪烁并深入调查地球三体组织。",
       "quality": "featured",
-      "quality_score": 67
+      "quality_score": 69
     },
     "猜疑链": {
       "type": "concept",
@@ -2709,7 +2709,7 @@
       "path": "pages/破壁人.md",
       "description": "地球三体组织为对抗面壁计划而秘密指定的反间谍系统——每位面壁者对应一名破壁人，借助智子的全息监视，通过分析面壁者的公开与秘密行为，逐步破解其真实战略意图。",
       "quality": "featured",
-      "quality_score": 67
+      "quality_score": 70
     },
     "科学边界": {
       "type": "organization",
@@ -2782,7 +2782,7 @@
       "path": "pages/红岸基地.md",
       "description": "文化大革命时期建立的军事秘密项目，以大型天线向宇宙发射信号，叶文洁在此工作并向三体发送了地球坐标",
       "quality": "featured",
-      "quality_score": 67
+      "quality_score": 69
     },
     "维德": {
       "type": "person",
@@ -3478,5 +3478,5 @@
     "Dark Forest Theory": "黑暗森林法则"
   },
   "page_count": 202,
-  "generated": "2026-04-27T05:01:38Z"
+  "generated": "2026-04-27T05:19:13Z"
 }

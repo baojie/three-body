@@ -354,3 +354,6 @@
 {"round": 354, "type": "enrich-quality", "page": "奥尔特星云", "result": "accept", "desc": "补充PN（3-30-007）阶梯飞行器穿越奥尔特星云被截获，pn 9→10，score 66→68", "ts": "2026-04-27T04:58:10Z"}
 {"round": 355, "type": "enrich-quality", "page": "执剑人", "result": "accept", "desc": "补充PN（3-20-014）水滴接管时机，揭示三体早已计划，pn 9→10，score 66→68", "ts": "2026-04-27T04:59:16Z"}
 {"round": 356, "type": "enrich-quality", "page": "万有引力号", "result": "accept", "desc": "修正stale frontmatter：万有引力号66→68，史强66→69（实际算分已达标）", "ts": "2026-04-27T05:01:17Z"}
+{"round": 357, "type": "publish", "page": "—", "result": "accept", "desc": "/wiki 发布 R340→R356 成果，commit 87e33a6，全65页score≥68", "ts": "2026-04-27T05:02:31Z"}
+{"round": 358, "type": "enrich-quality", "page": "破壁人", "result": "accept", "desc": "补充PN（2-04-019）破壁人二号阐明人类欺骗能力，pn 9→10，score 68→70", "ts": "2026-04-27T05:03:29Z"}
+{"round": 359, "type": "enrich-quality", "page": "丁仪", "result": "accept", "desc": "扩展结尾段落至prose//200=6，score 68→69", "ts": "2026-04-27T05:05:11Z"}
