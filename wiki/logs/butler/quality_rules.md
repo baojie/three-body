@@ -26,3 +26,10 @@ Butler 从 W5 反思中提炼的页面质量自定义规则。每轮执行 Q-che
 **问题**：rebuild_recent.py 被误作常规步骤调用，将 recent.json 从 249 条压缩至 202 条（每页取最新版），永久丢失历史修订条目
 **规则**：`rebuild_recent.py` 是破坏性操作，**严禁**作为常规步骤调用。仅当 recent.json 文件完全损坏（无法 JSON 解析）时才可使用，且使用前必须备份。常规情况下只调用 `record_revision.py` 追加单条修订。
 **来源**：R232 W5 反思，R221 session 恢复后误调 rebuild_recent 导致 47 条历史丢失
+
+## 规则 QR-004（2026-04-27 从 W5 R261 反思）
+
+**适用类型**：butler 操作规范
+**问题**：session 恢复后 working tree 的 quality_score 可能因脚本副作用回退到旧值（低于 HEAD 已提交值），导致全库数据不一致
+**规则**：每次 butler session 启动（或 W5 步骤1）执行 `git diff HEAD --name-only wiki/public/pages/` 检查回退：disk < HEAD 者立即用 Python 脚本修复还原（不使用 git restore，而是直接写文件），disk > HEAD 者视为合法改进保留；两种情况均暂存
+**来源**：R261 W5 反思，发现 17 页 quality_score 回退（光粒 54→65，幽灵倒计时 55→61 等），另有 11 页 staged vs working tree 分歧

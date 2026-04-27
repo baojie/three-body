@@ -253,3 +253,21 @@
 {"round": 252, "type": "enrich-page", "page": "科学边界", "result": "accept", "desc": "新增H2射手/农场主假说+(1-07-006)(1-07-007)两条核心引文，B5分数修正55→63", "ts": "2026-04-27T01:34:24Z"}
 {"round": 253, "type": "enrich-page", "page": "归零者", "result": "accept", "desc": "新增H2田园时代宇宙图景+(3-47-185)引文，B5分数修正56→63", "ts": "2026-04-27T01:35:38Z"}
 {"round": 254, "type": "enrich-page", "page": "章北海", "result": "accept", "desc": "新增(2-07-033)失败战争引文，B5分数修正56→61", "ts": "2026-04-27T01:36:36Z"}
+{"round": 255, "type": "publish", "page": "—", "result": "accept", "desc": "/wiki发布R239-R254：B5修正16页+enrich 8页，commit c869c65", "ts": "2026-04-27T01:37:02Z"}
+{"round": 256, "type": "enrich-page", "page": "三体文明", "result": "accept", "desc": "补充(2-12-093)思维透明特性，B5分数修正56→60", "ts": "2026-04-27T01:38:18Z"}
+{"round": 257, "type": "enrich-page", "page": "危机纪元", "result": "accept", "desc": "新增(2-19-023)太空电梯核聚变停滞引文，B5分数修正56→60", "ts": "2026-04-27T01:39:31Z"}
+{"round": 258, "type": "enrich-page", "page": "地球三体组织", "result": "accept", "desc": "新增(1-30-002)精神贵族组织引文，B5分数修正56→60", "ts": "2026-04-27T01:40:49Z"}
+{"round": 259, "type": "enrich-page", "page": "古筝行动", "result": "accept", "desc": "新增(1-32-079)古筝代号联想引文，B5分数修正56→60", "ts": "2026-04-27T02:05:42Z"}
+{"round": 260, "type": "enrich-page", "page": "技术爆炸等7页", "result": "accept", "desc": "B5批量分数修正7页：56→59(技术爆炸/费米悖论/逃亡主义/宇宙闪烁/引力波广播/太阳系) 56→61(奥尔特星云)", "ts": "2026-04-27T02:09:21Z"}
+{"round": 261, "type": "reflect-w5", "page": "—", "result": "accept", "desc": "第8次W5反思：0 fail，修复27页工作区score回退(QR-004)，E类评估W10l(低优先级)/W10y(加入watchlist)，G类提案进入premium建设阶段", "ts": "2026-04-27T02:24:12Z"}
+{"round": 261, "type": "housekeeping", "page": "全局", "result": "accept", "desc": "D1 discover: 无新wanted页；G类 premium 候选盘点：38页score 60-64，顶端维德/智子/星环集团/归零者均64分", "ts": "2026-04-27T02:24:59Z"}
+{"round": 262, "type": "enrich-page", "page": "维德", "result": "accept", "desc": "新增(3-08-023)阶梯计划早期论断quote，quote_lines 6→8，score 64→66（premium阶段首页）", "ts": "2026-04-27T02:28:59Z"}
+{"round": 263, "type": "enrich-page", "page": "智子", "result": "accept", "desc": "补充(1-31-044)封锁科学inline PN，pn 9→10，score 64→66", "ts": "2026-04-27T02:30:06Z"}
+{"round": 264, "type": "enrich-page", "page": "星环集团", "result": "accept", "desc": "新增(3-41-002)联邦封锁星环城blockquote，quote_lines 8→10，score 64→66", "ts": "2026-04-27T02:31:05Z"}
+{"round": 265, "type": "enrich-page", "page": "归零者", "result": "accept", "desc": "新增(3-47-221)降光速技术细节inline PN，pn 9→10，score 64→66", "ts": "2026-04-27T02:32:40Z"}
+{"round": 266, "type": "enrich-page", "page": "阶梯计划", "result": "accept", "desc": "inline(3-08-080)升格为blockquote，quote_lines 6→8，score 63→65", "ts": "2026-04-27T02:33:45Z"}
+{"round": 267, "type": "enrich-page", "page": "歌者", "result": "accept", "desc": "新增(3-42-031)(3-42-035)弹星者暴露坐标inline PN，pn 8→10，score 62→66", "ts": "2026-04-27T02:34:57Z"}
+{"round": 268, "type": "enrich-page", "page": "破壁人", "result": "accept", "desc": "新增(2-12-093)破壁计划启动+(2-29-036)充实人生，pn 7→9，score 62→66", "ts": "2026-04-27T02:37:05Z"}
+{"round": 269, "type": "enrich-page", "page": "宇宙时间线", "result": "accept", "desc": "新增内联PN（2-31-111）（3-15-015）；pn 7→9，score 62→66", "ts": "2026-04-27T02:41:59Z"}
+{"round": 270, "type": "enrich-page", "page": "万有引力号", "result": "accept", "desc": "内联PN（3-13-089），pn 9→10，score 61→65（实为63→65）", "ts": "2026-04-27T02:44:01Z"}
+{"round": 271, "type": "enrich-page", "page": "水滴探测器", "result": "accept", "desc": "内联PN（2-41-009）（2-40-050），pn 6→8，score 61→65", "ts": "2026-04-27T02:45:10Z"}

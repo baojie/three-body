@@ -469,6 +469,16 @@ export function renderHome(core) {
         <a href="#${encodeURIComponent('Special:Random')}" class="home-link">随机词条 →</a>
       </nav>
 
+      <blockquote class="home-epigraph">
+        <p>大用外腓，真体内充。<br>
+        返虚入浑，积健为雄。<br>
+        具备万物，横绝太空。<br>
+        荒荒油云，寥寥长风。<br>
+        超以象外，得其环中。<br>
+        持之匪强，来之无穷。</p>
+        <footer>司空图《诗品·雄浑》</footer>
+      </blockquote>
+
       <p class="home-disclaimer">本 Wiki 内容由人工整理，基于《三体》《黑暗森林》《死神永生》三部曲。如发现错误欢迎<a href="https://github.com/baojie/three-body/issues/new" target="_blank" rel="noopener">提交 Issue</a>。</p>
     </div>`;
 

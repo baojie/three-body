@@ -540,6 +540,27 @@ a.book-chap-link:hover { color: var(--accent); border-color: var(--accent); }
   margin-top: 2em;
 }
 
+.wiki-home .home-epigraph {
+  margin: 2.5em auto 0;
+  max-width: 28em;
+  text-align: center;
+  border: none;
+  padding: 0;
+  font-family: var(--serif);
+  color: var(--fg-muted);
+}
+.wiki-home .home-epigraph p {
+  margin: 0;
+  line-height: 2;
+  letter-spacing: .05em;
+  font-size: .95em;
+}
+.wiki-home .home-epigraph footer {
+  margin-top: .8em;
+  font-size: .8em;
+  opacity: .6;
+}
+
 /* Home card grid */
 .featured-grid {
   display: grid;
