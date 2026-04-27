@@ -8,10 +8,12 @@
         --type create-page \
         --page 汪淼 \
         --result accept \
+        --instance 幸存者 \
         --desc "从corpus三体I提取汪淼基本信息，创建人物页" \
         --reflect "语料命中率高，但缺少死亡时间相关段落"
 
---reflect 为每轮一句话观察，可选；W5 反思时扫此字段找规律。
+--instance  命名实例（幸存者/破壁人/执剑人/广播员/监听员/统帅），可选
+--reflect   每轮一句话观察，可选；W5 反思时扫此字段找规律
 """
 from __future__ import annotations
 
@@ -30,6 +32,7 @@ def main():
                              'discover', 'publish', 'housekeeping', 'reflect-w5'])
     ap.add_argument('--page', default='')
     ap.add_argument('--result', required=True, choices=['accept', 'fail', 'skip'])
+    ap.add_argument('--instance', default='', help='命名实例（幸存者/破壁人/统帅等）')
     ap.add_argument('--desc', default='')
     ap.add_argument('--reflect', default='', help='一句话观察（可选），供 W5 扫描找规律')
     ap.add_argument('--log', default='wiki/logs/butler/actions.jsonl')
@@ -43,6 +46,8 @@ def main():
         'desc':   args.desc,
         'ts':     datetime.now(timezone.utc).strftime('%Y-%m-%dT%H:%M:%SZ'),
     }
+    if args.instance:
+        record['instance'] = args.instance
     if args.reflect:
         record['reflect'] = args.reflect
 
@@ -51,7 +56,8 @@ def main():
     with log_path.open('a', encoding='utf-8') as f:
         f.write(json.dumps(record, ensure_ascii=False) + '\n')
 
-    print(f"[logged] R{args.round} {args.action_type} | {args.page} | {args.result}")
+    inst_tag = f" [{args.instance}]" if args.instance else ""
+    print(f"[logged] R{args.round}{inst_tag} {args.action_type} | {args.page} | {args.result}")
 
 
 if __name__ == '__main__':

@@ -77,21 +77,24 @@ description: 启动三体 Wiki 管家永续 loop。三队列系统（content/hou
    H-P1 → P1 → H-P2(每3轮) → P2 → P3 → empty_fallback
 
 6. 执行原子行动（W2）
-   ⚠️ 写入页面文件（Write/Edit）前，必须先写上下文文件：
+   ⚠️ 写入页面文件（Write/Edit）前，必须先写 **per-slug** pending 文件：
    ```python
    import json; from pathlib import Path
-   Path("wiki/logs/butler/pending_revision.json").write_text(
+   # SLUG = 目标页面文件名（不含 .md），每个被写的页面各写一个文件
+   Path(f"wiki/logs/butler/pending_revision_{SLUG}.json").write_text(
        json.dumps({"author": INSTANCE_NAME, "round": ROUND, "type": ACTION_TYPE, "desc": ONE_LINE_DESC}, ensure_ascii=False),
        encoding="utf-8"
    )
    ```
-   hook 会在 Write/Edit 完成后自动消费此文件，写入 recent.jsonl（author=butler）。
+   hook 会在 Write/Edit 完成后按 slug 匹配并消费对应文件，写入 recent.jsonl。
+   ⚠️ 规则：**每次 Write/Edit 前都必须写 pending 文件**，包括副作用修改的页面。
+   ⚠️ 规则：**一轮只修改一个页面**；若必须修改多个，每个都要写 pending 并记独立 action。
 
 7. 自评（W3）→ accept/fail/skip
 
 8. git add（accept 时）
 
-9. 记账：increment_round.py（原子） + record_action.py + complete_task.py（队列 [~]→[x]）
+9. 记账：increment_round.py（原子） + record_action.py --instance INSTANCE_NAME + complete_task.py（队列 [~]→[x]）
 
 10. → 回到步骤 4（永续）
 ```

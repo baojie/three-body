@@ -5,30 +5,49 @@
     ROUND=$(python3 wiki/scripts/butler/increment_round.py)
     echo "本轮：$ROUND"
 
-使用 fcntl.flock 排他锁，多个并发实例不会读到同一轮号。
+使用 O_CREAT|O_EXCL 锁文件方案，对同进程多线程和跨进程均有效
+（fcntl.flock 在同进程不同线程间不提供隔离）。
 """
-import fcntl, sys
+import os, sys, time
 from pathlib import Path
 
-COUNTER = Path(__file__).resolve().parents[3] / "wiki/logs/butler/round_counter.txt"
+COUNTER  = Path(__file__).resolve().parents[3] / "wiki/logs/butler/round_counter.txt"
+LOCKFILE = COUNTER.parent / "round_counter.lock"
+MAX_WAIT = 10.0   # 最多等待秒数
+RETRY_MS = 0.05   # 每次重试间隔
+
+
+def _acquire_lock() -> None:
+    deadline = time.monotonic() + MAX_WAIT
+    while True:
+        try:
+            fd = os.open(str(LOCKFILE), os.O_CREAT | os.O_EXCL | os.O_WRONLY, 0o644)
+            os.write(fd, str(os.getpid()).encode())
+            os.close(fd)
+            return
+        except FileExistsError:
+            if time.monotonic() > deadline:
+                # 锁文件超时（持有者崩溃），强制清除
+                LOCKFILE.unlink(missing_ok=True)
+            time.sleep(RETRY_MS)
+
+
+def _release_lock() -> None:
+    LOCKFILE.unlink(missing_ok=True)
 
 
 def main() -> int:
     COUNTER.parent.mkdir(parents=True, exist_ok=True)
-    # r+ 模式要求文件存在；a+ 模式 seek(0) 后读取正确但写入位置仍在末尾
-    # 用 open(O_RDWR|O_CREAT) 绕过两者限制
-    import os as _os
-    fd = _os.open(str(COUNTER), _os.O_RDWR | _os.O_CREAT, 0o644)
-    with _os.fdopen(fd, "r+", encoding="utf-8") as f:
-        fcntl.flock(f, fcntl.LOCK_EX)
-        raw = f.read().strip()
-        # 取最后一行（防止并发写残留多行）
+    _acquire_lock()
+    try:
+        raw = COUNTER.read_text(encoding="utf-8").strip() if COUNTER.exists() else ""
         last = raw.splitlines()[-1] if raw else ""
         val = int(last) + 1 if last.isdigit() else 1
-        f.seek(0)
-        f.write(str(val) + "\n")
-        f.truncate()
-        # flock 随 close 释放
+        tmp = COUNTER.with_suffix(".tmp")
+        tmp.write_text(str(val) + "\n", encoding="utf-8")
+        os.replace(tmp, COUNTER)   # 原子替换
+    finally:
+        _release_lock()
     print(val)
     return 0
 
