@@ -17,7 +17,10 @@
       "Bash(cat wiki/logs/butler/*)",
       "Bash(echo * > wiki/logs/butler/round_counter.txt)",
       "Bash(git add wiki/public/pages/*)",
-      "Bash(git add wiki/logs/butler/*)"
+      "Bash(git add wiki/logs/butler/*)",
+      "Bash(git add skills/*)",
+      "Bash(git add .claude/skills/*)",
+      "Bash(git add .claude/settings.json)"
     ],
     "deny": [
       "Bash(git commit --amend*)",
@@ -30,6 +33,19 @@
       "Bash(git add -A*)",
       "Bash(git add .*)",
       "Bash(git add --all*)"
+    ]
+  },
+  "hooks": {
+    "PostToolUse": [
+      {
+        "matcher": "Write|Edit",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "python3 wiki/scripts/hooks/auto_record_revision.py"
+          }
+        ]
+      }
     ]
   }
 }
