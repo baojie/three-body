@@ -2610,12 +2610,13 @@
       "tags": [
         "人物",
         "三体III",
-        "黑暗森林"
+        "黑暗森林",
+        "二向箔"
       ],
       "path": "pages/歌者.md",
       "description": "三体III中匿名高级宇宙文明的\"清理者\"，以吟唱古歌谣为伴，日常工作是翻阅宇宙坐标广播、判断诚意、清理暴露文明。正是他漫不经心地掷出了那块二向箔，消灭了太阳系。",
       "quality": "featured",
-      "quality_score": 52
+      "quality_score": 54
     },
     "水滴探测器": {
       "type": "weapon",
@@ -2628,12 +2629,13 @@
       "tags": [
         "武器",
         "三体II",
-        "三体文明"
+        "三体文明",
+        "人类舰队"
       ],
       "path": "pages/水滴探测器.md",
       "description": "三体文明发往太阳系的终极武器，外形如完美液滴，由强互作用力材料构成，人类任何武器对其无效，单枚足以摧毁整个人类舰队。",
       "quality": "featured",
-      "quality_score": 53
+      "quality_score": 55
     },
     "汪淼": {
       "type": "person",
@@ -2662,12 +2664,13 @@
       "tags": [
         "概念",
         "三体II",
-        "宇宙社会学"
+        "宇宙社会学",
+        "黑暗森林法则"
       ],
       "path": "pages/猜疑链.md",
       "description": "宇宙社会学中描述文明间无法消解的相互猜疑结构——双方无论善意与否，都无法确认对方的善意，形成无限递归的猜疑锁链，最终导向打击先行。",
       "quality": "featured",
-      "quality_score": 53
+      "quality_score": 55
     },
     "申玉菲": {
       "type": "person",
@@ -2825,12 +2828,13 @@
       "tags": [
         "人物",
         "三体III",
-        "星环集团"
+        "星环集团",
+        "程心"
       ],
       "path": "pages/艾AA.md",
       "description": "三体III中与程心并肩的亲密好友和商业伙伴，天文学博士，发现了云天明赠予程心的行星DX3906，陪伴程心历经威慑纪元崩溃、流亡澳大利亚、太阳系末日，最终与关一帆共赴新世界。",
       "quality": "featured",
-      "quality_score": 55
+      "quality_score": 57
     },
     "蓝色空间号": {
       "type": "technology",
@@ -3469,5 +3473,5 @@
     "Dark Forest Theory": "黑暗森林法则"
   },
   "page_count": 202,
-  "generated": "2026-04-27T00:56:17Z"
+  "generated": "2026-04-27T01:01:41Z"
 }
