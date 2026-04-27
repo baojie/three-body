@@ -12,3 +12,10 @@ Butler 从 W5 反思中提炼的页面质量自定义规则。每轮执行 Q-che
 **问题**：贯穿多纪元的核心人物（如维德）若缺少最终命运节，叙事不完整
 **规则**：person 页 standard 级以上，若该人物跨越书册或多个纪元，必须包含"历史结局"或"命运反讽"节
 **来源**：R29 W5 反思，R28 维德词条中命运反讽节显著提升页面叙事完整性
+
+## 规则 QR-002（2026-04-27 从 W5 R203 反思）
+
+**适用类型**：全部
+**问题**：enrich-page 完成后 frontmatter quality_score 未更新，导致全库 47 页偏差 >1 分
+**规则**：每次 enrich-page accept 后，**必须**在同一轮重算实际 score 并更新 frontmatter quality_score，不允许保留旧值
+**来源**：R203 W5 反思，全库扫描发现 47/65 页偏差，均为 actual > frontmatter
