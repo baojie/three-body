@@ -3,7 +3,7 @@
 
 前端现在直接读取 recent.jsonl，不再依赖 recent.json。
 此脚本仅供手动诊断/导出使用，不再由 publish.sh 调用。
-支持 --from-history 回退模式：当 recent.jsonl 缺失时从 history/*.json 重建。
+支持 --from-history 回退模式：当 recent.jsonl 缺失时从 history/*.jsonl 重建。
 """
 from __future__ import annotations
 import argparse, json
@@ -33,24 +33,23 @@ def from_jsonl() -> list:
 
 def from_history() -> list:
     entries = []
-    for hist_file in sorted(HIST.glob("*.json")):
+    for hist_file in sorted(HIST.glob("*.jsonl")):
         try:
-            data = json.loads(hist_file.read_text(encoding="utf-8"))
+            lines = [l for l in hist_file.read_text(encoding="utf-8").splitlines() if l.strip()]
+            if not lines:
+                continue
+            latest = json.loads(lines[-1])  # 末行 = 最新
+            entry = {"page": hist_file.stem, **{k: v for k, v in latest.items() if k != "content"}}
+            entries.append(entry)
         except Exception:
             continue
-        revs = data.get("revisions", [])
-        if not revs:
-            continue
-        latest = revs[0]
-        entry = {"page": hist_file.stem, **{k: v for k, v in latest.items() if k != "content"}}
-        entries.append(entry)
     return entries
 
 
 def main():
     ap = argparse.ArgumentParser()
     ap.add_argument("--from-history", action="store_true",
-                    help="忽略 recent.jsonl，从 history/*.json 重建")
+                    help="忽略 recent.jsonl，从 history/*.jsonl 重建")
     ap.add_argument("--limit", type=int, default=LIMIT)
     args = ap.parse_args()
 

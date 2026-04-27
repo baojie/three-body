@@ -35,7 +35,7 @@ bash wiki/scripts/publish.sh
 
 此脚本会：
 - 重建 pages.json
-- 将本轮变动页面写入 `wiki/public/history/<page>.json` 并追加到 `wiki/public/recent.jsonl`
+- 将本轮变动页面写入 `wiki/public/history/<page>.jsonl` 并追加到 `wiki/public/recent.jsonl`
 
 ### Step 2 — Stage
 

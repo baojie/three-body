@@ -13,7 +13,7 @@
     - 先调用 record_revision.py 存档当前版本快照
     - 无 --redirect-to：写入 type:deleted stub，--action delete
     - 有 --redirect-to：写入 type:redirect 页，--action edit
-    - history/<slug>.json 始终保留
+    - history/<slug>.jsonl 始终保留
 """
 from __future__ import annotations
 import argparse, subprocess, sys

@@ -2,7 +2,7 @@
 """record_revision.py — 为 wiki/public/pages/<page>.md 写入一条修订记录。
 
 产出:
-  1. wiki/public/history/<page>.json   (per-page 索引，flock 保护)
+  1. wiki/public/history/<page>.jsonl  (per-page 索引，JSONL 格式，flock 保护)
   2. wiki/public/recent.jsonl          (全局修订日志，O_APPEND 原子追加)
 
 recent.json 由 rebuild_recent.py 在发布时从 recent.jsonl 重建，供前端读取。
@@ -73,24 +73,31 @@ def main() -> int:
 
     # ── per-page history（flock 排他锁，防并发覆写）────────────────────────────
     HIST.mkdir(exist_ok=True)
-    page_json = HIST / f"{page}.json"
+    page_jsonl = HIST / f"{page}.jsonl"
 
     # 以 a+ 模式打开保证文件存在，再 flock
-    with page_json.open("a+", encoding="utf-8") as fh:
+    with page_jsonl.open("a+", encoding="utf-8") as fh:
         fcntl.flock(fh, fcntl.LOCK_EX)
         fh.seek(0)
-        raw = fh.read().strip()
-        if raw:
-            data = json.loads(raw)
-        else:
-            data = {"page": page, "latest_rev_id": None, "revision_count": 0, "revisions": []}
+        lines = [l for l in fh.read().splitlines() if l.strip()]
+        entries = []
+        for l in lines:
+            try:
+                entries.append(json.loads(l))
+            except json.JSONDecodeError:
+                pass
 
-        if data["revisions"] and data["revisions"][0].get("content_hash") == f"sha256:{sha}":
+        # 去重：末行（最新）content_hash 与当前相同则跳过
+        if entries and entries[-1].get("content_hash") == f"sha256:{sha}":
             print(f"= {page} 内容与 latest 相同，跳过")
             return 0
 
-        parent_content = data["revisions"][0]["content"] if data["revisions"] else ""
-        size_before = data["revisions"][0]["size"] if data["revisions"] else 0
+        # 从末行（最新条目）取 parent 信息
+        last = entries[-1] if entries else None
+        parent_content = last["content"] if last else ""
+        size_before    = last["size"] if last else 0
+        parent_rev     = last["rev_id"] if last else None
+
         size_after  = len(content.encode("utf-8"))
         diff_chunks = _diff(parent_content, content)
         entry = {
@@ -98,7 +105,7 @@ def main() -> int:
             "timestamp":    ts_iso,
             "author":       args.author,
             "summary":      args.summary or f"{args.author} {args.action}",
-            "parent_rev":   data["latest_rev_id"],
+            "parent_rev":   parent_rev,
             "content_hash": f"sha256:{sha}",
             "size_before":  size_before,
             "size":         size_after,
@@ -107,17 +114,9 @@ def main() -> int:
         if args.action == "delete":
             entry["action"] = "delete"
 
-        data["revisions"].insert(0, entry)
-        data["latest_rev_id"]  = rev_id
-        data["revision_count"] = len(data["revisions"])
-        if args.action == "delete":
-            data["deleted"]    = True
-            data["deleted_at"] = ts_iso
-
-        # a+ 模式下 write() 永远追加到 EOF，必须先 truncate(0) 再写
-        fh.seek(0)
-        fh.truncate(0)
-        fh.write(json.dumps(data, ensure_ascii=False, indent=2) + "\n")
+        # 追加新行到文件末尾
+        fh.seek(0, 2)
+        fh.write(json.dumps(entry, ensure_ascii=False) + "\n")
         # flock 在 close 时自动释放
 
     # ── recent.jsonl（O_APPEND 原子追加，无需锁）─────────────────────────────

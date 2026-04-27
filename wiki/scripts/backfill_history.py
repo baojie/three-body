@@ -4,6 +4,7 @@
 用 git show <hash>:<path> 获取每次提交时的实际文件内容（而非当前版本），
 保证历史记录准确反映每次提交的状态。
 
+history/*.jsonl 每行一条 JSON 修订记录，按时间正序排列（最旧在首行，最新在末行）。
 recent.jsonl 是 append-only，每行一条 JSON 修订记录。
 recent.json（前端快照）由 rebuild_recent.py 在发布时从 recent.jsonl 重建。
 """
@@ -42,12 +43,12 @@ def _iso(dt):
     return s[:-2] + ":" + s[-2:] if not s.endswith("Z") else s
 
 
-def record(slug, content, ts_iso, author, summary, hist_data, recent_entries):
-    """向 hist_data 追加一条修订，向 recent_entries 追加摘要条目。"""
+def record(slug, content, ts_iso, author, summary, hist_entries, recent_entries):
+    """向 hist_entries（正序列表）追加一条修订，向 recent_entries 追加摘要条目。"""
     sha = hashlib.sha256(content.encode("utf-8")).hexdigest()
 
-    # 去重：若 content hash 与最新一条相同，跳过
-    if hist_data["revisions"] and hist_data["revisions"][0].get("content_hash") == f"sha256:{sha}":
+    # 去重：若末行（最新）content hash 与当前相同，跳过
+    if hist_entries and hist_entries[-1].get("content_hash") == f"sha256:{sha}":
         return False
 
     now = datetime.fromisoformat(ts_iso)
@@ -56,7 +57,11 @@ def record(slug, content, ts_iso, author, summary, hist_data, recent_entries):
     now = now.astimezone(timezone.utc)
     rev_id = f"{now.strftime('%Y%m%d-%H%M%S')}-{sha[:6]}"
 
-    size_before = hist_data["revisions"][0]["size"] if hist_data["revisions"] else 0
+    # 从末行（最新条目）取 parent 信息
+    last = hist_entries[-1] if hist_entries else None
+    size_before = last["size"] if last else 0
+    parent_rev  = last["rev_id"] if last else None
+
     size_after  = len(content.encode("utf-8"))
 
     entry = {
@@ -64,15 +69,14 @@ def record(slug, content, ts_iso, author, summary, hist_data, recent_entries):
         "timestamp":    _iso(now),
         "author":       author,
         "summary":      summary,
-        "parent_rev":   hist_data["latest_rev_id"],
+        "parent_rev":   parent_rev,
         "content_hash": f"sha256:{sha}",
         "size_before":  size_before,
         "size":         size_after,
         "content":      content,
     }
-    hist_data["revisions"].insert(0, entry)
-    hist_data["latest_rev_id"]  = rev_id
-    hist_data["revision_count"] = len(hist_data["revisions"])
+    # 正序：直接 append（最旧在前，最新在后）
+    hist_entries.append(entry)
 
     recent_entries.append({
         "page":    slug,
@@ -90,21 +94,21 @@ def main():
     HIST_DIR.mkdir(exist_ok=True)
 
     if args.force:
-        for f in HIST_DIR.glob("*.json"):
+        for f in HIST_DIR.glob("*.jsonl"):
             f.unlink()
 
-    # 加载现有 history 文件
-    hist_cache = {}
-    for f in HIST_DIR.glob("*.json"):
-        hist_cache[f.stem] = json.loads(f.read_text(encoding="utf-8"))
+    # 加载现有 history 文件（JSONL 格式，正序，列表）
+    hist_cache = {}  # slug → list of entry dicts（正序）
+    for f in HIST_DIR.glob("*.jsonl"):
+        lines = [l.strip() for l in f.read_text(encoding="utf-8").splitlines() if l.strip()]
+        hist_cache[f.stem] = [json.loads(l) for l in lines]
 
-    # 已存在 history 且不 force → 记录已有条目的 rev_id 集合，用于增量判断
-    # 增量模式：只处理比现有 latest rev 更新的提交（按 timestamp）
+    # 已存在 history 且不 force → 增量模式：只处理比现有 latest rev 更新的提交（按 timestamp）
     latest_ts = {}  # slug → 最新已记录的 timestamp（UTC ISO）
     if not args.force:
-        for slug, data in hist_cache.items():
-            if data["revisions"]:
-                latest_ts[slug] = data["revisions"][0]["timestamp"]
+        for slug, entries in hist_cache.items():
+            if entries:
+                latest_ts[slug] = entries[-1]["timestamp"]  # 末行 = 最新
 
     # git log，按时间正序
     log = git(
@@ -143,10 +147,7 @@ def main():
                 continue
 
             if slug not in hist_cache:
-                hist_cache[slug] = {
-                    "page": slug, "latest_rev_id": None,
-                    "revision_count": 0, "revisions": []
-                }
+                hist_cache[slug] = []
 
             added = record(
                 slug, content, c["ts"], c["author"], c["summary"],
@@ -158,11 +159,13 @@ def main():
             else:
                 print(f"= {slug} 内容相同，跳过")
 
-    # 写回 history 文件
-    for slug, data in hist_cache.items():
-        if data["revision_count"] > 0:
-            (HIST_DIR / f"{slug}.json").write_text(
-                json.dumps(data, ensure_ascii=False, indent=2) + "\n", encoding="utf-8"
+    # 写回 history 文件（JSONL 格式，正序，每行一条）
+    for slug, entries in hist_cache.items():
+        if entries:
+            page_jsonl = HIST_DIR / f"{slug}.jsonl"
+            page_jsonl.write_text(
+                "\n".join(json.dumps(e, ensure_ascii=False) for e in entries) + "\n",
+                encoding="utf-8"
             )
 
     # 追加到 recent.jsonl（O_APPEND，按时间正序写入）
