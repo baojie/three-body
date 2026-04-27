@@ -116,6 +116,25 @@
 - [ ] P3 discover | corpus/三体III | 扫描《死神永生》提取未建页词条
 - [x] P3 fix-links | 全局 | 扫描所有页面的 broken wikilink → R517 AA修复，R519后剩饕餮鱼1条
 
+## P2 — D3主题扫描新候选（R621，≥5 corpus hits）
+
+- [ ] P2 create | 伽尔宁 | 面壁委员会联络人，通知罗辑恢复面壁资格；corpus 16处
+- [ ] P2 create | 斯坦顿 | 美国海军陆战队上校，古筝行动前讨论武器方案；corpus 11处
+- [ ] P2 create | 土星 | 太阳系行星，末日战役舰队机动区域；corpus 11处
+- [ ] P2 create | 天王星 | 太阳系行星，星舰地球时代航行节点；corpus 11处
+- [ ] P2 create | 听证会 | 面壁计划公开听证，雷迪亚兹反驳审判定性；corpus 11处
+- [ ] P2 create | 咒语 | 罗辑发明的威慑咒语，黑暗森林打击触发机制；corpus 11处
+- [ ] P2 create | 神经网络 | 战斗机神经网络飞行控制，AI-人协作军事技术；corpus 7处
+- [ ] P2 create | 振动弦 | 引力波天线核心材料，简并态物质制成，半衰期50年；corpus 6处
+
+## P3 — D3主题扫描新候选（R621，2-4 corpus hits）
+
+- [ ] P3 create | 万年昆鹏 | 末日战役战舰，目标甄别信息最早来源；corpus 3处
+- [ ] P3 create | 复苏 | 冬眠复苏技术与心理创伤，威慑纪元社会议题；corpus 3处
+- [ ] P3 create | 信使号 | 末日战役中与创世纪号相撞的战舰；corpus 2处
+- [ ] P3 create | 明日号 | 三体III中启示号等待的飞船；corpus 2处
+- [ ] P3 create | 反重力 | 三体I中讨论的理论物理技术路线；corpus 2处
+
 ---
 
 ## 已完成 ✓

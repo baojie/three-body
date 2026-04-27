@@ -50,12 +50,13 @@
         "三体III",
         "小宇宙",
         "云天明",
-        "程心"
+        "程心",
+        "大宇宙"
       ],
       "path": "pages/647号宇宙.md",
-      "description": "云天明委托三体文明订制的小宇宙，编号647；启动于公元18906416年；程心和关一帆的最终归宿，由智子管理",
-      "quality": "standard",
-      "quality_score": 50
+      "description": "云天明委托三体文明订制的小宇宙，编号647；启动于公元18906416年；程心和关一帆的最终归宿，由智子管理；监测到超膜信号并等待新宇宙诞生",
+      "quality": "featured",
+      "quality_score": 66
     },
     "649号提案": {
       "type": "event",
@@ -188,8 +189,8 @@
       ],
       "path": "pages/N问题.md",
       "description": "永不回归的太空远航中，官兵产生的思乡病（Nostalgia）——渴望返回地球的心理倾向，是舰队心理工作的核心课题",
-      "quality": "basic",
-      "quality_score": 49
+      "quality": "standard",
+      "quality_score": 55
     },
     "PIA": {
       "type": "organization",
@@ -227,7 +228,7 @@
       ],
       "path": "pages/SETI.md",
       "description": "搜寻地外智慧生命（Search for Extraterrestrial Intelligence）的科学计划，红岸基地的官方定位，三体I历史背景的核心概念",
-      "quality": "standard",
+      "quality": "featured",
       "quality_score": 42
     },
     "丁仪": {
@@ -2238,6 +2239,7 @@
       "aliases": [
         "三体文明",
         "三体人",
+        "三体世界",
         "Trisolarians"
       ],
       "tags": [
@@ -2363,7 +2365,7 @@
       ],
       "path": "pages/三日凌空.md",
       "description": "三体世界最恐怖的自然灾难，三颗太阳同时在天空出现，地表在瞬间变成熔炉，行星上的一切生命被灭绝；三体文明历次毁灭的主要原因之一",
-      "quality": "standard",
+      "quality": "featured",
       "quality_score": 43
     },
     "三日连珠": {
@@ -2380,7 +2382,7 @@
       ],
       "path": "pages/三日连珠.md",
       "description": "三体游戏中三颗太阳成一直线的亘古罕见天文事件，引力叠加导致极端气候，历史上多次摧毁文明",
-      "quality": "standard",
+      "quality": "featured",
       "quality_score": 44
     },
     "世界政府": {
@@ -2451,7 +2453,7 @@
       ],
       "path": "pages/中子星.md",
       "description": "超新星爆发后形成的极致密恒星遗迹，其表面光滑度和密度被丁仪用于对比分析水滴材料特性",
-      "quality": "standard",
+      "quality": "featured",
       "quality_score": 43
     },
     "中微子": {
@@ -2487,7 +2489,7 @@
       ],
       "path": "pages/中微子通信.md",
       "description": "威慑纪元人类掌握的高级通信技术，由三体世界提供；可穿越智子通信干扰盲区，但速度仍受光速限制；引力波通信同期获得",
-      "quality": "standard",
+      "quality": "featured",
       "quality_score": 51
     },
     "乔依娜": {
@@ -2592,11 +2594,12 @@
         "概念",
         "三体III",
         "二向箔",
-        "太阳系毁灭"
+        "太阳系毁灭",
+        "黑暗森林打击"
       ],
       "path": "pages/二维化.md",
       "description": "二向箔展开后，三维物质跌入二维平面的过程；太阳系被二向箔打击后，行星与生命在数秒内被彻底展平",
-      "quality": "standard",
+      "quality": "featured",
       "quality_score": 55
     },
     "云天明": {
@@ -2683,12 +2686,13 @@
         "三体I",
         "三体II",
         "三体游戏",
-        "破壁人"
+        "破壁人",
+        "荒漠集会"
       ],
       "path": "pages/亚里士多德.md",
-      "description": "《三体》游戏中的历史人物角色，代表传统学术权威，在游戏中主持火刑；在三体II中作为比尔·希恩斯的破壁人出现，判断章北海的危险性",
-      "quality": "standard",
-      "quality_score": 51
+      "description": "《三体》游戏中的历史人物角色，代表传统学术权威，在游戏中主持火刑；在三体II中作为比尔·希恩斯的破壁人出现，参与章北海危险性评估",
+      "quality": "featured",
+      "quality_score": 57
     },
     "亨特": {
       "type": "person",
@@ -2744,8 +2748,8 @@
       ],
       "path": "pages/人列计算机.md",
       "description": "三体游戏中秦始皇纪元三体人构建的巨型人肉计算装置；以三千万士兵为逻辑单元，冯·诺伊曼架构，运行\"秦1.0\"操作系统，用于求解三体问题",
-      "quality": "standard",
-      "quality_score": 60
+      "quality": "featured",
+      "quality_score": 61
     },
     "人工智能": {
       "type": "technology",
@@ -2785,7 +2789,7 @@
       "path": "pages/人类灭绝.md",
       "description": "三体文明明确宣布的对地球人类的毁灭意图；威慑纪元结束后三体入侵的既定目标",
       "quality": "standard",
-      "quality_score": 38
+      "quality_score": 53
     },
     "人类精神": {
       "type": "concept",
@@ -2876,6 +2880,23 @@
       "quality": "featured",
       "quality_score": 62
     },
+    "伽尔宁": {
+      "type": "person",
+      "label": "伽尔宁",
+      "aliases": [
+        "伽尔宁"
+      ],
+      "tags": [
+        "人物",
+        "三体II",
+        "行星防御理事会",
+        "面壁计划"
+      ],
+      "path": "pages/伽尔宁.md",
+      "description": "俄罗斯人，行星防御理事会多届轮值主席，面壁计划全程见证者，以务实温和的态度维护面壁者权益",
+      "quality": "standard",
+      "quality_score": 56
+    },
     "伽马射线激光": {
       "type": "weapon",
       "label": "伽马射线激光",
@@ -2946,8 +2967,8 @@
       ],
       "path": "pages/假警报.md",
       "description": "威慑纪元末期，太阳系预警系统的误报引发的全球大恐慌——人们争相抢占飞船逃命，造成数万人死亡；揭示了光速飞船计划将引发的社会不平等问题",
-      "quality": "standard",
-      "quality_score": 48
+      "quality": "featured",
+      "quality_score": 53
     },
     "元首": {
       "type": "person",
@@ -2981,8 +3002,8 @@
       ],
       "path": "pages/光年.md",
       "description": "光在一年内传播的距离，三体宇宙的基本距离单位；三体星系与地球相距约4光年",
-      "quality": "standard",
-      "quality_score": 49
+      "quality": "featured",
+      "quality_score": 53
     },
     "光粒": {
       "type": "weapon",
@@ -3127,12 +3148,13 @@
         "三体III",
         "冬眠技术",
         "威慑纪元",
-        "掩体纪元"
+        "掩体纪元",
+        "程心"
       ],
       "path": "pages/公元人.md",
       "description": "从公元世纪进入冬眠后在后世苏醒的人，以城府深、人格复杂、古典特质著称，在威慑纪元和掩体纪元社会中形成独特群体",
-      "quality": "standard",
-      "quality_score": 61
+      "quality": "featured",
+      "quality_score": 63
     },
     "关一帆": {
       "type": "person",
@@ -3165,8 +3187,8 @@
       ],
       "path": "pages/军事执政官.md",
       "description": "三体文明负责军事事务的执政官，在紧急会议上批评染色和神迹计划力度不足，并对质子零维展开的毁灭性风险提出警告",
-      "quality": "standard",
-      "quality_score": 59
+      "quality": "featured",
+      "quality_score": 61
     },
     "军舰": {
       "type": "technology",
@@ -3184,8 +3206,8 @@
       ],
       "path": "pages/军舰.md",
       "description": "海军水面作战舰艇，书中多次作为太空战舰的历史参照和类比，展示从海战到太空战的技术传承",
-      "quality": "basic",
-      "quality_score": 36
+      "quality": "standard",
+      "quality_score": 51
     },
     "农场主假说": {
       "type": "concept",
@@ -3204,7 +3226,7 @@
       "path": "pages/农场主假说.md",
       "description": "汪淼提出的宇宙哲学思想实验：一个农场里的火鸡科学家归纳出\"每天11点农场主来喂食\"的定律，感恩节当天定律突然失效——暗示人类的科学认知可能建立在随时会被打破的虚假规律上",
       "quality": "standard",
-      "quality_score": 40
+      "quality_score": 47
     },
     "农耕社会": {
       "type": "concept",
@@ -3246,6 +3268,7 @@
       "type": "technology",
       "label": "冬眠技术",
       "aliases": [
+        "冬眠技术",
         "冬眠",
         "人体冬眠",
         "hibernation"
@@ -3275,7 +3298,7 @@
       ],
       "path": "pages/冬眠者.md",
       "description": "通过低温冬眠技术跨越时代的人群；危机纪元大量涌现，面对技术加速、语言变迁和社会隔阂，需适应截然不同的未来时代，成为三体故事的重要社会背景",
-      "quality": "standard",
+      "quality": "featured",
       "quality_score": 61
     },
     "冯·诺伊曼": {
@@ -3386,7 +3409,7 @@
       ],
       "path": "pages/加速器.md",
       "description": "通过电磁场加速带电粒子的大型科学装置；汪淼参与的\"中华二号\"项目，三体文明通过智子封锁的实验设施",
-      "quality": "standard",
+      "quality": "featured",
       "quality_score": 45
     },
     "北美一号": {
@@ -3472,18 +3495,20 @@
       "tags": [
         "技术",
         "三体I",
+        "三体II",
         "三体游戏",
         "预测工具"
       ],
       "path": "pages/单摆.md",
-      "description": "三体游戏中出现的巨型摆锤装置，用于感应引力变化以预测三太阳运行；联合国大厦前也设有用于文明启动仪式的巨型单摆",
-      "quality": "standard",
-      "quality_score": 47
+      "description": "三体游戏中出现的巨型摆锤装置，用于感应引力变化以预测三太阳运行；联合国大厦前也设有用于文明启动仪式的巨型单摆；现实中联合国大厦的傅科单摆也是重要场景道具",
+      "quality": "featured",
+      "quality_score": 53
     },
     "危机纪元": {
       "type": "era",
       "label": "危机纪元",
       "aliases": [
+        "危机纪元",
         "危机时代"
       ],
       "tags": [
@@ -3510,12 +3535,13 @@
         "三体II",
         "物理",
         "智子",
-        "粒子物理"
+        "粒子物理",
+        "宏原子"
       ],
       "path": "pages/原子核.md",
-      "description": "由质子和中子组成的原子中心结构，是智子制造的物理出发点，也是粒子加速器碰撞实验的靶标",
+      "description": "由质子和中子组成的原子中心结构，是智子制造的物理出发点，也是粒子加速器碰撞实验的靶标；宏原子核是雷迪亚兹战略的核心武器",
       "quality": "standard",
-      "quality_score": 36
+      "quality_score": 51
     },
     "双层隐喻": {
       "type": "concept",
@@ -3535,7 +3561,7 @@
       "path": "pages/双层隐喻.md",
       "description": "云天明三则童话中隐藏情报的核心方法——故事意象不直接指向情报，而是先指向一个简单事物，再由该事物隐喻真实情报；配合二维隐喻锁定含义坐标",
       "quality": "standard",
-      "quality_score": 49
+      "quality_score": 55
     },
     "反物质": {
       "type": "concept",
@@ -3600,6 +3626,7 @@
       "type": "person",
       "label": "史强",
       "aliases": [
+        "史强",
         "大史",
         "史队"
       ],
@@ -3648,8 +3675,8 @@
       ],
       "path": "pages/史瓦西半径.md",
       "description": "任何具重力质量的天体之临界半径，当半径小于此值时成为黑洞；真空光速降低到太阳系逃逸速度以下时，太阳系半径将小于其史瓦西半径",
-      "quality": "standard",
-      "quality_score": 44
+      "quality": "featured",
+      "quality_score": 49
     },
     "叶哲泰": {
       "type": "person",
@@ -3722,8 +3749,27 @@
       ],
       "path": "pages/司令部.md",
       "description": "军事最高指挥机构，包括舰队司令部和太空军司令部，是三体危机期间战略决策的核心机构",
-      "quality": "basic",
-      "quality_score": 43
+      "quality": "standard",
+      "quality_score": 53
+    },
+    "听证会": {
+      "type": "event",
+      "label": "面壁计划听证会",
+      "aliases": [
+        "听证会",
+        "面壁计划听证会",
+        "面壁者听证会"
+      ],
+      "tags": [
+        "事件",
+        "三体II",
+        "面壁计划",
+        "行星防御理事会"
+      ],
+      "path": "pages/听证会.md",
+      "description": "行星防御理事会对面壁者计划进行监督的公开程序，是面壁计划中唯一制衡面壁者绝对权力的机制",
+      "quality": "standard",
+      "quality_score": 55
     },
     "启示号": {
       "type": "technology",
@@ -3793,7 +3839,7 @@
       ],
       "path": "pages/和平主义.md",
       "description": "1379号监听员在宇宙警告中自称的立场；也是ETO内部部分成员的信仰，与降临派的极端主义相对",
-      "quality": "standard",
+      "quality": "featured",
       "quality_score": 45
     },
     "哈勃二号": {
@@ -3806,12 +3852,14 @@
       "tags": [
         "技术",
         "三体II",
-        "危机纪元"
+        "危机纪元",
+        "林格",
+        "斐兹罗"
       ],
       "path": "pages/哈勃二号.md",
       "description": "危机纪元建造的第二代哈勃空间望远镜，直径21米，观测能力是前代五十倍；被军方征用后成为林格-斐兹罗的三体世界观测工具；最终证实了三体入侵的真实性",
-      "quality": "standard",
-      "quality_score": 59
+      "quality": "featured",
+      "quality_score": 65
     },
     "哥白尼": {
       "type": "person",
@@ -3828,7 +3876,7 @@
       "path": "pages/哥白尼.md",
       "description": "汪淼在《三体》游戏中注册的角色ID，以哥白尼之名探索三体问题，提出进化算法求解方案，成功揭示宇宙基本结构使文明跃升至第二级",
       "quality": "standard",
-      "quality_score": 54
+      "quality_score": 59
     },
     "四维碎块": {
       "type": "concept",
@@ -3864,8 +3912,8 @@
       ],
       "path": "pages/四维空间.md",
       "description": "蓝色空间号与万有引力号在四维区块中进入的真实高维空间；从中可360度看清三维世界的所有内部结构，产生\"高维空间感\"；翘曲点是三维与四维之间的通道",
-      "quality": "standard",
-      "quality_score": 57
+      "quality": "featured",
+      "quality_score": 61
     },
     "回归运动": {
       "type": "organization",
@@ -3920,8 +3968,8 @@
       ],
       "path": "pages/国际法.md",
       "description": "规范国家间行为的法律体系，三体危机中多次被援引：逃亡主义被定为反人类罪，面壁法案与联合国宪章具同等地位",
-      "quality": "basic",
-      "quality_score": 43
+      "quality": "featured",
+      "quality_score": 53
     },
     "国际空间站": {
       "type": "place",
@@ -3939,7 +3987,7 @@
       "path": "pages/国际空间站.md",
       "description": "近地轨道载人空间站，书中出现于幽灵倒计时的天文异象讨论和章北海奔赴太空的出发地",
       "quality": "standard",
-      "quality_score": 43
+      "quality_score": 51
     },
     "国际解读委员会": {
       "type": "organization",
@@ -3974,8 +4022,8 @@
       ],
       "path": "pages/地下城.md",
       "description": "危机纪元中后期人类主流居住形态——将城市建筑悬挂于树形结构之上，地面沙漠化后遗留在地表的是穷人；末日战役后城市生态系统崩溃，居民被迫涌出",
-      "quality": "standard",
-      "quality_score": 56
+      "quality": "featured",
+      "quality_score": 58
     },
     "地下城市": {
       "type": "place",
@@ -3993,7 +4041,7 @@
       "path": "pages/地下城市.md",
       "description": "危机纪元地球城市的历史层：原有地面城市被新建的巨树形建筑群遮蔽于地下三百米处，形成一个有穹顶、靠树干支撑、通过电梯与地面连通的旧城空间",
       "quality": "standard",
-      "quality_score": 41
+      "quality_score": 49
     },
     "地球三体组织": {
       "type": "organization",
@@ -4066,13 +4114,14 @@
       ],
       "path": "pages/地球抵抗运动.md",
       "description": "大移民期间拒绝迁往澳大利亚、坚持在各大陆抵抗的游击武装，约150-200万人；以毕云峰等执剑人候选人为指挥官，明知必败仍坚守到底，大移民结束后成为英雄",
-      "quality": "standard",
-      "quality_score": 47
+      "quality": "featured",
+      "quality_score": 56
     },
     "地球文明": {
       "type": "civilization",
       "label": "地球文明",
       "aliases": [
+        "地球文明",
         "人类文明",
         "地球人类",
         "太阳系文明"
@@ -4123,7 +4172,7 @@
       "path": "pages/地球治安军.md",
       "description": "大移民期间智子招募的人类军队，共五百万人，负责监督移民进程并保护城市基础设施；大移民结束后遭到清算，半数成员被判反人类罪处决",
       "quality": "standard",
-      "quality_score": 50
+      "quality_score": 59
     },
     "地震": {
       "type": "concept",
@@ -4147,7 +4196,8 @@
       "type": "person",
       "label": "坎特",
       "aliases": [
-        "坎特"
+        "坎特",
+        "帕特里克·坎特"
       ],
       "tags": [
         "人物",
@@ -4196,8 +4246,8 @@
       ],
       "path": "pages/坦克.md",
       "description": "履带式装甲战斗车辆，书中多次出现于文革武斗、反坦克战例和章北海家族军事传承的历史叙述中",
-      "quality": "basic",
-      "quality_score": 41
+      "quality": "featured",
+      "quality_score": 48
     },
     "基础物理": {
       "type": "concept",
@@ -4237,8 +4287,8 @@
       ],
       "path": "pages/基础科学.md",
       "description": "探索自然界基本规律的科学领域，三体文明通过智子封锁人类基础科学进步，以阻止人类发展出对抗三体的技术能力",
-      "quality": "basic",
-      "quality_score": 41
+      "quality": "standard",
+      "quality_score": 48
     },
     "堪培拉": {
       "type": "place",
@@ -4306,7 +4356,7 @@
       "path": "pages/墨子.md",
       "description": "三体游戏中出现的智者角色；在战国纪元的观星台接待汪淼，向他揭示三体文明三十六万年的历史沿革和三太阳运行的规律研究",
       "quality": "standard",
-      "quality_score": 44
+      "quality_score": 53
     },
     "外交部": {
       "type": "organization",
@@ -4342,7 +4392,7 @@
       "path": "pages/外太空.md",
       "description": "太阳系之外的宇宙空间；危机纪元逃亡主义者的目标，三体危机下人类文明延续的理论可能",
       "quality": "standard",
-      "quality_score": 42
+      "quality_score": 58
     },
     "外星文明": {
       "type": "concept",
@@ -4416,7 +4466,7 @@
       "path": "pages/大宇宙.md",
       "description": "与各文明创造的小宇宙相对应的原始宇宙；因小宇宙不断带走质量而面临大坍缩，通过超膜广播向其中所有空泡宇宙传递末日信息",
       "quality": "standard",
-      "quality_score": 44
+      "quality_score": 51
     },
     "大撕裂": {
       "type": "event",
@@ -4452,8 +4502,8 @@
       ],
       "path": "pages/大气层.md",
       "description": "围绕行星的气体层，在三体故事中作为行星宜居性的关键指标，也是三体世界飞星时代与大灾难的场景背景",
-      "quality": "basic",
-      "quality_score": 39
+      "quality": "standard",
+      "quality_score": 48
     },
     "大爆炸": {
       "type": "concept",
@@ -4523,6 +4573,7 @@
       "tags": [
         "概念",
         "三体I",
+        "三体II",
         "天文观测",
         "三体游戏",
         "191号文明"
@@ -4530,7 +4581,7 @@
       "path": "pages/天文学.md",
       "description": "研究宇宙天体的科学；三体游戏中的历史天文学家、地球预警三体舰队的观测基础",
       "quality": "standard",
-      "quality_score": 40
+      "quality_score": 54
     },
     "天文望远镜": {
       "type": "technology",
@@ -4573,6 +4624,7 @@
       "type": "organization",
       "label": "太空军",
       "aliases": [
+        "太空军",
         "中国太空军",
         "地球太空军"
       ],
@@ -4623,7 +4675,7 @@
       "path": "pages/太空城市.md",
       "description": "人类在威慑纪元建造的轨道居住设施，分大中小三级，末日战役后成为人类文明的主要栖居形式",
       "quality": "standard",
-      "quality_score": 43
+      "quality_score": 54
     },
     "太空城群落": {
       "type": "concept",
@@ -4759,7 +4811,7 @@
       "path": "pages/太空舰队.md",
       "description": "危机纪元人类为应对三体入侵而建立的星际武装力量，由亚洲、欧洲、北美三大舰队组成，历经三个世纪才形成完整战斗力，最终在黑暗战役中被水滴全歼",
       "quality": "standard",
-      "quality_score": 50
+      "quality_score": 61
     },
     "太空艇": {
       "type": "technology",
@@ -4882,7 +4934,9 @@
       "type": "place",
       "label": "太阳系",
       "aliases": [
-        "Solar System",
+        "太阳系",
+        "Solar",
+        "System",
         "人类母星系"
       ],
       "tags": [
@@ -5272,7 +5326,7 @@
       "path": "pages/宇宙尺度.md",
       "description": "以宇宙年龄和星际距离为单位的时空衡量视角，使人类历史和星际距离都显得极短极微；黑暗森林理论的认知基础",
       "quality": "standard",
-      "quality_score": 55
+      "quality_score": 59
     },
     "宇宙微波": {
       "type": "concept",
@@ -5323,6 +5377,7 @@
       "tags": [
         "概念",
         "三体II",
+        "三体III",
         "宇宙社会学",
         "叶文洁",
         "黑暗森林法则"
@@ -5330,7 +5385,7 @@
       "path": "pages/宇宙文明公理.md",
       "description": "叶文洁提出的宇宙社会学两条基础公理：生存是文明的第一需要；文明不断增长和扩张，但宇宙中的物质总量保持不变——推导出黑暗森林法则的逻辑起点",
       "quality": "standard",
-      "quality_score": 44
+      "quality_score": 59
     },
     "宇宙时间线": {
       "type": "overview",
@@ -5649,8 +5704,8 @@
       ],
       "path": "pages/导弹.md",
       "description": "自导引式火箭武器，书中从国家战略导弹防御系统到雷迪亚兹三千美元廉价巡航导弹，体现技术民主化",
-      "quality": "basic",
-      "quality_score": 43
+      "quality": "standard",
+      "quality_score": 55
     },
     "射手假说": {
       "type": "concept",
@@ -5688,7 +5743,7 @@
       "path": "pages/射电天文.md",
       "description": "使用射电（无线电）波段进行天文观测的学科；叶文洁的研究兴趣，密云基地汪淼寻访宇宙闪烁的工具",
       "quality": "standard",
-      "quality_score": 41
+      "quality_score": 57
     },
     "小宇宙": {
       "type": "concept",
@@ -6127,7 +6182,7 @@
       "path": "pages/弗雷斯.md",
       "description": "澳大利亚土著老人，八十余岁，大移民期间将程心与艾AA收留于自家旧屋；以超然平静的人生态度给予程心精神慰藉，每夜吹奏迪杰里多",
       "quality": "standard",
-      "quality_score": 49
+      "quality_score": 59
     },
     "张援朝": {
       "type": "person",
@@ -6441,8 +6496,8 @@
       ],
       "path": "pages/战斗机.md",
       "description": "空中作战飞行器，书中出现于史强护送罗辑的军事机场场景，以及章北海的飞行员资质背景",
-      "quality": "basic",
-      "quality_score": 43
+      "quality": "standard",
+      "quality_score": 51
     },
     "戴文": {
       "type": "person",
@@ -7026,6 +7081,7 @@
       "type": "technology",
       "label": "智子",
       "aliases": [
+        "智子",
         "Sophon"
       ],
       "tags": [
@@ -7160,13 +7216,14 @@
         "地点",
         "三体I",
         "三体II",
+        "三体III",
         "太阳系",
         "自然卫星"
       ],
       "path": "pages/月球.md",
       "description": "地球唯一的天然卫星，书中作为恒星型氢弹测试候选地点、生态循环系统试运行场地和太空旅行距离的参照",
       "quality": "standard",
-      "quality_score": 43
+      "quality_score": 58
     },
     "朝歌": {
       "type": "place",
@@ -7226,6 +7283,7 @@
       "type": "place",
       "label": "木星",
       "aliases": [
+        "木星",
         "Jupiter",
         "木星轨道",
         "木星军港"
@@ -7850,6 +7908,7 @@
       "type": "weapon",
       "label": "水滴探测器",
       "aliases": [
+        "水滴探测器",
         "水滴",
         "强互作用力探测器"
       ],
@@ -7868,6 +7927,7 @@
       "type": "person",
       "label": "汪淼",
       "aliases": [
+        "汪淼",
         "汪教授"
       ],
       "tags": [
@@ -8185,7 +8245,7 @@
       "path": "pages/牛顿.md",
       "description": "三体游戏中出现的虚拟历史人物；与冯·诺伊曼同行来到中国秦朝，协助建造人列计算机求解三体问题",
       "quality": "standard",
-      "quality_score": 46
+      "quality_score": 59
     },
     "物理规律": {
       "type": "concept",
@@ -8657,6 +8717,7 @@
       "tags": [
         "概念",
         "三体I",
+        "三体III",
         "三体文明",
         "智子",
         "干扰计划"
@@ -8664,7 +8725,7 @@
       "path": "pages/神迹.md",
       "description": "三体文明对地球实施的三大干扰计划之一，利用智子制造超自然现象使人类科学思想走上歧途，与染色计划并列但被认为力度不足",
       "quality": "standard",
-      "quality_score": 52
+      "quality_score": 59
     },
     "科学执政官": {
       "type": "person",
@@ -8889,6 +8950,7 @@
       "type": "person",
       "label": "章北海",
       "aliases": [
+        "章北海",
         "章政委"
       ],
       "tags": [
@@ -9333,8 +9395,10 @@
       "type": "organization",
       "label": "联合国",
       "aliases": [
+        "联合国",
         "UN",
-        "United Nations",
+        "United",
+        "Nations",
         "行星防御理事会前身"
       ],
       "tags": [
@@ -9533,8 +9597,8 @@
       ],
       "path": "pages/航空母舰.md",
       "description": "以舰载航空兵为主要作战力量的大型水面战舰，书中作为太空战舰体积对比基准，\"唐\"号未服役即被三体危机废弃",
-      "quality": "basic",
-      "quality_score": 43
+      "quality": "standard",
+      "quality_score": 51
     },
     "舰队国际": {
       "type": "organization",
@@ -9921,7 +9985,7 @@
       "path": "pages/质子.md",
       "description": "氢原子核，是智子的物理载体——三体世界将质子展开为宏观二维智能体。两个加速到接近光速的质子是三体世界发射智子的方式",
       "quality": "standard",
-      "quality_score": 46
+      "quality_score": 58
     },
     "费米悖论": {
       "type": "concept",
@@ -10234,7 +10298,7 @@
       "path": "pages/量子计算.md",
       "description": "利用量子叠加和纠缠实现超强计算能力的技术，因智子对基础物理学的封锁而无法实现，成为人类技术停滞的典型案例",
       "quality": "standard",
-      "quality_score": 40
+      "quality_score": 44
     },
     "量子计算机": {
       "type": "technology",
@@ -11032,12 +11096,13 @@
         "三体II",
         "三体III",
         "天体物理",
-        "引力波"
+        "引力波",
+        "光速降低"
       ],
       "path": "pages/黑洞.md",
       "description": "宇宙中密度极高的天体，在三体宇宙中是引力波发射的理想天线、光速降低与宇宙安全声明讨论的核心概念，也是程心恶梦和叶文洁对宇宙力量思考的意象",
       "quality": "standard",
-      "quality_score": 50
+      "quality_score": 60
     },
     "黑洞项目": {
       "type": "event",
@@ -11265,6 +11330,7 @@
     "三体教": "三体教",
     "三体文明": "三体文明",
     "三体人": "三体文明",
+    "三体世界": "三体文明",
     "Trisolarians": "三体文明",
     "三体星": "三体星",
     "三体星系": "三体星系",
@@ -11337,6 +11403,7 @@
     "迈克·伊文斯": "伊文斯",
     "伏羲": "伏羲",
     "伽利略": "伽利略",
+    "伽尔宁": "伽尔宁",
     "伽马射线激光": "伽马射线激光",
     "伽马激光": "伽马射线激光",
     "低熵体": "低熵体",
@@ -11435,6 +11502,9 @@
     "司令部": "司令部",
     "舰队司令部": "司令部",
     "太空军司令部": "司令部",
+    "听证会": "听证会",
+    "面壁计划听证会": "听证会",
+    "面壁者听证会": "听证会",
     "启示号": "启示号",
     "启示舰": "启示号",
     "吴岳": "吴岳",
@@ -11482,6 +11552,7 @@
     "地震": "地震",
     "earthquake": "地震",
     "坎特": "坎特",
+    "帕特里克·坎特": "坎特",
     "坐标广播": "坐标广播",
     "广播坐标": "坐标广播",
     "宇宙坐标广播": "坐标广播",
@@ -11568,7 +11639,8 @@
     "恒星放大": "太阳放大",
     "太阳爆发": "太阳爆发",
     "太阳系": "太阳系",
-    "Solar System": "太阳系",
+    "Solar": "太阳系",
+    "System": "太阳系",
     "人类母星系": "太阳系",
     "太阳系联邦": "太阳系联邦",
     "联邦政府": "太阳系联邦",
@@ -12062,7 +12134,8 @@
     "翘曲点": "翘曲点",
     "联合国": "联合国",
     "UN": "联合国",
-    "United Nations": "联合国",
+    "United": "联合国",
+    "Nations": "联合国",
     "行星防御理事会前身": "联合国",
     "联合国大会": "联合国大会",
     "联合国全体大会": "联合国大会",
@@ -12201,8 +12274,6 @@
     "Wallfacer": "面壁者",
     "面壁计划": "面壁计划",
     "Wallfacer Project": "面壁计划",
-    "面壁计划听证会": "面壁计划听证会",
-    "面壁者听证会": "面壁计划听证会",
     "韦斯特": "韦斯特",
     "West": "韦斯特",
     "飞刃": "飞刃",
@@ -12247,6 +12318,6 @@
     "默斯特罗姆漩涡": "默斯肯大旋涡",
     "Maelstrom": "默斯肯大旋涡"
   },
-  "page_count": 637,
-  "generated": "2026-04-27T16:38:46Z"
+  "page_count": 639,
+  "generated": "2026-04-27T16:57:42Z"
 }

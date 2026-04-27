@@ -20,11 +20,14 @@ from __future__ import annotations
 import argparse
 import json
 import re
+import subprocess
+import sys
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parent.parent
 PAGES_DIR = ROOT / 'public' / 'pages'
 PAGES_JSON = ROOT / 'public' / 'pages.json'
+REC = ROOT / 'scripts' / 'record_revision.py'
 
 
 # ── 构建别名映射 ──────────────────────────────────────────────────────────────
@@ -114,7 +117,8 @@ RE_PARA_LINE = re.compile(r'^(\[\d-\d{2}-\d{3}\]\s*)(.*)', re.DOTALL)
 RE_EXISTING_LINK = re.compile(r'\[\[([^\]|]+)(?:\|[^\]]*)?\]\]')
 
 
-def process_chapter(path: Path, alias_map: list, dry_run: bool) -> int:
+def process_chapter(path: Path, alias_map: list, dry_run: bool,
+                    author: str = 'butler', round_n: str = '') -> int:
     """返回本章新增的 wikilink 数量。"""
     text = path.read_text(encoding='utf-8')
 
@@ -161,6 +165,13 @@ def process_chapter(path: Path, alias_map: list, dry_run: bool) -> int:
 
     if not dry_run:
         path.write_text(new_content, encoding='utf-8')
+        slug = path.stem
+        prefix = f'R{round_n} ' if round_n else ''
+        summary = f'{prefix}H21: wikify章节实体链接，新增{new_links}个[[]]'
+        subprocess.run(
+            [sys.executable, str(REC), slug, '--summary', summary, '--author', author],
+            capture_output=True, cwd=ROOT
+        )
 
     return new_links
 
@@ -175,6 +186,8 @@ def main():
                     help='只处理指定章节（文件名前缀，如 三体II-42-下部第12节 或 三体II-42）')
     ap.add_argument('--entities', nargs='+', default=[],
                     help='额外追加实体（无需已建页，生成 broken link；空格分隔，如 远方号 雾角号）')
+    ap.add_argument('--author', default='butler', help='记录修订的作者名')
+    ap.add_argument('--round', default='', dest='round_n', help='Butler 轮次号（用于 revision summary）')
     args = ap.parse_args()
 
     with open(PAGES_JSON, encoding='utf-8') as f:
@@ -210,7 +223,8 @@ def main():
     total_links = 0
     changed = 0
     for path in chapter_files:
-        n = process_chapter(path, alias_map, args.dry_run)
+        n = process_chapter(path, alias_map, args.dry_run,
+                            author=args.author, round_n=args.round_n)
         if n > 0:
             changed += 1
             total_links += n
