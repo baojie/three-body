@@ -6,7 +6,7 @@ aliases: [SETI, 搜寻地外智慧生命, 外星文明搜索]
 tags: [概念, 三体I, 外星文明, 红岸基地, OZMA]
 description: 搜寻地外智慧生命（Search for Extraterrestrial Intelligence）的科学计划，红岸基地的官方定位，三体I历史背景的核心概念
 books: [三体I]
-quality: standard
+quality: basic
 ---
 # SETI
 

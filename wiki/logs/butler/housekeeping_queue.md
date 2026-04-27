@@ -137,7 +137,7 @@
 
 ## H-P1 — R583扫描新增 broken links（高频）
 
-- [ ] P1 create-wanted | 太阳帆 | 3x引用（辐射帆/章节页）
+- [x] P1 create-wanted | 太阳帆 | 3x引用（辐射帆/章节页）
 - [x] P1 create-wanted | 欧洲六号 | ✓ 2026-04-28（R588区间并发实例已建页）
 
 ## H-P2 — R583扫描新增（低频 broken links）
@@ -169,5 +169,13 @@
 
 ## H-P2 — R605扫描新增
 
-- [ ] P2 create-wanted | N问题 | 5x corpus hits（Nostalgia思乡病，自然选择号心理危机）
+- [x] P2 create-wanted | N问题 | ✓ 2026-04-27（R608 幸存者已建页，standard质量）
 - [ ] H2 enrich | 末日纪元 | basic→standard（内容已有基础，补corpus引文升级）
+
+## H-P2 — R609 W5 D类发现
+
+- [ ] H13 fix-heading | 量子计算 | id=量子计算 但正文标题/内容写"量子计算机"；需统一为"量子计算"或修改 id/aliases
+
+## H-P2 — R611 W5反思新增
+
+- [ ] H5 fix-content | 量子通信 | 正文中"魏程"可能为人名误识别，核实corpus后修正（R604反思标记）

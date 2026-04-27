@@ -6,7 +6,7 @@ aliases: [PIA, 行星防御理事会战略情报局, 战略情报局]
 tags: [组织, 三体III, 情报, 阶梯计划]
 description: 行星防御理事会战略情报局，直接以三体舰队和母星为侦察目标；局长托马斯·维德，技术规划中心主任瓦季姆；策划实施了阶梯计划
 books: [三体III]
-quality: standard
+quality: featured
 ---
 # PIA
 
