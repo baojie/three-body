@@ -42,7 +42,7 @@
         "hooks": [
           {
             "type": "command",
-            "command": "python3 wiki/scripts/hooks/auto_record_revision.py"
+            "command": "python3 -c \"\nimport sys,json,subprocess\nfrom pathlib import Path\ntry:\n  raw=sys.stdin.read()\n  fp=json.loads(raw).get('tool_input',{}).get('file_path','')\n  for p in Path(fp).parents:\n    s=p/'wiki/scripts/hooks/auto_record_revision.py'\n    if s.exists():\n      subprocess.run(['python3',str(s)],input=raw.encode())\n      break\nexcept Exception:\n  pass\n\""
           }
         ]
       }
