@@ -106,27 +106,27 @@
 
 ## H-P2 — R539扫描新增
 
-- [ ] H2 enrich | 毕云峰 | basic→standard；score=58，corpus命中多，需补正文和相关词条
-- [ ] H2 enrich | 空灵画师 | basic→standard；score=58，云天明童话人物群，有corpus命中
-- [ ] H2 enrich | 露珠公主 | basic→standard；score=52，童话人物，有corpus命中
-- [ ] H2 enrich | 徐冰冰 | basic→standard；score=51，本轮刚建，需后续补充引文
-- [ ] H2 enrich | 掩体工程 | basic→standard；score=49，大型工程概念，corpus命中多
+- [x] H2 enrich | 毕云峰 | ✓ 2026-04-27（R552：basic→standard，补威慑后引文+修复blockquote格式）
+- [x] H2 enrich | 空灵画师 | ✓ 2026-04-27（R552：basic→standard，补黑伞保护引文）
+- [x] H2 enrich | 露珠公主 | ✓ 2026-04-27（R552：basic→standard，引文格式规范化）
+- [x] H2 enrich | 徐冰冰 | ✓ 2026-04-27（R552：basic→standard，内容已完整）
+- [x] H2 enrich | 掩体工程 | ✓ 2026-04-27（R552：basic→standard，补社会影响段）
 
 ## H-P3 — 扫描类（R550 D1+H10）
 
-- [ ] H10 housekeeping-scan | all | ✓ 2026-04-27 R550（401页：154精选/64标准/56基础/137无质量字段；broken links：1379号监听员(6x)/射手假说(4x)/亚里士多德(3x)/农场主假说(2x)/强力(2x)/恒星型氢弹(2x)；已写入P1/P2）
-- [ ] H1 fix-alias | 空间曲率 | aliases包含'曲率驱动'与曲率驱动.md冲突，需删除该alias
+- [x] H10 housekeeping-scan | all | ✓ 2026-04-27 R550（401页：154精选/64标准/56基础/137无质量字段；broken links：1379号监听员(6x)/射手假说(4x)/亚里士多德(3x)/农场主假说(2x)/强力(2x)/恒星型氢弹(2x)；已写入P1/P2）
+- [x] H1 fix-alias | 空间曲率 | ✓ 2026-04-27（hook自动删除'曲率驱动'alias，保留[空间曲率, 空间曲率驱动]）
 
 ## H-P1 — R550扫描新增 broken links
 
-- [ ] P1 create-wanted | 1379号监听员 | 6x引用，corpus 5+命中
-- [ ] P1 create-wanted | 射手假说 | 4x引用，corpus 3+命中（文中以"射手"出现）
-- [ ] P1 create-wanted | 恒星型氢弹 | 2x引用，corpus 5命中
+- [x] P1 create-wanted | 1379号监听员 | ✓ 2026-04-27（统帅已建页）
+- [x] P1 create-wanted | 射手假说 | ✓ 2026-04-27（统帅已建页）
+- [x] P1 create-wanted | 恒星型氢弹 | ✓ 2026-04-27（统帅已建页）
 
 ## H-P2 — R550扫描新增
 
-- [ ] P2 create-wanted | 亚里士多德 | 3x引用，corpus 5命中（三体游戏人物？）
+- [x] P2 create-wanted | 亚里士多德 | ✓ 2026-04-27（统帅已建页）
 - [ ] P2 create-wanted | 农场主假说 | 2x引用，配合射手假说
 - [ ] P2 create-wanted | 强力 | 2x引用，corpus 5命中，核心物理概念
-- [ ] P2 create-wanted | 第一次接触 | 1x引用，corpus 2命中
-- [ ] P2 create-wanted | 187J3X1 | 1x引用，corpus 5命中
+- [x] P2 create-wanted | 第一次接触 | ✓ 2026-04-27（R557幸存者已建页）
+- [x] P2 create-wanted | 187J3X1 | ✓ 2026-04-27（统帅已建页）

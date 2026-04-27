@@ -6,7 +6,7 @@ aliases: [高Way, 高博士]
 tags: [人物, 三体III, 掩体纪元, 黑洞项目, 光速二号]
 description: 黑洞项目首席科学家，将一生献给降低真空光速的研究；掩体纪元中在光速二号城的黑洞样品研究中神秘坠入黑洞，被认为是主动行为
 books: [三体III]
-quality: basic
+quality: featured
 ---
 # 高Way
 
