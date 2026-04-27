@@ -98,9 +98,11 @@ function tryListen(handler, port, attempt = 0) {
       process.exit(1);
     }
   });
-  server.listen(port, '127.0.0.1', () => {
+  server.listen(port, '0.0.0.0', () => {
     const { address, port: p } = server.address();
-    console.log(`三体 Wiki · http://${address}:${p}/`);
+    const hostname = require('os').hostname();
+    console.log(`三体 Wiki · http://${address}:${p}/  (本机)`);
+    console.log(`三体 Wiki · http://${hostname}:${p}/  (局域网)`);
     console.log('  Ctrl+C 停止\n');
   });
 }
