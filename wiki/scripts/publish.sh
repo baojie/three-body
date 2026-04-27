@@ -24,6 +24,9 @@ echo "[publish] 记录修订到 history/ + recent.jsonl..."
     python3 "$SCRIPT_DIR/record_revision.py" "$slug" --author butler || true
 done
 
+echo "[publish] 重建反向引用索引..."
+python3 "$SCRIPT_DIR/build_backlinks.py"
+
 echo "[publish] 更新知识量快照..."
 python3 "$SCRIPT_DIR/compute_knowledge.py"
 

@@ -19,8 +19,12 @@ from __future__ import annotations
 
 import argparse
 import json
+import sys
 from datetime import datetime, timezone
 from pathlib import Path
+
+sys.path.insert(0, str(Path(__file__).parent))
+from lock_manager import LockManager, LockError
 
 
 def main():
@@ -36,7 +40,17 @@ def main():
     ap.add_argument('--desc', default='')
     ap.add_argument('--reflect', default='', help='一句话观察（可选），供 W5 扫描找规律')
     ap.add_argument('--log', default='wiki/logs/butler/actions.jsonl')
+    ap.add_argument('--skip-lock-check', action='store_true',
+                    help='跳过锁检查（仅限 W5/publish 等使用 increment_round 的轮次）')
     args = ap.parse_args()
+
+    # ── 锁检查：确认本轮持有有效轮次锁 ──────────────────────────────────────
+    if not args.skip_lock_check:
+        try:
+            LockManager().assert_owner(args.round)
+        except LockError as e:
+            print(f"[record_action] 锁检查失败，拒绝写入 actions.jsonl：{e}", file=sys.stderr)
+            sys.exit(1)
 
     record = {
         'round':  args.round,

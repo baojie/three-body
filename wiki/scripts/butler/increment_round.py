@@ -1,20 +1,24 @@
 #!/usr/bin/env python3
 """原子递增 round_counter.txt，输出新轮号。
 
+⚠️  已废弃：此脚本仅作向后兼容保留。
+    请改用 claim_round.py（创建持久轮次锁）+ release_round.py（释放）。
+    increment_round.py 等同于 claim_round.py 但**不创建持久锁**，
+    用于不涉及页面写入的轮次（W5 反思、publish）。
+    此类轮次调用 record_action.py 时须加 --skip-lock-check。
+
 用法：
     ROUND=$(python3 wiki/scripts/butler/increment_round.py)
-    echo "本轮：$ROUND"
 
-使用 O_CREAT|O_EXCL 锁文件方案，对同进程多线程和跨进程均有效
-（fcntl.flock 在同进程不同线程间不提供隔离）。
+使用 O_CREAT|O_EXCL 锁文件方案，对同进程多线程和跨进程均有效。
 """
 import os, sys, time
 from pathlib import Path
 
 COUNTER  = Path(__file__).resolve().parents[3] / "wiki/logs/butler/round_counter.txt"
 LOCKFILE = COUNTER.parent / "round_counter.lock"
-MAX_WAIT = 10.0   # 最多等待秒数
-RETRY_MS = 0.05   # 每次重试间隔
+MAX_WAIT = 10.0
+RETRY_MS = 0.05
 
 
 def _acquire_lock() -> None:
@@ -27,7 +31,6 @@ def _acquire_lock() -> None:
             return
         except FileExistsError:
             if time.monotonic() > deadline:
-                # 锁文件超时（持有者崩溃），强制清除
                 LOCKFILE.unlink(missing_ok=True)
             time.sleep(RETRY_MS)
 
@@ -45,7 +48,7 @@ def main() -> int:
         val = int(last) + 1 if last.isdigit() else 1
         tmp = COUNTER.with_suffix(".tmp")
         tmp.write_text(str(val) + "\n", encoding="utf-8")
-        os.replace(tmp, COUNTER)   # 原子替换
+        os.replace(tmp, COUNTER)
     finally:
         _release_lock()
     print(val)

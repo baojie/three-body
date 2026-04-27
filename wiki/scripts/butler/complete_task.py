@@ -12,6 +12,9 @@ from __future__ import annotations
 import argparse, fcntl, re, sys
 from pathlib import Path
 
+sys.path.insert(0, str(Path(__file__).parent))
+from lock_manager import LockManager, LockError
+
 QUEUE = Path(__file__).resolve().parents[3] / "wiki/logs/butler/queue.md"
 
 RE_INPROG = re.compile(r"^(\s*- \[~\] )(P[123] \S+ \| )([^|]+)( \| )\[([^\]]+)\] (.*)$")
@@ -20,9 +23,20 @@ RE_INPROG = re.compile(r"^(\s*- \[~\] )(P[123] \S+ \| )([^|]+)( \| )\[([^\]]+)\]
 def main() -> int:
     ap = argparse.ArgumentParser()
     ap.add_argument("--page", required=True, help="页面 slug")
+    ap.add_argument("--round", type=int, default=None, help="本轮轮号（用于锁检查）")
     ap.add_argument("--date", default="", help="完成日期（如 2026-04-27）")
     ap.add_argument("--release", action="store_true", help="放回队列而非标完成")
+    ap.add_argument("--skip-lock-check", action="store_true",
+                    help="跳过锁检查（仅限不持有轮次锁的内务清理操作）")
     args = ap.parse_args()
+
+    # ── 锁检查：确认本轮持有有效轮次锁 ──────────────────────────────────────
+    if not args.skip_lock_check and args.round is not None:
+        try:
+            LockManager().assert_owner(args.round)
+        except LockError as e:
+            print(f"[complete_task] 锁检查失败，拒绝修改队列：{e}", file=sys.stderr)
+            return 1
 
     page = args.page.strip()
     found = False
