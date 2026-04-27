@@ -126,7 +126,35 @@
 ## H-P2 — R550扫描新增
 
 - [x] P2 create-wanted | 亚里士多德 | ✓ 2026-04-27（统帅已建页）
-- [ ] P2 create-wanted | 农场主假说 | 2x引用，配合射手假说
-- [ ] P2 create-wanted | 强力 | 2x引用，corpus 5命中，核心物理概念
+- [x] P2 create-wanted | 农场主假说 | ✓ 2026-04-27（R552统帅已建页）
+- [x] P2 create-wanted | 强力 | ✓ 2026-04-27（R558统帅已建页）
 - [x] P2 create-wanted | 第一次接触 | ✓ 2026-04-27（R557幸存者已建页）
 - [x] P2 create-wanted | 187J3X1 | ✓ 2026-04-27（统帅已建页）
+
+## H-P3 — 扫描类（R583 D1+H10）
+
+- [ ] H10 housekeeping-scan | all | R583（545页：211精选/192标准/5基础/137无质量字段；真实broken links 12个）
+
+## H-P1 — R583扫描新增 broken links（高频）
+
+- [ ] P1 create-wanted | 太阳帆 | 3x引用（辐射帆/章节页）
+- [x] P1 create-wanted | 欧洲六号 | ✓ 2026-04-28（R588区间并发实例已建页）
+
+## H-P2 — R583扫描新增（低频 broken links）
+
+- [x] H5 fix-links | 冯·诺依曼 | ✓ 2026-04-28（扫描无此broken link，已自行修复）
+- [x] P2 create-wanted | 649号提案 | ✓ 2026-04-28（已建页，verify EXISTS）
+- [ ] P2 create-wanted | 威慑后时代 | 1x（187J3X1）—0 corpus hits，暂缓
+- [ ] P2 create-wanted | 面壁危机 | 1x（彗星）—0 corpus hits，暂缓
+- [ ] P2 create-wanted | 宇宙学家 | 1x（三体星）—0 corpus hits，暂缓
+- [ ] P2 create-wanted | 三星系统 | 1x（三体星）—0 corpus hits，暂缓
+- [x] P2 create-wanted | 宇宙尺度 | ✓ 2026-04-28（已建页，verify EXISTS）
+- [x] P2 create-wanted | 威慑 | ✓ 2026-04-28（已建页，verify EXISTS）
+
+## H-P2 — R583扫描新增（basic质量升级）
+
+- [x] H2 enrich | 坎特 | ✓ 2026-04-28（已升级standard，并发实例完成）
+- [x] H2 enrich | 张翔 | ✓ 2026-04-28（已升级standard，并发实例完成）
+- [x] H2 enrich | 农耕社会 | ✓ 2026-04-28（已升级standard，并发实例完成）
+- [x] H2 enrich | 薇拉 | ✓ 2026-04-28（已升级standard，并发实例完成）
+- [x] H2 enrich | DX3906星系黑域纪元 | ✓ 2026-04-28（已升级standard，并发实例完成）

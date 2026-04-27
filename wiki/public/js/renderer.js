@@ -489,8 +489,8 @@ ${stars}
 <ellipse cx="838" cy="435" rx="405" ry="86" stroke="#f0b030" stroke-width="1.9" fill="none" opacity="0.52" transform="rotate(-20 838 435)"/>
 <ellipse cx="838" cy="435" rx="355" ry="64" stroke="#f5c840" stroke-width="0.85" fill="none" opacity="0.32" transform="rotate(-20 838 435)"/>
 <ellipse cx="838" cy="435" rx="515" ry="140" stroke="#a07018" stroke-width="0.6" fill="none" opacity="0.25" transform="rotate(-17 838 435)"/>
-<circle cx="255" cy="78" r="20" fill="url(#hg-teal)" opacity="0.88"/>
-<circle cx="285" cy="58" r="6" fill="#1e5a4a" opacity="0.75"/>
+<circle cx="230" cy="130" r="20" fill="url(#hg-teal)" opacity="0.88"/>
+<circle cx="260" cy="110" r="6" fill="#1e5a4a" opacity="0.75"/>
 ${poemSvg}
 </svg>`;
 }
@@ -513,7 +513,7 @@ export function renderHome(core) {
     .filter(p => !['redirect','disambiguation','special','chapter'].includes(p.type||''))
     .filter(p => (p.quality || 'stub') !== 'stub')
     .sort((a, b) => scoreOf(b) - scoreOf(a))
-    .slice(0, 21);
+    .slice(0, 24);
   const entityCardsHtml = entityCandidates.map(renderFeaturedCard).join('');
 
   const entityCount = allPages.filter(p =>

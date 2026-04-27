@@ -2,7 +2,7 @@
 id: 三体II
 type: book
 label: 三体II：黑暗森林
-aliases: [三体II, 黑暗森林, 三体第二部]
+aliases: [三体II, 三体第二部]
 tags: [书册, 三体II]
 description: 刘慈欣三部曲第二部，副标题《黑暗森林》；讲述面壁计划、罗辑发现黑暗森林法则并建立威慑，以及危机纪元末联合舰队在黑暗战役中被水滴全歼的故事
 books: [三体II]

@@ -32,7 +32,7 @@
 
 - [x] P1 create | AA | 程心在掩体纪元的伴侣，协助云天明情报解读，2处broken link → R519 accept
 
-- [ ] P1 create | 三体探测器 | H18-R538发现：15条corpus命中，1处broken link；三体文明发射的先行无人探测器群，水滴到达前的前哨
+- [x] P1 create | 三体探测器 | ✓ 2026-04-27（幸存者/统帅验证已建页）
 - [x] P1 create | 三体I | ✓ 2026-04-27（统帅已建页，书册综述）
 - [x] P1 create | 三体II | ✓ 2026-04-27（统帅已建页，书册综述）
 - [x] P1 create | 射手假说 | ✓ 2026-04-27（R552统帅已建页）
@@ -85,7 +85,7 @@
 - [x] P2 create | 钢印族 | ✓ 2026-04-27（R470完成，幸存者，5万受印+希恩斯秘密机器+章北海防范，6条PN）
 - [x] P2 create | 时间之外的往事 | ✓ 2026-04-27（R558统帅已建页，书型元小说框架，standard）
 - [x] P2 create | 农场主假说 | ✓ 2026-04-27（R552统帅已建页）
-- [ ] P2 create | 第一次接触 | R551-监听员：2x broken link + corpus 2x；人类与三体文明的首次信号交流事件
+- [x] P2 create | 第一次接触 | ✓ 2026-04-27（幸存者已建页，验证存在）
 - [x] P2 create | 远方号 | ✓ 2026-04-27（R558统帅已建页，末日战役舰，basic）
 - [x] P2 create | 亚里士多德 | ✓ 2026-04-27（R550统帅已建页）
 
@@ -176,6 +176,12 @@
 
 ## P1/P2 — R564扫描新增（H10全库扫描R564）
 
-- [ ] P1 create | 何博士 | R564-H10：2x broken link + corpus 5x；北京天文台研究员，协助云天明购星DX3906
-- [ ] P2 create | DX3906星系黑域纪元 | R564-H10：1x broken link + corpus 3x；宇宙级时间纪元，死神永生章节题词
-- [ ] P2 create | 堪培拉 | R564-H10：1x broken link + corpus 6x；澳大利亚首都，大移民保留城市，堪培拉惨案主战场
+- [x] P1 create | 何博士 | ✓ 2026-04-27 (其他实例已建页) R564-H10：2x broken link + corpus 5x；北京天文台研究员，协助云天明购星DX3906
+- [x] P2 create | DX3906星系黑域纪元 | ✓ 2026-04-28（quality: standard 已确认）
+- [x] P2 create | 堪培拉 | ✓ 2026-04-27 (其他实例已建页) R564-H10：1x broken link + corpus 6x；澳大利亚首都，大移民保留城市，堪培拉惨案主战场
+
+## R572 D1+H10 新增（2026-04-27）
+
+- [x] P2 create | 事件视界 | ✓ 2026-04-27 (其他实例已建页) R572-D1：2x broken link + corpus 2x；广义相对论/黑洞物理概念，三体III黑洞微粒章节
+- [x] P3 create | 农耕社会 | ✓ 2026-04-28（quality: standard 已确认）
+- [ ] P3 create | 引力波通信 | R572-H10：basic页，正文待丰富
