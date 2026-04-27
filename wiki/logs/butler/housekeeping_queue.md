@@ -10,6 +10,11 @@
 
 ## H-P2 — 常规内务
 
+- [ ] H-P2 enrich | 亚洲三号 | R699-D类抽查：basic，prose_chars≈1178，需加叙事分析节
+- [ ] H-P2 enrich | 大洋洲一号 | R699-D类抽查：basic，prose_chars≈1144，需加叙事分析节
+- [ ] H-P2 enrich | 小国崛起 | R699-D类抽查：basic，prose_chars≈1280，需加叙事分析节
+
+
 ---
 
 ## H-P3 — 扫描类（每11轮）

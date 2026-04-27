@@ -186,6 +186,26 @@ article hr { border: none; border-top: 1px solid var(--border); margin: 2em 0; }
 
 article img { max-width: 100%; border-radius: 4px; }
 
+/* seealso block */
+.seealso-block {
+  margin: .8em 0;
+  padding: .4em .8em;
+  background: rgba(100, 160, 200, 0.08);
+  border-left: 3px solid var(--accent);
+  border-radius: 0 3px 3px 0;
+  font-size: .93em;
+}
+.seealso-label {
+  font-weight: 600;
+  color: var(--accent);
+  margin: 0 .4em 0 0;
+  display: inline;
+}
+p.seealso-block { margin: .8em 0; }
+p.seealso-block .seealso-label { display: inline; }
+.seealso-block ul { margin: .2em 0 0 0; padding-left: 1.4em; }
+.seealso-block li { margin: .15em 0; }
+
 /* Sidebar */
 .sidebar {
   font-family: var(--sans);
