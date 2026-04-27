@@ -6,7 +6,7 @@ aliases: [三体III, 死神永生, 三体第三部]
 tags: [书册, 三体III]
 description: 刘慈欣三部曲第三部，副标题《死神永生》；讲述程心两度成为执剑人、威慑终止后三体人占领地球、二向箔使太阳系二维化，以及宇宙末日的故事
 books: [三体III]
-quality: featured
+quality: standard
 ---
 # 三体III：死神永生
 
