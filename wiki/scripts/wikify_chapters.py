@@ -7,10 +7,13 @@
 - 使用 [[page_id]] 或 [[page_id|显示文字]]（别名不等于 id 时）
 - 不在 [[...]] / [PN] / （PN） / 标题行内二次处理
 - 只处理 type=chapter 的页面，不修改其他页面
+- --entities 可追加尚未建页的实体（产生 broken link，用于预链接）
 
 用法：
     python3 wiki/scripts/wikify_chapters.py
-    python3 wiki/scripts/wikify_chapters.py --dry-run   # 只打印，不写文件
+    python3 wiki/scripts/wikify_chapters.py --dry-run            # 只打印，不写文件
+    python3 wiki/scripts/wikify_chapters.py --chapter 三体II-42-下部第12节
+    python3 wiki/scripts/wikify_chapters.py --chapter 三体II-42 --entities 远方号 雾角号
 """
 from __future__ import annotations
 
@@ -108,6 +111,9 @@ RE_FRONTMATTER = re.compile(r'^---\n(.*?)\n---\n', re.DOTALL)
 RE_PARA_LINE = re.compile(r'^(\[\d-\d{2}-\d{3}\]\s*)(.*)', re.DOTALL)
 
 
+RE_EXISTING_LINK = re.compile(r'\[\[([^\]|]+)(?:\|[^\]]*)?\]\]')
+
+
 def process_chapter(path: Path, alias_map: list, dry_run: bool) -> int:
     """返回本章新增的 wikilink 数量。"""
     text = path.read_text(encoding='utf-8')
@@ -119,7 +125,13 @@ def process_chapter(path: Path, alias_map: list, dry_run: bool) -> int:
     frontmatter = text[:fm_end]
     body = text[fm_end:]
 
-    linked: set[str] = set()  # 本章已链接的实体
+    # Pre-populate linked from existing [[...]] so repeated runs only link first occurrences
+    alias_to_pid = {alias: pid for alias, pid, _ in alias_map}
+    linked: set[str] = set()
+    for m in RE_EXISTING_LINK.finditer(body):
+        link_target = m.group(1)
+        linked.add(alias_to_pid.get(link_target, link_target))
+
     new_links = 0
     lines_out = []
 
@@ -159,23 +171,39 @@ def main():
     ap = argparse.ArgumentParser()
     ap.add_argument('--dry-run', action='store_true', help='只打印，不写文件')
     ap.add_argument('--book', choices=['1', '2', '3'], default=None, help='只处理指定书册')
+    ap.add_argument('--chapter', default=None,
+                    help='只处理指定章节（文件名前缀，如 三体II-42-下部第12节 或 三体II-42）')
+    ap.add_argument('--entities', nargs='+', default=[],
+                    help='额外追加实体（无需已建页，生成 broken link；空格分隔，如 远方号 雾角号）')
     args = ap.parse_args()
 
     with open(PAGES_JSON, encoding='utf-8') as f:
         pages = json.load(f)['pages']
 
     alias_map = build_alias_map(pages)
+
+    # 追加用户指定的未建页实体（self-link：[[实体]] 样式）
+    extra_names = [e for e in args.entities if e]
+    if extra_names:
+        existing_aliases = {alias for alias, _, _ in alias_map}
+        for name in extra_names:
+            if name not in existing_aliases:
+                alias_map.append((name, name, name))
+        # 重新按长度排序
+        alias_map.sort(key=lambda e: len(e[0]), reverse=True)
+        print(f'追加未建页实体：{extra_names}')
+
     print(f'实体别名表：{len(alias_map)} 条（{len(set(pid for _, pid, _ in alias_map))} 个实体）')
-    for alias, pid, _ in alias_map:
-        print(f'  "{alias}" → {pid}')
     print()
 
+    # 确定要处理的章节
     book_prefix = {'1': '三体I-', '2': '三体II-', '3': '三体III-'}.get(args.book, '')
 
     chapter_files = sorted(
         [p for p in PAGES_DIR.glob('*.md')
          if p.stem.startswith(('三体I-', '三体II-', '三体III-'))
-         and (not book_prefix or p.stem.startswith(book_prefix))],
+         and (not book_prefix or p.stem.startswith(book_prefix))
+         and (not args.chapter or p.stem.startswith(args.chapter))],
         key=lambda p: p.stem
     )
 

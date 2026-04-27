@@ -2,7 +2,7 @@
 id: AA
 type: person
 label: AA
-aliases: [AA, 艾AA]
+aliases: [AA]
 tags: [人物, 三体III, 威慑纪元, 掩体纪元, 程心]
 description: 程心的好友兼商业助手，发现DX3906行星的天文博士生，曾多次陪伴程心经历重大历史时刻
 books: [三体III]

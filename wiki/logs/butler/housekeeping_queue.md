@@ -158,3 +158,16 @@
 - [x] H2 enrich | 农耕社会 | ✓ 2026-04-28（已升级standard，并发实例完成）
 - [x] H2 enrich | 薇拉 | ✓ 2026-04-28（已升级standard，并发实例完成）
 - [x] H2 enrich | DX3906星系黑域纪元 | ✓ 2026-04-28（已升级standard，并发实例完成）
+
+## H-P3 — 扫描类（R605 D1+H10）
+
+- [x] H10 housekeeping-scan | all | ✓ 2026-04-27 R605（627页：223精选/266标准/1基础/137无质量字段（全为chapter型，正常）；broken links 12个：低光速黑域(2x)/N问题(1x)/其余10个0corpus暂缓；1页basic待升级）
+
+## H-P1 — R605扫描新增 broken links
+
+- [ ] P1 create-wanted | 低光速黑域 | 2x（维度打击/空间曲率）—1 corpus hit，corpus内容待核实
+
+## H-P2 — R605扫描新增
+
+- [ ] P2 create-wanted | N问题 | 5x corpus hits（Nostalgia思乡病，自然选择号心理危机）
+- [ ] H2 enrich | 末日纪元 | basic→standard（内容已有基础，补corpus引文升级）
