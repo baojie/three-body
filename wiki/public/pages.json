@@ -2307,7 +2307,7 @@
       "path": "pages/宇宙闪烁.md",
       "description": "三体I中出现的宇宙背景辐射异常波动现象：三颗卫星与地面站同步检测到3K辐射的莫尔斯电码节律，与汪淼的幽灵倒计时同步，是智子在宇宙尺度上向地球科学家传递恐吓信号的方式。",
       "quality": "featured",
-      "quality_score": 56
+      "quality_score": 68
     },
     "审判日号": {
       "type": "technology",
@@ -2400,7 +2400,7 @@
       "path": "pages/引力波广播.md",
       "description": "以引力波为载体向宇宙广播文明坐标的技术，是黑暗森林威慑的核心武器——启动即意味着向宇宙中所有猎手暴露目标坐标，等同于毁灭性的同归于尽威胁。",
       "quality": "featured",
-      "quality_score": 56
+      "quality_score": 68
     },
     "归零者": {
       "type": "concept",
@@ -2873,7 +2873,7 @@
       "path": "pages/费米悖论.md",
       "description": "银河系古老而广阔，外星文明早该抵达太阳系，但宇宙却一片沉默——三体宇宙中这一悖论的答案是黑暗森林法则。",
       "quality": "featured",
-      "quality_score": 56
+      "quality_score": 68
     },
     "逃亡主义": {
       "type": "concept",
@@ -3478,5 +3478,5 @@
     "Dark Forest Theory": "黑暗森林法则"
   },
   "page_count": 202,
-  "generated": "2026-04-27T04:08:39Z"
+  "generated": "2026-04-27T04:13:30Z"
 }

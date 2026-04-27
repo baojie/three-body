@@ -318,3 +318,6 @@
 {"round": 317, "type": "enrich-page", "page": "三体星系", "result": "accept", "desc": "pn 6→10(+4内联引文), score 58→67", "ts": "2026-04-27T03:58:32Z"}
 {"round": 318, "type": "enrich-page", "page": "逃亡主义", "result": "accept", "desc": "pn 5→10(+5内联引文), score 56→66", "ts": "2026-04-27T04:00:25Z"}
 {"round": 319, "type": "reflect-w5", "page": "—", "result": "accept", "desc": "模式A：连续28轮accept，pn策略有效，prose短板需关注", "ts": "2026-04-27T04:01:02Z"}
+{"round": 320, "type": "enrich-page", "page": "费米悖论", "result": "accept", "desc": "补入5条PN引文，score 56→68（pn 5→10，h2 4→5）", "ts": "2026-04-27T04:09:35Z"}
+{"round": 321, "type": "enrich-page", "page": "宇宙闪烁", "result": "accept", "desc": "补入5条PN引文，score 56→68（pn 5→10）", "ts": "2026-04-27T04:11:55Z"}
+{"round": 322, "type": "enrich-page", "page": "引力波广播", "result": "accept", "desc": "补入5条PN引文，score 56→68（pn 5→10）", "ts": "2026-04-27T04:13:14Z"}
