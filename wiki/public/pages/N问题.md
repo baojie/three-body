@@ -6,7 +6,7 @@ aliases: [N问题, Nostalgia问题, 思乡病, N-problem]
 tags: [概念, 三体II, 心理学, 自然选择号, 章北海]
 description: 永不回归的太空远航中，官兵产生的思乡病（Nostalgia）——渴望返回地球的心理倾向，是舰队心理工作的核心课题
 books: [三体II, 三体III]
-quality: standard
+quality: featured
 ---
 # N问题
 
