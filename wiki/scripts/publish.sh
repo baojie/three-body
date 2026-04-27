@@ -24,4 +24,7 @@ echo "[publish] 记录修订到 history/ + recent.json..."
     python3 "$SCRIPT_DIR/record_revision.py" "$slug" --author butler || true
 done
 
+echo "[publish] 更新知识量快照..."
+python3 "$SCRIPT_DIR/compute_knowledge.py"
+
 echo "[publish] 完成。请 git add 并提交。"
