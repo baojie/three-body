@@ -38,7 +38,7 @@ three-body/
 │   │   ├── plugins/       # 插件（pn-citation、footnote、math 等）
 │   │   ├── pages/         # 词条 Markdown 文件（含章节页）
 │   │   ├── pages.json     # 页面注册表（由脚本生成）
-│   │   └── recent.json    # 最近修订记录
+│   │   └── recent.jsonl   # 最近修订记录（append-only，前端直接读取）
 │   └── scripts/           # 构建与维护脚本
 ├── docs/                  # GitHub Pages 输出（发布目录）
 ├── skills/                # Butler 管家行动规范
