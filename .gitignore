@@ -1,2 +1,23 @@
 wiki/logs/wiki-server.log
+
+# Python
 *.pyc
+*.pyo
+__pycache__/
+.venv/
+venv/
+
+# Node
+node_modules/
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Editor
+*.swp
+*.swo
+
+# Locks / temp
+*.lock
+*.tmp
