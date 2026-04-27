@@ -12,10 +12,19 @@ hook 读取对应 slug 的文件并消费，避免多实例并发时相互覆盖
 import json, subprocess, sys
 from pathlib import Path
 
-ROOT  = Path(__file__).resolve().parents[3]
-PAGES = ROOT / "wiki/public/pages"
-REC   = ROOT / "wiki/scripts/record_revision.py"
-PENDING_DIR = ROOT / "wiki/logs/butler"
+
+def _find_root(file_path: str) -> Path | None:
+    """Find project root by locating wiki/scripts/ in the path's parent chain."""
+    for parent in Path(file_path).resolve().parents:
+        if (parent / "wiki" / "scripts").is_dir():
+            return parent
+    return None
+
+
+ROOT = None  # resolved lazily after reading stdin
+PAGES = None
+REC   = None
+PENDING_DIR = None
 
 
 def _consume_pending(slug: str) -> tuple[str, str]:
@@ -39,6 +48,8 @@ def _consume_pending(slug: str) -> tuple[str, str]:
 
 
 def main():
+    global ROOT, PAGES, REC, PENDING_DIR
+
     try:
         payload = json.load(sys.stdin)
     except Exception:
@@ -48,6 +59,13 @@ def main():
     file_path  = tool_input.get("file_path", "")
     if not file_path:
         sys.exit(0)
+
+    ROOT = _find_root(file_path)
+    if ROOT is None:
+        sys.exit(0)
+    PAGES       = ROOT / "wiki/public/pages"
+    REC         = ROOT / "wiki/scripts/record_revision.py"
+    PENDING_DIR = ROOT / "wiki/logs/butler"
 
     p = Path(file_path)
     try:
