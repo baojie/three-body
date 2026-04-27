@@ -2,25 +2,23 @@
 """record_revision.py — 为 wiki/public/pages/<page>.md 写入一条修订记录。
 
 产出:
-  1. wiki/public/history/<page>.json   (per-page 索引，追加 entry)
-  2. wiki/public/recent.json           (全局修订日志，滚动窗口 1000 条)
+  1. wiki/public/history/<page>.json   (per-page 索引，flock 保护)
+  2. wiki/public/recent.jsonl          (全局修订日志，O_APPEND 原子追加)
+
+recent.json 由 rebuild_recent.py 在发布时从 recent.jsonl 重建，供前端读取。
 
 rev_id 格式: YYYYMMDD-HHMMSS-<sha256[:6]>  (UTC)
 """
 from __future__ import annotations
-import argparse, hashlib, json, sys
-from datetime import datetime, timezone, timedelta
+import argparse, fcntl, hashlib, json, os, sys
+from datetime import datetime, timezone
 from pathlib import Path
 
-ROOT   = Path(__file__).resolve().parents[2]
-PUBLIC = ROOT / "wiki/public"
-PAGES  = PUBLIC / "pages"
-HIST   = PUBLIC / "history"
-RECENT = PUBLIC / "recent.json"
-
-WINDOW_SIZE   = 1000
-ARCHIVE_BATCH = 500
-LOG_DIR       = ROOT / "wiki/logs/recent"
+ROOT    = Path(__file__).resolve().parents[2]
+PUBLIC  = ROOT / "wiki/public"
+PAGES   = PUBLIC / "pages"
+HIST    = PUBLIC / "history"
+RECENT  = PUBLIC / "recent.jsonl"
 
 
 def _iso(dt: datetime) -> str:
@@ -57,73 +55,59 @@ def main() -> int:
     rev_id = f"{now.strftime('%Y%m%d-%H%M%S')}-{sha[:6]}"
     ts_iso = _iso(now)
 
-    # ── per-page history ──────────────────────────────────────────────────────
+    # ── per-page history（flock 排他锁，防并发覆写）────────────────────────────
     HIST.mkdir(exist_ok=True)
     page_json = HIST / f"{page}.json"
-    if page_json.exists():
-        data = json.loads(page_json.read_text(encoding="utf-8"))
-    else:
-        data = {"page": page, "latest_rev_id": None, "revision_count": 0, "revisions": []}
 
-    if data["revisions"] and data["revisions"][0].get("content_hash") == f"sha256:{sha}":
-        print(f"= {page} 内容与 latest 相同，跳过")
-        return 0
+    # 以 a+ 模式打开保证文件存在，再 flock
+    with page_json.open("a+", encoding="utf-8") as fh:
+        fcntl.flock(fh, fcntl.LOCK_EX)
+        fh.seek(0)
+        raw = fh.read().strip()
+        if raw:
+            data = json.loads(raw)
+        else:
+            data = {"page": page, "latest_rev_id": None, "revision_count": 0, "revisions": []}
 
-    size_before = data["revisions"][0]["size"] if data["revisions"] else 0
-    size_after  = len(content.encode("utf-8"))
-    entry = {
-        "rev_id":       rev_id,
-        "timestamp":    ts_iso,
-        "author":       args.author,
-        "summary":      args.summary or f"{args.author} {args.action}",
-        "parent_rev":   data["latest_rev_id"],
-        "content_hash": f"sha256:{sha}",
-        "size_before":  size_before,
-        "size":         size_after,
-        "content":      content,
-    }
-    if args.action == "delete":
-        entry["action"] = "delete"
+        if data["revisions"] and data["revisions"][0].get("content_hash") == f"sha256:{sha}":
+            print(f"= {page} 内容与 latest 相同，跳过")
+            return 0
 
-    data["revisions"].insert(0, entry)
-    data["latest_rev_id"]  = rev_id
-    data["revision_count"] = len(data["revisions"])
-    if args.action == "delete":
-        data["deleted"]    = True
-        data["deleted_at"] = ts_iso
+        size_before = data["revisions"][0]["size"] if data["revisions"] else 0
+        size_after  = len(content.encode("utf-8"))
+        entry = {
+            "rev_id":       rev_id,
+            "timestamp":    ts_iso,
+            "author":       args.author,
+            "summary":      args.summary or f"{args.author} {args.action}",
+            "parent_rev":   data["latest_rev_id"],
+            "content_hash": f"sha256:{sha}",
+            "size_before":  size_before,
+            "size":         size_after,
+            "content":      content,
+        }
+        if args.action == "delete":
+            entry["action"] = "delete"
 
-    page_json.write_text(
-        json.dumps(data, ensure_ascii=False, indent=2) + "\n", encoding="utf-8"
-    )
+        data["revisions"].insert(0, entry)
+        data["latest_rev_id"]  = rev_id
+        data["revision_count"] = len(data["revisions"])
+        if args.action == "delete":
+            data["deleted"]    = True
+            data["deleted_at"] = ts_iso
 
-    # ── recent.json ───────────────────────────────────────────────────────────
-    if RECENT.exists():
-        recent = json.loads(RECENT.read_text(encoding="utf-8"))
-        # 迁移旧 {"recent": [...]} 格式
-        if "recent" in recent and "entries" not in recent:
-            recent = {"entries": recent["recent"]}
-    else:
-        recent = {"entries": []}
+        # a+ 模式下 write() 永远追加到 EOF，必须先 truncate(0) 再写
+        fh.seek(0)
+        fh.truncate(0)
+        fh.write(json.dumps(data, ensure_ascii=False, indent=2) + "\n")
+        # flock 在 close 时自动释放
 
-    rotations = recent.get("rotations", 0)
-    entries   = recent.get("entries", [])
-
-    new_entry = {"page": page, **{k: v for k, v in entry.items() if k != "content"}}
-    entries.append(new_entry)
-
-    if len(entries) > WINDOW_SIZE:
-        batch    = entries[:ARCHIVE_BATCH]
-        entries  = entries[ARCHIVE_BATCH:]
-        rotations += 1
-        LOG_DIR.mkdir(parents=True, exist_ok=True)
-        lines = "\n".join(json.dumps(e, ensure_ascii=False) for e in batch) + "\n"
-        (LOG_DIR / f"recent.{rotations}.jsonl").write_text(lines, encoding="utf-8")
-        print(f"  [archive] {len(batch)} entries → wiki/logs/recent/recent.{rotations}.jsonl")
-
-    recent = {"entries": entries, "rotations": rotations}
-    RECENT.write_text(
-        json.dumps(recent, ensure_ascii=False, indent=2) + "\n", encoding="utf-8"
-    )
+    # ── recent.jsonl（O_APPEND 原子追加，无需锁）─────────────────────────────
+    RECENT.parent.mkdir(exist_ok=True)
+    recent_entry = {"page": page, **{k: v for k, v in entry.items() if k != "content"}}
+    line = json.dumps(recent_entry, ensure_ascii=False) + "\n"
+    with RECENT.open("a", encoding="utf-8") as f:
+        f.write(line)
 
     delta = size_after - size_before
     print(f"✓ {page} rev={rev_id} size={size_before}→{size_after}({'+' if delta>=0 else ''}{delta}) author={args.author}")
