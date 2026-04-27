@@ -231,6 +231,25 @@
       "quality": "featured",
       "quality_score": 42
     },
+    "V装具": {
+      "type": "technology",
+      "label": "V装具",
+      "aliases": [
+        "V装具",
+        "V装具套装",
+        "体感服"
+      ],
+      "tags": [
+        "科技",
+        "三体I",
+        "三体游戏",
+        "汪淼"
+      ],
+      "path": "pages/V装具.md",
+      "description": "全沉浸式VR体感游戏套装，由全视角显示头盔和感应服组成；汪淼多次通过V装具进入三体游戏，直接感受三星系文明的世界",
+      "quality": "standard",
+      "quality_score": 59
+    },
     "丁仪": {
       "type": "person",
       "label": "丁仪",
@@ -2265,8 +2284,8 @@
       ],
       "path": "pages/三体文化.md",
       "description": "以三体游戏为主要传播载体的文化现象，由地球三体组织推广，在幸存派崛起中扮演重要角色",
-      "quality": "standard",
-      "quality_score": 36
+      "quality": "featured",
+      "quality_score": 43
     },
     "三体文明": {
       "type": "civilization",
@@ -2638,9 +2657,9 @@
         "拜占庭"
       ],
       "path": "pages/乌尔班.md",
-      "description": "匈牙利工程师，原为拜占庭制炮，因未能获酬转投穆罕默德二世，制造了攻陷君士坦丁堡的超级大炮",
-      "quality": "basic",
-      "quality_score": 29
+      "description": "匈牙利工程师，原为拜占庭制炮，因未能获酬转投穆罕默德二世，制造了攻陷君士坦丁堡的超级大炮；是叛离与反噬的象征，法扎兰将其用作拒绝相信狄奥伦娜的类比",
+      "quality": "featured",
+      "quality_score": 46
     },
     "乔依娜": {
       "type": "person",
@@ -2763,7 +2782,6 @@
         "概念",
         "三体III",
         "二向箔",
-        "太阳系毁灭",
         "黑暗森林打击"
       ],
       "path": "pages/二维化.md",
@@ -3175,9 +3193,9 @@
         "舰队"
       ],
       "path": "pages/信使号.md",
-      "description": "末日战役中与创世纪号发生追尾相撞的战舰，两舰舰体被撕裂，外泄空气形成呼啸飓风将舰内人员吹向太空",
-      "quality": "basic",
-      "quality_score": 28
+      "description": "末日战役疏散混乱中与创世纪号发生追尾相撞的战舰；两舰舰体被撕裂，外泄空气形成呼啸飓风，将舰内人员吹向太空——与头对头的瞬间碎裂不同，追尾形成了漂流的残骸尾迹",
+      "quality": "standard",
+      "quality_score": 33
     },
     "信念中心": {
       "type": "place",
@@ -3319,12 +3337,13 @@
         "三体III",
         "掩体纪元",
         "土星",
-        "光速飞船"
+        "光速飞船",
+        "黑域"
       ],
       "path": "pages/光速一号.md",
-      "description": "土星群落中专门为光速飞船研究建立的太空城，六十年大规模研究未取得任何突破",
-      "quality": "basic",
-      "quality_score": 29
+      "description": "土星群落中专为降低真空光速建立的科学城，与光速二号并列为两大研究基地；六十年大规模研究无突破，唯一成果是环日加速器——反而意外创造了黑域计划的可能",
+      "quality": "standard",
+      "quality_score": 51
     },
     "光速二号": {
       "type": "place",
@@ -3707,12 +3726,13 @@
       "tags": [
         "飞船",
         "三体II",
-        "末日战役"
+        "末日战役",
+        "联合舰队"
       ],
       "path": "pages/创世纪号.md",
-      "description": "末日战役中在舰队逃散时与\"信使\"号发生追尾相撞、两舰同归于尽的战舰",
-      "quality": "basic",
-      "quality_score": 24
+      "description": "末日战役疏散混乱中被信使号追尾撞击的战舰；舰体被撕裂，外泄空气将舰内人员吹向太空，残骸拖尾漂行——名为\"创世纪\"，终结于最大规模的人类舰队毁灭",
+      "quality": "standard",
+      "quality_score": 36
     },
     "前进四": {
       "type": "concept",
@@ -3930,14 +3950,15 @@
       ],
       "tags": [
         "概念",
-        "三体II",
+        "三体III",
         "危机纪元",
-        "社会心理"
+        "社会心理",
+        "历史"
       ],
       "path": "pages/危机幼稚症.md",
-      "description": "危机纪元头二十年人类社会的非理性行为模式，因三体危机带来的文化冲击所致",
-      "quality": "basic",
-      "quality_score": 25
+      "description": "历史学家对危机纪元头二十年人类社会非理性行为的概括；个体层面是对突然威胁的应激，而社会整体层面则可能是三体危机带来的深层文化冲击",
+      "quality": "standard",
+      "quality_score": 33
     },
     "危机纪元": {
       "type": "era",
@@ -4051,8 +4072,8 @@
       ],
       "path": "pages/反重力.md",
       "description": "人类在掩体纪元掌握的一种克服重力的技术，但因能耗巨大而无法投入实际使用",
-      "quality": "basic",
-      "quality_score": 33
+      "quality": "standard",
+      "quality_score": 38
     },
     "古筝行动": {
       "type": "event",
@@ -4237,7 +4258,7 @@
       ],
       "path": "pages/君士坦丁十一世.md",
       "description": "拜占庭帝国末代皇帝，三体III第一章历史幻境的中心人物；比父兄更现实，却在末日前夕面对狄奥伦娜的四维神迹，在月食的凶兆中预感城市将亡",
-      "quality": "standard",
+      "quality": "featured",
       "quality_score": 66
     },
     "含义坐标": {
@@ -4383,7 +4404,7 @@
       ],
       "path": "pages/哈勃三号.md",
       "description": "危机纪元建造的镜片直径百米的太空望远镜，首次观测到三体行星，林格和斐兹罗亲见其建成",
-      "quality": "standard",
+      "quality": "featured",
       "quality_score": 36
     },
     "哈勃二号": {
@@ -4451,12 +4472,13 @@
         "三体III",
         "四维空间",
         "威慑纪元",
-        "宇宙遗迹"
+        "宇宙遗迹",
+        "魔戒"
       ],
       "path": "pages/四维碎片.md",
-      "description": "发现于魔戒附近的封闭四维实体，具有智慧制造特征，包括金字塔形、十字形等几何体，是宇宙高等文明的遗迹",
-      "quality": "basic",
-      "quality_score": 25
+      "description": "发现于魔戒附近的封闭四维实体，具有明显智慧制造特征；金字塔形、十字形等几何体证明高等文明曾活跃于高维空间，是宇宙文明演化史的实物证据",
+      "quality": "standard",
+      "quality_score": 33
     },
     "四维空间": {
       "type": "concept",
@@ -4511,8 +4533,8 @@
       ],
       "path": "pages/国防部.md",
       "description": "国家最高军事行政机构；美国国防部长泰勒是第一位面壁者，其技术进步哲学和反恐时代的战略困境塑造了他的面壁思路",
-      "quality": "standard",
-      "quality_score": 36
+      "quality": "featured",
+      "quality_score": 44
     },
     "国际法": {
       "type": "concept",
@@ -5997,12 +6019,13 @@
         "概念",
         "三体III",
         "黑域",
-        "防御"
+        "防御",
+        "宇宙安全声明"
       ],
       "path": "pages/宇宙保险柜.md",
-      "description": "黑域的别称，因其能粉碎任何穿越边界的物体（包括强互作用力材料）而得名",
-      "quality": "basic",
-      "quality_score": 25
+      "description": "黑域的别称；光速降低到极低值的边界粉碎一切穿入物体（含强互作用力材料），使黑域成为已知最彻底的防御屏障",
+      "quality": "standard",
+      "quality_score": 35
     },
     "宇宙学": {
       "type": "concept",
@@ -6273,6 +6296,43 @@
       "description": "宇宙在大爆炸后诞生并持续演化，新宇宙诞生后小宇宙可能建立出口进入其中——这是归零者信仰和小宇宙体系的终极背景",
       "quality": "featured",
       "quality_score": 38
+    },
+    "宇宙逃亡": {
+      "type": "concept",
+      "label": "宇宙逃亡",
+      "aliases": [
+        "宇宙逃亡"
+      ],
+      "tags": [
+        "概念",
+        "三体II",
+        "逃亡主义",
+        "失败主义",
+        "危机纪元",
+        "章北海"
+      ],
+      "path": "pages/宇宙逃亡.md",
+      "description": "危机纪元讨论的人类文明出走太阳系方案；因\"谁走谁留\"的道德悖论被视为不可行，联合国通过117号决议宣布逃亡主义为非法，但章北海和钢印族秘密将其作为终极使命",
+      "quality": "standard",
+      "quality_score": 48
+    },
+    "宇宙遗迹": {
+      "type": "concept",
+      "label": "宇宙遗迹",
+      "aliases": [
+        "宇宙遗迹",
+        "文明遗迹"
+      ],
+      "tags": [
+        "概念",
+        "三体III",
+        "四维空间",
+        "宇宙社会学"
+      ],
+      "path": "pages/宇宙遗迹.md",
+      "description": "宇宙高等文明在消亡后留存于宇宙中的实物证据，包括魔戒和四维碎片等封闭四维实体",
+      "quality": "basic",
+      "quality_score": 25
     },
     "宇宙闪烁": {
       "type": "concept",
@@ -6593,6 +6653,24 @@
       "description": "由油膜球氢弹爆炸产生的人造太空颗粒云，用于追踪水滴轨道；也是天文学家追踪三体舰队的自然路标",
       "quality": "featured",
       "quality_score": 54
+    },
+    "尼尔·斯科特": {
+      "type": "person",
+      "label": "尼尔·斯科特",
+      "aliases": [
+        "尼尔·斯科特",
+        "Neil Scott"
+      ],
+      "tags": [
+        "人物",
+        "三体III",
+        "青铜时代号",
+        "黑暗战役"
+      ],
+      "path": "pages/尼尔·斯科特.md",
+      "description": "青铜时代号舰长，上校，末日战役后主导对量子号发动攻击，因反人类罪被判终身监禁；以\"上岸的鱼再也不是鱼\"著称于世",
+      "quality": "standard",
+      "quality_score": 43
     },
     "山杉惠子": {
       "type": "person",
@@ -7592,6 +7670,23 @@
       "quality": "featured",
       "quality_score": 67
     },
+    "技术的真相": {
+      "type": "book",
+      "label": "技术的真相",
+      "aliases": [
+        "技术的真相"
+      ],
+      "tags": [
+        "书籍",
+        "三体II",
+        "面壁者",
+        "泰勒"
+      ],
+      "path": "pages/技术的真相.md",
+      "description": "面壁者弗里德里克·泰勒的代表著作，阐述\"大国发展技术实为小国通向霸权铺基石\"的战略哲学",
+      "quality": "basic",
+      "quality_score": 23
+    },
     "拉格朗日点": {
       "type": "concept",
       "label": "拉格朗日点",
@@ -7685,6 +7780,24 @@
       "description": "以启示号为主舰组建的小型探测编队，负责追踪和探查太阳系附近神秘引力波信号源，发现了不可见的引力波发射体",
       "quality": "featured",
       "quality_score": 44
+    },
+    "接触符号": {
+      "type": "concept",
+      "label": "接触符号",
+      "aliases": [
+        "接触符号",
+        "Contact Symbol"
+      ],
+      "tags": [
+        "概念",
+        "三体I",
+        "社会学",
+        "SETI"
+      ],
+      "path": "pages/接触符号.md",
+      "description": "兰德社会学家比尔·马修提出的理论：与外星文明的接触本身就是一个\"符号\"，无论内容如何，都将对人类社会产生相同的震荡效应",
+      "quality": "basic",
+      "quality_score": 28
     },
     "掩体世界": {
       "type": "place",
@@ -7882,9 +7995,9 @@
         "舰队"
       ],
       "path": "pages/无工质推进.md",
-      "description": "用核聚变辐射能量直接推进飞船，无需携带工质，是危机纪元太空军力推的远程航行技术路线",
-      "quality": "standard",
-      "quality_score": 31
+      "description": "用核聚变辐射能量直接推进飞船，无需携带工质，是危机纪元太空军力推的远程航行技术路线；最终被历史证明是正确方向，却也是三体文明借智子锁住人类的技术陷阱",
+      "quality": "featured",
+      "quality_score": 55
     },
     "无故事王国": {
       "type": "place",
@@ -7971,8 +8084,8 @@
       ],
       "path": "pages/明日号.md",
       "description": "掩体纪元的大型科考飞船，从海王星群落起航与启示号探测编队会合，携带更完善设备研究纸条文物",
-      "quality": "standard",
-      "quality_score": 28
+      "quality": "featured",
+      "quality_score": 38
     },
     "星图": {
       "type": "technology",
@@ -8496,12 +8609,14 @@
         "纪元",
         "三体III",
         "末日战役",
-        "太空舰队"
+        "太空舰队",
+        "青铜时代号",
+        "万有引力号"
       ],
       "path": "pages/末日纪元.md",
-      "description": "末日战役后的人类太空时代；联合舰队2000余艘战舰被水滴摧毁，幸存的青铜时代号/万有引力号于此纪元返航，太阳系舰队以残余力量重建",
-      "quality": "basic",
-      "quality_score": 30
+      "description": "末日战役后的人类历史纪元；联合舰队2000余艘战舰被水滴歼灭，青铜时代号和万有引力号作为末日英雄归来，太阳系舰队以参战精英为骨干重建",
+      "quality": "standard",
+      "quality_score": 43
     },
     "朴义君": {
       "type": "person",
@@ -8769,12 +8884,13 @@
         "三体II",
         "核聚变",
         "太空军",
-        "飞船技术"
+        "飞船技术",
+        "无工质推进"
       ],
       "path": "pages/核星.md",
-      "description": "太空飞船无工质辐射推进实验失败时在高空发出的强烈光芒，因形如星星而得名，每次爆发标志着一次试验失败",
-      "quality": "basic",
-      "quality_score": 28
+      "description": "无工质辐射推进实验失败时，在三万公里高空产生的强烈光芒；因形如星星而得名，每次爆发标志着一次试验失败；希恩斯借此断言人类必将遭遇智子技术障碍",
+      "quality": "standard",
+      "quality_score": 41
     },
     "核武器": {
       "type": "technology",
@@ -8993,12 +9109,13 @@
         "概念",
         "三体III",
         "死线",
-        "宇宙地理"
+        "宇宙地理",
+        "零光速"
       ],
       "path": "pages/死柱.md",
-      "description": "近距离观察时死线呈现出的柱状形态，而非远观时的线状",
-      "quality": "basic",
-      "quality_score": 25
+      "description": "近距离观察死线时呈现的柱状形态——远观为线，近看直径达二三十米；死线/死柱被关一帆定义为\"宇宙中最死的东西\"，标志着零光速区的范围",
+      "quality": "standard",
+      "quality_score": 50
     },
     "死线": {
       "type": "concept",
@@ -9073,6 +9190,24 @@
       "description": "第三位面壁者，英国神经科学家，研究爱的神经机制，实际战略是改变人类的爱的本能以抵抗三体文明，被破壁人揭穿后精神崩溃",
       "quality": "featured",
       "quality_score": 67
+    },
+    "比尔·马修": {
+      "type": "person",
+      "label": "比尔·马修",
+      "aliases": [
+        "比尔·马修",
+        "Bill Matthew"
+      ],
+      "tags": [
+        "人物",
+        "三体I",
+        "SETI",
+        "社会学"
+      ],
+      "path": "pages/比尔·马修.md",
+      "description": "兰德思想库社会学学者，提出\"接触符号\"理论：与外星文明的接触不论内容如何，都将产生相同的社会震荡效应",
+      "quality": "standard",
+      "quality_score": 38
     },
     "毕云峰": {
       "type": "person",
@@ -9197,7 +9332,7 @@
       ],
       "path": "pages/法扎兰.md",
       "description": "拜占庭大臣，征召守城力量的能臣，主导狄奥伦娜的刺杀任务；既调遣跟踪者监视其行踪，又在关键时刻选择放手，最终命人将她刺死",
-      "quality": "standard",
+      "quality": "featured",
       "quality_score": 67
     },
     "泰勒": {
@@ -9229,12 +9364,13 @@
         "概念",
         "三体I",
         "物理学",
-        "天文学"
+        "天文学",
+        "三日凌空"
       ],
       "path": "pages/洛希极限.md",
-      "description": "法国天文学家洛希证明的临界距离——较小天体接近大天体时会被潮汐力撕碎的最近距离",
-      "quality": "basic",
-      "quality_score": 29
+      "description": "法国天文学家洛希证明的临界距离——较小天体接近大天体时被潮汐力撕碎的最近距离；在三体I中，三日凌空时三颗恒星对三体行星产生的潮汐力超过洛希极限，意味着行星有被撕碎的危险",
+      "quality": "standard",
+      "quality_score": 35
     },
     "洛文斯基": {
       "type": "person",
@@ -9489,7 +9625,7 @@
       ],
       "path": "pages/热那亚.md",
       "description": "地中海城邦，在拜占庭围城之战中派遣雇佣兵守卫君士坦丁堡，并派船队冲破封锁送入援兵；最终与守城各方在圣索菲亚大教堂共同迎接末日之战",
-      "quality": "standard",
+      "quality": "featured",
       "quality_score": 36
     },
     "爱因斯坦": {
@@ -9615,7 +9751,7 @@
       ],
       "path": "pages/狄奥伦娜.md",
       "description": "三体III第一章拜占庭历史幻境中的女子，以四维穿越能力取走密室圣杯并放入新鲜葡萄为证，承接刺杀苏丹任务却失败，最终被法扎兰的跟踪者刺死；以历史寓言形式引入四维空间概念",
-      "quality": "standard",
+      "quality": "featured",
       "quality_score": 68
     },
     "猜疑链": {
@@ -10081,12 +10217,13 @@
         "科技",
         "三体II",
         "太空",
-        "飞船"
+        "飞船",
+        "危机纪元"
       ],
       "path": "pages/磁力腰带.md",
-      "description": "危机纪元太空舰队使用的失重移动辅助装备，利用超导磁场与舱壁磁场交互实现定向移动",
-      "quality": "basic",
-      "quality_score": 21
+      "description": "危机纪元太空舰队的失重移动装备；超导材料制成，环形电流产生的磁场与舱壁磁场交互，使舰员可通过手持控制器在飞船内自由定向移动",
+      "quality": "standard",
+      "quality_score": 36
     },
     "磁场": {
       "type": "concept",
@@ -10290,8 +10427,8 @@
       ],
       "path": "pages/穆罕默德二世.md",
       "description": "奥斯曼苏丹，绰号\"征服者\"，1453年攻陷君士坦丁堡，灭拜占庭帝国；三体III第一章的历史背景中心人物",
-      "quality": "basic",
-      "quality_score": 27
+      "quality": "featured",
+      "quality_score": 42
     },
     "空灵画师": {
       "type": "person",
@@ -10327,8 +10464,8 @@
       ],
       "path": "pages/空间折叠.md",
       "description": "通过无限增大空间曲率将大范围空间对折、使遥远两点贴合的宇宙航行构想——本质上是\"宇宙拖曳\"而非飞行；理论上能实现瞬间到达，但技术难度远超曲率驱动",
-      "quality": "standard",
-      "quality_score": 37
+      "quality": "featured",
+      "quality_score": 41
     },
     "空间曲率": {
       "type": "concept",
@@ -10395,12 +10532,13 @@
         "概念",
         "三体III",
         "信息技术",
-        "威慑纪元"
+        "威慑纪元",
+        "超信息社会"
       ],
       "path": "pages/窗口雪崩.md",
-      "description": "威慑纪元超信息社会中，突发重大事件时大量信息窗口从各方向涌现、淹没原有显示界面的现象，反而使当事人在震惊中难以即时判断发生了什么",
-      "quality": "basic",
-      "quality_score": 28
+      "description": "威慑纪元超信息社会中突发重大事件时的信息呈现现象；大量信息窗口从各方向涌现如彩色雪崩，反而造成\"震惊中不知所措、搞不清发生了什么\"的信息悖论",
+      "quality": "standard",
+      "quality_score": 36
     },
     "章北海": {
       "type": "person",
@@ -10624,7 +10762,7 @@
       "path": "pages/纳尔逊号.md",
       "description": "太阳系舰队战舰，末日战役中首次对水滴探测器实施激光拦截的战舰，拦截无效但产生壮观的可见光",
       "quality": "standard",
-      "quality_score": 33
+      "quality_score": 37
     },
     "纳米丝": {
       "type": "technology",
@@ -10968,6 +11106,24 @@
       "quality": "featured",
       "quality_score": 60
     },
+    "联邦舰队": {
+      "type": "organization",
+      "label": "联邦舰队",
+      "aliases": [
+        "联邦舰队",
+        "太阳系联邦舰队"
+      ],
+      "tags": [
+        "组织",
+        "三体III",
+        "掩体纪元",
+        "军事"
+      ],
+      "path": "pages/联邦舰队.md",
+      "description": "掩体纪元太阳系联邦的军事力量，由末日战役幸存战舰组成，负责维护联邦秩序；曾封锁星环城以阻止曲率驱动研究",
+      "quality": "standard",
+      "quality_score": 57
+    },
     "聚变反应堆": {
       "type": "technology",
       "label": "聚变反应堆",
@@ -11077,6 +11233,23 @@
       "description": "亚洲舰队第三分舰队旗舰，恒星级战舰，章北海执行叛逃计划的工具，末日战役后人类仅存五艘战舰之一，最终在黑暗战役中被终极规律号摧毁",
       "quality": "featured",
       "quality_score": 62
+    },
+    "自由女神像": {
+      "type": "place",
+      "label": "自由女神像（信念中心）",
+      "aliases": [
+        "自由女神像"
+      ],
+      "tags": [
+        "地点",
+        "三体II",
+        "信念中心",
+        "面壁计划"
+      ],
+      "path": "pages/自由女神像.md",
+      "description": "竖立于信念中心门前的缩小比例自由女神像复制品，基座上刻有被篡改的诗文，象征\"自由\"与\"控制\"的矛盾张力",
+      "quality": "basic",
+      "quality_score": 28
     },
     "航天服": {
       "type": "technology",
@@ -11577,6 +11750,25 @@
       "quality": "featured",
       "quality_score": 67
     },
+    "赛巴斯蒂安·史耐德": {
+      "type": "person",
+      "label": "赛巴斯蒂安·史耐德",
+      "aliases": [
+        "赛巴斯蒂安·史耐德",
+        "史耐德",
+        "Sebastian Schneider"
+      ],
+      "tags": [
+        "人物",
+        "三体III",
+        "青铜时代号",
+        "黑暗战役"
+      ],
+      "path": "pages/赛巴斯蒂安·史耐德.md",
+      "description": "青铜时代号武器系统目标甄别和攻击模式控制军官，少校；在审判中以\"太空本身就是一个思想钢印\"解释太空极权形成机制，最终死于宪兵激光",
+      "quality": "standard",
+      "quality_score": 47
+    },
     "赫尔辛根默斯肯": {
       "type": "place",
       "label": "赫尔辛根默斯肯",
@@ -11739,8 +11931,8 @@
       ],
       "path": "pages/边缘世界.md",
       "description": "歌者所属母世界文明的宿敌，持续战争超过一万时间颗粒仍无法终结，逼迫母世界考虑以自我二向化换取最终胜利",
-      "quality": "basic",
-      "quality_score": 35
+      "quality": "standard",
+      "quality_score": 40
     },
     "过载": {
       "type": "concept",
@@ -11963,7 +12155,7 @@
       "path": "pages/量子通信.md",
       "description": "智子在青铜时代号与太阳系之间建立的量子通信信道；三体文明掌握的超越引力波和中微子通信的更高级通信手段",
       "quality": "featured",
-      "quality_score": 39
+      "quality_score": 43
     },
     "针眼画师": {
       "type": "person",
@@ -12579,12 +12771,13 @@
         "概念",
         "三体III",
         "四维空间",
-        "威慑纪元"
+        "威慑纪元",
+        "魔戒"
       ],
       "path": "pages/高维质感.md",
-      "description": "人类第一次近距离观测四维物体（魔戒）时体验到的视觉与空间感——纵深感、包容感与无数叠加影像",
-      "quality": "basic",
-      "quality_score": 25
+      "description": "人类第一次近距离观测四维物体（魔戒）时体验到的视觉与空间感——无数叠加\"魔戒\"的影像、巨大的纵深感与包容性；是三维生命感知高维空间时的特殊心理现象",
+      "quality": "standard",
+      "quality_score": 40
     },
     "高边疆号": {
       "type": "technology",
@@ -12674,6 +12867,25 @@
       "description": "云天明童话中饕餮鱼隐喻的IDC解读：以自我复制纳米机器在太阳系外围形成智能屏障，技术上可行但耗时上万年，最终被放弃",
       "quality": "featured",
       "quality_score": 46
+    },
+    "鲍里斯·洛文斯基": {
+      "type": "person",
+      "label": "鲍里斯·洛文斯基",
+      "aliases": [
+        "鲍里斯·洛文斯基",
+        "洛文斯基",
+        "Boris Lovenski"
+      ],
+      "tags": [
+        "人物",
+        "三体III",
+        "青铜时代号",
+        "黑暗战役"
+      ],
+      "path": "pages/鲍里斯·洛文斯基.md",
+      "description": "青铜时代号副舰长，中校，末日战役后负责全舰后勤配给，在量子号事件审判中出庭作证",
+      "quality": "basic",
+      "quality_score": 35
     },
     "黑域": {
       "type": "concept",
@@ -12873,6 +13085,9 @@
     "SETI": "SETI",
     "搜寻地外智慧生命": "SETI",
     "外星文明搜索": "SETI",
+    "V装具": "V装具",
+    "V装具套装": "V装具",
+    "体感服": "V装具",
     "丁仪": "丁仪",
     "Ding Yi": "丁仪",
     "万年历": "万年历",
@@ -13484,6 +13699,9 @@
     "宇宙诞生": "宇宙诞生",
     "新宇宙": "宇宙诞生",
     "宇宙起源": "宇宙诞生",
+    "宇宙逃亡": "宇宙逃亡",
+    "宇宙遗迹": "宇宙遗迹",
+    "文明遗迹": "宇宙遗迹",
     "宇宙闪烁": "宇宙闪烁",
     "宇宙在闪烁": "宇宙闪烁",
     "cosmic flickering": "宇宙闪烁",
@@ -13522,6 +13740,8 @@
     "尘埃云": "尘埃云",
     "人造尘埃云": "尘埃云",
     "星际尘埃云": "尘埃云",
+    "尼尔·斯科特": "尼尔·斯科特",
+    "Neil Scott": "尼尔·斯科特",
     "山杉惠子": "山杉惠子",
     "惠子": "山杉惠子",
     "破壁人三号": "山杉惠子",
@@ -13631,6 +13851,7 @@
     "技术公有化运动": "技术公有化",
     "技术爆炸": "技术爆炸",
     "technological explosion": "技术爆炸",
+    "技术的真相": "技术的真相",
     "拉格朗日点": "拉格朗日点",
     "地日拉格朗日点": "拉格朗日点",
     "拯救派": "拯救派",
@@ -13640,6 +13861,8 @@
     "太空探测器": "探测器",
     "无人探测器": "探测器",
     "探测编队": "探测编队",
+    "接触符号": "接触符号",
+    "Contact Symbol": "接触符号",
     "掩体世界": "掩体世界",
     "掩体工程": "掩体工程",
     "掩体建设计划": "掩体工程",
@@ -13780,6 +14003,8 @@
     "home planet": "母星",
     "比尔·希恩斯": "比尔·希恩斯",
     "比尔·海因斯": "比尔·希恩斯",
+    "比尔·马修": "比尔·马修",
+    "Bill Matthew": "比尔·马修",
     "毕云峰": "毕云峰",
     "水星": "水星",
     "Mercury": "水星",
@@ -13985,6 +14210,8 @@
     "太阳系联合舰队": "联合舰队",
     "地球联合舰队": "联合舰队",
     "三大舰队联合编队": "联合舰队",
+    "联邦舰队": "联邦舰队",
+    "太阳系联邦舰队": "联邦舰队",
     "聚变反应堆": "聚变反应堆",
     "核聚变反应堆": "聚变反应堆",
     "聚变堆": "聚变反应堆",
@@ -13997,6 +14224,8 @@
     "浸泡复活": "脱水",
     "自然选择号": "自然选择号",
     "自然选择": "自然选择号",
+    "自由女神像": "自由女神像",
+    "自由女神像（信念中心）": "自由女神像",
     "航天服": "航天服",
     "spacesuit": "航天服",
     "航空母舰": "航空母舰",
@@ -14048,6 +14277,9 @@
     "费米悖论": "费米悖论",
     "Fermi Paradox": "费米悖论",
     "大沉默": "费米悖论",
+    "赛巴斯蒂安·史耐德": "赛巴斯蒂安·史耐德",
+    "史耐德": "赛巴斯蒂安·史耐德",
+    "Sebastian Schneider": "赛巴斯蒂安·史耐德",
     "赫尔辛根默斯肯": "赫尔辛根默斯肯",
     "Helsingenmorsken": "赫尔辛根默斯肯",
     "赫尔辛根山": "赫尔辛根默斯肯",
@@ -14151,6 +14383,7 @@
     "四维魔戒": "魔戒",
     "魔泡树": "魔泡树",
     "鱼群设想": "鱼群设想",
+    "Boris Lovenski": "鲍里斯·洛文斯基",
     "黑域": "黑域",
     "低光速黑洞": "黑域",
     "低光速黑域": "黑域",
@@ -14175,6 +14408,6 @@
     "默斯特罗姆漩涡": "默斯肯大旋涡",
     "Maelstrom": "默斯肯大旋涡"
   },
-  "page_count": 730,
-  "generated": "2026-04-27T18:20:52Z"
+  "page_count": 741,
+  "generated": "2026-04-27T20:21:51Z"
 }
