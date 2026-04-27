@@ -1,8 +1,11 @@
 #!/usr/bin/env python3
-"""从 git log 回填 wiki/public/history/ 和 wiki/public/recent.json。
+"""从 git log 回填 wiki/public/history/ 和 wiki/public/recent.jsonl。
 
 用 git show <hash>:<path> 获取每次提交时的实际文件内容（而非当前版本），
 保证历史记录准确反映每次提交的状态。
+
+recent.jsonl 是 append-only，每行一条 JSON 修订记录。
+recent.json（前端快照）由 rebuild_recent.py 在发布时从 recent.jsonl 重建。
 """
 import argparse, hashlib, json, subprocess, sys, os
 from datetime import datetime, timezone
@@ -12,9 +15,8 @@ ROOT        = Path(__file__).resolve().parents[2]
 PUBLIC      = ROOT / "wiki/public"
 PAGES_DIR   = PUBLIC / "pages"
 HIST_DIR    = PUBLIC / "history"
-RECENT      = PUBLIC / "recent.json"
+RECENT_JSONL = PUBLIC / "recent.jsonl"
 PAGES_PFX   = "wiki/public/pages/"
-WINDOW_SIZE = 1000
 
 
 def git(*args, text=True):
@@ -163,23 +165,14 @@ def main():
                 json.dumps(data, ensure_ascii=False, indent=2) + "\n", encoding="utf-8"
             )
 
-    # 合并 recent.json
-    if RECENT.exists():
-        existing = json.loads(RECENT.read_text(encoding="utf-8"))
-        old_entries = existing.get("entries", existing.get("recent", []))
-    else:
-        old_entries = []
+    # 追加到 recent.jsonl（O_APPEND，按时间正序写入）
+    new_recent.sort(key=lambda e: e.get("timestamp", ""))
+    if new_recent:
+        with RECENT_JSONL.open("a", encoding="utf-8") as f:
+            for e in new_recent:
+                f.write(json.dumps(e, ensure_ascii=False) + "\n")
 
-    all_entries = old_entries + new_recent
-    all_entries.sort(key=lambda e: e.get("timestamp", ""))
-    all_entries = all_entries[-WINDOW_SIZE:]
-
-    RECENT.write_text(
-        json.dumps({"entries": all_entries, "rotations": 0}, ensure_ascii=False, indent=2) + "\n",
-        encoding="utf-8"
-    )
-
-    print(f"\n完成：新增 {total} 条修订记录，recent.json 共 {len(all_entries)} 条。")
+    print(f"\n完成：新增 {total} 条修订记录，追加至 recent.jsonl（+{len(new_recent)} 条）。")
 
 
 if __name__ == "__main__":

@@ -10,7 +10,7 @@ recent.json 由 rebuild_recent.py 在发布时从 recent.jsonl 重建，供前�
 rev_id 格式: YYYYMMDD-HHMMSS-<sha256[:6]>  (UTC)
 """
 from __future__ import annotations
-import argparse, fcntl, hashlib, json, os, sys
+import argparse, difflib, fcntl, hashlib, json, os, sys
 from datetime import datetime, timezone
 from pathlib import Path
 
@@ -19,6 +19,22 @@ PUBLIC  = ROOT / "wiki/public"
 PAGES   = PUBLIC / "pages"
 HIST    = PUBLIC / "history"
 RECENT  = PUBLIC / "recent.jsonl"
+
+
+def _diff(old: str, new: str, context: int = 2) -> list[list[str]]:
+    """行级 unified diff，返回 [["+"/"-"/" ", line], ...] 去掉 @@/---/+++ 头。"""
+    chunks = []
+    for line in difflib.unified_diff(
+        old.splitlines(keepends=True),
+        new.splitlines(keepends=True),
+        n=context,
+    ):
+        if line.startswith(("--- ", "+++ ", "@@ ")):
+            continue
+        op = line[0] if line else " "
+        text = line[1:].rstrip("\n") if line else ""
+        chunks.append([op, text])
+    return chunks
 
 
 def _iso(dt: datetime) -> str:
@@ -73,8 +89,10 @@ def main() -> int:
             print(f"= {page} 内容与 latest 相同，跳过")
             return 0
 
+        parent_content = data["revisions"][0]["content"] if data["revisions"] else ""
         size_before = data["revisions"][0]["size"] if data["revisions"] else 0
         size_after  = len(content.encode("utf-8"))
+        diff_chunks = _diff(parent_content, content)
         entry = {
             "rev_id":       rev_id,
             "timestamp":    ts_iso,
@@ -103,8 +121,13 @@ def main() -> int:
         # flock 在 close 时自动释放
 
     # ── recent.jsonl（O_APPEND 原子追加，无需锁）─────────────────────────────
+    # diff 计算针对本页在 recent.jsonl 中的上一行版本（即 parent_content，已在 flock 内取得）
     RECENT.parent.mkdir(exist_ok=True)
-    recent_entry = {"page": page, **{k: v for k, v in entry.items() if k != "content"}}
+    recent_entry = {
+        "page": page,
+        **{k: v for k, v in entry.items() if k != "content"},
+        "diff": diff_chunks,
+    }
     line = json.dumps(recent_entry, ensure_ascii=False) + "\n"
     with RECENT.open("a", encoding="utf-8") as f:
         f.write(line)

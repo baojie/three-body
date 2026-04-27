@@ -9,7 +9,7 @@ ROOT="$(cd "$SCRIPT_DIR/../.." && pwd)"
 echo "[publish] 重建 pages.json..."
 python3 "$SCRIPT_DIR/build_registry.py" "$WIKI_DIR/pages" --out "$WIKI_DIR/pages.json"
 
-echo "[publish] 记录修订到 history/ + recent.json..."
+echo "[publish] 记录修订到 history/ + recent.jsonl..."
 # 检测 git 中新增或修改的页面（已暂存 + 未暂存 + 未跟踪，三种情况都覆盖）
 {
   # 已暂存的变更（index vs HEAD）

@@ -1,40 +1,72 @@
 #!/usr/bin/env python3
-"""从 wiki/public/history/*.json 重建 recent.json。
+"""独立工具：从 wiki/public/recent.jsonl 重建 recent.json（可选快照）。
 
-每个页面取最新一条 revision，按 timestamp 排序后写入。
-用于修复重复条目或从零重建。
+前端现在直接读取 recent.jsonl，不再依赖 recent.json。
+此脚本仅供手动诊断/导出使用，不再由 publish.sh 调用。
+支持 --from-history 回退模式：当 recent.jsonl 缺失时从 history/*.json 重建。
 """
-import json
+from __future__ import annotations
+import argparse, json
 from pathlib import Path
 
 ROOT    = Path(__file__).resolve().parents[2]
 PUBLIC  = ROOT / "wiki/public"
 HIST    = PUBLIC / "history"
+JSONL   = PUBLIC / "recent.jsonl"
 RECENT  = PUBLIC / "recent.json"
-LIMIT   = 1000
+LIMIT   = 600  # 前端窗口大小
 
 
-def main():
+def from_jsonl() -> list:
+    if not JSONL.exists():
+        return []
+    entries = []
+    for line in JSONL.read_text(encoding="utf-8").splitlines():
+        line = line.strip()
+        if line:
+            try:
+                entries.append(json.loads(line))
+            except json.JSONDecodeError:
+                pass
+    return entries
+
+
+def from_history() -> list:
     entries = []
     for hist_file in sorted(HIST.glob("*.json")):
         try:
             data = json.loads(hist_file.read_text(encoding="utf-8"))
-        except Exception as e:
-            print(f"  跳过 {hist_file.name}: {e}")
+        except Exception:
             continue
         revs = data.get("revisions", [])
         if not revs:
             continue
-        latest = revs[0]  # revisions[0] 是最新
-        entry  = {"page": hist_file.stem, **{k: v for k, v in latest.items() if k != "content"}}
+        latest = revs[0]
+        entry = {"page": hist_file.stem, **{k: v for k, v in latest.items() if k != "content"}}
         entries.append(entry)
+    return entries
+
+
+def main():
+    ap = argparse.ArgumentParser()
+    ap.add_argument("--from-history", action="store_true",
+                    help="忽略 recent.jsonl，从 history/*.json 重建")
+    ap.add_argument("--limit", type=int, default=LIMIT)
+    args = ap.parse_args()
+
+    if args.from_history or not JSONL.exists():
+        entries = from_history()
+        source = "history/"
+    else:
+        entries = from_jsonl()
+        source = "recent.jsonl"
 
     entries.sort(key=lambda e: e.get("timestamp", ""))
-    entries = entries[-LIMIT:]
+    entries = entries[-args.limit:]
 
     out = {"entries": entries, "rotations": 0}
     RECENT.write_text(json.dumps(out, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
-    print(f"✓ recent.json 重建完成：{len(entries)} 条（来自 history/ 中 {len(entries)} 个页面）")
+    print(f"✓ recent.json 重建完成：{len(entries)} 条（来源：{source}）")
 
 
 if __name__ == "__main__":
