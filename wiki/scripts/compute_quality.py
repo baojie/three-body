@@ -133,8 +133,14 @@ def update_frontmatter(text: str, quality: str) -> tuple[str, bool]:
     return new_text, new_text != text
 
 
-def process_page(path: Path, dry_run: bool) -> tuple[str | None, int]:
-    """返回 (quality_level, score)，quality_level=None 表示跳过。"""
+QUALITY_ORDER = ['stub', 'basic', 'standard', 'featured', 'premium']
+
+
+def process_page(path: Path, dry_run: bool, upgrade_only: bool = True) -> tuple[str | None, int]:
+    """返回 (quality_level, score)，quality_level=None 表示跳过。
+
+    upgrade_only=True（默认）：只升级质量，不降级已手动设置的更高级别。
+    """
     text = path.read_text(encoding='utf-8')
     m = FRONTMATTER_RE.match(text)
     if not m:
@@ -152,6 +158,14 @@ def process_page(path: Path, dry_run: bool) -> tuple[str | None, int]:
         return None, 0
 
     score = compute_quality_score(front, body)
+
+    # upgrade_only: never downgrade a page that already has a higher quality set
+    if upgrade_only:
+        existing = front.get('quality', '')
+        if (existing in QUALITY_ORDER and level in QUALITY_ORDER
+                and QUALITY_ORDER.index(existing) > QUALITY_ORDER.index(level)):
+            return existing, score  # keep existing higher quality
+
     new_text, changed = update_frontmatter(text, level)
 
     if changed and not dry_run:
@@ -164,6 +178,8 @@ def main():
     ap = argparse.ArgumentParser()
     ap.add_argument('--dry-run', action='store_true')
     ap.add_argument('--report', action='store_true', help='打印汇总报告')
+    ap.add_argument('--allow-downgrade', action='store_true',
+                    help='允许降级（默认只升级，不降低已手动设置的更高等级）')
     args = ap.parse_args()
 
     import yaml  # noqa: F401 — 确保可用
@@ -177,8 +193,9 @@ def main():
         key=lambda p: p.stem
     )
 
+    upgrade_only = not getattr(args, 'allow_downgrade', False)
     for path in pages:
-        level, score = process_page(path, args.dry_run)
+        level, score = process_page(path, args.dry_run, upgrade_only=upgrade_only)
         if level is None:
             continue
         counts[level] = counts.get(level, 0) + 1
