@@ -2221,6 +2221,28 @@
       "content_hash": "sha256:9c5f5ea4c2c499a7d2730f6e8b5e0a52e4fe07f278204593111633b63976ef15",
       "size_before": 4089,
       "size": 4347
+    },
+    {
+      "page": "雷迪亚兹",
+      "rev_id": "20260427-052938-564129",
+      "timestamp": "2026-04-27T05:29:38+00:00",
+      "author": "butler",
+      "summary": "create-page: 雷迪亚兹",
+      "parent_rev": null,
+      "content_hash": "sha256:56412977b41a1060005ccfd05d61f0b3d8be40e720085c7b776d910e10a4c21e",
+      "size_before": 0,
+      "size": 3923
+    },
+    {
+      "page": "希恩斯",
+      "rev_id": "20260427-053218-45d3cc",
+      "timestamp": "2026-04-27T05:32:18+00:00",
+      "author": "butler",
+      "summary": "create-page: 希恩斯",
+      "parent_rev": null,
+      "content_hash": "sha256:45d3ccb20c76c0b5ff5dd40a460c20db07576067bc985ade48ac72ad777a5d3d",
+      "size_before": 0,
+      "size": 2904
     }
   ],
   "rotations": 0
