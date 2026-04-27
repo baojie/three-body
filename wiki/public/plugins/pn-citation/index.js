@@ -25,7 +25,7 @@ const RE_CITATION_PLAIN = /（(\d)-(\d{2})-(\d{3})）/g;
 const RE_CITATION_WIKILINK = /（<a\s[^>]*class="wikilink[^"]*"[^>]*>(\d)-(\d{2})-(\d{3})<\/a>）/g;
 
 function expandAnchors(html) {
-  return html.replace(RE_PN_TAG, '<p id="pn-$1">');
+  return html.replace(RE_PN_TAG, '<p id="pn-$1"><span class="pn-label">[$1]</span> ');
 }
 
 function expandCitations(html, chapterMap) {

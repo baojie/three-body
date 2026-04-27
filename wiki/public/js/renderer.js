@@ -237,16 +237,6 @@ export async function renderPage(core, pid, meta, mdText) {
     histTab.className = 'src-tab hist-tab';
     histTab.textContent = '修订历史';
     h1.appendChild(histTab);
-    // 章节页额外注入"查看原文"链接，指向 GitHub Pages 渲染版
-    if (meta.type === 'chapter') {
-      const origTab = document.createElement('a');
-      origTab.href = `https://baojie.github.io/three-body/chapters/${encodeURIComponent(pid)}.html`;
-      origTab.className = 'orig-tab';
-      origTab.textContent = '查看原文';
-      origTab.target = '_blank';
-      origTab.rel = 'noopener';
-      h1.appendChild(origTab);
-    }
   }
   // footer 保留原始文件链接（开发用）
   const srcSpan = document.getElementById('src-info');

@@ -372,6 +372,14 @@ footer {
 .stat-box .stat-label { font-size: .82em; color: var(--fg-muted); font-family: var(--sans); }
 
 /* PN Citation */
+.pn-label {
+  color: var(--fg-muted);
+  font-size: .78em;
+  font-family: var(--mono, monospace);
+  user-select: none;
+  margin-right: .25em;
+}
+
 a.pn-citation {
   color: var(--fg-muted);
   font-size: .82em;
