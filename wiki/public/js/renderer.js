@@ -434,19 +434,35 @@ function buildHomeSvg() {
 
   // Poem seal: 12 cols × 4 chars, right-to-left, bottom-right over dark planet surface
   const SEAL_COLS = ['大用外腓','真體內充','返虛入渾','積健為雄','具備萬物','橫絕太空','荒荒油雲','寥寥長風','超以象外','得其環中','持之匪強','來之無窮'];
-  const sColW = 12, sCharH = 12, sPad = 6;
-  const sW = 12 * sColW + sPad * 2;  // 156
-  const sH = 4  * sCharH + sPad * 2; // 60
-  const sX = 828, sY = 330;
-  const sealChars = SEAL_COLS.map((col, ci) => {
-    const x = sX + sW - sPad - ci * sColW - 3;
-    return [...col].map((ch, ri) =>
-      `<text x="${x}" y="${sY + sPad + ri * sCharH + 10}" text-anchor="middle" font-family="'ChongxiSeal','QuanZiKuShuowen',serif" font-size="9.5" fill="#f0d080" opacity="0.9">${ch}</text>`
-    ).join('');
-  }).join('');
-  const poemSvg = sealChars;
+  const sColW = 10, sCharH = 11, sPad = 5;
+  const sW = 12 * sColW + sPad * 2;  // 130
+  const sH = 4  * sCharH + sPad * 2; // 54
+  const sX = 1000 - sW, sY = 420 - sH; // 右下角对齐
+  const tipW = 266, tipH = 122, tipX = 1000 - tipW, tipY = sY - tipH - 6;
+  const tipLines = [
+    '大用外腓，真体内充。',
+    '返虚入浑，积健为雄。',
+    '具备万物，横绝太空。',
+    '荒荒油云，寥寥长风。',
+    '超以象外，得其环中。',
+    '持之匪强，来之无穷。',
+  ];
+  const tipTextSvg = tipLines.map((l, i) =>
+    `<text x="${tipX + 12}" y="${tipY + 18 + i * 17}" font-family="serif" font-size="11.5" fill="#f0e8cc" opacity="0.92">${l}</text>`
+  ).join('');
 
-  return `<svg class="hero-cosmos" viewBox="0 0 1000 420" preserveAspectRatio="xMidYMid slice" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+  const poemSvg = `
+<g class="seal-group" style="cursor:default">
+  <image href="images/poem-seal.png" x="${sX}" y="${sY}" width="${sW}" height="${sH}" opacity="0.88"/>
+  <rect x="${sX}" y="${sY}" width="${sW}" height="${sH}" fill="transparent"/>
+  <g class="seal-tip">
+    <rect x="${tipX}" y="${tipY}" width="${tipW}" height="${tipH}" rx="1" fill="rgba(4,6,14,0.88)" stroke="#c89030" stroke-width="0.8"/>
+    ${tipTextSvg}
+    <text x="${tipX + tipW - 8}" y="${tipY + tipH - 7}" font-family="serif" font-size="9" fill="#c89030" opacity="0.65" text-anchor="end">司空图《诗品·雄浑》</text>
+  </g>
+</g>`;
+
+  return `<svg class="hero-cosmos" viewBox="0 0 1000 420" preserveAspectRatio="xMidYMax slice" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
 <defs>
   <radialGradient id="hg-planet" cx="38%" cy="32%" r="68%" gradientUnits="objectBoundingBox">
     <stop offset="0%" stop-color="#f7eb8a"/>
@@ -473,8 +489,8 @@ ${stars}
 <ellipse cx="838" cy="435" rx="405" ry="86" stroke="#f0b030" stroke-width="1.9" fill="none" opacity="0.52" transform="rotate(-20 838 435)"/>
 <ellipse cx="838" cy="435" rx="355" ry="64" stroke="#f5c840" stroke-width="0.85" fill="none" opacity="0.32" transform="rotate(-20 838 435)"/>
 <ellipse cx="838" cy="435" rx="515" ry="140" stroke="#a07018" stroke-width="0.6" fill="none" opacity="0.25" transform="rotate(-17 838 435)"/>
-<circle cx="152" cy="74" r="20" fill="url(#hg-teal)" opacity="0.88"/>
-<circle cx="182" cy="53" r="6" fill="#1e5a4a" opacity="0.75"/>
+<circle cx="152" cy="160" r="20" fill="url(#hg-teal)" opacity="0.88"/>
+<circle cx="182" cy="139" r="6" fill="#1e5a4a" opacity="0.75"/>
 ${poemSvg}
 </svg>`;
 }
