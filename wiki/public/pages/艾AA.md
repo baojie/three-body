@@ -7,7 +7,7 @@ tags: [人物, 三体III, 星环集团]
 description: 三体III中与程心并肩的亲密好友和商业伙伴，天文学博士，发现了云天明赠予程心的行星DX3906，陪伴程心历经威慑纪元崩溃、流亡澳大利亚、太阳系末日，最终与关一帆共赴新世界。
 books: [三体III]
 quality: featured
-quality_score: 57
+quality_score: 55
 ---
 # 艾AA
 

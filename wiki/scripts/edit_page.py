@@ -8,10 +8,15 @@
     # 从 stdin 读取:
     cat new.md | python3 wiki/scripts/edit_page.py <slug> - --summary "..."
 
+    # 允许修改原文引用节（去重/纠错专用）:
+    python3 wiki/scripts/edit_page.py <slug> <file> --allow-citation-edit
+
 铁律（不可绕过，除非显式传标志）:
+    - 旧版有 ## 原文引用 节，新版必须保留 → 拒绝（退出码 2）
     - 旧版有 frontmatter（--- 开头），新版没有 → 拒绝（退出码 3）
     - 新版 size < 旧版 size × 0.6 → 拒绝（退出码 4）
-    - 以上两条加 --allow-shrink 可跳过（仅限 redirect/merge 操作）
+    - 退出码 2 可加 --allow-citation-edit 跳过（仅限去重/纠错）
+    - 退出码 3/4 可加 --allow-shrink 跳过（仅限 redirect/merge）
 """
 from __future__ import annotations
 import argparse, subprocess, sys
@@ -20,6 +25,24 @@ from pathlib import Path
 ROOT   = Path(__file__).resolve().parents[2]
 PAGES  = ROOT / "wiki/public/pages"
 REC    = ROOT / "wiki/scripts/record_revision.py"
+REG    = ROOT / "wiki/scripts/build_registry.py"
+
+CITATION_SECTION = "## 原文引用"
+
+
+def _has_citation(text: str) -> bool:
+    return any(line.strip() == CITATION_SECTION for line in text.splitlines())
+
+
+def _rebuild_registry() -> None:
+    r = subprocess.run(
+        [sys.executable, str(REG), str(PAGES), "--out", str(ROOT / "wiki/public/pages.json")],
+        capture_output=True, text=True, cwd=ROOT
+    )
+    if r.returncode == 0:
+        print("✓ pages.json 已更新")
+    else:
+        print(f"⚠ pages.json 更新失败: {r.stderr.strip()}", file=sys.stderr)
 
 
 def main() -> None:
@@ -28,6 +51,8 @@ def main() -> None:
     ap.add_argument("content_file", help="内容文件路径，或 - 表示 stdin")
     ap.add_argument("--summary", default="")
     ap.add_argument("--author", default="butler")
+    ap.add_argument("--allow-citation-edit", action="store_true",
+                    help="允许修改/删除原文引用节（去重/纠错专用）")
     ap.add_argument("--allow-shrink", action="store_true",
                     help="允许 frontmatter 丢失或内容大幅缩减（redirect/merge 专用）")
     args = ap.parse_args()
@@ -47,6 +72,15 @@ def main() -> None:
             print(f"✗ 内容文件不存在: {src}", file=sys.stderr)
             sys.exit(1)
         new_content = src.read_text(encoding="utf-8")
+
+    # 铁律0：原文引用节不得被非授权操作删除
+    if not args.allow_citation_edit and _has_citation(old_content) and not _has_citation(new_content):
+        print(
+            f'⛔ 禁止写入：{args.slug} 旧版含 "{CITATION_SECTION}" 节，新版缺失。\n'
+            f"   若确为去重/纠错操作，请加 --allow-citation-edit 标志。",
+            file=sys.stderr,
+        )
+        sys.exit(2)
 
     # 铁律1：frontmatter 不得被非授权操作删除
     if not args.allow_shrink and old_content.lstrip().startswith("---") and not new_content.lstrip().startswith("---"):
@@ -81,6 +115,8 @@ def main() -> None:
     if r.returncode != 0:
         print(r.stderr, file=sys.stderr)
         sys.exit(r.returncode)
+
+    _rebuild_registry()
 
 
 if __name__ == "__main__":

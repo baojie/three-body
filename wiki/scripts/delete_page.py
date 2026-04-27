@@ -22,10 +22,22 @@ from pathlib import Path
 ROOT   = Path(__file__).resolve().parents[2]
 PAGES  = ROOT / "wiki/public/pages"
 REC    = ROOT / "wiki/scripts/record_revision.py"
+REG    = ROOT / "wiki/scripts/build_registry.py"
+
+
+def _rebuild_registry() -> None:
+    r = subprocess.run(
+        [sys.executable, str(REG), str(PAGES), "--out", str(ROOT / "wiki/public/pages.json")],
+        capture_output=True, text=True, cwd=ROOT
+    )
+    if r.returncode == 0:
+        print("✓ pages.json 已更新")
+    else:
+        print(f"⚠ pages.json 更新失败: {r.stderr.strip()}", file=sys.stderr)
 
 
 def _redirect_content(slug: str, target: str) -> str:
-    return f"---\nid: {slug}\ntype: redirect\ntarget: {target}\n---\n#REDIRECT [[{target}]]\n"
+    return f"---\nid: {slug}\ntype: redirect\ntarget: {target}\nquality: standard\n---\n#REDIRECT [[{target}]]\n"
 
 
 def _deleted_content(slug: str) -> str:
@@ -70,6 +82,8 @@ def main() -> None:
     else:
         target_file.write_text(_deleted_content(args.slug), encoding="utf-8")
         print(f"✓ {args.slug} → deleted stub（文件保留，内容已清空）")
+
+    _rebuild_registry()
 
 
 if __name__ == "__main__":

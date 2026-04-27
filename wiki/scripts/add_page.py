@@ -21,6 +21,18 @@ from pathlib import Path
 ROOT   = Path(__file__).resolve().parents[2]
 PAGES  = ROOT / "wiki/public/pages"
 REC    = ROOT / "wiki/scripts/record_revision.py"
+REG    = ROOT / "wiki/scripts/build_registry.py"
+
+
+def _rebuild_registry() -> None:
+    r = subprocess.run(
+        [sys.executable, str(REG), str(PAGES), "--out", str(ROOT / "wiki/public/pages.json")],
+        capture_output=True, text=True, cwd=ROOT
+    )
+    if r.returncode == 0:
+        print("✓ pages.json 已更新")
+    else:
+        print(f"⚠ pages.json 更新失败: {r.stderr.strip()}", file=sys.stderr)
 
 
 def main() -> None:
@@ -58,6 +70,8 @@ def main() -> None:
     if r.returncode != 0:
         print(r.stderr, file=sys.stderr)
         sys.exit(r.returncode)
+
+    _rebuild_registry()
 
 
 if __name__ == "__main__":
