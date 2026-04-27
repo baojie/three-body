@@ -107,6 +107,24 @@
 
 ---
 
+## Phase 11 · 多 Butler 并发与命名实例体系
+
+**commits**: `(current)`
+
+- **多实例并发**：同时启动多个 butler agent，通过 `claim_task.py` flock 锁保证任务不重复领取
+- **`pending_revision.json` 机制**：butler 在 Write/Edit 前写入上下文文件（round / type / desc / author），hook 消费后写入 `recent.jsonl`，`author` 字段从 `hook` 升级为实例名
+- **摘要信息化**：recent 记录从无意义的 `"auto: direct Write/Edit (bypassed script)"` 改为 `"R364 create-page 庄颜"` 格式
+- **六命名实例**：固定管家角色体系建立
+  - 统帅（`--focus all`，通用兜底）
+  - 幸存者（`--focus create`）
+  - 破壁人（`--focus enrich`）
+  - 执剑人（`--focus housekeeping`）
+  - 广播员（`--focus publish`）
+  - 监听员（`--focus discover`）
+- 设计文档写入 `skills/SKILL_Butler多实例设计.md`
+
+---
+
 ## Phase 10 · 自动化深化与 JSONL 迁移
 
 **commits**: `0cfe056` → `b3941cd`

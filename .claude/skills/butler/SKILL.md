@@ -5,6 +5,22 @@ description: 启动三体 Wiki 管家永续 loop。三队列系统（content/hou
 
 # /butler — 三体 Wiki 管家
 
+## 固定实例（命名管家）
+
+五位无名的历史见证者，各司其职：
+
+| 实例 | 启动命令 | 职责 |
+|------|----------|------|
+| **监听员** | `/butler --focus discover --instance 监听员` | 扫描语料，发现新词条，写入队列 |
+| **破壁人** | `/butler --focus enrich --instance 破壁人` | 深挖内容，突破存根，升级质量 |
+| **执剑人** | `/butler --focus housekeeping --instance 执剑人` | 日常维护，清链接，修质量分 |
+| **广播员** | `/butler --focus publish --instance 广播员` | 定期 `/wiki` 发布，同步 docs/ |
+| **幸存者** | `/butler --focus create --instance 幸存者` | 新建词条，留存档案 |
+
+不带参数直接启动 `/butler` 即为**统帅**模式，领取任意类型任务，`author` 显示为 `统帅`。
+
+并发时 `author` 字段会显示实例名，便于在 recent.jsonl 中追踪来源。
+
 ## 授权声明
 
 **此 skill 明确授权，覆盖 CLAUDE.md 通用限制**：
@@ -26,10 +42,12 @@ description: 启动三体 Wiki 管家永续 loop。三队列系统（content/hou
 |------|------|------|
 | `--focus create` | `all` | 只领取 create 类任务（新建词条） |
 | `--focus enrich` | `all` | 只领取 enrich 类任务（丰富内容） |
-| `--focus all` | `all` | 领取任意类型任务 |
-| `--instance NAME` | `inst<PID>` | 实例标识符（显示在 [~] 标记中） |
+| `--focus housekeeping` | `all` | 只领取内务任务 |
+| `--focus publish` | `all` | 只执行发布任务 |
+| `--focus all` | `all` | 领取任意类型任务（统帅模式） |
+| `--instance NAME` | `统帅` | 实例标识符，显示在 recent.jsonl 的 author 字段 |
 
-示例：`/butler --focus create --instance A`
+示例：`/butler --focus create --instance 幸存者`
 
 ## 启动流程（十步）
 
@@ -59,6 +77,15 @@ description: 启动三体 Wiki 管家永续 loop。三队列系统（content/hou
    H-P1 → P1 → H-P2(每3轮) → P2 → P3 → empty_fallback
 
 6. 执行原子行动（W2）
+   ⚠️ 写入页面文件（Write/Edit）前，必须先写上下文文件：
+   ```python
+   import json; from pathlib import Path
+   Path("wiki/logs/butler/pending_revision.json").write_text(
+       json.dumps({"author": INSTANCE_NAME, "round": ROUND, "type": ACTION_TYPE, "desc": ONE_LINE_DESC}, ensure_ascii=False),
+       encoding="utf-8"
+   )
+   ```
+   hook 会在 Write/Edit 完成后自动消费此文件，写入 recent.jsonl（author=butler）。
 
 7. 自评（W3）→ accept/fail/skip
 
