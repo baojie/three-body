@@ -3,33 +3,31 @@
 export const TYPE_LABELS = {
   // 人物
   person: '人物',
-  character: '人物',
   // 地点/文明
   place: '地点',
   civilization: '文明',
-  species: '物种',
   // 科技/设备
   technology: '科技',
   weapon: '武器',
-  artifact: '设备',
   // 组织
   organization: '组织',
-  faction: '阵营',
   // 事件
   event: '事件',
   // 物理/科学概念
   concept: '概念',
   law: '法则',
-  theory: '理论',
-  // 书册/作品
-  book: '卷册',
-  // 时间
-  time: '时间',
+  // 纪元
   era: '纪元',
+  // 书册/章节
+  book: '卷册',
+  chapter: '章节',
+  // 名句
+  quote: '名句',
+  // 故事（云天明童话等）
+  story: '故事',
   // 页面类型
   topic: '主题',
   overview: '综述',
-  story: '故事',
   list: '列表',
   disambiguation: '消歧义',
   redirect: '重定向',

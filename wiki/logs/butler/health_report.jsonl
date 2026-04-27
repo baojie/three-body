@@ -4,3 +4,4 @@
 {"date": "2026-04-27", "round": 115, "type": "w5-reflect", "total_pages": 187, "quality": {"featured": 49, "stub": 137}}
 {"date": "2026-04-27", "round": 232, "type": "w5-reflect", "total_pages": 202, "non_chapter_pages": 61, "quality": {"basic": 1, "featured": 64, "stub": 137}, "score_min": 51, "score_max": 64, "score_avg": 56.6}
 {"date": "2026-04-27", "round": 261, "type": "w5-reflect", "total_pages": 202, "quality": {"featured": 65}, "notes": "W5 #8: 0 fail, 27-page working tree regression fixed, QR-004 added, W10y watchlist"}
+{"date": "2026-04-27", "round": 483, "type": "w5-reflect", "total_pages": 268, "quality": {}, "notes": "W5#9 Dream Round: 126 entity pages 100% featured, queues empty, timeline pages added to P2"}

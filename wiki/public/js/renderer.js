@@ -617,7 +617,7 @@ function searchPages(q, registry) {
   const TYPE_PRIO = { person: 40, character: 40, civilization: 35,
     law: 35, concept: 30, technology: 25, weapon: 25,
     organization: 20, event: 20, place: 15,
-    book: 10, overview: 5, list: 5,
+    book: 10, chapter: 8, quote: 7, overview: 5, list: 5,
     redirect: -20 };
 
   function matchScore(surface) {

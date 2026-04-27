@@ -91,10 +91,11 @@
 
 ## H-P1 — R418全库扫描新增 broken links（待幸存者建页）
 
-- [ ] P2 create-wanted | 太空军 | 东方延绪.md引用，《黑暗森林》组织
-- [ ] P2 create-wanted | 恒纪元 | 飞星.md引用，三体星系气候纪元概念
-- [ ] P2 create-wanted | 雷志成 | 杨卫宁.md引用，红岸政委（三体I-26专属章节）
+- [x] P2 create-wanted | 太空军 | ✓ 幸存者已建页（R431）
+- [x] P2 create-wanted | 恒纪元 | ✓ 幸存者已建页（R436）
+- [x] P2 create-wanted | 雷志成 | ✓ 统帅已建页（R443）
 
 ## H-P2 — R418全库扫描
 
 - [x] H10 housekeeping-scan | all | ✓ 2026-04-27（R418：99概念页，0 unknown，3 broken links→已写入幸存者队列）
+- [x] H5 fix-links | 环日加速器/行星防御理事会 | ✓ 2026-04-27（R485-486，[[联邦政府]]→[[太阳系联邦]]，[[黑暗森林]]威慑→[[黑暗森林威慑]]）
