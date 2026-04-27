@@ -30,6 +30,8 @@
 - [x] P1 create | 三体问题 | ✓ 2026-04-27（R384完成，instB，庞加莱不可解+魏成进化算法+三体文明困境，7条PN）
 - [x] P1 create | 星环号 | ✓ 2026-04-27（R403完成，9条PN，两次逃亡+深海液舱+AI）
 
+- [x] P1 create | AA | 程心在掩体纪元的伴侣，协助云天明情报解读，2处broken link → R519 accept
+
 ## P2 — 中优先级（未完成）
 
 - [x] P2 create | 比尔·汉森 | ✓ skip（名称不存在；希恩斯破壁人实为山杉惠子，已单独建页 R397）
@@ -97,7 +99,7 @@
 - [ ] P3 discover | corpus/三体I | 扫描《地球往事》提取未建页词条
 - [ ] P3 discover | corpus/三体II | 扫描《黑暗森林》提取未建页词条
 - [ ] P3 discover | corpus/三体III | 扫描《死神永生》提取未建页词条
-- [ ] P3 fix-links | 全局 | 扫描所有页面的 broken wikilink，批量添加存根
+- [x] P3 fix-links | 全局 | 扫描所有页面的 broken wikilink → R517 AA修复，R519后剩饕餮鱼1条
 
 ---
 
@@ -155,4 +157,4 @@
 
 - [x] P2 create | 叶文洁时间线 | ✓ 2026-04-27（R506完成，统帅，文革→红岸→ETO→公理传授，type=overview，6条PN）
 - [x] P2 create | 程心时间线 | W5#9 提案，从阶梯计划到宇宙末年，type=timeline → R510 accept
-- [ ] P2 create | 罗辑时间线 | W5#9 提案，从面壁到执剑到晚年，type=timeline
+- [x] P2 create | 罗辑时间线 | W5#9 提案，从面壁到执剑到晚年，type=timeline → R513 accept

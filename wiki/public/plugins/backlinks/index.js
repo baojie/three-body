@@ -9,15 +9,23 @@
  */
 
 const TYPE_LABELS = {
-  person:   '人名',
-  place:    '地名',
-  state:    '邦国',
-  official: '官职',
-  identity: '身份',
-  event:    '事件',
-  concept:  '概念',
-  chapter:  '章节',
-  topic:    '主题',
+  person:       '人物',
+  place:        '地点',
+  civilization: '文明',
+  organization: '组织',
+  event:        '事件',
+  concept:      '概念',
+  law:          '法则',
+  era:          '纪元',
+  technology:   '科技',
+  weapon:       '武器',
+  book:         '卷册',
+  chapter:      '章节',
+  story:        '故事',
+  quote:        '名句',
+  overview:     '综述',
+  list:         '列表',
+  topic:        '主题',
 };
 
 function renderBacklinks(backlinks, pid) {

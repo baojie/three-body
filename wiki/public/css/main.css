@@ -398,6 +398,43 @@ a.pn-citation:hover { color: var(--accent); border-bottom-color: var(--accent); 
   border-radius: 3px;
 }
 
+/* Backlinks */
+.backlinks {
+  margin-top: 2em; padding-top: .8em;
+  border-top: 1px solid var(--border);
+  font-family: var(--sans); font-size: 13px;
+}
+.bl-heading {
+  font-size: 13px; font-weight: 600;
+  color: var(--fg-muted); margin: 0 0 .5em;
+  text-transform: none; letter-spacing: 0;
+  border: none; padding: 0;
+}
+.bl-body {
+  display: flex; flex-wrap: wrap; gap: .6em 0;
+  line-height: 1.6;
+}
+.bl-group {
+  display: inline-flex; align-items: baseline; gap: .4em; flex-wrap: wrap;
+  margin-right: 1.2em;
+}
+.bl-group-label {
+  font-size: 11px; color: var(--fg-muted);
+  background: var(--bg-box); border: 1px solid var(--border);
+  border-radius: 3px; padding: 1px 5px;
+  white-space: nowrap; flex-shrink: 0;
+}
+.bl-link {
+  color: var(--link); text-decoration: none; font-size: 13px;
+}
+.bl-link::after {
+  content: '·';
+  margin-left: .4em;
+  color: var(--border);
+}
+.bl-link:last-of-type::after { content: ''; }
+.bl-link:hover { text-decoration: underline; }
+
 /* Book TOC (home page) */
 .book-toc {
   border: 1px solid var(--border);

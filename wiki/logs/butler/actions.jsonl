@@ -519,3 +519,15 @@
 {"round": 506, "type": "create-page", "page": "叶文洁时间线", "result": "accept", "desc": "叶文洁跨三部书时间线overview：文革→大兴安岭→红岸广播→ETO→公理传授→身后，6条PN，type=overview", "ts": "2026-04-27T11:10:24Z", "instance": "统帅"}
 {"round": 507, "type": "enrich-page", "page": "云天明三则童话", "result": "accept", "desc": "补故事人物节（无故事王国/针眼/空灵/露珠/深水/宽姨）+饕餮海情节+第三条情报宇宙安全声明，10条PN", "ts": "2026-04-27T11:19:43Z", "instance": "统帅"}
 {"round": 510, "type": "create-page", "page": "程心时间线", "result": "accept", "desc": "新建程心时间线：从危机纪元阶梯计划到宇宙末年，含执剑人失职、星环城决策、末日逃离", "ts": "2026-04-27T11:23:54Z", "instance": "统帅"}
+{"round": 513, "type": "create-page", "page": "罗辑时间线", "result": "accept", "desc": "新建罗辑时间线：面壁者→咒语→豪赌之夜→执剑人五十年→移交程心", "ts": "2026-04-27T11:29:33Z", "instance": "统帅"}
+{"round": 517, "type": "discover", "page": "—", "result": "accept", "desc": "D1+H10: 断链扫描1个(AA)，语料发现亨特号/鱼群设想，AA加入P1队列", "ts": "2026-04-27T11:31:10Z", "instance": "统帅"}
+{"round": 518, "type": "create-page", "page": "鱼群设想", "result": "accept", "desc": "新建鱼群设想：云天明童话饕餮鱼→IDC纳米机器屏障设想，技术可行但耗时万年被放弃，2条PN", "ts": "2026-04-27T11:31:16Z", "instance": "幸存者"}
+{"round": 519, "type": "create-page", "page": "AA", "result": "accept", "desc": "新建AA：威慑纪元天文博士，DX3906行星发现者，程心伴侣，掩体纪元陪伴者", "ts": "2026-04-27T11:32:01Z", "instance": "统帅"}
+{"round": 520, "type": "create-page", "page": "国际解读委员会", "result": "accept", "desc": "新建IDC：舰队国际/联合国联合组建情报解读机构，破解云天明童话，含25小组/解读僵局/政治化衰落，5条PN", "ts": "2026-04-27T11:33:33Z", "instance": "幸存者"}
+{"round": 521, "type": "create-page", "page": "饕餮鱼", "result": "accept", "desc": "新建饕餮鱼：云天明《蜗壳》生物，形成屏障/IDC双重隐喻（黑暗森林文明 vs 鱼群设想纳米机器），3条PN", "ts": "2026-04-27T11:34:21Z", "instance": "幸存者"}
+{"round": 523, "type": "create-page", "page": "无故事王国", "result": "accept", "desc": "新建无故事王国：《蜗壳》孤岛王国，故事王国→被饕餮鱼封闭→无故事，IDC解读为智子封锁/宇宙孤立隐喻，3条PN", "ts": "2026-04-27T11:35:13Z", "instance": "幸存者"}
+{"round": 522, "type": "enrich-page", "page": "饕餮鱼", "result": "accept", "desc": "修正错误PN引用(3-18→3-32)，补充准确引文，升级质量 basic→featured", "ts": "2026-04-27T11:36:40Z", "instance": "统帅"}
+{"round": 524, "type": "create-page", "page": "饕餮海", "result": "accept", "desc": "新建饕餮海：云天明第二则童话标题，隔绝无故事王国的危险海域，修复断链", "ts": "2026-04-27T11:37:49Z", "instance": "统帅"}
+{"round": 525, "type": "enrich-page", "page": "国际解读委员会", "result": "accept", "desc": "修正PN(3-19→3-31/3-33)，修正故事名，升级 basic→featured，补充双层隐喻突破", "ts": "2026-04-27T11:39:46Z", "instance": "统帅"}
+{"round": 526, "type": "enrich-page", "page": "鱼群设想", "result": "accept", "desc": "修正全部错误PN，修正故事名，删除不存在引文，升级basic→featured", "ts": "2026-04-27T11:41:03Z", "instance": "统帅"}
+{"round": 529, "type": "enrich-page", "page": "无故事王国", "result": "accept", "desc": "修正全部错误PN，修正故事名，补充历史段落与居民限制，basic→featured；同轮修复alias冲突", "ts": "2026-04-27T11:44:13Z", "instance": "统帅"}
