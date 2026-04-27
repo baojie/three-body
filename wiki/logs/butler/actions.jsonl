@@ -117,3 +117,73 @@
 {"round": 116, "type": "reflect-w5", "page": "—", "result": "accept", "desc": "第4次W5反思：0 fail，all-featured里程碑，E借鉴PN验证，G提案P3→P2，新增猜疑链/技术爆炸/引力波广播发现", "ts": "2026-04-26T22:21:52Z"}
 {"round": 117, "type": "create-page", "page": "技术爆炸", "result": "accept", "desc": "新建宇宙社会学核心概念：技术爆炸，4条PN，三体技术爆炸实例，featured", "ts": "2026-04-26T22:22:34Z"}
 {"round": 118, "type": "create-page", "page": "引力波广播", "result": "accept", "desc": "新建黑暗森林威慑核心技术页：引力波广播，4条PN(3-19-036/3-24-032/3-25-010/3-24-092)，featured", "ts": "2026-04-26T22:23:13Z"}
+{"round": 119, "type": "publish", "page": "—", "result": "accept", "desc": "/wiki R119发布：commit cda315e，新建5页+升级4页+W5反思，all-featured里程碑", "ts": "2026-04-26T22:25:11Z"}
+{"round": 120, "type": "create-page", "page": "面壁计划", "result": "accept", "desc": "新建面壁计划页：broken-link修复，3条PN(2-10-035/036/037)，四壁者列表，featured", "ts": "2026-04-26T22:26:25Z"}
+{"round": 121, "type": "create-page", "page": "曲率驱动飞船", "result": "accept", "desc": "新建曲率驱动飞船页：broken-link修复，5条PN，航迹致命隐患，featured", "ts": "2026-04-26T22:27:04Z"}
+{"round": 122, "type": "discover", "page": "—", "result": "accept", "desc": "D1 discover R122: 0 broken links，面壁计划/曲率驱动飞船修复后全部链接已解析", "ts": "2026-04-26T22:27:45Z"}
+{"round": 123, "type": "create-page", "page": "星舰地球", "result": "accept", "desc": "新建星舰地球页：末日战役后逃亡文明，4条PN，featured", "ts": "2026-04-26T22:29:23Z"}
+{"round": 124, "type": "create-page", "page": "逃亡主义", "result": "accept", "desc": "新建逃亡主义页：危机纪元政治思潮，3条PN，章北海与逃亡主义实践，featured", "ts": "2026-04-26T22:31:29Z"}
+{"round": 125, "type": "fix-alias", "page": "光速飞船", "result": "accept", "desc": "修复alias冲突：移除'曲率驱动飞船'别名（已建专属页），添加曲率驱动飞船wikilink", "ts": "2026-04-26T22:32:02Z"}
+{"round": 126, "type": "housekeeping", "page": "—", "result": "accept", "desc": "修复3个新建页prose_chars<500：曲率驱动飞船/星舰地球/逃亡主义扩充正文，compute_quality重跑至全featured", "ts": "2026-04-26T22:33:31Z"}
+{"round": 127, "type": "add-quote", "page": "逃亡主义", "result": "accept", "desc": "逃亡主义添加第3条PN(2-04-095)技术公有化引文，通过featured阈值", "ts": "2026-04-26T22:34:07Z"}
+{"round": 128, "type": "fix-alias", "page": "面壁者", "result": "accept", "desc": "修复面壁者alias冲突：移除'面壁计划'别名，重建pages.json(193页)", "ts": "2026-04-26T22:34:39Z"}
+{"round": 129, "type": "fix-alias", "page": "曲率驱动飞船", "result": "accept", "desc": "修复曲率驱动飞船alias冲突：移除'光速飞船'别名，重建pages.json", "ts": "2026-04-26T22:34:49Z"}
+{"round": 130, "type": "create-page", "page": "广播纪元", "result": "accept", "desc": "新建广播纪元页：2272-2332年，三体坐标暴露时代，3条PN，三大生存方案，featured", "ts": "2026-04-26T22:35:46Z"}
+{"round": 131, "type": "create-page", "page": "掩体纪元", "result": "accept", "desc": "新建掩体纪元页：2333-2400年，掩体世界/二向箔终结，3条PN，featured", "ts": "2026-04-26T22:36:31Z"}
+{"round": 132, "type": "housekeeping", "page": "—", "result": "accept", "desc": "H10轮次：0 broken links，58精品页，rebuild pages.json(195页)，修复掩体纪元prose_chars", "ts": "2026-04-26T22:37:18Z"}
+{"round": 133, "type": "create-page", "page": "四维碎块", "result": "accept", "desc": "新建四维碎块页：蓝色空间号发现，4条PN，四维视角体验+引力波广播关联，featured", "ts": "2026-04-26T22:38:28Z"}
+{"round": 134, "type": "create-page", "page": "破壁人", "result": "accept", "desc": "新建破壁人页：ETO反间谍系统，三名破壁人各自结局，4条PN，featured(score=54)", "ts": "2026-04-26T22:44:06Z"}
+{"round": 135, "type": "enrich-page", "page": "四维碎块", "result": "accept", "desc": "四维碎块prose扩充至500+：补充入场体验与脑超载适应细节，basic→featured(score=51)", "ts": "2026-04-26T22:45:45Z"}
+{"round": 136, "type": "publish", "page": "—", "result": "accept", "desc": "R120→R136发布：新建8页，197页全精品(60精品页)，commit 5c730c7", "ts": "2026-04-26T22:46:23Z"}
+{"round": 137, "type": "create-page", "page": "小宇宙", "result": "accept", "desc": "新建小宇宙页：云天明礼物/口袋宇宙/归零危机，4条PN，featured(score=48)", "ts": "2026-04-26T22:48:59Z"}
+{"round": 138, "type": "create-page", "page": "归零者", "result": "accept", "desc": "新建归零者页：零光速重启宇宙+死线物理遗迹，5条PN，featured(score=56)", "ts": "2026-04-26T22:55:12Z"}
+{"round": 139, "type": "housekeeping", "page": "—", "result": "accept", "desc": "H10：0 broken links，62精品页，rebuild pages.json(199页)", "ts": "2026-04-26T22:58:15Z"}
+{"round": 140, "type": "create-page", "page": "云天明三则童话", "result": "accept", "desc": "新建云天明三则童话页：双层隐喻情报系统+曲率驱动解读，4条PN，featured(score=56)", "ts": "2026-04-26T23:04:08Z"}
+{"round": 141, "type": "housekeeping", "page": "—", "result": "accept", "desc": "H10: 63精品页，0 broken links, rebuild pages.json(200页)", "ts": "2026-04-26T23:04:37Z"}
+{"round": 142, "type": "fix-links", "page": "云天明", "result": "accept", "desc": "云天明页补充[[小宇宙]]和[[云天明三则童话]]相关词条链接", "ts": "2026-04-26T23:05:16Z"}
+{"round": 143, "type": "fix-links", "page": "面壁计划", "result": "accept", "desc": "面壁计划页补充[[破壁人]]wikilink", "ts": "2026-04-26T23:05:48Z"}
+{"round": 144, "type": "fix-links", "page": "程心+关一帆", "result": "accept", "desc": "程心/关一帆页补充[[小宇宙]]和[[归零者]]回归运动wikilinks", "ts": "2026-04-26T23:07:07Z"}
+{"round": 145, "type": "reflect-w5", "page": "—", "result": "accept", "desc": "R145 Dream Round W5：0失败/145轮，63精品页100%，修订3条(compute_quality必跑/alias前置检查/宇宙时间线P2)，WL-1精品升级WL-2审判日号", "ts": "2026-04-26T23:12:44Z"}
+{"round": 146, "type": "create-page", "page": "宇宙时间线", "result": "accept", "desc": "新建宇宙时间线综述页：七大纪元对照表+各纪元关键事件，6条PN，featured(score=62)", "ts": "2026-04-26T23:15:25Z"}
+{"round": 147, "type": "create-page", "page": "审判日号", "result": "accept", "desc": "新建审判日号页：降临派海上基地/古筝行动/飞刃切割，5条PN，featured(score=52)", "ts": "2026-04-26T23:17:41Z"}
+{"round": 148, "type": "enrich-page", "page": "杨冬", "result": "accept", "desc": "杨冬页扩充：新增最后的印象节(1-05-072)，补充母女关系引文(1-06-049)，score 40→52", "ts": "2026-04-26T23:20:58Z"}
+{"round": 149, "type": "enrich-page", "page": "逃亡主义", "result": "accept", "desc": "逃亡主义新增联合国117号决议节(2-06-030)，score 42→50", "ts": "2026-04-26T23:21:55Z"}
+{"round": 150, "type": "enrich-page", "page": "光速飞船", "result": "accept", "desc": "光速飞船新增三体第二舰队验证引文(3-35-008, 3-22-012)，score 43→52", "ts": "2026-04-26T23:24:01Z"}
+{"round": 151, "type": "enrich-page", "page": "史强", "result": "accept", "desc": "史强新增虫子启示节：蝗灾麦田场景(1-35-044, 1-35-046)，score 43→52", "ts": "2026-04-26T23:25:33Z"}
+{"round": 152, "type": "enrich-page", "page": "三体舰队", "result": "accept", "desc": "三体舰队：反物质推进(1-31-032)和智子占领宣布(3-22-020)转为blockquote，score 44→50", "ts": "2026-04-26T23:27:57Z"}
+{"round": 153, "type": "publish", "page": "—", "result": "accept", "desc": "R136→R153发布：新建5页，丰富7页，202页全精品(64精品页)，commit 44db60a", "ts": "2026-04-26T23:28:33Z"}
+{"round": 154, "type": "housekeeping", "page": "—", "result": "accept", "desc": "H10：0 broken links，65精品页，rebuild pages.json(202页)，最低分：云天明/广播纪元/掩体纪元/星舰地球/歌者/科学边界(score=44)", "ts": "2026-04-26T23:29:18Z"}
+{"round": 155, "type": "enrich-page", "page": "云天明", "result": "accept", "desc": "云天明扩充重逢场景(3-29-058, 3-30-080)和大脑之旅反讽(3-10-064, 3-10-070)，score 44→53", "ts": "2026-04-26T23:32:11Z"}
+{"round": 156, "type": "enrich-page", "page": "广播纪元", "result": "accept", "desc": "广播纪元新增三体占领节，三大方案转为blockquote(3-36-016)，score 44→52", "ts": "2026-04-26T23:34:06Z"}
+{"round": 157, "type": "enrich-page", "page": "掩体纪元", "result": "accept", "desc": "添加二向箔降维场景两条引文(3-44-125)(3-45-007)，score 44→54", "ts": "2026-04-26T23:37:17Z"}
+{"round": 158, "type": "enrich-page", "page": "星舰地球", "result": "accept", "desc": "新增政治独立(2-44-050)和黑暗战役(2-48-071)两节，score 44→57", "ts": "2026-04-26T23:38:58Z"}
+{"round": 159, "type": "enrich-page", "page": "歌者", "result": "accept", "desc": "补全缺失PN(3-42-053)，新增古歌谣引文(3-42-004)，score 44→54", "ts": "2026-04-26T23:40:02Z"}
+{"round": 160, "type": "enrich-page", "page": "科学边界", "result": "accept", "desc": "将内联PN转为blockquote(1-05-090)(1-05-096)，score 44→50", "ts": "2026-04-26T23:42:42Z"}
+{"round": 161, "type": "enrich-page", "page": "威慑纪元", "result": "accept", "desc": "终结节新增裸移民引文(3-22-021)，score 45→53", "ts": "2026-04-26T23:43:53Z"}
+{"round": 162, "type": "enrich-page", "page": "宇宙社会学", "result": "accept", "desc": "技术爆炸节新增引文(2-48-109)，score 45→50", "ts": "2026-04-26T23:44:40Z"}
+{"round": 163, "type": "enrich-page", "page": "红岸基��", "result": "accept", "desc": "添加发射引文(1-24-032)，去重，增加tags，score 45→50", "ts": "2026-04-26T23:46:17Z"}
+{"round": 163, "type": "enrich-page", "page": "红岸基地", "result": "accept", "desc": "添加发射引文(1-24-032)，去重，增加tags，score 45→50", "ts": "2026-04-26T23:46:21Z"}
+{"round": 164, "type": "enrich-page", "page": "技术爆炸", "result": "accept", "desc": "新增黑暗森林贡献节，score 46→51", "ts": "2026-04-26T23:47:23Z"}
+{"round": 165, "type": "housekeeping", "page": "—", "result": "accept", "desc": "R165: D1 discover（无新wanted），H10 rebuild registry，202页，发现15个<50分页面", "ts": "2026-04-26T23:47:44Z"}
+{"round": 166, "type": "enrich-page", "page": "程心", "result": "accept", "desc": "新增两条blockquote(3-46-194)(3-49-072)，score 46→55", "ts": "2026-04-26T23:49:33Z"}
+{"round": 167, "type": "enrich-page", "page": "宇宙闪烁", "result": "accept", "desc": "修复孤儿blockquote加PN(1-10-037)，重命名原文引用节，score 47→51", "ts": "2026-04-26T23:51:40Z"}
+{"round": 168, "type": "enrich-page", "page": "掩体计划", "result": "accept", "desc": "转换内联PN为blockquote(3-36-005)(3-34-025)，score 47→53", "ts": "2026-04-26T23:52:48Z"}
+{"round": 169, "type": "enrich-page", "page": "章北海", "result": "accept", "desc": "增加tags(逃亡主义/星舰地球/末日战役)，score 47→52", "ts": "2026-04-26T23:53:26Z"}
+{"round": 170, "type": "publish", "page": "—", "result": "accept", "desc": "/wiki R154→R170：commit 57df361，14页丰富", "ts": "2026-04-26T23:53:54Z"}
+{"round": 171, "type": "enrich-page", "page": "艾AA", "result": "accept", "desc": "新增冬眠描写blockquote(3-38-076)，删除不完整PN，score 47→50", "ts": "2026-04-26T23:55:31Z"}
+{"round": 172, "type": "enrich-page", "page": "太阳系", "result": "accept", "desc": "新增降维引文(3-44-125)，score 48→52", "ts": "2026-04-26T23:56:32Z"}
+{"round": 173, "type": "enrich-page", "page": "奥尔特星云", "result": "accept", "desc": "新增心理意义节，重命名原文引用节，score 48→53", "ts": "2026-04-26T23:57:29Z"}
+{"round": 174, "type": "reflect-w5", "page": "—", "result": "accept", "desc": "W5第6次：enrich主导，8页<50待清扫，废除原文引用反模式", "ts": "2026-04-26T23:58:20Z"}
+{"round": 175, "type": "enrich-page", "page": "面壁计划", "result": "accept", "desc": "新增冬眠条款引文(2-10-039)，score 48→52", "ts": "2026-04-26T23:59:43Z"}
+{"round": 176, "type": "enrich-page", "page": "黑暗森林打击", "result": "accept", "desc": "新增安全声明引文(3-29-003)，score 48→53", "ts": "2026-04-27T00:03:03Z"}
+{"round": 177, "type": "housekeeping", "page": "all", "result": "accept", "desc": "H10全库扫描：202页，0 broken link，6非章节页<50（小宇宙48/丁仪49/伊文斯49/引力波广播49/汪淼49/黑域49），9页≥60", "ts": "2026-04-27T00:04:04Z"}
+{"round": 178, "type": "enrich-page", "page": "小宇宙", "result": "accept", "desc": "新增H2节'小宇宙中的生活'+引文(3-49-077)，score 48→56", "ts": "2026-04-27T00:06:06Z"}
+{"round": 179, "type": "enrich-page", "page": "丁仪", "result": "accept", "desc": "新增tag末日战役+引文(2-42-038)'傻孩子们快跑'，score 49→53", "ts": "2026-04-27T00:07:06Z"}
+{"round": 180, "type": "enrich-page", "page": "伊文斯", "result": "accept", "desc": "内联PN(1-28-021)转blockquote，score 49→51", "ts": "2026-04-27T00:08:18Z"}
+{"round": 181, "type": "enrich-page", "page": "引力波广播", "result": "accept", "desc": "新增H2节'全民公决'+引文(3-24-098)，score 49→56", "ts": "2026-04-27T00:09:10Z"}
+{"round": 182, "type": "enrich-page", "page": "汪淼", "result": "accept", "desc": "新增tag幽灵倒计时+引文(1-07-055)+重命名'原文引用'节，score 49→55", "ts": "2026-04-27T00:10:15Z"}
+{"round": 183, "type": "enrich-page", "page": "黑域", "result": "accept", "desc": "内联PN(3-36-008)(3-36-023)转blockquote，score 49→52", "ts": "2026-04-27T00:11:22Z"}
+{"round": 184, "type": "enrich-page", "page": "古筝行动", "result": "accept", "desc": "新增H2节'行动的代价与意义'+tag汪淼，score 50→56", "ts": "2026-04-27T00:12:20Z"}
+{"round": 185, "type": "enrich-page", "page": "三体舰队", "result": "accept", "desc": "新增H2节'撤离的战略逻辑'+引文(3-24-092)，score 50→57", "ts": "2026-04-27T00:13:34Z"}
+{"round": 186, "type": "enrich-page", "page": "危机纪元", "result": "accept", "desc": "新增tag末日战役+引文(2-39-059)联合舰队2015艘，score 50→56", "ts": "2026-04-27T00:15:29Z"}
+{"round": 187, "type": "housekeeping", "page": "all", "result": "accept", "desc": "H10快速扫描：0 broken link，所有非章节页≥50确认", "ts": "2026-04-27T00:15:44Z"}
