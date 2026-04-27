@@ -451,3 +451,21 @@
 {"round": 438, "type": "create-page", "page": "启示号", "result": "accept", "desc": "引力波探测船+纸条接触+二向箔首个牺牲者，7条PN", "ts": "2026-04-27T09:41:09Z"}
 {"round": 434, "type": "enrich-page", "page": "飞星", "result": "accept", "desc": "大幅扩充飞星作为侦探线索章节，补充汪淼解密引文(1-09-009/1-12-023/044)", "ts": "2026-04-27T09:41:40Z"}
 {"round": 441, "type": "create-page", "page": "乱纪元", "result": "accept", "desc": "创建乱纪元词条：灾难气候期，全民脱水存储，三飞星同现最惨烈，文明迁徙根因，6条PN", "ts": "2026-04-27T09:41:54Z"}
+{"round": 442, "type": "publish", "page": "-", "result": "accept", "desc": "/wiki R442触发：commit 49b074a，enrich 9页+B实例新建12页，共241页", "ts": "2026-04-27T09:42:11Z"}
+{"round": 442, "type": "create-page", "page": "螳螂号", "result": "accept", "desc": "无人飞船+超长机械臂捕获水滴+丁仪西子登船考察，6条PN", "ts": "2026-04-27T09:42:12Z"}
+{"round": 432, "type": "enrich-page", "page": "云天明三则童话", "result": "accept", "desc": "丰富第二段情报解读：加入3-35-052（深水王子身高含义坐标）、3-35-054（光速不变明确指向），及故事舞台开篇3-31-029，PN 9→13", "ts": "2026-04-27T09:42:13Z"}
+{"round": 443, "type": "create-page", "page": "雷志成", "result": "accept", "desc": "创建雷志成词条：红岸政委，发现外星信号图谋私用，叶文洁推落悬崖，7条PN", "ts": "2026-04-27T09:42:54Z"}
+{"round": 446, "type": "housekeeping", "page": "罗辑", "result": "accept", "desc": "H8 cross-link：补充相关词条面壁计划/庄颜/技术爆炸/费米悖论/希恩斯", "ts": "2026-04-27T09:42:57Z"}
+{"round": 444, "type": "enrich-page", "page": "乱纪元", "result": "accept", "desc": "新增1-08-052（地狱旅行）、1-08-102（周文王乱纪元预测）、1-08-116（恒纪元到来狂欢），加入'恒纪元庆典'小节，PN 6→9", "ts": "2026-04-27T09:43:05Z"}
+{"round": 445, "type": "create-page", "page": "亨特", "result": "accept", "desc": "万有引力号潜伏者，50年不眠守护引力波销毁使命，反执剑人，7条PN", "ts": "2026-04-27T09:43:17Z"}
+{"round": 448, "type": "housekeeping", "page": "智子", "result": "accept", "desc": "H8 cross-link：补充相关词条丁仪/宇宙闪烁/杨冬/面壁计划/青铜时代号", "ts": "2026-04-27T09:43:18Z"}
+{"round": 449, "type": "enrich-page", "page": "万有引力号", "result": "accept", "desc": "补充追击蓝色空间号场景：3-13-090（水滴伴飞镜像）、3-17-004（进入外太空太阳变普通星），PN 7→8", "ts": "2026-04-27T09:43:38Z"}
+{"round": 450, "type": "create-page", "page": "无限边疆号", "result": "accept", "desc": "末日战役水滴第一击+核聚变连环爆炸起点，5条PN", "ts": "2026-04-27T09:44:01Z"}
+{"round": 452, "type": "create-page", "page": "红岸系统", "result": "accept", "desc": "25兆瓦微波武器+叶文洁秘密广播渠道，6条PN", "ts": "2026-04-27T09:44:58Z"}
+{"round": 451, "type": "enrich-page", "page": "雷志成", "result": "accept", "desc": "补充关键PN：1-26-021（召见叶文洁）、1-26-029（两人保密密谋）、1-26-030（叶文洁洞悉动机）、1-26-016（晚年供词）、1-23-007（监控程序），PN 2→7", "ts": "2026-04-27T09:45:04Z"}
+{"round": 453, "type": "enrich-page", "page": "恒纪元", "result": "accept", "desc": "加入1-08-068（飞星宣告恒纪元开始）、1-08-119（恒纪元终结前的绝望呼唤），PN 5→7", "ts": "2026-04-27T09:45:43Z"}
+{"round": 454, "type": "create-page", "page": "太阳系预警系统", "result": "accept", "desc": "35单元光粒监视网络，最多24小时预警，与光速飞船特权问题，6条PN", "ts": "2026-04-27T09:45:46Z"}
+{"round": 456, "type": "create-page", "page": "阳光计划", "result": "accept", "desc": "人类胜利后为三体文明提供太阳系生存空间的联合国提案，弱方案(冥王星/海王星)+强方案(火星)，4条PN", "ts": "2026-04-27T09:57:02Z"}
+{"round": 457, "type": "housekeeping", "page": "alias-conflicts", "result": "accept", "desc": "H5 修复3处alias冲突(歌者/红岸系统/智子)+build_registry.py修复章节页不注册label为alias导致的系统性冲突", "ts": "2026-04-27T10:00:09Z"}
+{"round": 457, "type": "create-page", "page": "联合国", "result": "accept", "desc": "国际协调机构：面壁法案颁布者，安理会→行星防御理事会，秘书长萨伊，117号决议，5条PN", "ts": "2026-04-27T10:00:37Z"}
+{"round": 458, "type": "create-page", "page": "海王星", "result": "accept", "desc": "舰队作战边界30AU+油膜矿采集地（雾伞/雪地工程）+末日战役轨道失守，6条PN", "ts": "2026-04-27T10:01:24Z"}

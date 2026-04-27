@@ -68,8 +68,9 @@ def build_registry(pages_root: Path) -> dict:
 
         pages[pid] = entry
 
-        # alias index
-        for key in [pid, entry["label"]] + (entry["aliases"] or []):
+        # alias index — chapter pages: only register by id, not label
+        label_keys = [] if entry["type"] == "chapter" else [entry["label"]]
+        for key in [pid] + label_keys + (entry["aliases"] or []):
             if not isinstance(key, str):
                 continue
             if key in alias_index and alias_index[key] != pid:
