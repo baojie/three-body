@@ -17,7 +17,7 @@
       "path": "pages/丁仪.md",
       "description": "理论物理学家，杨冬的恋人，宏原子和可控核聚变理论发现者；在末日战役中率先确认水滴由强互作用力材料构成，并以\"快跑！\"警告全舰队，壮烈牺牲。",
       "quality": "featured",
-      "quality_score": 57
+      "quality_score": 65
     },
     "万有引力号": {
       "type": "technology",
@@ -1901,7 +1901,7 @@
       "path": "pages/三体星系.md",
       "description": "距太阳约四光年的半人马座α三星系统，三颗恒星的混沌运动造就了三体文明周而复始的文明毁灭与重建。",
       "quality": "featured",
-      "quality_score": 58
+      "quality_score": 67
     },
     "三体游戏": {
       "type": "technology",
@@ -1940,7 +1940,7 @@
       "path": "pages/三体舰队.md",
       "description": "三体文明派遣征服太阳系的星际战争舰队，共两支：第一支在末日战役中被人类舰队击败，第二支拥有光速飞船于三体III到达太阳系，后因宇宙广播触发撤离",
       "quality": "featured",
-      "quality_score": 57
+      "quality_score": 66
     },
     "二向箔": {
       "type": "weapon",
@@ -2052,7 +2052,7 @@
       "path": "pages/光速飞船.md",
       "description": "以空间曲率驱动实现接近光速航行的飞船，技术来源于云天明的童话情报，是人类逃离太阳系的最终手段，但其留下的航迹也是黑暗森林中的致命暴露。",
       "quality": "featured",
-      "quality_score": 58
+      "quality_score": 66
     },
     "关一帆": {
       "type": "person",
@@ -2069,7 +2069,7 @@
       "path": "pages/关一帆.md",
       "description": "随万有引力号出航的宇宙学学者，对太空产生奇特的幽闭恐惧，进入四维空间碎片，最终与程心共同进入云天明留下的小宇宙，选择归返大宇宙而非永居其中。",
       "quality": "featured",
-      "quality_score": 57
+      "quality_score": 65
     },
     "冬眠技术": {
       "type": "technology",
@@ -2179,7 +2179,7 @@
       "path": "pages/四维碎块.md",
       "description": "散布在三维宇宙中的四维空间残片——蓝色空间号在深空首次发现，船员得以进入四维视角直视三维物体内部，同时也在此发现了引力波广播的技术基础。",
       "quality": "featured",
-      "quality_score": 60
+      "quality_score": 66
     },
     "地球三体组织": {
       "type": "organization",
@@ -2289,7 +2289,7 @@
       "path": "pages/宇宙社会学.md",
       "description": "叶文洁建议、罗辑创立的理论学科，以两条公理和两个关键概念推导出\"黑暗森林\"宇宙图景。",
       "quality": "featured",
-      "quality_score": 57
+      "quality_score": 66
     },
     "宇宙闪烁": {
       "type": "concept",
@@ -2326,7 +2326,7 @@
       "path": "pages/审判日号.md",
       "description": "地球三体组织降临派的海上浮动基地，六万吨级油轮改建，存储截留的三体信息，最终被\"古筝行动\"用飞刃纳米丝切割成四十余片，于巴拿马运河彻底摧毁。",
       "quality": "featured",
-      "quality_score": 57
+      "quality_score": 66
     },
     "小宇宙": {
       "type": "concept",
@@ -2493,7 +2493,7 @@
       "path": "pages/掩体计划.md",
       "description": "三体III中人类应对黑暗森林打击的三大战略之一：以木星、土星等四大巨行星为屏蔽，在其背阳面建设50座太空城，拯救数亿人口在太阳被摧毁后继续存活。三个选项中成功希望最高、技术难度最低。",
       "quality": "featured",
-      "quality_score": 57
+      "quality_score": 65
     },
     "星环集团": {
       "type": "organization",
@@ -2566,7 +2566,7 @@
       "path": "pages/曲率驱动飞船.md",
       "description": "利用空间曲率差异推进的近光速飞行器——飞船压平后方空间曲率，被前方高曲率空间拉动前进，是三体文明的光速飞行技术，后被云天明情报揭示。",
       "quality": "featured",
-      "quality_score": 57
+      "quality_score": 65
     },
     "末日战役": {
       "type": "event",
@@ -2837,7 +2837,7 @@
       "path": "pages/艾AA.md",
       "description": "三体III中与程心并肩的亲密好友和商业伙伴，天文学博士，发现了云天明赠予程心的行星DX3906，陪伴程心历经威慑纪元崩溃、流亡澳大利亚、太阳系末日，最终与关一帆共赴新世界。",
       "quality": "featured",
-      "quality_score": 57
+      "quality_score": 65
     },
     "蓝色空间号": {
       "type": "technology",
@@ -2892,7 +2892,7 @@
       "path": "pages/逃亡主义.md",
       "description": "三体危机初期兴起的政治思潮——认为在科学被智子锁死的前提下，太阳系防御毫无意义，人类应建造星际飞船逃往外太空以延续文明。章北海是其最坚定的秘密实践者。",
       "quality": "featured",
-      "quality_score": 56
+      "quality_score": 66
     },
     "阶梯计划": {
       "type": "event",
@@ -3478,5 +3478,5 @@
     "Dark Forest Theory": "黑暗森林法则"
   },
   "page_count": 202,
-  "generated": "2026-04-27T03:40:54Z"
+  "generated": "2026-04-27T04:08:39Z"
 }

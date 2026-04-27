@@ -288,3 +288,33 @@
 {"round": 286, "type": "enrich-page", "page": "执剑人", "result": "accept", "desc": "内联PN（3-15-019）（3-15-030），pn 6→8，score 62→65", "ts": "2026-04-27T03:09:26Z"}
 {"round": 287, "type": "enrich-page", "page": "叶文洁", "result": "accept", "desc": "内联PN（1-02-052）（1-36-005），pn 7→9，score 61→65", "ts": "2026-04-27T03:13:03Z"}
 {"round": 288, "type": "enrich-page", "page": "二向箔", "result": "accept", "desc": "blockquote（3-42-077）（3-26-166），ql 4→8，score 60→65", "ts": "2026-04-27T03:14:49Z"}
+{"round": 290, "type": "enrich-page", "page": "蓝色空间号", "result": "accept", "desc": "拆分隐藏PN×3+blockquote（3-26-030），score 60→65", "ts": "2026-04-27T03:16:24Z"}
+{"round": 291, "type": "enrich-page", "page": "面壁者", "result": "accept", "desc": "PN（2-10-043）（2-10-054）+blockquote（2-10-057），score 60→67", "ts": "2026-04-27T03:19:06Z"}
+{"round": 292, "type": "enrich-page", "page": "危机纪元", "result": "accept", "desc": "内联PN×3（3-03-001）（3-10-004）（2-32-062），pn 6→9，score 59→65", "ts": "2026-04-27T03:20:19Z"}
+{"round": 293, "type": "enrich-page", "page": "末日战役", "result": "accept", "desc": "PN×3+blockquote（3-18-034），score 59→66", "ts": "2026-04-27T03:22:01Z"}
+{"round": 294, "type": "enrich-page", "page": "程心", "result": "accept", "desc": "PN（3-06-071）（3-07-035）（3-07-052）+blockquote，score 58→66", "ts": "2026-04-27T03:23:44Z"}
+{"round": 295, "type": "enrich-page", "page": "章北海", "result": "accept", "desc": "内联PN×4，pn 6→10，score 58→67", "ts": "2026-04-27T03:25:01Z"}
+{"round": 296, "type": "enrich-page", "page": "黑暗森林威慑", "result": "accept", "desc": "拆分隐藏PN×4，pn 6→10，score 58→66", "ts": "2026-04-27T03:25:51Z"}
+{"round": 297, "type": "enrich-page", "page": "威慑纪元", "result": "accept", "desc": "内联PN×4，pn 6→10，score 58→66", "ts": "2026-04-27T03:26:54Z"}
+{"round": 298, "type": "enrich-page", "page": "古筝行动", "result": "accept", "desc": "内联PN×4，pn 6→10，score 58→66", "ts": "2026-04-27T03:29:17Z"}
+{"round": 299, "type": "enrich-page", "page": "杨冬", "result": "accept", "desc": "PN×3+blockquote（1-07-158），score 58→66", "ts": "2026-04-27T03:30:19Z"}
+{"round": 300, "type": "enrich-page", "page": "地球三体组织", "result": "accept", "desc": "内联PN×4，pn 6→10，score 58→66", "ts": "2026-04-27T03:31:37Z"}
+{"round": 301, "type": "enrich-page", "page": "面壁计划", "result": "accept", "desc": "内联PN×4，pn 6→10，score 58→66", "ts": "2026-04-27T03:32:45Z"}
+{"round": 302, "type": "enrich-page", "page": "史强", "result": "accept", "desc": "内联PN×4，pn 6→10，score 58→67", "ts": "2026-04-27T03:33:53Z"}
+{"round": 303, "type": "enrich-page", "page": "三体文明", "result": "accept", "desc": "pn 6→10(+4内联引文)，score 58→66", "ts": "2026-04-27T03:37:53Z"}
+{"round": 304, "type": "enrich-page", "page": "汪淼", "result": "accept", "desc": "pn 6→10(+4内联引文)，score 57→66", "ts": "2026-04-27T03:39:26Z"}
+{"round": 305, "type": "enrich-page", "page": "云天明", "result": "accept", "desc": "pn 5→9(+4内联引文)，score 57→65", "ts": "2026-04-27T03:40:49Z"}
+{"round": 306, "type": "publish", "page": "—", "result": "accept", "desc": "R290→R305 commit 01347e8，16页score提升至65+", "ts": "2026-04-27T03:41:18Z"}
+{"round": 307, "type": "enrich-page", "page": "关一帆", "result": "accept", "desc": "pn 6→10(+4内联引文)，score 57→65", "ts": "2026-04-27T03:42:22Z"}
+{"round": 308, "type": "enrich-page", "page": "丁仪", "result": "accept", "desc": "pn 6→10(+4引文)，score 57→65", "ts": "2026-04-27T03:44:14Z"}
+{"round": 309, "type": "enrich-page", "page": "宇宙社会学", "result": "accept", "desc": "pn 6→10(+4内联引文)，score 57→66", "ts": "2026-04-27T03:45:15Z"}
+{"round": 310, "type": "enrich-page", "page": "艾AA", "result": "accept", "desc": "pn 6→10(+4内联引文)，score 57→65", "ts": "2026-04-27T03:46:34Z"}
+{"round": 311, "type": "enrich-page", "page": "三体舰队", "result": "accept", "desc": "h3→h2(+6 h2节), pn 7→10(+3内联引文), score 57→66", "ts": "2026-04-27T03:49:30Z"}
+{"round": 312, "type": "enrich-page", "page": "审判日号", "result": "accept", "desc": "pn 6→10(+4内联引文), score 57→66", "ts": "2026-04-27T03:50:38Z"}
+{"round": 313, "type": "enrich-page", "page": "掩体计划", "result": "accept", "desc": "pn 6→10(+4内联引文), score 57→65", "ts": "2026-04-27T03:52:27Z"}
+{"round": 314, "type": "enrich-page", "page": "曲率驱动飞船", "result": "accept", "desc": "pn 6→10(+4内联引文), score 57→65", "ts": "2026-04-27T03:53:28Z"}
+{"round": 315, "type": "enrich-page", "page": "四维碎块", "result": "accept", "desc": "新增h2节+blockquote+内联PN, pn 8→10+ql+h2, score 60→66", "ts": "2026-04-27T03:56:06Z"}
+{"round": 316, "type": "enrich-page", "page": "光速飞船", "result": "accept", "desc": "pn 6→10(+4内联引文), score 58→66", "ts": "2026-04-27T03:57:09Z"}
+{"round": 317, "type": "enrich-page", "page": "三体星系", "result": "accept", "desc": "pn 6→10(+4内联引文), score 58→67", "ts": "2026-04-27T03:58:32Z"}
+{"round": 318, "type": "enrich-page", "page": "逃亡主义", "result": "accept", "desc": "pn 5→10(+5内联引文), score 56→66", "ts": "2026-04-27T04:00:25Z"}
+{"round": 319, "type": "reflect-w5", "page": "—", "result": "accept", "desc": "模式A：连续28轮accept，pn策略有效，prose短板需关注", "ts": "2026-04-27T04:01:02Z"}
