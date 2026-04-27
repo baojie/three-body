@@ -17,7 +17,7 @@
       "path": "pages/丁仪.md",
       "description": "理论物理学家，杨冬的恋人，宏原子和可控核聚变理论发现者；在末日战役中率先确认水滴由强互作用力材料构成，并以\"快跑！\"警告全舰队，壮烈牺牲。",
       "quality": "featured",
-      "quality_score": 69
+      "quality_score": 66
     },
     "万有引力号": {
       "type": "technology",
@@ -35,7 +35,7 @@
       "path": "pages/万有引力号.md",
       "description": "末日战役后地球建造的第一艘恒星级战舰，搭载引力波广播发射器，是黑暗森林威慑体系的核心载体",
       "quality": "featured",
-      "quality_score": 68
+      "quality_score": 64
     },
     "三体I-01-前言": {
       "type": "chapter",
@@ -1882,7 +1882,7 @@
       "path": "pages/三体文明.md",
       "description": "来自三体星系（半人马座α三星系统）的高度发达外星文明，以恒纪元与乱纪元交替为生存背景",
       "quality": "featured",
-      "quality_score": 67
+      "quality_score": 66
     },
     "三体星系": {
       "type": "place",
@@ -1901,7 +1901,7 @@
       "path": "pages/三体星系.md",
       "description": "距太阳约四光年的半人马座α三星系统，三颗恒星的混沌运动造就了三体文明周而复始的文明毁灭与重建。",
       "quality": "featured",
-      "quality_score": 68
+      "quality_score": 67
     },
     "三体游戏": {
       "type": "technology",
@@ -1920,7 +1920,7 @@
       "path": "pages/三体游戏.md",
       "description": "三体I中由ETO开发的VR网络游戏，网址www.threebody.com，仅支持V装具登录，以三体星球为场景，让玩家体验乱纪元/恒纪元循环，秘密用于筛选和招募ETO成员。",
       "quality": "featured",
-      "quality_score": 68
+      "quality_score": 63
     },
     "三体舰队": {
       "type": "organization",
@@ -1940,7 +1940,7 @@
       "path": "pages/三体舰队.md",
       "description": "三体文明派遣征服太阳系的星际战争舰队，共两支：第一支在末日战役中被人类舰队击败，第二支拥有光速飞船于三体III到达太阳系，后因宇宙广播触发撤离",
       "quality": "featured",
-      "quality_score": 68
+      "quality_score": 66
     },
     "二向箔": {
       "type": "weapon",
@@ -1959,7 +1959,7 @@
       "path": "pages/二向箔.md",
       "description": "三体III中高等文明使用的终极宇宙清理武器：一片封装的二维空间，释放后引发三维空间向二维跌落的维度坍塌，使整个太阳系在数日内变成一幅厚度为零的二维图画。",
       "quality": "featured",
-      "quality_score": 67
+      "quality_score": 65
     },
     "云天明": {
       "type": "person",
@@ -1997,7 +1997,7 @@
       "path": "pages/云天明三则童话.md",
       "description": "云天明在与程心的唯一一次面谈中讲述的三个相互连贯的童话故事——以精巧的双层隐喻传递了三体文明的核心战略情报，包括曲率驱动原理和宇宙隐藏策略。",
       "quality": "featured",
-      "quality_score": 68
+      "quality_score": 66
     },
     "伊文斯": {
       "type": "person",
@@ -2015,7 +2015,7 @@
       "path": "pages/伊文斯.md",
       "description": "美国石油富商之子，极端环保主义者，地球三体组织降临派领袖，以\"审判日\"号油轮为基地，真实目标是借助三体文明消灭人类，在古筝行动中死亡。",
       "quality": "featured",
-      "quality_score": 68
+      "quality_score": 66
     },
     "光粒": {
       "type": "weapon",
@@ -2033,7 +2033,7 @@
       "path": "pages/光粒.md",
       "description": "宇宙级打击武器：体积极小但以接近光速运动，相对论效应使其质量急剧放大，可穿透恒星表层引发恒星爆炸，是黑暗森林法则下宇宙文明打击暴露目标的标准手段。",
       "quality": "featured",
-      "quality_score": 67
+      "quality_score": 61
     },
     "光速飞船": {
       "type": "technology",
@@ -2052,7 +2052,7 @@
       "path": "pages/光速飞船.md",
       "description": "以空间曲率驱动实现接近光速航行的飞船，技术来源于云天明的童话情报，是人类逃离太阳系的最终手段，但其留下的航迹也是黑暗森林中的致命暴露。",
       "quality": "featured",
-      "quality_score": 68
+      "quality_score": 66
     },
     "关一帆": {
       "type": "person",
@@ -2069,7 +2069,7 @@
       "path": "pages/关一帆.md",
       "description": "随万有引力号出航的宇宙学学者，对太空产生奇特的幽闭恐惧，进入四维空间碎片，最终与程心共同进入云天明留下的小宇宙，选择归返大宇宙而非永居其中。",
       "quality": "featured",
-      "quality_score": 69
+      "quality_score": 66
     },
     "冬眠技术": {
       "type": "technology",
@@ -2088,7 +2088,7 @@
       "path": "pages/冬眠技术.md",
       "description": "三体系列中允许人类跨越数十乃至数百年的低温休眠技术，通过体外生命维持系统保持最低限度的生理活动。面壁者、太空军官员和星际航行者广泛使用，是连接不同时代的关键技术手段。",
       "quality": "featured",
-      "quality_score": 68
+      "quality_score": 65
     },
     "危机纪元": {
       "type": "concept",
@@ -2105,7 +2105,7 @@
       "path": "pages/危机纪元.md",
       "description": "三体入侵确认（约公元201x年）至罗辑建立黑暗森林威慑（约2208年）的约两百年历史时期，人类经历幼稚症、大低谷与舰队建设，最终以面壁计划成功告终。",
       "quality": "featured",
-      "quality_score": 68
+      "quality_score": 67
     },
     "古筝行动": {
       "type": "event",
@@ -2124,7 +2124,7 @@
       "path": "pages/古筝行动.md",
       "description": "国际联合行动，利用\"飞刃\"纳米材料在巴拿马运河将ETO旗舰\"审判日\"号截断，以夺取船上的截留三体信息。",
       "quality": "featured",
-      "quality_score": 67
+      "quality_score": 66
     },
     "史强": {
       "type": "person",
@@ -2142,7 +2142,7 @@
       "path": "pages/史强.md",
       "description": "粗犷的便衣刑警，汪淼在三体调查中的搭档，草根直觉与实战经验弥补了学者的盲点，在叶文洁审讯中发挥关键作用。",
       "quality": "featured",
-      "quality_score": 69
+      "quality_score": 67
     },
     "叶文洁": {
       "type": "person",
@@ -2179,7 +2179,7 @@
       "path": "pages/四维碎块.md",
       "description": "散布在三维宇宙中的四维空间残片——蓝色空间号在深空首次发现，船员得以进入四维视角直视三维物体内部，同时也在此发现了引力波广播的技术基础。",
       "quality": "featured",
-      "quality_score": 68
+      "quality_score": 66
     },
     "地球三体组织": {
       "type": "organization",
@@ -2198,7 +2198,7 @@
       "path": "pages/地球三体组织.md",
       "description": "叶文洁秘密创立的地球叛军组织，成员认同三体文明超越人类，配合三体入侵、阻止人类备战。分为降临派、拯救派、幸存派三个派别。",
       "quality": "featured",
-      "quality_score": 68
+      "quality_score": 66
     },
     "太阳系": {
       "type": "place",
@@ -2216,7 +2216,7 @@
       "path": "pages/太阳系.md",
       "description": "人类文明的家园星系，经历三体入侵危机后，最终被黑暗森林打击以二向箔降维摧毁。",
       "quality": "featured",
-      "quality_score": 68
+      "quality_score": 67
     },
     "奥尔特星云": {
       "type": "place",
@@ -2234,7 +2234,7 @@
       "path": "pages/奥尔特星云.md",
       "description": "距太阳约1光年的太阳系最外缘彗星带，《三体》宇宙中是人类防卫前沿、三体舰队止步线和星际航行的象征边界",
       "quality": "featured",
-      "quality_score": 68
+      "quality_score": 67
     },
     "威慑纪元": {
       "type": "concept",
@@ -2251,7 +2251,7 @@
       "path": "pages/威慑纪元.md",
       "description": "罗辑建立黑暗森林威慑后持续约62年的人类历史时期，双方在相互毁灭的恐惧下维持了特殊的和平，地球生态恢复、三体文明传送知识，却以程心失守告终。",
       "quality": "featured",
-      "quality_score": 68
+      "quality_score": 66
     },
     "宇宙时间线": {
       "type": "overview",
@@ -2271,7 +2271,7 @@
       "path": "pages/宇宙时间线.md",
       "description": "《三体》三部曲的完整历史纪年对照，从21世纪的危机纪元直至647号小宇宙启动，跨越约1890万年。",
       "quality": "featured",
-      "quality_score": 67
+      "quality_score": 66
     },
     "宇宙社会学": {
       "type": "concept",
@@ -2289,7 +2289,7 @@
       "path": "pages/宇宙社会学.md",
       "description": "叶文洁建议、罗辑创立的理论学科，以两条公理和两个关键概念推导出\"黑暗森林\"宇宙图景。",
       "quality": "featured",
-      "quality_score": 68
+      "quality_score": 66
     },
     "宇宙闪烁": {
       "type": "concept",
@@ -2307,7 +2307,7 @@
       "path": "pages/宇宙闪烁.md",
       "description": "三体I中出现的宇宙背景辐射异常波动现象：三颗卫星与地面站同步检测到3K辐射的莫尔斯电码节律，与汪淼的幽灵倒计时同步，是智子在宇宙尺度上向地球科学家传递恐吓信号的方式。",
       "quality": "featured",
-      "quality_score": 68
+      "quality_score": 67
     },
     "审判日号": {
       "type": "technology",
@@ -2326,7 +2326,7 @@
       "path": "pages/审判日号.md",
       "description": "地球三体组织降临派的海上浮动基地，六万吨级油轮改建，存储截留的三体信息，最终被\"古筝行动\"用飞刃纳米丝切割成四十余片，于巴拿马运河彻底摧毁。",
       "quality": "featured",
-      "quality_score": 67
+      "quality_score": 66
     },
     "小宇宙": {
       "type": "concept",
@@ -2346,7 +2346,7 @@
       "path": "pages/小宇宙.md",
       "description": "高等文明在大宇宙中建造的独立空间气泡——云天明将一个完整的小宇宙作为礼物送给程心，使她得以在大宇宙末日（大坍缩）中存活，并进入下一次大爆炸后的新宇宙。",
       "quality": "featured",
-      "quality_score": 69
+      "quality_score": 67
     },
     "幽灵倒计时": {
       "type": "concept",
@@ -2364,7 +2364,7 @@
       "path": "pages/幽灵倒计时.md",
       "description": "三体I中智子对汪淼施加的心理恐吓手段：只有汪淼本人拍摄的照片上才会出现的倒计时数字，从1200小时递减，后来演变为直接出现在视野中，与宇宙闪烁同步，迫使他停止纳米材料研究。",
       "quality": "featured",
-      "quality_score": 68
+      "quality_score": 62
     },
     "广播纪元": {
       "type": "concept",
@@ -2381,7 +2381,7 @@
       "path": "pages/广播纪元.md",
       "description": "公元2272年—2332年，[[威慑纪元]]结束（程心放弃威慑）到黑暗森林打击降临前的六十年——三体文明被宇宙广播暴露坐标后被消灭，人类在恐惧与麻痹中共存，最终迎来二向箔降临。",
       "quality": "featured",
-      "quality_score": 68
+      "quality_score": 67
     },
     "引力波广播": {
       "type": "technology",
@@ -2419,7 +2419,7 @@
       "path": "pages/归零者.md",
       "description": "三体III中出现的神秘宇宙文明群体，试图将光速降低至零以重启宇宙——他们留下的\"死线\"是已探明的宇宙中最黑暗的物体，是零光速区域的边界标志。",
       "quality": "featured",
-      "quality_score": 69
+      "quality_score": 66
     },
     "执剑人": {
       "type": "concept",
@@ -2438,7 +2438,7 @@
       "path": "pages/执剑人.md",
       "description": "掌握引力波发射装置开关的人类代表，是黑暗森林威慑的具身化，相当于悬在两个世界头上的达摩克利斯之剑的那根发丝。",
       "quality": "featured",
-      "quality_score": 68
+      "quality_score": 67
     },
     "技术爆炸": {
       "type": "concept",
@@ -2456,7 +2456,7 @@
       "path": "pages/技术爆炸.md",
       "description": "宇宙社会学的核心推导概念之一——文明的技术在极短时间内实现跨越式飞跃，使落后文明迅速逼近或超越强大文明，令猜疑链在任何阶段都无法消解。",
       "quality": "featured",
-      "quality_score": 68
+      "quality_score": 67
     },
     "掩体纪元": {
       "type": "concept",
@@ -2474,7 +2474,7 @@
       "path": "pages/掩体纪元.md",
       "description": "公元2333年—2400年，[[广播纪元]]结束（黑暗森林打击降临）后的历史时期——人类主体撤入巨行星背后的太空城\"掩体世界\"，等待光粒攻击，最终被二向箔降维灭绝。",
       "quality": "featured",
-      "quality_score": 69
+      "quality_score": 67
     },
     "掩体计划": {
       "type": "concept",
@@ -2493,7 +2493,7 @@
       "path": "pages/掩体计划.md",
       "description": "三体III中人类应对黑暗森林打击的三大战略之一：以木星、土星等四大巨行星为屏蔽，在其背阳面建设50座太空城，拯救数亿人口在太阳被摧毁后继续存活。三个选项中成功希望最高、技术难度最低。",
       "quality": "featured",
-      "quality_score": 69
+      "quality_score": 65
     },
     "星环集团": {
       "type": "organization",
@@ -2511,7 +2511,7 @@
       "path": "pages/星环集团.md",
       "description": "程心创建、后由维德接管的太空建筑与光速飞船研究公司，建造星环城，推进曲率驱动研究，最终因独立宣言被联邦强制解散",
       "quality": "featured",
-      "quality_score": 67
+      "quality_score": 66
     },
     "星舰地球": {
       "type": "concept",
@@ -2530,7 +2530,7 @@
       "path": "pages/星舰地球.md",
       "description": "末日战役后幸存的五艘人类恒星级战舰组成的逃亡社会——以\"自然选择\"号为核心，代表着太阳系毁灭前唯一存续的人类文明火种。",
       "quality": "featured",
-      "quality_score": 67
+      "quality_score": 66
     },
     "智子": {
       "type": "technology",
@@ -2548,7 +2548,7 @@
       "path": "pages/智子.md",
       "description": "三体文明将质子展开为二维平面并蚀刻超级计算机电路后折叠而成的超高维粒子计算机，可超光速通讯，用于监控和封锁地球基础科学研究",
       "quality": "featured",
-      "quality_score": 69
+      "quality_score": 66
     },
     "曲率驱动飞船": {
       "type": "technology",
@@ -2566,7 +2566,7 @@
       "path": "pages/曲率驱动飞船.md",
       "description": "利用空间曲率差异推进的近光速飞行器——飞船压平后方空间曲率，被前方高曲率空间拉动前进，是三体文明的光速飞行技术，后被云天明情报揭示。",
       "quality": "featured",
-      "quality_score": 69
+      "quality_score": 66
     },
     "末日战役": {
       "type": "event",
@@ -2584,7 +2584,7 @@
       "path": "pages/末日战役.md",
       "description": "两枚三体水滴探测器在极短时间内摧毁人类三大舰队，仅少数战舰逃脱，是人类历史上最大的军事灾难",
       "quality": "featured",
-      "quality_score": 67
+      "quality_score": 66
     },
     "杨冬": {
       "type": "person",
@@ -2601,7 +2601,7 @@
       "path": "pages/杨冬.md",
       "description": "理论物理学家，丁仪的恋人，叶文洁之女。因发现物理学定律在实验中失效而陷入绝望，留下\"物理学从来就没有存在过\"的遗书后自杀，是物理学家自杀潮的关键人物。",
       "quality": "featured",
-      "quality_score": 69
+      "quality_score": 66
     },
     "歌者": {
       "type": "civilization",
@@ -2619,7 +2619,7 @@
       "path": "pages/歌者.md",
       "description": "三体III中匿名高级宇宙文明的\"清理者\"，以吟唱古歌谣为伴，日常工作是翻阅宇宙坐标广播、判断诚意、清理暴露文明。正是他漫不经心地掷出了那块二向箔，消灭了太阳系。",
       "quality": "featured",
-      "quality_score": 68
+      "quality_score": 66
     },
     "水滴探测器": {
       "type": "weapon",
@@ -2638,7 +2638,7 @@
       "path": "pages/水滴探测器.md",
       "description": "三体文明发往太阳系的终极武器，外形如完美液滴，由强互作用力材料构成，人类任何武器对其无效，单枚足以摧毁整个人类舰队。",
       "quality": "featured",
-      "quality_score": 68
+      "quality_score": 66
     },
     "汪淼": {
       "type": "person",
@@ -2655,7 +2655,7 @@
       "path": "pages/汪淼.md",
       "description": "纳米材料研究教授，《三体》第一部的主视角人物，经历宇宙闪烁并深入调查地球三体组织。",
       "quality": "featured",
-      "quality_score": 69
+      "quality_score": 66
     },
     "猜疑链": {
       "type": "concept",
@@ -2673,7 +2673,7 @@
       "path": "pages/猜疑链.md",
       "description": "宇宙社会学中描述文明间无法消解的相互猜疑结构——双方无论善意与否，都无法确认对方的善意，形成无限递归的猜疑锁链，最终导向打击先行。",
       "quality": "featured",
-      "quality_score": 68
+      "quality_score": 66
     },
     "申玉菲": {
       "type": "person",
@@ -2690,7 +2690,7 @@
       "path": "pages/申玉菲.md",
       "description": "三体I中日籍华裔物理学家，\"科学边界\"核心成员，ETO信徒，以极简话语向汪淼传达\"停下来试试\"的警告，是汪淼进入三体世界的关键引路人。",
       "quality": "featured",
-      "quality_score": 67
+      "quality_score": 65
     },
     "破壁人": {
       "type": "concept",
@@ -2709,7 +2709,7 @@
       "path": "pages/破壁人.md",
       "description": "地球三体组织为对抗面壁计划而秘密指定的反间谍系统——每位面壁者对应一名破壁人，借助智子的全息监视，通过分析面壁者的公开与秘密行为，逐步破解其真实战略意图。",
       "quality": "featured",
-      "quality_score": 70
+      "quality_score": 68
     },
     "科学边界": {
       "type": "organization",
@@ -2727,7 +2727,7 @@
       "path": "pages/科学边界.md",
       "description": "三体I中表面上以探索\"科学局限性\"为宗旨的松散国际学术组织，实为地球三体组织渗透科学界的外围机构，通过学术交流招募对人类文明绝望的顶尖科学家。",
       "quality": "featured",
-      "quality_score": 69
+      "quality_score": 66
     },
     "程心": {
       "type": "person",
@@ -2745,7 +2745,7 @@
       "path": "pages/程心.md",
       "description": "航天工程师，第二任执剑人，在关键时刻放弃威慑，此后见证人类文明的多次灾难，最终与关一帆进入云天明为她留下的小宇宙（647号宇宙）。",
       "quality": "featured",
-      "quality_score": 67
+      "quality_score": 66
     },
     "章北海": {
       "type": "person",
@@ -2763,7 +2763,7 @@
       "path": "pages/章北海.md",
       "description": "太空军政委，表面上是最坚定的必胜论者，实际上是秘密推进人类逃亡方案的战略家，水滴攻击中驾\"自然选择\"号脱逃。",
       "quality": "featured",
-      "quality_score": 68
+      "quality_score": 67
     },
     "红岸基地": {
       "type": "place",
@@ -2782,7 +2782,7 @@
       "path": "pages/红岸基地.md",
       "description": "文化大革命时期建立的军事秘密项目，以大型天线向宇宙发射信号，叶文洁在此工作并向三体发送了地球坐标",
       "quality": "featured",
-      "quality_score": 69
+      "quality_score": 67
     },
     "维德": {
       "type": "person",
@@ -2801,7 +2801,7 @@
       "path": "pages/维德.md",
       "description": "三体III核心人物，PIA局长，\"前进，不择手段地前进\"的极端实用主义者，阶梯计划设计者，后创立星环集团推动光速飞船研究，以反人类罪被执行死刑。",
       "quality": "featured",
-      "quality_score": 68
+      "quality_score": 66
     },
     "罗辑": {
       "type": "person",
@@ -2819,7 +2819,7 @@
       "path": "pages/罗辑.md",
       "description": "社会学家，四位面壁者中唯一成功者，独立创立黑暗森林法则并以宇宙广播威慑三体文明，成为地球第一任执剑人，独自持剑长达五十四年",
       "quality": "featured",
-      "quality_score": 67
+      "quality_score": 64
     },
     "艾AA": {
       "type": "person",
@@ -2837,7 +2837,7 @@
       "path": "pages/艾AA.md",
       "description": "三体III中与程心并肩的亲密好友和商业伙伴，天文学博士，发现了云天明赠予程心的行星DX3906，陪伴程心历经威慑纪元崩溃、流亡澳大利亚、太阳系末日，最终与关一帆共赴新世界。",
       "quality": "featured",
-      "quality_score": 68
+      "quality_score": 65
     },
     "蓝色空间号": {
       "type": "technology",
@@ -2855,7 +2855,7 @@
       "path": "pages/蓝色空间号.md",
       "description": "亚洲舰队战舰，末日战役后逃入深空，经历黑暗战役与四维空间碎片，被万有引力号追击半个世纪",
       "quality": "featured",
-      "quality_score": 67
+      "quality_score": 65
     },
     "费米悖论": {
       "type": "concept",
@@ -2873,7 +2873,7 @@
       "path": "pages/费米悖论.md",
       "description": "银河系古老而广阔，外星文明早该抵达太阳系，但宇宙却一片沉默——三体宇宙中这一悖论的答案是黑暗森林法则。",
       "quality": "featured",
-      "quality_score": 68
+      "quality_score": 67
     },
     "逃亡主义": {
       "type": "concept",
@@ -2892,7 +2892,7 @@
       "path": "pages/逃亡主义.md",
       "description": "三体危机初期兴起的政治思潮——认为在科学被智子锁死的前提下，太阳系防御毫无意义，人类应建造星际飞船逃往外太空以延续文明。章北海是其最坚定的秘密实践者。",
       "quality": "featured",
-      "quality_score": 68
+      "quality_score": 66
     },
     "阶梯计划": {
       "type": "event",
@@ -2911,7 +2911,7 @@
       "path": "pages/阶梯计划.md",
       "description": "危机纪元初期由PIA策划的秘密战略侦察行动：以连续核爆推进辐射帆，将云天明的大脑送入三体舰队，在敌人心脏植入人类的眼睛。",
       "quality": "featured",
-      "quality_score": 67
+      "quality_score": 65
     },
     "面壁者": {
       "type": "concept",
@@ -2929,7 +2929,7 @@
       "path": "pages/面壁者.md",
       "description": "人类应对三体入侵设立的战略制度：选定四名战略家，凭借智子无法读取人类思维的漏洞，独立制定秘密反击计划。",
       "quality": "featured",
-      "quality_score": 68
+      "quality_score": 67
     },
     "面壁计划": {
       "type": "event",
@@ -2947,7 +2947,7 @@
       "path": "pages/面壁计划.md",
       "description": "联合国行星防御理事会在危机纪元启动的绝密战略项目——利用智子无法读取人类思维的缺陷，授权四名\"面壁者\"独立制定对抗三体文明的秘密计划。",
       "quality": "featured",
-      "quality_score": 68
+      "quality_score": 66
     },
     "黑域": {
       "type": "concept",
@@ -2966,7 +2966,7 @@
       "path": "pages/黑域.md",
       "description": "三体III中人类应对黑暗森林威胁的三大战略选项之一：将太阳系改造为低光速黑洞，以宇宙安全声明宣告自身的低技术状态换取安全，代价是永远与宇宙隔绝并自锁技术水平。",
       "quality": "featured",
-      "quality_score": 68
+      "quality_score": 67
     },
     "黑暗森林威慑": {
       "type": "concept",
@@ -2985,7 +2985,7 @@
       "path": "pages/黑暗森林威慑.md",
       "description": "以向宇宙广播三体星系坐标为终极威胁，迫使三体文明停止侵略地球的战略平衡体系，由罗辑建立，程心接班后崩溃",
       "quality": "featured",
-      "quality_score": 68
+      "quality_score": 66
     },
     "黑暗森林打击": {
       "type": "event",
@@ -3004,7 +3004,7 @@
       "path": "pages/黑暗森林打击.md",
       "description": "宇宙中高维文明依照黑暗森林法则对暴露坐标的文明实施的降维摧毁，太阳系因引力波宇宙广播暴露而遭受二向箔打击，整个太阳系被降为二维",
       "quality": "featured",
-      "quality_score": 67
+      "quality_score": 64
     },
     "黑暗森林法则": {
       "type": "law",
@@ -3023,7 +3023,7 @@
       "path": "pages/黑暗森林法则.md",
       "description": "宇宙社会学基本公理：宇宙中每个文明都是带枪的猎人，必须对其他文明格杀勿论",
       "quality": "featured",
-      "quality_score": 68
+      "quality_score": 66
     }
   },
   "alias_index": {
@@ -3478,5 +3478,5 @@
     "Dark Forest Theory": "黑暗森林法则"
   },
   "page_count": 202,
-  "generated": "2026-04-27T05:19:13Z"
+  "generated": "2026-04-27T05:20:48Z"
 }

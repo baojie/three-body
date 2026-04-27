@@ -16,6 +16,8 @@ from pathlib import Path
 
 import yaml
 
+from compute_quality import compute_quality_score  # noqa: E402
+
 FRONTMATTER_RE = re.compile(r"\A---\s*\n(.*?)\n---\s*\n", re.DOTALL)
 
 
@@ -39,6 +41,10 @@ def build_registry(pages_root: Path) -> dict:
         text = md_file.read_text(encoding="utf-8")
         front = parse_frontmatter(text)
 
+        # body = everything after frontmatter
+        m_fm = FRONTMATTER_RE.match(text)
+        body = text[m_fm.end():] if m_fm else text
+
         entry: dict = {
             "type":    front.get("type", "unknown"),
             "label":   front.get("label", pid),
@@ -54,8 +60,7 @@ def build_registry(pages_root: Path) -> dict:
             entry["image"] = front["image"]
         if front.get("quality"):
             entry["quality"] = front["quality"]
-        if front.get("quality_score") is not None:
-            entry["quality_score"] = front["quality_score"]
+            entry["quality_score"] = compute_quality_score(front, body)
         # chapter-specific fields
         for field in ("book", "book_seq", "pn_prefix"):
             if front.get(field) is not None:

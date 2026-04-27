@@ -110,8 +110,8 @@ def compute_quality_score(front: dict, body: str) -> int:
     return score
 
 
-def update_frontmatter(text: str, quality: str, score: int) -> tuple[str, bool]:
-    """在 frontmatter 中写入/更新 quality 和 quality_score，返回 (新文本, 是否有变化)。"""
+def update_frontmatter(text: str, quality: str) -> tuple[str, bool]:
+    """在 frontmatter 中写入/更新 quality 等级（不写 quality_score，该字段由 build_registry 动态计算）。"""
     m = FRONTMATTER_RE.match(text)
     if not m:
         return text, False
@@ -127,7 +127,6 @@ def update_frontmatter(text: str, quality: str, score: int) -> tuple[str, bool]:
                  and not re.match(r'^featured\s*:', l)]
 
     new_lines.append(f'quality: {quality}')
-    new_lines.append(f'quality_score: {score}')
 
     new_fm = '\n'.join(new_lines)
     new_text = f'---\n{new_fm}\n---\n{rest}'
@@ -153,7 +152,7 @@ def process_page(path: Path, dry_run: bool) -> tuple[str | None, int]:
         return None, 0
 
     score = compute_quality_score(front, body)
-    new_text, changed = update_frontmatter(text, level, score)
+    new_text, changed = update_frontmatter(text, level)
 
     if changed and not dry_run:
         path.write_text(new_text, encoding='utf-8')
