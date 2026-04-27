@@ -99,3 +99,15 @@
 
 - [x] H10 housekeeping-scan | all | ✓ 2026-04-27（R418：99概念页，0 unknown，3 broken links→已写入幸存者队列）
 - [x] H5 fix-links | 环日加速器/行星防御理事会 | ✓ 2026-04-27（R485-486，[[联邦政府]]→[[太阳系联邦]]，[[黑暗森林]]威慑→[[黑暗森林威慑]]）
+
+## H-P3 — 扫描类（R539 D1+H10）
+
+- [x] H10 housekeeping-scan | all | ✓ 2026-04-27 R539（351页：154精选/33标准/27基础/137无质量字段；0 stubs；broken links：三体I(5x)/三体II(4x)/太空舰队(2x)；三体I/II/三体探测器已写入P1队列）
+
+## H-P2 — R539扫描新增
+
+- [ ] H2 enrich | 毕云峰 | basic→standard；score=58，corpus命中多，需补正文和相关词条
+- [ ] H2 enrich | 空灵画师 | basic→standard；score=58，云天明童话人物群，有corpus命中
+- [ ] H2 enrich | 露珠公主 | basic→standard；score=52，童话人物，有corpus命中
+- [ ] H2 enrich | 徐冰冰 | basic→standard；score=51，本轮刚建，需后续补充引文
+- [ ] H2 enrich | 掩体工程 | basic→standard；score=49，大型工程概念，corpus命中多

@@ -412,6 +412,73 @@ const BOOK_META = [
   { key: '三体III', title: '三体III：死神永生', subtitle: '第三部' },
 ];
 
+function buildHomeSvg() {
+  // Seeded LCG for deterministic star field
+  let s = 0x3A8F1C2D;
+  const rand = () => {
+    s ^= s << 13; s ^= s >>> 17; s ^= s << 5;
+    return (s >>> 0) / 0xffffffff;
+  };
+
+  const stars = Array.from({length: 140}, () => {
+    const x = (rand() * 1000).toFixed(1);
+    const y = (rand() * 420).toFixed(1);
+    const big = rand() < 0.08;
+    const r = big ? (rand() * 1.4 + 1.2).toFixed(1) : (rand() * 0.7 + 0.25).toFixed(1);
+    const op = (rand() * 0.5 + (big ? 0.6 : 0.25)).toFixed(2);
+    const col = big ? '#ddeeff' : '#ffffff';
+    return big
+      ? `<circle cx="${x}" cy="${y}" r="${parseFloat(r)+3}" fill="${col}" opacity="${(parseFloat(op)*0.18).toFixed(2)}"/><circle cx="${x}" cy="${y}" r="${r}" fill="${col}" opacity="${op}"/>`
+      : `<circle cx="${x}" cy="${y}" r="${r}" fill="${col}" opacity="${op}"/>`;
+  }).join('');
+
+  // Poem seal: 12 cols × 4 chars, right-to-left, bottom-right over dark planet surface
+  const SEAL_COLS = ['大用外腓','真體內充','返虛入渾','積健為雄','具備萬物','橫絕太空','荒荒油雲','寥寥長風','超以象外','得其環中','持之匪強','來之無窮'];
+  const sColW = 12, sCharH = 12, sPad = 6;
+  const sW = 12 * sColW + sPad * 2;  // 156
+  const sH = 4  * sCharH + sPad * 2; // 60
+  const sX = 828, sY = 330;
+  const sealChars = SEAL_COLS.map((col, ci) => {
+    const x = sX + sW - sPad - ci * sColW - 3;
+    return [...col].map((ch, ri) =>
+      `<text x="${x}" y="${sY + sPad + ri * sCharH + 10}" text-anchor="middle" font-family="'ChongxiSeal','QuanZiKuShuowen',serif" font-size="9.5" fill="#f0d080" opacity="0.9">${ch}</text>`
+    ).join('');
+  }).join('');
+  const poemSvg = sealChars;
+
+  return `<svg class="hero-cosmos" viewBox="0 0 1000 420" preserveAspectRatio="xMidYMid slice" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+<defs>
+  <radialGradient id="hg-planet" cx="38%" cy="32%" r="68%" gradientUnits="objectBoundingBox">
+    <stop offset="0%" stop-color="#f7eb8a"/>
+    <stop offset="18%" stop-color="#e8920a"/>
+    <stop offset="52%" stop-color="#8b3e00"/>
+    <stop offset="82%" stop-color="#3d1200"/>
+    <stop offset="100%" stop-color="#150600"/>
+  </radialGradient>
+  <radialGradient id="hg-glow" cx="50%" cy="50%" r="50%">
+    <stop offset="0%" stop-color="#e88010" stop-opacity="0.22"/>
+    <stop offset="100%" stop-color="#e88010" stop-opacity="0"/>
+  </radialGradient>
+  <radialGradient id="hg-teal" cx="40%" cy="35%" r="70%">
+    <stop offset="0%" stop-color="#a0f0dc"/>
+    <stop offset="48%" stop-color="#1e8a72"/>
+    <stop offset="100%" stop-color="#050e0b"/>
+  </radialGradient>
+</defs>
+<rect width="1000" height="420" fill="#060811"/>
+${stars}
+<circle cx="838" cy="435" r="340" fill="url(#hg-glow)"/>
+<circle cx="838" cy="435" r="275" fill="url(#hg-planet)"/>
+<ellipse cx="838" cy="435" rx="462" ry="112" stroke="#d49520" stroke-width="1.1" fill="none" opacity="0.38" transform="rotate(-20 838 435)"/>
+<ellipse cx="838" cy="435" rx="405" ry="86" stroke="#f0b030" stroke-width="1.9" fill="none" opacity="0.52" transform="rotate(-20 838 435)"/>
+<ellipse cx="838" cy="435" rx="355" ry="64" stroke="#f5c840" stroke-width="0.85" fill="none" opacity="0.32" transform="rotate(-20 838 435)"/>
+<ellipse cx="838" cy="435" rx="515" ry="140" stroke="#a07018" stroke-width="0.6" fill="none" opacity="0.25" transform="rotate(-17 838 435)"/>
+<circle cx="152" cy="74" r="20" fill="url(#hg-teal)" opacity="0.88"/>
+<circle cx="182" cy="53" r="6" fill="#1e5a4a" opacity="0.75"/>
+${poemSvg}
+</svg>`;
+}
+
 
 export function renderHome(core) {
   const pages = core.registry.pages;
@@ -438,38 +505,36 @@ export function renderHome(core) {
 
   document.getElementById('article').innerHTML =
     `<div class="wiki-home">
-      <h1>三体 Wiki</h1>
-      <p class="tagline">刘慈欣《三体》三部曲人物、概念、事件百科 · ${entityCount} 个词条</p>
-
-      <div class="search-box">
-        <input id="wiki-search" type="search"
-          placeholder="搜索词条 (如 '叶文洁', '黑暗森林', '水滴')"
-          autocomplete="off" autofocus>
-        <ul id="search-results" hidden></ul>
+      <div class="home-hero">
+        ${buildHomeSvg()}
+        <div class="hero-overlay">
+          <div class="hero-eyebrow">THREE-BODY PROBLEM ENCYCLOPEDIA</div>
+          <h1 class="hero-title">三体 Wiki</h1>
+          <div class="hero-tagline">刘慈欣三部曲 · <span class="hero-count">${entityCount} 个词条</span></div>
+          <div class="hero-search">
+            <input id="wiki-search" type="search"
+              placeholder="搜索词条 (如 '叶文洁', '黑暗森林', '水滴')"
+              autocomplete="off" autofocus>
+            <ul id="search-results" hidden></ul>
+          </div>
+        </div>
       </div>
 
-      <div class="featured-grid">
-        ${bookCardsHtml}
-        ${entityCardsHtml}
+      <div class="home-body">
+
+        <div class="featured-grid">
+          ${bookCardsHtml}
+          ${entityCardsHtml}
+        </div>
+
+        <nav class="home-links">
+          <a href="#${encodeURIComponent('Special:AllPages')}" class="home-link">全部 ${ids.length} 页 →</a>
+          <a href="#${encodeURIComponent('Special:Recent')}" class="home-link">最近修订 →</a>
+          <a href="#${encodeURIComponent('Special:Random')}" class="home-link">随机词条 →</a>
+        </nav>
+
+<p class="home-disclaimer">本 Wiki 内容由人工整理，基于《三体》《黑暗森林》《死神永生》三部曲。如发现错误欢迎<a href="https://github.com/baojie/three-body/issues/new" target="_blank" rel="noopener">提交 Issue</a>。</p>
       </div>
-
-      <nav class="home-links">
-        <a href="#${encodeURIComponent('Special:AllPages')}" class="home-link">全部 ${ids.length} 页 →</a>
-        <a href="#${encodeURIComponent('Special:Recent')}" class="home-link">最近修订 →</a>
-        <a href="#${encodeURIComponent('Special:Random')}" class="home-link">随机词条 →</a>
-      </nav>
-
-      <blockquote class="home-epigraph">
-        <p>大用外腓，真体内充。<br>
-        返虚入浑，积健为雄。<br>
-        具备万物，横绝太空。<br>
-        荒荒油云，寥寥长风。<br>
-        超以象外，得其环中。<br>
-        持之匪强，来之无穷。</p>
-        <footer>司空图《诗品·雄浑》</footer>
-      </blockquote>
-
-      <p class="home-disclaimer">本 Wiki 内容由人工整理，基于《三体》《黑暗森林》《死神永生》三部曲。如发现错误欢迎<a href="https://github.com/baojie/three-body/issues/new" target="_blank" rel="noopener">提交 Issue</a>。</p>
     </div>`;
 
   document.body.classList.add('is-home');
@@ -557,6 +622,8 @@ function renderTagsFooter(front, meta) {
   </footer>`;
 }
 
+const BOOK_NUMERALS = { '三体I': 'Ⅰ', '三体II': 'Ⅱ', '三体III': 'Ⅲ' };
+
 function renderBookCard(key, title, pages) {
   const chapters = Object.entries(pages)
     .filter(([, m]) => m.type === 'chapter' && m.book === key)
@@ -564,40 +631,34 @@ function renderBookCard(key, title, pages) {
   const firstChapterId = chapters.length > 0 ? chapters[0][0] : null;
   const href = firstChapterId ? `#${encodeURIComponent(firstChapterId)}` : '#';
   const [shortTitle, subtitle] = title.split('：');
-  const chapListHtml = chapters.slice(0, 6).map(([id, m]) =>
-    `<a class="book-card-chap" href="#${encodeURIComponent(id)}">${escapeHtml(m.label)}</a>`
+  const numeral = BOOK_NUMERALS[key] || '';
+  const chapListHtml = chapters.slice(0, 10).map(([id, m]) =>
+    `<a class="bc-chap" href="#${encodeURIComponent(id)}">${escapeHtml(m.label)}</a>`
   ).join('');
-  const moreHtml = chapters.length > 6
-    ? `<span class="book-card-more">…共 ${chapters.length} 章节</span>` : '';
+  const moreHtml = chapters.length > 10
+    ? `<span class="bc-more">+${chapters.length - 10}</span>` : '';
   return `<div class="featured-card book-card">
-    <div class="card-body">
-      <div class="book-card-header">
-        <h3><a href="${href}">${escapeHtml(shortTitle)}</a></h3>
-        <span class="book-card-subtitle">${escapeHtml(subtitle || '')}</span>
+    <a class="bc-numeral" href="${href}">${numeral}</a>
+    <div class="bc-body">
+      <div class="bc-head">
+        <a class="bc-title" href="${href}">${escapeHtml(shortTitle)}</a>
+        <span class="bc-sub">${escapeHtml(subtitle || '')}</span>
       </div>
-      <div class="book-card-chapters">${chapListHtml}${moreHtml}</div>
+      <div class="bc-chapters">${chapListHtml}${moreHtml}</div>
     </div>
   </div>`;
 }
 
 function renderFeaturedCard(p) {
   const typeLabel = TYPE_LABELS[p.type] || p.type || '';
-  const typeBadge = typeLabel
-    ? `<span class="card-type-badge">${escapeHtml(typeLabel)}</span>` : '';
   const qualityClass = p.quality ? ` card-q-${p.quality}` : '';
+  const typeClass = p.type ? ` card-t-${p.type}` : '';
+  const eyebrow = typeLabel
+    ? `<div class="card-eyebrow">${escapeHtml(typeLabel)}</div>` : '';
   const descHtml = p.description
     ? `<div class="card-desc">${escapeHtml(p.description)}</div>` : '';
-  const aliasPreview = (p.aliases || []).filter(a => a !== p.label).slice(0, 3).join(' · ');
-  const aliasHtml = aliasPreview
-    ? `<div class="card-aliases">${escapeHtml(aliasPreview)}</div>` : '';
-  const imgHtml = p.image
-    ? `<div class="card-thumb"><img src="${escapeHtml(p.image)}" alt="${escapeHtml(p.label)}" loading="lazy"></div>` : '';
-  return `<a class="featured-card entity-card${qualityClass}${p.image ? ' has-thumb' : ''}" href="#${encodeURIComponent(p.id)}">
-    ${imgHtml}<div class="card-body">
-      <h3>${escapeHtml(p.label)}</h3>
-      ${descHtml}${aliasHtml}
-      ${typeBadge ? `<div class="card-footer-row">${typeBadge}</div>` : ''}
-    </div>
+  return `<a class="featured-card entity-card${qualityClass}${typeClass}" href="#${encodeURIComponent(p.id)}">
+    ${eyebrow}<h3>${escapeHtml(p.label)}</h3>${descHtml}
   </a>`;
 }
 

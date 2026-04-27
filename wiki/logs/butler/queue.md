@@ -32,6 +32,10 @@
 
 - [x] P1 create | AA | 程心在掩体纪元的伴侣，协助云天明情报解读，2处broken link → R519 accept
 
+- [ ] P1 create | 三体探测器 | H18-R538发现：15条corpus命中，1处broken link；三体文明发射的先行无人探测器群，水滴到达前的前哨
+- [ ] P1 create | 三体I | H18-R538发现：5处broken link；《地球往事》书册综述页（type=book），需创建
+- [ ] P1 create | 三体II | H18-R538发现：4处broken link；《黑暗森林》书册综述页（type=book），需创建
+
 ## P2 — 中优先级（未完成）
 
 - [x] P2 create | 比尔·汉森 | ✓ skip（名称不存在；希恩斯破壁人实为山杉惠子，已单独建页 R397）
