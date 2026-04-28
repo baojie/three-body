@@ -273,6 +273,10 @@ p.seealso-block .seealso-label { display: inline; }
 .recent-list { list-style: none; padding: 0; }
 .recent-list li { padding: .4em 0; border-bottom: 1px solid var(--border); font-family: var(--sans); font-size: .92em; }
 .recent-ts { color: var(--fg-muted); font-size: .82em; }
+.rc-size { font-family: var(--sans); font-size: .85em; text-align: right; white-space: nowrap; font-weight: 600; }
+.rc-size-plus  { color: #2a7a2a; }
+.rc-size-minus { color: #c0392b; }
+.rc-size-zero  { color: var(--fg-muted); font-weight: 400; }
 
 /* Home page — space poster hero */
 body.is-home .page { padding: 0; margin-top: 0; }

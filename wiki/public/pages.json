@@ -2457,7 +2457,7 @@
         "技术爆炸"
       ],
       "path": "pages/三体世界的技术.md",
-      "description": "三体文明的技术发展历程，以威慑纪元为分界点出现爆炸式加速，包括智子、水滴、二向箔等超越人类的技术。",
+      "description": "三体文明的技术发展历程，以威慑纪元为分界点出现爆炸式加速，以智子封锁与水滴探测器为代表，远超人类技术水平。",
       "quality": "featured",
       "quality_score": 46
     },
@@ -7055,8 +7055,8 @@
       ],
       "path": "pages/地球.md",
       "description": "太阳系第三行星，人类文明的发源地，三部曲主要叙事舞台，在威慑纪元末被二向箔二维化。",
-      "quality": "standard",
-      "quality_score": 34
+      "quality": "featured",
+      "quality_score": 41
     },
     "地球三体组织": {
       "type": "organization",
@@ -17123,7 +17123,7 @@
       "path": "pages/莫尔斯电码.md",
       "description": "汪淼用于破译宇宙背景辐射异常闪烁信号的编码系统，是《三体》中智子干扰被人类首次识别的关键媒介。",
       "quality": "featured",
-      "quality_score": 55
+      "quality_score": 56
     },
     "莫沃维奇": {
       "type": "person",
@@ -19097,8 +19097,8 @@
       ],
       "path": "pages/马钢.md",
       "description": "大兴安岭伐木连里的壮实油锯手，连里最快的锯木能手，见证了白沐霖采访时叶文洁在场的对话。",
-      "quality": "standard",
-      "quality_score": 45
+      "quality": "featured",
+      "quality_score": 49
     },
     "驱逐舰": {
       "type": "technology",
@@ -21748,5 +21748,5 @@
     "齐猎头儿": "齐猎头儿"
   },
   "page_count": 1105,
-  "generated": "2026-04-28T10:07:41Z"
+  "generated": "2026-04-28T10:09:01Z"
 }
