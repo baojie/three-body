@@ -109,3 +109,5 @@
 ## H2 批量 basic→standard（W5 R841 写入）
 
 - [ ] H-P2 enrich | basic批量升级 | W5 R841 发现：69个 basic 页面，含巨月/次声波氢弹/量子感应等，叙事意义节缺失；建议整轮 H2-enrich-batch（25页×40WU=1000WU）；优先选 PN≥3 的 basic 页面
+
+- [ ] H-P2 fix-alias | 罗辑的咒语 | 移除frontmatter中的alias「咒语」（与「咒语」页alias冲突）；保留「罗辑咒语」「罗辑黑暗森林咒语实验」等更具体的alias
