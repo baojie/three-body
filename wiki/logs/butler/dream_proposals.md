@@ -40,3 +40,10 @@ Butler W5 Dream Round 提案记录。每条包含来源、规格、状态。
 - [R611 提案 / 待批准] `H21: scan-label-conflicts`：扫描全库 pages，找出 label≠id 且 label 存在于 alias_index 的页面，写入 H-P2 修复任务。来源：R594/R601/R606 三次触发 label 字段冲突，每次均靠手动发现；WU=2/页，触发频率每 29 轮，批量处理。
 - [R611 提案 / 待批准] `D3: thematic-catalog`：当 discover_wanted 枯竭（有效候选 <5）时，一次性对语料库按 7-10 个主题组（太空技术/人物/历史军事/物理概念等）批量 corpus_search，生成 100-150 个候选写入 queue.md P3，预期够用 15-20 轮，避免每轮重复手动扩展。来源：R597/R599/R602/R608 四次描述枯竭后手动语义扩展，固定模式但无规范记录。
 - [R611 提案 / 待批准] 引入 `SKILL_W10c_词汇链接化` → H22: scan-unlinked-entities：扫描正文中出现的实体词（alias_index 命中），补充未加 `[[]]` 的 wikilink。来源：shiji-kb skill_borrow_watchlist 高优先级候选，Three-Body 已有 500 页 alias_index，移植成本低。
+
+---
+
+## 第7次 Dream（R752）
+
+- [R752 提案 / 待批准] `A4: enrich-science-context`：为 theory/concept 页添加"科学背景"节（现实物理状态+小说偏差标注），WU=50；来源：R736/742/743/746/747/748 共 12 次相同操作模式。
+- [R752 提案 / 待批准] `H23: alias-boundary-audit`：每29轮扫描 ≤3 字非白名单 alias，corpus 验证，误链险 alias 立即移除；WU=15/条，batch_n=30；来源：F2 事故（本轮）+ "肯"事故（R712），同类事故已发生 2 次。

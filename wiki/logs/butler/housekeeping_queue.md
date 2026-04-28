@@ -99,3 +99,9 @@
 - [ ] H3 enrich-basic | 接触符号 | R682-H10：quality=basic，需扩充正文至prose≥500
 - [ ] H3 enrich-basic | 自由女神像 | R682-H10：quality=basic，需扩充正文至prose≥500
 - [ ] H3 enrich-basic | 鲍里斯·洛文斯基 | R682-H10：quality=basic，需扩充正文至prose≥500
+
+## H-P2 — R752 W5 抽查新增
+
+- [ ] H-P2 enrich | 地球防务安全部 | R752-D抽查：basic，frontmatter+H1无正文，需enrich-page
+- [ ] H-P2 enrich | 李瑶 | R752-D抽查：basic，frontmatter+H1无正文，汪淼妻子
+- [ ] H-P2 add-quote | 伊甸园 | R752-D抽查：standard，prose≈500，缺PN，需add-quote

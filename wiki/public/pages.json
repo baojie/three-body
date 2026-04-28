@@ -39,6 +39,23 @@
       "quality": "featured",
       "quality_score": 54
     },
+    "3K眼镜": {
+      "type": "technology",
+      "label": "3K眼镜",
+      "aliases": [
+        "三K眼镜",
+        "宇宙背景辐射眼镜"
+      ],
+      "tags": [
+        "科技",
+        "天文",
+        "三体I"
+      ],
+      "path": "pages/3K眼镜.md",
+      "description": "将宇宙3K微波背景辐射转化为可见红光的特制眼镜，[[汪淼]]借此亲眼目睹宇宙在智子操控下的整体闪烁。",
+      "quality": "basic",
+      "quality_score": 39
+    },
     "647号宇宙": {
       "type": "place",
       "label": "647号宇宙",
@@ -82,17 +99,19 @@
       "type": "person",
       "label": "AA",
       "aliases": [
-        "AA"
+        "AA",
+        "艾AA"
       ],
       "tags": [
         "人物",
         "三体III",
         "威慑纪元",
         "掩体纪元",
-        "程心"
+        "程心",
+        "降维"
       ],
       "path": "pages/AA.md",
-      "description": "程心的好友兼商业助手，发现DX3906行星的天文博士生，曾多次陪伴程心经历重大历史时刻",
+      "description": "程心的好友兼商业助手，发现DX3906行星的天文博士生，曾多次陪伴程心经历重大历史时刻，最终随程心离开太阳系前往宇宙边缘",
       "quality": "featured",
       "quality_score": 67
     },
@@ -174,6 +193,27 @@
       "description": "以DX3906星系建立黑域为起点的宇宙级纪元，持续近1890万年（公元2687年—18906416年）；见证程心与关一帆在647号小宇宙中的漫长等待，直到宇宙末日",
       "quality": "featured",
       "quality_score": 48
+    },
+    "KILLER病毒": {
+      "type": "technology",
+      "label": "KILLER病毒",
+      "aliases": [
+        "KILLER病毒",
+        "KILLER5.2",
+        "谋杀病毒",
+        "现代魔咒"
+      ],
+      "tags": [
+        "科技",
+        "三体II",
+        "威慑纪元",
+        "地球三体组织",
+        "罗辑"
+      ],
+      "path": "pages/KILLER病毒.md",
+      "description": "威慑纪元危机初期出现的计算机谋杀病毒，通过控制周围环境中的所有电子设备追杀目标。地球三体组织为暗杀罗辑定制了第5.2版，潜伏近两个世纪后激活。",
+      "quality": "standard",
+      "quality_score": 62
     },
     "NH558J2": {
       "type": "place",
@@ -288,7 +328,7 @@
       "path": "pages/丁仪.md",
       "description": "理论物理学家，杨冬的恋人，宏原子和可控核聚变理论发现者；在末日战役中率先确认水滴由强互作用力材料构成，并以\"快跑！\"警告全舰队，壮烈牺牲。",
       "quality": "featured",
-      "quality_score": 66
+      "quality_score": 76
     },
     "万年历": {
       "type": "concept",
@@ -341,7 +381,7 @@
       "path": "pages/万有引力号.md",
       "description": "末日战役后地球建造的第一艘恒星级战舰，搭载引力波广播发射器，是黑暗森林威慑体系的核心载体",
       "quality": "featured",
-      "quality_score": 66
+      "quality_score": 74
     },
     "三个王国的故事": {
       "type": "book",
@@ -2237,7 +2277,27 @@
       "path": "pages/三体III.md",
       "description": "刘慈欣三部曲第三部，副标题《死神永生》；讲述程心两度成为执剑人、威慑终止后三体人占领地球、二向箔使太阳系二维化，以及宇宙末日的故事",
       "quality": "featured",
-      "quality_score": 44
+      "quality_score": 73
+    },
+    "三体三部曲的回声结构": {
+      "type": "overview",
+      "label": "三体三部曲的回声结构",
+      "aliases": [
+        "三体的伏笔",
+        "三体的首尾呼应",
+        "三体跨章节互见"
+      ],
+      "tags": [
+        "综述",
+        "三体I",
+        "三体II",
+        "三体III",
+        "叙事结构"
+      ],
+      "path": "pages/三体三部曲的回声结构.md",
+      "description": "刘慈欣在三部曲中精心设计的跨章节伏笔、首尾呼应与叙事回声，使各个孤立情节相互映照、增添宿命感。",
+      "quality": "standard",
+      "quality_score": 71
     },
     "三体入侵": {
       "type": "event",
@@ -2349,7 +2409,7 @@
       "path": "pages/三体文明.md",
       "description": "来自三体星系（半人马座α三星系统）的高度发达外星文明，以恒纪元与乱纪元交替为生存背景，因数百次文明毁灭而铸就极端集体主义社会，最终决定入侵地球",
       "quality": "featured",
-      "quality_score": 71
+      "quality_score": 75
     },
     "三体星": {
       "type": "place",
@@ -2383,13 +2443,16 @@
       "tags": [
         "地点",
         "三体I",
+        "三体II",
+        "三体III",
         "三体文明",
-        "天文"
+        "天文",
+        "黑暗森林打击"
       ],
       "path": "pages/三体星系.md",
-      "description": "距太阳约四光年的半人马座α三星系统，三颗恒星的混沌运动造就了三体文明周而复始的文明毁灭与重建。",
+      "description": "距太阳约四光年的半人马座α三星系统，三颗恒星的混沌运动造就了三体文明周而复始的文明毁灭与重建；最终被引力波广播暴露坐标，遭黑暗森林光粒打击摧毁。",
       "quality": "featured",
-      "quality_score": 67
+      "quality_score": 68
     },
     "三体游戏": {
       "type": "technology",
@@ -2421,16 +2484,16 @@
       ],
       "tags": [
         "名场面",
-        "三体II",
+        "三体I",
         "古筝行动",
         "纳米材料",
         "汪淼",
         "史强"
       ],
       "path": "pages/三体纳米丝.md",
-      "description": "三体II，古筝行动的核心武器：在巴拿马运河上布置的纳米材料细丝，将穿越的审判日号切成数百片，人类对三体势力发动的第一次主动打击",
+      "description": "三体I，古筝行动的核心武器：在巴拿马运河上布置的纳米材料细丝，将穿越的审判日号切成数百片，人类对三体势力发动的第一次主动打击",
       "quality": "featured",
-      "quality_score": 33
+      "quality_score": 49
     },
     "三体脱水": {
       "type": "event",
@@ -2699,6 +2762,24 @@
       "quality": "featured",
       "quality_score": 48
     },
+    "中华田园": {
+      "type": "organization",
+      "label": "中华田园",
+      "aliases": [
+        "中华田园社区",
+        "潘寒实验社区"
+      ],
+      "tags": [
+        "组织",
+        "三体I",
+        "潘寒",
+        "反技术主义"
+      ],
+      "path": "pages/中华田园.md",
+      "description": "生物学家潘寒创建的城市实验社区，固定成员逾三千人，完全依靠城市垃圾为生，是其反技术主义思想的实践载体。",
+      "quality": "basic",
+      "quality_score": 35
+    },
     "中子星": {
       "type": "concept",
       "label": "中子星",
@@ -2918,7 +2999,7 @@
       "path": "pages/二向箔.md",
       "description": "三体III中高等文明使用的终极宇宙清理武器：一片封装的二维空间，释放后引发三维空间向二维跌落的维度坍塌，使整个太阳系在数日内变成一幅厚度为零的二维图画。",
       "quality": "featured",
-      "quality_score": 65
+      "quality_score": 78
     },
     "二维化": {
       "type": "concept",
@@ -2953,7 +3034,7 @@
       "path": "pages/云天明.md",
       "description": "绝症患者，单恋程心，将一颗星星作为礼物送给她；后来大脑被送往三体文明，成为人类在异星的秘密使者。",
       "quality": "featured",
-      "quality_score": 70
+      "quality_score": 73
     },
     "云天明三则童话": {
       "type": "concept",
@@ -2974,6 +3055,26 @@
       "description": "云天明在与程心的唯一一次面谈中讲述的三个相互连贯的童话故事——以精巧的双层隐喻传递了三体文明的核心战略情报，包括曲率驱动原理和宇宙隐藏策略。",
       "quality": "featured",
       "quality_score": 71
+    },
+    "云天明与程心的重逢": {
+      "type": "event",
+      "label": "云天明与程心的重逢",
+      "aliases": [
+        "云天明与程心的重逢",
+        "麦田重逢",
+        "云天明程心会面"
+      ],
+      "tags": [
+        "名场面",
+        "三体III",
+        "云天明",
+        "程心",
+        "三体舰队"
+      ],
+      "path": "pages/云天明与程心的重逢.md",
+      "description": "《死神永生》中最动人的场景之一：程心作为地球使者前往三体舰队，在异星麦田中与云天明相见——三个世纪的时光与几光年的距离，在\"他们一直在一起\"的目光中消弭。",
+      "quality": "standard",
+      "quality_score": 59
     },
     "云天明的星星": {
       "type": "event",
@@ -3047,7 +3148,7 @@
       "path": "pages/亚当号.md",
       "description": "末日战役中人类舰队第一队列的最后一艘战舰，被水滴击穿后水滴完成转向开始攻击第二列",
       "quality": "featured",
-      "quality_score": 44
+      "quality_score": 46
     },
     "亚洲一号": {
       "type": "place",
@@ -3199,6 +3300,26 @@
       "quality": "featured",
       "quality_score": 56
     },
+    "人类最后的守墓人": {
+      "type": "event",
+      "label": "人类最后的守墓人",
+      "aliases": [
+        "人类最后的守墓人",
+        "罗辑守墓",
+        "冥王星告别"
+      ],
+      "tags": [
+        "名场面",
+        "三体III",
+        "罗辑",
+        "冥王星",
+        "太阳系末日"
+      ],
+      "path": "pages/人类最后的守墓人.md",
+      "description": "太阳系遭受二向箔降维打击时，老年罗辑拒绝登船逃离，选择留守冥王星地球文明博物馆，成为人类文明最后的守墓人。",
+      "quality": "featured",
+      "quality_score": 62
+    },
     "人类灭绝": {
       "type": "concept",
       "label": "人类灭绝",
@@ -3276,6 +3397,27 @@
       "description": "美国石油富商之子，极端环保主义者，地球三体组织降临派领袖，以\"审判日\"号油轮为基地，真实目标是借助三体文明消灭人类，在古筝行动中死亡。",
       "quality": "featured",
       "quality_score": 66
+    },
+    "伊甸园": {
+      "type": "place",
+      "label": "伊甸园",
+      "aliases": [
+        "伊甸园",
+        "北欧伊甸园",
+        "罗辑的伊甸园"
+      ],
+      "tags": [
+        "地点",
+        "三体II",
+        "罗辑",
+        "庄颜",
+        "面壁计划",
+        "北欧"
+      ],
+      "path": "pages/伊甸园.md",
+      "description": "罗辑在面壁计划期间居住的北欧山地隐居所，以雪山湖泊的绝美风景著称，被罗辑在心中称为\"伊甸园\"；后成为伽尔宁、坎特等人退休隐居之处。",
+      "quality": "featured",
+      "quality_score": 51
     },
     "伏羲": {
       "type": "person",
@@ -3402,6 +3544,25 @@
       "description": "北京天文台恒星拍卖业务研究员，办理云天明购买DX3906的手续并带他野外观看星辰",
       "quality": "featured",
       "quality_score": 57
+    },
+    "作战中心": {
+      "type": "organization",
+      "label": "作战中心",
+      "aliases": [
+        "联合作战中心",
+        "三体作战中心"
+      ],
+      "tags": [
+        "组织",
+        "三体I",
+        "军事",
+        "常伟思",
+        "史强"
+      ],
+      "path": "pages/作战中心.md",
+      "description": "军方为应对三体危机秘密设立的跨部门指挥机构，由常伟思少将主持，成员含军人、警察、科学家及北约和CIA观察员，在全球设有二十余个。",
+      "quality": "standard",
+      "quality_score": 47
     },
     "保留地": {
       "type": "place",
@@ -3785,6 +3946,27 @@
       "quality": "featured",
       "quality_score": 63
     },
+    "公元纪元的婚恋": {
+      "type": "concept",
+      "label": "公元纪元的婚恋",
+      "aliases": [
+        "公元纪元婚姻",
+        "公元纪元家庭",
+        "传统婚恋"
+      ],
+      "tags": [
+        "概念",
+        "三体I",
+        "三体II",
+        "三体III",
+        "社会",
+        "危机纪元"
+      ],
+      "path": "pages/公元纪元的婚恋.md",
+      "description": "三体三部曲所描绘的公元纪元（20世纪至21世纪初）婚恋与家庭形态：传统婚姻制度依然完整，爱情与实用并存，但已显露后来家庭解体的早期征兆。",
+      "quality": "featured",
+      "quality_score": 53
+    },
     "关一帆": {
       "type": "person",
       "label": "关一帆",
@@ -3800,7 +3982,7 @@
       "path": "pages/关一帆.md",
       "description": "随万有引力号出航的宇宙学学者，对太空产生奇特的幽闭恐惧，进入四维空间碎片，最终与程心共同进入云天明留下的小宇宙，选择归返大宇宙而非永居其中。",
       "quality": "featured",
-      "quality_score": 67
+      "quality_score": 78
     },
     "关一帆小宇宙": {
       "type": "event",
@@ -3823,7 +4005,7 @@
       "path": "pages/关一帆小宇宙.md",
       "description": "程心与关一帆在云天明赠予的小宇宙中度过大宇宙末年，见证大坍缩，决定归还质量助宇宙复生。",
       "quality": "featured",
-      "quality_score": 38
+      "quality_score": 54
     },
     "军事执政官": {
       "type": "person",
@@ -3841,6 +4023,26 @@
       "description": "三体文明负责军事事务的执政官，在紧急会议上批评染色和神迹计划力度不足，并对质子零维展开的毁灭性风险提出警告",
       "quality": "featured",
       "quality_score": 62
+    },
+    "军事民主": {
+      "type": "concept",
+      "label": "军事民主",
+      "aliases": [
+        "军事民主",
+        "MD"
+      ],
+      "tags": [
+        "概念",
+        "三体II",
+        "三体III",
+        "星舰地球",
+        "逃亡主义",
+        "太空军"
+      ],
+      "path": "pages/军事民主.md",
+      "description": "星舰地球（末日战役后四艘逃亡舰构成的流亡共同体）采用的政治体制，以技术精英和军事领导层的集体决策为核心",
+      "quality": "featured",
+      "quality_score": 51
     },
     "军舰": {
       "type": "technology",
@@ -3934,7 +4136,7 @@
       "path": "pages/冬眠技术.md",
       "description": "三体系列中允许人类跨越数十乃至数百年的低温休眠技术，通过体外生命维持系统保持最低限度的生理活动。面壁者、太空军官员和星际航行者广泛使用，是连接不同时代的关键技术手段。",
       "quality": "featured",
-      "quality_score": 65
+      "quality_score": 77
     },
     "冬眠者": {
       "type": "concept",
@@ -4011,7 +4213,6 @@
       "type": "list",
       "label": "事件",
       "aliases": [
-        "事件",
         "分类·事件"
       ],
       "tags": [
@@ -4027,7 +4228,6 @@
       "type": "list",
       "label": "人物",
       "aliases": [
-        "人物",
         "分类·人物"
       ],
       "tags": [
@@ -4043,7 +4243,6 @@
       "type": "list",
       "label": "历史纪元",
       "aliases": [
-        "历史纪元",
         "分类·历史纪元"
       ],
       "tags": [
@@ -4059,7 +4258,6 @@
       "type": "list",
       "label": "地点",
       "aliases": [
-        "地点",
         "分类·地点"
       ],
       "tags": [
@@ -4075,7 +4273,6 @@
       "type": "list",
       "label": "文明",
       "aliases": [
-        "文明",
         "分类·文明"
       ],
       "tags": [
@@ -4091,7 +4288,6 @@
       "type": "list",
       "label": "概念",
       "aliases": [
-        "概念",
         "分类·概念"
       ],
       "tags": [
@@ -4107,7 +4303,6 @@
       "type": "list",
       "label": "武器",
       "aliases": [
-        "武器",
         "分类·武器"
       ],
       "tags": [
@@ -4123,7 +4318,6 @@
       "type": "list",
       "label": "理论",
       "aliases": [
-        "理论",
         "分类·理论"
       ],
       "tags": [
@@ -4139,7 +4333,6 @@
       "type": "list",
       "label": "科技",
       "aliases": [
-        "科技",
         "分类·科技"
       ],
       "tags": [
@@ -4155,7 +4348,6 @@
       "type": "list",
       "label": "组织",
       "aliases": [
-        "组织",
         "分类·组织"
       ],
       "tags": [
@@ -4573,7 +4765,7 @@
       "path": "pages/刘慈欣.md",
       "description": "《三体》三部曲作者；在三体III中以\"大刘\"身份出现于故事内部，被评价为最了解宇宙社会学的人",
       "quality": "featured",
-      "quality_score": 46
+      "quality_score": 77
     },
     "创世纪号": {
       "type": "technology",
@@ -4706,6 +4898,26 @@
       "description": "三大太空舰队之一，与欧洲舰队联合提交649号提案终止面壁计划；参与末日战役联合舰队，向水滴方向派驻科学军官",
       "quality": "featured",
       "quality_score": 59
+    },
+    "十维宇宙猜想": {
+      "type": "theory",
+      "label": "十维宇宙猜想",
+      "aliases": [
+        "十维宇宙猜想",
+        "田园时代理论",
+        "十维宇宙"
+      ],
+      "tags": [
+        "理论",
+        "三体III",
+        "大宇宙",
+        "四维空间",
+        "归零者"
+      ],
+      "path": "pages/十维宇宙猜想.md",
+      "description": "关一帆与智子提出的宇宙终极理论：宇宙起初为十维、光速无限大的\"田园时代\"，因文明间的维度战争被逐级压缩至三维，归零者（重启者）致力于使宇宙重归十维",
+      "quality": "standard",
+      "quality_score": 57
     },
     "半人马座": {
       "type": "place",
@@ -4854,7 +5066,44 @@
       "path": "pages/危机纪元.md",
       "description": "三体入侵确认（约公元201x年）至罗辑建立黑暗森林威慑（约2208年）的约两百年历史时期，人类经历幼稚症、大低谷与舰队建设，最终以面壁计划成功告终。",
       "quality": "featured",
-      "quality_score": 69
+      "quality_score": 76
+    },
+    "危机纪元生活指南": {
+      "type": "overview",
+      "label": "危机纪元生活指南",
+      "aliases": [
+        "危机纪元指南",
+        "危机纪元生活"
+      ],
+      "tags": [
+        "指南",
+        "危机纪元",
+        "生活"
+      ],
+      "path": "pages/危机纪元生活指南.md",
+      "description": "写给从现代穿越至危机纪元（约21世纪初至大低谷前）的人：这个时代外表与你的世界相近，但\"三体危机\"的阴影渗透进了社会的每一个角落。",
+      "quality": "featured",
+      "quality_score": 45
+    },
+    "危机纪元至大低谷的家庭变迁": {
+      "type": "concept",
+      "label": "危机纪元至大低谷的家庭变迁",
+      "aliases": [
+        "大低谷后的社会",
+        "危机纪元婚恋",
+        "家庭解体"
+      ],
+      "tags": [
+        "概念",
+        "三体II",
+        "社会",
+        "危机纪元",
+        "大低谷"
+      ],
+      "path": "pages/危机纪元至大低谷的家庭变迁.md",
+      "description": "从危机纪元到大低谷结束，人类社会经历了家庭制度的根本瓦解：婚姻在经济崩溃与思想解放的双重冲击下消亡，两性与同性关系均突破传统边界，男性审美也开始向女性化转型。",
+      "quality": "featured",
+      "quality_score": 54
     },
     "原始膜": {
       "type": "technology",
@@ -5062,13 +5311,15 @@
       "tags": [
         "人物",
         "三体I",
+        "三体II",
         "汪淼",
-        "地球三体组织"
+        "地球三体组织",
+        "联合作战中心"
       ],
       "path": "pages/史强.md",
       "description": "粗犷的便衣刑警，汪淼在三体调查中的搭档，草根直觉与实战经验弥补了学者的盲点，在叶文洁审讯中发挥关键作用。",
       "quality": "featured",
-      "quality_score": 68
+      "quality_score": 77
     },
     "史晓明": {
       "type": "person",
@@ -5141,7 +5392,7 @@
       "path": "pages/叶文洁.md",
       "description": "天体物理学家，红岸工程核心人物，向三体人发出地球坐标，ETO创始人",
       "quality": "featured",
-      "quality_score": 71
+      "quality_score": 78
     },
     "叶文洁发射信号": {
       "type": "event",
@@ -5224,6 +5475,26 @@
       "quality": "featured",
       "quality_score": 54
     },
+    "同步轨道": {
+      "type": "concept",
+      "label": "同步轨道",
+      "aliases": [
+        "同步轨道"
+      ],
+      "tags": [
+        "概念",
+        "三体I",
+        "三体II",
+        "三体III",
+        "智子",
+        "太空电梯",
+        "技术"
+      ],
+      "path": "pages/同步轨道.md",
+      "description": "卫星轨道周期与天体自转周期相同的轨道；在三体系列中，同步轨道是多个关键场景的空间坐标——从汪淼目睹的神迹到智子质子展开，再到太空电梯的终点站。",
+      "quality": "featured",
+      "quality_score": 55
+    },
     "君士坦丁十一世": {
       "type": "person",
       "label": "君士坦丁十一世",
@@ -5241,6 +5512,26 @@
       "description": "拜占庭帝国末代皇帝，三体III第一章历史幻境的中心人物；比父兄更现实，却在末日前夕面对狄奥伦娜的四维神迹，在月食的凶兆中预感城市将亡",
       "quality": "featured",
       "quality_score": 66
+    },
+    "君士坦丁堡": {
+      "type": "place",
+      "label": "君士坦丁堡",
+      "aliases": [
+        "君士坦丁堡",
+        "拜占庭末都",
+        "Konstantinopolis"
+      ],
+      "tags": [
+        "地点",
+        "三体III",
+        "历史幻境",
+        "拜占庭帝国",
+        "第一章"
+      ],
+      "path": "pages/君士坦丁堡.md",
+      "description": "《死神永生》开篇历史幻境的核心场景，公元1453年被奥斯曼帝国攻克的拜占庭帝国末都，作为人类文明在压倒性力量面前陷落的隐喻，与整个三部曲的宏大主题相呼应。",
+      "quality": "featured",
+      "quality_score": 62
     },
     "含义坐标": {
       "type": "concept",
@@ -5315,7 +5606,7 @@
       "path": "pages/吴岳.md",
       "description": "海军上校，\"唐\"号航母舰长，章北海的搭档；以理性失败主义著称，被章北海借思想批判逐出太空军，此后孤独终老。",
       "quality": "featured",
-      "quality_score": 59
+      "quality_score": 60
     },
     "周文王": {
       "type": "person",
@@ -5425,6 +5716,24 @@
       "description": "汪淼在《三体》游戏中注册的角色ID，以哥白尼之名探索三体问题，提出进化算法求解方案，成功揭示宇宙基本结构使文明跃升至第二级",
       "quality": "featured",
       "quality_score": 60
+    },
+    "四·二八兵团": {
+      "type": "organization",
+      "label": "四·二八兵团",
+      "aliases": [
+        "四·二八",
+        "四二八兵团"
+      ],
+      "tags": [
+        "组织",
+        "文化大革命",
+        "红卫兵",
+        "三体I"
+      ],
+      "path": "pages/四·二八兵团.md",
+      "description": "文化大革命中与红色联合对峙的红卫兵组织，以炸药铁炉守卫总部大楼，以惨烈牺牲著称。",
+      "quality": "basic",
+      "quality_score": 43
     },
     "四维碎块": {
       "type": "concept",
@@ -5812,8 +6121,8 @@
       ],
       "path": "pages/地球防务安全部.md",
       "description": "危机纪元设立的政府安全机构，专门负责对付地球三体组织（ETO）及相关威胁，史晓明之父任职于此。",
-      "quality": "basic",
-      "quality_score": 40
+      "quality": "featured",
+      "quality_score": 44
     },
     "地震": {
       "type": "concept",
@@ -5889,7 +6198,7 @@
       "path": "pages/坐标暴露.md",
       "description": "黑暗森林法则中文明位置被其他文明知悉的状态，暴露即等于宣判——任何知道你存在的文明都可能先发制人。",
       "quality": "featured",
-      "quality_score": 48
+      "quality_score": 56
     },
     "坦克": {
       "type": "technology",
@@ -6169,9 +6478,9 @@
         "经济崩溃"
       ],
       "path": "pages/大低谷.md",
-      "description": "三体危机确认后延续约50年的全球性崩溃时期，世界人口由83亿降至35亿，婚姻家庭制度瓦解，城市转入地下，其后迎来技术黄金时代",
+      "description": "三体危机确认后延续约50年的全球性崩溃时期，世界人口由83亿降至35亿，婚姻家庭制度瓦解，城市转入地下，文化遗产大量失传，其后迎来技术黄金时代",
       "quality": "featured",
-      "quality_score": 66
+      "quality_score": 71
     },
     "大兴安岭": {
       "type": "place",
@@ -6766,6 +7075,26 @@
       "quality": "featured",
       "quality_score": 54
     },
+    "太空陵墓": {
+      "type": "event",
+      "label": "太空陵墓",
+      "aliases": [
+        "太空陵墓",
+        "星舰地球陵墓",
+        "黑暗战役陵墓"
+      ],
+      "tags": [
+        "名场面",
+        "三体II",
+        "黑暗战役",
+        "蓝色空间号",
+        "星舰地球"
+      ],
+      "path": "pages/太空陵墓.md",
+      "description": "黑暗战役结束后，\"蓝色空间\"号用四艘战舰残骸在太空中构建的巨石阵式陵墓，安置4247名死难者遗体，以核电池供电的长明灯将亮数万年。",
+      "quality": "standard",
+      "quality_score": 44
+    },
     "太阳": {
       "type": "place",
       "label": "太阳",
@@ -6870,19 +7199,42 @@
       "label": "太阳系",
       "aliases": [
         "太阳系",
-        "Solar System",
-        "人类母星系"
+        "太阳系文明",
+        "太阳系星系"
       ],
       "tags": [
         "地点",
         "三体I",
         "三体II",
-        "三体III"
+        "三体III",
+        "三体文明",
+        "宇宙",
+        "降维"
       ],
       "path": "pages/太阳系.md",
-      "description": "人类文明的家园星系，历经三体入侵危机与威慑纪元，最终被二向箔降维为二维平面彻底毁灭",
+      "description": "地球和八大行星所在的星系，三体故事的核心舞台，经历了从危机纪元到威慑纪元到掩体纪元的全部历史，最终被二向箔降维为二维薄片。",
       "quality": "featured",
-      "quality_score": 68
+      "quality_score": 65
+    },
+    "太阳系最后的声音": {
+      "type": "event",
+      "label": "太阳系最后的声音",
+      "aliases": [
+        "太阳系最后的声音",
+        "太阳系的最后人声"
+      ],
+      "tags": [
+        "名场面",
+        "三体III",
+        "二向箔",
+        "程心",
+        "太阳系",
+        "降维"
+      ],
+      "path": "pages/太阳系最后的声音.md",
+      "description": "《死神永生》中太阳系遭受二向箔降维打击时，程心和AA在逃亡的星环号上听到的最后一批来自太阳系的音频信号——普通人的零碎话语，在多普勒效应中变成异样的吟唱，最终沉寂于一声\"啊——\"。",
+      "quality": "featured",
+      "quality_score": 57
     },
     "太阳系联邦": {
       "type": "organization",
@@ -7117,6 +7469,26 @@
       "quality": "featured",
       "quality_score": 67
     },
+    "奥斯曼帝国": {
+      "type": "civilization",
+      "label": "奥斯曼帝国",
+      "aliases": [
+        "奥斯曼帝国",
+        "土耳其帝国",
+        "奥托曼帝国"
+      ],
+      "tags": [
+        "文明",
+        "三体III",
+        "历史幻境",
+        "君士坦丁堡围攻战",
+        "第一部·第四章"
+      ],
+      "path": "pages/奥斯曼帝国.md",
+      "description": "《死神永生》第一章历史幻境中围攻君士坦丁堡的帝国，由穆罕默德二世率领，最终攻克拜占庭帝国末代首都",
+      "quality": "standard",
+      "quality_score": 52
+    },
     "姬昌": {
       "type": "person",
       "label": "姬昌（周文王）",
@@ -7269,7 +7641,42 @@
       "path": "pages/威慑纪元.md",
       "description": "罗辑建立黑暗森林威慑后持续约62年的人类历史时期，双方在相互毁灭的恐惧下维持了特殊的和平，地球生态恢复、三体文明传送知识，却以程心失守告终。",
       "quality": "featured",
-      "quality_score": 66
+      "quality_score": 75
+    },
+    "威慑纪元生活指南": {
+      "type": "overview",
+      "label": "威慑纪元生活指南",
+      "aliases": [
+        "威慑纪元指南"
+      ],
+      "tags": [
+        "指南",
+        "威慑纪元",
+        "生活"
+      ],
+      "path": "pages/威慑纪元生活指南.md",
+      "description": "写给穿越至威慑纪元（约23-24世纪，程心时代）的人：地球变成公园，男性全面女性化，多段情感关系是正常生活，太空城和太空电梯触手可及。",
+      "quality": "featured",
+      "quality_score": 63
+    },
+    "威慑纪元的社会风貌": {
+      "type": "concept",
+      "label": "威慑纪元的社会风貌",
+      "aliases": [
+        "威慑纪元社会",
+        "未来社会婚恋观",
+        "未来社会"
+      ],
+      "tags": [
+        "概念",
+        "三体III",
+        "威慑纪元",
+        "社会"
+      ],
+      "path": "pages/威慑纪元的社会风貌.md",
+      "description": "威慑纪元约两百年间，人类社会在漫长和平与高福利下形成的独特社会风貌：家庭制度解体、婚恋观彻底改变、男性外貌女性化，以及对未来的漠然。",
+      "quality": "featured",
+      "quality_score": 67
     },
     "威纳尔": {
       "type": "person",
@@ -7306,6 +7713,26 @@
       "description": "《三体》游戏中的历史人物虚拟角色，尝试以礼法体系预测太阳运行，失败后化为冰柱；在后期文明中与墨子等人共同评价章北海",
       "quality": "featured",
       "quality_score": 55
+    },
+    "宇宙三与三十万综合症": {
+      "type": "concept",
+      "label": "宇宙三与三十万综合症",
+      "aliases": [
+        "宇宙三与三十万综合症",
+        "三与三十万综合征",
+        "宇宙三与三十万综合征"
+      ],
+      "tags": [
+        "概念",
+        "三体III",
+        "三体文明",
+        "宇宙社会学",
+        "四维空间"
+      ],
+      "path": "pages/宇宙三与三十万综合症.md",
+      "description": "三体文明（及宇宙学研究者）存在的心理现象：对数字\"3\"（三星系统的历史印记）和\"300000\"（光速km/s）的病态崇拜与执念，被关一帆用于解释宇宙的低维化趋势",
+      "quality": "standard",
+      "quality_score": 47
     },
     "宇宙保险柜": {
       "type": "concept",
@@ -7480,7 +7907,7 @@
       "path": "pages/宇宙微波.md",
       "description": "大爆炸遗留的宇宙背景辐射，温度约2.726K，汪淼所在实验室利用多颗卫星数据绘制精确辐射图",
       "quality": "featured",
-      "quality_score": 40
+      "quality_score": 42
     },
     "宇宙文明": {
       "type": "concept",
@@ -7542,6 +7969,26 @@
       "description": "《三体》三部曲的完整历史纪年对照，从21世纪的危机纪元直至647号小宇宙启动，跨越约1890万年。",
       "quality": "featured",
       "quality_score": 66
+    },
+    "宇宙是膨胀的死尸": {
+      "type": "quote",
+      "label": "宇宙只不过是一具膨胀中的死尸",
+      "aliases": [
+        "宇宙是膨胀的死尸",
+        "宇宙膨胀的死尸",
+        "膨胀的死尸"
+      ],
+      "tags": [
+        "名句",
+        "三体III",
+        "关一帆",
+        "宇宙学",
+        "幽闭恐惧"
+      ],
+      "path": "pages/宇宙是膨胀的死尸.md",
+      "description": "关一帆在万有引力号上对舰医提出的宇宙观：光速过慢使宇宙各部分永远无法沟通，宇宙不过是具膨胀中的死尸。",
+      "quality": "standard",
+      "quality_score": 42
     },
     "宇宙末日": {
       "type": "concept",
@@ -7828,6 +8275,25 @@
       "quality": "featured",
       "quality_score": 54
     },
+    "宪章修正": {
+      "type": "concept",
+      "label": "宪章修正",
+      "aliases": [
+        "宪章修正",
+        "联合国宪章修正"
+      ],
+      "tags": [
+        "概念",
+        "三体II",
+        "危机纪元",
+        "太空军",
+        "面壁计划"
+      ],
+      "path": "pages/宪章修正.md",
+      "description": "危机纪元因地球防御需要对联合国宪章进行的修正，赋予行星防御理事会超国家军事权力，同时为面壁法案提供与宪章同等的法律地位",
+      "quality": "featured",
+      "quality_score": 50
+    },
     "宽姨": {
       "type": "person",
       "label": "宽姨",
@@ -7970,12 +8436,14 @@
         "三体III",
         "宇宙物理",
         "云天明",
-        "程心"
+        "程心",
+        "回归运动",
+        "漂流瓶"
       ],
       "path": "pages/小宇宙.md",
       "description": "高等文明在大宇宙中建造的独立空间气泡——云天明将一个完整的小宇宙作为礼物送给程心，使她得以在大宇宙末日（大坍缩）中存活，并进入下一次大爆炸后的新宇宙。",
       "quality": "featured",
-      "quality_score": 68
+      "quality_score": 69
     },
     "小行星带": {
       "type": "place",
@@ -8089,7 +8557,7 @@
       "path": "pages/工质推进飞船.md",
       "description": "以核聚变加热工质（推进剂）并高速喷出的飞船方案，本质上是化学火箭的核动力变种；航天系统力主，但因需携带大量工质而只能在太阳系内作战，被太空军和丁仪否决",
       "quality": "featured",
-      "quality_score": 49
+      "quality_score": 50
     },
     "巨摆": {
       "type": "concept",
@@ -8262,12 +8730,14 @@
       ],
       "tags": [
         "人物",
-        "三体II"
+        "三体II",
+        "罗辑",
+        "红围巾"
       ],
       "path": "pages/庄颜.md",
       "description": "罗辑的妻子，由联合国依罗辑想象中的\"理想女性\"形象寻访而来，贯穿《黑暗森林》情感线的核心人物",
       "quality": "featured",
-      "quality_score": 63
+      "quality_score": 68
     },
     "庞加莱": {
       "type": "person",
@@ -8495,6 +8965,26 @@
       "description": "澳大利亚土著老人，八十余岁，大移民期间将程心与艾AA收留于自家旧屋；以超然平静的人生态度给予程心精神慰藉，每夜吹奏迪杰里多",
       "quality": "featured",
       "quality_score": 60
+    },
+    "张延": {
+      "type": "person",
+      "label": "张延",
+      "aliases": [
+        "张延"
+      ],
+      "tags": [
+        "人物",
+        "三体II",
+        "公元人",
+        "冬眠技术",
+        "危机纪元",
+        "大低谷",
+        "次要人物"
+      ],
+      "path": "pages/张延.md",
+      "description": "张援朝的孙子，危机纪元的冬眠苏醒者，曾短暂苏醒目睹大低谷的惨状，再度冬眠后与史晓明等人同期苏醒，以亲历者身份向罗辑讲述大低谷实况。",
+      "quality": "standard",
+      "quality_score": 52
     },
     "张援朝": {
       "type": "person",
@@ -8839,6 +9329,23 @@
       "quality": "featured",
       "quality_score": 46
     },
+    "恒星呼吸": {
+      "type": "concept",
+      "label": "恒星呼吸",
+      "aliases": [
+        "太阳呼吸",
+        "气态层膨胀"
+      ],
+      "tags": [
+        "三体星系",
+        "天文",
+        "三体I"
+      ],
+      "path": "pages/恒星呼吸.md",
+      "description": "三体星系三颗太阳气态外层的周期性膨胀与收缩现象，膨胀时厚度增大十倍以上，是历史上吞噬其余十一颗行星的直接原因，也是三体文明决定向外星系移民的最终动因。",
+      "quality": "basic",
+      "quality_score": 34
+    },
     "恒星型氢弹": {
       "type": "weapon",
       "label": "恒星型氢弹",
@@ -8856,6 +9363,27 @@
       "description": "危机纪元研制的超大当量核武器，首颗当量3.5亿吨TNT，是人类已造最大氢弹的17倍；雷迪亚兹利用其掩护真实战略，后共制造五千余颗",
       "quality": "featured",
       "quality_score": 50
+    },
+    "恒星放大器": {
+      "type": "technology",
+      "label": "恒星放大器",
+      "aliases": [
+        "恒星放大器",
+        "太阳放大器",
+        "太阳天线"
+      ],
+      "tags": [
+        "科技",
+        "三体I",
+        "三体II",
+        "红岸基地",
+        "叶文洁",
+        "引力波广播"
+      ],
+      "path": "pages/恒星放大器.md",
+      "description": "叶文洁在红岸基地发现的利用太阳作为天线放大电磁信号的机制，使星际通讯成为可能，是整个三体危机的技术起点",
+      "quality": "featured",
+      "quality_score": 63
     },
     "恒星级战舰": {
       "type": "technology",
@@ -9023,6 +9551,25 @@
       "quality": "featured",
       "quality_score": 67
     },
+    "执剑纪元生活指南": {
+      "type": "overview",
+      "label": "执剑纪元生活指南",
+      "aliases": [
+        "执剑纪元指南",
+        "地下城时代指南"
+      ],
+      "tags": [
+        "指南",
+        "危机纪元",
+        "大低谷",
+        "执剑纪元",
+        "生活"
+      ],
+      "path": "pages/执剑纪元生活指南.md",
+      "description": "写给穿越至执剑纪元（大低谷后至威慑纪元初期，约22世纪）的人：地下巨树城市、飞行汽车、无线供电、发光服装，以及一个婚姻制度已消亡的社会。",
+      "quality": "featured",
+      "quality_score": 68
+    },
     "执政官": {
       "type": "concept",
       "label": "执政官",
@@ -9117,7 +9664,7 @@
       "path": "pages/技术封锁.md",
       "description": "三体文明通过智子阻止人类基础物理研究进展的战略手段，使人类技术停滞四百年，以确保三体舰队到达时仍有技术优势。",
       "quality": "featured",
-      "quality_score": 45
+      "quality_score": 62
     },
     "技术爆炸": {
       "type": "theory",
@@ -9154,6 +9701,27 @@
       "quality": "featured",
       "quality_score": 47
     },
+    "把字刻在石头上": {
+      "type": "event",
+      "label": "把字刻在石头上",
+      "aliases": [
+        "把字刻在石头上",
+        "冥王星石刻",
+        "地球文明的石碑"
+      ],
+      "tags": [
+        "名场面",
+        "三体III",
+        "罗辑",
+        "冥王星",
+        "地球文明博物馆",
+        "人类文明"
+      ],
+      "path": "pages/把字刻在石头上.md",
+      "description": "掩体纪元末期，老年罗辑在冥王星地下博物馆向程心和AA宣告人类保存文明信息唯一可行方法的场景：把字刻在石头上。",
+      "quality": "featured",
+      "quality_score": 69
+    },
     "拉格朗日点": {
       "type": "concept",
       "label": "拉格朗日点",
@@ -9173,6 +9741,26 @@
       "description": "天体系统引力平衡点；地日拉格朗日点是程心与三体舰队会面之地，也是掩体计划太空城布局的关键参考；水滴末日打击时越过此点",
       "quality": "featured",
       "quality_score": 56
+    },
+    "拜占庭帝国": {
+      "type": "civilization",
+      "label": "拜占庭帝国",
+      "aliases": [
+        "拜占庭帝国",
+        "东罗马帝国",
+        "拜占庭"
+      ],
+      "tags": [
+        "文明",
+        "三体III",
+        "历史幻境",
+        "君士坦丁堡围攻战",
+        "第一章"
+      ],
+      "path": "pages/拜占庭帝国.md",
+      "description": "《死神永生》开篇历史幻境中被奥斯曼帝国围攻的千年古国，以君士坦丁堡的陷落为终章，映射宇宙黑暗森林中文明在绝对力量面前的命运。",
+      "quality": "standard",
+      "quality_score": 55
     },
     "拯救派": {
       "type": "organization",
@@ -9624,12 +10212,14 @@
         "三体III",
         "导航",
         "三体舰队",
-        "章北海"
+        "章北海",
+        "程心",
+        "逃亡"
       ],
       "path": "pages/星图.md",
       "description": "标注天体坐标和相对位置的导航图；广播中识别目标恒星、舰队导航、逃亡方向选择的核心工具",
       "quality": "featured",
-      "quality_score": 68
+      "quality_score": 67
     },
     "星环公司": {
       "type": "organization",
@@ -9746,6 +10336,27 @@
       "quality": "featured",
       "quality_score": 66
     },
+    "星舰地球的建立": {
+      "type": "event",
+      "label": "星舰地球的建立",
+      "aliases": [
+        "星舰地球的建立",
+        "星舰地球宣言",
+        "星舰地球第一次公民大会"
+      ],
+      "tags": [
+        "名场面",
+        "三体II",
+        "章北海",
+        "星舰地球",
+        "黑暗战役",
+        "末日战役"
+      ],
+      "path": "pages/星舰地球的建立.md",
+      "description": "末日战役后，章北海率领幸存飞船脱离太阳系，宣布建立独立国家\"星舰地球\"，召开第一次公民大会确定航向与政治结构——人类文明第二起点。",
+      "quality": "standard",
+      "quality_score": 57
+    },
     "星舰文明": {
       "type": "civilization",
       "label": "星舰文明",
@@ -9840,7 +10451,7 @@
       "path": "pages/智子.md",
       "description": "三体文明将质子展开为二维平面并蚀刻超级计算机电路后折叠而成的超高维粒子计算机，可超光速通讯，用于监控和封锁地球基础科学研究",
       "quality": "featured",
-      "quality_score": 66
+      "quality_score": 77
     },
     "智子封锁": {
       "type": "concept",
@@ -9901,7 +10512,7 @@
       "path": "pages/曲率驱动.md",
       "description": "三体文明光速飞船采用的驱动原理——通过压低飞船后方空间曲率，由前方更大曲率的空间\"拉动\"飞船，使其以无限接近光速的速度航行；由云天明情报揭示，是维德计划的目标与程心最终放弃的代价。",
       "quality": "featured",
-      "quality_score": 63
+      "quality_score": 78
     },
     "曲率驱动航迹": {
       "type": "concept",
@@ -10142,7 +10753,7 @@
       "path": "pages/末日战役.md",
       "description": "两枚三体水滴探测器在极短时间内摧毁人类三大舰队，仅少数战舰逃脱，是人类历史上最大的军事灾难",
       "quality": "featured",
-      "quality_score": 67
+      "quality_score": 75
     },
     "末日纪元": {
       "type": "era",
@@ -10195,6 +10806,23 @@
       "description": "亚洲舰队\"万年昆鹏\"号EM986战位军官，与赵鑫并列为末日战役中最早接近真相的分析者之一",
       "quality": "featured",
       "quality_score": 49
+    },
+    "李瑶": {
+      "type": "person",
+      "label": "李瑶",
+      "aliases": [
+        "李瑶"
+      ],
+      "tags": [
+        "人物",
+        "三体I",
+        "汪淼",
+        "次要人物"
+      ],
+      "path": "pages/李瑶.md",
+      "description": "汪淼的妻子，豆豆的母亲；通过医生之口和家庭场景侧面呈现，代表汪淼生活背景中的家庭纽带。",
+      "quality": "standard",
+      "quality_score": 33
     },
     "李维": {
       "type": "person",
@@ -10381,6 +11009,25 @@
       "quality": "featured",
       "quality_score": 50
     },
+    "染色计划": {
+      "type": "event",
+      "label": "染色计划",
+      "aliases": [
+        "染色计划",
+        "染色"
+      ],
+      "tags": [
+        "事件",
+        "三体I",
+        "三体文明",
+        "智子",
+        "科学压制"
+      ],
+      "path": "pages/染色计划.md",
+      "description": "三体文明通过科技副作用引发人类社会对科学的恐惧和厌恶，与神迹计划并行的心理战策略。",
+      "quality": "basic",
+      "quality_score": 36
+    },
     "柯伊伯带": {
       "type": "place",
       "label": "柯伊伯带",
@@ -10452,8 +11099,8 @@
       ],
       "path": "pages/核弹女孩.md",
       "description": "地球三体组织成员，在联合国ETO大会被突袭时手持核弹引爆，以身殉道；书中以\"核弹女孩\"代称，是三体I最具冲击力的人物形象之一。",
-      "quality": "standard",
-      "quality_score": 40
+      "quality": "featured",
+      "quality_score": 44
     },
     "核弹链": {
       "type": "weapon",
@@ -10724,6 +11371,44 @@
       "quality": "featured",
       "quality_score": 49
     },
+    "歌者的诗": {
+      "type": "quote",
+      "label": "歌者的诗",
+      "aliases": [
+        "歌者的诗",
+        "歌者古歌谣",
+        "凝固的时间"
+      ],
+      "tags": [
+        "名句",
+        "三体III",
+        "歌者",
+        "黑暗森林",
+        "宇宙文明"
+      ],
+      "path": "pages/歌者的诗.md",
+      "description": "《死神永生》中歌者在执行清理任务时随口吟唱的一首古歌谣，是其文明古典时代的情诗遗存，以\"凝固的时间\"作为爱情礼物，唯美而幽微。",
+      "quality": "featured",
+      "quality_score": 57
+    },
+    "武斗": {
+      "type": "concept",
+      "label": "武斗",
+      "aliases": [
+        "派系武斗",
+        "红卫兵武斗"
+      ],
+      "tags": [
+        "概念",
+        "文化大革命",
+        "历史",
+        "三体I"
+      ],
+      "path": "pages/武斗.md",
+      "description": "文化大革命中红卫兵各派系之间的武装冲突，从冷兵器演变为枪械对决，1967年达到全国高潮。",
+      "quality": "featured",
+      "quality_score": 60
+    },
     "死柱": {
       "type": "concept",
       "label": "死柱",
@@ -10896,18 +11581,20 @@
       "aliases": [
         "水滴探测器",
         "水滴",
-        "强互作用力探测器"
+        "强互作用力探测器",
+        "强互作用力宇宙探测器"
       ],
       "tags": [
         "武器",
         "三体II",
+        "三体III",
         "三体文明",
         "人类舰队"
       ],
       "path": "pages/水滴探测器.md",
       "description": "三体文明发往太阳系的终极武器，外形如完美液滴，由强互作用力材料构成，人类任何武器对其无效，单枚足以摧毁整个人类舰队。",
       "quality": "featured",
-      "quality_score": 66
+      "quality_score": 78
     },
     "水滴攻击": {
       "type": "event",
@@ -10952,19 +11639,20 @@
       "type": "person",
       "label": "汪淼",
       "aliases": [
-        "汪淼",
-        "汪教授"
+        "汪淼"
       ],
       "tags": [
         "人物",
         "三体I",
-        "科学家",
-        "幽灵倒计时"
+        "纳米材料",
+        "三体游戏",
+        "宇宙闪烁",
+        "地球三体组织"
       ],
       "path": "pages/汪淼.md",
-      "description": "纳米材料研究教授，《三体》第一部的主视角人物，经历宇宙闪烁并深入调查地球三体组织。",
+      "description": "纳米材料科学家，三体危机的第一目击者，通过参与三体游戏与调查ETO揭开了外星文明入侵阴谋；宇宙背景辐射计数器给他体内植入了倒计时，成为最早感受到宇宙危机的普通人",
       "quality": "featured",
-      "quality_score": 68
+      "quality_score": 78
     },
     "汪淼倒计时": {
       "type": "event",
@@ -11095,6 +11783,26 @@
       "quality": "featured",
       "quality_score": 48
     },
+    "流亡澳大利亚生活指南": {
+      "type": "overview",
+      "label": "流亡澳大利亚生活指南",
+      "aliases": [
+        "流亡时代指南",
+        "澳大利亚移民指南",
+        "三体占领时期"
+      ],
+      "tags": [
+        "指南",
+        "三体III",
+        "流亡",
+        "澳大利亚",
+        "生活"
+      ],
+      "path": "pages/流亡澳大利亚生活指南.md",
+      "description": "写给穿越至威慑崩溃后（程心放弃威慑，三体舰队重新逼近期间）的人：全人类被迫迁往澳大利亚，在沙漠中以合成板简易房为家，高科技与原始生存并存。",
+      "quality": "featured",
+      "quality_score": 63
+    },
     "海王星": {
       "type": "place",
       "label": "海王星",
@@ -11214,7 +11922,7 @@
       "path": "pages/混沌理论.md",
       "description": "研究对初始条件极端敏感的非线性动力学系统的数学理论，三体问题不可解的科学根基",
       "quality": "featured",
-      "quality_score": 51
+      "quality_score": 53
     },
     "清理基因": {
       "type": "concept",
@@ -11776,6 +12484,23 @@
       "quality": "featured",
       "quality_score": 52
     },
+    "疯狂年代": {
+      "type": "era",
+      "label": "疯狂年代",
+      "aliases": [
+        "疯狂的年代",
+        "1967年"
+      ],
+      "tags": [
+        "时代",
+        "文化大革命",
+        "三体I"
+      ],
+      "path": "pages/疯狂年代.md",
+      "description": "《三体》第一章标题，特指1967年文化大革命武斗进入高潮的极端历史时期。",
+      "quality": "basic",
+      "quality_score": 37
+    },
     "白沐霖": {
       "type": "person",
       "label": "白沐霖",
@@ -11828,6 +12553,26 @@
       "quality": "featured",
       "quality_score": 53
     },
+    "百日大武斗": {
+      "type": "event",
+      "label": "百日大武斗",
+      "aliases": [
+        "百日大武斗",
+        "清华百日大武斗"
+      ],
+      "tags": [
+        "事件",
+        "三体I",
+        "文化大革命",
+        "叶哲泰",
+        "叶文洁",
+        "历史背景"
+      ],
+      "path": "pages/百日大武斗.md",
+      "description": "文化大革命高潮时期发生在清华校园的派系武斗事件，持续约百日，叶哲泰在此被红卫兵批斗致死，触发叶文洁命运的转折。",
+      "quality": "featured",
+      "quality_score": 50
+    },
     "监听站": {
       "type": "organization",
       "label": "监听站",
@@ -11845,6 +12590,22 @@
       "description": "三体文明建立的全球宇宙电波监听网络，数千个监听站持续聆听宇宙中的智慧文明信号；1379号监听站的值守员接收到来自地球的信号后独自决定发出警告",
       "quality": "featured",
       "quality_score": 52
+    },
+    "监听部": {
+      "type": "organization",
+      "label": "监听部",
+      "aliases": [
+        "红岸监听部"
+      ],
+      "tags": [
+        "红岸基地",
+        "三体I",
+        "组织"
+      ],
+      "path": "pages/监听部.md",
+      "description": "红岸基地的核心情报部门，负责监视太空活动并接收宇宙信号；叶文洁在此识破发射真相，并私自向三体文明发出信号。",
+      "quality": "basic",
+      "quality_score": 35
     },
     "目标甄别": {
       "type": "concept",
@@ -11997,8 +12758,8 @@
       ],
       "path": "pages/破壁计划.md",
       "description": "三体文明针对人类面壁计划发起的反制专项行动，通过心理操控面壁者的亲密关系人（破壁人）来揭露面壁者的真实意图。",
-      "quality": "standard",
-      "quality_score": 39
+      "quality": "featured",
+      "quality_score": 50
     },
     "磁力腰带": {
       "type": "technology",
@@ -12110,8 +12871,8 @@
       ],
       "path": "pages/神迹计划.md",
       "description": "三体文明通过智子在地球制造超自然\"神迹\"、干扰人类科学思想的战略计划，是技术封锁的重要组成部分。",
-      "quality": "standard",
-      "quality_score": 39
+      "quality": "featured",
+      "quality_score": 57
     },
     "科兹莫": {
       "type": "person",
@@ -12260,7 +13021,7 @@
       "path": "pages/程心.md",
       "description": "航天工程师，第二任执剑人，在关键时刻放弃威慑，此后见证人类文明的多次灾难，最终与关一帆进入云天明为她留下的小宇宙（647号宇宙）。",
       "quality": "featured",
-      "quality_score": 67
+      "quality_score": 78
     },
     "程心接剑": {
       "type": "event",
@@ -12448,7 +13209,7 @@
       "path": "pages/章北海.md",
       "description": "太空军政委，表面上是最坚定的必胜论者，实际上是秘密推进人类逃亡方案的战略家，水滴攻击中驾\"自然选择\"号脱逃。",
       "quality": "featured",
-      "quality_score": 67
+      "quality_score": 73
     },
     "章北海逃亡": {
       "type": "event",
@@ -12624,7 +13385,7 @@
       "path": "pages/红岸基地.md",
       "description": "文化大革命时期建立的军事秘密项目，以大型天线向宇宙发射信号，叶文洁在此工作并向三体发送了地球坐标",
       "quality": "featured",
-      "quality_score": 67
+      "quality_score": 78
     },
     "红岸系统": {
       "type": "technology",
@@ -12901,7 +13662,7 @@
       "path": "pages/罗辑.md",
       "description": "社会学家，四位面壁者中唯一成功者，独立创立黑暗森林法则并以宇宙广播威慑三体文明，成为地球第一任执剑人，独自持剑长达五十四年",
       "quality": "featured",
-      "quality_score": 64
+      "quality_score": 78
     },
     "罗辑冬眠": {
       "type": "event",
@@ -12960,6 +13721,28 @@
       "description": "罗辑从危机纪元被选为面壁者，到执剑人五十年，直至威慑移交的完整生平事件序列",
       "quality": "featured",
       "quality_score": 62
+    },
+    "罗辑的咒语": {
+      "type": "event",
+      "label": "罗辑的咒语",
+      "aliases": [
+        "罗辑的咒语",
+        "咒语",
+        "面壁者咒语",
+        "宇宙咒语"
+      ],
+      "tags": [
+        "名场面",
+        "三体II",
+        "罗辑",
+        "面壁计划",
+        "黑暗森林威慑",
+        "坐标暴露"
+      ],
+      "path": "pages/罗辑的咒语.md",
+      "description": "罗辑在行星防御理事会会议上公布其秘密研究成果：通过太阳放大向宇宙广播特定恒星坐标，以黑暗森林法则对三体文明实施威慑——此举奠定黑暗森林威慑的理论基础。",
+      "quality": "standard",
+      "quality_score": 53
     },
     "群星计划": {
       "type": "event",
@@ -13076,6 +13859,27 @@
       "description": "联合国的核心行政机构所在地，面壁者听证会的举办地，历经三体危机全程并在掩体纪元后迁回旧址",
       "quality": "featured",
       "quality_score": 50
+    },
+    "联合国行星防御理事会": {
+      "type": "organization",
+      "label": "联合国行星防御理事会",
+      "aliases": [
+        "联合国行星防御理事会",
+        "行星防御理事会",
+        "PDC"
+      ],
+      "tags": [
+        "组织",
+        "三体II",
+        "三体III",
+        "危机纪元",
+        "面壁计划",
+        "太空军"
+      ],
+      "path": "pages/联合国行星防御理事会.md",
+      "description": "危机纪元建立的人类最高防御决策机构（PDC），负责全球统筹对抗三体入侵，面壁计划的发起者",
+      "quality": "featured",
+      "quality_score": 54
     },
     "联合舰队": {
       "type": "organization",
@@ -13260,7 +14064,7 @@
       "path": "pages/航天服.md",
       "description": "太空探索中保护宇航员的基础装备，危机纪元后随着太空出入日常化而逐渐淡化为可选装备",
       "quality": "featured",
-      "quality_score": 50
+      "quality_score": 52
     },
     "航空母舰": {
       "type": "technology",
@@ -13336,7 +14140,7 @@
       "path": "pages/艾AA.md",
       "description": "三体III中与程心并肩的亲密好友和商业伙伴，天文学博士，发现了云天明赠予程心的行星DX3906，陪伴程心历经威慑纪元崩溃、流亡澳大利亚、太阳系末日，最终与关一帆共赴新世界。",
       "quality": "featured",
-      "quality_score": 65
+      "quality_score": 69
     },
     "艾伦": {
       "type": "person",
@@ -13498,9 +14302,9 @@
         "四维碎块"
       ],
       "path": "pages/蓝色空间号.md",
-      "description": "亚洲舰队战舰，末日战役后逃入深空，经历黑暗战役与四维空间碎片，被万有引力号追击半个世纪",
+      "description": "亚洲舰队战舰，末日战役后逃入深空，经历黑暗战役与四维空间碎片，被万有引力号追击半个世纪，最终广播人类与三体坐标",
       "quality": "featured",
-      "quality_score": 65
+      "quality_score": 74
     },
     "蓝西": {
       "type": "person",
@@ -13670,6 +14474,23 @@
       "quality": "featured",
       "quality_score": 50
     },
+    "豆豆": {
+      "type": "person",
+      "label": "豆豆",
+      "aliases": [
+        "豆豆"
+      ],
+      "tags": [
+        "人物",
+        "三体I",
+        "汪淼",
+        "次要人物"
+      ],
+      "path": "pages/豆豆.md",
+      "description": "汪淼与李瑶六岁的儿子，是三体I开头汪淼家庭生活的重要背景人物，代表着汪淼在精神崩溃边缘仍珍视的人间温暖。",
+      "quality": "standard",
+      "quality_score": 36
+    },
     "质子": {
       "type": "concept",
       "label": "质子",
@@ -13688,7 +14509,7 @@
       "path": "pages/质子.md",
       "description": "氢原子核，是智子的物理载体——三体世界将质子展开为宏观二维智能体。两个加速到接近光速的质子是三体世界发射智子的方式",
       "quality": "featured",
-      "quality_score": 63
+      "quality_score": 64
     },
     "质子展开": {
       "type": "technology",
@@ -13970,6 +14791,46 @@
       "quality": "featured",
       "quality_score": 49
     },
+    "近地初级警戒防御圈": {
+      "type": "technology",
+      "label": "近地初级警戒防御圈",
+      "aliases": [
+        "近地初级警戒防御圈",
+        "近地防御圈"
+      ],
+      "tags": [
+        "科技",
+        "三体II",
+        "危机纪元",
+        "太空军",
+        "智子"
+      ],
+      "path": "pages/近地初级警戒防御圈.md",
+      "description": "危机纪元紧急部署的由现有洲际导弹和NMD系统构成的防御体系，主要目标是防御智子在近地轨道的低维展开",
+      "quality": "featured",
+      "quality_score": 47
+    },
+    "近地轨道": {
+      "type": "place",
+      "label": "近地轨道",
+      "aliases": [
+        "近地轨道",
+        "近地空间",
+        "低地球轨道"
+      ],
+      "tags": [
+        "地点",
+        "三体I",
+        "三体II",
+        "三体III",
+        "太空军事",
+        "太空设施"
+      ],
+      "path": "pages/近地轨道.md",
+      "description": "地球大气层上方的低空轨道空间，是三部曲中太空军事、智子拦截、星际通讯设施的核心部署区域。",
+      "quality": "standard",
+      "quality_score": 52
+    },
     "远方号": {
       "type": "technology",
       "label": "远方号",
@@ -14081,6 +14942,24 @@
       "description": "文革时期以夺权为目标的激进青年运动；比第一代红卫兵更疯狂的新生力量",
       "quality": "featured",
       "quality_score": 50
+    },
+    "郭警官": {
+      "type": "person",
+      "label": "郭警官",
+      "aliases": [
+        "郭警官"
+      ],
+      "tags": [
+        "人物",
+        "三体II",
+        "威慑纪元",
+        "次要人物",
+        "公元人"
+      ],
+      "path": "pages/郭警官.md",
+      "description": "威慑纪元的警察，自我认同为\"公元人\"（冬眠复苏者），负责调查罗辑与史强所在住宅遭受的攻击，并向罗辑介绍这个陌生的新时代。",
+      "quality": "standard",
+      "quality_score": 48
     },
     "量子号": {
       "type": "technology",
@@ -14674,7 +15553,7 @@
       "path": "pages/面壁者.md",
       "description": "人类应对三体入侵设立的战略制度：选定四名战略家，凭借智子无法读取人类思维的漏洞，独立制定秘密反击计划。",
       "quality": "featured",
-      "quality_score": 67
+      "quality_score": 77
     },
     "面壁计划": {
       "type": "event",
@@ -14692,7 +15571,7 @@
       "path": "pages/面壁计划.md",
       "description": "联合国行星防御理事会在危机纪元启动的绝密战略项目——利用智子无法读取人类思维的缺陷，授权四名\"面壁者\"独立制定对抗三体文明的秘密计划。",
       "quality": "featured",
-      "quality_score": 66
+      "quality_score": 73
     },
     "面壁计划听证会": {
       "type": "event",
@@ -14787,7 +15666,7 @@
       "path": "pages/飞星.md",
       "description": "三体游戏中对三星系非主星的称呼；在天空中缓慢漂移游荡。两颗飞星出现预示恒纪元开始，三颗飞星同现则预示最惨烈的乱纪元灾难。",
       "quality": "featured",
-      "quality_score": 68
+      "quality_score": 69
     },
     "飞星不动": {
       "type": "concept",
@@ -14807,6 +15686,26 @@
       "description": "三体世界的天文大凶兆：飞星（远方的太阳）从行星地面观察角度在星空中静止不动，意味着太阳与行星在同一直线上运行，可能预示行星冲入太阳或遭受极端引潮力",
       "quality": "featured",
       "quality_score": 44
+    },
+    "飞行车": {
+      "type": "technology",
+      "label": "飞行车",
+      "aliases": [
+        "飞车",
+        "飞行汽车"
+      ],
+      "tags": [
+        "科技",
+        "交通",
+        "三体II",
+        "三体III",
+        "执剑纪元",
+        "威慑纪元"
+      ],
+      "path": "pages/飞行车.md",
+      "description": "执剑纪元与威慑纪元的主要城市交通工具，全自动无人驾驶，依靠城市无线供电场运行，穿行于巨树建筑之间和城市上空。",
+      "quality": "featured",
+      "quality_score": 67
     },
     "饕餮海": {
       "type": "concept",
@@ -15045,6 +15944,25 @@
       "quality": "featured",
       "quality_score": 48
     },
+    "黄金时代": {
+      "type": "era",
+      "label": "黄金时代",
+      "aliases": [
+        "黄金时代",
+        "黄金岁月"
+      ],
+      "tags": [
+        "纪元",
+        "三体II",
+        "三体III",
+        "危机纪元前",
+        "人类历史"
+      ],
+      "path": "pages/黄金时代.md",
+      "description": "从20世纪80年代开始至三体危机爆发结束的人类繁荣时期，被后来几代人不断回忆和怀念",
+      "quality": "featured",
+      "quality_score": 62
+    },
     "黑域": {
       "type": "concept",
       "label": "黑域",
@@ -15160,7 +16078,7 @@
       "path": "pages/黑暗森林法则.md",
       "description": "宇宙社会学基本公理：宇宙中每个文明都是带枪的猎人，必须对其他文明格杀勿论",
       "quality": "featured",
-      "quality_score": 75
+      "quality_score": 76
     },
     "黑曜石石板": {
       "type": "concept",
@@ -15244,10 +16162,14 @@
     "监听员": "1379号监听员",
     "187J3X1": "187J3X1",
     "187J3X1恒星": "187J3X1",
+    "3K眼镜": "3K眼镜",
+    "三K眼镜": "3K眼镜",
+    "宇宙背景辐射眼镜": "3K眼镜",
     "647号宇宙": "647号宇宙",
     "649号提案": "649号提案",
     "舰队联席会议649号提案": "649号提案",
     "AA": "AA",
+    "艾AA": "AA",
     "AA与程心逃离": "AA与程心逃离",
     "太阳系降维逃亡": "AA与程心逃离",
     "程心逃离": "AA与程心逃离",
@@ -15257,6 +16179,10 @@
     "DX3906星系": "DX3906星系",
     "DX3906恒星": "DX3906星系",
     "DX3906星系黑域纪元": "DX3906星系黑域纪元",
+    "KILLER病毒": "KILLER病毒",
+    "KILLER5.2": "KILLER病毒",
+    "谋杀病毒": "KILLER病毒",
+    "现代魔咒": "KILLER病毒",
     "NH558J2": "NH558J2",
     "N问题": "N问题",
     "Nostalgia问题": "N问题",
@@ -15428,6 +16354,10 @@
     "三体III：死神永生": "三体III",
     "死神永生": "三体III",
     "三体第三部": "三体III",
+    "三体三部曲的回声结构": "三体三部曲的回声结构",
+    "三体的伏笔": "三体三部曲的回声结构",
+    "三体的首尾呼应": "三体三部曲的回声结构",
+    "三体跨章节互见": "三体三部曲的回声结构",
     "三体入侵": "三体入侵",
     "三体入侵者": "三体入侵",
     "外星入侵": "三体入侵",
@@ -15483,6 +16413,9 @@
     "中华二号高能加速器": "中华二号高能加速器",
     "中华二号加速器": "中华二号高能加速器",
     "中华二号": "中华二号高能加速器",
+    "中华田园": "中华田园",
+    "中华田园社区": "中华田园",
+    "潘寒实验社区": "中华田园",
     "中子星": "中子星",
     "neutron star": "中子星",
     "中微子": "中微子",
@@ -15513,6 +16446,9 @@
     "国王的新画师": "云天明三则童话",
     "云天明童话": "云天明三则童话",
     "云天明故事": "云天明三则童话",
+    "云天明与程心的重逢": "云天明与程心的重逢",
+    "麦田重逢": "云天明与程心的重逢",
+    "云天明程心会面": "云天明与程心的重逢",
     "云天明的星星": "云天明的星星",
     "云天明买星星": "云天明的星星",
     "五月花号": "五月花号",
@@ -15534,6 +16470,9 @@
     "人列计算机": "人列计算机",
     "人工智能": "人工智能",
     "AI": "人工智能",
+    "人类最后的守墓人": "人类最后的守墓人",
+    "罗辑守墓": "人类最后的守墓人",
+    "冥王星告别": "人类最后的守墓人",
     "人类灭绝": "人类灭绝",
     "灭绝计划": "人类灭绝",
     "extinction of humanity": "人类灭绝",
@@ -15544,6 +16483,9 @@
     "Mike Evans": "伊文斯",
     "迈克·伊文斯": "伊文斯",
     "麦克·伊文斯": "伊文斯",
+    "伊甸园": "伊甸园",
+    "北欧伊甸园": "伊甸园",
+    "罗辑的伊甸园": "伊甸园",
     "伏羲": "伏羲",
     "伽利略": "伽利略",
     "伽尔宁": "伽尔宁",
@@ -15555,6 +16497,9 @@
     "低熵生命": "低熵体",
     "低熵存在": "低熵体",
     "何博士": "何博士",
+    "作战中心": "作战中心",
+    "联合作战中心": "作战中心",
+    "三体作战中心": "作战中心",
     "保留地": "保留地",
     "人类保留地": "保留地",
     "Reservation": "保留地",
@@ -15598,6 +16543,10 @@
     "全息显示": "全息影像",
     "全息投影": "全息影像",
     "公元人": "公元人",
+    "公元纪元的婚恋": "公元纪元的婚恋",
+    "公元纪元婚姻": "公元纪元的婚恋",
+    "公元纪元家庭": "公元纪元的婚恋",
+    "传统婚恋": "公元纪元的婚恋",
     "关一帆": "关一帆",
     "关一帆小宇宙": "关一帆小宇宙",
     "小宇宙末年": "关一帆小宇宙",
@@ -15605,6 +16554,8 @@
     "程心小宇宙": "关一帆小宇宙",
     "关一帆程心": "关一帆小宇宙",
     "军事执政官": "军事执政官",
+    "军事民主": "军事民主",
+    "MD": "军事民主",
     "军舰": "军舰",
     "海军军舰": "军舰",
     "战列舰": "军舰",
@@ -15708,6 +16659,9 @@
     "北方": "北方号",
     "北美一号": "北美一号",
     "北美舰队": "北美舰队",
+    "十维宇宙猜想": "十维宇宙猜想",
+    "田园时代理论": "十维宇宙猜想",
+    "十维宇宙": "十维宇宙猜想",
     "半人马座": "半人马座",
     "半人马座三星": "半人马座",
     "比邻星": "半人马座",
@@ -15724,6 +16678,13 @@
     "危机幼稚症": "危机幼稚症",
     "危机纪元": "危机纪元",
     "危机时代": "危机纪元",
+    "危机纪元生活指南": "危机纪元生活指南",
+    "危机纪元指南": "危机纪元生活指南",
+    "危机纪元生活": "危机纪元生活指南",
+    "危机纪元至大低谷的家庭变迁": "危机纪元至大低谷的家庭变迁",
+    "大低谷后的社会": "危机纪元至大低谷的家庭变迁",
+    "危机纪元婚恋": "危机纪元至大低谷的家庭变迁",
+    "家庭解体": "危机纪元至大低谷的家庭变迁",
     "原子核": "原子核",
     "atomic nucleus": "原子核",
     "双层隐喻": "双层隐喻",
@@ -15769,8 +16730,12 @@
     "司令部": "司令部",
     "舰队司令部": "司令部",
     "太空军司令部": "司令部",
+    "同步轨道": "同步轨道",
     "君士坦丁十一世": "君士坦丁十一世",
     "拜占庭皇帝": "君士坦丁十一世",
+    "君士坦丁堡": "君士坦丁堡",
+    "拜占庭末都": "君士坦丁堡",
+    "Konstantinopolis": "君士坦丁堡",
     "含义坐标": "含义坐标",
     "听证会": "听证会",
     "面壁计划听证会": "听证会",
@@ -15791,6 +16756,9 @@
     "哈勃二号空间望远镜": "哈勃二号",
     "哈勃2号": "哈勃二号",
     "哥白尼": "哥白尼",
+    "四·二八兵团": "四·二八兵团",
+    "四·二八": "四·二八兵团",
+    "四二八兵团": "四·二八兵团",
     "四维碎块": "四维碎块",
     "四维区域": "四维碎块",
     "四维碎片": "四维碎片",
@@ -15935,6 +16903,9 @@
     "地球防御": "太空防御",
     "太空防御体系": "太空防御",
     "太空防御系统": "太空防御",
+    "太空陵墓": "太空陵墓",
+    "星舰地球陵墓": "太空陵墓",
+    "黑暗战役陵墓": "太空陵墓",
     "太阳": "太阳",
     "地球的太阳": "太阳",
     "恒星": "太阳",
@@ -15948,8 +16919,9 @@
     "恒星放大": "太阳放大",
     "太阳爆发": "太阳爆发",
     "太阳系": "太阳系",
-    "Solar System": "太阳系",
-    "人类母星系": "太阳系",
+    "太阳系星系": "太阳系",
+    "太阳系最后的声音": "太阳系最后的声音",
+    "太阳系的最后人声": "太阳系最后的声音",
     "太阳系联邦": "太阳系联邦",
     "联邦政府": "太阳系联邦",
     "Solar Federation": "太阳系联邦",
@@ -15976,6 +16948,9 @@
     "奇点": "奇点",
     "奥尔特星云": "奥尔特星云",
     "奥尔特云": "奥尔特星云",
+    "奥斯曼帝国": "奥斯曼帝国",
+    "土耳其帝国": "奥斯曼帝国",
+    "奥托曼帝国": "奥斯曼帝国",
     "姬昌（周文王）": "姬昌",
     "威慑": "威慑",
     "deterrence": "威慑",
@@ -15991,8 +16966,17 @@
     "黑暗森林威慑时代": "威慑纪元",
     "后威慑纪元": "威慑纪元",
     "威慑后时代": "威慑纪元",
+    "威慑纪元生活指南": "威慑纪元生活指南",
+    "威慑纪元指南": "威慑纪元生活指南",
+    "威慑纪元的社会风貌": "威慑纪元的社会风貌",
+    "威慑纪元社会": "威慑纪元的社会风貌",
+    "未来社会婚恋观": "威慑纪元的社会风貌",
+    "未来社会": "威慑纪元的社会风貌",
     "威纳尔": "威纳尔",
     "孔子": "孔子",
+    "宇宙三与三十万综合症": "宇宙三与三十万综合症",
+    "三与三十万综合征": "宇宙三与三十万综合症",
+    "宇宙三与三十万综合征": "宇宙三与三十万综合症",
     "宇宙保险柜": "宇宙保险柜",
     "宇宙学": "宇宙学",
     "cosmology": "宇宙学",
@@ -16023,6 +17007,10 @@
     "宇宙时间线": "宇宙时间线",
     "纪年对照表": "宇宙时间线",
     "三体纪年": "宇宙时间线",
+    "宇宙是膨胀的死尸": "宇宙是膨胀的死尸",
+    "宇宙只不过是一具膨胀中的死尸": "宇宙是膨胀的死尸",
+    "宇宙膨胀的死尸": "宇宙是膨胀的死尸",
+    "膨胀的死尸": "宇宙是膨胀的死尸",
     "宇宙末日": "宇宙末日",
     "宇宙社会学": "宇宙社会学",
     "Cosmic Sociology": "宇宙社会学",
@@ -16056,6 +17044,8 @@
     "审判日": "审判日号",
     "第二红岸基地": "审判日号",
     "审问者": "审问者",
+    "宪章修正": "宪章修正",
+    "联合国宪章修正": "宪章修正",
     "宽姨": "宽姨",
     "寂静的春天": "寂静的春天",
     "Silent Spring": "寂静的春天",
@@ -16127,6 +17117,7 @@
     "弗雷德里克·泰勒": "弗雷德里克·泰勒",
     "泰勒将军": "弗雷德里克·泰勒",
     "弗雷斯": "弗雷斯",
+    "张延": "张延",
     "张援朝": "张援朝",
     "老张": "张援朝",
     "张翔": "张翔",
@@ -16164,8 +17155,14 @@
     "思维透明": "思维透明",
     "思维显示": "思维透明",
     "思维透明度": "思维透明",
+    "恒星呼吸": "恒星呼吸",
+    "太阳呼吸": "恒星呼吸",
+    "气态层膨胀": "恒星呼吸",
     "恒星型氢弹": "恒星型氢弹",
     "超级氢弹": "恒星型氢弹",
+    "恒星放大器": "恒星放大器",
+    "太阳放大器": "恒星放大器",
+    "太阳天线": "恒星放大器",
     "恒星级战舰": "恒星级战舰",
     "恒星级": "恒星级战舰",
     "恒河号": "恒河号",
@@ -16183,6 +17180,9 @@
     "Swordholder": "执剑人",
     "威慑控制者": "执剑人",
     "引力波发射控制者": "执剑人",
+    "执剑纪元生活指南": "执剑纪元生活指南",
+    "执剑纪元指南": "执剑纪元生活指南",
+    "地下城时代指南": "执剑纪元生活指南",
     "执政官": "执政官",
     "执政官联席会议": "执政官",
     "批斗": "批斗",
@@ -16197,8 +17197,14 @@
     "技术爆炸": "技术爆炸",
     "technological explosion": "技术爆炸",
     "技术的真相": "技术的真相",
+    "把字刻在石头上": "把字刻在石头上",
+    "冥王星石刻": "把字刻在石头上",
+    "地球文明的石碑": "把字刻在石头上",
     "拉格朗日点": "拉格朗日点",
     "地日拉格朗日点": "拉格朗日点",
+    "拜占庭帝国": "拜占庭帝国",
+    "东罗马帝国": "拜占庭帝国",
+    "拜占庭": "拜占庭帝国",
     "拯救派": "拯救派",
     "振动弦": "振动弦",
     "简并态振动弦": "振动弦",
@@ -16257,6 +17263,9 @@
     "星舰地球": "星舰地球",
     "逃亡舰队": "星舰地球",
     "Starship Earth": "星舰地球",
+    "星舰地球的建立": "星舰地球的建立",
+    "星舰地球宣言": "星舰地球的建立",
+    "星舰地球第一次公民大会": "星舰地球的建立",
     "星舰文明": "星舰文明",
     "星舰地球文明": "星舰文明",
     "星际尘埃": "星际尘埃",
@@ -16298,6 +17307,7 @@
     "末日纪元": "末日纪元",
     "朴义君": "朴义君",
     "李堆": "李堆",
+    "李瑶": "李瑶",
     "李维": "李维",
     "杨冬": "杨冬",
     "Yang Dong": "杨冬",
@@ -16319,6 +17329,8 @@
     "林格—斐兹罗观测站": "林格—斐兹罗观测站",
     "林格一斐兹罗监测站": "林格—斐兹罗观测站",
     "林格—斐兹罗望远镜": "林格—斐兹罗观测站",
+    "染色计划": "染色计划",
+    "染色": "染色计划",
     "柯伊伯带": "柯伊伯带",
     "Kuiper Belt": "柯伊伯带",
     "柯依伯带": "柯伊伯带",
@@ -16354,6 +17366,12 @@
     "Singer": "歌者",
     "歌者文明": "歌者文明",
     "清理者": "歌者文明",
+    "歌者的诗": "歌者的诗",
+    "歌者古歌谣": "歌者的诗",
+    "凝固的时间": "歌者的诗",
+    "武斗": "武斗",
+    "派系武斗": "武斗",
+    "红卫兵武斗": "武斗",
     "死柱": "死柱",
     "死线": "死线",
     "母世界": "母世界",
@@ -16375,7 +17393,6 @@
     "水滴攻击人类联合舰队": "水滴消灭舰队",
     "末日之战核心": "水滴消灭舰队",
     "汪淼": "汪淼",
-    "汪教授": "汪淼",
     "汪淼倒计时": "汪淼倒计时",
     "沙瑞山": "沙瑞山",
     "沙博士": "沙瑞山",
@@ -16389,6 +17406,10 @@
     "鲍里斯·洛文斯基": "洛文斯基",
     "洛斯阿拉莫斯国家实验室": "洛斯阿拉莫斯国家实验室",
     "洛斯阿拉莫斯": "洛斯阿拉莫斯国家实验室",
+    "流亡澳大利亚生活指南": "流亡澳大利亚生活指南",
+    "流亡时代指南": "流亡澳大利亚生活指南",
+    "澳大利亚移民指南": "流亡澳大利亚生活指南",
+    "三体占领时期": "流亡澳大利亚生活指南",
     "海王星": "海王星",
     "Neptune": "海王星",
     "海王星轨道": "海王星",
@@ -16460,12 +17481,19 @@
     "无线电波": "电磁波",
     "高频电磁波": "电磁波",
     "电磁炮": "电磁炮",
+    "疯狂年代": "疯狂年代",
+    "疯狂的年代": "疯狂年代",
+    "1967年": "疯狂年代",
     "白沐霖": "白沐霖",
     "白艾思": "白艾思",
     "白Ice": "白艾思",
     "白蓉": "白蓉",
+    "百日大武斗": "百日大武斗",
+    "清华百日大武斗": "百日大武斗",
     "监听站": "监听站",
     "监听系统": "监听站",
+    "监听部": "监听部",
+    "红岸监听部": "监听部",
     "目标甄别": "目标甄别",
     "目标甄别员": "目标甄别",
     "相对论": "相对论",
@@ -16588,6 +17616,9 @@
     "罗辑时间线": "罗辑时间线",
     "罗辑生平": "罗辑时间线",
     "罗辑年表": "罗辑时间线",
+    "罗辑的咒语": "罗辑的咒语",
+    "面壁者咒语": "罗辑的咒语",
+    "宇宙咒语": "罗辑的咒语",
     "群星计划": "群星计划",
     "Stars Plan": "群星计划",
     "翘曲点": "翘曲点",
@@ -16602,6 +17633,9 @@
     "UN Charter": "联合国宪章",
     "联合国总部": "联合国总部",
     "联合国大厦": "联合国总部",
+    "联合国行星防御理事会": "联合国行星防御理事会",
+    "行星防御理事会": "联合国行星防御理事会",
+    "PDC": "联合国行星防御理事会",
     "联合舰队": "联合舰队",
     "太阳系联合舰队": "联合舰队",
     "地球联合舰队": "联合舰队",
@@ -16631,7 +17665,6 @@
     "两个国际": "舰队国际",
     "舰队联席会议": "舰队联席会议",
     "太阳系舰队联席会议": "舰队联席会议",
-    "艾AA": "艾AA",
     "Ai AA": "艾AA",
     "艾伦": "艾伦",
     "艾伦博士": "艾伦",
@@ -16651,8 +17684,6 @@
     "薇拉": "薇拉",
     "螳螂号": "螳螂号",
     "螳螂飞船": "螳螂号",
-    "行星防御理事会": "行星防御理事会",
-    "PDC": "行星防御理事会",
     "Planetary Defense Council": "行星防御理事会",
     "行星际航行": "行星际航行",
     "interplanetary travel": "行星际航行",
@@ -16663,6 +17694,7 @@
     "脑解析摄像机": "解析摄像机",
     "诺贝尔奖": "诺贝尔奖",
     "Nobel Prize": "诺贝尔奖",
+    "豆豆": "豆豆",
     "质子": "质子",
     "proton": "质子",
     "氢原子核": "质子",
@@ -16696,6 +17728,11 @@
     "过载": "过载",
     "超重力": "过载",
     "超重力加速": "过载",
+    "近地初级警戒防御圈": "近地初级警戒防御圈",
+    "近地防御圈": "近地初级警戒防御圈",
+    "近地轨道": "近地轨道",
+    "近地空间": "近地轨道",
+    "低地球轨道": "近地轨道",
     "远方号": "远方号",
     "追击舰": "追击舰",
     "追击舰队": "追击舰",
@@ -16705,6 +17742,7 @@
     "逃亡飞船": "逃亡飞船",
     "造反派": "造反派",
     "rebels": "造反派",
+    "郭警官": "郭警官",
     "量子号": "量子号",
     "量子舰队": "量子舰队",
     "量子舰队计划": "量子舰队",
@@ -16774,6 +17812,9 @@
     "飞刃丝": "飞刃",
     "飞星": "飞星",
     "飞星不动": "飞星不动",
+    "飞行车": "飞行车",
+    "飞车": "飞行车",
+    "飞行汽车": "飞行车",
     "饕餮海": "饕餮海",
     "饕餮鱼": "饕餮鱼",
     "饕餮海的鱼": "饕餮鱼",
@@ -16794,6 +17835,8 @@
     "Boris Lovenski": "鲍里斯·洛文斯基",
     "黄河站": "黄河站",
     "黄河空间站": "黄河站",
+    "黄金时代": "黄金时代",
+    "黄金岁月": "黄金时代",
     "黑域": "黑域",
     "低光速黑洞": "黑域",
     "低光速黑域": "黑域",
@@ -16821,6 +17864,6 @@
     "默斯特罗姆漩涡": "默斯肯大旋涡",
     "Maelstrom": "默斯肯大旋涡"
   },
-  "page_count": 857,
-  "generated": "2026-04-28T01:49:48Z"
+  "page_count": 904,
+  "generated": "2026-04-28T03:25:32Z"
 }

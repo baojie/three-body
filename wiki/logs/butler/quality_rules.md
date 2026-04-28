@@ -41,3 +41,10 @@ Butler 从 W5 反思中提炼的页面质量自定义规则。每轮执行 Q-che
 **问题**：session 恢复后 working tree 的 quality_score 可能因脚本副作用回退到旧值（低于 HEAD 已提交值），导致全库数据不一致
 **规则**：每次 butler session 启动（或 W5 步骤1）执行 `git diff HEAD --name-only wiki/public/pages/` 检查回退：disk < HEAD 者立即用 Python 脚本修复还原（不使用 git restore，而是直接写文件），disk > HEAD 者视为合法改进保留；两种情况均暂存
 **来源**：R261 W5 反思，发现 17 页 quality_score 回退（光粒 54→65，幽灵倒计时 55→61 等），另有 11 页 staged vs working tree 分歧
+
+## 规则 QR-007（2026-04-28 从 W5 R752 反思）
+
+**适用类型**：所有 category/list 类型页面
+**问题**：分类页使用通用词（事件/人物/地点/科技/组织/概念/理论/文明/武器）作为 2 字 alias，导致 wikify_chapters.py 将章节页中所有出现这些通用词的地方都链接到分类页，产生 307 处语义错误链接
+**规则**：category/list 类型页面不得使用 ≤ 3 字通用名词/动词/形容词作为 alias，即使 alias == label 也不例外；新建分类页时 aliases 字段只填完整页面 ID（如 `分类·事件`），不填短标签
+**来源**：R752 W5 反思，F2 事故，126 章节页 307 处链接误链接已修复
