@@ -131,11 +131,113 @@ ls /home/baojie/work/knowledge/three-body/skills/ | sort
 
 发现任何 F 类错误 → 立即写入修订提案，在 W2 对应动作的"后置检查"中加入防范规则。
 
+---
+
+#### F2. Wikify 标注边界正确性检查（每次 W5 必做）
+
+历史教训：`肯`（单字）作为"肯博士"别名，导致全三册 106 章共 186 处"肯定/不肯"被错误链接；`黑洞` 匹配"黑洞洞的枪口"。
+
+**核心思路**：alias 越短，误匹配风险越高。把所有短 alias 按风险分层，优先核查高危项，低危项进入白名单免检。
+
+##### 风险分层
+
+| 层级 | 判断标准 | 策略 |
+|------|----------|------|
+| 🔴 **禁止**（代码拦截）| 单字符 alias | `wikify_chapters.py` 已硬编码拒绝，无需手动检查 |
+| 🟠 **高危**（每次必查）| 2 字 alias 且属于"常用词"：动词/形容词/副词/代词，或是更长常用词的前缀 | `corpus_search` 验证所有命中是否均指向正确实体 |
+| 🟡 **中危**（抽查）| 2 字 alias 为人名缩写或专有名词简称 | 每 3 次 W5 抽查 1 次 |
+| 🟢 **低危（白名单）**| 以下任一：① 3 字及以上 alias；② 2 字但已过往 W5 核查通过；③ alias == id（无别名，原名即 alias）| 写入白名单，跳过重复核查 |
+
+##### 高危 alias 识别规则
+
+2 字 alias 符合下列任一条件 → 标记为高危：
+
+1. alias 是常见动词/形容词语素，单独使用时有独立含义（"威慑"、"冬眠"、"视界"、"知青"、"倒计时"）
+2. alias 是更长常用词的前缀（"黑洞" ⊆ "黑洞洞"；"批斗" ⊆ "批斗会"）
+3. alias 末字在中文中常被重叠使用（洞→洞洞、星→星星、点→点点）
+
+##### 每次 W5 的执行步骤
+
+```python
+import json
+from pathlib import Path
+
+data = json.loads(Path("wiki/public/pages.json").read_text())
+pages = data["pages"]
+
+# 加载白名单
+whitelist_path = Path("wiki/logs/butler/alias_whitelist.json")
+whitelist = json.loads(whitelist_path.read_text()) if whitelist_path.exists() else []
+
+# 提取所有 2 字非 ASCII alias（排除白名单）
+candidates = []
+for pid, info in pages.items():
+    if info.get("type") == "chapter":
+        continue
+    for alias in info.get("aliases", []):
+        if (isinstance(alias, str) and len(alias) == 2
+                and not alias.isascii() and alias not in whitelist):
+            candidates.append((alias, pid))
+
+# 按"高危"优先排序（可扩展更细的评分）
+print(f"待核查 2 字 alias：{len(candidates)} 个")
+for alias, pid in sorted(candidates)[:20]:  # 每次最多核查 20 个
+    print(f"  [{alias}] → {pid}")
+```
+
+对每个高危候选：
+```bash
+python3 wiki/scripts/butler/corpus_search.py "<alias>" --max 15
+```
+
+**判断标准**：
+- 全部命中均为目标实体语境 → 写入白名单 `alias_whitelist.json`，下次跳过
+- 有任意一条命中是无关语境 → **立即**从该页面 frontmatter 删除此 alias，并扫描章节页面修复已有错误链接
+
+##### 白名单维护
+
+文件：`wiki/logs/butler/alias_whitelist.json`（字符串数组）
+
+```json
+["史强", "大史", "史队", "罗辑", "汪淼", "程心", "智子", "水滴", "冬眠",
+ "威慑", "文革", "知青", "歌者", "蓝星", "古筝", "钢印"]
+```
+
+规则：
+- 通过本轮 corpus_search 核查的 2 字 alias → append 到白名单
+- 发现误匹配的 alias → 从 frontmatter 删除（不加白名单，已删除）
+- 白名单条目不得超过 100 个；超过时做一次批量 corpus_search 复核，清理过时条目
+
+##### 检查后报告格式
+
+在 W5 反思文件的 F 节追加：
+
+```markdown
+### F2 wikify 边界检查
+- 本次核查 2 字 alias：N 个
+- 新加白名单：[alias1→pid, ...]
+- 发现高危并移除：[alias1→pid（原因：命中"XX"为误匹配）]
+- 跳过（白名单）：N 个
+```
+
 #### H. Dream Round — 动作库自生成（每 3 次 W5 触发一次）
 
 > 普通 W5 修订现有动作的参数；Dream Round 问的是另一个问题：**"是否存在一类反复出现的需求，但当前 W2/H 动作库里没有合适的动作来覆盖它？"**
 
 **触发条件**：每 3 次 W5 反思触发一次（计数写入反思文件头部 `dream_round_counter`），或用户手动 `/dream butler`。
+
+**Dream Round 固定步骤 0：队列归档**
+
+Dream Round 开始时，**必须先**运行队列清理，将 `[x]` 已完成条目归档到 `done.md`：
+
+```bash
+python3 wiki/scripts/butler/cleanup_queue.py
+```
+
+- `queue.md` 中的 `[x]` → 追加到 `wiki/logs/butler/queue_done.md`
+- `housekeeping_queue.md` 中的 `[x]` → 追加到 `wiki/logs/butler/housekeeping_done.md`
+- 原文件只保留 `[ ]`（待处理）和 `[~]`（进行中）条目，结构标题保留
+- 归档后在反思报告开头记录：`已归档 N 条 → queue_done.md`
 
 **输入素材**（在步骤 1 基础上额外提取）：
 
