@@ -8,32 +8,7 @@
 
 ## P1 — 高优先级（未完成，优先处理）
 
-- [x] P1 create | 台球桌实验 | ✓ R714 已建
-- [x] P1 create | 汪淼倒计时 | ✓ R718
-- [x] P1 create | 杨冬之死 | ✓ R718
-- [x] P1 create | 叶文洁发射信号 | ✓ R718
-- [x] P1 create | 叶文洁山顶独白 | ✓ R718
-- [x] P1 create | 罗辑咒语 | ✓ R718
-- [x] P1 create | 威慑大厅 | ✓ R722
-- [x] P1 create | 程心接剑 | ✓ R718
-- [x] P1 create | 章北海逃亡 | ✓ R718
-- [x] P1 create | 云天明的星星 | ✓ R718
-- [x] P1 create | 秦始皇关卡 | ✓ R722
-- [x] P1 create | 冯诺依曼人列计算机 | ✓ R722
-- [x] P1 create | 黑暗森林审判 | ✓ R722
-- [x] P1 create | 维德的选择 | ✓ R722
-- [x] P1 create | 歌者文明 | ✓ R722
-- [x] P1 create | AA与程心逃离 | ✓ R722
-- [x] P1 create | 关一帆小宇宙 | ✓ R722
-- [x] P1 create | 罗辑冬眠 | ✓ R722
-- [x] P1 create | 三体脱水 | ✓ R718
-- [x] P1 create | 三体纳米丝 | ✓ R718
-
 ## P2 — 中优先级（未完成）
-
-- [x] P2 create | 三体入侵 | ✓ 已存在
-- [x] P2 create | 太平洋号 | ✓ 已存在
-- [x] P2 create | 宇宙常数 | ✓ 已存在
 
 ## P2 — 名句词条（type=quote，待创建）
 
@@ -46,15 +21,6 @@
 - [ ] P3 discover | corpus/三体III | 扫描《死神永生》提取未建页词条
 
 ## P2 — D3主题扫描新候选（R621，≥5 corpus hits）
-
-- [x] P2 create | 伽尔宁 | ✓ 已存在
-- [x] P2 create | 斯坦顿 | ✓ 已存在
-- [x] P2 create | 土星 | ✓ 已存在
-- [x] P2 create | 天王星 | ✓ 已存在
-- [x] P2 create | 听证会 | ✓ 已存在
-- [x] P2 create | 咒语 | ✓ 已存在
-- [x] P2 create | 神经网络 | ✓ 已存在
-- [x] P2 create | 振动弦 | ✓ 已存在
 
 ## P3 — D3主题扫描新候选（R621，2-4 corpus hits）
 
@@ -78,15 +44,9 @@
 
 ## R650 D1+H10 发现（2026-04-27）
 
-- [x] P1 create | 幸存派 | ✓ 2026-04-28（R655 执剑人完成）
-- [x] P2 create | 长膜 | ✓ 已存在
-- [x] P2 create | 短膜 | ✓ 已存在
 - [ ] P3 create | 自由女神像 | R650-D1：2x corpus（2-27-043/2-27-047）；希恩斯信念中心门前装饰
 
 ## R682 D1+H10 发现（2026-04-28）
-
-- [x] P2 create | 达·芬奇 | ✓ 已存在
-- [x] P2 create | 海王星群落 | ✓ 已存在
 
 ## R693 D1+H10 发现（2026-04-28）
 
@@ -97,8 +57,6 @@
 
 ## R703 H17 coverage-scan（2026-04-28）
 
-- [x] P2 create | 长江童话 | ✓ 已存在
-- [x] P2 create | 太空公约 | ✓ R729
 - [ ] P3 create | 极权只需五天 | R703-H17：1x corpus（3-13-038）；关于极权实验的书/电影，青铜时代号舰员谈及极权社会时引用
 
 ## R730 H26 scene-discover（2026-04-28）
@@ -107,12 +65,8 @@
 
 发现缺失名场面：
 
-- [x] P1 create | 水滴消灭舰队 | ✓ R732 执剑人完成
-- [x] P1 create | 太阳系降维 | ✓ R735 执剑人完成
 - [~] P2 create | 罗辑以身威慑 | 撤销：威慑建立是隐性叙事，无单一场景；已有罗辑咒语/程心接剑页面覆盖
-- [x] P2 create | 面壁计划宣布 | ✓ R745 统帅完成
 - [ ] P2 create | 黑暗战役 | H26-scene：星舰地球中蓝色空间号与自然选择号间的人类内战；corpus：2-46-061到2-46-078；已有event页但质量待评估
-- [x] P3 create | 光粒毁灭三体星系 | ✓ R745 统帅完成
 
 ## Wikipedia来源 — 新建词条 P2（2026-04-28）
 

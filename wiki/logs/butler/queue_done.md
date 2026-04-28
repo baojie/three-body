@@ -146,3 +146,48 @@
 - [x] P2 create | 堪培拉 | ✓ 2026-04-27 (其他实例已建页) R564-H10：1x broken link + corpus 6x；澳大利亚首都，大移民保留城市，堪培拉惨案主战场
 - [x] P2 create | 事件视界 | ✓ 2026-04-27 (其他实例已建页) R572-D1：2x broken link + corpus 2x；广义相对论/黑洞物理概念，三体III黑洞微粒章节
 - [x] P3 create | 农耕社会 | ✓ 2026-04-28（quality: standard 已确认）
+
+## 归档于 2026-04-28（共 42 条）
+
+- [x] P1 create | 台球桌实验 | ✓ R714 已建
+- [x] P1 create | 汪淼倒计时 | ✓ R718
+- [x] P1 create | 杨冬之死 | ✓ R718
+- [x] P1 create | 叶文洁发射信号 | ✓ R718
+- [x] P1 create | 叶文洁山顶独白 | ✓ R718
+- [x] P1 create | 罗辑咒语 | ✓ R718
+- [x] P1 create | 威慑大厅 | ✓ R722
+- [x] P1 create | 程心接剑 | ✓ R718
+- [x] P1 create | 章北海逃亡 | ✓ R718
+- [x] P1 create | 云天明的星星 | ✓ R718
+- [x] P1 create | 秦始皇关卡 | ✓ R722
+- [x] P1 create | 冯诺依曼人列计算机 | ✓ R722
+- [x] P1 create | 黑暗森林审判 | ✓ R722
+- [x] P1 create | 维德的选择 | ✓ R722
+- [x] P1 create | 歌者文明 | ✓ R722
+- [x] P1 create | AA与程心逃离 | ✓ R722
+- [x] P1 create | 关一帆小宇宙 | ✓ R722
+- [x] P1 create | 罗辑冬眠 | ✓ R722
+- [x] P1 create | 三体脱水 | ✓ R718
+- [x] P1 create | 三体纳米丝 | ✓ R718
+- [x] P2 create | 三体入侵 | ✓ 已存在
+- [x] P2 create | 太平洋号 | ✓ 已存在
+- [x] P2 create | 宇宙常数 | ✓ 已存在
+- [x] P2 create | 伽尔宁 | ✓ 已存在
+- [x] P2 create | 斯坦顿 | ✓ 已存在
+- [x] P2 create | 土星 | ✓ 已存在
+- [x] P2 create | 天王星 | ✓ 已存在
+- [x] P2 create | 听证会 | ✓ 已存在
+- [x] P2 create | 咒语 | ✓ 已存在
+- [x] P2 create | 神经网络 | ✓ 已存在
+- [x] P2 create | 振动弦 | ✓ 已存在
+- [x] P1 create | 幸存派 | ✓ 2026-04-28（R655 执剑人完成）
+- [x] P2 create | 长膜 | ✓ 已存在
+- [x] P2 create | 短膜 | ✓ 已存在
+- [x] P2 create | 达·芬奇 | ✓ 已存在
+- [x] P2 create | 海王星群落 | ✓ 已存在
+- [x] P2 create | 长江童话 | ✓ 已存在
+- [x] P2 create | 太空公约 | ✓ R729
+- [x] P1 create | 水滴消灭舰队 | ✓ R732 执剑人完成
+- [x] P1 create | 太阳系降维 | ✓ R735 执剑人完成
+- [x] P2 create | 面壁计划宣布 | ✓ R745 统帅完成
+- [x] P3 create | 光粒毁灭三体星系 | ✓ R745 统帅完成
