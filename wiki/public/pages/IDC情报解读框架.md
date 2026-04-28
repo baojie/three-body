@@ -6,7 +6,7 @@ aliases: [IDC情报解读框架, IDC童话解读方法, 情报解读委员会方
 tags: [方法, 三体III, IDC, 云天明, 情报解读]
 description: 国际解读委员会（IDC）解读云天明三则童话中隐藏战略情报的工作框架——从工作原则到方法论困境的完整过程
 books: [三体III]
-quality: standard
+quality: featured
 ---
 # IDC情报解读框架
 
