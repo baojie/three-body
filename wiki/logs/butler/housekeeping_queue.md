@@ -105,3 +105,7 @@
 - [ ] H-P2 enrich | 地球防务安全部 | R752-D抽查：basic，frontmatter+H1无正文，需enrich-page
 - [ ] H-P2 enrich | 李瑶 | R752-D抽查：basic，frontmatter+H1无正文，汪淼妻子
 - [ ] H-P2 add-quote | 伊甸园 | R752-D抽查：standard，prose≈500，缺PN，需add-quote
+
+## H2 批量 basic→standard（W5 R841 写入）
+
+- [ ] H-P2 enrich | basic批量升级 | W5 R841 发现：69个 basic 页面，含巨月/次声波氢弹/量子感应等，叙事意义节缺失；建议整轮 H2-enrich-batch（25页×40WU=1000WU）；优先选 PN≥3 的 basic 页面

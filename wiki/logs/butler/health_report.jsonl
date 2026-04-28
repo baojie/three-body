@@ -10,3 +10,4 @@
 {"date": "2026-04-28", "round": 612, "type": "w5-reflect", "total_pages": 637, "quality": {"featured": 253, "basic": 233, "stub": 137, "standard": 14}}
 {"date": "2026-04-28", "round": 699, "type": "w5-reflect", "total_pages": 759, "quality": {"featured": 536, "basic": 80, "stub": 137, "standard": 6}}
 {"date": "2026-04-28", "round": 752, "type": "w5-reflect", "total_pages": 861, "quality": {"featured": 681, "unknown": 139, "standard": 38, "basic": 3}}
+{"date": "2026-04-28", "round": 841, "type": "w5-reflect", "total_pages": 1057, "quality": {"featured": 734, "standard": 98, "stub": 156, "basic": 69}, "notes": "R841 W5 #22: featured=69.8%, basic=6.5%, stub=0.6%; removed '三体' alias from 三体I"}
