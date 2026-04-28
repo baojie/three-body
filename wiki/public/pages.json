@@ -4613,8 +4613,8 @@
       ],
       "path": "pages/内蒙古建设兵团.md",
       "description": "文化大革命时期在内蒙古草原和森林区活动的生产建设兵团，叶文洁被下放至此后接触了白沐霖，并由此被带入红岸基地的命运轨迹。",
-      "quality": "basic",
-      "quality_score": 50
+      "quality": "standard",
+      "quality_score": 51
     },
     "军事执政官": {
       "type": "person",
@@ -10641,8 +10641,8 @@
       ],
       "path": "pages/恒星呼吸.md",
       "description": "三体星系三颗太阳气态外层的周期性膨胀与收缩现象，膨胀时厚度增大十倍以上，是历史上吞噬其余十一颗行星的直接原因，也是三体文明决定向外星系移民的最终动因。",
-      "quality": "basic",
-      "quality_score": 34
+      "quality": "standard",
+      "quality_score": 39
     },
     "恒星型氢弹": {
       "type": "weapon",
@@ -11920,8 +11920,8 @@
       ],
       "path": "pages/星际飞船.md",
       "description": "具备恒星际航行能力的大型飞船，是三体系列中人类太空文明的核心基础设施，从危机纪元的构想到广播纪元的现实，代表人类对宇宙尺度战争的应对。",
-      "quality": "basic",
-      "quality_score": 43
+      "quality": "standard",
+      "quality_score": 47
     },
     "是历史了": {
       "type": "quote",
@@ -12636,8 +12636,8 @@
       ],
       "path": "pages/染色计划.md",
       "description": "三体文明通过科技副作用引发人类社会对科学的恐惧和厌恶，与神迹计划并行的心理战策略。",
-      "quality": "basic",
-      "quality_score": 36
+      "quality": "standard",
+      "quality_score": 41
     },
     "柯伊伯带": {
       "type": "place",
@@ -15369,8 +15369,8 @@
       ],
       "path": "pages/第二炮兵.md",
       "description": "中国人民解放军战略导弹部队，管辖红岸基地，负责红岸工程的常规发射授权。",
-      "quality": "basic",
-      "quality_score": 35
+      "quality": "standard",
+      "quality_score": 40
     },
     "等离子体": {
       "type": "concept",
@@ -17929,7 +17929,7 @@
       "path": "pages/雪地.md",
       "description": "三体舰队四个世纪航程中穿越的太空尘埃云区域，因尘埃会留下舰队穿越痕迹而得名，是地球观测三体舰队位置的唯一手段。",
       "quality": "basic",
-      "quality_score": 45
+      "quality_score": 47
     },
     "雪地工程": {
       "type": "event",
@@ -20991,5 +20991,5 @@
     "齐猎头儿": "齐猎头儿"
   },
   "page_count": 1068,
-  "generated": "2026-04-28T07:46:45Z"
+  "generated": "2026-04-28T07:51:01Z"
 }
