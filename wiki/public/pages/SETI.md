@@ -10,7 +10,7 @@ quality: featured
 ---
 # SETI
 
-**SETI**（搜寻地外智慧生命，Search for Extraterrestrial Intelligence）是人类系统性探索宇宙中可能存在的智慧文明的科学计划。在三体故事中，SETI既是[[红岸基地]]对外宣称的研究方向，也是整个三体危机的历史前奏。
+**SETI**（搜寻地外智慧生命，Search for Extraterrestrial Intelligence）是人类系统性探索宇宙中可能存在的智慧文明的科学计划。在三体故事中，SETI既是[[红岸基地]]对外宣称的研究方向，也是整个[[三体危机]]的历史前奏。
 
 ## SETI与红岸基地
 

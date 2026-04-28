@@ -3002,8 +3002,8 @@
       ],
       "path": "pages/两弹工程.md",
       "description": "1964年起震惊世界的中国核武器（原子弹与氢弹）研制工程，叶哲泰有外围理论工作，文革期间被阴谋家用作打击知识分子的工具。",
-      "quality": "basic",
-      "quality_score": 36
+      "quality": "standard",
+      "quality_score": 40
     },
     "个人失重推进器": {
       "type": "technology",
@@ -3056,8 +3056,8 @@
       ],
       "path": "pages/中华田园.md",
       "description": "生物学家潘寒创建的城市实验社区，固定成员逾三千人，完全依靠城市垃圾为生，是其反技术主义思想的实践载体。",
-      "quality": "basic",
-      "quality_score": 35
+      "quality": "standard",
+      "quality_score": 36
     },
     "中子星": {
       "type": "concept",
@@ -3691,6 +3691,30 @@
       "description": "威慑纪元三体文明派驻地球的人形机器人大使，由人类最先进的AI和仿生技术制造，由智能粒子\"智子\"远程控制，以完美的日本女性形象出现。",
       "quality": "basic",
       "quality_score": 32
+    },
+    "人格分析系统": {
+      "type": "technology",
+      "label": "人格分析系统",
+      "aliases": [
+        "人格分析系统",
+        "三体人格分析",
+        "威慑度分析系统"
+      ],
+      "tags": [
+        "科技",
+        "三体III",
+        "三体文明",
+        "威慑度",
+        "执剑人",
+        "智子",
+        "程心",
+        "维德",
+        "罗辑"
+      ],
+      "path": "pages/人格分析系统.md",
+      "description": "三体文明用于评估人类执剑人候选者威慑度的监控分析系统，揭示了程心被操控选中的真相：三体人知道她的威慑度仅10%",
+      "quality": "stub",
+      "quality_score": 40
     },
     "人类太空军": {
       "type": "organization",
@@ -4676,8 +4700,8 @@
       ],
       "path": "pages/农业执政官.md",
       "description": "三体文明执政委员会成员，负责农业事务，参与讨论智子计划，对质子维度展开成为现实感到难以置信。",
-      "quality": "basic",
-      "quality_score": 25
+      "quality": "standard",
+      "quality_score": 29
     },
     "农场主假说": {
       "type": "theory",
@@ -6652,8 +6676,8 @@
       ],
       "path": "pages/四·二八兵团.md",
       "description": "文化大革命中与红色联合对峙的红卫兵组织，以炸药铁炉守卫总部大楼，以惨烈牺牲著称。",
-      "quality": "basic",
-      "quality_score": 43
+      "quality": "standard",
+      "quality_score": 47
     },
     "四维碎块": {
       "type": "concept",
@@ -12856,8 +12880,8 @@
       ],
       "path": "pages/核辐射.md",
       "description": "在三体II中，史强因执行任务时受到核辐射而患白血病，通过冬眠技术治愈；在阶梯计划中，核辐射是飞刃导轨能承受的材料考验之一。",
-      "quality": "basic",
-      "quality_score": 34
+      "quality": "standard",
+      "quality_score": 38
     },
     "格里高利教皇": {
       "type": "person",
@@ -12889,8 +12913,8 @@
       ],
       "path": "pages/桃花源.md",
       "description": "地球三体组织（ETO）资助的反科学宣传大片，描绘\"被科技强奸之前的美好生活\"，是ETO推动反科学运动的文化工具之一。",
-      "quality": "basic",
-      "quality_score": 32
+      "quality": "standard",
+      "quality_score": 33
     },
     "模拟宇宙": {
       "type": "technology",
@@ -13603,8 +13627,8 @@
       ],
       "path": "pages/浸泡.md",
       "description": "三体文明（及三体游戏）中文明复活的核心机制，在恒纪元到来时将储存于干仓中的脱水人体泡入水中使其复活，与脱水技术互为一体。",
-      "quality": "basic",
-      "quality_score": 43
+      "quality": "standard",
+      "quality_score": 47
     },
     "消灭人类暴政": {
       "type": "quote",
@@ -19277,6 +19301,9 @@
     "人形智子": "人形智子",
     "智子（人形）": "人形智子",
     "智子大使": "人形智子",
+    "人格分析系统": "人格分析系统",
+    "三体人格分析": "人格分析系统",
+    "威慑度分析系统": "人格分析系统",
     "人类太空军": "人类太空军",
     "太空军": "人类太空军",
     "中国太空军": "人类太空军",
@@ -20963,6 +20990,6 @@
     "齐家屯": "齐家屯",
     "齐猎头儿": "齐猎头儿"
   },
-  "page_count": 1067,
-  "generated": "2026-04-28T07:44:04Z"
+  "page_count": 1068,
+  "generated": "2026-04-28T07:46:45Z"
 }
