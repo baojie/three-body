@@ -3785,8 +3785,8 @@
       ],
       "path": "pages/信息窗口.md",
       "description": "威慑纪元无处不在的泛在人机界面技术，可在任何物体表面（墙壁、桌面、衣物、水杯）动态显示信息与操作界面，构成这个时代最典型的视觉特征之一。",
-      "quality": "standard",
-      "quality_score": 50
+      "quality": "featured",
+      "quality_score": 58
     },
     "假警报": {
       "type": "event",
@@ -4078,8 +4078,8 @@
       ],
       "path": "pages/全息显示.md",
       "description": "危机纪元后普及的三维立体显示技术，可在空间中投映真实比例的立体影像，广泛应用于舰队、医疗、科研与日常通信领域。",
-      "quality": "basic",
-      "quality_score": 38
+      "quality": "standard",
+      "quality_score": 44
     },
     "公元人": {
       "type": "concept",
@@ -5439,8 +5439,8 @@
       ],
       "path": "pages/发射部.md",
       "description": "红岸基地负责电磁波发射的核心部门，叶文洁进入红岸后的第一个工作岗位，在此她逐步掌握了红岸系统的发射原理，为后来私自向宇宙发射信号奠定基础。",
-      "quality": "standard",
-      "quality_score": 54
+      "quality": "featured",
+      "quality_score": 59
     },
     "古汉语": {
       "type": "concept",
@@ -9332,13 +9332,12 @@
       "tags": [
         "人物",
         "文革",
-        "三体I",
-        "三体II"
+        "三体I"
       ],
       "path": "pages/张主任.md",
-      "description": "师政治部来调查叶文洁的政工干部，审讯其并将她送往师部处置。",
-      "quality": "standard",
-      "quality_score": 36
+      "description": "师政治部来调查叶文洁的政工干部，以信件和《寂静的春天》为\"罪证\"审讯她，将其押送师部处置。",
+      "quality": "featured",
+      "quality_score": 53
     },
     "张卫明": {
       "type": "person",
@@ -12681,8 +12680,8 @@
       ],
       "path": "pages/熊文.md",
       "description": "危机纪元后期的冬眠苏醒者，与罗辑同在疗养院，热情地向罗辑介绍威慑纪元的人类成就。",
-      "quality": "standard",
-      "quality_score": 34
+      "quality": "featured",
+      "quality_score": 58
     },
     "爱因斯坦": {
       "type": "person",
@@ -16646,9 +16645,9 @@
         "三体I"
       ],
       "path": "pages/马钢.md",
-      "description": "大兴安岭伐木连中壮实的油锯手，连里最快的锯木能手，见证了叶文洁在伐木现场的对话。",
-      "quality": "basic",
-      "quality_score": 31
+      "description": "大兴安岭伐木连里的壮实油锯手，连里最快的锯木能手，见证了白沐霖采访时叶文洁在场的对话。",
+      "quality": "standard",
+      "quality_score": 43
     },
     "驱逐舰": {
       "type": "technology",
@@ -18948,5 +18947,5 @@
     "Maelstrom": "默斯肯大旋涡"
   },
   "page_count": 961,
-  "generated": "2026-04-28T04:33:28Z"
+  "generated": "2026-04-28T04:37:53Z"
 }
