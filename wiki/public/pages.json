@@ -3326,8 +3326,8 @@
       ],
       "path": "pages/于维民.md",
       "description": "行星际移民局（PIA）中国籍副局长，推动云天明进入阶梯计划的关键人物。",
-      "quality": "standard",
-      "quality_score": 31
+      "quality": "featured",
+      "quality_score": 42
     },
     "云天明": {
       "type": "person",
@@ -6098,8 +6098,8 @@
       ],
       "path": "pages/反应黑箱.md",
       "description": "汪淼纳米研究中心的核心催化反应装置，代号\"飞刃\"超强纳米材料的合成设备，主体为汇集大量管道的巨型球体，能在庞大的分子组合上快速自动进行催化反应试验。",
-      "quality": "standard",
-      "quality_score": 41
+      "quality": "featured",
+      "quality_score": 45
     },
     "反物质": {
       "type": "concept",
@@ -12880,7 +12880,7 @@
       "path": "pages/极权只需五天.md",
       "description": "关于极权社会实验的真实事件书籍，讲述一场以教学游戏开始、几乎失控的极权体验；青铜时代号叙述自身极权化历程时引用此书",
       "quality": "basic",
-      "quality_score": 37
+      "quality_score": 40
     },
     "极限号": {
       "type": "technology",
@@ -19640,8 +19640,8 @@
       ],
       "path": "pages/齐猎头儿.md",
       "description": "大兴安岭齐家屯的猎户老人，与老伴主动收留产后虚弱的叶文洁及幼年杨冬，给予她们温暖的庇护。",
-      "quality": "standard",
-      "quality_score": 36
+      "quality": "featured",
+      "quality_score": 43
     }
   },
   "alias_index": {
@@ -21748,5 +21748,5 @@
     "齐猎头儿": "齐猎头儿"
   },
   "page_count": 1105,
-  "generated": "2026-04-28T10:05:15Z"
+  "generated": "2026-04-28T10:07:41Z"
 }
