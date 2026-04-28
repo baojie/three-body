@@ -1,13 +1,13 @@
 {
-  "K": 41666,
-  "page_count": 767,
+  "K": 41755,
+  "page_count": 770,
   "link_hit_rate": 0.9915,
   "quality_counts": {
     "premium": 0,
     "featured": 708,
     "standard": 50,
-    "basic": 7,
-    "stub": 2
+    "basic": 8,
+    "stub": 4
   },
-  "generated": "2026-04-28T03:26:29Z"
+  "generated": "2026-04-28T03:38:51Z"
 }
