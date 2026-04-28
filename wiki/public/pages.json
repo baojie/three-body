@@ -2959,6 +2959,24 @@
       "quality": "featured",
       "quality_score": 48
     },
+    "三维宇宙": {
+      "type": "concept",
+      "label": "三维宇宙",
+      "aliases": [
+        "三维空间宇宙",
+        "低维宇宙"
+      ],
+      "tags": [
+        "概念",
+        "三体III",
+        "宇宙学",
+        "维度"
+      ],
+      "path": "pages/三维宇宙.md",
+      "description": "三体III中与四维空间相对的宇宙存在形态，被比喻为\"一张薄纸\"，通过翘曲点与四维碎块相连，是宇宙降维战争的受害维度。",
+      "quality": "standard",
+      "quality_score": 48
+    },
     "三维展开": {
       "type": "concept",
       "label": "三维展开",
@@ -2977,6 +2995,27 @@
       "quality": "standard",
       "quality_score": 39
     },
+    "上帝": {
+      "type": "concept",
+      "label": "上帝",
+      "aliases": [
+        "造物主",
+        "主",
+        "神"
+      ],
+      "tags": [
+        "概念",
+        "三体I",
+        "三体II",
+        "三体III",
+        "宗教",
+        "哲学"
+      ],
+      "path": "pages/上帝.md",
+      "description": "上帝概念在三体三部曲中既是文革批斗的政治靶标，也是叶哲泰面临死亡时的哲学立场，更是\"上帝很吝啬——在创世大爆炸中只给了宏观宇宙三个维度\"的宇宙物理隐喻。",
+      "quality": "standard",
+      "quality_score": 53
+    },
     "上帝工程": {
       "type": "concept",
       "label": "上帝工程",
@@ -2994,6 +3033,26 @@
       "description": "三体III中描述的技术极限工程——在半径50个天文单位的广阔空间内改变宇宙基本常数，以实现黑域方案的宇宙安全声明；被认为超出人类技术能力",
       "quality": "featured",
       "quality_score": 44
+    },
+    "专制": {
+      "type": "concept",
+      "label": "专制",
+      "aliases": [
+        "极权",
+        "独裁",
+        "专制制度"
+      ],
+      "tags": [
+        "概念",
+        "三体I",
+        "三体II",
+        "三体III",
+        "政治"
+      ],
+      "path": "pages/专制.md",
+      "description": "专制政治制度在三体三部曲中的呈现：三体文明的生存性极权、面壁者制度的超级专制特权、章北海对专制危害的警示、以及末日后短暂的专制时代。",
+      "quality": "standard",
+      "quality_score": 50
     },
     "世界政府": {
       "type": "organization",
@@ -3118,6 +3177,24 @@
       "description": "威慑纪元太空站中普及的个人移动设备，体积小巧，固定于腰带或肩部，可在失重环境中对人体产生推力。",
       "quality": "standard",
       "quality_score": 33
+    },
+    "中世纪": {
+      "type": "concept",
+      "label": "中世纪",
+      "aliases": [
+        "欧洲中世纪",
+        "中世纪时代"
+      ],
+      "tags": [
+        "概念",
+        "三体I",
+        "三体II",
+        "历史"
+      ],
+      "path": "pages/中世纪.md",
+      "description": "三体系列中出现的历史时期，既是三体游戏中文明进化的一个阶段（第183号文明），也是人类在末日战役后可能退回的社会状态的象征。",
+      "quality": "standard",
+      "quality_score": 51
     },
     "中华二号高能加速器": {
       "type": "technology",
@@ -3829,6 +3906,26 @@
       "quality": "featured",
       "quality_score": 52
     },
+    "人权": {
+      "type": "concept",
+      "label": "人权",
+      "aliases": [
+        "人权宣言",
+        "泛宇宙人权"
+      ],
+      "tags": [
+        "概念",
+        "三体II",
+        "三体III",
+        "政治",
+        "威慑纪元",
+        "伦理"
+      ],
+      "path": "pages/人权.md",
+      "description": "人权概念在三体三部曲中的演化：从法国大革命的《人权宣言》到威慑纪元的文明高峰，再到威慑失败后泛宇宙人权的哲学困境与罗辑审判。",
+      "quality": "standard",
+      "quality_score": 51
+    },
     "人格分析系统": {
       "type": "technology",
       "label": "人格分析系统",
@@ -4084,6 +4181,26 @@
       "quality": "featured",
       "quality_score": 60
     },
+    "伽马射线": {
+      "type": "concept",
+      "label": "伽马射线",
+      "aliases": [
+        "γ射线",
+        "伽马辐射"
+      ],
+      "tags": [
+        "概念",
+        "三体I",
+        "三体II",
+        "三体III",
+        "科学",
+        "武器"
+      ],
+      "path": "pages/伽马射线.md",
+      "description": "电磁辐射中能量最高的形式，在三体系列中出现于太阳内部能量传递、伽马射线激光武器，以及光粒飞行时产生的特征辐射。",
+      "quality": "standard",
+      "quality_score": 48
+    },
     "伽马射线激光": {
       "type": "weapon",
       "label": "伽马射线激光",
@@ -4236,6 +4353,26 @@
       "quality": "featured",
       "quality_score": 44
     },
+    "信仰": {
+      "type": "concept",
+      "label": "信仰",
+      "aliases": [
+        "宗教信仰",
+        "信念",
+        "思想钢印信仰"
+      ],
+      "tags": [
+        "概念",
+        "三体I",
+        "三体II",
+        "宗教",
+        "伦理"
+      ],
+      "path": "pages/信仰.md",
+      "description": "信仰在三体三部曲中以多种形态出现：叶哲泰关于上帝存在的哲学探讨、物种共产主义作为伊文斯的信仰、思想钢印作为人工信仰的极端形式，以及水滴的出现让人类开始\"信仰\"。",
+      "quality": "standard",
+      "quality_score": 57
+    },
     "信使号": {
       "type": "technology",
       "label": "信使号",
@@ -4252,6 +4389,27 @@
       "description": "末日战役疏散混乱中与创世纪号发生追尾相撞的战舰；两舰舰体被撕裂，外泄空气形成呼啸飓风，将舰内人员吹向太空——与头对头的瞬间碎裂不同，追尾形成了漂流的残骸尾迹",
       "quality": "featured",
       "quality_score": 40
+    },
+    "信号": {
+      "type": "concept",
+      "label": "信号",
+      "aliases": [
+        "无线电信号",
+        "电波信号",
+        "宇宙信号"
+      ],
+      "tags": [
+        "概念",
+        "三体I",
+        "三体II",
+        "三体III",
+        "天文",
+        "通信"
+      ],
+      "path": "pages/信号.md",
+      "description": "《三体》中信号是人类与外星文明建立联系的媒介：从红岸基地的无线电发射，到叶文洁接收三体文明的回复，信号的收发串起了整部三部曲的起点事件。",
+      "quality": "standard",
+      "quality_score": 51
     },
     "信念中心": {
       "type": "place",
@@ -4656,6 +4814,26 @@
       "quality": "featured",
       "quality_score": 54
     },
+    "克隆": {
+      "type": "technology",
+      "label": "克隆",
+      "aliases": [
+        "克隆体",
+        "克隆复活",
+        "克隆人"
+      ],
+      "tags": [
+        "科技",
+        "三体II",
+        "三体III",
+        "生物学",
+        "伦理"
+      ],
+      "path": "pages/克隆.md",
+      "description": "基因克隆技术，在三体III中最重要的应用是云天明大脑被三体舰队截获后通过克隆复活，程心也通过不完全克隆视网膜移植恢复视力。",
+      "quality": "standard",
+      "quality_score": 55
+    },
     "全息影像": {
       "type": "technology",
       "label": "全息影像",
@@ -4884,6 +5062,27 @@
       "quality": "featured",
       "quality_score": 52
     },
+    "农业": {
+      "type": "concept",
+      "label": "农业",
+      "aliases": [
+        "农业时代",
+        "农业社会",
+        "新农业社会"
+      ],
+      "tags": [
+        "概念",
+        "三体I",
+        "三体II",
+        "三体III",
+        "社会",
+        "文明发展"
+      ],
+      "path": "pages/农业.md",
+      "description": "农业生产与农业文明阶段，在三体中作为文明发展阶段的基准坐标出现，科学边界设想回归新农业社会，三体执政官分析人类农业时代的进化速度。",
+      "quality": "standard",
+      "quality_score": 52
+    },
     "农业工厂": {
       "type": "technology",
       "label": "农业工厂",
@@ -5079,6 +5278,25 @@
       "description": "云天明童话《王子与钢甲》中的王子，幼时暴虐、设计篡位；借助针眼画师之力将王室成员画入画中消灭；被学者解读为三体文明的暗喻",
       "quality": "featured",
       "quality_score": 64
+    },
+    "冷战": {
+      "type": "event",
+      "label": "冷战",
+      "aliases": [
+        "冷战时期",
+        "核威慑时代"
+      ],
+      "tags": [
+        "事件",
+        "三体II",
+        "三体III",
+        "历史",
+        "威慑纪元"
+      ],
+      "path": "pages/冷战.md",
+      "description": "20世纪美苏两大军事集团的对峙时期，在三体中被引用为黑暗森林威慑的历史先例——Perimeter末日系统即脱胎于冷战时期的核战略。",
+      "quality": "standard",
+      "quality_score": 57
     },
     "凡尔纳": {
       "type": "person",
@@ -5801,6 +6019,26 @@
       "quality": "featured",
       "quality_score": 51
     },
+    "化学": {
+      "type": "concept",
+      "label": "化学",
+      "aliases": [
+        "化学火箭",
+        "化学发动机",
+        "化学推进"
+      ],
+      "tags": [
+        "概念",
+        "三体I",
+        "三体II",
+        "科学",
+        "航天技术"
+      ],
+      "path": "pages/化学.md",
+      "description": "化学在三体中的两个关键角色：一是作为微观控制最低层次的代表（一维化学键）；二是化学火箭作为危机纪元航天的\"石器时代\"技术，与核聚变发动机形成代际对比。",
+      "quality": "standard",
+      "quality_score": 47
+    },
     "化学火箭": {
       "type": "technology",
       "label": "化学火箭",
@@ -5838,6 +6076,26 @@
       "description": "末日战役中亚洲舰队的一艘战舰，目标甄别助理赵鑫少尉所在，与万年昆鹏并列最早识别水滴威胁的战舰",
       "quality": "featured",
       "quality_score": 53
+    },
+    "北极": {
+      "type": "place",
+      "label": "北极",
+      "aliases": [
+        "北极圈",
+        "太空城北极",
+        "北极入口"
+      ],
+      "tags": [
+        "地点",
+        "三体I",
+        "三体III",
+        "冷战",
+        "太空城"
+      ],
+      "path": "pages/北极.md",
+      "description": "《三体》中北极在两个截然不同的背景下出现：冷战时代\"北极星\"级核潜艇的核弹威慑象征，以及死神永生中欧洲四号太空城的北极入口与失重轴线。",
+      "quality": "standard",
+      "quality_score": 50
     },
     "北欧伊甸园": {
       "type": "place",
@@ -5968,6 +6226,26 @@
       "description": "三体游戏中出现的巨型摆锤装置，用于感应引力变化以预测三太阳运行；联合国大厦前也设有用于文明启动仪式的巨型单摆；现实中联合国大厦的傅科单摆也是重要场景道具",
       "quality": "featured",
       "quality_score": 54
+    },
+    "南极": {
+      "type": "place",
+      "label": "南极",
+      "aliases": [
+        "南极大陆",
+        "南极洲",
+        "南极引力波发射台"
+      ],
+      "tags": [
+        "地点",
+        "三体II",
+        "三体III",
+        "引力波",
+        "末日之战"
+      ],
+      "path": "pages/南极.md",
+      "description": "《三体》中南极大陆出现在多个叙事层次：陨石猎人的探险地、末日之战中在籍战舰\"南极洲号\"，以及威慑纪元引力波发射台遭受激进组织袭击的战略据点。",
+      "quality": "standard",
+      "quality_score": 43
     },
     "南极洲号": {
       "type": "technology",
@@ -6132,6 +6410,25 @@
       "path": "pages/危机纪元至大低谷的家庭变迁.md",
       "description": "从危机纪元到大低谷结束，人类社会经历了家庭制度的根本瓦解：婚姻在经济崩溃与思想解放的双重冲击下消亡，两性与同性关系均突破传统边界，男性审美也开始向女性化转型。",
       "quality": "featured",
+      "quality_score": 54
+    },
+    "历史学": {
+      "type": "concept",
+      "label": "历史学",
+      "aliases": [
+        "历史学家",
+        "历史记录"
+      ],
+      "tags": [
+        "概念",
+        "三体I",
+        "三体II",
+        "三体III",
+        "叙事"
+      ],
+      "path": "pages/历史学.md",
+      "description": "历史学在三体三部曲中以历史学家的判断视角贯穿叙事：从红岸发射的历史评价，到危机幼稚症的历史命名，再到章北海技术路线的历史定评。",
+      "quality": "standard",
       "quality_score": 54
     },
     "原始膜": {
@@ -6969,6 +7266,27 @@
       "quality": "featured",
       "quality_score": 60
     },
+    "哲学": {
+      "type": "concept",
+      "label": "哲学",
+      "aliases": [
+        "东方哲学",
+        "终极哲学",
+        "马克思主义哲学"
+      ],
+      "tags": [
+        "概念",
+        "三体I",
+        "三体II",
+        "三体III",
+        "思想",
+        "文革"
+      ],
+      "path": "pages/哲学.md",
+      "description": "哲学在三体三部曲中以两种形态出现：文革批判语境中的\"马克思主义哲学指引科学\"，以及汪淼面对宇宙闪烁时触发的终极哲学追问。",
+      "quality": "standard",
+      "quality_score": 51
+    },
     "唐号": {
       "type": "technology",
       "label": "唐号",
@@ -7443,6 +7761,25 @@
       "quality": "featured",
       "quality_score": 47
     },
+    "地球舰队": {
+      "type": "organization",
+      "label": "地球舰队",
+      "aliases": [
+        "人类舰队",
+        "太空舰队联合体"
+      ],
+      "tags": [
+        "组织",
+        "三体II",
+        "太空军",
+        "危机纪元",
+        "末日之战"
+      ],
+      "path": "pages/地球舰队.md",
+      "description": "危机纪元中由各国太空军整合而成的人类联合太空力量，计划在两个半世纪后与三体舰队正面交战，但最终在末日之战中被几乎全歼。",
+      "quality": "standard",
+      "quality_score": 46
+    },
     "地球防务安全部": {
       "type": "organization",
       "label": "地球防务安全部",
@@ -7575,6 +7912,28 @@
       "quality": "featured",
       "quality_score": 48
     },
+    "基因": {
+      "type": "concept",
+      "label": "基因",
+      "aliases": [
+        "基因武器",
+        "基因改造",
+        "转基因"
+      ],
+      "tags": [
+        "概念",
+        "三体I",
+        "三体II",
+        "三体III",
+        "科技",
+        "武器",
+        "生物学"
+      ],
+      "path": "pages/基因.md",
+      "description": "遗传信息的基本单位，在三体中涉及转基因农业、基因识别暗杀武器、以及危机纪元粮食工厂化生产中的基因改造作物。",
+      "quality": "standard",
+      "quality_score": 53
+    },
     "基因改造": {
       "type": "technology",
       "label": "基因改造",
@@ -7674,6 +8033,26 @@
       "path": "pages/基本粒子.md",
       "description": "三体系列中，基本粒子被视为高维度展开的宏大世界，是智子工程的技术基础，也是三体文明对宇宙认识远超人类的标志。",
       "quality": "featured",
+      "quality_score": 52
+    },
+    "基督教": {
+      "type": "concept",
+      "label": "基督教",
+      "aliases": [
+        "东正教",
+        "天主教",
+        "基督徒"
+      ],
+      "tags": [
+        "概念",
+        "三体I",
+        "三体II",
+        "三体III",
+        "宗教"
+      ],
+      "path": "pages/基督教.md",
+      "description": "基督教在三体三部曲中作为宗教背景多次出现，包括伊文斯的神学反思、拜占庭陷落中的最后弥撒，以及黑暗森林法则的发现对基督教的沉重神学打击。",
+      "quality": "standard",
       "quality_score": 52
     },
     "基础物理": {
@@ -7921,6 +8300,25 @@
       "description": "危机纪元前人类科学界系统探索的目标，红岸基地存在的官方理由；三体危机爆发后概念转变为现实威胁",
       "quality": "featured",
       "quality_score": 54
+    },
+    "多普勒效应": {
+      "type": "concept",
+      "label": "多普勒效应",
+      "aliases": [
+        "都卜勒效应",
+        "多普勒频移"
+      ],
+      "tags": [
+        "概念",
+        "三体I",
+        "三体III",
+        "科学",
+        "物理"
+      ],
+      "path": "pages/多普勒效应.md",
+      "description": "波源与观测者相对运动导致观测频率变化的物理效应，在三体I中用于过滤宇宙背景辐射测量噪声，在三体III中体现于星环号高速航行时的星光颜色偏移。",
+      "quality": "standard",
+      "quality_score": 44
     },
     "大串联": {
       "type": "event",
@@ -8218,6 +8616,27 @@
       "quality": "featured",
       "quality_score": 54
     },
+    "天文台": {
+      "type": "place",
+      "label": "天文台",
+      "aliases": [
+        "帝国天文台",
+        "国家天文台",
+        "北京天文台",
+        "威尔逊山天文台"
+      ],
+      "tags": [
+        "地点",
+        "三体I",
+        "三体II",
+        "三体III",
+        "天文"
+      ],
+      "path": "pages/天文台.md",
+      "description": "天文台在三体中以多种形态出现：三体游戏里的帝国天文台、叶文洁信号发现中的威尔逊山天文台、阶梯计划策划中的北京天文台。",
+      "quality": "standard",
+      "quality_score": 45
+    },
     "天文学": {
       "type": "concept",
       "label": "天文学",
@@ -8452,6 +8871,24 @@
       "description": "涵盖太空基础设施建设的工程学科；执剑人候选乔依娜的专业；末日时代通过实时信息窗口监控的重大建设项目领域",
       "quality": "featured",
       "quality_score": 50
+    },
+    "太空战": {
+      "type": "concept",
+      "label": "太空战",
+      "aliases": [
+        "太空战争理论",
+        "星际战争理论"
+      ],
+      "tags": [
+        "概念",
+        "三体II",
+        "军事",
+        "太空军"
+      ],
+      "path": "pages/太空战.md",
+      "description": "人类在危机纪元建立的星际战争理论体系，以海战为参照，分为低技术、中技术和高技术三个研究方向，是地球舰队建设的理论基础。",
+      "quality": "standard",
+      "quality_score": 51
     },
     "太空战争": {
       "type": "concept",
@@ -9541,6 +9978,13 @@
       "quality": "featured",
       "quality_score": 42
     },
+    "宇宙探测": {
+      "type": "unknown",
+      "label": "宇宙探测",
+      "aliases": [],
+      "tags": [],
+      "path": "pages/宇宙探测.md"
+    },
     "宇宙文明": {
       "type": "concept",
       "label": "宇宙文明",
@@ -9948,6 +10392,25 @@
       "quality": "featured",
       "quality_score": 52
     },
+    "宏观世界": {
+      "type": "concept",
+      "label": "宏观世界",
+      "aliases": [
+        "宏观宇宙",
+        "宏观尺度"
+      ],
+      "tags": [
+        "概念",
+        "三体I",
+        "科学",
+        "维度",
+        "智子"
+      ],
+      "path": "pages/宏观世界.md",
+      "description": "与微观量子世界相对的日常物理世界，在三体I的智子展开叙事中是微小智子需要突破的感知边界，也是高维空间与三维现实之间的分界。",
+      "quality": "standard",
+      "quality_score": 54
+    },
     "宏观量子态": {
       "type": "concept",
       "label": "宏观量子态",
@@ -9966,6 +10429,26 @@
       "description": "比尔·希恩斯面壁计划核心概念：以恒星级功率摧毁地球舰队，使其进入宏观量子叠加态成为理论上不可再次摧毁的量子幽灵舰队；但量子态扩散导致该计划物理上不可行",
       "quality": "featured",
       "quality_score": 49
+    },
+    "宗教": {
+      "type": "concept",
+      "label": "宗教",
+      "aliases": [
+        "三体教",
+        "拯救派",
+        "宗教团体"
+      ],
+      "tags": [
+        "概念",
+        "三体I",
+        "三体II",
+        "三体III",
+        "信仰"
+      ],
+      "path": "pages/宗教.md",
+      "description": "宗教在三体三部曲中以多种形态出现：文革的反宗教批判、丁仪的宗教般执著、三体叛军中的拯救派宗教团体，以及水滴出现后人类对信仰的重新开始。",
+      "quality": "standard",
+      "quality_score": 50
     },
     "审判日号": {
       "type": "technology",
@@ -10206,6 +10689,25 @@
       "quality": "featured",
       "quality_score": 69
     },
+    "小行星": {
+      "type": "concept",
+      "label": "小行星",
+      "aliases": [
+        "小行星带",
+        "柯伊伯带外侧"
+      ],
+      "tags": [
+        "概念",
+        "三体I",
+        "三体II",
+        "天文",
+        "太空战略"
+      ],
+      "path": "pages/小行星.md",
+      "description": "太阳系内的小天体，小行星带构成危机纪元太空舰队的活动空间边界，水星核试验后形成新的小行星带，螳螂号捕获水滴探测器前曾用于采集矿物标本。",
+      "quality": "standard",
+      "quality_score": 50
+    },
     "小行星带": {
       "type": "place",
       "label": "小行星带",
@@ -10338,6 +10840,25 @@
       "description": "三体文明执政委员会成员，负责工业事务，参与讨论智子计划与入侵地球的战略决策。",
       "quality": "featured",
       "quality_score": 44
+    },
+    "工业革命": {
+      "type": "concept",
+      "label": "工业革命",
+      "aliases": [
+        "工业化时代",
+        "工业文明"
+      ],
+      "tags": [
+        "概念",
+        "三体I",
+        "三体II",
+        "三体III",
+        "历史"
+      ],
+      "path": "pages/工业革命.md",
+      "description": "18-19世纪以蒸汽机为核心的技术革命，在三体系列中作为人类文明进化阶段的参照，以及技术局限性的比喻——化学火箭被比作工业革命的大烟筒。",
+      "quality": "standard",
+      "quality_score": 51
     },
     "工质": {
       "type": "concept",
@@ -10504,6 +11025,25 @@
       "quality": "featured",
       "quality_score": 63
     },
+    "希望": {
+      "type": "concept",
+      "label": "希望",
+      "aliases": [
+        "最后的希望",
+        "人类的希望"
+      ],
+      "tags": [
+        "概念",
+        "三体I",
+        "三体II",
+        "三体III",
+        "主题"
+      ],
+      "path": "pages/希望.md",
+      "description": "《三体》三部曲中希望的消亡与重燃：叶文洁在红岸基地失去对人类的最后希望，是她广播坐标的精神根源；而整个人类文明在宇宙威胁下一次次寻找新的希望。",
+      "quality": "standard",
+      "quality_score": 44
+    },
     "常伟思": {
       "type": "person",
       "label": "常伟思",
@@ -10539,6 +11079,27 @@
       "description": "三体游戏中储存脱水人的大型石砌仓库，乱纪元时期三体文明的重要基础设施",
       "quality": "featured",
       "quality_score": 52
+    },
+    "平等": {
+      "type": "concept",
+      "label": "平等",
+      "aliases": [
+        "生命平等",
+        "生存权平等",
+        "物种平等"
+      ],
+      "tags": [
+        "概念",
+        "三体I",
+        "三体II",
+        "三体III",
+        "伦理",
+        "政治"
+      ],
+      "path": "pages/平等.md",
+      "description": "平等概念在三体中贯穿多个层面：伊文斯的物种平等（地球所有生命生来平等）、逃亡主义的生存权平等争议，以及威慑纪元末期泛宇宙的文明平等主张。",
+      "quality": "standard",
+      "quality_score": 47
     },
     "幸存派": {
       "type": "organization",
@@ -10596,6 +11157,26 @@
       "description": "关一帆在万有引力号上表现出的反常幽闭恐惧症，与普通宇航员的广场恐惧正好相反，实为他梦中短暂进入四维空间后对三维世界的窒息感",
       "quality": "standard",
       "quality_score": 42
+    },
+    "广义相对论": {
+      "type": "concept",
+      "label": "广义相对论",
+      "aliases": [
+        "广义相对性理论"
+      ],
+      "tags": [
+        "概念",
+        "三体I",
+        "三体II",
+        "三体III",
+        "科学",
+        "物理",
+        "爱因斯坦"
+      ],
+      "path": "pages/广义相对论.md",
+      "description": "爱因斯坦建立的引力理论，在三体I中被文革批判为\"反动唯心主义\"，在三体游戏中的爱因斯坦角色提出，在三体III中用于描述事件视界附近的时间扭曲。",
+      "quality": "standard",
+      "quality_score": 47
     },
     "广播纪元": {
       "type": "era",
@@ -11233,6 +11814,26 @@
       "quality": "featured",
       "quality_score": 45
     },
+    "心理学": {
+      "type": "concept",
+      "label": "心理学",
+      "aliases": [
+        "宇宙心理学",
+        "航行心理学",
+        "去物质效应"
+      ],
+      "tags": [
+        "概念",
+        "三体II",
+        "三体III",
+        "科学",
+        "太空战略"
+      ],
+      "path": "pages/心理学.md",
+      "description": "心理学在三体中的最重要延伸是航天心理学——蓝西首席心理学家在星舰地球上对官兵的心理工作，以及去物质效应这一深空航行的宇宙心理学概念。",
+      "quality": "standard",
+      "quality_score": 50
+    },
     "思想钢印": {
       "type": "technology",
       "label": "思想钢印",
@@ -11288,6 +11889,26 @@
       "description": "危机纪元建立的综合性金融管理系统，配备AI金融咨询员，对冬眠苏醒者的存款有特殊计息规定，将大低谷时段排除在计息周期之外。",
       "quality": "featured",
       "quality_score": 48
+    },
+    "恐惧": {
+      "type": "concept",
+      "label": "恐惧",
+      "aliases": [
+        "宇宙恐惧",
+        "生存恐惧"
+      ],
+      "tags": [
+        "概念",
+        "三体I",
+        "三体II",
+        "三体III",
+        "宇宙社会学",
+        "伦理"
+      ],
+      "path": "pages/恐惧.md",
+      "description": "恐惧在三体三部曲中既是个体的心理体验（汪淼的幽灵倒计时恐惧），也是宇宙社会学的基础——在歌者视角中，\"恐惧是所有低熵体的生存保证\"。",
+      "quality": "featured",
+      "quality_score": 51
     },
     "恐日症": {
       "type": "concept",
@@ -11455,6 +12076,27 @@
       "quality": "featured",
       "quality_score": 43
     },
+    "意识": {
+      "type": "concept",
+      "label": "意识",
+      "aliases": [
+        "超意识",
+        "潜意识",
+        "宇宙意识"
+      ],
+      "tags": [
+        "概念",
+        "三体I",
+        "三体II",
+        "三体III",
+        "哲学",
+        "科学"
+      ],
+      "path": "pages/意识.md",
+      "description": "《三体》中意识的多重面向：从个体潜意识到上帝式\"宇宙超意识\"的追问，以及三体文明通过智子压制人类科学意识的策略。",
+      "quality": "standard",
+      "quality_score": 51
+    },
     "慕星": {
       "type": "person",
       "label": "慕星",
@@ -11504,6 +12146,25 @@
       "description": "歌者宇宙中标志文明具有威胁性的特殊空间现象，出现慢雾意味着清理会更快到来",
       "quality": "featured",
       "quality_score": 44
+    },
+    "战争理论": {
+      "type": "concept",
+      "label": "战争理论",
+      "aliases": [
+        "太空战争理论",
+        "太空战略理论",
+        "战略研究"
+      ],
+      "tags": [
+        "概念",
+        "三体II",
+        "太空战略",
+        "危机纪元"
+      ],
+      "path": "pages/战争理论.md",
+      "description": "太空战争理论研究在危机纪元展开，因技术发展水平不确定而陷入困境，形成低技术、中技术、高技术三个战略研究室并行探索的结构。",
+      "quality": "standard",
+      "quality_score": 43
     },
     "战斗机": {
       "type": "technology",
@@ -12066,6 +12727,26 @@
       "quality": "featured",
       "quality_score": 54
     },
+    "数学": {
+      "type": "concept",
+      "label": "数学",
+      "aliases": [
+        "数学模型",
+        "数学家",
+        "空对空数学游戏"
+      ],
+      "tags": [
+        "概念",
+        "三体I",
+        "三体II",
+        "三体III",
+        "科学"
+      ],
+      "path": "pages/数学.md",
+      "description": "数学在三体中既是叶文洁建立太阳辐射模型的工具，也在智子封锁后沦为\"空对空数学游戏\"——基础研究停滞时，数学家只能在无实验支撑的理论真空中自娱。",
+      "quality": "standard",
+      "quality_score": 49
+    },
     "数据手套": {
       "type": "technology",
       "label": "数据手套",
@@ -12167,6 +12848,24 @@
       "description": "危机纪元中期出现的社会思想：三体危机如同一场大病，触发了人类文明的免疫系统，使前危机时期的种种错误再难重现；其结果之一是人性的解放带来了技术的飞速进步",
       "quality": "featured",
       "quality_score": 49
+    },
+    "文艺复兴": {
+      "type": "concept",
+      "label": "文艺复兴",
+      "aliases": [
+        "第二次文艺复兴"
+      ],
+      "tags": [
+        "概念",
+        "三体II",
+        "历史",
+        "艺术",
+        "人文"
+      ],
+      "path": "pages/文艺复兴.md",
+      "description": "欧洲14-17世纪的思想文化运动，在三体系列中以\"第二次文艺复兴\"的形式出现在危机纪元历史中，同时其人文精神在末日威胁下被描述为\"碍事的东西\"。",
+      "quality": "standard",
+      "quality_score": 51
     },
     "斐兹罗": {
       "type": "person",
@@ -12411,6 +13110,25 @@
       "quality": "featured",
       "quality_score": 55
     },
+    "时空": {
+      "type": "concept",
+      "label": "时空",
+      "aliases": [
+        "四维时空",
+        "时空蚀洞"
+      ],
+      "tags": [
+        "概念",
+        "三体I",
+        "三体II",
+        "三体III",
+        "物理"
+      ],
+      "path": "pages/时空.md",
+      "description": "物理学中时间与空间的统一体，在三体三部曲中既作为物理背景出现（四维空间、维度战争），也作为文学意象频繁使用。",
+      "quality": "standard",
+      "quality_score": 55
+    },
     "时间之外的往事": {
       "type": "book",
       "label": "《时间之外的往事》",
@@ -12480,6 +13198,26 @@
       "description": "掩体纪元的大型科考飞船，从海王星群落起航与启示号探测编队会合，携带更完善设备研究纸条文物",
       "quality": "featured",
       "quality_score": 43
+    },
+    "星云": {
+      "type": "concept",
+      "label": "星云",
+      "aliases": [
+        "奥尔特星云",
+        "星际尘埃"
+      ],
+      "tags": [
+        "概念",
+        "三体I",
+        "三体II",
+        "三体III",
+        "天文",
+        "太空战略"
+      ],
+      "path": "pages/星云.md",
+      "description": "宇宙中的气体和尘埃云，在三体中最重要的是奥尔特星云——地球太阳系的外缘边界，太空军战略前沿阵地的核心坐标。",
+      "quality": "standard",
+      "quality_score": 59
     },
     "星图": {
       "type": "technology",
@@ -13054,6 +13792,25 @@
       "quality": "featured",
       "quality_score": 58
     },
+    "望远镜": {
+      "type": "technology",
+      "label": "望远镜",
+      "aliases": [
+        "射电望远镜",
+        "天文望远镜",
+        "光学望远镜"
+      ],
+      "tags": [
+        "科技",
+        "三体I",
+        "三体II",
+        "天文"
+      ],
+      "path": "pages/望远镜.md",
+      "description": "望远镜在三体中以多种形态出现：三体游戏中的古典望远镜、宇宙背景辐射观测的射电望远镜阵列、以及观测三体舰队的哈勃三号超大望远镜。",
+      "quality": "standard",
+      "quality_score": 41
+    },
     "朝歌": {
       "type": "place",
       "label": "朝歌",
@@ -13310,6 +14067,24 @@
       "description": "蓝色空间号陆战队指挥官，朝鲜人，少校；参与四维空间探索中的侦察行动，胸部中弹后仍保持清醒，用沙哑声音威慑敌手",
       "quality": "featured",
       "quality_score": 46
+    },
+    "机器人": {
+      "type": "technology",
+      "label": "机器人",
+      "aliases": [
+        "服务机器人",
+        "机器人服务员"
+      ],
+      "tags": [
+        "科技",
+        "三体II",
+        "三体III",
+        "威慑纪元"
+      ],
+      "path": "pages/机器人.md",
+      "description": "机器人技术在三体中的两个重要形态：威慑纪元餐厅的AI服务机器人（曾被用于暗杀罗辑）和人形智子（三体文明控制的最先进仿生机器人）。",
+      "quality": "standard",
+      "quality_score": 50
     },
     "李堆": {
       "type": "person",
@@ -13656,6 +14431,27 @@
       "quality": "featured",
       "quality_score": 52
     },
+    "核弹": {
+      "type": "weapon",
+      "label": "核弹",
+      "aliases": [
+        "核武器",
+        "核弹头",
+        "原子弹",
+        "氢弹"
+      ],
+      "tags": [
+        "武器",
+        "三体I",
+        "三体II",
+        "冷战",
+        "军事"
+      ],
+      "path": "pages/核弹.md",
+      "description": "《三体》中核武器贯穿从文革时代冷战背景到宇宙文明对比的叙事线：在宇宙尺度上，核弹是人类自认为最强大的力量，却在三体文明的技术面前显得微不足道。",
+      "quality": "standard",
+      "quality_score": 44
+    },
     "核弹头": {
       "type": "weapon",
       "label": "核弹头",
@@ -13772,6 +14568,26 @@
       "description": "核武器释放能量的爆炸过程，在太空真空中效果大打折扣，但仍是恒星型氢弹和面壁者战略的基础手段",
       "quality": "featured",
       "quality_score": 54
+    },
+    "核爆炸": {
+      "type": "technology",
+      "label": "核爆炸",
+      "aliases": [
+        "核爆",
+        "核爆炸波",
+        "恒星型氢弹爆炸"
+      ],
+      "tags": [
+        "科技",
+        "三体I",
+        "三体II",
+        "武器",
+        "太空战"
+      ],
+      "path": "pages/核爆炸.md",
+      "description": "核裂变或核聚变引发的爆炸，在三体中分析了太空核爆的局限性（无冲击波）、雷迪亚兹的水星核试验，以及末日战役中水滴引发的核爆炸壮观景象。",
+      "quality": "standard",
+      "quality_score": 52
     },
     "核电池": {
       "type": "technology",
@@ -14142,6 +14958,27 @@
       "quality": "featured",
       "quality_score": 60
     },
+    "死亡": {
+      "type": "concept",
+      "label": "死亡",
+      "aliases": [
+        "文明死亡",
+        "星球死亡",
+        "生死抉择"
+      ],
+      "tags": [
+        "概念",
+        "三体I",
+        "三体II",
+        "三体III",
+        "哲学",
+        "宇宙社会学"
+      ],
+      "path": "pages/死亡.md",
+      "description": "死亡是三体三部曲最重要的底色主题之一，从文革批斗会上无数学者的死亡，到哈姆雷特式的\"生存还是死亡\"，再到宇宙中文明灭绝的终极死亡。",
+      "quality": "standard",
+      "quality_score": 52
+    },
     "死柱": {
       "type": "concept",
       "label": "死柱",
@@ -14312,6 +15149,44 @@
       "quality": "featured",
       "quality_score": 62
     },
+    "民主": {
+      "type": "concept",
+      "label": "民主",
+      "aliases": [
+        "民主政治",
+        "军事民主"
+      ],
+      "tags": [
+        "概念",
+        "三体II",
+        "三体III",
+        "政治",
+        "威慑纪元"
+      ],
+      "path": "pages/民主.md",
+      "description": "民主政治制度在三体三部曲中的多重呈现：既是威慑纪元的文明高峰，也在极端危机中被独裁者的阴影所笼罩；星舰文明中曾出现\"真正的民主社会\"设想。",
+      "quality": "standard",
+      "quality_score": 55
+    },
+    "氢弹": {
+      "type": "weapon",
+      "label": "氢弹",
+      "aliases": [
+        "热核武器",
+        "核聚变炸弹"
+      ],
+      "tags": [
+        "武器",
+        "三体I",
+        "三体II",
+        "核武器",
+        "面壁计划"
+      ],
+      "path": "pages/氢弹.md",
+      "description": "利用核聚变释放能量的热核武器，在三体系列中既是红岸基地武器研究的参照系，也是雷迪亚兹面壁战略恒星型氢弹的基础技术。",
+      "quality": "standard",
+      "quality_score": 44
+    },
     "水星": {
       "type": "place",
       "label": "水星",
@@ -14409,6 +15284,24 @@
       "description": "三体II，一枚水滴探测器以第三宇宙速度的两倍横扫人类联合舰队，在不到一小时内将两千余艘战舰全部摧毁，标志人类武装力量的彻底覆灭",
       "quality": "featured",
       "quality_score": 58
+    },
+    "永动机": {
+      "type": "technology",
+      "label": "永动机",
+      "aliases": [
+        "真永动机",
+        "无限能源"
+      ],
+      "tags": [
+        "科技",
+        "三体II",
+        "威慑纪元",
+        "能源"
+      ],
+      "path": "pages/永动机.md",
+      "description": "真正实现无限能源的装置，威慑纪元最重要的技术成就之一，与合成粮食并列为那个时代文明进步的两大标志。罗辑从冬眠中醒来后，握着一杯无线供电的热水杯时意识到自己正捧着\"人类千古梦想的圣物\"。",
+      "quality": "standard",
+      "quality_score": 45
     },
     "汪森": {
       "type": "person",
@@ -14653,6 +15546,26 @@
       "description": "四位面壁者之一，英国人，曾因同一发现同时获得两个诺贝尔奖提名，研究人类意识改造，妻子山杉惠子是其破壁人。",
       "quality": "standard",
       "quality_score": 41
+    },
+    "海洋": {
+      "type": "concept",
+      "label": "海洋",
+      "aliases": [
+        "蓝色海洋",
+        "太阳电浆海洋"
+      ],
+      "tags": [
+        "概念",
+        "三体I",
+        "三体II",
+        "天文",
+        "地球",
+        "三体文明"
+      ],
+      "path": "pages/海洋.md",
+      "description": "《三体》中海洋出现在多个层面：地球蓝色海洋是三体监听员的梦中天堂，三体世界的海洋在行星灾变中沸腾蒸发，太阳内部的电浆海洋是叶文洁发现增益反射特性的场所。",
+      "quality": "standard",
+      "quality_score": 50
     },
     "海王星": {
       "type": "place",
@@ -14950,6 +15863,26 @@
       "quality": "featured",
       "quality_score": 60
     },
+    "激光": {
+      "type": "technology",
+      "label": "激光",
+      "aliases": [
+        "伽马射线激光",
+        "激光炮",
+        "激光武器"
+      ],
+      "tags": [
+        "科技",
+        "三体I",
+        "三体II",
+        "武器",
+        "太空战"
+      ],
+      "path": "pages/激光.md",
+      "description": "受激辐射光放大技术，在三体中既是科学仪器（激光打印机）和假象制造工具，更是太空战时代标配武器——伽马射线激光炮是舰队最强大的热能武器之一。",
+      "quality": "standard",
+      "quality_score": 57
+    },
     "激光武器": {
       "type": "weapon",
       "label": "激光武器",
@@ -15004,6 +15937,25 @@
       "quality": "featured",
       "quality_score": 56
     },
+    "火箭": {
+      "type": "technology",
+      "label": "火箭",
+      "aliases": [
+        "化学火箭",
+        "化学推进",
+        "运载火箭"
+      ],
+      "tags": [
+        "科技",
+        "三体II",
+        "三体III",
+        "航天"
+      ],
+      "path": "pages/火箭.md",
+      "description": "《三体》中火箭代表人类在宇宙航行中最基础也最原始的推进方式，化学推进的局限是危机纪元航天技术困境的缩影，也是探索更先进推进方式的起点。",
+      "quality": "standard",
+      "quality_score": 50
+    },
     "灰星": {
       "type": "place",
       "label": "灰星",
@@ -15053,6 +16005,25 @@
       "description": "危机纪元后期的冬眠苏醒者，与罗辑同在疗养院，热情地向罗辑介绍威慑纪元的人类成就。",
       "quality": "featured",
       "quality_score": 59
+    },
+    "熵": {
+      "type": "concept",
+      "label": "熵",
+      "aliases": [
+        "低熵体",
+        "热寂",
+        "熵增"
+      ],
+      "tags": [
+        "概念",
+        "三体III",
+        "宇宙社会学",
+        "物理"
+      ],
+      "path": "pages/熵.md",
+      "description": "热力学概念，在三体III中以\"低熵体\"的形式成为宇宙文明分类的核心标准——所有有序存在的文明都是低熵体，而清理低熵体是高级文明的本能。",
+      "quality": "featured",
+      "quality_score": 51
     },
     "爱伦·坡": {
       "type": "person",
@@ -15109,6 +16080,25 @@
       "description": "末日战役中，舰长刻意牺牲全体未保护乘员以执行前进四，试图以空舰高速逃脱水滴，最终仍被追及摧毁",
       "quality": "featured",
       "quality_score": 55
+    },
+    "爱情": {
+      "type": "concept",
+      "label": "爱情",
+      "aliases": [
+        "婚姻",
+        "情感"
+      ],
+      "tags": [
+        "概念",
+        "三体I",
+        "三体II",
+        "三体III",
+        "人物关系"
+      ],
+      "path": "pages/爱情.md",
+      "description": "爱情在三体中以对立形态呈现：三体文明中爱情被视为导致脆弱的邪恶；叶文洁与杨卫宁的婚姻出于生活方便而非激情；罗辑对理想\"她\"的爱情则是支撑黑暗森林威慑的精神力量。",
+      "quality": "standard",
+      "quality_score": 49
     },
     "牛顿": {
       "type": "person",
@@ -15222,6 +16212,25 @@
       "quality": "featured",
       "quality_score": 52
     },
+    "牺牲": {
+      "type": "concept",
+      "label": "牺牲",
+      "aliases": [
+        "自我牺牲",
+        "牺牲精神"
+      ],
+      "tags": [
+        "概念",
+        "三体I",
+        "三体II",
+        "伦理",
+        "军事"
+      ],
+      "path": "pages/牺牲.md",
+      "description": "牺牲精神在三体中以两种形态出现：一是章北海推崇的古典军人牺牲精神（责任和荣誉高于一切）；二是叶文洁愿意用全人类的牺牲换取三体文明的到来。",
+      "quality": "standard",
+      "quality_score": 48
+    },
     "狄奥伦娜": {
       "type": "person",
       "label": "狄奥伦娜",
@@ -15316,6 +16325,25 @@
       "quality": "featured",
       "quality_score": 52
     },
+    "理论物理": {
+      "type": "concept",
+      "label": "理论物理",
+      "aliases": [
+        "理论物理学"
+      ],
+      "tags": [
+        "概念",
+        "三体I",
+        "三体II",
+        "三体III",
+        "科学",
+        "物理"
+      ],
+      "path": "pages/理论物理.md",
+      "description": "通过数学推演研究自然基本规律的物理学分支，在三体系列中是叶哲泰、丁仪等人的学术背景，也是智子封锁最严重的受害领域之一。",
+      "quality": "standard",
+      "quality_score": 55
+    },
     "瓦季姆": {
       "type": "person",
       "label": "瓦季姆",
@@ -15351,6 +16379,26 @@
       "description": "启示号观测站的预备观测员，与天文学家威纳尔共同目睹了黑暗森林打击在三体星系附近留下的泡状区域",
       "quality": "featured",
       "quality_score": 57
+    },
+    "生命": {
+      "type": "concept",
+      "label": "生命",
+      "aliases": [
+        "生命体",
+        "生命形式"
+      ],
+      "tags": [
+        "概念",
+        "三体I",
+        "三体II",
+        "三体III",
+        "宇宙社会学",
+        "生物学"
+      ],
+      "path": "pages/生命.md",
+      "description": "《三体》三部曲中生命的本质与意义：从个体生存到宇宙尺度上文明的延续，是黑暗森林法则和降维打击的终极对象。",
+      "quality": "standard",
+      "quality_score": 43
     },
     "生命维持系统": {
       "type": "technology",
@@ -15390,6 +16438,46 @@
       "path": "pages/生存是文明的第一需要.md",
       "description": "宇宙社会学第一公理，由叶文洁传授给罗辑，是黑暗森林法则整个推理链条的起点，两条公理共同构成宇宙中一切文明行为的逻辑基础",
       "quality": "featured",
+      "quality_score": 50
+    },
+    "生存权": {
+      "type": "concept",
+      "label": "生存权",
+      "aliases": [
+        "生存平等权",
+        "基本生存权"
+      ],
+      "tags": [
+        "概念",
+        "三体II",
+        "社会",
+        "伦理",
+        "逃亡主义"
+      ],
+      "path": "pages/生存权.md",
+      "description": "三体II中人类面临三体危机时的核心伦理议题，集中体现于逃亡主义争论：谁有权在末日中活下来，谁又必须留守等死？",
+      "quality": "standard",
+      "quality_score": 51
+    },
+    "生态": {
+      "type": "concept",
+      "label": "生态",
+      "aliases": [
+        "生态圈",
+        "生态系统",
+        "生态环境"
+      ],
+      "tags": [
+        "概念",
+        "三体I",
+        "三体II",
+        "三体III",
+        "环境",
+        "科学"
+      ],
+      "path": "pages/生态.md",
+      "description": "《三体》中生态概念贯穿地球生态危机（推动ETO成员的幻灭）和太空舰队自循环生态系统（危机纪元的技术挑战），也出现在三体文明行星灾变中的生态灭绝叙事。",
+      "quality": "standard",
       "quality_score": 50
     },
     "生态圈": {
@@ -15470,6 +16558,47 @@
       "description": "全封闭微型生态系统；关一帆随身携带并在四维空间中观察，最终作为礼物送入魔戒；程心在647号宇宙中复制的最后一个，象征生命的延续",
       "quality": "featured",
       "quality_score": 55
+    },
+    "生态系统": {
+      "type": "concept",
+      "label": "生态系统",
+      "aliases": [
+        "舰载生态系统",
+        "飞船生态循环系统",
+        "封闭生态系统"
+      ],
+      "tags": [
+        "概念",
+        "三体II",
+        "三体III",
+        "科技",
+        "太空舰队"
+      ],
+      "path": "pages/生态系统.md",
+      "description": "太空舰船和太空城中维持生命所需的封闭生命保障体系，是长距离星际航行的核心技术难题，也是三体III中宇宙纪元人类文明的生存基础。",
+      "quality": "standard",
+      "quality_score": 57
+    },
+    "生物学": {
+      "type": "concept",
+      "label": "生物学",
+      "aliases": [
+        "鸟类学",
+        "昆虫学",
+        "生物科学"
+      ],
+      "tags": [
+        "概念",
+        "三体I",
+        "三体II",
+        "三体III",
+        "科学",
+        "宇宙社会学"
+      ],
+      "path": "pages/生物学.md",
+      "description": "生命科学学科，在三体中与三个关键问题交织：潘寒的物种伦理（生命平等与物种共产主义）、猜疑链的生物学基础（界门纲目），以及三体危机对文明的生物学类比。",
+      "quality": "standard",
+      "quality_score": 52
     },
     "田园时代": {
       "type": "concept",
@@ -15840,6 +16969,25 @@
       "quality": "featured",
       "quality_score": 47
     },
+    "石油": {
+      "type": "concept",
+      "label": "石油",
+      "aliases": [
+        "石油公司",
+        "石油资源"
+      ],
+      "tags": [
+        "概念",
+        "三体I",
+        "三体II",
+        "社会",
+        "资源"
+      ],
+      "path": "pages/石油.md",
+      "description": "化石燃料，在三体中作为现代文明的物质基础出现：伊文斯父亲的跨国石油公司、文明耗尽地球石油资源，以及威慑纪元\"永动机\"时代石油被彻底淘汰。",
+      "quality": "standard",
+      "quality_score": 47
+    },
     "破壁人": {
       "type": "concept",
       "label": "破壁人",
@@ -15949,6 +17097,23 @@
       "description": "电荷运动产生的力场，在三体故事中用于约束宏原子核、限制智子展开，以及作为球状闪电武器的屏蔽手段",
       "quality": "featured",
       "quality_score": 52
+    },
+    "社会学": {
+      "type": "concept",
+      "label": "社会学",
+      "aliases": [
+        "人类社会学"
+      ],
+      "tags": [
+        "概念",
+        "三体II",
+        "学科",
+        "罗辑"
+      ],
+      "path": "pages/社会学.md",
+      "description": "研究人类社会结构与行为的学科，是罗辑的第二专业（与天文学并列），也是叶文洁引导他转向宇宙社会学研究的学术背景。",
+      "quality": "standard",
+      "quality_score": 55
     },
     "神经元计算机": {
       "type": "technology",
@@ -16735,6 +17900,27 @@
       "quality": "standard",
       "quality_score": 36
     },
+    "粮食": {
+      "type": "concept",
+      "label": "粮食",
+      "aliases": [
+        "合成粮食",
+        "粮食定量",
+        "粮食短缺"
+      ],
+      "tags": [
+        "概念",
+        "三体I",
+        "三体II",
+        "三体III",
+        "社会",
+        "危机纪元"
+      ],
+      "path": "pages/粮食.md",
+      "description": "粮食供应在三体三部曲中折射社会压力：危机纪元的粮食定量卡制度、威慑纪元的合成粮食技术突破、以及广播纪元后澳大利亚移民的粮食短缺。",
+      "quality": "standard",
+      "quality_score": 54
+    },
     "红卫兵": {
       "type": "concept",
       "label": "红卫兵",
@@ -16892,6 +18078,25 @@
       "quality": "featured",
       "quality_score": 46
     },
+    "纳米": {
+      "type": "technology",
+      "label": "纳米",
+      "aliases": [
+        "纳米材料",
+        "纳米中心",
+        "纳米技术"
+      ],
+      "tags": [
+        "科技",
+        "三体I",
+        "物理",
+        "汪淼"
+      ],
+      "path": "pages/纳米.md",
+      "description": "纳米材料与技术，是汪淼的专业背景——他是中华二号高能加速器项目纳米构件的负责人，也是纳米研究中心主任的同事，其纳米背景构成他进入科学边界故事的切入点。",
+      "quality": "standard",
+      "quality_score": 51
+    },
     "纳米丝": {
       "type": "technology",
       "label": "纳米丝",
@@ -17022,6 +18227,24 @@
       "quality": "featured",
       "quality_score": 56
     },
+    "经济学": {
+      "type": "concept",
+      "label": "经济学",
+      "aliases": [
+        "经济学家"
+      ],
+      "tags": [
+        "概念",
+        "三体II",
+        "社会",
+        "危机纪元",
+        "威慑纪元"
+      ],
+      "path": "pages/经济学.md",
+      "description": "经济学在三体中通过冬眠者经济学家的视角出现：经济学公理\"人类唯利是图\"、文明免疫力概念、以及帕斯卡的人生哲言。",
+      "quality": "basic",
+      "quality_score": 43
+    },
     "给岁月以文明": {
       "type": "concept",
       "label": "给岁月以文明",
@@ -17040,6 +18263,26 @@
       "description": "刻于大低谷纪念碑的历史名言，代表大低谷时期人类文明从\"文明优先\"向\"人本优先\"的思想转变，成为第二次文艺复兴的精神口号",
       "quality": "featured",
       "quality_score": 47
+    },
+    "绝望": {
+      "type": "concept",
+      "label": "绝望",
+      "aliases": [
+        "绝望感",
+        "宇宙绝望"
+      ],
+      "tags": [
+        "概念",
+        "三体I",
+        "三体II",
+        "三体III",
+        "心理",
+        "宇宙社会学"
+      ],
+      "path": "pages/绝望.md",
+      "description": "绝望在三体中是许多人物转向极端立场的心理根源：加西亚对人类失去信心后加入降临派；汪淼面对宇宙闪烁的绝望；以及叶文洁对三体世界命运彻底绝望时的历史选择。",
+      "quality": "standard",
+      "quality_score": 46
     },
     "维度": {
       "type": "concept",
@@ -17692,6 +18935,27 @@
       "quality": "featured",
       "quality_score": 62
     },
+    "自由": {
+      "type": "concept",
+      "label": "自由",
+      "aliases": [
+        "自由落体",
+        "政治自由",
+        "高维自由"
+      ],
+      "tags": [
+        "概念",
+        "三体I",
+        "三体II",
+        "三体III",
+        "政治",
+        "哲学"
+      ],
+      "path": "pages/自由.md",
+      "description": "自由在三体中以多种形态出现：三体文明中最脆弱的民主自由社会、章北海对星舰自由社会的主张、以及进入四维空间时高维空间感带来的\"自由\"全新含义。",
+      "quality": "standard",
+      "quality_score": 50
+    },
     "自由女神像": {
       "type": "place",
       "label": "自由女神像（信念中心）",
@@ -17908,6 +19172,27 @@
       "description": "万有引力号中尉，四维空间碎片事件的首批亲历者；目睹舱壁圆洞、用提琴弓探测降维泡、催眠自己并决定保密，其所见薇拉的腿后成为降维截面的参照意象",
       "quality": "featured",
       "quality_score": 56
+    },
+    "苏联": {
+      "type": "organization",
+      "label": "苏联",
+      "aliases": [
+        "苏维埃社会主义共和国联盟",
+        "苏修",
+        "前苏联"
+      ],
+      "tags": [
+        "组织",
+        "三体I",
+        "三体II",
+        "三体III",
+        "历史",
+        "政治"
+      ],
+      "path": "pages/苏联.md",
+      "description": "冷战时期的超级大国，在三体三部曲中作为政治历史背景频繁出现，包括Perimeter末日系统、苏联天体物理学家卡达谢夫等。",
+      "quality": "standard",
+      "quality_score": 51
     },
     "苗福全": {
       "type": "person",
@@ -18442,6 +19727,25 @@
       "quality": "featured",
       "quality_score": 53
     },
+    "语言学": {
+      "type": "concept",
+      "label": "语言学",
+      "aliases": [
+        "三体语言学",
+        "语言学家",
+        "巴勒莫"
+      ],
+      "tags": [
+        "概念",
+        "三体III",
+        "科学",
+        "云天明童话"
+      ],
+      "path": "pages/语言学.md",
+      "description": "语言学在三体III中作为专门学科出现：IDC语言学小组和语言学家巴勒莫专门研究三体语言的历史演化，参与解读云天明童话中的隐藏信息。",
+      "quality": "standard",
+      "quality_score": 43
+    },
     "诺贝尔奖": {
       "type": "concept",
       "label": "诺贝尔奖",
@@ -18555,6 +19859,25 @@
       "description": "银河系古老而广阔，外星文明早该抵达太阳系，但宇宙却一片沉默——三体宇宙中这一悖论的答案是黑暗森林法则。",
       "quality": "featured",
       "quality_score": 72
+    },
+    "资源": {
+      "type": "concept",
+      "label": "资源",
+      "aliases": [
+        "战争资源",
+        "宇宙资源"
+      ],
+      "tags": [
+        "概念",
+        "三体I",
+        "三体II",
+        "三体III",
+        "宇宙社会学"
+      ],
+      "path": "pages/资源.md",
+      "description": "《三体》中资源是宇宙社会学两大公理之一的核心，文明生存和扩张的物质基础，也是黑暗森林法则得以成立的底层驱动力。",
+      "quality": "standard",
+      "quality_score": 47
     },
     "赛巴斯蒂安·史耐德": {
       "type": "person",
@@ -18685,6 +20008,24 @@
       "quality": "featured",
       "quality_score": 48
     },
+    "超级计算机": {
+      "type": "technology",
+      "label": "超级计算机",
+      "aliases": [
+        "超算",
+        "高性能计算机"
+      ],
+      "tags": [
+        "科技",
+        "三体II",
+        "计算机",
+        "危机纪元"
+      ],
+      "path": "pages/超级计算机.md",
+      "description": "危机纪元人类最强大的计算设备，是恒星型氢弹设计、思想钢印制造和面壁计划模拟的核心工具，但受到智子封锁的间接制约而停止实质性进步。",
+      "quality": "standard",
+      "quality_score": 51
+    },
     "超膜": {
       "type": "concept",
       "label": "超膜",
@@ -18701,6 +20042,47 @@
       "description": "三体物理学的基础理论概念：所有宇宙（大宇宙与小宇宙）都是超膜上的空泡；超膜可以传递信息广播，是宇宙间唯一的间接通信媒介",
       "quality": "featured",
       "quality_score": 46
+    },
+    "轨道": {
+      "type": "concept",
+      "label": "轨道",
+      "aliases": [
+        "行星轨道",
+        "太空轨道",
+        "卫星轨道"
+      ],
+      "tags": [
+        "概念",
+        "三体I",
+        "三体II",
+        "天文",
+        "科学"
+      ],
+      "path": "pages/轨道.md",
+      "description": "《三体》中轨道是理解三体问题的核心概念：三颗恒星使行星无法维持稳定轨道，产生乱纪元与恒纪元的交替，也是红岸基地的军事监控对象。",
+      "quality": "standard",
+      "quality_score": 51
+    },
+    "辐射": {
+      "type": "concept",
+      "label": "辐射",
+      "aliases": [
+        "电磁辐射",
+        "核辐射",
+        "太阳辐射"
+      ],
+      "tags": [
+        "概念",
+        "三体I",
+        "三体II",
+        "三体III",
+        "物理",
+        "天文"
+      ],
+      "path": "pages/辐射.md",
+      "description": "能量以波或粒子形式的传播，在三体三部曲中涉及太阳辐射层研究（叶文洁论文）、宇宙背景辐射、核战争辐射等多个层面。",
+      "quality": "standard",
+      "quality_score": 55
     },
     "辐射帆": {
       "type": "technology",
@@ -18892,6 +20274,25 @@
       "description": "地球大气层上方的低空轨道空间，是三部曲中太空军事、智子拦截、星际通讯设施的核心部署区域。",
       "quality": "featured",
       "quality_score": 60
+    },
+    "进化": {
+      "type": "concept",
+      "label": "进化",
+      "aliases": [
+        "文明进化",
+        "生物进化"
+      ],
+      "tags": [
+        "概念",
+        "三体I",
+        "三体II",
+        "三体文明",
+        "宇宙社会学"
+      ],
+      "path": "pages/进化.md",
+      "description": "生物与文明的演化进程，在三体游戏中以\"文明进化至XX层次\"的固定格式反复出现，记录每个三体文明从诞生到灭亡的历史轨迹。",
+      "quality": "standard",
+      "quality_score": 54
     },
     "进化算法": {
       "type": "concept",
@@ -19090,6 +20491,44 @@
       "description": "威慑纪元的警察，自我认同为\"公元人\"（冬眠复苏者），负责调查罗辑与史强所在住宅遭受的攻击，并向罗辑介绍这个陌生的新时代。",
       "quality": "featured",
       "quality_score": 48
+    },
+    "量子": {
+      "type": "concept",
+      "label": "量子",
+      "aliases": [
+        "量子效应",
+        "量子感应",
+        "量子常数"
+      ],
+      "tags": [
+        "概念",
+        "三体I",
+        "三体II",
+        "物理",
+        "智子"
+      ],
+      "path": "pages/量子.md",
+      "description": "量子力学的基本单元，在三体中经历两次重要转化：文革中被批判为\"资产阶级唯心论\"，后成为智子量子感应阵列的物理基础，实现四光年外的瞬时超距通讯。",
+      "quality": "standard",
+      "quality_score": 48
+    },
+    "量子力学": {
+      "type": "concept",
+      "label": "量子力学",
+      "aliases": [
+        "量子物理"
+      ],
+      "tags": [
+        "概念",
+        "三体I",
+        "三体II",
+        "科学",
+        "物理"
+      ],
+      "path": "pages/量子力学.md",
+      "description": "描述微观粒子行为的物理学理论，在三体I中因叶哲泰教授讲授而遭政治批判，在三体II中被列为智子封锁后人类仅剩的主要理论储备之一。",
+      "quality": "standard",
+      "quality_score": 41
     },
     "量子号": {
       "type": "technology",
@@ -19773,6 +21212,24 @@
       "quality": "featured",
       "quality_score": 67
     },
+    "雾伞": {
+      "type": "technology",
+      "label": "雾伞",
+      "aliases": [
+        "雾伞计划",
+        "雾伞工程"
+      ],
+      "tags": [
+        "科技",
+        "三体II",
+        "环境",
+        "太空工程"
+      ],
+      "path": "pages/雾伞.md",
+      "description": "联合国环境保护组织在海王星附近实施的太空工程，计划用核爆炸蒸发油膜物质并扩散至太阳与地球之间，以降低太阳辐射缓解温室效应。",
+      "quality": "standard",
+      "quality_score": 51
+    },
     "雾伞计划": {
       "type": "concept",
       "label": "雾伞计划",
@@ -20231,6 +21688,27 @@
       "quality": "standard",
       "quality_score": 36
     },
+    "高维空间": {
+      "type": "concept",
+      "label": "高维空间",
+      "aliases": [
+        "四维空间",
+        "高维空间感",
+        "高维质感"
+      ],
+      "tags": [
+        "概念",
+        "三体I",
+        "三体II",
+        "三体III",
+        "物理",
+        "四维宇宙"
+      ],
+      "path": "pages/高维空间.md",
+      "description": "三维之外的高维空间，在三体中以微宇宙、四维碎块和蓝色空间号进入四维空间三种形态出现，\"高维空间感\"是亲历者描述四维体验的核心词汇。",
+      "quality": "featured",
+      "quality_score": 55
+    },
     "高维空间感": {
       "type": "concept",
       "label": "高维空间感",
@@ -20265,6 +21743,46 @@
       "description": "人类第一次近距离观测四维物体（魔戒）时体验到的视觉与空间感——无数叠加\"魔戒\"的影像、巨大的纵深感与包容性；是三维生命感知高维空间时的特殊心理现象",
       "quality": "featured",
       "quality_score": 44
+    },
+    "高能物理": {
+      "type": "concept",
+      "label": "高能物理",
+      "aliases": [
+        "高能粒子物理",
+        "粒子物理"
+      ],
+      "tags": [
+        "概念",
+        "三体I",
+        "三体II",
+        "科学",
+        "智子"
+      ],
+      "path": "pages/高能物理.md",
+      "description": "研究高能粒子碰撞与物质深层结构的物理学分支，是三体文明通过智子干扰人类科学进步的核心目标领域。",
+      "quality": "standard",
+      "quality_score": 48
+    },
+    "高能粒子": {
+      "type": "concept",
+      "label": "高能粒子",
+      "aliases": [
+        "高能粒子束",
+        "宇宙射线粒子"
+      ],
+      "tags": [
+        "概念",
+        "三体I",
+        "三体II",
+        "三体III",
+        "科学",
+        "智子",
+        "武器"
+      ],
+      "path": "pages/高能粒子.md",
+      "description": "具有极高动能的粒子，在三体系列中既是智子飞行和干扰加速器实验的手段，也是舰载武器系统的重要组成部分。",
+      "quality": "standard",
+      "quality_score": 55
     },
     "高边疆号": {
       "type": "technology",
@@ -21014,8 +22532,19 @@
     "太空三大舰队": "三大舰队",
     "三日凌空": "三日凌空",
     "三日连珠": "三日连珠",
+    "三维宇宙": "三维宇宙",
+    "三维空间宇宙": "三维宇宙",
+    "低维宇宙": "三维宇宙",
     "三维展开": "三维展开",
+    "上帝": "上帝",
+    "造物主": "上帝",
+    "主": "上帝",
+    "神": "上帝",
     "上帝工程": "上帝工程",
+    "专制": "专制",
+    "极权": "专制",
+    "独裁": "专制",
+    "专制制度": "专制",
     "世界政府": "世界政府",
     "地球联邦": "世界政府",
     "世界灭绝罪": "世界灭绝罪",
@@ -21026,6 +22555,9 @@
     "两弹工程": "两弹工程",
     "个人失重推进器": "个人失重推进器",
     "失重推进器": "个人失重推进器",
+    "中世纪": "中世纪",
+    "欧洲中世纪": "中世纪",
+    "中世纪时代": "中世纪",
     "中华二号高能加速器": "中华二号高能加速器",
     "中华二号加速器": "中华二号高能加速器",
     "中华二号": "中华二号高能加速器",
@@ -21099,6 +22631,9 @@
     "人形智子": "人形智子",
     "智子（人形）": "人形智子",
     "智子大使": "人形智子",
+    "人权": "人权",
+    "人权宣言": "人权",
+    "泛宇宙人权": "人权",
     "人格分析系统": "人格分析系统",
     "三体人格分析": "人格分析系统",
     "威慑度分析系统": "人格分析系统",
@@ -21130,6 +22665,9 @@
     "伏羲": "伏羲",
     "伽利略": "伽利略",
     "伽尔宁": "伽尔宁",
+    "伽马射线": "伽马射线",
+    "γ射线": "伽马射线",
+    "伽马辐射": "伽马射线",
     "伽马射线激光": "伽马射线激光",
     "伽马激光": "伽马射线激光",
     "低技术战略": "低技术战略",
@@ -21147,7 +22685,15 @@
     "人类保留地": "保留地",
     "保留地声明": "保留地声明",
     "保留地声明事件": "保留地声明",
+    "信仰": "信仰",
+    "宗教信仰": "信仰",
+    "信念": "信仰",
+    "思想钢印信仰": "信仰",
     "信使号": "信使号",
+    "信号": "信号",
+    "无线电信号": "信号",
+    "电波信号": "信号",
+    "宇宙信号": "信号",
     "信念中心": "信念中心",
     "思想钢印中心": "信念中心",
     "信念碑": "信念碑",
@@ -21198,6 +22744,10 @@
     "光锥之内就是命运": "光锥之内就是命运",
     "光锥之内": "光锥之内就是命运",
     "光锥命运论": "光锥之内就是命运",
+    "克隆": "克隆",
+    "克隆体": "克隆",
+    "克隆复活": "克隆",
+    "克隆人": "克隆",
     "全息影像": "全息影像",
     "全息显示": "全息影像",
     "全息投影": "全息影像",
@@ -21227,6 +22777,10 @@
     "军舰": "军舰",
     "海军军舰": "军舰",
     "战列舰": "军舰",
+    "农业": "农业",
+    "农业时代": "农业",
+    "农业社会": "农业",
+    "新农业社会": "农业",
     "农业工厂": "农业工厂",
     "农业执政官": "农业执政官",
     "农场主假说": "农场主假说",
@@ -21247,6 +22801,9 @@
     "冯诺依曼人列计算机": "冯诺依曼人列计算机",
     "秦一号": "冯诺依曼人列计算机",
     "冰沙王子": "冰沙王子",
+    "冷战": "冷战",
+    "冷战时期": "冷战",
+    "核威慑时代": "冷战",
     "凡尔纳": "凡尔纳",
     "Jules Verne": "凡尔纳",
     "儒勒·凡尔纳": "凡尔纳",
@@ -21337,10 +22894,16 @@
     "加速器": "加速器",
     "高能加速器": "加速器",
     "particle accelerator": "加速器",
-    "化学火箭": "化学火箭",
-    "化学推进": "化学火箭",
+    "化学": "化学",
+    "化学火箭": "化学",
+    "化学发动机": "化学",
+    "化学推进": "化学",
     "北方号": "北方号",
     "北方": "北方号",
+    "北极": "北极",
+    "北极圈": "北极",
+    "太空城北极": "北极",
+    "北极入口": "北极",
     "罗辑的庄园": "北欧伊甸园",
     "北美一号": "北美一号",
     "北美舰队": "北美舰队",
@@ -21354,8 +22917,11 @@
     "卓文": "卓文",
     "单摆": "单摆",
     "傅科单摆": "单摆",
+    "南极": "南极",
+    "南极大陆": "南极",
+    "南极洲": "南极",
+    "南极引力波发射台": "南极",
     "南极洲号": "南极洲号",
-    "南极洲": "南极洲号",
     "卡夫卡": "卡夫卡",
     "Franz Kafka": "卡夫卡",
     "弗兰兹·卡夫卡": "卡夫卡",
@@ -21375,6 +22941,9 @@
     "大低谷后的社会": "危机纪元至大低谷的家庭变迁",
     "危机纪元婚恋": "危机纪元至大低谷的家庭变迁",
     "家庭解体": "危机纪元至大低谷的家庭变迁",
+    "历史学": "历史学",
+    "历史学家": "历史学",
+    "历史记录": "历史学",
     "原子核": "原子核",
     "atomic nucleus": "原子核",
     "去威胁化": "去威胁化",
@@ -21469,6 +23038,10 @@
     "哥本哈根解释": "哥本哈根解释",
     "哥本哈根诠释": "哥本哈根解释",
     "哥白尼": "哥白尼",
+    "哲学": "哲学",
+    "东方哲学": "哲学",
+    "终极哲学": "哲学",
+    "马克思主义哲学": "哲学",
     "唐号": "唐号",
     "唐": "唐号",
     "唐舰": "唐号",
@@ -21519,6 +23092,9 @@
     "治安军": "地球治安军",
     "地球移民": "地球移民",
     "澳大利亚移民": "地球移民",
+    "地球舰队": "地球舰队",
+    "人类舰队": "地球舰队",
+    "太空舰队联合体": "地球舰队",
     "地球防务安全部": "地球防务安全部",
     "防务安全部": "地球防务安全部",
     "地震": "地震",
@@ -21534,10 +23110,12 @@
     "坦克": "坦克",
     "装甲战车": "坦克",
     "城市接口": "城市接口",
-    "基因改造": "基因改造",
+    "基因": "基因",
+    "基因武器": "基因",
+    "基因改造": "基因",
+    "转基因": "基因",
     "基因工程": "基因改造",
     "转基因技术": "基因改造",
-    "基因武器": "基因武器",
     "基因导弹": "基因武器",
     "基因靶向病毒": "基因武器",
     "基地": "基地",
@@ -21549,6 +23127,10 @@
     "心灵史学与三体": "基地与三体",
     "基本粒子": "基本粒子",
     "微观粒子": "基本粒子",
+    "基督教": "基督教",
+    "东正教": "基督教",
+    "天主教": "基督教",
+    "基督徒": "基督教",
     "基础物理": "基础物理",
     "基础物理学": "基础物理",
     "fundamental physics": "基础物理",
@@ -21577,6 +23159,9 @@
     "外星文明": "外星文明",
     "地外文明": "外星文明",
     "extraterrestrial civilization": "外星文明",
+    "多普勒效应": "多普勒效应",
+    "都卜勒效应": "多普勒效应",
+    "多普勒频移": "多普勒效应",
     "大串联": "大串联",
     "大事年表": "大事年表",
     "年表": "大事年表",
@@ -21608,6 +23193,11 @@
     "天体物理": "天体物理",
     "天体物理学": "天体物理",
     "astrophysics": "天体物理",
+    "天文台": "天文台",
+    "帝国天文台": "天文台",
+    "国家天文台": "天文台",
+    "北京天文台": "天文台",
+    "威尔逊山天文台": "天文台",
     "天文学": "天文学",
     "astronomy": "天文学",
     "天文望远镜": "天文望远镜",
@@ -21629,8 +23219,10 @@
     "木星城市群落": "太空城群落",
     "太空工程": "太空工程",
     "space engineering": "太空工程",
+    "太空战": "太空战",
+    "太空战争理论": "太空战",
+    "星际战争理论": "太空战",
     "太空战争": "太空战争",
-    "太空战争理论": "太空战争",
     "星际战争": "太空战争",
     "太空战略": "太空战略",
     "space strategy": "太空战略",
@@ -21756,6 +23348,7 @@
     "宇宙微波": "宇宙微波",
     "宇宙微波背景辐射": "宇宙微波",
     "宇宙微波背景": "宇宙微波",
+    "宇宙探测": "宇宙探测",
     "宇宙文明": "宇宙文明",
     "宇宙文明图景": "宇宙文明",
     "宇宙社会": "宇宙文明",
@@ -21803,8 +23396,14 @@
     "球状闪电宏原子": "宏原子",
     "macro-atom": "宏原子",
     "宏原子核聚变": "宏原子核",
+    "宏观世界": "宏观世界",
+    "宏观宇宙": "宏观世界",
+    "宏观尺度": "宏观世界",
     "宏观量子态": "宏观量子态",
     "量子幽灵": "宏观量子态",
+    "宗教": "宗教",
+    "拯救派": "宗教",
+    "宗教团体": "宗教",
     "审判日号": "审判日号",
     "审判日": "审判日号",
     "第二红岸基地": "审判日号",
@@ -21830,7 +23429,9 @@
     "小国崛起理论": "小国崛起",
     "小宇宙": "小宇宙",
     "口袋宇宙": "小宇宙",
-    "小行星带": "小行星带",
+    "小行星": "小行星",
+    "小行星带": "小行星",
+    "柯伊伯带外侧": "小行星",
     "asteroid belt": "小行星带",
     "尘埃云": "尘埃云",
     "人造尘埃云": "尘埃云",
@@ -21847,6 +23448,9 @@
     "破壁人三号": "山杉惠子",
     "Keiko Yamasaki": "山杉惠子",
     "工业执政官": "工业执政官",
+    "工业革命": "工业革命",
+    "工业化时代": "工业革命",
+    "工业文明": "工业革命",
     "工质": "工质",
     "工质推进": "工质",
     "推进工质": "工质",
@@ -21867,9 +23471,16 @@
     "Panama Canal": "巴拿马运河",
     "希恩斯": "希恩斯",
     "Bill Hines": "希恩斯",
+    "希望": "希望",
+    "最后的希望": "希望",
+    "人类的希望": "希望",
     "常伟思": "常伟思",
     "常伟思将军": "常伟思",
     "干仓": "干仓",
+    "平等": "平等",
+    "生命平等": "平等",
+    "生存权平等": "平等",
+    "物种平等": "平等",
     "幸存派": "幸存派",
     "幽灵倒计时": "幽灵倒计时",
     "倒计时": "幽灵倒计时",
@@ -21877,6 +23488,8 @@
     "幽闭恐惧": "幽闭恐惧",
     "幽闭恐惧症": "幽闭恐惧",
     "关一帆的幽闭恐惧": "幽闭恐惧",
+    "广义相对论": "广义相对论",
+    "广义相对性理论": "广义相对论",
     "广播纪元": "广播纪元",
     "庄颜": "庄颜",
     "庞加莱": "庞加莱",
@@ -21938,11 +23551,17 @@
     "微积分": "微积分",
     "微观宇宙": "微观宇宙",
     "高维微观宇宙": "微观宇宙",
+    "心理学": "心理学",
+    "宇宙心理学": "心理学",
+    "航行心理学": "心理学",
     "思想钢印": "思想钢印",
     "思维透明": "思维透明",
     "思维显示": "思维透明",
     "思维透明度": "思维透明",
     "总体银行系统": "总体银行系统",
+    "恐惧": "恐惧",
+    "宇宙恐惧": "恐惧",
+    "生存恐惧": "恐惧",
     "恐日症": "恐日症",
     "太阳恐惧症": "恐日症",
     "恒星呼吸": "恒星呼吸",
@@ -21962,9 +23581,16 @@
     "恒纪元": "恒纪元",
     "stable era": "恒纪元",
     "意义之塔": "意义之塔",
+    "意识": "意识",
+    "超意识": "意识",
+    "潜意识": "意识",
+    "宇宙意识": "意识",
     "慕星": "慕星",
     "慢光速": "慢光速",
     "慢雾": "慢雾",
+    "战争理论": "战争理论",
+    "太空战略理论": "战争理论",
+    "战略研究": "战争理论",
     "战斗机": "战斗机",
     "歼击机": "战斗机",
     "战略欺骗": "战略欺骗",
@@ -22003,7 +23629,6 @@
     "拜占庭帝国": "拜占庭帝国",
     "东罗马帝国": "拜占庭帝国",
     "拜占庭": "拜占庭帝国",
-    "拯救派": "拯救派",
     "振动弦": "振动弦",
     "简并态振动弦": "振动弦",
     "捕获行动": "捕获行动",
@@ -22028,6 +23653,10 @@
     "地球文明方舟": "掩体计划",
     "Shelter Plan": "掩体计划",
     "摇篮系统": "摇篮系统",
+    "数学": "数学",
+    "数学模型": "数学",
+    "数学家": "数学",
+    "空对空数学游戏": "数学",
     "数据手套": "数据手套",
     "文化冲击": "文化冲击",
     "文化反射": "文化反射",
@@ -22036,6 +23665,8 @@
     "文革": "文化大革命",
     "文教执政官": "文教执政官",
     "文明免疫力": "文明免疫力",
+    "文艺复兴": "文艺复兴",
+    "第二次文艺复兴": "文艺复兴",
     "斐兹罗": "斐兹罗",
     "乔治·斐兹罗": "斐兹罗",
     "斯坦顿": "斯坦顿",
@@ -22044,7 +23675,6 @@
     "新世界选择": "新世界",
     "新人类": "新人类",
     "太空新人类": "新人类",
-    "新农业社会": "新农业社会",
     "新生活五村": "新生活五村",
     "旋转伞": "旋转伞",
     "无工质推进": "无工质推进",
@@ -22060,12 +23690,17 @@
     "日凌干扰": "日凌干扰",
     "凌日干扰": "日凌干扰",
     "太阳干扰": "日凌干扰",
+    "时空": "时空",
+    "四维时空": "时空",
+    "时空蚀洞": "时空",
     "时间之外的往事": "时间之外的往事",
     "《时间之外的往事》": "时间之外的往事",
     "时间真空": "时间真空",
     "时间颗粒": "时间颗粒",
     "明日号": "明日号",
     "明日": "明日号",
+    "星云": "星云",
+    "星际尘埃": "星云",
     "星图": "星图",
     "star map": "星图",
     "恒星图": "星图",
@@ -22086,7 +23721,6 @@
     "星舰地球第一次公民大会": "星舰地球的建立",
     "星舰文明": "星舰文明",
     "星舰地球文明": "星舰文明",
-    "星际尘埃": "星际尘埃",
     "尘埃带": "星际尘埃",
     "interstellar dust": "星际尘埃",
     "星际迁徙": "星际迁徙",
@@ -22119,6 +23753,8 @@
     "最后的问题": "最后的问题",
     "The Last Question": "最后的问题",
     "月球": "月球",
+    "望远镜": "望远镜",
+    "光学望远镜": "望远镜",
     "朝歌": "朝歌",
     "木卫二": "木卫二",
     "Europa": "木卫二",
@@ -22142,6 +23778,9 @@
     "水滴之战": "末日战役",
     "末日纪元": "末日纪元",
     "朴义君": "朴义君",
+    "机器人": "机器人",
+    "服务机器人": "机器人",
+    "机器人服务员": "机器人",
     "李堆": "李堆",
     "李瑶": "李瑶",
     "李维": "李维",
@@ -22177,20 +23816,24 @@
     "Kuiper Belt": "柯伊伯带",
     "柯依伯带": "柯伊伯带",
     "柯曼琳": "柯曼琳",
-    "核弹头": "核弹头",
+    "核弹": "核弹",
+    "核武器": "核弹",
+    "核弹头": "核弹",
+    "原子弹": "核弹",
+    "氢弹": "核弹",
     "核弹女孩": "核弹女孩",
     "核弹链": "核弹链",
     "环太阳核弹链": "核弹链",
     "太阳核弹链": "核弹链",
     "核星": "核星",
     "核星爆发": "核星",
-    "核武器": "核武器",
-    "核弹": "核武器",
     "核炸弹": "核武器",
     "热核武器": "核武器",
     "核爆": "核爆",
     "核爆炸": "核爆",
     "核爆炸效应": "核爆",
+    "核爆炸波": "核爆炸",
+    "恒星型氢弹爆炸": "核爆炸",
     "核电池": "核电池",
     "放射性同位素电池": "核电池",
     "核聚变": "核聚变",
@@ -22231,6 +23874,10 @@
     "武斗": "武斗",
     "派系武斗": "武斗",
     "红卫兵武斗": "武斗",
+    "死亡": "死亡",
+    "文明死亡": "死亡",
+    "星球死亡": "死亡",
+    "生死抉择": "死亡",
     "死柱": "死柱",
     "死线": "死线",
     "残骸星云": "残骸星云",
@@ -22249,6 +23896,9 @@
     "比尔·马修": "比尔·马修",
     "Bill Matthew": "比尔·马修",
     "毕云峰": "毕云峰",
+    "民主": "民主",
+    "民主政治": "民主",
+    "核聚变炸弹": "氢弹",
     "水星": "水星",
     "Mercury": "水星",
     "水星基地": "水星基地",
@@ -22259,6 +23909,9 @@
     "水滴消灭舰队": "水滴消灭舰队",
     "水滴攻击人类联合舰队": "水滴消灭舰队",
     "末日之战核心": "水滴消灭舰队",
+    "永动机": "永动机",
+    "真永动机": "永动机",
+    "无限能源": "永动机",
     "汪森": "汪森",
     "海人": "汪森",
     "汪淼": "汪淼",
@@ -22285,6 +23938,9 @@
     "澳大利亚移民指南": "流亡澳大利亚生活指南",
     "三体占领时期": "流亡澳大利亚生活指南",
     "海因斯": "海因斯",
+    "海洋": "海洋",
+    "蓝色海洋": "海洋",
+    "太阳电浆海洋": "海洋",
     "海王星": "海王星",
     "Neptune": "海王星",
     "海王星轨道": "海王星",
@@ -22314,14 +23970,21 @@
     "澳大利亚": "澳大利亚",
     "澳洲": "澳大利亚",
     "澳大利亚保留地": "澳大利亚保留地",
-    "激光武器": "激光武器",
+    "激光": "激光",
+    "激光炮": "激光",
+    "激光武器": "激光",
     "舰载激光": "激光武器",
     "火星": "火星",
     "火星基地": "火星基地",
     "火星保留地": "火星基地",
+    "火箭": "火箭",
+    "运载火箭": "火箭",
     "灰星": "灰星",
     "热那亚": "热那亚",
     "熊文": "熊文",
+    "熵": "熵",
+    "热寂": "熵",
+    "熵增": "熵",
     "爱伦·坡": "爱伦·坡",
     "爱伦坡": "爱伦·坡",
     "Edgar Allan Poe": "爱伦·坡",
@@ -22329,6 +23992,9 @@
     "爱因斯坦（三体游戏）": "爱因斯坦",
     "阿尔伯特·爱因斯坦": "爱因斯坦",
     "爱因斯坦号": "爱因斯坦号",
+    "爱情": "爱情",
+    "婚姻": "爱情",
+    "情感": "爱情",
     "牛顿": "牛顿",
     "艾萨克·牛顿（三体游戏）": "牛顿",
     "伊萨克·牛顿": "牛顿",
@@ -22341,6 +24007,9 @@
     "特别联合国大会": "特别联大",
     "特遣队": "特遣队",
     "政工特遣队": "特遣队",
+    "牺牲": "牺牲",
+    "自我牺牲": "牺牲",
+    "牺牲精神": "牺牲",
     "狄奥伦娜": "狄奥伦娜",
     "猜疑链": "猜疑链",
     "Chain of Suspicion": "猜疑链",
@@ -22351,16 +24020,27 @@
     "solar ring accelerator": "环日加速器",
     "球状闪电": "球状闪电",
     "宏原子武器": "球状闪电",
+    "理论物理": "理论物理",
+    "理论物理学": "理论物理",
     "瓦季姆": "瓦季姆",
     "米哈伊尔·瓦季姆": "瓦季姆",
     "瓦西里": "瓦西里",
+    "生命": "生命",
+    "生命体": "生命",
+    "生命形式": "生命",
     "生命维持系统": "生命维持系统",
     "生命维持背包": "生命维持系统",
     "体外生命维持": "生命维持系统",
     "生存是文明的第一需要": "生存是文明的第一需要",
     "宇宙社会学第一公理": "生存是文明的第一需要",
     "两条公理": "生存是文明的第一需要",
-    "生态圈": "生态圈",
+    "生存权": "生存权",
+    "生存平等权": "生存权",
+    "基本生存权": "生存权",
+    "生态": "生态",
+    "生态圈": "生态",
+    "生态系统": "生态",
+    "生态环境": "生态",
     "封闭生态圈": "生态圈",
     "全封闭生态圈": "生态圈",
     "自循环生态圈": "生态圈",
@@ -22369,6 +24049,12 @@
     "飞船生态系统": "生态循环",
     "舰载生态系统": "生态循环系统",
     "生态球": "生态球",
+    "飞船生态循环系统": "生态系统",
+    "封闭生态系统": "生态系统",
+    "生物学": "生物学",
+    "鸟类学": "生物学",
+    "昆虫学": "生物学",
+    "生物科学": "生物学",
     "田园时代": "田园时代",
     "宇宙田园时代": "田园时代",
     "申玉菲": "申玉菲",
@@ -22400,7 +24086,6 @@
     "目标甄别员": "目标甄别",
     "相对论": "相对论",
     "狭义相对论": "相对论",
-    "广义相对论": "相对论",
     "relativity": "相对论",
     "相对论效应": "相对论效应",
     "质量膨胀": "相对论效应",
@@ -22412,6 +24097,9 @@
     "下乡知青": "知青",
     "educated youth": "知青",
     "短膜": "短膜",
+    "石油": "石油",
+    "石油公司": "石油",
+    "石油资源": "石油",
     "破壁人": "破壁人",
     "Wallfacer-breaker": "破壁人",
     "破壁计划": "破壁人",
@@ -22422,6 +24110,8 @@
     "磁场": "磁场",
     "电磁场": "磁场",
     "磁力场": "磁场",
+    "社会学": "社会学",
+    "人类社会学": "社会学",
     "神经元计算机": "神经元计算机",
     "神经元模式计算机": "神经元计算机",
     "神经网络": "神经网络",
@@ -22498,7 +24188,6 @@
     "第二战勤部": "第二战勤部",
     "第二文明": "第二文明",
     "第二次启蒙运动": "第二次启蒙运动",
-    "第二次文艺复兴": "第二次文艺复兴",
     "第二次文艺復興": "第二次文艺复兴",
     "第二次法国大革命": "第二次法国大革命",
     "第二炮兵": "第二炮兵",
@@ -22512,6 +24201,10 @@
     "粮票": "粮票",
     "粮票制度": "粮票",
     "配给制": "粮票",
+    "粮食": "粮食",
+    "合成粮食": "粮食",
+    "粮食定量": "粮食",
+    "粮食短缺": "粮食",
     "红卫兵": "红卫兵",
     "Red Guards": "红卫兵",
     "叶文洁发报": "红岸发射",
@@ -22529,11 +24222,13 @@
     "约瑟夫·莫沃维奇": "约瑟夫·莫沃维奇",
     "纳尔逊号": "纳尔逊号",
     "纳尔逊": "纳尔逊号",
+    "纳米": "纳米",
+    "纳米材料": "纳米",
+    "纳米中心": "纳米",
+    "纳米技术": "纳米",
     "纳米丝": "纳米丝",
     "超强度纳米丝": "纳米丝",
-    "纳米中心": "纳米中心",
     "汪淼纳米研究中心": "纳米中心",
-    "纳米材料": "纳米材料",
     "高强度纳米材料": "纳米材料",
     "终极规律号": "终极规律号",
     "终极规律": "终极规律号",
@@ -22544,9 +24239,14 @@
     "三体金句": "经典金句",
     "名句": "经典金句",
     "经典语录": "经典金句",
+    "经济学": "经济学",
+    "经济学家": "经济学",
     "给岁月以文明": "给岁月以文明",
     "给岁月以文明而不是给文明以岁月": "给岁月以文明",
     "给岁月以文明给时光以生命": "给岁月以文明",
+    "绝望": "绝望",
+    "绝望感": "绝望",
+    "宇宙绝望": "绝望",
     "维度": "维度",
     "微观维度": "维度",
     "维度打击": "维度打击",
@@ -22626,6 +24326,10 @@
     "浸泡复活": "脱水",
     "自然选择号": "自然选择号",
     "自然选择": "自然选择号",
+    "自由": "自由",
+    "自由落体": "自由",
+    "政治自由": "自由",
+    "高维自由": "自由",
     "自由女神像": "自由女神像",
     "自由女神像（信念中心）": "自由女神像",
     "自译解系统": "自译解系统",
@@ -22650,6 +24354,10 @@
     "Ai AA": "艾AA",
     "艾伦": "艾伦",
     "艾伦博士": "艾伦",
+    "苏联": "苏联",
+    "苏维埃社会主义共和国联盟": "苏联",
+    "苏修": "苏联",
+    "前苏联": "苏联",
     "苗福全": "苗福全",
     "茶道": "茶道",
     "和敬清寂": "茶道",
@@ -22701,6 +24409,8 @@
     "西子少校": "西子",
     "解析摄像机": "解析摄像机",
     "脑解析摄像机": "解析摄像机",
+    "语言学": "语言学",
+    "语言学家": "语言学",
     "诺贝尔奖": "诺贝尔奖",
     "Nobel Prize": "诺贝尔奖",
     "豆豆": "豆豆",
@@ -22714,6 +24424,9 @@
     "费米悖论": "费米悖论",
     "Fermi Paradox": "费米悖论",
     "大沉默": "费米悖论",
+    "资源": "资源",
+    "战争资源": "资源",
+    "宇宙资源": "资源",
     "赛巴斯蒂安·史耐德": "赛巴斯蒂安·史耐德",
     "史耐德": "赛巴斯蒂安·史耐德",
     "Sebastian Schneider": "赛巴斯蒂安·史耐德",
@@ -22728,7 +24441,16 @@
     "超新星": "超新星",
     "supernova": "超新星",
     "超级文明": "超级文明",
+    "超级计算机": "超级计算机",
+    "超算": "超级计算机",
+    "高性能计算机": "超级计算机",
     "超膜": "超膜",
+    "轨道": "轨道",
+    "行星轨道": "轨道",
+    "太空轨道": "轨道",
+    "卫星轨道": "轨道",
+    "辐射": "辐射",
+    "电磁辐射": "辐射",
     "辐射帆": "辐射帆",
     "辐射推进": "辐射推进",
     "无工质辐射推进": "辐射推进",
@@ -22751,6 +24473,9 @@
     "近地轨道": "近地轨道",
     "近地空间": "近地轨道",
     "低地球轨道": "近地轨道",
+    "进化": "进化",
+    "文明进化": "进化",
+    "生物进化": "进化",
     "进化算法": "进化算法",
     "魏成进化算法": "进化算法",
     "三体进化算法": "进化算法",
@@ -22769,8 +24494,13 @@
     "郭沫若": "郭沫若",
     "Guo Moruo": "郭沫若",
     "郭警官": "郭警官",
+    "量子": "量子",
+    "量子效应": "量子",
+    "量子感应": "量子",
+    "量子常数": "量子",
+    "量子力学": "量子力学",
+    "量子物理": "量子力学",
     "量子号": "量子号",
-    "量子感应": "量子感应",
     "量子感应阵列": "量子感应",
     "量子舰队": "量子舰队",
     "量子舰队计划": "量子舰队",
@@ -22838,8 +24568,9 @@
     "雷迪亚兹": "雷迪亚兹",
     "曼努尔·雷迪亚兹": "雷迪亚兹",
     "Manuel Rediaz": "雷迪亚兹",
-    "雾伞计划": "雾伞计划",
-    "雾伞工程": "雾伞计划",
+    "雾伞": "雾伞",
+    "雾伞计划": "雾伞",
+    "雾伞工程": "雾伞",
     "雾角号": "雾角号",
     "雾角": "雾角号",
     "霍金": "霍金",
@@ -22887,8 +24618,13 @@
     "高博士": "高Way",
     "高维碎块": "高维碎块",
     "高维空间碎块": "高维碎块",
-    "高维空间感": "高维空间感",
-    "高维质感": "高维质感",
+    "高维空间感": "高维空间",
+    "高维质感": "高维空间",
+    "高能物理": "高能物理",
+    "高能粒子物理": "高能物理",
+    "粒子物理": "高能物理",
+    "高能粒子束": "高能粒子",
+    "宇宙射线粒子": "高能粒子",
     "高边疆号": "高边疆号",
     "高边疆": "高边疆号",
     "魏成": "魏成",
@@ -22940,6 +24676,6 @@
     "齐家屯": "齐家屯",
     "齐猎头儿": "齐猎头儿"
   },
-  "page_count": 1161,
-  "generated": "2026-04-28T13:05:29Z"
+  "page_count": 1239,
+  "generated": "2026-04-28T14:07:35Z"
 }
