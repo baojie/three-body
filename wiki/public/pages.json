@@ -144,8 +144,8 @@
       ],
       "path": "pages/275E1.md",
       "description": "距太阳系约84光年的恒星，由科兹莫博士发现其带有行星，三体文明将其母星坠入该恒星的过程作为罗辑面壁计划咒语的宇宙参照，是宇宙社会学星际武器理论的实证。",
-      "quality": "basic",
-      "quality_score": 40
+      "quality": "standard",
+      "quality_score": 44
     },
     "3K眼镜": {
       "type": "technology",
@@ -2531,8 +2531,8 @@
       ],
       "path": "pages/三体战士.md",
       "description": "地球三体组织（ETO）成员的自称，信仰三体文明并以推翻地球现有文明为使命的激进分子，在北京地下聚会中集体宣誓效忠。",
-      "quality": "basic",
-      "quality_score": 47
+      "quality": "standard",
+      "quality_score": 51
     },
     "三体执政委员会": {
       "type": "organization",
@@ -2949,8 +2949,8 @@
       ],
       "path": "pages/世界物理年.md",
       "description": "联合国教科文组织将2005年定为世界物理年，国际物理学界频繁举办学术会议和交流活动，科学边界学会就在这一年的学术活动中逐渐诞生。",
-      "quality": "basic",
-      "quality_score": 26
+      "quality": "standard",
+      "quality_score": 30
     },
     "世界科学院": {
       "type": "organization",
@@ -3019,8 +3019,8 @@
       ],
       "path": "pages/个人失重推进器.md",
       "description": "威慑纪元太空站中普及的个人移动设备，体积小巧，固定于腰带或肩部，可在失重环境中对人体产生推力。",
-      "quality": "basic",
-      "quality_score": 28
+      "quality": "standard",
+      "quality_score": 33
     },
     "中华二号高能加速器": {
       "type": "technology",
@@ -3418,8 +3418,8 @@
       ],
       "path": "pages/云天明的诗.md",
       "description": "云天明为暗恋的程心创作的诗，与他为程心购买DX3906星星的行为共同构成三部曲中最浪漫的情感表达。",
-      "quality": "basic",
-      "quality_score": 24
+      "quality": "standard",
+      "quality_score": 29
     },
     "五七干校": {
       "type": "place",
@@ -3432,8 +3432,8 @@
       ],
       "path": "pages/五七干校.md",
       "description": "文化大革命期间将知识分子和干部下放进行劳动改造的场所，在三体I中作为与红岸基地相对照的选择出现。",
-      "quality": "basic",
-      "quality_score": 22
+      "quality": "standard",
+      "quality_score": 29
     },
     "五执政官": {
       "type": "organization",
@@ -3689,8 +3689,8 @@
       ],
       "path": "pages/人形智子.md",
       "description": "威慑纪元三体文明派驻地球的人形机器人大使，由人类最先进的AI和仿生技术制造，由智能粒子\"智子\"远程控制，以完美的日本女性形象出现。",
-      "quality": "basic",
-      "quality_score": 32
+      "quality": "standard",
+      "quality_score": 37
     },
     "人格分析系统": {
       "type": "technology",
@@ -4666,8 +4666,8 @@
       ],
       "path": "pages/军机大臣.md",
       "description": "云天明童话《国王的新画师》中无故事王国的军机重臣，掌管王宫外的禁卫军，在国王与王后相继失踪后，本人亦神秘消失。",
-      "quality": "basic",
-      "quality_score": 29
+      "quality": "standard",
+      "quality_score": 30
     },
     "军舰": {
       "type": "technology",
@@ -4809,8 +4809,8 @@
       ],
       "path": "pages/冬眠舱.md",
       "description": "低温冬眠系统的核心设备，与体外生命维持系统和冷却设备配合使用，使人体进入极低代谢的冬眠状态。",
-      "quality": "basic",
-      "quality_score": 32
+      "quality": "standard",
+      "quality_score": 36
     },
     "冯·诺伊曼": {
       "type": "person",
@@ -4827,7 +4827,7 @@
       "path": "pages/冯·诺伊曼.md",
       "description": "三体游戏中出现的虚拟历史人物；与牛顿同行前往秦朝，向秦始皇提出并主导建造人列计算机，为三体问题的数值求解设计了\"秦1.0\"操作系统",
       "quality": "featured",
-      "quality_score": 63
+      "quality_score": 64
     },
     "冯诺依曼人列计算机": {
       "type": "event",
@@ -5472,9 +5472,9 @@
         "三体III"
       ],
       "path": "pages/刘晓明.md",
-      "description": "太空舰队中士，在执行任务中目睹壮观的超自然幻象。",
-      "quality": "basic",
-      "quality_score": 22
+      "description": "太空舰队中士，在执行任务中目睹壮观的超自然幻象，因担心被强制冬眠而选择不上报。",
+      "quality": "standard",
+      "quality_score": 30
     },
     "创世纪号": {
       "type": "technology",
@@ -5607,8 +5607,8 @@
       ],
       "path": "pages/北欧伊甸园.md",
       "description": "黑暗森林威慑建立前罗辑隐居五年的北欧庄园，后成为多位面壁计划相关人物的晚年归宿。",
-      "quality": "basic",
-      "quality_score": 28
+      "quality": "standard",
+      "quality_score": 33
     },
     "北美一号": {
       "type": "place",
@@ -6296,8 +6296,8 @@
       ],
       "path": "pages/叶文雪.md",
       "description": "叶文洁的妹妹，文革期间最激进的红卫兵之一，主动揭发父亲叶哲泰，写下大量检举材料，后于武斗中惨死。",
-      "quality": "basic",
-      "quality_score": 30
+      "quality": "standard",
+      "quality_score": 35
     },
     "司令部": {
       "type": "organization",
@@ -6592,8 +6592,8 @@
       ],
       "path": "pages/哈勃红移.md",
       "description": "星系退行引起的光谱红移现象，是大爆炸宇宙学说的两大核心观测依据之一，在叶哲泰的课堂上被作为现代宇宙学基础引用。",
-      "quality": "basic",
-      "quality_score": 29
+      "quality": "standard",
+      "quality_score": 33
     },
     "哈里斯": {
       "type": "person",
@@ -6608,8 +6608,8 @@
       ],
       "path": "pages/哈里斯.md",
       "description": "天文观测中心的年轻工程师，三体舰队穿越尘埃云留下\"刷子\"时在场目击，随后崩溃并患上严重抑郁症，最终被中心辞退，是可见威胁对人类心理的具体体现。",
-      "quality": "basic",
-      "quality_score": 39
+      "quality": "standard",
+      "quality_score": 44
     },
     "哥白尼": {
       "type": "person",
@@ -6658,8 +6658,8 @@
       ],
       "path": "pages/唐红静.md",
       "description": "文革时期的知青，曾对叶哲泰施暴，后在洪水中溺亡。",
-      "quality": "basic",
-      "quality_score": 22
+      "quality": "standard",
+      "quality_score": 28
     },
     "四·二八兵团": {
       "type": "organization",
@@ -7271,8 +7271,8 @@
       ],
       "path": "pages/基本粒子.md",
       "description": "三体系列中，基本粒子被视为高维度展开的宏大世界，是智子工程的技术基础，也是三体文明对宇宙认识远超人类的标志。",
-      "quality": "basic",
-      "quality_score": 47
+      "quality": "standard",
+      "quality_score": 48
     },
     "基础物理": {
       "type": "concept",
@@ -7470,8 +7470,8 @@
       ],
       "path": "pages/大串联.md",
       "description": "文化大革命期间红卫兵全国大串联运动，参与者为此后奔赴各地建设兵团的知青一代，在三体I中构成时代背景。",
-      "quality": "basic",
-      "quality_score": 31
+      "quality": "standard",
+      "quality_score": 36
     },
     "大事年表": {
       "type": "overview",
@@ -9130,8 +9130,8 @@
       ],
       "path": "pages/宇宙橄榄球.md",
       "description": "对三体星系运动规律的生动比喻：三颗太阳是运动员，行星是被踢来踢去的球，贯穿乱纪元与恒纪元的交替。",
-      "quality": "basic",
-      "quality_score": 33
+      "quality": "standard",
+      "quality_score": 37
     },
     "宇宙社会学": {
       "type": "theory",
@@ -9412,8 +9412,8 @@
       ],
       "path": "pages/宣传执政官.md",
       "description": "三体文明执政委员会成员，负责宣传事务，在智子计划讨论中提议将文明毁灭的宇宙普遍性向三体人民广泛宣传。",
-      "quality": "basic",
-      "quality_score": 26
+      "quality": "standard",
+      "quality_score": 33
     },
     "宪章修正": {
       "type": "concept",
@@ -10894,8 +10894,8 @@
       ],
       "path": "pages/执剑纪元.md",
       "description": "非正式纪元称谓，指罗辑担任执剑人、独自维持黑暗森林威慑的时代，约对应威慑纪元前半段。",
-      "quality": "basic",
-      "quality_score": 28
+      "quality": "standard",
+      "quality_score": 40
     },
     "执剑纪元生活指南": {
       "type": "overview",
@@ -11361,8 +11361,8 @@
       ],
       "path": "pages/数据手套.md",
       "description": "黑暗森林时代舰队战舰上用于激活和操控全息显示界面的手持交互设备。",
-      "quality": "basic",
-      "quality_score": 32
+      "quality": "standard",
+      "quality_score": 37
     },
     "文化冲击": {
       "type": "concept",
@@ -11430,8 +11430,8 @@
       ],
       "path": "pages/文教执政官.md",
       "description": "三体文明执政委员会成员，负责文化教育事务，参与讨论智子计划与四维展开实验的战略讨论。",
-      "quality": "basic",
-      "quality_score": 36
+      "quality": "standard",
+      "quality_score": 40
     },
     "斐兹罗": {
       "type": "person",
@@ -11449,7 +11449,7 @@
       "path": "pages/斐兹罗.md",
       "description": "危机纪元美国将军，地球防御理事会高级协调员；负责征用哈勃二号望远镜的军方代表，后入驻林格-斐兹罗监测站，参与三体探测器追踪行动",
       "quality": "featured",
-      "quality_score": 61
+      "quality_score": 62
     },
     "斯坦顿": {
       "type": "person",
@@ -11558,8 +11558,8 @@
       ],
       "path": "pages/无线供电网络.md",
       "description": "危机纪元后普及的城市基础设施，以微波或电磁振荡束在空间范围内形成供电场，区域内任何用电设备均可无线取电。",
-      "quality": "basic",
-      "quality_score": 29
+      "quality": "standard",
+      "quality_score": 40
     },
     "无限边疆号": {
       "type": "technology",
@@ -12010,8 +12010,8 @@
       ],
       "path": "pages/智能服装.md",
       "description": "危机纪元后普及的可发光、可联网显示图像的智能织物服装，衣面可作为显示屏播放图像或视频。",
-      "quality": "basic",
-      "quality_score": 32
+      "quality": "standard",
+      "quality_score": 37
     },
     "暗物质": {
       "type": "concept",
@@ -12541,8 +12541,8 @@
       ],
       "path": "pages/林云.md",
       "description": "刘慈欣《球状闪电》中的女主角，对宏原子研究做出关键贡献，在三体I中被提及为纳米材料领域的前驱人物。",
-      "quality": "basic",
-      "quality_score": 23
+      "quality": "standard",
+      "quality_score": 28
     },
     "林格-斐兹罗观测站": {
       "type": "place",
@@ -12896,8 +12896,8 @@
       ],
       "path": "pages/格里高利教皇.md",
       "description": "三体游戏中世纪场景的教皇，身着红袍金冠，参与召开三体问题研讨会议，其眼神特征在秦始皇副本中再度出现。",
-      "quality": "basic",
-      "quality_score": 34
+      "quality": "standard",
+      "quality_score": 38
     },
     "桃花源": {
       "type": "concept",
@@ -13004,8 +13004,8 @@
       ],
       "path": "pages/欧洲联合体.md",
       "description": "危机纪元后欧洲整合形成的新政治实体，简称\"欧联\"，包括东西欧但不含俄罗斯欧洲部分，在联合舰队覆灭后曾制定全民抽签逃亡方案。",
-      "quality": "basic",
-      "quality_score": 43
+      "quality": "standard",
+      "quality_score": 47
     },
     "欧洲舰队": {
       "type": "organization",
@@ -13792,8 +13792,8 @@
       ],
       "path": "pages/渊龙.md",
       "description": "云天明童话中来自赫尔辛根默斯肯的传说巨兽，通体乌黑，能在深海潜游又能高空飞翔，被画师们雇佣的魔法武士以火剑诛杀，其翼膜与骨骼制成了空灵画师的护身黑伞。",
-      "quality": "basic",
-      "quality_score": 36
+      "quality": "standard",
+      "quality_score": 37
     },
     "潘寒": {
       "type": "person",
@@ -14424,8 +14424,8 @@
       ],
       "path": "pages/电磁脉冲.md",
       "description": "核爆炸产生的电磁辐射冲击波，在三体II的太空战中与次声波氢弹结合，通过舰体振动将电磁脉冲转化为次声波，是黑暗战役中蓝色空间号攻击自然选择号的关键机制。",
-      "quality": "basic",
-      "quality_score": 40
+      "quality": "standard",
+      "quality_score": 44
     },
     "疯狂年代": {
       "type": "era",
@@ -14441,8 +14441,8 @@
       ],
       "path": "pages/疯狂年代.md",
       "description": "《三体》第一章标题，特指1967年文化大革命武斗进入高潮的极端历史时期。",
-      "quality": "basic",
-      "quality_score": 37
+      "quality": "standard",
+      "quality_score": 39
     },
     "白修远": {
       "type": "person",
@@ -14712,8 +14712,8 @@
       ],
       "path": "pages/破壁者.md",
       "description": "面壁计划中专门识破和公开面壁者真实战略意图的人物，是面壁者的天然对手。",
-      "quality": "basic",
-      "quality_score": 25
+      "quality": "standard",
+      "quality_score": 31
     },
     "破壁计划": {
       "type": "concept",
@@ -16554,8 +16554,8 @@
       ],
       "path": "pages/莱布尼茨.md",
       "description": "三体游戏中出现的历史人物NPC，在某次文明灾难前逃跑离去，被汪淼调侃为\"跑了的那一位\"。",
-      "quality": "basic",
-      "quality_score": 26
+      "quality": "standard",
+      "quality_score": 30
     },
     "萨伊": {
       "type": "person",
@@ -16740,8 +16740,8 @@
       ],
       "path": "pages/行星际移民局.md",
       "description": "行星防御理事会战略情报局（PIA）的别称，危机纪元成立的情报机构，局长为维德。",
-      "quality": "basic",
-      "quality_score": 20
+      "quality": "standard",
+      "quality_score": 24
     },
     "行星际移民局（PIA）": {
       "type": "organization",
@@ -16754,8 +16754,8 @@
       ],
       "path": "pages/行星际移民局（PIA）.md",
       "description": "行星防御理事会战略情报局（PIA）的别称，维德担任局长，负责三体情报与阶梯计划。",
-      "quality": "basic",
-      "quality_score": 19
+      "quality": "standard",
+      "quality_score": 23
     },
     "行星际航行": {
       "type": "concept",
@@ -16788,8 +16788,8 @@
       ],
       "path": "pages/行星际航行加速器.md",
       "description": "对PIA（行星防御理事会战略情报局）的非正式称谓，程心曾在此机构任职。",
-      "quality": "basic",
-      "quality_score": 19
+      "quality": "standard",
+      "quality_score": 23
     },
     "褚岩": {
       "type": "person",
@@ -17048,8 +17048,8 @@
       ],
       "path": "pages/超导腰带.md",
       "description": "黑暗森林时代舰船中使用的失重环境移动设备，通过超导原理辅助人员在微重力舱室中定向移动。",
-      "quality": "basic",
-      "quality_score": 32
+      "quality": "standard",
+      "quality_score": 37
     },
     "超新星": {
       "type": "concept",
@@ -17414,8 +17414,8 @@
       ],
       "path": "pages/郭沫若.md",
       "description": "中国著名文学家、历史学家，1978年在全国科学大会上宣布\"科学的春天到来了\"。",
-      "quality": "basic",
-      "quality_score": 29
+      "quality": "standard",
+      "quality_score": 33
     },
     "郭警官": {
       "type": "person",
@@ -17577,8 +17577,8 @@
       ],
       "path": "pages/金牛座战役.md",
       "description": "死神永生结尾时代，金牛座附近爆发的大规模星际战役，三体第二舰队是参战一方，对手与结果均不明，残骸形成一片新的尘埃云。",
-      "quality": "basic",
-      "quality_score": 38
+      "quality": "standard",
+      "quality_score": 42
     },
     "针眼画师": {
       "type": "person",
@@ -17928,8 +17928,8 @@
       ],
       "path": "pages/雪地.md",
       "description": "三体舰队四个世纪航程中穿越的太空尘埃云区域，因尘埃会留下舰队穿越痕迹而得名，是地球观测三体舰队位置的唯一手段。",
-      "quality": "basic",
-      "quality_score": 47
+      "quality": "standard",
+      "quality_score": 51
     },
     "雪地工程": {
       "type": "event",
@@ -18093,8 +18093,8 @@
       ],
       "path": "pages/霍金.md",
       "description": "真实历史上的英国理论物理学家，在三体I中被丁仪与爱因斯坦并列称为\"搞应用的俗人\"；在三体III序言中被刘慈欣点名提及其对地外文明的警告。",
-      "quality": "basic",
-      "quality_score": 36
+      "quality": "standard",
+      "quality_score": 40
     },
     "露珠公主": {
       "type": "person",
@@ -18387,8 +18387,8 @@
       ],
       "path": "pages/首都天文馆.md",
       "description": "北京天文科普场馆，汪淼曾为其制作科普小装置——微型宇宙背景辐射探测眼镜。",
-      "quality": "basic",
-      "quality_score": 23
+      "quality": "standard",
+      "quality_score": 31
     },
     "马钢": {
       "type": "person",
@@ -18458,8 +18458,8 @@
       ],
       "path": "pages/高维碎块.md",
       "description": "四维碎块的别称，指散布在三维宇宙中的高维空间残片。1453年曾有一块高维碎块进入地球大气层，赋予魔法师穿越空间的能力。",
-      "quality": "basic",
-      "quality_score": 32
+      "quality": "standard",
+      "quality_score": 36
     },
     "高维空间感": {
       "type": "concept",
@@ -18575,9 +18575,9 @@
         "三体III"
       ],
       "path": "pages/魔法时代.md",
-      "description": "三体III中高维碎块首次接触地球期间的短暂历史时期，持续约二十五天。",
-      "quality": "basic",
-      "quality_score": 20
+      "description": "三体III中高维碎块首次接触地球期间的短暂历史时期，持续约二十五天，是人类历史上唯一一次魔法真正存在的时期。",
+      "quality": "standard",
+      "quality_score": 35
     },
     "魔泡树": {
       "type": "concept",
@@ -18665,8 +18665,8 @@
       ],
       "path": "pages/黄道面.md",
       "description": "地球公转轨道所在平面，也是太阳系大多数行星轨道的参考平面，在三体II中用于描述太阳系空间图和作战部署。",
-      "quality": "basic",
-      "quality_score": 32
+      "quality": "standard",
+      "quality_score": 39
     },
     "黄金时代": {
       "type": "era",
@@ -20991,5 +20991,5 @@
     "齐猎头儿": "齐猎头儿"
   },
   "page_count": 1068,
-  "generated": "2026-04-28T07:51:01Z"
+  "generated": "2026-04-28T08:16:17Z"
 }
