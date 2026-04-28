@@ -13,7 +13,7 @@ description: 启动三体 Wiki 管家永续 loop。三队列系统（content/hou
 |------|----------|------|
 | **监听员** | `/butler --focus discover --instance 监听员` | 扫描语料，发现新词条，写入队列 |
 | **破壁人** | `/butler --focus enrich --instance 破壁人` | 深挖内容，突破存根，升级质量 |
-| **执剑人** | `/butler --focus housekeeping --instance 执剑人` | 日常维护，清链接，修质量分 |
+| **执剑人** | `/butler --focus housekeeping --instance 执剑人` | 日常维护，清链接，修质量分，wikify 章节实体链接 |
 | **广播员** | `/butler --focus publish --instance 广播员` | 定期 `/wiki` 发布，同步 docs/ |
 | **幸存者** | `/butler --focus create --instance 幸存者` | 新建词条，留存档案 |
 
@@ -79,7 +79,7 @@ skills/SKILL_W2_Butler原子行动.md
 ──────────────────────────────────
 round % 29 == 0  → W5 反思（整轮，用 increment_round.py + --skip-lock-check）
 round % 17 == 0  → /wiki 发布（整轮，用 increment_round.py + --skip-lock-check）
-round % 11 == 0  → D1 discover + H10 housekeeping-scan（整轮）
+round % 29 == 0  → D1 discover + H10 housekeeping-scan（与 W5 同轮；W5 优先，D1 在 W5 之后同轮执行）
 round % 37 == 0  → H17 coverage-scan
 round % 37 == 19 → H18 stub-triage
 以上任一触发 → 执行后回到步骤 4（不进入步骤 5–10）

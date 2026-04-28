@@ -26,6 +26,36 @@ BOOK_FILTER = {'1': '三体I', '2': '三体II', '3': '三体III'}
 RE_PN = re.compile(r'^\[(\d-\d{2}-\d{3})\]\s*(.*)', re.DOTALL)
 
 
+def _ship_variants(keyword: str) -> list[str]:
+    """For ship names (ending in 号), return quoted-format variants found in corpus.
+
+    Corpus encodes ship names as "BASE"号 (various quote styles), while callers
+    typically pass BASE号 (no quotes). This generates the variants to try.
+    """
+    if not keyword.endswith("号") or len(keyword) < 2:
+        return []
+    base = keyword[:-1]
+    return [
+        f'"{base}"号',           # straight ASCII double quotes
+        f'“{base}”号', # curly quotes "BASE"号
+        f'「{base}」号',          # corner brackets
+        f'‘{base}’号', # single curly quotes
+    ]
+
+
+def _find_in_para(para_text: str, keyword: str) -> tuple[str, int] | None:
+    """Return (matched_text, position) for the first match, or None.
+
+    Tries the keyword directly, then quoted ship-name variants.
+    """
+    if keyword in para_text:
+        return keyword, para_text.index(keyword)
+    for variant in _ship_variants(keyword):
+        if variant in para_text:
+            return variant, para_text.index(variant)
+    return None
+
+
 def search_pages(keyword: str, book: str | None, max_results: int, context_chars: int) -> None:
     book_prefix = BOOK_FILTER.get(book) if book else None
 
@@ -48,17 +78,19 @@ def search_pages(keyword: str, book: str | None, max_results: int, context_chars
             if not m:
                 continue
             pn, para_text = m.group(1), m.group(2)
-            if keyword not in para_text:
+
+            result = _find_in_para(para_text, keyword)
+            if result is None:
                 continue
+            matched_text, idx = result
 
             # 截取上下文（字符级别）
-            idx = para_text.index(keyword)
             lo = max(0, idx - context_chars)
-            hi = min(len(para_text), idx + len(keyword) + context_chars)
+            hi = min(len(para_text), idx + len(matched_text) + context_chars)
             snippet = ('…' if lo > 0 else '') + para_text[lo:hi] + ('…' if hi < len(para_text) else '')
 
-            # 高亮关键词（ANSI）
-            highlighted = snippet.replace(keyword, f'\033[1;33m{keyword}\033[0m')
+            # 高亮匹配文本（ANSI）
+            highlighted = snippet.replace(matched_text, f'\033[1;33m{matched_text}\033[0m')
             print(f'[{pn}] {highlighted}')
             print(f'       → 引用格式：（{pn}）')
             print()
