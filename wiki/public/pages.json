@@ -5707,9 +5707,9 @@
         "材料"
       ],
       "path": "pages/合成板.md",
-      "description": "广播纪元人类大规模移民时代使用的轻质合成建材，用于快速搭建临时住房和隔断。",
-      "quality": "basic",
-      "quality_score": 34
+      "description": "广播纪元人类大规模移民时代使用的轻质合成建材，用于快速搭建临时住房和隔断，在程心探访维德的营地场景中反复出现。",
+      "quality": "standard",
+      "quality_score": 54
     },
     "同步轨道": {
       "type": "concept",
@@ -6814,7 +6814,7 @@
       "path": "pages/大凤.md",
       "description": "大兴安岭齐家屯的东北女性，齐猎头儿的儿媳妇，曾与叶文洁同住并哺育幼年杨冬。",
       "quality": "standard",
-      "quality_score": 25
+      "quality_score": 37
     },
     "大坍缩": {
       "type": "concept",
@@ -12939,7 +12939,7 @@
       ],
       "path": "pages/生命维持系统.md",
       "description": "《三体》系列中太空环境下维持人体生命的装备系统，包括航天服内的生命维持组件、冬眠用体外生命维持系统以及便携式生命维持背包等多种形态。",
-      "quality": "basic",
+      "quality": "standard",
       "quality_score": 36
     },
     "生存是文明的第一需要": {
@@ -17091,8 +17091,8 @@
       ],
       "path": "pages/默思室.md",
       "description": "联合国大会堂外的小型沉思室，由第二任秘书长哈马舍尔德提议设立，以六吨生铁矿石为核心陈设，是面壁者在重大决策前独自静思的场所。",
-      "quality": "stub",
-      "quality_score": 25
+      "quality": "standard",
+      "quality_score": 51
     },
     "默斯肯大旋涡": {
       "type": "place",
@@ -18947,5 +18947,5 @@
     "Maelstrom": "默斯肯大旋涡"
   },
   "page_count": 961,
-  "generated": "2026-04-28T04:37:53Z"
+  "generated": "2026-04-28T04:41:50Z"
 }
