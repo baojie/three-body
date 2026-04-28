@@ -2450,7 +2450,7 @@
       "path": "pages/三体脱水.md",
       "description": "三体I，三体游戏中呈现的三体星人应对极端气候的生存方式：将身体的水分完全脱出，成为薄如纸片的\"脱水\"状态，可在极端温度下保存生命",
       "quality": "featured",
-      "quality_score": 33
+      "quality_score": 49
     },
     "三体舰队": {
       "type": "organization",
@@ -2508,7 +2508,7 @@
       "path": "pages/三体运动.md",
       "description": "三颗恒星在相互引力作用下进行的无法预测的混沌运动，三体星球文明不稳定的根本原因，也是整个三体故事标题的来源",
       "quality": "featured",
-      "quality_score": 56
+      "quality_score": 59
     },
     "三体问题": {
       "type": "theory",
@@ -2529,7 +2529,7 @@
       "path": "pages/三体问题.md",
       "description": "三个天体在相互引力作用下运动轨迹的经典力学难题，庞加莱证明其在数学上不可解，也是三体文明生存困境的根本原因。",
       "quality": "featured",
-      "quality_score": 60
+      "quality_score": 63
     },
     "三体飞船": {
       "type": "technology",
@@ -3568,6 +3568,28 @@
       "quality": "featured",
       "quality_score": 61
     },
+    "光粒毁灭三体星系": {
+      "type": "event",
+      "label": "光粒毁灭三体星系",
+      "aliases": [
+        "光粒毁灭三体星系",
+        "三体星系毁灭",
+        "三体世界终结",
+        "光粒打击三体"
+      ],
+      "tags": [
+        "事件",
+        "三体III",
+        "广播纪元",
+        "黑暗森林打击",
+        "光粒",
+        "三体文明"
+      ],
+      "path": "pages/光粒毁灭三体星系.md",
+      "description": "万有引力号启动引力波广播后不足四年，三体星系遭到光粒打击，三体行星被彻底摧毁——黑暗森林法则在叙事中的终极验证",
+      "quality": "featured",
+      "quality_score": 53
+    },
     "光速一号": {
       "type": "place",
       "label": "光速一号",
@@ -3856,7 +3878,7 @@
       "path": "pages/农场主假说.md",
       "description": "汪淼提出的宇宙哲学思想实验：一个农场里的火鸡科学家归纳出\"每天11点农场主来喂食\"的定律，感恩节当天定律突然失效——暗示人类的科学认知可能建立在随时会被打破的虚假规律上",
       "quality": "featured",
-      "quality_score": 50
+      "quality_score": 53
     },
     "农耕社会": {
       "type": "concept",
@@ -3954,20 +3976,19 @@
       "aliases": [
         "冯诺依曼人列计算机",
         "人列计算机",
-        "人肉计算机",
-        "三千万人列阵"
+        "秦一号"
       ],
       "tags": [
         "名场面",
         "三体I",
         "三体游戏",
-        "冯诺依曼",
-        "人列计算机"
+        "三体文明",
+        "科技"
       ],
       "path": "pages/冯诺依曼人列计算机.md",
-      "description": "三体I，三体游戏中冯·诺伊曼指挥秦始皇的三千万大军排列成巨型逻辑门矩阵，用人肉计算预测三体运动，是全书视觉冲击力最强的场景之一",
+      "description": "三体I游戏场景：冯·诺依曼在秦始皇帮助下以三千万士兵建造\"秦一号\"人列计算机，试图计算三星运动轨道以预测气候",
       "quality": "featured",
-      "quality_score": 35
+      "quality_score": 52
     },
     "冰沙王子": {
       "type": "person",
@@ -5478,7 +5499,7 @@
       "path": "pages/坐标暴露.md",
       "description": "黑暗森林法则中文明位置被其他文明知悉的状态，暴露即等于宣判——任何知道你存在的文明都可能先发制人。",
       "quality": "featured",
-      "quality_score": 42
+      "quality_score": 48
     },
     "坦克": {
       "type": "technology",
@@ -6800,7 +6821,7 @@
       "path": "pages/威慑大厅.md",
       "description": "人类黑暗森林威慑体系的核心控制场所，执剑人在此掌握向宇宙广播三体坐标的开关，罗辑在此独守近两百年",
       "quality": "featured",
-      "quality_score": 37
+      "quality_score": 45
     },
     "威慑度": {
       "type": "concept",
@@ -6952,7 +6973,7 @@
       "path": "pages/宇宙安全声明.md",
       "description": "向宇宙中其他文明宣示本文明无威胁性的信号或状态，是黑暗森林法则下文明求生的可能路径之一，黑域计划的核心目的",
       "quality": "featured",
-      "quality_score": 62
+      "quality_score": 67
     },
     "宇宙射线": {
       "type": "concept",
@@ -7110,7 +7131,7 @@
       "path": "pages/宇宙文明公理.md",
       "description": "叶文洁提出的宇宙社会学两条基础公理：生存是文明的第一需要；文明不断增长和扩张，但宇宙中的物质总量保持不变——推导出黑暗森林法则的逻辑起点",
       "quality": "featured",
-      "quality_score": 66
+      "quality_score": 69
     },
     "宇宙时间线": {
       "type": "overview",
@@ -7166,7 +7187,7 @@
       "path": "pages/宇宙社会学.md",
       "description": "叶文洁建议、罗辑创立的理论学科，以两条公理和两个关键概念推导出\"黑暗森林\"宇宙图景。",
       "quality": "featured",
-      "quality_score": 71
+      "quality_score": 73
     },
     "宇宙背景辐射": {
       "type": "concept",
@@ -7506,7 +7527,7 @@
       "path": "pages/射手假说.md",
       "description": "汪淼提出的宇宙思想实验：宇宙中的物理规律可能并非永恒客观，而是某种更高维度的\"神枪手\"在靶子上留下的弹孔规律，暗示宇宙的物理定律可能随时被改变",
       "quality": "featured",
-      "quality_score": 51
+      "quality_score": 55
     },
     "射电天文": {
       "type": "concept",
@@ -8140,7 +8161,7 @@
       "path": "pages/弦理论.md",
       "description": "以弦状振动为基本粒子模型的物理理论；三体I中杨冬研究的超弦模型；三体III中被环日加速器实验部分推翻",
       "quality": "featured",
-      "quality_score": 55
+      "quality_score": 59
     },
     "弦论": {
       "type": "theory",
@@ -8159,7 +8180,7 @@
       "path": "pages/弦论.md",
       "description": "统一量子力学与广义相对论的候选理论，在三体故事中三次被提及：作为人类最高物理成就、智子封锁后的理论储备，以及四维空间的解释框架",
       "quality": "featured",
-      "quality_score": 55
+      "quality_score": 58
     },
     "弱小和无知不是生存的障碍": {
       "type": "quote",
@@ -8706,7 +8727,7 @@
       "path": "pages/技术封锁.md",
       "description": "三体文明通过智子阻止人类基础物理研究进展的战略手段，使人类技术停滞四百年，以确保三体舰队到达时仍有技术优势。",
       "quality": "featured",
-      "quality_score": 37
+      "quality_score": 45
     },
     "技术爆炸": {
       "type": "theory",
@@ -8724,7 +8745,7 @@
       "path": "pages/技术爆炸.md",
       "description": "宇宙社会学的核心推导概念之一——文明的技术在极短时间内实现跨越式飞跃，使落后文明迅速逼近或超越强大文明，令猜疑链在任何阶段都无法消解。",
       "quality": "featured",
-      "quality_score": 70
+      "quality_score": 73
     },
     "技术的真相": {
       "type": "book",
@@ -10289,7 +10310,7 @@
       "path": "pages/歌者文明.md",
       "description": "三体III中接收到三体文明坐标并向太阳系投放二向箔的宇宙文明，是黑暗森林法则的执行者，以\"歌唱\"的方式处理信息，用长膜传递通信",
       "quality": "featured",
-      "quality_score": 35
+      "quality_score": 49
     },
     "死柱": {
       "type": "concept",
@@ -10781,7 +10802,7 @@
       "path": "pages/混沌理论.md",
       "description": "研究对初始条件极端敏感的非线性动力学系统的数学理论，三体问题不可解的科学根基",
       "quality": "featured",
-      "quality_score": 48
+      "quality_score": 51
     },
     "清理基因": {
       "type": "concept",
@@ -11088,7 +11109,7 @@
       "path": "pages/猜疑链.md",
       "description": "宇宙社会学中描述文明间无法消解的相互猜疑结构——双方无论善意与否，都无法确认对方的善意，形成无限递归的猜疑锁链，最终导向打击先行。",
       "quality": "featured",
-      "quality_score": 69
+      "quality_score": 73
     },
     "环日加速器": {
       "type": "technology",
@@ -11453,7 +11474,7 @@
       "path": "pages/相对论.md",
       "description": "爱因斯坦建立的时空物理理论；文革中被批判的\"资产阶级理论\"；光粒超高速攻击的物理基础",
       "quality": "featured",
-      "quality_score": 64
+      "quality_score": 68
     },
     "相对论效应": {
       "type": "concept",
@@ -11796,21 +11817,20 @@
       "label": "程心接剑",
       "aliases": [
         "程心接剑",
-        "威慑崩溃",
-        "程心接任执剑人"
+        "程心成为执剑人",
+        "威慑权移交"
       ],
       "tags": [
         "名场面",
         "三体III",
         "程心",
         "执剑人",
-        "黑暗森林威慑",
-        "罗辑"
+        "黑暗森林威慑"
       ],
       "path": "pages/程心接剑.md",
-      "description": "三体III，程心接任执剑人后三分钟内三体舰队即恢复加速，威慑崩溃，人类失去两百年的最后筹码",
+      "description": "三体III，程心在全人类的注视下接替罗辑成为第二任执剑人，走入地下四十五千米深的威慑控制中心，承担起悬剑两个世界命运的重任",
       "quality": "featured",
-      "quality_score": 37
+      "quality_score": 45
     },
     "程心时间线": {
       "type": "overview",
@@ -12377,7 +12397,7 @@
       "path": "pages/维德的选择.md",
       "description": "三体III，PIA局长维德在程心的强烈反对下仍决定推进光速飞船研究，留下\"失去人性失去很多，失去兽性失去一切\"这句话，是全书最著名的价值冲突场景",
       "quality": "featured",
-      "quality_score": 36
+      "quality_score": 45
     },
     "绿色拯救者": {
       "type": "organization",
@@ -12450,7 +12470,7 @@
       "path": "pages/罗辑冬眠.md",
       "description": "三体II/III，罗辑先后两次进入冬眠：第一次是等待宇宙对黑暗森林咒语的回应；第二次是执剑人使命完成后主动告别现世，跨越两百年",
       "quality": "featured",
-      "quality_score": 33
+      "quality_score": 37
     },
     "罗辑咒语": {
       "type": "event",
@@ -13275,7 +13295,7 @@
       "path": "pages/费米悖论.md",
       "description": "银河系古老而广阔，外星文明早该抵达太阳系，但宇宙却一片沉默——三体宇宙中这一悖论的答案是黑暗森林法则。",
       "quality": "featured",
-      "quality_score": 69
+      "quality_score": 72
     },
     "赛巴斯蒂安·史耐德": {
       "type": "person",
@@ -13928,6 +13948,26 @@
       "quality": "featured",
       "quality_score": 59
     },
+    "降维打击": {
+      "type": "concept",
+      "label": "降维打击",
+      "aliases": [
+        "降维打击",
+        "维度降低攻击",
+        "二维化打击"
+      ],
+      "tags": [
+        "概念",
+        "三体III",
+        "歌者文明",
+        "二向箔",
+        "黑暗森林法则"
+      ],
+      "path": "pages/降维打击.md",
+      "description": "《三体》宇宙中最高级别的文明清洗手段：将目标从三维空间强制降为二维，文明随之彻底灭绝——太阳系即遭受此打击而二维化",
+      "quality": "featured",
+      "quality_score": 52
+    },
     "陨石": {
       "type": "concept",
       "label": "陨石",
@@ -14221,6 +14261,26 @@
       "description": "行星防御理事会定期召开的面壁者计划审查会议；面壁者须在保密前提下接受质询；希恩斯在此公开思想钢印，罗辑在此提出咒语方案",
       "quality": "featured",
       "quality_score": 59
+    },
+    "面壁计划宣布": {
+      "type": "event",
+      "label": "面壁计划宣布",
+      "aliases": [
+        "面壁计划宣布",
+        "四位面壁者公布",
+        "罗辑成为面壁者"
+      ],
+      "tags": [
+        "事件",
+        "三体II",
+        "危机纪元",
+        "面壁计划",
+        "联合国"
+      ],
+      "path": "pages/面壁计划宣布.md",
+      "description": "联合国行星防御理事会在全体大会上宣布四位面壁者名单，并正式启动面壁计划——三部曲第二册最重要的叙事枢纽",
+      "quality": "featured",
+      "quality_score": 58
     },
     "韦斯特": {
       "type": "person",
@@ -14650,7 +14710,7 @@
       "path": "pages/黑暗森林法则.md",
       "description": "宇宙社会学基本公理：宇宙中每个文明都是带枪的猎人，必须对其他文明格杀勿论",
       "quality": "featured",
-      "quality_score": 71
+      "quality_score": 75
     },
     "黑曜石石板": {
       "type": "concept",
@@ -15062,6 +15122,10 @@
     "光粒打击": "光粒",
     "接近光速物体": "光粒",
     "photon weapon": "光粒",
+    "光粒毁灭三体星系": "光粒毁灭三体星系",
+    "三体星系毁灭": "光粒毁灭三体星系",
+    "三体世界终结": "光粒毁灭三体星系",
+    "光粒打击三体": "光粒毁灭三体星系",
     "光速一号": "光速一号",
     "光速一号科学城": "光速一号",
     "光速二号": "光速二号",
@@ -15108,8 +15172,7 @@
     "冯·诺伊曼（三体游戏）": "冯·诺伊曼",
     "冯诺伊曼": "冯·诺伊曼",
     "冯诺依曼人列计算机": "冯诺依曼人列计算机",
-    "人肉计算机": "冯诺依曼人列计算机",
-    "三千万人列阵": "冯诺依曼人列计算机",
+    "秦一号": "冯诺依曼人列计算机",
     "冰沙王子": "冰沙王子",
     "分类·事件": "分类·事件",
     "事件": "分类·事件",
@@ -15948,8 +16011,8 @@
     "程心": "程心",
     "Cheng Xin": "程心",
     "程心接剑": "程心接剑",
-    "威慑崩溃": "程心接剑",
-    "程心接任执剑人": "程心接剑",
+    "程心成为执剑人": "程心接剑",
+    "威慑权移交": "程心接剑",
     "程心时间线": "程心时间线",
     "程心生平": "程心时间线",
     "程心年表": "程心时间线",
@@ -16170,6 +16233,8 @@
     "阿拉斯加号": "阿拉斯加号",
     "阿拉斯加": "阿拉斯加号",
     "降临派": "降临派",
+    "维度降低攻击": "降维打击",
+    "二维化打击": "降维打击",
     "陨石": "陨石",
     "meteorite": "陨石",
     "隐藏基因": "隐藏基因",
@@ -16197,6 +16262,9 @@
     "Wallfacer": "面壁者",
     "面壁计划": "面壁计划",
     "Wallfacer Project": "面壁计划",
+    "面壁计划宣布": "面壁计划宣布",
+    "四位面壁者公布": "面壁计划宣布",
+    "罗辑成为面壁者": "面壁计划宣布",
     "韦斯特": "韦斯特",
     "West": "韦斯特",
     "飞刃": "飞刃",
@@ -16252,6 +16320,6 @@
     "默斯特罗姆漩涡": "默斯肯大旋涡",
     "Maelstrom": "默斯肯大旋涡"
   },
-  "page_count": 827,
-  "generated": "2026-04-28T00:48:41Z"
+  "page_count": 830,
+  "generated": "2026-04-28T01:06:18Z"
 }
