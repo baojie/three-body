@@ -764,3 +764,14 @@
 {"round": 780, "type": "create-page", "page": "破壁者", "result": "accept", "desc": "批量新建P3缺口词条", "ts": "2026-04-28T04:15:45Z", "instance": "幸存者", "reflect": "corpus有命中则standard/basic，无命中则stub"}
 {"round": 780, "type": "create-page", "page": "ETO杀手", "result": "accept", "desc": "批量新建P3缺口词条", "ts": "2026-04-28T04:15:45Z", "instance": "幸存者", "reflect": "corpus有命中则standard/basic，无命中则stub"}
 {"round": 780, "type": "create-page", "page": "大低谷纪念碑", "result": "accept", "desc": "批量新建P3缺口词条", "ts": "2026-04-28T04:15:45Z", "instance": "幸存者", "reflect": "corpus有命中则standard/basic，无命中则stub"}
+{"round": 782, "type": "create-page", "page": "个人失重推进器", "result": "accept", "desc": "新建未来器物stub：个人失重推进器", "ts": "2026-04-28T04:20:26Z", "instance": "幸存者", "reflect": "corpus有3条引文，完整收录了描述功能的核心引文"}
+{"round": 783, "type": "create-page", "page": "超导腰带", "result": "accept", "desc": "新建未来器物stub：超导腰带", "ts": "2026-04-28T04:20:47Z", "instance": "幸存者", "reflect": "corpus有2条引文，收录章北海和丁仪的出场场景"}
+{"round": 784, "type": "create-page", "page": "全息显示", "result": "accept", "desc": "新建未来器物stub：全息显示", "ts": "2026-04-28T04:21:11Z", "instance": "幸存者", "reflect": "注意已有全息影像.md，全息显示作为补充词条，重点放在技术层面"}
+{"round": 785, "type": "create-page", "page": "数据手套", "result": "accept", "desc": "新建未来器物stub：数据手套", "ts": "2026-04-28T04:21:29Z", "instance": "幸存者", "reflect": "corpus有2条精准引文，直接收录"}
+{"round": 786, "type": "create-page", "page": "智能服装", "result": "accept", "desc": "新建未来器物stub：智能服装", "ts": "2026-04-28T04:22:02Z", "instance": "幸存者", "reflect": "corpus有明确引文，黑暗森林中罗辑场景引文直接使用原文段落，未用引用格式注明精确章节号"}
+{"round": 787, "type": "create-page", "page": "无线供电网络", "result": "accept", "desc": "新建未来器物stub：无线供电网络", "ts": "2026-04-28T04:22:23Z", "instance": "幸存者", "reflect": "corpus有2条精准引文，第一条为罗辑的科普解释，非常清晰"}
+{"round": 788, "type": "create-page", "page": "冬眠舱", "result": "accept", "desc": "新建未来器物stub：冬眠舱", "ts": "2026-04-28T04:22:44Z", "instance": "幸存者", "reflect": "已有冬眠技术.md，冬眠舱专注于硬件设备本身，互补不重复"}
+{"round": 789, "type": "create-page", "page": "人形智子", "result": "accept", "desc": "新建未来器物stub：人形智子", "ts": "2026-04-28T04:23:09Z", "instance": "幸存者", "reflect": "corpus有丰富原文，引文直接引用原段落，角色复杂度超过普通器物"}
+{"round": 790, "type": "create-page", "page": "掩体", "result": "accept", "desc": "新建未来器物stub：掩体", "ts": "2026-04-28T04:23:42Z", "instance": "幸存者", "reflect": "已有掩体计划/掩体纪元/掩体工程等页面，本页聚焦于掩体设施本身的概念定义，type改为place更合适"}
+{"round": 791, "type": "create-page", "page": "合成板", "result": "accept", "desc": "新建未来器物stub：合成板", "ts": "2026-04-28T04:24:04Z", "instance": "幸存者", "reflect": "corpus有多条引文，选取最能说明背景的两条，并补充3-39-037作为对比参照"}
+{"round": 792, "type": "create-page", "page": "生命维持系统", "result": "accept", "desc": "额外扫描发现并新建：生命维持系统", "ts": "2026-04-28T04:24:40Z", "instance": "幸存者", "reflect": "corpus有3条引文涵盖三种形态，结构清晰，来自额外扫描任务"}
