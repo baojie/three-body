@@ -50,6 +50,9 @@ def build_alias_map(pages: dict) -> list[tuple[str, str, str]]:
             # 跳过英文别名（避免误链接英文片段）
             if alias.isascii():
                 continue
+            # 跳过单字符别名：极易产生误匹配（如"肯"匹配"肯定"中的"肯"）
+            if len(alias) < 2:
+                continue
             if alias in seen:
                 continue
             seen.add(alias)
@@ -88,6 +91,11 @@ def wikify_paragraph(text: str, alias_map: list[tuple[str, str, str]],
                 continue  # 本章已链接过此实体
             if text[pos:pos + len(alias)] == alias:
                 if not in_protected(pos, pos + len(alias)):
+                    # 叠词边界检查：若 alias 末字与紧随字符相同，为叠词形式而非实体
+                    # 例："黑洞"匹配"黑洞洞"中的"黑洞"，但"洞"重叠表示修饰义而非概念
+                    end_pos = pos + len(alias)
+                    if end_pos < len(text) and text[end_pos] == alias[-1]:
+                        continue  # 叠词误匹配，跳过此 alias
                     # 生成 wikilink
                     if display == pid:
                         link = f'[[{pid}]]'

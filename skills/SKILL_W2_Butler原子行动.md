@@ -185,8 +185,22 @@ python3 wiki/scripts/butler/discover_wanted.py --broken-only --top 20
 
 **前置**：PAGE 已存在 + 正文 ≤ 15 行实质内容 + corpus 有更多信息
 
-**步骤**：
-1. 读现有页面：`cat wiki/public/pages/PAGE.md`
+**步骤（prose 优先路径——优先检查）**：
+
+> **先判断路径**：读页面后先检查 `prose_chars`。
+> - 若 `prose_chars < 500` 且已有 PN ≥ 1 → 走「prose 优先路径」（不强制新 corpus 搜索）
+> - 否则 → 走「corpus 驱动路径」
+
+**prose 优先路径**（basic 页 prose_chars < 500，已有 PN）：
+1. 读现有页面
+2. 在已有内容基础上，添加一个**叙事意义分析节**（250-400字），从以下角度选择 1-2 个：
+   - 人物/概念在三部曲叙事中的功能与象征
+   - 与黑暗森林法则/宇宙社会学的关联
+   - 对其他人物/事件的影响链
+3. 通过 `edit_page.py` 写入完整新内容
+
+**corpus 驱动路径**（正文不足且 PN = 0，或需要新语料支撑）：
+1. 读现有页面
 2. 搜索更多内容：
    ```bash
    python3 wiki/scripts/butler/corpus_search.py "PAGE" --max 20 --context 4
@@ -200,7 +214,7 @@ python3 wiki/scripts/butler/discover_wanted.py --broken-only --top 20
    EOF
    ```
 
-**后置检查**：已有内容完整保留，新节有原文依据
+**后置检查**：已有内容完整保留；prose 路径确认 prose_chars 净增 ≥ 200
 
 **diff 上限**：≤ 25 行
 
@@ -209,6 +223,16 @@ python3 wiki/scripts/butler/discover_wanted.py --broken-only --top 20
 ### A3 `enrich-quality PAGE [目标档]` — WU 30
 
 将页面质量升一档（或升至指定档）。**常用于队列为空时的自主 fallback。**
+
+> ### 🚫 铁律：禁止"纯标签升级"
+>
+> **A3 绝对禁止**只修改 frontmatter 的 `quality:` 字段而不添加任何实质内容。
+> 每次 A3 执行**必须**满足：
+> - 通过 `corpus_search` 找到新的原文依据
+> - 在页面正文中新增至少 **1 个内容节或 1 条带 PN 的引文块**
+> - **先补内容，再改 `quality:` 字段**
+>
+> 违反此规则（如批量脚本、正则替换 `quality: basic → quality: featured`）属于严重错误，自评必须为 **fail**。
 
 #### 质量五档门槛
 
@@ -427,6 +451,7 @@ EOF
 3. **禁止绕过 edit_page.py 的保护标志**（`--allow-shrink` 仅限 redirect/merge）
 4. **禁止在 accept 前跳过 revision 验证**（见下方自评步骤）
 5. **禁止 PN 放在 blockquote 外面**（见 PN 引文系统格式铁律）
+6. **禁止"纯标签升级"**：A3 enrich-quality 必须先添加真实内容（corpus 有据的新节或 PN 引文），再更新 `quality:` 字段。任何仅通过脚本批量替换 `quality: basic → quality: featured` 而不增加内容的操作，一律视为错误，自评 fail。
 
 ## ⚠️ 脚本 API 备忘（高频错误防范）
 
@@ -573,6 +598,36 @@ python3 wiki/scripts/wikify_chapters.py
 - PN 标签 `[1-02-001]` 和引文 `（1-02-001）` 不受影响
 
 **diff 上限**：章节文件批量更新，不计入单轮限制；accept 后 `git add wiki/public/pages/三体*.md`
+
+#### 名场面/动作/故事词条的 wikify（锚点法）
+
+**核心约束**：绝对不修改原文任何可见文字，只允许给已有文字加 `[[]]` 链接属性。
+
+名场面类词条没有固定的单一名词短语，需通过 **aliases 锚点** 间接 wikify：
+
+```
+设计思路：
+  1. 阅读原文，在场景所在段落找出最具标志性的短语（2–8 字，唯一出现）
+  2. 把该短语加入词条页面 frontmatter 的 aliases 字段
+  3. 运行 wikify_chapters.py，它会自动匹配该短语并生成 [[词条名|原始短语]]
+  4. 可见文字完全不变，仅加了超链接
+```
+
+示例：
+```yaml
+# 若某场景词条"叶文洁第一次发射"，原文中出现"向宇宙发送了信号"
+aliases: [向宇宙发送了信号]     # ← 把原文短语作为 alias
+```
+
+运行后，原文中「向宇宙发送了信号」自动变为「[[叶文洁第一次发射|向宇宙发送了信号]]」。
+
+**锚点选取原则**：
+- ✅ 唯一出现于该场景段落，不会在其他段落产生误链接
+- ✅ 2–8 字，语义完整，有明确指向性
+- ❌ 不选过短的通用词（如"发射"、"信号"、"说"）
+- ❌ 不选在全文多处出现的通用短语
+
+详规见 [W10 H21-S](SKILL_W10_Butler内务整理.md)。
 
 ---
 
