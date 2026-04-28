@@ -137,3 +137,82 @@
 - butler 并发三脚本（`claim_task.py` / `complete_task.py` / `record_action.py`）支持多 agent 协作
 - 新增 `/commit` skill：按内容分组暂存并生成提交消息
 - Butler H1–H20 内务任务表 + H17/H18 周期清理计划完善
+
+---
+
+## Phase 11b · 多实例并发机制升级（task锁 → round+page双层锁）
+
+**核心变化**：并发安全机制从任务级锁升级为轮次+页面双层锁，同时切换为批次模式（1000 WU/轮）。
+
+### 锁架构演进
+
+| 旧版（Phase 11） | 新版（Phase 11b） |
+|-----------------|-----------------|
+| `claim_task.py` flock 防止同一队列任务被重复领取 | `claim_round.py` 原子递增轮号，创建 `round_N.lock` |
+| `increment_round.py` 递增计数器（轮号） | `lock_manager.py set-page` 把候选页面注册到轮次锁 |
+| `pending_revision.json` 传递 author（竞态风险） | `lock_manager.py check-page` 写前检测跨轮次页面冲突 |
+| 每轮 1 页 | 每轮 batch_n=ceil(1000/WU) 页（enrich→20页，create→10页） |
+
+### 新增脚本
+
+- `claim_round.py` — 领取轮次 + 创建轮次锁（`round_N.lock`）
+- `release_round.py` — 释放轮次锁（必须在记账后调用，即使 fail/skip）
+- `lock_manager.py` — 统一锁 API：acquire / set-page / check-page / assert-owner / release / cleanup
+
+### 并发规则（summary）
+
+```
+启动检查：claim_round.py --check-only --instance NAME → 防止同名重复实例
+候选准备：完全在领锁之前完成（持锁期间禁止补充搜索）
+页面注册：每个候选 → set-page → check-page（exit 1 = 冲突，移除该页）
+写入：     add_page.py / edit_page.py（不可直接 Write/Edit）
+记账：     record_action.py（内部 assert_owner 验证锁有效）→ release_round.py
+```
+
+### 周期任务豁免
+
+W5 反思、`/wiki` 发布等不写 `pages/*.md` 的周期任务跳过轮次锁（`--skip-lock-check`），避免阻塞并发实例。
+
+---
+
+## Phase 11c · 队列归档与发现力度加强
+
+### 队列归档（queue_done.md）
+
+- 新增 `wiki/scripts/butler/cleanup_queue.py`：将 `queue.md` / `housekeeping_queue.md` 中的 `[x]` 已完成条目批量归档到 `queue_done.md` / `housekeeping_done.md`，原文件只保留待处理条目
+- **触发时机**：每次 Dream Round（W5 H类，每 3 次 W5 触发一次）开始时强制执行，清理积压
+- 归档条目数记入反思报告开头，便于追踪队列健康状况
+
+### 发现力度加强（W1 + W0）
+
+| 参数 | 旧值 | 新值 |
+|------|------|------|
+| `discover_wanted --top` | 20 | **60** |
+| `discover_corpus --top` | 20 | **60** |
+| `discover_corpus --min-freq` | 3 | **2** |
+| 每次入队条目数 | 1–5 | **5–15** |
+| 主动补货触发阈值（P2 行数） | = 0 | **< 5** |
+| Trail:Explore 切换点 | P2 < 5 条 = 全explore | P2 < 5 → 立即补货 |
+
+- D1 周期任务（round % 11）参数同步更新为 `--top 60`
+- P2 跌破 5 条即触发补货（不等 round % 11），保持队列持续充足
+
+---
+
+## Phase 12 · 大规模词条扩建（R400→R692）
+
+**词条规模**：202 → 749 页（+547 词条）
+
+- **R400–R500**：幸存者实例主导建档冲刺，批量新建次要人物（面壁者随从、舰船船员、联合政府官员）、科技装备（弹射装置、各型舰船）、宇宙概念（曲率驱动、暗能量）等词条；总页数突破 400
+- **R501–R600**：破壁人、统帅、幸存者三实例并发，create + enrich 双线推进；引入轮次锁（`lock_manager.py`）防止页面写入冲突；新建词条覆盖《死神永生》全部主要事件与装备
+- **R601–R650**：词条突破 600 页；执剑人周期 H17/H18 清理存根，破壁人专项升级 basic→standard；统帅首次完成大批 standard→featured 升级（25 页/轮）
+- **R651–R692**：词条达 749 页，精品率 65%（487/749）；统帅 R687–R690 四轮批量 enrich 将大量 basic 页升至 featured；破壁人 R673/R678 专项丰富无工质推进、死柱、核星等技术词条
+
+**质量分布演进**：
+
+| 里程碑 | 总页数 | featured |
+|--------|--------|---------|
+| Phase 6 末 | 202 | — |
+| R500 | ~400 | ~50% |
+| R600 | ~600 | ~55% |
+| R692 | 749 | 65% (487) |

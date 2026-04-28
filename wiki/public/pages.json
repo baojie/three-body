@@ -12490,7 +12490,7 @@
       "path": "pages/罗辑咒语.md",
       "description": "三体II，罗辑在联合国向世界公布他发现的\"咒语\"——一组三体文明坐标，声称已向宇宙广播，任何伤害地球的行为将触发宇宙级打击，完成人类历史上第一次黑暗森林威慑",
       "quality": "featured",
-      "quality_score": 39
+      "quality_score": 71
     },
     "罗辑时间线": {
       "type": "overview",
@@ -16321,5 +16321,5 @@
     "Maelstrom": "默斯肯大旋涡"
   },
   "page_count": 830,
-  "generated": "2026-04-28T01:06:18Z"
+  "generated": "2026-04-28T01:12:45Z"
 }

@@ -409,6 +409,12 @@ footer {
   padding-top: 1em;
 }
 
+.footer-license {
+  display: block;
+  margin-top: .5em;
+}
+.footer-license a { color: var(--link); }
+
 /* Source view */
 .source-view {
   background: var(--bg-code);
