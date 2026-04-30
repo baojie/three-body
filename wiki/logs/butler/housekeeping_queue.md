@@ -8,11 +8,29 @@
 
 ---
 
+## R957 H10 全库扫描（2026-04-30）
+
+批量修复建议（通用概念页，R917-R950 批次，~55 页缺 books/H1/tags，可 batch 处理）：
+
+- [x 2026-04-30] H-P3 batch | 概念页批量修复 | 已验证：54页为redirect/deleted类型，无需加books/H1/tags
+- [x 2026-04-30] H-P3 batch | basic→standard批量升级 | 6个basic页已验证全部已升级至featured
+
+新增 broken links（需建 redirect 或 alias）：
+
+- [x 2026-04-30] P2 create-wanted | 低光速黑域 | 1 corpus hit → redirect to [[黑域]]（R961已处理）
+- [x 2026-04-30] P3 create-wanted | 量子纠缠 | 4x broken links → redirect to [[量子感应]]（R969处理）
+- [ ] P3 create-wanted | 哈丁 | 4x broken links，希恩斯信念中心CEO，可建 stub
+- [x 2026-04-30] P3 create-wanted | 布拉格 | 4x broken links，地名→redirect to [[卡夫卡]]（R969处理）
+- [ ] P3 create-wanted | 极权主义 | 3x broken links，三体语境有独特含义
+- [x 2026-04-30] P3 create-wanted | 降维攻击 | 2x broken links→redirect到维度打击（R961已处理）
+
+---
+
 ## H-P2 — 常规内务
 
-- [ ] H-P2 enrich | 亚洲三号 | R699-D类抽查：basic，prose_chars≈1178，需加叙事分析节
-- [ ] H-P2 enrich | 大洋洲一号 | R699-D类抽查：basic，prose_chars≈1144，需加叙事分析节
-- [ ] H-P2 enrich | 小国崛起 | R699-D类抽查：basic，prose_chars≈1280，需加叙事分析节
+- [x 2026-04-30] H-P2 enrich | 亚洲三号 | 已过期，当前quality=featured
+- [x 2026-04-30] H-P2 enrich | 大洋洲一号 | 已过期，当前quality=featured
+- [x 2026-04-30] H-P2 enrich | 小国崛起 | 已过期，当前quality=featured
 
 
 ---
@@ -53,7 +71,7 @@
 
 ## H-P3 — 扫描类（R583 D1+H10）
 
-- [ ] H10 housekeeping-scan | all | R583（545页：211精选/192标准/5基础/137无质量字段；真实broken links 12个）
+- [x 2026-04-30] H10 housekeeping-scan | all | R583（已被 R957 H10 扫描取代）
 
 ## H-P1 — R583扫描新增 broken links（高频）
 
@@ -70,19 +88,19 @@
 
 ## H-P1 — R605扫描新增 broken links
 
-- [ ] P1 create-wanted | 低光速黑域 | 2x（维度打击/空间曲率）—1 corpus hit，corpus内容待核实
+- [x 2026-04-30] P1 create-wanted | 低光速黑域 | 2x（维度打击/空间曲率）—redirect to [[黑域]]（R961已处理）
 
 ## H-P2 — R605扫描新增
 
-- [ ] H2 enrich | 末日纪元 | basic→standard（内容已有基础，补corpus引文升级）
+- [x 2026-04-30] H2 enrich | 末日纪元 | basic→standard（已过期，当前quality=featured）
 
 ## H-P2 — R609 W5 D类发现
 
-- [ ] H13 fix-heading | 量子计算 | id=量子计算 但正文标题/内容写"量子计算机"；需统一为"量子计算"或修改 id/aliases
+- [x 2026-04-30] H13 fix-heading | 量子计算 | id=量子计算 但正文标题/内容写"量子计算机"；需统一为"量子计算"或修改 id/aliases — 已验证：当前H1=#量子计算，aliases已含量子计算机，未发现问题
 
 ## H-P2 — R611 W5反思新增
 
-- [ ] H5 fix-content | 量子通信 | 正文中"魏程"可能为人名误识别，核实corpus后修正（R604反思标记）
+- [x 2026-04-30] H5 fix-content | 量子通信 | 正文中"魏程"可能为人名误识别，核实corpus后修正（R604反思标记）— 已验证：当前页面无"魏程"出现，已解决
 
 ## H-P3 — 扫描类（R616 D1+H10）
 
@@ -93,21 +111,21 @@
 
 ## R682 H10 全库扫描（2026-04-28）
 
-- [ ] H3 enrich-basic | 中华二号高能加速器 | R682-H10：quality=basic，需扩充正文至prose≥500
-- [ ] H3 enrich-basic | 宇宙遗迹 | R682-H10：quality=basic，需扩充正文至prose≥500
-- [ ] H3 enrich-basic | 技术的真相 | R682-H10：quality=basic，需扩充正文至prose≥500
-- [ ] H3 enrich-basic | 接触符号 | R682-H10：quality=basic，需扩充正文至prose≥500
-- [ ] H3 enrich-basic | 自由女神像 | R682-H10：quality=basic，需扩充正文至prose≥500
-- [ ] H3 enrich-basic | 鲍里斯·洛文斯基 | R682-H10：quality=basic，需扩充正文至prose≥500
+- [x 2026-04-30] H3 enrich-basic | 中华二号高能加速器 | R682-H10：quality=basic→已过期，当前quality=featured
+- [x 2026-04-30] H3 enrich-basic | 宇宙遗迹 | R682-H10：已过期，当前quality=featured
+- [x 2026-04-30] H3 enrich-basic | 技术的真相 | R682-H10：已过期，当前quality=featured
+- [x 2026-04-30] H3 enrich-basic | 接触符号 | R682-H10：已过期，当前quality=featured
+- [x 2026-04-30] H3 enrich-basic | 自由女神像 | R682-H10：已过期，当前quality=featured
+- [x 2026-04-30] H3 enrich-basic | 鲍里斯·洛文斯基 | R682-H10：已过期，当前quality=featured
 
 ## H-P2 — R752 W5 抽查新增
 
-- [ ] H-P2 enrich | 地球防务安全部 | R752-D抽查：basic，frontmatter+H1无正文，需enrich-page
-- [ ] H-P2 enrich | 李瑶 | R752-D抽查：basic，frontmatter+H1无正文，汪淼妻子
-- [ ] H-P2 add-quote | 伊甸园 | R752-D抽查：standard，prose≈500，缺PN，需add-quote
+- [x 2026-04-30] H-P2 enrich | 地球防务安全部 | R752-D抽查：已过期，当前quality=featured
+- [x 2026-04-30] H-P2 enrich | 李瑶 | R752-D抽查：已过期，当前quality=standard（已超basic）
+- [x 2026-04-30] H-P2 add-quote | 伊甸园 | R752-D抽查：已过期，当前quality=featured且有PN引文
 
 ## H2 批量 basic→standard（W5 R841 写入）
 
-- [ ] H-P2 enrich | basic批量升级 | W5 R841 发现：69个 basic 页面，含巨月/次声波氢弹/量子感应等，叙事意义节缺失；建议整轮 H2-enrich-batch（25页×40WU=1000WU）；优先选 PN≥3 的 basic 页面
+- [x 2026-04-30] H-P2 enrich | basic批量升级 | R969验证：批量标记为stale——69个basic页面中大部分已自动升级；剩余stub/basic不足10个，无需整轮处理
 
-- [ ] H-P2 fix-alias | 罗辑的咒语 | 移除frontmatter中的alias「咒语」（与「咒语」页alias冲突）；保留「罗辑咒语」「罗辑黑暗森林咒语实验」等更具体的alias
+- [x 2026-04-30] H-P2 fix-alias | 罗辑的咒语 | R959已移除frontmatter中的alias「咒语」

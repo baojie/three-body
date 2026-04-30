@@ -1,0 +1,1 @@
+{"rev_id": "20260430-101256-18c07e", "timestamp": "2026-04-30T10:12:56+00:00", "author": "统帅", "summary": "redirect: 三体宇宙→三体文明", "parent_rev": null, "content_hash": "sha256:18c07e721bdf39ca690c556616592cae04527fb02f3d20ee2cf07c2b0b4c36b6", "size_before": 0, "size": 106, "content": "---\nid: 三体宇宙\ntype: redirect\ntarget: 三体文明\nquality: standard\n---\n#REDIRECT [[三体文明]]\n"}

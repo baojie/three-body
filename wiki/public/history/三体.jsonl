@@ -1,0 +1,1 @@
+{"rev_id": "20260430-095200-76589d", "timestamp": "2026-04-30T09:52:00+00:00", "author": "统帅", "summary": "H16 add-redirect: 三体→三体文明", "parent_rev": null, "content_hash": "sha256:76589d4b194af67889fff081caff5b08bf05511dc1ef3d3fb99f68f6200761d1", "size_before": 0, "size": 100, "content": "---\nid: 三体\ntype: redirect\ntarget: 三体文明\nquality: standard\n---\n#REDIRECT [[三体文明]]\n"}

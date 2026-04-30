@@ -1,0 +1,1 @@
+{"rev_id": "20260430-102017-cd2a1a", "timestamp": "2026-04-30T10:20:17+00:00", "author": "统帅", "summary": "redirect: 量子纠缠→量子感应", "parent_rev": null, "content_hash": "sha256:cd2a1af894389f9ffc53b2423942e6671d4b82219962d32381f4af03deba6858", "size_before": 0, "size": 106, "content": "---\nid: 量子纠缠\ntype: redirect\ntarget: 量子感应\nquality: standard\n---\n#REDIRECT [[量子感应]]\n"}
