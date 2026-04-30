@@ -22,7 +22,8 @@
       "Bash(git add .claude/skills*)",
       "Bash(git add CLAUDE.md)",
       "Bash(git add gitmsg*.txt)",
-      "Bash(git add .claude/settings.json)"
+      "Bash(git add .claude/settings.json)",
+      "Bash(git commit -F /tmp/*)"
     ],
     "deny": [
       "Bash(git commit --amend*)",
