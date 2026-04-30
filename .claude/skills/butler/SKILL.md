@@ -90,6 +90,9 @@ round % 37 == 19 → H18 stub-triage
 
 a. 选定本轮主动作类型（A1/A2/A3/B1/C1/C2/H2/…）
 b. 计算 batch_n = ceil(1000 / WU)
+   ⚠️ **精品轮例外规则（R8）**：若主动作预期产出 ≤1 页（如单篇 featured 分析词条），
+   必须追加 ≥2 个低WU补充动作（wikify-page 或 add-stub）至候选列表，
+   确保本轮 accept 总数 ≥3，WU 总量 ≥500。
 c. 列出候选：
    - 先从 queue.md P1/P2/P3 选取
    - 再运行 discover_wanted.py --top 60 补充
@@ -99,9 +102,23 @@ d. ⚠️ 候选不足时的扩展规则（禁止提前收手）：
    1. 扩大 discover_wanted --top 100，对所有新结果做 corpus_search
    2. 对已有页面中的 broken wikilinks 做 corpus_search（常有未建词条）
    3. 降低门槛至命中 ≥ 1 条（接受 basic 级内容）
+   4. **通用概念过滤器**：对第3步纳入的所有候选做语义判别。
+      若词条属于以下类别之一，**不建独立页**，改为记录到
+      housekeeping_queue 的 redirect-queue 区：
+      - 基础元素/化合物（水、碳、铁、氧…）
+      - 通用物理量（温度、速度、加速度、重力…）
+      - 基础材料/元器件（金属、合金、芯片、超导…）
+      - 通用生物/地理（海洋、南极、小行星、星云…）
+      - 日常物品/通用科技（火箭、燃料、网络、数据库…）
+      可建独立页的标准：该概念在三体叙事中有**超出通用定义
+      的独特含义**（如"黑暗森林法则"≠通用的"森林法则"，
+      "智子"≠通用的"质子"）。拿不准时倾向 redirect 而非建页。
+      被过滤的候选记入 housekeeping_queue redirect-queue 区，
+      后续由执剑人批量执行 delete_page.py --redirect-to 处理。
    "穷尽"的可验证标准：
    - discover_wanted --top 100 返回的所有词条均已做过 corpus_search
-   - 命中 ≥ 1 条的全部纳入，仍不够 batch_n → 才算穷尽
+   - 命中 ≥ 1 条的全部经过过滤器判别，可用者纳入
+   （不得略过语义筛选，也禁止以"可能有过滤器漏网"为由提前收手）
    （不得只搜一遍就声称"已穷尽"）
 
    只有穷尽后候选仍不足时，才允许在本轮内切换为低 WU 补充动作：
@@ -176,6 +193,7 @@ python3 wiki/scripts/butler/release_round.py $ROUND
 | R5 | 页面写入必须通过 add_page.py / edit_page.py | 直接 Write/Edit 触发 hook 双重计数 |
 | R6 | 每条 PN 引文必须从 corpus_search 结果复制，禁止猜测 | 捏造引文，内容失真 |
 | R7 | `claim_round.py` 返回 `RACE` → 立即停止并告知用户 | 轮次竞争，数据覆盖 |
+| R8 | 精品词条（featured 级）可多花时间，但同轮**必须**配合 ≥2 个 wikify-page 或 add-stub 补足 WU，禁止以单页作为整轮全部产出 | 单页轮次，WU 严重不足 |
 
 ## 每轮输出格式
 
