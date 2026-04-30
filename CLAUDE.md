@@ -1,5 +1,8 @@
 # 三体 Wiki — Claude 工作规则
 
+> 📖 跨项目共享铁则参见：`/home/baojie/work/knowledge/shared-rules.md`
+> 所有知识库 wiki 通用的规则（Append-Only、原文只读等）定义在共享文件中，本文件仅包含三体特有规则。
+
 ## 项目简介
 
 本项目是刘慈欣《三体》三部曲（《三体》《黑暗森林》《死神永生》）的中文百科 Wiki，使用纯静态 SPA 前端，发布于 GitHub Pages。

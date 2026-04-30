@@ -19,7 +19,9 @@
       "Bash(git add wiki/public/pages/*)",
       "Bash(git add wiki/logs/butler/*)",
       "Bash(git add skills/*)",
-      "Bash(git add .claude/skills/*)",
+      "Bash(git add .claude/skills*)",
+      "Bash(git add CLAUDE.md)",
+      "Bash(git add gitmsg*.txt)",
       "Bash(git add .claude/settings.json)"
     ],
     "deny": [
@@ -31,8 +33,11 @@
       "Bash(git checkout --*)",
       "Bash(git restore*)",
       "Bash(git add -A*)",
-      "Bash(git add .*)",
+      "Bash(git add .)",
       "Bash(git add --all*)"
+    ],
+    "blockedDirectories": [
+      ".claude"
     ]
   },
   "hooks": {

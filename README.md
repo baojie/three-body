@@ -10,11 +10,12 @@
 
 | 项目 | 数量 |
 |------|------|
-| 词条页面 | 830+ 个（人物、概念、法则、科技、事件等） |
-| 精品词条 | 680+ 个（质量达 featured 级别） |
+| 词条页面 | 1,200+ 个（概念·人物·科技·事件·组织·地点等） |
+| 精品词条 | 950+ 个（质量达 featured 级别） |
 | 分类列表 | 10 个类型分类 + 23 个主题列表 |
 | 原文章节 | 137 章（三体I×37、三体II×50、三体III×50） |
 | 原文段落编号（PN） | 每段落全局唯一编号，支持精确引用 |
+| 知识量（K 值） | 59,000+ |
 | 页面质量分级 | 5 级：存根→基础→标准→精品→旗舰 |
 
 ## 功能
@@ -49,9 +50,11 @@ three-body/
 │       ├── build_list_pages.py      # 生成 列表·X.md（按主题）
 │       └── publish.sh               # 同步 wiki/public → docs/
 ├── docs/                  # GitHub Pages 输出（发布目录）
-├── skills/                # Butler 管家行动规范
 └── .claude/skills/        # Claude Code skill 定义
-    ├── butler/            # /butler — 自动化词条创建
+    ├── butler/            # /butler — 自动化管家永续 loop
+    ├── beaver/            # /beaver — 文本提取为 wiki 页面
+    ├── editor/            # /editor — 编委审稿
+    ├── serendipity/       # /serendipity — 随机种子搜寻缺失词条
     └── wiki/              # /wiki — 一键发布
 ```
 
@@ -114,22 +117,22 @@ python3 wiki/scripts/build_list_pages.py       # 列表·面壁计划、列表·
 
 ## Butler 自动化管家
 
-`/butler` skill 启动永续 loop，按质数轮次自动执行：
+`/butler` skill 启动永续 loop，每轮以 **工作单位（WU）** 计量（≥1000 WU/轮），按质数轮次自动执行：
 
-- 每 **11** 轮：探索 broken wikilinks，发现新词条
+- 每 **11** 轮：发现新词条（扫描 broken wikilinks + corpus 高频词）
 - 每 **17** 轮：`/wiki` 发布
 - 每 **29** 轮：W5 反思，分析执行模式，提出改进
+
+六命名实例可同时并发运行，通过 `claim_round.py` / `release_round.py` 实现轮次锁，防止页面写入冲突。
 
 ## 参与方式
 
 **本 Wiki 不接受直接的人工编辑**——所有词条由 AI 管家自动生成和维护，以确保内容风格与引文体系的一致性。
 
-如果你发现错误、遗漏，或有新词条的想法，欢迎**提交一个 GitHub Issue**：
+如果你发现错误、遗漏，或有新词条的想法，欢迎提交 Issue（banner 右上角"提想法"直达）：
 
 - 标题写明你的想法即可，正文填 `RT`（如题）就行
-- 当然，有详细补充或原文引用的话也非常欢迎
-
-→ [提交 Issue](https://github.com/baojie/three-body/issues/new)
+- 有详细补充或原文引用的话也非常欢迎
 
 ---
 
