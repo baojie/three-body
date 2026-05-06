@@ -2,7 +2,7 @@
 
 刘慈欣《三体》三部曲（《地球往事》《黑暗森林》《死神永生》）的中文百科 Wiki。
 
-**在线访问**：https://baojie.github.io/three-body/
+**在线访问**：https://threebody.memify.wiki
 
 ---
 
@@ -185,7 +185,7 @@ fields: [label, tags, quality_score]
 
 - 源目录：`/docs`
 - 分支：`main`
-- 地址：https://baojie.github.io/three-body/
+- 地址：https://threebody.memify.wiki
 
 ---
 

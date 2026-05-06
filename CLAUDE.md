@@ -108,7 +108,7 @@ cd wiki/public && python3 -m http.server 8080
 
 - 源目录：`/docs`
 - 分支：`main`
-- 地址：`https://baojie.github.io/three-body/`
+- 地址：`https://threebody.memify.wiki`
 
 首次需要在 GitHub 仓库设置中将 Pages 源设置为 `main` 分支 `/docs` 目录。
 
